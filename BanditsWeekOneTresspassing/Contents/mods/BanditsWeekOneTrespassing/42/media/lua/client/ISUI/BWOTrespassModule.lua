@@ -67,4 +67,5 @@ local function updateTrespassMoodle(player)
     end
 end
 
+bwoLog("Start mod initialization")
 Events.OnPlayerUpdate.Add(updateTrespassMoodle)
