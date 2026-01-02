@@ -1,0 +1,14 @@
+name=Bandits Week One
+poster=poster.png
+id=BanditsWeekOne
+description=<H1><GREEN>WEEK ONE
+description=<BR>
+description=Immerses you in the first week before the apocalypse. 
+description=<BR>
+description=<RED>This mod can only be player with B42 version of the game
+author=Slayer
+require=this,mod,is,b42,only
+incompatible=BanditsDayOne
+pack=bwo
+tiledef=bwo 2282
+author=Slayer

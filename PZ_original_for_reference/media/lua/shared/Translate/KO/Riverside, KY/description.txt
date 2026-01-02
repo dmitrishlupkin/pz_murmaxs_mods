@@ -1,0 +1,11 @@
+<SIZE:medium> 리버사이드 
+ <LINE> <LINE> <SIZE:medium> 오하이오 강둑을 단단히 안고있는 다채로운 마을 : 
+ <LINE> <LINE> <SIZE:medium> 리버사이드 탐험은 다채롭고 다양한 경험입니다!
+ <LINE> <LINE> <SIZE:medium> 서쪽에는 마을의 오래된 지역을 볼 수 있으며, 
+ <LINE> <LINE> <SIZE:medium> 동쪽에는 부유한 주민들이 일하고 쉬고, 노는 곳이 될 겁니다.
+ <LINE> <LINE>  
+ <LINE> <LINE> <SIZE:medium> 근데, 만약 여러분이 우리와 함께 있으려 고려한다면, 
+ <LINE> <LINE> <SIZE:medium> 근처 녹스 하이츠 컨트리 클럽의 편안함과 
+ <LINE> <LINE> <SIZE:medium> 휴식의 극치를 확인해보는 건 어떤가요? :
+ <LINE> <LINE> <SIZE:medium> 회원들은 18홀 골프 코스와 테니스 코트, 수영장, 스파를 이용할 수 있습니다.
+ <LINE> <LINE> <SIZE:medium> 오늘 가입하러 오세요!

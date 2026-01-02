@@ -1,0 +1,109 @@
+require "TimedActions/ISBaseTimedAction"
+
+ISItemSlotRemoveAction = ISBaseTimedAction:derive("ISItemSlotRemoveAction");
+
+function ISItemSlotRemoveAction:isValid()
+	return true;
+end
+
+function ISItemSlotRemoveAction:update()
+	--self.item:setJobDelta(self:getJobDelta());
+	self.character:setMetabolicTarget(Metabolics.LightWork);
+
+	self.character:faceThisObject(self.entity)
+end
+
+function ISItemSlotRemoveAction:start()
+	if self.resource:isEmpty() then
+		self:stop();
+		return;
+	end
+    if self.itemSlot then
+        self.itemSlot.actionRemove = self;
+    end
+    self.item = self.targetItem or self.resource:peekItem();
+    self.maxTime = 30+(self.item:getWeight()*3);
+	self:setActionAnim(self.actionAnim);
+	for key,value in pairs(self.actionAnimVariables) do
+		self:setAnimVariable(key, value);
+	end
+	--self:setActionAnim(CharacterActionAnims.Craft);
+	self:setOverrideHandModels(nil, nil);
+	if self.item:getStaticModel() then
+		self:setOverrideHandModels(nil, self.item:getStaticModel())
+	end
+    local craftBenchSounds = self.entity:getComponent(ComponentType.CraftBenchSounds)
+    if craftBenchSounds ~= nil then
+        local soundName = craftBenchSounds:getSoundName("RemoveInput", nil)
+        if soundName ~= nil and soundName ~= "" then
+            self.sound = self.character:playSound(soundName)
+        end
+    end
+end
+
+function ISItemSlotRemoveAction:stop()
+    ISBaseTimedAction.stop(self);
+    self:stopSound()
+    if self.item ~= nil then
+        self.item:setJobDelta(0.0);
+	end
+    if self.itemSlot then
+        self.itemSlot.actionRemove = nil;
+    end
+end
+
+function ISItemSlotRemoveAction:perform()
+    self:stopSound()
+    if self.item then
+		ISInventoryPage.dirtyUI()
+    end
+    if self.itemSlot then
+        self.itemSlot.actionRemove = nil;
+    end
+	ISBaseTimedAction.perform(self);
+end
+
+function ISItemSlotRemoveAction:complete()
+	local removedItem = nil;
+	if self.targetItem then
+		removedItem = self.resource:removeItem(self.targetItem);
+	else
+		removedItem = self.resource:pollItem();
+	end
+
+	if removedItem then
+		self.character:getInventory():AddItem(removedItem);
+		sendAddItemToContainer(self.character:getInventory(), removedItem);
+	end
+
+	return true
+end
+
+function ISItemSlotRemoveAction:getDuration()
+	return 30; --todo base on weight?
+end
+
+function ISItemSlotRemoveAction:stopSound()
+	if self.sound and self.character:getEmitter():isPlaying(self.sound) then
+		self.character:stopOrTriggerSound(self.sound)
+	end
+end
+
+function ISItemSlotRemoveAction:new(character, entity, itemSlot, item)
+	local o = ISBaseTimedAction.new(self, character)
+	o.entity = entity
+	o.resource = itemSlot and itemSlot.resource;
+    o.itemSlot = nil;
+	o.targetItem = item;
+	o.maxTime = o:getDuration()
+
+	o.actionAnimVariables = {}
+	if itemSlot and itemSlot.actionAnim then
+		o.actionAnim = itemSlot.actionAnim;
+	else
+		o.actionAnim = "Loot";
+		o.actionAnimVariables["LootPosition"] = "";
+	end
+	
+	return o
+end

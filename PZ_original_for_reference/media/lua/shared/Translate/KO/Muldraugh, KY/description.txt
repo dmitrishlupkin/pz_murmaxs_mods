@@ -1,0 +1,13 @@
+<SIZE:medium> 멀드로
+ <LINE> <LINE> <SIZE:medium> 멀드로는 켄터키 주의 중심지인 '녹스 컨트리'의 한 작은 마을입니다.
+ <LINE> <LINE> <SIZE:medium> 멀드로는 군사 도시로서 성장하였지만, 
+ <LINE> <LINE> <SIZE:medium> 지금은 모든 계층의 사람들이 함께하는 것을 환영하고 있습니다.
+ <LINE> <LINE> <SIZE:medium> 가까운 대도시에서 통근하는 사람들과 군인 가족은 물론
+ <LINE> <LINE> <SIZE:medium> 입에 풀칠만 하는 사람들까지 다양하게 거주하는 지역입니다.
+ <LINE> <LINE>  
+ <LINE> <LINE> <SIZE:medium> 이곳은 작은 마을이지만, 선량한 사람들이 살고있습니다.
+ <LINE> <LINE> <SIZE:medium> 말할 것도 없이 켄터키 주의 일부인 스피포 인형, 치킨, 비스켓 가게들이 있습니다!
+ <LINE> <LINE> <SIZE:medium> 확실히, 마을에서는 별다른 일이 일어나지 않지만
+ <LINE> <LINE> <SIZE:medium> 멀드로에서의 생활이 따분하다는 이야기는 아닙니다...
+ 
+ 

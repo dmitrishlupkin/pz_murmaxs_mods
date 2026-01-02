@@ -1,0 +1,11 @@
+name=Bandits Week One Addon: Item Tags
+poster=poster.png
+id=BanditsWeekOneAddonItemTags
+description=<H1><GREEN>B42.13 ONLY
+description=<BR>
+description=Shows tags for items in containers, that are considered property (#) and you will be prosecuted for taking them and for items, that are available to be bought: $ symbol with price tag, green if you have enough money to buy one item and red if you will steal it instead.
+description=<BR>
+author=Murmax
+require=\BanditsWeekOne
+pack=bwo
+tiledef=bwo 2303

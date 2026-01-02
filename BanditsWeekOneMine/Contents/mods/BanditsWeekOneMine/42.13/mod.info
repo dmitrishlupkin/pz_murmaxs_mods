@@ -1,0 +1,10 @@
+name=Bandits Week One Mine
+poster=poster.png
+id=BanditsWeekOneMine
+description=TESTING!
+author=Slayer+Murmax
+require=\Bandits2
+incompatible=\BanditsDayOne,\BetterFPS_B42,\BetterCarPhysics,\TrueCrawlStealth,\TrueCrawl,\BanditsAddOptionsWeek1
+pack=bwo
+tiledef=bwo 2303
+

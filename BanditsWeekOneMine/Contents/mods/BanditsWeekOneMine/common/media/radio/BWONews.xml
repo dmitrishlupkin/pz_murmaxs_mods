@@ -1,0 +1,835 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RadioData>
+  <RootInfo>
+    <SourceFile>Radio</SourceFile>
+    <FileGUID>023a6b79-7269-4b41-a95a-5beacfc4a037</FileGUID>
+    <Version>10</Version>
+  </RootInfo>
+  <Voices>
+    <VoiceEntry ID="8f37a05c-764d-46bf-8da9-36818caf5bfc"> <!-- Bright pink -->
+      <FinalColor r="255" g="0" b="255" />
+    </VoiceEntry>
+    <VoiceEntry ID="20f23a5b-acd9-4d5c-aefc-30a359e78b88"> <!-- Smooth light purple -->
+      <FinalColor r="128" g="128" b="255" />
+    </VoiceEntry>
+    <VoiceEntry ID="395fbf46-cc31-4e13-91e7-a97629b858e2"> <!-- Medium blue -->
+      <FinalColor r="40" g="180" b="255" />
+    </VoiceEntry>
+    <VoiceEntry ID="ae1b264c-5f6f-4cbc-a916-c34936c38443"> <!-- Dark blue -->
+      <FinalColor r="0" g="122" b="222" />
+    </VoiceEntry>
+    <VoiceEntry ID="7a18ab7a-3ac0-4a9a-8ede-89604aaff2b7"> <!-- Bright azure -->
+      <FinalColor r="42" g="112" b="242" />
+    </VoiceEntry>
+    <VoiceEntry ID="822dbc45-ac12-4ed8-8ef6-5d9850c0145c"> <!-- Cool ranger green -->
+      <FinalColor r="0" g="176" b="80" />
+    </VoiceEntry>
+    <VoiceEntry ID="7b83fc65-662d-4c0d-bfa6-919a3fbb98ee"> <!-- Bright yellow -->
+      <FinalColor r="255" g="192" b="0" />
+    </VoiceEntry>
+    <VoiceEntry ID="aa5dcda4-3c47-4c70-9a26-8562a7370c8e"> <!-- Absolute yellow -->
+      <FinalColor r="255" g="255" b="0" />
+    </VoiceEntry>
+    <VoiceEntry ID="f2a54e91-f9e5-4197-9db4-7640415dcf87"> <!-- Mellow yellow -->
+      <FinalColor r="255" g="221" b="117" />
+    </VoiceEntry>
+    <VoiceEntry ID="2ab62c1e-3be9-4c79-81ea-005acc3247b1"> <!-- Medium yellow -->
+      <FinalColor r="255" g="204" b="0" />
+    </VoiceEntry>
+    <VoiceEntry ID="fc73c160-ad22-4791-84e6-08344ce5f694"> <!-- Bright orange -->
+      <FinalColor r="255" g="162" b="0" />
+    </VoiceEntry>
+    <VoiceEntry ID="7c835953-6b00-4fe4-84c9-a383d436944b"> <!-- Bright red -->
+      <FinalColor r="255" g="0" b="0" />
+    </VoiceEntry>
+    <VoiceEntry ID="b03fd92d-c4dc-4417-a8b2-644930d13487"> <!-- Medium red -->
+      <FinalColor r="224" g="0" b="0" />
+    </VoiceEntry>
+    <VoiceEntry ID="11f89a57-9c30-4f93-a2ec-6ef742e20977"> <!-- Bright gray - actions, sounds -->
+      <FinalColor r="196" g="196" b="196" />
+    </VoiceEntry>
+    <VoiceEntry ID="c2374271-cee5-40bd-8b60-8efe99609d5b"> <!-- Medium gray -->
+      <FinalColor r="168" g="168" b="168" />
+    </VoiceEntry>
+    <VoiceEntry ID="0b7a50eb-9871-46bf-9abc-32548d439802"> <!-- Dark gray -->
+      <FinalColor r="152" g="152" b="152" />
+    </VoiceEntry>
+    <VoiceEntry ID="7d95561f-d744-4d1e-b7ad-2465e5e0c076"> <!-- WLNY Channel 13 Music blue -->
+      <FinalColor r="42" g="112" b="242" />
+    </VoiceEntry>
+    <VoiceEntry ID="6e2c5c33-8b12-432b-a0d5-831727b0825b"> <!-- WLNY Channel 13 Announcer blue -->
+      <FinalColor r="72" g="152" b="255" />
+    </VoiceEntry>
+    <VoiceEntry ID="a7d1f21e-fb09-4d56-a895-e4dcae0da46a"> <!-- Rhonda Rhodes Theme purple -->
+      <FinalColor r="160" g="119" b="237" />
+    </VoiceEntry>
+    <VoiceEntry ID="c2cf970a-3d66-4fac-8428-ec64e0a0d41c"> <!-- Rhonda Rhodes green -->
+      <FinalColor r="151" g="237" b="104" />
+    </VoiceEntry>
+    <VoiceEntry ID="21f4eec0-c654-46da-b2e8-b469005b3f8d"> <!-- CEA Announcer Hal orange -->
+      <FinalColor r="255" g="174" b="0" />
+    </VoiceEntry>
+    <VoiceEntry ID="2a3fe4b9-8790-4c40-8988-209e6d7aad29"> <!-- CEA Host Gene clear-turquoise -->
+      <FinalColor r="0" g="255" b="229" />
+    </VoiceEntry>
+    <VoiceEntry ID="48556ab7-38e5-461b-ac1d-cafcd9911f74"> <!-- CEA Guest: Patty pink -->
+      <FinalColor r="255" g="84" b="124" />
+    </VoiceEntry>
+    <VoiceEntry ID="fdb8bb79-1a2b-4445-9b0d-81265d132bb6"> <!-- CEA Guest: Alan olive -->
+      <FinalColor r="182" g="219" b="103" />
+    </VoiceEntry>
+  </Voices>
+  <Adverts>
+    <ScriptEntry ID="06336bb1-84ca-42e4-88a0-648c779e3c2f" name="Tv" startdelay="0" timestampmode="Static" loopmin="1" loopmax="1"> <!-- July 9 - 11 Standard -->
+      <ExitOptions />
+      <BroadcastEntry ID="2630a9b6-1c95-4c65-b5b2-250f7f4e3ec0" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="b0ee632b-789e-4e4f-a2b0-b09374856a62" r="255" g="192" b="0">Where in the Pizza Whirled are we today?</LineEntry>
+        <LineEntry ID="e026c08a-32a1-4548-8cd0-b4a22830bae8" r="0" g="176" b="80">Hello there old boy! Pip pip!</LineEntry>
+        <LineEntry ID="d4927b4f-393c-4461-8aae-81308f2de8c1" r="255" g="192" b="0">England! With the Olde English Renaissance Pizza!</LineEntry>
+        <LineEntry ID="5063ee85-cb64-4eeb-877b-5063069ca6ad" r="255" g="192" b="0">Cheddar cheese, black pudding, egg and bacon...</LineEntry>
+        <LineEntry ID="79f9a4c1-3828-4076-b099-20edfae888f3" r="255" g="192" b="0" codes="HUN+0.2">... lovingly layered on a thick Pizza Whirled Crust!</LineEntry>
+        <LineEntry ID="d33b5e45-70ea-41e4-8701-3c1127d10128" r="255" g="192" b="0" codes="STS-1">What do you make of that, pal?</LineEntry>
+        <LineEntry ID="f50686a6-f502-484b-9631-d92736853438" r="0" g="176" b="80" codes="BOR-1">Jolly fantastic!</LineEntry>
+        <LineEntry ID="c546dce2-5e65-49a0-a1f0-63f9bbd4998d" r="255" g="192" b="0">I'll say!</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="9fd4b9b7-0f0c-41e4-9c0c-f3afd39dff0c" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="9ebb8ef9-d841-475b-968f-51a1dfdab27f" r="128" g="128" b="255">Tough day? </LineEntry>
+        <LineEntry ID="9568e6d6-1596-4cc0-9ab9-a1227ed38d37" r="128" g="128" b="255">Boss giving you grief?</LineEntry>
+        <LineEntry ID="b971466d-9ba3-48ce-8e7b-213054431257" r="128" g="128" b="255">Kids driving you crazy?</LineEntry>
+        <LineEntry ID="00de17d5-e2bf-466f-ab62-21a932942789" r="128" g="128" b="255">Finding yourself ambushed by folk you don't know?</LineEntry>
+        <LineEntry ID="88017a9c-b69f-404a-9f1f-8983b88a6257" r="128" g="128" b="255" codes="BOR-1">We have an answer!</LineEntry>
+        <LineEntry ID="33d845cc-9440-4a98-aa8b-26d44c441835" r="128" g="128" b="255" codes="HUN+0.2">The new Churn R' Us Deluxe Chocolate Cone!</LineEntry>
+        <LineEntry ID="2248c033-d107-4cbf-894b-db2392e64577" r="128" g="128" b="255">Come visit today!</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="992aa12a-9004-43f8-9e23-5a66068a6179" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="9c0e616f-7795-4505-a20e-2f1b78727255" r="128" g="128" b="255">The Caramel Flan Latte!</LineEntry>
+        <LineEntry ID="c4c2b01d-48a1-44f6-a31e-feac6e8460b4" r="128" g="128" b="255">Brand new at Seahorse Coffee!</LineEntry>
+        <LineEntry ID="6b56c351-c23c-44ea-8a36-38cb0f25b0f3" r="128" g="128" b="255">Refreshing! Filling!</LineEntry>
+        <LineEntry ID="43c39d76-044a-4703-ac56-5201919b7850" r="128" g="128" b="255" codes="FEA-1">The pick-me-up you're craving!</LineEntry>
+        <LineEntry ID="72a6f9f9-bd94-492a-bf8d-e0caacb73610" r="128" g="128" b="255">There's no better way to start the day!</LineEntry>
+        <LineEntry ID="976670d7-c82c-4844-bb70-d8971efd13e7" r="0" g="176" b="80" codes="STS-1">"Welcome to Seahorse Coffee! What can I get you today?"</LineEntry>
+        <LineEntry ID="127147cd-f820-4060-8556-3a0f16e81c98" r="128" g="128" b="255">"One Caramel Flan Latte!"</LineEntry>
+        <LineEntry ID="33e32af2-1f24-4138-8e3d-51fb0dbe1034" r="0" g="176" b="80" codes="BOR-1">"Coming right up!"</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="626375a3-2d3d-4335-b274-25a4cd28ebc3" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="04ed02bc-38b6-4384-8de8-fc5b20003ed9" r="128" g="128" b="255">[img=music] Never let the music stop! [img=music]</LineEntry>
+        <LineEntry ID="684663bd-96d5-421c-ac90-e21e71d82c22" r="128" g="128" b="255" codes="UHP-1">[img=music] Grab, grab, grab a can of... POP! [img=music]</LineEntry>
+        <LineEntry ID="e24f218b-bf2f-4ccd-b1e4-3dc8fc1627ff" r="255" g="192" b="0">Have you tried new Orange-Lite Pop?</LineEntry>
+        <LineEntry ID="ba52b3b4-5f8c-4e4d-a904-f7ec4dbcc576" r="255" g="192" b="0">The ice-cold, all-American taste of pure refreshment!</LineEntry>
+        <LineEntry ID="928f427a-9673-4988-9816-40604bb90522" r="255" g="192" b="0">Quench your thirst! </LineEntry>
+        <LineEntry ID="65f6abe8-782b-4e4e-a032-35028e951ab9" r="255" g="192" b="0" codes="BOR-1">Energize your being!</LineEntry>
+        <LineEntry ID="1f8dcf8d-87a1-41f1-a88c-bb2214739eb1" r="128" g="128" b="255" codes="BOR-1">[img=music] Never let the music stop! [img=music]</LineEntry>
+        <LineEntry ID="32ab464d-4658-42d4-9573-7fa34371cabe" r="128" g="128" b="255" codes="STS-1">[img=music] Grab, grab, grab a can of... POP! [img=music]</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="8dd0884d-707d-471b-8685-3d8e88c4e1f3" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="10b37535-6dc8-43bf-be6b-ec6bc5b92bbc" r="255" g="192" b="0" codes="FEA-1">Hi my name's Frank Greene, and I run Greene's Grocery.</LineEntry>
+        <LineEntry ID="142e4ada-1fae-4abe-974f-885dc6aa8964" r="255" g="192" b="0">These days, Greene's is kind of a big deal.</LineEntry>
+        <LineEntry ID="8b165e71-7aa0-418a-98bf-68be55c55c69" r="255" g="192" b="0">But we haven't forgotten where we came from.</LineEntry>
+        <LineEntry ID="70bccb45-b779-47c8-a181-ba8a4f90deb9" r="255" g="192" b="0">When my father set up shop all that time ago?</LineEntry>
+        <LineEntry ID="0e5f772f-3e66-4de3-bc8d-4846f4a15d72" r="255" g="192" b="0">He believed in family, in quality and in America.</LineEntry>
+        <LineEntry ID="b3aed9a0-651d-46cc-9059-755291db682c" r="255" g="192" b="0">I'm the same. How about you guys?</LineEntry>
+        <LineEntry ID="6579e7b5-cc89-4dd3-b8a6-721187c316e8" r="255" g="0" b="0" codes="UHP-1">"We're all the same!"</LineEntry>
+        <LineEntry ID="63bf9c40-bda3-4247-b308-932f949abf79" r="255" g="192" b="0" codes="STS-1">Greene's Grocery: You're part of the family.</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="30efa603-f5e5-4349-8900-cc61bd7f7980" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="8cebc40e-3c73-4641-b171-d84856c530f5" r="255" g="192" b="0">It's an uncertain world.</LineEntry>
+        <LineEntry ID="8a53eb2e-5940-4eef-a35e-a20011244b9e" r="255" g="192" b="0">You need people to rely on.</LineEntry>
+        <LineEntry ID="93ab9c85-17a9-4094-adce-4e09d0584a7e" r="255" g="192" b="0">People to trust.</LineEntry>
+        <LineEntry ID="f194e606-ffe3-4b8d-b42d-ef43eb15fa5a" r="255" g="192" b="0">At Fossoil we understand that.</LineEntry>
+        <LineEntry ID="e22a11be-41c4-439f-bac1-52dc3cce813c" r="255" g="192" b="0">We've cleaned up the Gulf of Alaska.</LineEntry>
+        <LineEntry ID="ab5fb82a-3422-4146-98e2-6b7c111fc8db" r="255" g="192" b="0" codes="UHP-1">We've cleaned up our act.</LineEntry>
+        <LineEntry ID="683b0898-4615-43d4-a6b1-44de28a6f366" r="255" g="192" b="0">And our gas prices are as low as they can go.</LineEntry>
+        <LineEntry ID="78af54c5-9409-4788-ae76-52f152afc516" r="255" g="192" b="0">Let's move on together.</LineEntry>
+        <LineEntry ID="450a1caa-8afa-4ec2-9d66-14734995bf49" r="255" g="192" b="0" codes="STS-1">Let's see others do the same.</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="bbe7a62d-5e61-40f3-9c0e-220c0b8f4782" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="44bcf1a1-a0d5-4697-b799-8df576421cd1" r="128" g="128" b="255" codes="STS-1">Deep in the Magical Woodland.</LineEntry>
+        <LineEntry ID="b80ccb80-ccd3-48d8-aa8f-d03c94c9179b" r="128" g="128" b="255">Further than anyone has gone before.</LineEntry>
+        <LineEntry ID="6e703116-4991-46aa-8cab-7021859ebeb0" r="128" g="128" b="255">There was a Raccoon.</LineEntry>
+        <LineEntry ID="a8c1deda-6ba3-4917-8e00-e620b9aa9647" r="128" g="128" b="255">A Raccoon with a mission.</LineEntry>
+        <LineEntry ID="03ee593a-41f9-465b-92c4-26c7ec4a061f" r="128" g="128" b="255">A Raccoon who would change everything.</LineEntry>
+        <LineEntry ID="128680a6-135b-4f8f-9c08-cc8d4e714b1c" r="128" g="128" b="255" codes="UHP-1">He would show the world how to laugh.</LineEntry>
+        <LineEntry ID="21c71f80-d164-47bb-870e-d70d4710eff9" r="128" g="128" b="255" codes="STS-1">He would show the world how to love.</LineEntry>
+        <LineEntry ID="b6837ef9-87d8-42ac-905a-6746be4d299f" r="128" g="128" b="255" codes="FEA-1">The Age of Spiffo had begun.</LineEntry>
+        <LineEntry ID="dc290c19-ec66-4820-902f-eca8696e9a01" r="128" g="128" b="255" codes="BOR-1">PAWS: The Movie. Rated G.</LineEntry>
+        <LineEntry ID="63e34e92-148f-47a3-a7f2-5344199aade4" r="128" g="128" b="255">Out now in theaters!</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="72da949a-c198-4b08-a2ac-148917019063" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="74353cef-98ed-4aac-b450-eac04be503d8" r="255" g="192" b="0">That is BEAUTIFUL!</LineEntry>
+        <LineEntry ID="07a033a7-76ff-4aa6-acf9-17c4e442b5aa" r="128" g="128" b="255">This coat? It's from Fashionabelle.</LineEntry>
+        <LineEntry ID="e86eb129-9283-4a29-80cd-ab8489d95dd1" r="128" g="128" b="255">Clothes of distinction, at fine prices.</LineEntry>
+        <LineEntry ID="18bd8fb5-554d-417f-ac65-9a81cdfd11ef" r="255" g="192" b="0">Well I know where I'm going!</LineEntry>
+        <LineEntry ID="1ed02755-81e0-4bb4-8c3d-fa88391c086b" r="128" g="128" b="255">Right now?</LineEntry>
+        <LineEntry ID="07b5c28d-1288-4c4a-8c3a-a079ca902347" r="255" g="192" b="0" codes="STS-1">You said it! Right now!</LineEntry>
+        <LineEntry ID="303606ff-d1d3-42f9-91c1-60a31c840835" r="128" g="128" b="255" codes="FEA-1">Fashionabelle!</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="1c755859-73e9-486e-9f70-d0ba0d739db8" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="506d117a-4c3b-4e16-81c9-551232e77666" r="0" g="176" b="80">In today's busy cut and thrust world...</LineEntry>
+        <LineEntry ID="ec7f8625-825b-4453-a2be-787fcb553fc9" r="0" g="176" b="80">...accidents happen.</LineEntry>
+        <LineEntry ID="75815e07-09e7-48f9-89a4-fcf82e12b549" r="0" g="176" b="80">Right as rain today, sick tomorrow....</LineEntry>
+        <LineEntry ID="45831fc2-f69e-40bd-bf79-a33e3098ba23" r="0" g="176" b="80">... but anxious always.</LineEntry>
+        <LineEntry ID="de92d49e-0213-494e-89cf-b9f998db3302" r="0" g="176" b="80" codes="STS-1">You need a safety net. </LineEntry>
+        <LineEntry ID="23cd8d14-0392-40d5-83e5-80a727565c51" r="0" g="176" b="80">You need reassurance.</LineEntry>
+        <LineEntry ID="460e7fad-8175-4501-9050-bfa919721fee" r="0" g="176" b="80" codes="STS-1">Today, my friend, you need ValuInsurance.</LineEntry>
+        <LineEntry ID="968ca2e3-f96d-4c42-a5a2-d35572a5d351" r="0" g="176" b="80">Medical care to look after all of your tomorrows.</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="6727dd62-7a28-4d41-bd39-ffd1aa27a54f" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="7583e5a4-31cc-4155-aabb-3f4f913e5745" r="128" g="128" b="255">[img=music] I love Wok and Rolls! [img=music]</LineEntry>
+        <LineEntry ID="502fdc28-b9e3-46c7-8be8-b0f17fff3537" r="128" g="128" b="255">[img=music] It's the new style of Chinese Restaurant, baby! [img=music]</LineEntry>
+        <LineEntry ID="9b89ff36-a7a8-42be-beb2-f60590e2a4fa" r="128" g="128" b="255" codes="STS-1">[img=music] I love Wok and Rolls! [img=music]</LineEntry>
+        <LineEntry ID="f69ede64-4083-4cb7-b82e-ca8f29cfac93" r="128" g="128" b="255">[img=music] So why doncha come and chow down with me! [img=music]</LineEntry>
+        <LineEntry ID="efe9afbe-e3f6-4c28-a548-7964536bedf4" r="0" g="176" b="80" codes="HUN+0.2">Our award winning breakfast menu is BACK through public demand!</LineEntry>
+        <LineEntry ID="671135b0-8cb2-4d1e-bf18-be82f7b08e3d" r="0" g="176" b="80" codes="BOR-1">Come visit 'I *heart* Wok and Rolls' today!</LineEntry>
+        <LineEntry ID="19baec04-2f87-4e26-baa8-10524a01e2d2" r="128" g="128" b="255" codes="UHP-1">[img=music] I love Wok and Rolls! [img=music]</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="d7000646-97bb-4513-9abc-4f5accd6e4b8" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="92a9cdd6-b50e-400f-906b-9579fdd18294" r="0" g="176" b="80">Earth. Air. Wind. Fire.</LineEntry>
+        <LineEntry ID="fbe7163e-b9a7-469e-9c60-4629ef9d115b" r="0" g="176" b="80">But there is... another.</LineEntry>
+        <LineEntry ID="056eb78b-f554-4e63-be9f-df999d3f3792" r="0" g="176" b="80" codes="BOR-1">There is a Forgotten Element.</LineEntry>
+        <LineEntry ID="57de3430-ffc2-40f1-ae15-00643d98d4b4" r="152" g="152" b="152" codes="BOR-1">&lt;drums&gt; &lt;kaBOOM&gt;</LineEntry>
+        <LineEntry ID="835ecc09-513c-414c-a3bc-9c0d9f10c140" r="128" g="128" b="255" codes="UHP-1">Can't stand a little... magic, Buck?</LineEntry>
+        <LineEntry ID="f146413b-e69d-45c6-99e8-fed7c056f458" r="152" g="152" b="152" codes="STS+1">&lt;sprrring!&gt;</LineEntry>
+        <LineEntry ID="11850386-6ac1-451c-896f-c6bcf382c86e" r="42" g="112" b="242">I can't believe these things come in that size!</LineEntry>
+        <LineEntry ID="27c9a086-afd7-4b1a-b4c6-f2e1a0bfaea9" r="152" g="152" b="152">&lt;crash!&gt; &lt;kaBANG&gt;</LineEntry>
+        <LineEntry ID="eb21cefd-76a0-41de-b2dd-6a45822fb21c" r="128" g="128" b="255">The elements are against us today, huh?</LineEntry>
+        <LineEntry ID="2d2d1b9b-11c8-4ff4-a2c9-6a0161310e25" r="42" g="112" b="242" codes="BOR-1">Not for long. Let's kick some butt!</LineEntry>
+        <LineEntry ID="ad2512d5-908a-41b0-8e76-8a45ff9d121c" r="152" g="152" b="152" codes="STS+1,UHP-1">&lt;tadaaaa!&gt;</LineEntry>
+        <LineEntry ID="04de67eb-b8a5-4ca2-ab54-7d0ec8a85074" r="255" g="0" b="0" codes="BOR-1">The Forgotten Element! Rated PG-13!</LineEntry>
+        <LineEntry ID="39e5cb87-0970-4daf-b731-90f96fa02342" r="255" g="0" b="0">Out now in theaters!</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="9ecd1200-8ead-4e2b-bb7a-9efc422ff77a" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="d5dfe630-bb8c-48b2-a706-7e2ffa6aa834" r="128" g="128" b="255">I am Dr. Oids.</LineEntry>
+        <LineEntry ID="5eb07580-c00e-4ae9-ba00-36c84543e946" r="128" g="128" b="255">Welcome to my... robot laboratory.</LineEntry>
+        <LineEntry ID="2e1457fb-9caa-4368-a7f9-dbce1b9a271a" r="255" g="0" b="0">In a future no-one thought would come.</LineEntry>
+        <LineEntry ID="aeadee27-07a3-463e-8187-02904d7867ef" r="255" g="0" b="0">Live robots no-one thought could love.</LineEntry>
+        <LineEntry ID="64f0df49-9a99-423e-8f65-50cdbff37247" r="255" g="0" b="0">Or... dance.</LineEntry>
+        <LineEntry ID="38ffbeba-a4ef-48db-83a4-20cd1c72ed22" r="0" g="176" b="80" codes="UHP-1">[img=music] Do the robot! Do the robot! [img=music] </LineEntry>
+        <LineEntry ID="7c5dff7e-cf05-4071-a86f-229e0fee0764" r="0" g="176" b="80" codes="FEA-1">[img=music] Do the robot dance [img=music]</LineEntry>
+        <LineEntry ID="0a3b6952-2b5d-4269-8bc2-517758f5e437" r="128" g="128" b="255">Stop this frivolity! </LineEntry>
+        <LineEntry ID="6ad58506-a49c-441e-a7b2-f63fa8ff43e6" r="255" g="0" b="0" codes="FEA-1">Dr. Oids will see you now!</LineEntry>
+        <LineEntry ID="75fa01e1-5c17-493a-b539-1d009ade45f2" r="42" g="112" b="242" codes="BOR-1">Dr. Oids, Rated Universal.</LineEntry>
+        <LineEntry ID="76fc284d-42dd-409f-8f3e-b5ec27e58685" r="42" g="112" b="242">Out now in theaters!</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="aeb5fdd9-c5cf-4816-9eea-b8f11daec903" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="f5969765-ff22-4bff-9d35-05c5a5bb8098" r="128" g="128" b="255">It makes a difference to pick up your medication...</LineEntry>
+        <LineEntry ID="72516138-6dae-41b2-ba27-8003b91c2313" r="128" g="128" b="255">... and see a smile.</LineEntry>
+        <LineEntry ID="a80f063f-935b-4d1e-89e7-ec1f6ecff06d" r="128" g="128" b="255" codes="UHP-1">Your good health means so much.</LineEntry>
+        <LineEntry ID="2da1dcf0-e33e-458f-89b4-e765be2f4a09" r="128" g="128" b="255" codes="FEA-1">We're here to help.</LineEntry>
+        <LineEntry ID="e9b81ec2-c7cd-4e8e-9012-e47e5ff8906c" r="128" g="128" b="255">We're here for your support.</LineEntry>
+        <LineEntry ID="20148f77-4a55-4358-abab-b4eedf032963" r="128" g="128" b="255">Pharmahug: your health...</LineEntry>
+        <LineEntry ID="fc434162-3415-4d37-aadc-86817edd12e7" r="128" g="128" b="255" codes="STS-1">... your store.</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="61be5b65-e9f2-491f-8514-f838f0468f7a" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="ce2f8a16-5c34-45ab-a0fc-42a45bae457d" r="0" g="176" b="80">I'm Doctor Cox, and I'm here to talk to YOU about bladder control.</LineEntry>
+        <LineEntry ID="801d25ef-6679-4523-8dc4-b6177c93b2cc" r="0" g="176" b="80">Now I've been helping families for forty long years, but I have NEVER...</LineEntry>
+        <LineEntry ID="0adb338b-5983-4d9b-b177-8e3f176bb4f8" r="0" g="176" b="80">... come across a treatment like Incontileve.</LineEntry>
+        <LineEntry ID="699cae6b-2d3f-406d-93e6-e698fa733128" r="0" g="176" b="80" codes="BOR-1">Everywhere I go, good friends say 'Thank you, Doctor Cox'.</LineEntry>
+        <LineEntry ID="3bbc6875-ac2d-44bf-b44e-6458d0d2ac99" r="0" g="176" b="80">Thanks for asking family doctors to recommend: Incontileve.</LineEntry>
+        <LineEntry ID="5ffe8b0d-c78a-42fc-9893-2f3d8591c3c5" r="255" g="0" b="0">Product may cause swelling of the urinary tract....</LineEntry>
+        <LineEntry ID="ae59e892-8cb9-49f3-b882-fb6b0e24861b" r="255" g="0" b="0" codes="SIC+1">...headaches, nausea and sudden irritation.</LineEntry>
+        <LineEntry ID="9321a6af-16e3-426a-96a9-2a0d5c3274a0" r="0" g="176" b="80">Ask your doctor today!</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="0257a3f2-c642-4cdf-b58f-396bb408a872" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="ae154554-69fc-4e7d-85a2-9f4a9379d7d8" r="128" g="128" b="255" codes="FEA-1">Now I'd like you to meet my good friend, Tooks Bear.</LineEntry>
+        <LineEntry ID="59e55b17-1c44-47e3-85b5-dedd97cc1546" r="128" g="128" b="255" codes="UHP-1">Tooks Bear is the friendliest, smiliest, bounciest bear in town.</LineEntry>
+        <LineEntry ID="bcdae841-72d3-45f6-84e3-0734c4308f53" r="128" g="128" b="255">You know why you'll like him the most?</LineEntry>
+        <LineEntry ID="ed0c0f57-0c3f-42dd-adf9-32e5c4e6cf31" r="128" g="128" b="255">He's only $49.99 plus postage and packing.</LineEntry>
+        <LineEntry ID="cda93c5a-d471-4b05-b093-c05e228e9c34" r="128" g="128" b="255">All I have to do is press this little button on his paw and...</LineEntry>
+        <LineEntry ID="0b529010-9da0-472f-a28d-3503859b308e" r="255" g="0" b="0" codes="BOR-1">"I'm Tooks Bear! Let's go on an adventure!"</LineEntry>
+        <LineEntry ID="af296a0e-f561-4f4e-9fff-ae8a65900803" r="128" g="128" b="255">We sure will, Tooks! For $49.99 who'd resist?</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="a0c41ef2-4ad7-49a5-8ae9-61eb6a443625" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="a6503de3-c61e-4e13-9b4d-58448ed39dbb" r="255" g="192" b="0">I don't know about you, but when I golf with my buddies...</LineEntry>
+        <LineEntry ID="332a41ff-1a9b-4fb1-ae30-30f8139762eb" r="255" g="192" b="0">There's always this special moment.</LineEntry>
+        <LineEntry ID="3dacb4c2-e68e-4c5c-a28a-c918c8940eed" r="255" g="192" b="0">You get your clubs out the trunk, your friend does the same...</LineEntry>
+        <LineEntry ID="5a01afc1-f44c-46e7-840e-58334c6f8e84" r="255" g="192" b="0">And you compare... right?</LineEntry>
+        <LineEntry ID="4cdf77ef-06fe-4def-842b-5f502acbb605" r="255" g="192" b="0">Until I bought a set of Ivanov clubs, that was a mental battle I always lost.</LineEntry>
+        <LineEntry ID="c0fc17ca-3caa-479d-95df-2788d9f86bc2" r="255" g="192" b="0">To get the best, you've gotta look for the best.</LineEntry>
+        <LineEntry ID="57a4b78c-a2a4-4270-9c41-baca5e1bd0d0" r="255" g="192" b="0" codes="BOR-1">So it's your lucky day.</LineEntry>
+        <LineEntry ID="746e4073-b6a8-4373-9c1d-1d18d8f23dbf" r="255" g="192" b="0">Today I'm here to show you: the best.</LineEntry>
+        <LineEntry ID="58f5153f-a082-4da1-b279-019dcd9165d9" r="255" g="192" b="0">Let's find out why golfing the Ivanov way is... </LineEntry>
+        <LineEntry ID="66311a67-bf76-46a7-ab5b-9a5c4fb81dee" r="255" g="192" b="0" codes="UHP-1">...pitch perfect.</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="647be756-9b0b-4a5f-8517-8694a0cf7a1e" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="68b1fee8-5fd9-4166-a9ff-43331eae097d" r="128" g="128" b="255">I am a cow.</LineEntry>
+        <LineEntry ID="d4728e21-11bf-4100-9e0d-bede68c4cf9c" r="128" g="128" b="255" codes="STS-1">I am here to tell you something mooo-tiful.</LineEntry>
+        <LineEntry ID="d6fbe118-d041-4958-9501-8abf24255a52" r="128" g="128" b="255">Something... ice creamy.</LineEntry>
+        <LineEntry ID="a391af64-dbb9-4a0e-b46b-5f93b9ee10d8" r="128" g="128" b="255">Come to Churn R Us.</LineEntry>
+        <LineEntry ID="9ab797ee-1cca-4957-80f7-477c6beb0773" r="128" g="128" b="255" codes="SAN+1">Enjoy ice cream from our very own Daisy Dairy.</LineEntry>
+        <LineEntry ID="0f2ad995-891c-4b6d-813d-defe5d4772fc" r="128" g="128" b="255">Feel the most nutritious taste explosion known to man.</LineEntry>
+        <LineEntry ID="2a3e552a-4c36-493c-a896-6ca247132fd3" r="128" g="128" b="255" codes="STS-1">This. This is the message of the cows.</LineEntry>
+        <LineEntry ID="94dc1227-a766-43c3-b4aa-fdccb467bff3" r="255" g="192" b="0" codes="UHP-1">[img=music] Churn R Us! Arms above your head! [img=music]</LineEntry>
+        <LineEntry ID="5ab44286-8548-4abf-a1cf-3fa940c6586a" r="255" g="192" b="0">[img=music] Say: "YAAAAAY!" [img=music]</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="1c6954ae-36ee-4ed0-863d-cf507943d15c" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="309cf2f7-647f-416d-aec4-cbfc85a78547" r="0" g="176" b="80">Welcome to Pile o' Crepe! </LineEntry>
+        <LineEntry ID="6641751b-4eae-4705-83f8-28ae3f25e571" r="0" g="176" b="80">What can I get for you today?</LineEntry>
+        <LineEntry ID="788c9931-5d1b-48c3-aaf1-5cffd8c6ea07" r="255" g="0" b="0" codes="UHP-1">PANCAKES!</LineEntry>
+        <LineEntry ID="d5d071d4-d9a1-42f1-b4b4-d1f8845a630b" r="0" g="176" b="80">Pancakes, or waffles?</LineEntry>
+        <LineEntry ID="fb74f2c6-6d04-4f92-ac9e-cd098024b1cd" r="255" g="0" b="0">PAAANCAKES!</LineEntry>
+        <LineEntry ID="d05b4fd8-7f8b-460e-aca7-bee2e5c25496" r="0" g="176" b="80">What sort of pancake sir? We have over 20 on the menu!</LineEntry>
+        <LineEntry ID="138e1483-f0e4-4c92-b638-2f3654ed8e1d" r="255" g="0" b="0">PAAAAAANCAAAAKES!</LineEntry>
+        <LineEntry ID="e99a365a-3fc4-4ac8-b3f8-845f37ddd39c" r="0" g="176" b="80" codes="HUN+0.2">Coming right up!</LineEntry>
+        <LineEntry ID="37c822f3-da1e-417a-bc8f-a3d321e616a9" r="42" g="112" b="242" codes="BOR-1">[img=music] We're called Pile o' Crepe! [img=music]</LineEntry>
+        <LineEntry ID="a3043512-7926-433b-a48f-a50c2ff1153d" r="42" g="112" b="242">[img=music] Pile o' Crepe! Pile o' Crepe! [img=music]</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="7a81bdbd-e395-4374-9ec6-fce227569b90" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="232678f5-afae-48ae-bc50-4fd6365d46ea" r="0" g="176" b="80">In 1992 Governor Cal Fairweather made a promise.</LineEntry>
+        <LineEntry ID="3953a537-ac4a-4f1b-8149-7f249efcc3d6" r="0" g="176" b="80" codes="ANG+1">A promise he broke in two.</LineEntry>
+        <LineEntry ID="94f35b50-9a0a-4694-812f-69f14ff8ee2c" r="0" g="176" b="80">He said he'd invest.</LineEntry>
+        <LineEntry ID="49989462-59f1-4055-9729-cc49f3f2d278" r="0" g="176" b="80">He said he'd clean up.</LineEntry>
+        <LineEntry ID="0132d42e-11fd-46fc-9e99-f0e2f56d3ca1" r="0" g="176" b="80" codes="STS+1">He said the toxins discovered in our fields and forests would be eradicated.</LineEntry>
+        <LineEntry ID="fecea364-517e-4faa-a049-8c644d6d5ab5" r="0" g="176" b="80" codes="ANG+1">He failed.</LineEntry>
+        <LineEntry ID="1b857646-694c-4118-a609-18061f26f5ad" r="0" g="176" b="80">Vote Mahoney this Fall. Vote for Change.</LineEntry>
+        <LineEntry ID="845f8b39-5e62-4cb3-a735-8ebeb16ef64e" r="42" g="112" b="242">This has been an endorsed message by the Democrat party.</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="4e5ea817-c2dd-4cf0-8fda-72b8b6d3bf20" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="d36a71fa-7326-45b4-b612-89339a4cf107" r="255" g="192" b="0">I'm Cal Fairweather, and I am the voice of progress.</LineEntry>
+        <LineEntry ID="b49fd1c6-05de-4796-ab14-729a79766718" r="255" g="192" b="0">I hunt. I shoot. I fish.</LineEntry>
+        <LineEntry ID="fd96d057-a5ad-4524-b100-39b0e212e3c0" r="255" g="192" b="0">I see nature all around.</LineEntry>
+        <LineEntry ID="4b3510c4-0552-4264-9243-966b1dff21a1" r="255" g="192" b="0">And it's clean, it's clear, it's as God intended.</LineEntry>
+        <LineEntry ID="1862b563-9ecb-4b0f-8d05-e080839f6b33" r="255" g="192" b="0">We've spent our time testing the land around us.</LineEntry>
+        <LineEntry ID="b8859fbd-5cee-44cf-b7ed-c543bb279b25" r="255" g="192" b="0" codes="STS+1">Making sure the military testing thirty long years ago...</LineEntry>
+        <LineEntry ID="4612313a-b37d-4cc8-990f-dd88ff504734" r="255" g="192" b="0">... to protect our country...</LineEntry>
+        <LineEntry ID="12329694-5ad6-485d-9edd-638d73cdafe1" r="255" g="192" b="0" codes="ANG+1">... was as safe as we always thought it was.</LineEntry>
+        <LineEntry ID="bbfcd9c3-6b39-4b24-8bef-5697a0b58201" r="255" g="192" b="0">Know what?</LineEntry>
+        <LineEntry ID="39250f8e-7664-4b82-81cc-1a63393a31ab" r="255" g="192" b="0" codes="ANG+1">Kentucky's as safe a place to live as it is beautiful.</LineEntry>
+        <LineEntry ID="3250505b-4574-4395-a73e-c7dcf9670956" r="255" g="192" b="0">Vote for Cal Fairweather. Vote for progress.</LineEntry>
+        <LineEntry ID="92d1d873-d94f-4e94-8c50-a55a7ea88d00" r="42" g="112" b="242">This has been an endorsed message by the Republican party.</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="30b3bc40-702b-4e85-b6f6-d6b18b21c2b3" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="f22811aa-5c8c-4ce4-8f58-f3ddc7224168" r="42" g="112" b="242">[img=music] Jolly good. Jolly good. Jolly good-good-GOOD! [img=music]</LineEntry>
+        <LineEntry ID="7da09b30-41bb-4a7a-8bdc-b0ba52481864" r="42" g="112" b="242">[img=music] Jolly good. Jolly good. Jolly good-good-good. [img=music]</LineEntry>
+        <LineEntry ID="197bd089-af56-4ed4-9421-b231eba82439" r="42" g="112" b="242">[img=music] Jolly good. Jolly good. Jolly good-good-GOOD! [img=music]</LineEntry>
+        <LineEntry ID="88b95c0d-7275-4416-985b-2380e806ef22" r="42" g="112" b="242" codes="BOR-1">[img=music] Jolly GOOOOOOOD! Jolly Good Fish and Chips! [img=music]</LineEntry>
+        <LineEntry ID="b007b91a-52f6-4841-9060-cafffdb5be5a" r="128" g="128" b="255">Authentic British cuisine!</LineEntry>
+        <LineEntry ID="15e6f9df-6254-42ba-9b93-1197880cc88a" r="128" g="128" b="255">Try our new Biscuit and Gravy menu!</LineEntry>
+        <LineEntry ID="e9408199-ae4e-4da6-89b1-bb72a548e748" r="128" g="128" b="255" codes="STS-1">Bottomless iced tea!</LineEntry>
+        <LineEntry ID="b688524b-9cb0-4c4f-b994-9d68448e8eef" r="128" g="128" b="255">Come today!</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="34ba6ec9-47b3-4f89-806d-1172807cd1e3" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true"> <!-- First new entry -->
+        <LineEntry ID="0f1e099c-e354-47a9-9d08-2a06692891e0" r="42" g="112" b="242" codes="STS-1">[img=music] W-L-N-Y Channel 13 [img=music]</LineEntry>
+        <LineEntry ID="8ed0f7a1-0bb2-4abe-a3f0-e57b3d654b76" r="72" g="152" b="255" codes="BOR-1">W-L-N-Y is Louisville's newest station...</LineEntry>
+        <LineEntry ID="3a09ad08-6c0d-4019-8907-cf98f60b13bc" r="72" g="152" b="255">...featuring all your favorite new syndicated shows...</LineEntry>
+        <LineEntry ID="98fa6e14-1ded-495b-973e-b63632d9f2b1" r="72" g="152" b="255">...and classic favorites from yesterday.</LineEntry>
+        <LineEntry ID="d83ae94c-53fd-4dd0-bf88-9c4914d27a35" r="72" g="152" b="255">Saturday morning cartoons for the kids...</LineEntry>
+        <LineEntry ID="d1de8d78-41bc-4e95-b835-493050078e23" r="72" g="152" b="255" codes="UHP-1">...and weekday evening sitcoms and dramas for the parents.</LineEntry>
+        <LineEntry ID="3118c579-8b74-454b-9df0-d1c94ddd67a2" r="72" g="152" b="255" codes="PAN-1">Using the latest in computer automation keeps our costs DOWN.</LineEntry>
+        <LineEntry ID="82d9bb4f-367b-4a7e-8981-a87c7d93c8e5" r="72" g="152" b="255" codes="STS-1">Which means we can afford ALL your favorites.</LineEntry>
+        <LineEntry ID="3355ec50-e920-4f4d-ad4d-e975213d29f3" r="42" g="112" b="242">[img=music] W-L-N-Y Channel 13 [img=music]</LineEntry>
+        <LineEntry ID="66056c2d-53be-45a4-9504-a3af72cbe830" r="42" g="112" b="242">[img=music] The only TV you ne~ee~eed! [img=music]</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="c9af9f95-bbcf-48f6-90b3-c5515ce30352" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="false">
+        <LineEntry ID="6dae1719-90eb-46f4-a2d1-ee567d84523b" r="42" g="112" b="242" codes="STS-1">[img=music] W-L-N-Y Channel 13 [img=music]</LineEntry>
+        <LineEntry ID="37a092e3-a81e-47ca-97ca-0dd3f45b69ee" r="72" g="152" b="255">Rhonda Rhodes</LineEntry>
+        <LineEntry ID="6e5177de-66d4-444b-903f-d86e627f64f1" r="72" g="152" b="255">Weekdays at 9 AM</LineEntry>
+        <LineEntry ID="fd598dd5-ac37-4cf2-8b47-d0f913c8df9b" r="42" g="112" b="242">[img=music] W-L-N-Y Channel 13 [img=music]</LineEntry>
+        <LineEntry ID="2c2287b6-3d89-480a-a091-f1a2e401c214" r="42" g="112" b="242">[img=music] The only TV you ne~ee~eed! [img=music]</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="57fba04a-9c9a-484b-9d1d-f5d40c17bc45" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="false">
+        <LineEntry ID="f30e1c1d-254f-4c78-a0fb-f4ee0b1d5e70" r="42" g="112" b="242" codes="STS-1">[img=music] W-L-N-Y Channel 13 [img=music]</LineEntry>
+        <LineEntry ID="60629d2f-4096-4c80-8f9d-ee78532406b0" r="72" g="152" b="255">Hollywood Homeslice</LineEntry>
+        <LineEntry ID="b1348f06-fa7f-4b10-a9cc-29d8b6d30f60" r="72" g="152" b="255">Mondays at 8 PM</LineEntry>
+        <LineEntry ID="14787043-e7e9-4689-a06c-7d61b47e9104" r="42" g="112" b="242">[img=music] W-L-N-Y Channel 13 [img=music]</LineEntry>
+        <LineEntry ID="00f93d43-609c-43fc-98a9-683d906b132a" r="42" g="112" b="242">[img=music] The only TV you ne~ee~eed! [img=music]</LineEntry>
+      </BroadcastEntry>
+      <BroadcastEntry ID="206d84fb-2e0e-4b0b-a76f-7827aafa7a37" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="5c69ad55-1c53-4ac2-9c6b-4731f7f78e80" r="255" g="192" b="0">[img=music] Brick! ~ Brick! [img=music]</LineEntry>
+        <LineEntry ID="5be24b46-b40c-4e23-81df-37fca203b4dd" r="255" g="192" b="0">[img=music] Brickbuster Video! [img=music]</LineEntry>
+        <LineEntry ID="b22ef8b7-d123-4be1-b7cf-18c380a41fa2" r="72" g="152" b="255">Welcome to Brickbuster video, c'mon in!</LineEntry>
+        <LineEntry ID="951ec898-bfae-425b-a25f-80245d11d8e2" r="72" g="152" b="255" codes="PAN-1">Over ten thousand movie choices!</LineEntry>
+        <LineEntry ID="efd8c353-8e8c-4711-844a-bbbc50fc5108" r="72" g="152" b="255">And three-day rentals, so you can take your time.</LineEntry>
+        <LineEntry ID="000ea9be-5a4f-457b-83cf-ae752d99ca1e" r="72" g="152" b="255">With rental prices so low, it can be movie night for everyone!</LineEntry>
+        <LineEntry ID="d0a85bd3-5ec0-4d23-ad0d-9f656d3cecf0" r="72" g="152" b="255" codes="STS-1">Brickbuster Video, now open near you.</LineEntry>
+        <LineEntry ID="d6d5ae0e-3ca2-496c-aa50-94c0898ceb2e" r="255" g="192" b="0">[img=music] Brick! ~ Brick! [img=music]</LineEntry>
+        <LineEntry ID="84a28bfc-dae4-41b3-8d30-bffac8967f50" r="255" g="192" b="0" codes="UHP-1">[img=music] Brickbuster Video! [img=music]</LineEntry>
+        <LineEntry ID="85666272-d228-44fc-be44-5c3bc0d19478" r="255" g="192" b="0">[img=music] Not just a video store! [img=music]</LineEntry>
+      </BroadcastEntry>
+    </ScriptEntry>
+    <ScriptEntry ID="0665fed3-06d1-49e2-a09f-c7ac5b763528" name="Tv" startdelay="0" timestampmode="Static" loopmin="1" loopmax="1"> <!-- July 12 - 13 Curfew -->
+      <ExitOptions />
+      <BroadcastEntry ID="1ce9c2c2-f94b-49eb-95a7-2651d9dcdc64" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="11804eef-79ab-4735-880b-92823ef4267b" r="42" g="112" b="242" codes="STS-1">[img=music] W-L-N-Y Channel 13 [img=music]</LineEntry>
+        <LineEntry ID="c364f329-8116-4c77-bdee-ee1cbad84d29" r="72" g="152" b="255">WLNY Channel 13 would like to remind you that...</LineEntry>
+        <LineEntry ID="749eecb2-93cb-4779-bb88-728730f9a01c" r="72" g="152" b="255" codes="BOR-1">...a mandated curfew is in effect as of 6 PM.</LineEntry>
+        <LineEntry ID="dce6f2f4-5f15-4002-b371-e7a773b1e9b8" r="72" g="152" b="255">Please stay indoors during this time.</LineEntry>
+        <LineEntry ID="628a6081-de8e-4957-899e-c7078f92eb82" r="42" g="112" b="242" codes="BOR-1">[img=music] W-L-N-Y Channel 13 [img=music]</LineEntry>
+        <LineEntry ID="9a04ac76-cd05-4734-950a-2a9d600a37a1" r="42" g="112" b="242">[img=music] The only TV you ne~ee~eed! [img=music]</LineEntry>
+      </BroadcastEntry>
+    </ScriptEntry>
+    <ScriptEntry ID="c554bb0a-8c47-4534-bed4-a6103c50a81b" name="Tv" startdelay="0" timestampmode="Static" loopmin="1" loopmax="1"> <!-- July 14 + Warning -->
+      <ExitOptions />
+      <BroadcastEntry ID="306550ff-8ff3-4429-8e8a-565104d86afe" timestamp="0" endstamp="0" type="ActivateBroadcast" day="0" advertCat="none" isSegment="true">
+        <LineEntry ID="f88a4a55-fde3-4d50-bc90-4b2c661f314d" r="42" g="112" b="242">[img=music] W-L-N-Y Channel 13 [img=music]</LineEntry>
+        <LineEntry ID="f01b1d66-a2c7-4823-ad18-822e9460865c" r="72" g="152" b="255" codes="BOR-1">The exclusion zone has been expanded to include WLNY offices in Louisville.</LineEntry>
+        <LineEntry ID="a1197674-7848-4fac-8335-58b640881a79" r="72" g="152" b="255">As a result, interruptions to our broadcast may occur...</LineEntry>
+        <LineEntry ID="3b1b42d1-a2e2-4abd-ad16-67a6cf0018f8" r="72" g="152" b="255">...as our technicians are unable to schedule new programming.</LineEntry>
+        <LineEntry ID="9ccf5303-c73e-43f9-9b38-3e34491d1343" r="72" g="152" b="255" codes="UHP-1">Already-scheduled programming will continue as normal.</LineEntry>
+        <LineEntry ID="56302252-5474-49c5-824c-eeb95d125519" r="72" g="152" b="255">We thank you for your patience at this time.</LineEntry>
+        <LineEntry ID="c5214a6e-788e-4302-92bf-c9e9854b949b" r="42" g="112" b="242" codes="BOR-1">[img=music] W-L-N-Y Channel 13 [img=music]</LineEntry>
+        <LineEntry ID="eb13bdfb-1ab7-42ef-a6f0-faf101d68660" r="42" g="112" b="242">[img=music] The only TV you ne~ee~eed! [img=music]</LineEntry>
+      </BroadcastEntry>
+    </ScriptEntry>
+  </Adverts>
+  <Channels>
+    <ChannelEntry ID="9d2489a0-a0bb-417d-9336-370979c0b4b0" name="BWO News" cat="Radio" freq="98400" startscript="init">
+      <ScriptEntry ID="86549bbd-9e5c-4547-a444-b3126c4aec25" name="init" startdelay="0" timestampmode="Static" loopmin="1" loopmax="12">
+        <ExitOptions />
+
+        <BroadcastEntry ID="43328737-9440-4caa-8e74-6ce99592c2a2" timestamp="0" endstamp="660" type="ActivateBroadcast" day="0" advertCat="none" isSegment="false">
+          <LineEntry ID="9589fd3d-5b52-4102-9df1-14e34d8d1271" r="224" g="0" b="0" codes="GUID:9589fd3d-5b52-4102-9df1-14e34d8d1271">${t:4.07}This station participates in the activation of the Public Safety Alert.</LineEntry>
+          <LineEntry ID="e405018f-ed97-43ca-a5fd-311387374ab0" r="224" g="0" b="0" codes="GUID:e405018f-ed97-43ca-a5fd-311387374ab0">${t:3.31}Please listen carefully over the given message.</LineEntry>
+          <LineEntry ID="3f370cfc-bd38-473f-a5a1-0bb6974ee958" r="224" g="0" b="0" codes="GUID:3f370cfc-bd38-473f-a5a1-0bb6974ee958">${t:2.04}[img=music]</LineEntry>
+          <LineEntry ID="be810839-6b20-4dfa-8466-0280bf2d32a8" r="224" g="0" b="0" codes="GUID:be810839-6b20-4dfa-8466-0280bf2d32a8">${t:5.99}This is an alert localized by the P.D for Riverside, Muldraugh, Rosewood, and West Point county,</LineEntry>
+          <LineEntry ID="9b86edb7-ab60-4c7c-8bc3-04da57b6e2fe" r="224" g="0" b="0" codes="GUID:9b86edb7-ab60-4c7c-8bc3-04da57b6e2fe">${t:3.55}a large military presence is reported throughout Knox county.</LineEntry>
+          <LineEntry ID="d815ba44-8bc4-4676-b286-384333e417bb" r="224" g="0" b="0" codes="GUID:d815ba44-8bc4-4676-b286-384333e417bb">${t:4.33}They are seen turning away vehicles going through or out of Knox counties..</LineEntry>
+          <LineEntry ID="6a07f62c-4ee3-46e9-bcf2-4d5ee93dae2f" r="224" g="0" b="0" codes="GUID:6a07f62c-4ee3-46e9-bcf2-4d5ee93dae2f">${t:2.37}and blockading entrances and exits.</LineEntry>
+          <LineEntry ID="f13f94e5-d5bb-4512-bd2e-f753c19fd386" r="224" g="0" b="0" codes="GUID:f13f94e5-d5bb-4512-bd2e-f753c19fd386">${t:4.03}We local authorities have yet to receive any clarity for this purpose,</LineEntry>
+          <LineEntry ID="da74217a-0251-4f28-91a0-33b0f6b7cc05" r="224" g="0" b="0" codes="GUID:da74217a-0251-4f28-91a0-33b0f6b7cc05">${t:3.80}we recommend citizens to stay calm and wait for further news.</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="eeda4fa2-e713-4144-8384-138c93196bc0" timestamp="660" endstamp="1140" type="ActivateBroadcast" day="0" advertCat="none" isSegment="false">
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+          <LineEntry ID="69bbaf58-7031-4c2d-9ac6-18bcb6136e2d" r="40" g="180" b="255" codes="GUID:69bbaf58-7031-4c2d-9ac6-18bcb6136e2d">${t:3.86}We interrupt this program to bring you a special report over Kentucky.</LineEntry>
+          <LineEntry ID="2699ba70-1ae8-4ad1-8178-bd93cd065c46" r="40" g="180" b="192" codes="GUID:2699ba70-1ae8-4ad1-8178-bd93cd065c46">${t:3.80}A major military drill is currently taking place in Knox County.</LineEntry>
+          <LineEntry ID="466a8ecb-4c0e-42c2-81b4-c933ade357c4" r="40" g="180" b="192" codes="GUID:466a8ecb-4c0e-42c2-81b4-c933ade357c4">${t:6.97}Lack of communication from the military has led townspeople, including the authorities baffled.</LineEntry>
+          <LineEntry ID="29fee5d0-c9f8-455f-9a14-9f306a019ffe" r="0" g="176" b="80" codes="GUID:29fee5d0-c9f8-455f-9a14-9f306a019ffe">${t:4.45}“We, uh, are doing regular military exercise over the rural areas of Kentucky,</LineEntry>
+          <LineEntry ID="fde07462-a312-4812-a49a-4402ae40c1dc" r="0" g="176" b="80" codes="GUID:fde07462-a312-4812-a49a-4402ae40c1dc">${t:4.46} there, um, has been a miscommunication between the stationed authorities that led to this dispute.</LineEntry>
+          <LineEntry ID="66455174-ce6c-417c-90dc-3923b7314777" r="0" g="176" b="80" codes="GUID:66455174-ce6c-417c-90dc-3923b7314777">${t:6.40}Regardless, this is only temporary, I assure you everyone inside is in safe hands.”</LineEntry>
+          <LineEntry ID="dca77025-3015-4d7f-ab64-3990d9e781e6" r="40" g="180" b="192" codes="GUID:dca77025-3015-4d7f-ab64-3990d9e781e6">${t:2.42}This concludes our report for this morning.</LineEntry>
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+        </BroadcastEntry>
+        
+        <BroadcastEntry ID="cbf5185e-fd35-4eb5-b8a9-8dc0327ee68b" timestamp="1140" endstamp="1440" type="ActivateBroadcast" day="0" advertCat="none" isSegment="false">
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+          <LineEntry ID="65289d7e-9271-4111-9252-7eb09460d515" r="40" g="180" b="255" codes="GUID:65289d7e-9271-4111-9252-7eb09460d515">${t:3.20}We now look at the progress of the ongoing military drill.</LineEntry>
+          <LineEntry ID="5586c213-15c2-4779-8861-68686c437738" r="40" g="180" b="255" codes="GUID:5586c213-15c2-4779-8861-68686c437738">${t:2.27}From what we can see from here,</LineEntry>
+          <LineEntry ID="64da72e8-e34b-4fdc-8599-2cae4b6dfecb" r="40" g="180" b="255" codes="GUID:64da72e8-e34b-4fdc-8599-2cae4b6dfecb">${t:4.19}they have set up a checkpoint and what looks like a bunch of tents in the entrance to Louisville.</LineEntry>
+          <LineEntry ID="2f30b9c9-6f9c-4d1a-83e5-41b2d3b11fe2" r="40" g="180" b="255" codes="GUID:2f30b9c9-6f9c-4d1a-83e5-41b2d3b11fe2">${t:3.39}More and more crowds are looking from far away.</LineEntry>
+          <LineEntry ID="efb6e619-d180-41b1-bede-b73f4ce5d9bc" r="40" g="180" b="255" codes="GUID:efb6e619-d180-41b1-bede-b73f4ce5d9bc">${t:2.75}Knox County, Riverside, townsfolk are doing their usual activities,</LineEntry>
+          <LineEntry ID="b729f243-63cb-4880-833b-c09edee5f986" r="40" g="180" b="255" codes="GUID:b729f243-63cb-4880-833b-c09edee5f986">${t:3.84}we can even hear what sounds to be a night party in one of the resident’s houses.</LineEntry>
+          <LineEntry ID="3df26cce-a783-44ff-a95c-0916d829f8cf" r="40" g="180" b="255" codes="GUID:3df26cce-a783-44ff-a95c-0916d829f8cf">${t:3.96}This concludes our ground-breaking news over Kentucky.</LineEntry>
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="25bc0a13-6124-4ceb-8d8e-10648c5bae66" timestamp="1440" endstamp="1800" type="ActivateBroadcast" day="1" advertCat="none" isSegment="false" />
+
+        <BroadcastEntry ID="5d436e12-ad7c-4184-8fd6-f29b46cc0a9c" timestamp="1800" endstamp="2100" type="ActivateBroadcast" day="1" advertCat="none" isSegment="false">
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+          <LineEntry ID="5346e723-025f-4e5a-98d6-29c173c75bd6" r="40" g="180" b="255" codes="GUID:5346e723-025f-4e5a-98d6-29c173c75bd6">${t:3.98}Kentucky’s state governor speaks out over the military’s routine drill,</LineEntry>
+          <LineEntry ID="55bee40b-5b8c-494e-8c25-e9f0cb0a0d2d" r="40" g="180" b="255" codes="GUID:55bee40b-5b8c-494e-8c25-e9f0cb0a0d2d">${t:2.67}criticizing the lack of communication</LineEntry>
+          <LineEntry ID="843fa90b-11d6-49e2-b95f-1e78aaeee665" r="40" g="180" b="255" codes="GUID:843fa90b-11d6-49e2-b95f-1e78aaeee665">${t:2.05}and arrogance of the military.</LineEntry>
+          <LineEntry ID="19eeab3f-ceaa-410f-9da1-3678392e84c2" r="255" g="221" b="117" codes="GUID:19eeab3f-ceaa-410f-9da1-3678392e84c2">${t:4.13}“I haven’t granted them permission about this operation nor have been informed,</LineEntry>
+          <LineEntry ID="7c635ae5-7f74-4c1c-9812-df5a4a425aff" r="255" g="221" b="117" codes="GUID:7c635ae5-7f74-4c1c-9812-df5a4a425aff">${t:4.51}those damn arrogants blockaded essential road networks from the rest of Kentucky,</LineEntry>
+          <LineEntry ID="c48bfab3-2260-4ac4-b885-ef8b8dabd479" r="255" g="221" b="117" codes="GUID:c48bfab3-2260-4ac4-b885-ef8b8dabd479">${t:2.78}and then refuse to clarify.</LineEntry>
+          <LineEntry ID="e68c2bb7-a202-413b-97ed-cc17a273e8e4" r="255" g="221" b="117" codes="GUID:e68c2bb7-a202-413b-97ed-cc17a273e8e4">${t:2.81}This hinders the economy progression of Knox County</LineEntry>
+          <LineEntry ID="c0457169-1697-4873-8230-d38ef292f4a1" r="255" g="221" b="117" codes="GUID:c0457169-1697-4873-8230-d38ef292f4a1">${t:3.15}and I want those road blockades removed as soon as possible.”</LineEntry>
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="10d73d90-ef63-48e5-a5f9-67e74d5a4801" timestamp="2100" endstamp="2460" type="ActivateBroadcast" day="1" advertCat="none" isSegment="false">
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+          <LineEntry ID="3d0828e9-abd3-4a5d-bfc2-08d0511456f8" r="40" g="180" b="255" codes="GUID:3d0828e9-abd3-4a5d-bfc2-08d0511456f8">${t:4.68}Reporting from the ongoing drill zone, now here we are in West Point,</LineEntry>
+          <LineEntry ID="c0621b1f-98dd-48d4-b9f7-9051dba7cef8" r="40" g="180" b="255" codes="GUID:c0621b1f-98dd-48d4-b9f7-9051dba7cef8">${t:2.66}As you can see people are minding their own business,</LineEntry>
+          <LineEntry ID="e664aea8-a73f-4921-a771-2470f2367dad" r="40" g="180" b="255" codes="GUID:e664aea8-a73f-4921-a771-2470f2367dad">${t:4.17}albeit lack of cars passing and constant patrol by the military personnel.</LineEntry>
+          <LineEntry ID="b235fd6b-d13f-4652-9beb-f39e385384f7" r="40" g="180" b="255" codes="GUID:b235fd6b-d13f-4652-9beb-f39e385384f7">${t:4.11}I have tried asking one of those soldiers but, no response,</LineEntry>
+          <LineEntry ID="4e5a5a0f-b330-41f9-bc87-362f7c075b38" r="40" g="180" b="255" codes="GUID:4e5a5a0f-b330-41f9-bc87-362f7c075b38">${t:3.62}no response at all. Back to you, station.</LineEntry>
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="fe86108d-9a75-4b8a-ad99-cc9e20799361" timestamp="2460" endstamp="2880" type="ActivateBroadcast" day="1" advertCat="none" isSegment="false">
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+          <LineEntry ID="16351054-d720-4d8c-9d82-25944e045a9d" r="40" g="180" b="255" codes="GUID:16351054-d720-4d8c-9d82-25944e045a9d">${t:2.61}[img=music]</LineEntry>
+          <LineEntry ID="4db6a444-1989-47ea-9161-9e3b0fb78a11" r="40" g="180" b="255" codes="GUID:4db6a444-1989-47ea-9161-9e3b0fb78a11">${t:2.56}I am here reporting the town of Rosewood,</LineEntry>
+          <LineEntry ID="9e5c82c6-096c-4a05-ab31-7f0c79cea66a" r="40" g="180" b="255" codes="GUID:9e5c82c6-096c-4a05-ab31-7f0c79cea66a">${t:3.31}currently with a resident from the gated community.</LineEntry>
+          <LineEntry ID="edeed0d4-d0ea-4d78-86e1-e1b14a9fe535" r="40" g="180" b="255" codes="GUID:edeed0d4-d0ea-4d78-86e1-e1b14a9fe535">${t:3.11}Say, what do you think about these military routine drills?</LineEntry>
+          <LineEntry ID="bea96cec-839a-4cfd-bb6c-1dc59d2e6d0d" r="128" g="128" b="255" codes="GUID:bea96cec-839a-4cfd-bb6c-1dc59d2e6d0d">${t:1.63}I think it feels suspicious,</LineEntry>
+          <LineEntry ID="62014693-39b8-4b52-8bba-ae4df1c68e69" r="128" g="128" b="255" codes="GUID:62014693-39b8-4b52-8bba-ae4df1c68e69">${t:2.94}they must be hiding something.</LineEntry>
+          <LineEntry ID="59045d12-bdc9-4353-a5e5-beed43a0891f" r="128" g="128" b="255" codes="GUID:59045d12-bdc9-4353-a5e5-beed43a0891f">${t:4.02}they could have given a straight answer and we all can accept it just fine.</LineEntry>
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="edbe9a3c-b27a-4c5b-92df-05ac779cd00d" timestamp="2880" endstamp="3240" type="ActivateBroadcast" day="2" advertCat="none" isSegment="false" />
+
+        <BroadcastEntry ID="f5acfe5e-ec32-45fe-8fd9-b14451970fa0" timestamp="3240" endstamp="3420" type="ActivateBroadcast" day="1" advertCat="none" isSegment="false">
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+          <LineEntry ID="5c8475ba-dbda-421d-91eb-226163d042b0" r="40" g="180" b="255" codes="GUID:5c8475ba-dbda-421d-91eb-226163d042b0">${t:4.10}We interrupt your programming to serve you the latest developing situation.</LineEntry>
+          <LineEntry ID="a3cbac1c-631d-4b97-8cc1-c69c87dbb049" r="40" g="180" b="255" codes="GUID:a3cbac1c-631d-4b97-8cc1-c69c87dbb049">${t:5.14}The people of Knox County are currently tense over the concerning cases of sick individuals,</LineEntry>
+          <LineEntry ID="523a5733-8640-40c9-9fb3-2fb08f0368cf" r="40" g="180" b="255" codes="GUID:523a5733-8640-40c9-9fb3-2fb08f0368cf">${t:3.27}some were already found deceased in the middle of the busy street.</LineEntry>
+          <LineEntry ID="f40b7c0a-fa0b-4371-96b9-a6ad072e553b" r="40" g="180" b="255" codes="GUID:f40b7c0a-fa0b-4371-96b9-a6ad072e553b">${t:5.20}police and medical services have yet to release statements over the gravity of this situation.</LineEntry>
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="14219e4b-76ae-4220-ab36-b28bdc72fe7a" timestamp="3240" endstamp="3600" type="ActivateBroadcast" day="2" advertCat="none" isSegment="false">
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+          <LineEntry ID="f66f23d4-c44f-4b63-b9be-854205120517" r="40" g="180" b="192" codes="GUID:f66f23d4-c44f-4b63-b9be-854205120517">${t:3.63}Townspeople are yet again baffled as infected individuals</LineEntry>
+          <LineEntry ID="0cad7a60-6f4e-433a-a137-ba616ae5a906" r="40" g="180" b="192" codes="GUID:0cad7a60-6f4e-433a-a137-ba616ae5a906">${t:2.66}begin to experience tendencies of violence</LineEntry>
+          <LineEntry ID="2f7ea072-57f0-4455-b1c2-a5c45539cfc9" r="40" g="180" b="192" codes="GUID:2f7ea072-57f0-4455-b1c2-a5c45539cfc9">${t:2.20}lashing at everyone it sees.</LineEntry>
+          <LineEntry ID="f536edf9-a637-4de1-aaf9-c9040b7beeec" r="40" g="180" b="192" codes="GUID:f536edf9-a637-4de1-aaf9-c9040b7beeec">${t:2.24}The following symptoms are heavy coughing,</LineEntry>
+          <LineEntry ID="72c97401-8e5f-4758-8bd5-aa9ad2b0b006" r="40" g="180" b="192" codes="GUID:72c97401-8e5f-4758-8bd5-aa9ad2b0b006">${t:1.57}fever, and stress.</LineEntry>
+          <LineEntry ID="a48fe73e-7733-4e5e-a5a0-780e59ca1f11" r="40" g="180" b="192" codes="GUID:a48fe73e-7733-4e5e-a5a0-780e59ca1f11">${t:2.10}If you contract one of these symptoms,</LineEntry>
+          <LineEntry ID="a2647098-85f5-4d67-a36e-2b3f3b7d45fc" r="40" g="180" b="192" codes="GUID:a2647098-85f5-4d67-a36e-2b3f3b7d45fc">${t:3.34}you must check your local medical center as soon as possible.</LineEntry>
+          <LineEntry ID="d4bd95d2-6574-4aec-b7ec-98c34f58aca1" r="40" g="180" b="192" codes="GUID:d4bd95d2-6574-4aec-b7ec-98c34f58aca1">${t:3.41}We now move on to hear the statement from General John McGrew.</LineEntry>
+          <LineEntry ID="fd426be3-a6c8-4617-b42a-e7f6ffce5e7e" r="40" g="180" b="192" codes="GUID:fd426be3-a6c8-4617-b42a-e7f6ffce5e7e">${t:4.17}I am speaking in front of the whole press with deep regret.</LineEntry>
+          <LineEntry ID="9697f3b7-075c-41fb-8e3d-d81fc50adbfd" r="40" g="180" b="192" codes="GUID:697f3b7-075c-41fb-8e3d-d81fc50adbfd">${t:2.91}I can confirm there has been a disease with</LineEntry>
+          <LineEntry ID="000e2e81-9c00-48ac-a322-9b369c0b6f90" r="40" g="180" b="192" codes="GUID:000e2e81-9c00-48ac-a322-9b369c0b6f90">${t:1.63}flu-like characteristics.</LineEntry>
+          <LineEntry ID="d9128e55-745d-4a48-b91a-b910ff3de194" r="40" g="180" b="192" codes="GUID:d9128e55-745d-4a48-b91a-b910ff3de194">${t:3.62}This, shall we say the Knox Exclusion zone,</LineEntry>
+          <LineEntry ID="062ccada-f3a3-4861-8c25-6f70513ecab8" r="40" g="180" b="192" codes="GUID:062ccada-f3a3-4861-8c25-6f70513ecab8">${t:2.51}It's nothing more but a preventative measure to</LineEntry>
+          <LineEntry ID="687be73d-3732-4e4b-8add-aa8930e99e5e" r="40" g="180" b="192" codes="GUID:687be73d-3732-4e4b-8add-aa8930e99e5e">${t:1.78}cull the spread of the virus </LineEntry>
+          <LineEntry ID="dd44bfcb-6f50-452d-ba7f-0ad26fc5f3f1" r="40" g="180" b="192" codes="GUID:dd44bfcb-6f50-452d-ba7f-0ad26fc5f3f1">${t:3.63}while we buy the scientist more time for a vaccine,</LineEntry>
+          <LineEntry ID="ca40f528-3221-4063-8957-6483d38778cc" r="40" g="180" b="192" codes="GUID:ca40f528-3221-4063-8957-6483d38778cc">${t:3.33}the disease is contained, but the out loud panic</LineEntry>
+          <LineEntry ID="398193e5-1bdf-4e2f-bbd4-65cf3c40c398" r="40" g="180" b="192" codes="GUID:398193e5-1bdf-4e2f-bbd4-65cf3c40c398">${t:2.51}and fear of the American citizens are not</LineEntry>
+          <LineEntry ID="618925e5-01de-4e3b-ac78-a869ac339161" r="40" g="180" b="192" codes="GUID:618925e5-01de-4e3b-ac78-a869ac339161">${t:4.78}for today and onwards, we will be transparent.</LineEntry>
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="e891bb4c-786a-465a-8f3e-4063a63cb159" timestamp="3600" endstamp="3900" type="ActivateBroadcast" day="2" advertCat="none" isSegment="false">
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+          <LineEntry ID="fab39121-d783-4494-9c04-86964539ad29" r="40" g="180" b="255" codes="GUID:fab39121-d783-4494-9c04-86964539ad29">${t:2.64}Despite the modest statement from the general,</LineEntry>
+          <LineEntry ID="4ac25618-a675-47a1-aca0-9752e34a6c70" r="40" g="180" b="255" codes="GUID:4ac25618-a675-47a1-aca0-9752e34a6c70">${t:3.53}townspeople are outraged by how much secrecy was kept from them,</LineEntry>
+          <LineEntry ID="227ef182-990a-409f-bd29-ff2a384386c7" r="40" g="180" b="255" codes="GUID:227ef182-990a-409f-bd29-ff2a384386c7">${t:4.59}many were seen trying to remove the wall blockades before a warning shot was given.</LineEntry>
+          <LineEntry ID="d93fb866-602c-4f46-b3df-47b622d4575d" r="40" g="180" b="255" codes="GUID:d93fb866-602c-4f46-b3df-47b622d4575d">${t:2.76}*** chaos ***  </LineEntry>
+          <LineEntry ID="ab029312-3328-4675-bd3f-fc8e5fb867f7" r="40" g="180" b="255" codes="GUID:ab029312-3328-4675-bd3f-fc8e5fb867f7">${t:2.36}What do you think about the general’s statement?</LineEntry>
+          <LineEntry ID="18b2b326-3fce-457d-9ab9-81f95a4af076" r="128" g="128" b="255" codes="GUID:18b2b326-3fce-457d-9ab9-81f95a4af076">${t:2.77}From the deepest point of my heart, I am angry, </LineEntry>
+          <LineEntry ID="96631939-ce46-47cf-89c9-6705449cc45c" r="128" g="128" b="255" codes="GUID:96631939-ce46-47cf-89c9-6705449cc45c">${t:1.45}it’s infuriating.</LineEntry>
+          <LineEntry ID="3e611a41-5b07-45ca-ae65-35235f8c0f0e" r="128" g="128" b="255" codes="GUID:3e611a41-5b07-45ca-ae65-35235f8c0f0e">${t:3.13}My son got sick from being in that party yesterday,</LineEntry>
+          <LineEntry ID="b80f31e3-552b-4320-beba-56837939a37b" r="128" g="128" b="255" codes="GUID:b80f31e3-552b-4320-beba-56837939a37b">${t:2.00}now my family are all sick.</LineEntry>
+          <LineEntry ID="3d7d22a2-0c40-4f42-bd53-43709737d90c" r="128" g="128" b="255" codes="GUID:3d7d22a2-0c40-4f42-bd53-43709737d90c">${t:4.11}If only those wretched green-suits told us there was a virus in the air?</LineEntry>
+          <LineEntry ID="f4d8b621-1d02-4902-93d7-430d475e48fe" r="128" g="128" b="255" codes="GUID:f4d8b621-1d02-4902-93d7-430d475e48fe">${t:2.18}We would all have been home at the start.</LineEntry>
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="d25109bf-5e89-4897-8b1d-6e09738314d9" timestamp="3900" endstamp="4320" type="ActivateBroadcast" day="2" advertCat="none" isSegment="false">
+          <LineEntry ID="9589fd3d-5b52-4102-9df1-14e34d8d1271" r="224" g="0" b="0" codes="GUID:9589fd3d-5b52-4102-9df1-14e34d8d1271">${t:4.07}This station participates in the activation of the Public Safety Alert.</LineEntry>
+          <LineEntry ID="e405018f-ed97-43ca-a5fd-311387374ab0" r="224" g="0" b="0" codes="GUID:e405018f-ed97-43ca-a5fd-311387374ab0">${t:3.31}Please listen carefully over the given message.</LineEntry>
+          <LineEntry ID="3f370cfc-bd38-473f-a5a1-0bb6974ee958" r="224" g="0" b="0" codes="GUID:3f370cfc-bd38-473f-a5a1-0bb6974ee958">${t:2.04}[img=music]</LineEntry>
+          <LineEntry ID="99617708-0998-4394-aae0-2ccc98d3bab4" r="224" g="0" b="0" codes="GUID:99617708-0998-4394-aae0-2ccc98d3bab4">${t:6.48}This is the Police Department serving Riverside, Muldraugh, Rosewood, and West Point county.</LineEntry>
+          <LineEntry ID="630a0724-7e37-440e-9116-93c517c0fed4" r="224" g="0" b="0" codes="GUID:630a0724-7e37-440e-9116-93c517c0fed4">${t:4.17}Everyone are to keep an eye out for potential looters, </LineEntry>
+          <LineEntry ID="aad553b4-9977-448d-9a4b-8c72f73398d2" r="224" g="0" b="0" codes="GUID:aad553b4-9977-448d-9a4b-8c72f73398d2">${t:3.45}arsonist, and rioters in your area,</LineEntry>
+          <LineEntry ID="d5778de3-b9b7-43d2-8510-6d530cb31ca1" r="224" g="0" b="0" codes="GUID:d5778de3-b9b7-43d2-8510-6d530cb31ca1">${t:3.04}defend yourself and your community.</LineEntry>
+          <LineEntry ID="56bdf80b-f484-4a69-a82f-e582c9f8d56b" r="224" g="0" b="0" codes="GUID:56bdf80b-f484-4a69-a82f-e582c9f8d56b">${t:3.89}We are working tirelessly to provide protection, however..</LineEntry>
+          <LineEntry ID="8d8d00dd-3c74-46e0-8765-64e6ece3ca0c" r="224" g="0" b="0" codes="GUID:8d8d00dd-3c74-46e0-8765-64e6ece3ca0c">${t:6.12}rampant cases of civil unrest exhaust the counties’ only emergency services.</LineEntry>
+          <LineEntry ID="f1c03f74-a2ce-4dc3-956d-8b2175b58038" r="224" g="0" b="0" codes="GUID:f1c03f74-a2ce-4dc3-956d-8b2175b58038">${t:6.02}We entrust your participation to ensure safety for the Knox County area.</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="c88340db-0ec3-4502-8190-f1bb14ffef6e" timestamp="4320" endstamp="4800" type="ActivateBroadcast" day="3" advertCat="none" isSegment="false">
+          <LineEntry ID="9589fd3d-5b52-4102-9df1-14e34d8d1271" r="224" g="0" b="0" codes="GUID:9589fd3d-5b52-4102-9df1-14e34d8d1271">${t:4.07}This station participates in the activation of the Public Safety Alert.</LineEntry>
+          <LineEntry ID="e405018f-ed97-43ca-a5fd-311387374ab0" r="224" g="0" b="0" codes="GUID:e405018f-ed97-43ca-a5fd-311387374ab0">${t:3.31}Please listen carefully over the given message.</LineEntry>
+          <LineEntry ID="3f370cfc-bd38-473f-a5a1-0bb6974ee958" r="224" g="0" b="0" codes="GUID:3f370cfc-bd38-473f-a5a1-0bb6974ee958">${t:2.04}[img=music]</LineEntry>
+          <LineEntry ID="99617708-0998-4394-aae0-2ccc98d3bab4" r="224" g="0" b="0" codes="GUID:99617708-0998-4394-aae0-2ccc98d3bab4">${t:6.48}This is the Police Department serving Riverside, Muldraugh, Rosewood, and West Point county.</LineEntry>
+          <LineEntry ID="630a0724-7e37-440e-9116-93c517c0fed4" r="224" g="0" b="0" codes="GUID:630a0724-7e37-440e-9116-93c517c0fed4">${t:4.17}Everyone are to keep an eye out for potential looters, </LineEntry>
+          <LineEntry ID="aad553b4-9977-448d-9a4b-8c72f73398d2" r="224" g="0" b="0" codes="GUID:aad553b4-9977-448d-9a4b-8c72f73398d2">${t:3.45}arsonist, and rioters in your area,</LineEntry>
+          <LineEntry ID="d5778de3-b9b7-43d2-8510-6d530cb31ca1" r="224" g="0" b="0" codes="GUID:d5778de3-b9b7-43d2-8510-6d530cb31ca1">${t:3.04}defend yourself and your community.</LineEntry>
+          <LineEntry ID="56bdf80b-f484-4a69-a82f-e582c9f8d56b" r="224" g="0" b="0" codes="GUID:56bdf80b-f484-4a69-a82f-e582c9f8d56b">${t:3.89}We are working tirelessly to provide protection, however..</LineEntry>
+          <LineEntry ID="8d8d00dd-3c74-46e0-8765-64e6ece3ca0c" r="224" g="0" b="0" codes="GUID:8d8d00dd-3c74-46e0-8765-64e6ece3ca0c">${t:6.12}rampant cases of civil unrest exhaust the counties’ only emergency services.</LineEntry>
+          <LineEntry ID="f1c03f74-a2ce-4dc3-956d-8b2175b58038" r="224" g="0" b="0" codes="GUID:f1c03f74-a2ce-4dc3-956d-8b2175b58038">${t:6.02}We entrust your participation to ensure safety for the Knox County area.</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="ad25ac20-8bd8-4718-af3e-33e9e124b719" timestamp="4800" endstamp="5160" type="ActivateBroadcast" day="3" advertCat="none" isSegment="false">
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+          <LineEntry ID="0b2738e6-c92b-41e8-a1fe-dee4bd1c0768" r="40" g="180" b="255" codes="GUID:0b2738e6-c92b-41e8-a1fe-dee4bd1c0768">${t:2.05}We bring our report for today's morning,</LineEntry>
+          <LineEntry ID="1d6d98b2-e5e3-49d5-9e1f-e5efa5e230a2" r="40" g="180" b="255" codes="GUID:1d6d98b2-e5e3-49d5-9e1f-e5efa5e230a2">${t:4.81}citizens were horrified over the eerie broadcast sent out by the PD last night,</LineEntry>
+          <LineEntry ID="eb45b8b3-d8ec-4c4e-9816-204bbf5eb4f1" r="40" g="180" b="255" codes="GUID:eb45b8b3-d8ec-4c4e-9816-204bbf5eb4f1">${t:4.40}many were already barricading their homes and hoard for supplies.</LineEntry>
+          <LineEntry ID="90d14dd4-be3c-4d4f-9d19-bbbc907df64a" r="40" g="180" b="255" codes="GUID:90d14dd4-be3c-4d4f-9d19-bbbc907df64a">${t:4.08}We now report onto the damages done by rioters last night;</LineEntry>
+          <LineEntry ID="cc0e38ff-3e10-417c-a6e4-97640ebd2e11" r="40" g="180" b="255" codes="GUID:cc0e38ff-3e10-417c-a6e4-97640ebd2e11">${t:4.72}a family of five burned in their house as arsonist strikes in Muldraugh,</LineEntry>
+          <LineEntry ID="5ecee4a0-4a35-454a-b013-0ebbb5eb75f4" r="40" g="180" b="255" codes="GUID:5ecee4a0-4a35-454a-b013-0ebbb5eb75f4">${t:4.19}sixteen house intruders were apprehended in the gated community of Rosewood,</LineEntry>
+          <LineEntry ID="d0efb77c-5855-4f08-8fde-aa7bb4f02a2e" r="40" g="180" b="255" codes="GUID:d0efb77c-5855-4f08-8fde-aa7bb4f02a2e">${t:4.02}police clashes against looters in the commercial area of Riverside,</LineEntry>
+          <LineEntry ID="eed6b83b-4cc2-44f0-8867-b4789c433bf6" r="40" g="180" b="255" codes="GUID:eed6b83b-4cc2-44f0-8867-b4789c433bf6">${t:4.63}West Point police are still tracking groups of..</LineEntry>
+          <LineEntry ID="a5231911-7072-46d4-ac1d-3e417cc91d33" r="40" g="180" b="255" codes="GUID:a5231911-7072-46d4-ac1d-3e417cc91d33">${t:3.45}carjackers and gasoline siphoners.</LineEntry>
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="700206dc-5080-4097-b3eb-3fd17d762753" timestamp="5160" endstamp="5520" type="ActivateBroadcast" day="3" advertCat="none" isSegment="false">
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+          <LineEntry ID="a2dfed6e-b63f-4d6c-8b97-f4886372ca26" r="40" g="180" b="255" codes="GUID:a2dfed6e-b63f-4d6c-8b97-f4886372ca26">${t:1.84}Today's out of the ordinary compared to the first day,</LineEntry> 
+          <LineEntry ID="1631949c-f9fd-4109-8d30-e9596d12915d" r="40" g="180" b="255" codes="GUID:1631949c-f9fd-4109-8d30-e9596d12915d">${t:4.72}the atmosphere outside is nothing but tension and fear.</LineEntry> 
+          <LineEntry ID="f5c786fd-8451-4175-b751-bffac6e8f9da" r="40" g="180" b="255" codes="GUID:f5c786fd-8451-4175-b751-bffac6e8f9da">${t:3.13}We're already seeing houses barricaded to its fullest..</LineEntry> 
+          <LineEntry ID="1c82e462-b089-476a-b41d-cb8fa8bb7216" r="40" g="180" b="255" codes="GUID:1c82e462-b089-476a-b41d-cb8fa8bb7216">${t:2.54}and more patrols from the local PD.</LineEntry> 
+          <LineEntry ID="bbcb08f0-daf9-463d-a52c-0bc742b1501b" r="40" g="180" b="255" codes="GUID:bbcb08f0-daf9-463d-a52c-0bc742b1501b">${t:2.30}Okay cut, that woman is coughing up blood over there.</LineEntry> 
+          <LineEntry ID="402f7f6d-7db3-42f4-a1da-492cf4a5b576" r="255" g="0" b="255" codes="GUID:402f7f6d-7db3-42f4-a1da-492cf4a5b576">${t:4.31}[img=music]</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="7ed1ec56-c7e9-48a4-977f-94fdbcee671e" timestamp="5520" endstamp="5760" type="ActivateBroadcast" day="3" advertCat="none" isSegment="false">
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+          <LineEntry ID="2475a0b4-d33f-4dd4-af06-b1a5126c4b9e" r="40" g="180" b="255" codes="GUID:2475a0b4-d33f-4dd4-af06-b1a5126c4b9e">${t:2.94}We're staying in our news van, but with our naked eyes</LineEntry>
+          <LineEntry ID="1d1bb224-7035-48e7-a267-b4e3e09a1473" r="40" g="180" b="255" codes="GUID:1d1bb224-7035-48e7-a267-b4e3e09a1473">${t:3.82}we have seen groups of sick people attempting to assault a pedestrian orally.</LineEntry>
+          <LineEntry ID="dd439c92-c72b-434c-a529-850164edeb4a" r="40" g="180" b="255" codes="GUID:dd439c92-c72b-434c-a529-850164edeb4a">${t:2.81}We have called the police but we are staying low.</LineEntry>
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="d05ba67e-989c-4cda-bafc-6a0782720d71" timestamp="5760" endstamp="6060" type="ActivateBroadcast" day="4" advertCat="none" isSegment="false" />
+
+        <BroadcastEntry ID="a902f9ca-ce7b-4a57-a868-8585c4397af6" timestamp="6060" endstamp="6240" type="ActivateBroadcast" day="4" advertCat="none" isSegment="false">
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+          <LineEntry ID="be1e3084-f570-44e4-999b-75bde3e8f7fb" r="40" g="180" b="255" codes="GUID:be1e3084-f570-44e4-999b-75bde3e8f7fb">${t:4.52}We're back once again to bring you to the latest developing situation in Knox County,</LineEntry>
+          <LineEntry ID="c5c83085-e3b2-4a72-bacf-591c0c85c26a" r="40" g="180" b="255" codes="GUID:c5c83085-e3b2-4a72-bacf-591c0c85c26a">${t:6.39}chaos and violence ensues as those who were previously sick with this unknown disease are starting to turn on people,</LineEntry>
+          <LineEntry ID="dab0c57c-ade0-47e6-8c61-b02bd4e4f78a" r="40" g="180" b="255" codes="GUID:dab0c57c-ade0-47e6-8c61-b02bd4e4f78a">${t:3.49}we are far from our news van but we're currently on the run.</LineEntry>
+          <LineEntry ID="8fc479ba-684f-46b9-9480-3b749c94f564" r="40" g="180" b="255" codes="GUID:8fc479ba-684f-46b9-9480-3b749c94f564">${t:1.53}Back to you.</LineEntry>
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="79565268-a8cd-4d3f-ac72-03bc560ea312" timestamp="6240" endstamp="6780" type="ActivateBroadcast" day="4" advertCat="none" isSegment="false">
+          <LineEntry ID="9589fd3d-5b52-4102-9df1-14e34d8d1271" r="224" g="0" b="0" codes="GUID:9589fd3d-5b52-4102-9df1-14e34d8d1271">${t:4.07}This station participates in the activation of the Public Safety Alert.</LineEntry>
+          <LineEntry ID="e405018f-ed97-43ca-a5fd-311387374ab0" r="224" g="0" b="0" codes="GUID:e405018f-ed97-43ca-a5fd-311387374ab0">${t:3.31}Please listen carefully over the given message.</LineEntry>
+          <LineEntry ID="3f370cfc-bd38-473f-a5a1-0bb6974ee958" r="224" g="0" b="0" codes="GUID:3f370cfc-bd38-473f-a5a1-0bb6974ee958">${t:2.04}[img=music]</LineEntry>
+          <LineEntry ID="8038a48d-2032-408a-9664-adf5be54e8d7" r="224" g="0" b="0" codes="GUID:8038a48d-2032-408a-9664-adf5be54e8d7">${t:4.33}This message has been brought by emergency services serving the Riverside,</LineEntry>
+          <LineEntry ID="796a1b0a-f2ea-41d3-9d0d-d493a7625944" r="224" g="0" b="0" codes="GUID:796a1b0a-f2ea-41d3-9d0d-d493a7625944">${t:3.53}Muldraugh, Rosewood, and West Point county.</LineEntry>
+          <LineEntry ID="72d24068-ea35-42c2-849b-cd524412e511" r="224" g="0" b="0" codes="GUID:72d24068-ea35-42c2-849b-cd524412e511">${t:3.73}The cases of this unprecedented viral outbreak..</LineEntry>
+          <LineEntry ID="a625419f-312e-4788-8533-5f78f614a58d" r="224" g="0" b="0" codes="GUID:a625419f-312e-4788-8533-5f78f614a58d">${t:4.13}has brought emergency services to a nearly disfunctioning state,</LineEntry>
+          <LineEntry ID="ee6bc50f-0afd-4c29-8962-d8e7789d00cf" r="224" g="0" b="0" codes="GUID:ee6bc50f-0afd-4c29-8962-d8e7789d00cf">${t:6.98}we request your cooperation by avoiding social crowd and to isolate yourself completely from others.</LineEntry>
+          <LineEntry ID="6bb7fbab-0b6d-420a-8260-23e29f436aaf" r="224" g="0" b="0" codes="GUID:6bb7fbab-0b6d-420a-8260-23e29f436aaf">${t:3.77}We thank you for being one of Kentucky's outstanding people</LineEntry>
+          <LineEntry ID="3730ac2b-b35e-4524-8e80-5e44f564ec95" r="224" g="0" b="0" codes="GUID:3730ac2b-b35e-4524-8e80-5e44f564ec95">${t:1.75}and part of the American's dream.</LineEntry>
+          <LineEntry ID="4a1c5acd-aead-4a8a-8498-a51f4135ae17" r="224" g="0" b="0" codes="GUID:4a1c5acd-aead-4a8a-8498-a51f4135ae17">${t:0.45}*click*</LineEntry>
+          <LineEntry ID="b0c11ba4-5ecc-415e-a946-1a30d2dc8fef" r="224" g="0" b="0" codes="GUID:b0c11ba4-5ecc-415e-a946-1a30d2dc8fef">${t:0.63}*BANG*</LineEntry>
+          <LineEntry ID="342caafd-1d3b-485b-87a9-6a1e0d6db9d2" r="224" g="0" b="0" codes="GUID:342caafd-1d3b-485b-87a9-6a1e0d6db9d2">${t:1.73}[img=music]</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="ed461909-8480-4e59-a925-a2294122286f" timestamp="6780" endstamp="6960" type="ActivateBroadcast" day="4" advertCat="none" isSegment="false">
+          <LineEntry ID="9589fd3d-5b52-4102-9df1-14e34d8d1271" r="224" g="0" b="0" codes="GUID:9589fd3d-5b52-4102-9df1-14e34d8d1271">${t:4.07}This station participates in the activation of the Public Safety Alert.</LineEntry>
+          <LineEntry ID="e405018f-ed97-43ca-a5fd-311387374ab0" r="224" g="0" b="0" codes="GUID:e405018f-ed97-43ca-a5fd-311387374ab0">${t:3.31}Please listen carefully over the given message.</LineEntry>
+          <LineEntry ID="3f370cfc-bd38-473f-a5a1-0bb6974ee958" r="224" g="0" b="0" codes="GUID:3f370cfc-bd38-473f-a5a1-0bb6974ee958">${t:2.04}[img=music]</LineEntry>
+          <LineEntry ID="c9fe9865-f92e-4982-989c-04549db55e85" r="224" g="0" b="0" codes="GUID:c9fe9865-f92e-4982-989c-04549db55e85">${t:4.76}We temporarily suspend our daily programming to bring you a live report from Kentucky.</LineEntry>
+          <LineEntry ID="f2d9ce09-9a25-4095-9e17-35ac40a95dfb" r="224" g="0" b="0" codes="GUID:f2d9ce09-9a25-4095-9e17-35ac40a95dfb">${t:4.45}Thousands of people in Louisville stand silent as they hear chaos,</LineEntry>
+          <LineEntry ID="c9fe9865-f92e-4982-989c-04549db55e85" r="224" g="0" b="0" codes="GUID:c9fe9865-f92e-4982-989c-04549db55e85">${t:3.90}occasionally distant gunshots and explosions from the boundary zone.</LineEntry>
+          <LineEntry ID="f6b79920-5b19-4795-8634-fc29c1ac05e7" r="224" g="0" b="0" codes="GUID:f6b79920-5b19-4795-8634-fc29c1ac05e7">${t:3.54}We can no longer reach back to our news crew inside Knox County</LineEntry>
+          <LineEntry ID="34427d7e-dd65-499b-baea-ead4dc82de0d" r="224" g="0" b="0" codes="GUID:34427d7e-dd65-499b-baea-ead4dc82de0d">${t:4.86}I'm noting three, four, five trails of smoke from the distance, </LineEntry>
+          <LineEntry ID="6e8c4f8e-7ca3-47e6-b31f-ca0a33bcc092" r="224" g="0" b="0" codes="GUID:6e8c4f8e-7ca3-47e6-b31f-ca0a33bcc092">${t:4.37}we don't know what is happening inside aside from the sickness.</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="7e7e8638-b0db-4d16-8980-a8a89e7c895d" timestamp="6960" endstamp="7200" type="ActivateBroadcast" day="4" advertCat="none" isSegment="false">
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+          <LineEntry ID="514c6101-b505-4f3f-9674-f7f1bce82445" r="40" g="180" b="255" codes="GUID:514c6101-b505-4f3f-9674-f7f1bce82445">${t:4.40}We return back to the Louisville checkpoint.</LineEntry>
+          <LineEntry ID="b15771de-e8a4-4de4-b5d4-7a3e926747b2" r="40" g="180" b="255" codes="GUID:b15771de-e8a4-4de4-b5d4-7a3e926747b2">${t:4.04}I am looking from far away but we can see a bunch of exhausted and wounded soldiers over by the camp,</LineEntry>
+          <LineEntry ID="57899299-19af-4e39-b1db-c057af5cbcdc" r="40" g="180" b="255" codes="GUID:57899299-19af-4e39-b1db-c057af5cbcdc">${t:4.35}I can see what appears to be citizens from the Knox County with medical gowns.</LineEntry>
+          <LineEntry ID="b33ad9dc-425a-4c2d-bd94-f153d3cc1249" r="40" g="180" b="255" codes="GUID:b33ad9dc-425a-4c2d-bd94-f153d3cc1249">${t:4.17}Judging from their expressions, it looks like they've been through war.</LineEntry>
+          <LineEntry ID="92d0dfa1-d399-4189-8e3d-18d8f549628e" r="40" g="180" b="255" codes="GUID:92d0dfa1-d399-4189-8e3d-18d8f549628e">${t:4.99}We don't know what this Knox Virus does but, I can tell you, it changes people.</LineEntry>
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="d05ba67e-989c-4cda-bafc-6a0782720d71" timestamp="7200" endstamp="7380" type="ActivateBroadcast" day="5" advertCat="none" isSegment="false" />
+
+        <BroadcastEntry ID="c9b4890c-13a9-4192-bc82-8dbfb7ce3806" timestamp="7380" endstamp="7860" type="ActivateBroadcast" day="5" advertCat="none" isSegment="false">
+          <LineEntry ID="9589fd3d-5b52-4102-9df1-14e34d8d1271" r="224" g="0" b="0" codes="GUID:9589fd3d-5b52-4102-9df1-14e34d8d1271">${t:4.07}This station participates in the activation of the Public Safety Alert.</LineEntry>
+          <LineEntry ID="e405018f-ed97-43ca-a5fd-311387374ab0" r="224" g="0" b="0" codes="GUID:e405018f-ed97-43ca-a5fd-311387374ab0">${t:3.31}Please listen carefully over the given message.</LineEntry>
+          <LineEntry ID="3f370cfc-bd38-473f-a5a1-0bb6974ee958" r="224" g="0" b="0" codes="GUID:3f370cfc-bd38-473f-a5a1-0bb6974ee958">${t:2.04}[img=music]</LineEntry>
+          <LineEntry ID="bbd48eef-df19-4fac-912d-e03523e0ee7a" r="224" g="0" b="0" codes="GUID:bbd48eef-df19-4fac-912d-e03523e0ee7a">${t:6.62}Louisville Police Department in conjunction with the United States Military has ordered the evacuation of the entire city.</LineEntry>
+          <LineEntry ID="e3402856-2eb7-4ea6-8d38-a269babda928" r="224" g="0" b="0" codes="GUID:e3402856-2eb7-4ea6-8d38-a269babda928">${t:3.62}You must leave personal belongings and pack essential supplies.</LineEntry>
+          <LineEntry ID="3ed4a1e2-7d1b-41be-8b55-f8a0ff2aae7b" r="224" g="0" b="0" codes="GUID:3ed4a1e2-7d1b-41be-8b55-f8a0ff2aae7b">${t:3.87}Multiple sick individuals have been reported in the outskirts of Louisville.</LineEntry>
+          <LineEntry ID="60c291a5-804f-4bb5-84d3-4956c19bca67" r="224" g="0" b="0" codes="GUID:60c291a5-804f-4bb5-84d3-4956c19bca67">${t:2.68}Those who stumbles upon an ill individual..</LineEntry>
+          <LineEntry ID="3201d6df-4778-486e-bf5c-d4863e428f8c" r="224" g="0" b="0" codes="GUID:3201d6df-4778-486e-bf5c-d4863e428f8c">${t:3.95}are required report them to your local authorities or stationed soldiers.</LineEntry>
+          <LineEntry ID="f212cd4c-f6c5-42a3-80ca-5bca9ee5ebdb" r="224" g="0" b="0" codes="GUID:f212cd4c-f6c5-42a3-80ca-5bca9ee5ebdb">${t:2.06}Thank you for your cooperation</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="71de9221-fdba-4862-8a34-9f301535b830" timestamp="7860" endstamp="8640" type="ActivateBroadcast" day="5" advertCat="none" isSegment="false">
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+          <LineEntry ID="cfb9d0c9-cb71-43e2-ac3c-8f6895539a58" r="40" g="180" b="255" codes="GUID:cfb9d0c9-cb71-43e2-ac3c-8f6895539a58">${t:2.92}Riots ensue across the metropolitan area, </LineEntry>
+          <LineEntry ID="179b873f-946d-4ad8-b012-88252bb41e11" r="40" g="180" b="255" codes="GUID:179b873f-946d-4ad8-b012-88252bb41e11">${t:4.35}demanding presidential eviction over the poor handling of the Knox epidemic.</LineEntry>
+          <LineEntry ID="9f3c7757-61ef-4489-8f9e-c437a0a3a5f3" r="40" g="180" b="255" codes="GUID:9f3c7757-61ef-4489-8f9e-c437a0a3a5f3">${t:5.99}Looting and panic buying becomes more frequent everywhere else, leaving staffs overwhelmed.</LineEntry>
+          <LineEntry ID="71b0b124-5c65-4540-9af2-4d33e2536628" r="40" g="180" b="255" codes="GUID:71b0b124-5c65-4540-9af2-4d33e2536628">${t:4.91}More and more people book flights as they want to leave before something hits the fan.</LineEntry>
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="a1c27a88-b393-470e-bba2-ce0febd6ece5" timestamp="8640" endstamp="8940" type="ActivateBroadcast" day="6" advertCat="none" isSegment="false" />
+
+        <BroadcastEntry ID="cd83fb58-0289-4a2d-ae03-b6d99ee9b694" timestamp="8940" endstamp="9480" type="ActivateBroadcast" day="6" advertCat="none" isSegment="false">
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+          <LineEntry ID="49e2f76f-dd4a-420a-a8ae-635ba31c0b8a" r="40" g="180" b="255" codes="GUID:49e2f76f-dd4a-420a-a8ae-635ba31c0b8a">${t:3.04}This afternoon, the president made a statement.</LineEntry>
+          <LineEntry ID="9d14c695-8f3d-45c8-b275-5872c280bb9f" r="40" g="180" b="255" codes="GUID:9d14c695-8f3d-45c8-b275-5872c280bb9f">${t:5.44}We are in history's darkest hours as of right now and nations from across the globe are watching us.</LineEntry>
+          <LineEntry ID="618a695b-758e-43dd-98c3-6bc7af54cda6" r="40" g="180" b="255" codes="GUID:618a695b-758e-43dd-98c3-6bc7af54cda6">${t:6.39}I ask all citizens to not panic, please have faith in first responders and peacekeeping forces.</LineEntry>
+          <LineEntry ID="91a6be88-61f7-43b2-9756-b0d76ded380c" r="40" g="180" b="255" codes="GUID:91a6be88-61f7-43b2-9756-b0d76ded380c">${t:5.58}The Knox Virus is in an inert state, giving scientists more time to rush a vaccine.</LineEntry>
+          <LineEntry ID="e6ef2432-a8ff-40f7-b9c9-f4fd4a4166fd" r="40" g="180" b="255" codes="GUID:e6ef2432-a8ff-40f7-b9c9-f4fd4a4166fd">${t:5.49}this Vaccine they call "Beta XLII" will soon but surely be underway,</LineEntry>
+          <LineEntry ID="abba8432-7376-43ed-94c0-ef230365d1d7" r="40" g="180" b="255" codes="GUID:abba8432-7376-43ed-94c0-ef230365d1d7">${t:5.81}we need to give them more time. But the acts of anarchy in our street remains a problem.</LineEntry>
+          <LineEntry ID="4c580b24-fa1f-4c10-acaf-fa9b2e44b9c1" r="40" g="180" b="255" codes="GUID:4c580b24-fa1f-4c10-acaf-fa9b2e44b9c1">${t:4.54}Tonight, a curfew will be put in place, we advise you to stay in your-</LineEntry>
+          <LineEntry ID="3e593fe3-7ff3-4b1a-8deb-9ef7442e1317" r="40" g="180" b="255" codes="GUID:3e593fe3-7ff3-4b1a-8deb-9ef7442e1317">${t:7.03}[img=music]</LineEntry>
+          <LineEntry ID="110917ea-71c3-4296-ac89-4b816112f945" r="40" g="180" b="255" codes="GUID:110917ea-71c3-4296-ac89-4b816112f945">${t:0.65}...</LineEntry>
+          <LineEntry ID="09c957b1-395b-402a-a559-d2b3c08d80e0" r="40" g="180" b="255" codes="GUID:09c957b1-395b-402a-a559-d2b3c08d80e0">${t:4.17}The following executive orders will be broadcast nationwide, </LineEntry>
+          <LineEntry ID="b6063a85-dfa9-4d87-821f-ca0e1c779801" r="40" g="180" b="255" codes="GUID:b6063a85-dfa9-4d87-821f-ca0e1c779801">${t:2.90}every station shall transmit this message.</LineEntry>
+          <LineEntry ID="f1ff70fa-ce46-4d53-baed-06ce26fa57dc" r="40" g="180" b="255" codes="GUID:f1ff70fa-ce46-4d53-baed-06ce26fa57dc">${t:3.49}Martial law has been enacted to the lower 48.</LineEntry>
+          <LineEntry ID="7e2ab305-61fb-482a-b1f3-c41bf0e9a3c3" r="40" g="180" b="255" codes="GUID:7e2ab305-61fb-482a-b1f3-c41bf0e9a3c3">${t:4.54}Starting from 6 pm to 6 am local time,</LineEntry>
+          <LineEntry ID="1f2f1633-3bcb-4ae0-a1ce-c88ad0730adb" r="40" g="180" b="255" codes="GUID:1f2f1633-3bcb-4ae0-a1ce-c88ad0730adb">${t:2.88}you are required to be inside your houses,</LineEntry>
+          <LineEntry ID="d762ee71-1a32-42fc-9b48-a1880808297d" r="40" g="180" b="255" codes="GUID:d762ee71-1a32-42fc-9b48-a1880808297d">${t:5.76}anyone caught outside will be questioned and/or detained by authorities or military forces.</LineEntry>
+          <LineEntry ID="9bf18c78-d899-422c-90d8-30219cbf11a0" r="40" g="180" b="255" codes="GUID:9bf18c78-d899-422c-90d8-30219cbf11a0">${t:6.08}this is without a doubt strict and burdening measures, but these steps are necessary to protect you.</LineEntry>
+          <LineEntry ID="01e490f8-b213-4bb3-ae13-6733154f6e29" r="40" g="180" b="255" codes="GUID:01e490f8-b213-4bb3-ae13-6733154f6e29">${t:7.11}If you caught the symptoms of the virus, quarantine yourself from others and avoid being outdoors.</LineEntry>
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+        </BroadcastEntry>
+
+        <BroadcastEntry ID="ff3fb7a1-d1ab-48cb-9a58-a6d33ef7b584" timestamp="9480" endstamp="10080" type="ActivateBroadcast" day="6" advertCat="none" isSegment="false">
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+          <LineEntry ID="691475de-a722-4ac1-9cb6-ef2ab305f641" r="40" g="180" b="255" codes="GUID:691475de-a722-4ac1-9cb6-ef2ab305f641">${t:4.76}We now have just received updates from the ongoing riot in Washington D.C.</LineEntry> 
+          <LineEntry ID="db276089-2c5b-45a5-92f1-28a1a3b0d0b9" r="40" g="180" b="255" codes="GUID:db276089-2c5b-45a5-92f1-28a1a3b0d0b9">${t:6.26}At least 7 demonstrators have contracted ill to Knox virus and transported away by ambulance.</LineEntry>
+          <LineEntry ID="910963fe-d4bb-4df8-b4ee-14e110f2c10e" r="40" g="180" b="255" codes="GUID:910963fe-d4bb-4df8-b4ee-14e110f2c10e">${t:6.31}People in Kansas City International Airport are quarantined after an ill individual bites another passenger,</LineEntry>
+          <LineEntry ID="6035004a-5c36-477f-8568-c92e5bb1941d" r="40" g="180" b="255" codes="GUID:6035004a-5c36-477f-8568-c92e5bb1941d">${t:2.09}the suspect is yet to be found.</LineEntry>
+          <LineEntry ID="ea1cc656-1d3d-4f2a-850f-2615c9fbb5d9" r="40" g="180" b="255" codes="GUID:ea1cc656-1d3d-4f2a-850f-2615c9fbb5d9">${t:0.69}...</LineEntry>
+          <LineEntry ID="76d61a38-b337-4e5c-967b-069bc254a47f" r="40" g="180" b="255" codes="GUID:76d61a38-b337-4e5c-967b-069bc254a47f">${t:2.83}Please be in your home from 6 pm until 6 am-</LineEntry>
+          <LineEntry ID="95af9764-85e3-4558-b28c-b384142bf91f" r="40" g="180" b="255" codes="GUID:95af9764-85e3-4558-b28c-b384142bf91f">${t:1.76}bzzzt...</LineEntry>
+          <LineEntry ID="197ddd73-7662-41d5-81e0-63b83a58ab60" r="255" g="0" b="255" codes="GUID:197ddd73-7662-41d5-81e0-63b83a58ab60">${t:5.00}[img=music]</LineEntry>
+        </BroadcastEntry>
+
+      </ScriptEntry>
+    </ChannelEntry>
+    <ChannelEntry ID="56671a95-b43a-4588-8a3c-28d9f0f16937" name="Sitcom Channel" cat="Television" freq="241" startscript="main">
+      <ScriptEntry ID="3d80af3b-9b03-4c1a-aa06-b44d0be58a77" name="main" startdelay="0" timestampmode="Static" loopmin="1" loopmax="12">
+        <ExitOptions />
+        <BroadcastEntry ID="8abd9cfa-8360-4391-9abd-bdb42e1d843d" timestamp="360" endstamp="600" type="ActivateBroadcast" day="0" advertCat="06336bb1-84ca-42e4-88a0-648c779e3c2f" isSegment="false">
+          <LineEntry ID="a376d4b8-0d16-4138-9471-65ed0dee1c6f" r="255" g="0" b="255" codes="GUID:a376d4b8-0d16-4138-9471-65ed0dee1c6f">${t:11.47}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="d4e24866-7e1b-44a4-954f-87c9155f7ef9" r="255" g="0" b="255" codes="GUID:d4e24866-7e1b-44a4-954f-87c9155f7ef9">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="3c8db4ad-cd97-4a8f-a513-da357a1919eb" r="255" g="0" b="255" codes="GUID:3c8db4ad-cd97-4a8f-a513-da357a1919eb">${t:17.23}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="ebb90650-640a-48cb-9f71-041b1a0dd1d8" r="255" g="0" b="255" codes="GUID:ebb90650-640a-48cb-9f71-041b1a0dd1d8">${t:29.43}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1f531e49-cae9-4609-b9d2-2846b15912da" r="255" g="0" b="255" codes="GUID:1f531e49-cae9-4609-b9d2-2846b15912da">${t:11.45}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="832b0f4f-1f37-4b58-a69a-75603b1ad109" r="255" g="0" b="255" codes="GUID:832b0f4f-1f37-4b58-a69a-75603b1ad109">${t:30.01}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="88290370-bfad-4c75-a319-05abc2b00fb6" r="255" g="0" b="255" codes="GUID:88290370-bfad-4c75-a319-05abc2b00fb6">${t:30.29}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5" r="255" g="0" b="255" codes="GUID:1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5">${t:24.90}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="e2274deb-1d24-49d4-a6df-52b8b615c5f1" r="255" g="0" b="255" codes="GUID:e2274deb-1d24-49d4-a6df-52b8b615c5f1">${t:29.56}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="34853a3f-1497-47db-98d2-9a960b660221" r="255" g="0" b="255" codes="GUID:34853a3f-1497-47db-98d2-9a960b660221">${t:40.41}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="77b2d173-b41d-46a4-9bc5-7b0fe75d8831" r="255" g="0" b="255" codes="GUID:77b2d173-b41d-46a4-9bc5-7b0fe75d8831">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="b300307d-0ae2-43d8-9b67-cca513ef3a88" r="255" g="0" b="255" codes="GUID:b300307d-0ae2-43d8-9b67-cca513ef3a88">${t:29.61}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="095f1fff-5104-4abd-8117-4deb1a9d8cb8" r="255" g="0" b="255" codes="GUID:095f1fff-5104-4abd-8117-4deb1a9d8cb8">${t:32.71}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="deaea1a0-7559-4875-93e2-19c507c16a6c" r="255" g="0" b="255" codes="GUID:deaea1a0-7559-4875-93e2-19c507c16a6c">${t:24.95}[img=music][img=music][img=music]</LineEntry>
+        </BroadcastEntry>
+        <BroadcastEntry ID="6917c5ae-7951-4403-aeb2-7b9c334bd870" timestamp="600" endstamp="960" type="ActivateBroadcast" day="0" advertCat="06336bb1-84ca-42e4-88a0-648c779e3c2f" isSegment="false">
+          <LineEntry ID="a376d4b8-0d16-4138-9471-65ed0dee1c6f" r="255" g="0" b="255" codes="GUID:a376d4b8-0d16-4138-9471-65ed0dee1c6f">${t:11.47}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="d4e24866-7e1b-44a4-954f-87c9155f7ef9" r="255" g="0" b="255" codes="GUID:d4e24866-7e1b-44a4-954f-87c9155f7ef9">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="3c8db4ad-cd97-4a8f-a513-da357a1919eb" r="255" g="0" b="255" codes="GUID:3c8db4ad-cd97-4a8f-a513-da357a1919eb">${t:17.23}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="ebb90650-640a-48cb-9f71-041b1a0dd1d8" r="255" g="0" b="255" codes="GUID:ebb90650-640a-48cb-9f71-041b1a0dd1d8">${t:29.43}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1f531e49-cae9-4609-b9d2-2846b15912da" r="255" g="0" b="255" codes="GUID:1f531e49-cae9-4609-b9d2-2846b15912da">${t:11.45}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="832b0f4f-1f37-4b58-a69a-75603b1ad109" r="255" g="0" b="255" codes="GUID:832b0f4f-1f37-4b58-a69a-75603b1ad109">${t:30.01}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="88290370-bfad-4c75-a319-05abc2b00fb6" r="255" g="0" b="255" codes="GUID:88290370-bfad-4c75-a319-05abc2b00fb6">${t:30.29}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5" r="255" g="0" b="255" codes="GUID:1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5">${t:24.90}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="e2274deb-1d24-49d4-a6df-52b8b615c5f1" r="255" g="0" b="255" codes="GUID:e2274deb-1d24-49d4-a6df-52b8b615c5f1">${t:29.56}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="34853a3f-1497-47db-98d2-9a960b660221" r="255" g="0" b="255" codes="GUID:34853a3f-1497-47db-98d2-9a960b660221">${t:40.41}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="77b2d173-b41d-46a4-9bc5-7b0fe75d8831" r="255" g="0" b="255" codes="GUID:77b2d173-b41d-46a4-9bc5-7b0fe75d8831">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="b300307d-0ae2-43d8-9b67-cca513ef3a88" r="255" g="0" b="255" codes="GUID:b300307d-0ae2-43d8-9b67-cca513ef3a88">${t:29.61}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="095f1fff-5104-4abd-8117-4deb1a9d8cb8" r="255" g="0" b="255" codes="GUID:095f1fff-5104-4abd-8117-4deb1a9d8cb8">${t:32.71}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="deaea1a0-7559-4875-93e2-19c507c16a6c" r="255" g="0" b="255" codes="GUID:deaea1a0-7559-4875-93e2-19c507c16a6c">${t:24.95}[img=music][img=music][img=music]</LineEntry>
+        </BroadcastEntry>
+        <BroadcastEntry ID="4845521c-f060-4431-ba66-86013090e9bf" timestamp="960" endstamp="1440" type="ActivateBroadcast" day="0" advertCat="06336bb1-84ca-42e4-88a0-648c779e3c2f" isSegment="false">
+          <LineEntry ID="a376d4b8-0d16-4138-9471-65ed0dee1c6f" r="255" g="0" b="255" codes="GUID:a376d4b8-0d16-4138-9471-65ed0dee1c6f">${t:11.47}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="d4e24866-7e1b-44a4-954f-87c9155f7ef9" r="255" g="0" b="255" codes="GUID:d4e24866-7e1b-44a4-954f-87c9155f7ef9">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="3c8db4ad-cd97-4a8f-a513-da357a1919eb" r="255" g="0" b="255" codes="GUID:3c8db4ad-cd97-4a8f-a513-da357a1919eb">${t:17.23}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="ebb90650-640a-48cb-9f71-041b1a0dd1d8" r="255" g="0" b="255" codes="GUID:ebb90650-640a-48cb-9f71-041b1a0dd1d8">${t:29.43}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1f531e49-cae9-4609-b9d2-2846b15912da" r="255" g="0" b="255" codes="GUID:1f531e49-cae9-4609-b9d2-2846b15912da">${t:11.45}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="832b0f4f-1f37-4b58-a69a-75603b1ad109" r="255" g="0" b="255" codes="GUID:832b0f4f-1f37-4b58-a69a-75603b1ad109">${t:30.01}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="88290370-bfad-4c75-a319-05abc2b00fb6" r="255" g="0" b="255" codes="GUID:88290370-bfad-4c75-a319-05abc2b00fb6">${t:30.29}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5" r="255" g="0" b="255" codes="GUID:1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5">${t:24.90}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="e2274deb-1d24-49d4-a6df-52b8b615c5f1" r="255" g="0" b="255" codes="GUID:e2274deb-1d24-49d4-a6df-52b8b615c5f1">${t:29.56}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="34853a3f-1497-47db-98d2-9a960b660221" r="255" g="0" b="255" codes="GUID:34853a3f-1497-47db-98d2-9a960b660221">${t:40.41}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="77b2d173-b41d-46a4-9bc5-7b0fe75d8831" r="255" g="0" b="255" codes="GUID:77b2d173-b41d-46a4-9bc5-7b0fe75d8831">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="b300307d-0ae2-43d8-9b67-cca513ef3a88" r="255" g="0" b="255" codes="GUID:b300307d-0ae2-43d8-9b67-cca513ef3a88">${t:29.61}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="095f1fff-5104-4abd-8117-4deb1a9d8cb8" r="255" g="0" b="255" codes="GUID:095f1fff-5104-4abd-8117-4deb1a9d8cb8">${t:32.71}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="deaea1a0-7559-4875-93e2-19c507c16a6c" r="255" g="0" b="255" codes="GUID:deaea1a0-7559-4875-93e2-19c507c16a6c">${t:24.95}[img=music][img=music][img=music]</LineEntry>
+        </BroadcastEntry>
+        <BroadcastEntry ID="630ff6ce-3e8d-48eb-b0b4-1488243a1b90" timestamp="1440" endstamp="1800" type="ActivateBroadcast" day="1" advertCat="06336bb1-84ca-42e4-88a0-648c779e3c2f" isSegment="false">
+          <LineEntry ID="a376d4b8-0d16-4138-9471-65ed0dee1c6f" r="255" g="0" b="255" codes="GUID:a376d4b8-0d16-4138-9471-65ed0dee1c6f">${t:11.47}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="d4e24866-7e1b-44a4-954f-87c9155f7ef9" r="255" g="0" b="255" codes="GUID:d4e24866-7e1b-44a4-954f-87c9155f7ef9">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="3c8db4ad-cd97-4a8f-a513-da357a1919eb" r="255" g="0" b="255" codes="GUID:3c8db4ad-cd97-4a8f-a513-da357a1919eb">${t:17.23}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="ebb90650-640a-48cb-9f71-041b1a0dd1d8" r="255" g="0" b="255" codes="GUID:ebb90650-640a-48cb-9f71-041b1a0dd1d8">${t:29.43}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1f531e49-cae9-4609-b9d2-2846b15912da" r="255" g="0" b="255" codes="GUID:1f531e49-cae9-4609-b9d2-2846b15912da">${t:11.45}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="832b0f4f-1f37-4b58-a69a-75603b1ad109" r="255" g="0" b="255" codes="GUID:832b0f4f-1f37-4b58-a69a-75603b1ad109">${t:30.01}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="88290370-bfad-4c75-a319-05abc2b00fb6" r="255" g="0" b="255" codes="GUID:88290370-bfad-4c75-a319-05abc2b00fb6">${t:30.29}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5" r="255" g="0" b="255" codes="GUID:1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5">${t:24.90}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="e2274deb-1d24-49d4-a6df-52b8b615c5f1" r="255" g="0" b="255" codes="GUID:e2274deb-1d24-49d4-a6df-52b8b615c5f1">${t:29.56}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="34853a3f-1497-47db-98d2-9a960b660221" r="255" g="0" b="255" codes="GUID:34853a3f-1497-47db-98d2-9a960b660221">${t:40.41}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="77b2d173-b41d-46a4-9bc5-7b0fe75d8831" r="255" g="0" b="255" codes="GUID:77b2d173-b41d-46a4-9bc5-7b0fe75d8831">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="b300307d-0ae2-43d8-9b67-cca513ef3a88" r="255" g="0" b="255" codes="GUID:b300307d-0ae2-43d8-9b67-cca513ef3a88">${t:29.61}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="095f1fff-5104-4abd-8117-4deb1a9d8cb8" r="255" g="0" b="255" codes="GUID:095f1fff-5104-4abd-8117-4deb1a9d8cb8">${t:32.71}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="deaea1a0-7559-4875-93e2-19c507c16a6c" r="255" g="0" b="255" codes="GUID:deaea1a0-7559-4875-93e2-19c507c16a6c">${t:24.95}[img=music][img=music][img=music]</LineEntry>
+        </BroadcastEntry>
+        <BroadcastEntry ID="aceab179-a90f-49d3-9ce4-d7bb53f24a66" timestamp="1800" endstamp="2160" type="ActivateBroadcast" day="1" advertCat="06336bb1-84ca-42e4-88a0-648c779e3c2f" isSegment="false">
+          <LineEntry ID="a376d4b8-0d16-4138-9471-65ed0dee1c6f" r="255" g="0" b="255" codes="GUID:a376d4b8-0d16-4138-9471-65ed0dee1c6f">${t:11.47}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="d4e24866-7e1b-44a4-954f-87c9155f7ef9" r="255" g="0" b="255" codes="GUID:d4e24866-7e1b-44a4-954f-87c9155f7ef9">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="3c8db4ad-cd97-4a8f-a513-da357a1919eb" r="255" g="0" b="255" codes="GUID:3c8db4ad-cd97-4a8f-a513-da357a1919eb">${t:17.23}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="ebb90650-640a-48cb-9f71-041b1a0dd1d8" r="255" g="0" b="255" codes="GUID:ebb90650-640a-48cb-9f71-041b1a0dd1d8">${t:29.43}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1f531e49-cae9-4609-b9d2-2846b15912da" r="255" g="0" b="255" codes="GUID:1f531e49-cae9-4609-b9d2-2846b15912da">${t:11.45}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="832b0f4f-1f37-4b58-a69a-75603b1ad109" r="255" g="0" b="255" codes="GUID:832b0f4f-1f37-4b58-a69a-75603b1ad109">${t:30.01}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="88290370-bfad-4c75-a319-05abc2b00fb6" r="255" g="0" b="255" codes="GUID:88290370-bfad-4c75-a319-05abc2b00fb6">${t:30.29}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5" r="255" g="0" b="255" codes="GUID:1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5">${t:24.90}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="e2274deb-1d24-49d4-a6df-52b8b615c5f1" r="255" g="0" b="255" codes="GUID:e2274deb-1d24-49d4-a6df-52b8b615c5f1">${t:29.56}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="34853a3f-1497-47db-98d2-9a960b660221" r="255" g="0" b="255" codes="GUID:34853a3f-1497-47db-98d2-9a960b660221">${t:40.41}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="77b2d173-b41d-46a4-9bc5-7b0fe75d8831" r="255" g="0" b="255" codes="GUID:77b2d173-b41d-46a4-9bc5-7b0fe75d8831">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="b300307d-0ae2-43d8-9b67-cca513ef3a88" r="255" g="0" b="255" codes="GUID:b300307d-0ae2-43d8-9b67-cca513ef3a88">${t:29.61}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="095f1fff-5104-4abd-8117-4deb1a9d8cb8" r="255" g="0" b="255" codes="GUID:095f1fff-5104-4abd-8117-4deb1a9d8cb8">${t:32.71}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="deaea1a0-7559-4875-93e2-19c507c16a6c" r="255" g="0" b="255" codes="GUID:deaea1a0-7559-4875-93e2-19c507c16a6c">${t:24.95}[img=music][img=music][img=music]</LineEntry>        
+        </BroadcastEntry>
+        <BroadcastEntry ID="d950a808-22b9-4c63-9850-82a99f87defa" timestamp="2160" endstamp="2880" type="ActivateBroadcast" day="1" advertCat="06336bb1-84ca-42e4-88a0-648c779e3c2f" isSegment="false">
+          <LineEntry ID="a376d4b8-0d16-4138-9471-65ed0dee1c6f" r="255" g="0" b="255" codes="GUID:a376d4b8-0d16-4138-9471-65ed0dee1c6f">${t:11.47}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="d4e24866-7e1b-44a4-954f-87c9155f7ef9" r="255" g="0" b="255" codes="GUID:d4e24866-7e1b-44a4-954f-87c9155f7ef9">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="3c8db4ad-cd97-4a8f-a513-da357a1919eb" r="255" g="0" b="255" codes="GUID:3c8db4ad-cd97-4a8f-a513-da357a1919eb">${t:17.23}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="ebb90650-640a-48cb-9f71-041b1a0dd1d8" r="255" g="0" b="255" codes="GUID:ebb90650-640a-48cb-9f71-041b1a0dd1d8">${t:29.43}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1f531e49-cae9-4609-b9d2-2846b15912da" r="255" g="0" b="255" codes="GUID:1f531e49-cae9-4609-b9d2-2846b15912da">${t:11.45}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="832b0f4f-1f37-4b58-a69a-75603b1ad109" r="255" g="0" b="255" codes="GUID:832b0f4f-1f37-4b58-a69a-75603b1ad109">${t:30.01}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="88290370-bfad-4c75-a319-05abc2b00fb6" r="255" g="0" b="255" codes="GUID:88290370-bfad-4c75-a319-05abc2b00fb6">${t:30.29}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5" r="255" g="0" b="255" codes="GUID:1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5">${t:24.90}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="e2274deb-1d24-49d4-a6df-52b8b615c5f1" r="255" g="0" b="255" codes="GUID:e2274deb-1d24-49d4-a6df-52b8b615c5f1">${t:29.56}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="34853a3f-1497-47db-98d2-9a960b660221" r="255" g="0" b="255" codes="GUID:34853a3f-1497-47db-98d2-9a960b660221">${t:40.41}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="77b2d173-b41d-46a4-9bc5-7b0fe75d8831" r="255" g="0" b="255" codes="GUID:77b2d173-b41d-46a4-9bc5-7b0fe75d8831">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="b300307d-0ae2-43d8-9b67-cca513ef3a88" r="255" g="0" b="255" codes="GUID:b300307d-0ae2-43d8-9b67-cca513ef3a88">${t:29.61}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="095f1fff-5104-4abd-8117-4deb1a9d8cb8" r="255" g="0" b="255" codes="GUID:095f1fff-5104-4abd-8117-4deb1a9d8cb8">${t:32.71}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="deaea1a0-7559-4875-93e2-19c507c16a6c" r="255" g="0" b="255" codes="GUID:deaea1a0-7559-4875-93e2-19c507c16a6c">${t:24.95}[img=music][img=music][img=music]</LineEntry>        
+        </BroadcastEntry>
+        <BroadcastEntry ID="96b73d18-2f83-49ee-882f-95c81ee3c002" timestamp="2880" endstamp="3240" type="ActivateBroadcast" day="2" advertCat="06336bb1-84ca-42e4-88a0-648c779e3c2f" isSegment="false">
+          <LineEntry ID="a376d4b8-0d16-4138-9471-65ed0dee1c6f" r="255" g="0" b="255" codes="GUID:a376d4b8-0d16-4138-9471-65ed0dee1c6f">${t:11.47}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="d4e24866-7e1b-44a4-954f-87c9155f7ef9" r="255" g="0" b="255" codes="GUID:d4e24866-7e1b-44a4-954f-87c9155f7ef9">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="3c8db4ad-cd97-4a8f-a513-da357a1919eb" r="255" g="0" b="255" codes="GUID:3c8db4ad-cd97-4a8f-a513-da357a1919eb">${t:17.23}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="ebb90650-640a-48cb-9f71-041b1a0dd1d8" r="255" g="0" b="255" codes="GUID:ebb90650-640a-48cb-9f71-041b1a0dd1d8">${t:29.43}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1f531e49-cae9-4609-b9d2-2846b15912da" r="255" g="0" b="255" codes="GUID:1f531e49-cae9-4609-b9d2-2846b15912da">${t:11.45}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="832b0f4f-1f37-4b58-a69a-75603b1ad109" r="255" g="0" b="255" codes="GUID:832b0f4f-1f37-4b58-a69a-75603b1ad109">${t:30.01}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="88290370-bfad-4c75-a319-05abc2b00fb6" r="255" g="0" b="255" codes="GUID:88290370-bfad-4c75-a319-05abc2b00fb6">${t:30.29}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5" r="255" g="0" b="255" codes="GUID:1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5">${t:24.90}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="e2274deb-1d24-49d4-a6df-52b8b615c5f1" r="255" g="0" b="255" codes="GUID:e2274deb-1d24-49d4-a6df-52b8b615c5f1">${t:29.56}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="34853a3f-1497-47db-98d2-9a960b660221" r="255" g="0" b="255" codes="GUID:34853a3f-1497-47db-98d2-9a960b660221">${t:40.41}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="77b2d173-b41d-46a4-9bc5-7b0fe75d8831" r="255" g="0" b="255" codes="GUID:77b2d173-b41d-46a4-9bc5-7b0fe75d8831">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="b300307d-0ae2-43d8-9b67-cca513ef3a88" r="255" g="0" b="255" codes="GUID:b300307d-0ae2-43d8-9b67-cca513ef3a88">${t:29.61}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="095f1fff-5104-4abd-8117-4deb1a9d8cb8" r="255" g="0" b="255" codes="GUID:095f1fff-5104-4abd-8117-4deb1a9d8cb8">${t:32.71}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="deaea1a0-7559-4875-93e2-19c507c16a6c" r="255" g="0" b="255" codes="GUID:deaea1a0-7559-4875-93e2-19c507c16a6c">${t:24.95}[img=music][img=music][img=music]</LineEntry>        
+        </BroadcastEntry>
+        <BroadcastEntry ID="7c3519e1-cacb-4338-87b1-a19626be415b" timestamp="3240" endstamp="3600" type="ActivateBroadcast" day="2" advertCat="06336bb1-84ca-42e4-88a0-648c779e3c2f" isSegment="false">
+          <LineEntry ID="a376d4b8-0d16-4138-9471-65ed0dee1c6f" r="255" g="0" b="255" codes="GUID:a376d4b8-0d16-4138-9471-65ed0dee1c6f">${t:11.47}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="d4e24866-7e1b-44a4-954f-87c9155f7ef9" r="255" g="0" b="255" codes="GUID:d4e24866-7e1b-44a4-954f-87c9155f7ef9">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="3c8db4ad-cd97-4a8f-a513-da357a1919eb" r="255" g="0" b="255" codes="GUID:3c8db4ad-cd97-4a8f-a513-da357a1919eb">${t:17.23}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="ebb90650-640a-48cb-9f71-041b1a0dd1d8" r="255" g="0" b="255" codes="GUID:ebb90650-640a-48cb-9f71-041b1a0dd1d8">${t:29.43}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1f531e49-cae9-4609-b9d2-2846b15912da" r="255" g="0" b="255" codes="GUID:1f531e49-cae9-4609-b9d2-2846b15912da">${t:11.45}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="832b0f4f-1f37-4b58-a69a-75603b1ad109" r="255" g="0" b="255" codes="GUID:832b0f4f-1f37-4b58-a69a-75603b1ad109">${t:30.01}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="88290370-bfad-4c75-a319-05abc2b00fb6" r="255" g="0" b="255" codes="GUID:88290370-bfad-4c75-a319-05abc2b00fb6">${t:30.29}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5" r="255" g="0" b="255" codes="GUID:1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5">${t:24.90}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="e2274deb-1d24-49d4-a6df-52b8b615c5f1" r="255" g="0" b="255" codes="GUID:e2274deb-1d24-49d4-a6df-52b8b615c5f1">${t:29.56}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="34853a3f-1497-47db-98d2-9a960b660221" r="255" g="0" b="255" codes="GUID:34853a3f-1497-47db-98d2-9a960b660221">${t:40.41}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="77b2d173-b41d-46a4-9bc5-7b0fe75d8831" r="255" g="0" b="255" codes="GUID:77b2d173-b41d-46a4-9bc5-7b0fe75d8831">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="b300307d-0ae2-43d8-9b67-cca513ef3a88" r="255" g="0" b="255" codes="GUID:b300307d-0ae2-43d8-9b67-cca513ef3a88">${t:29.61}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="095f1fff-5104-4abd-8117-4deb1a9d8cb8" r="255" g="0" b="255" codes="GUID:095f1fff-5104-4abd-8117-4deb1a9d8cb8">${t:32.71}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="deaea1a0-7559-4875-93e2-19c507c16a6c" r="255" g="0" b="255" codes="GUID:deaea1a0-7559-4875-93e2-19c507c16a6c">${t:24.95}[img=music][img=music][img=music]</LineEntry>        
+        </BroadcastEntry>
+        <BroadcastEntry ID="16e3e9fe-ba7a-48b4-be1d-616e0126ba5d" timestamp="3600" endstamp="4320" type="ActivateBroadcast" day="2" advertCat="06336bb1-84ca-42e4-88a0-648c779e3c2f" isSegment="false">
+          <LineEntry ID="a376d4b8-0d16-4138-9471-65ed0dee1c6f" r="255" g="0" b="255" codes="GUID:a376d4b8-0d16-4138-9471-65ed0dee1c6f">${t:11.47}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="d4e24866-7e1b-44a4-954f-87c9155f7ef9" r="255" g="0" b="255" codes="GUID:d4e24866-7e1b-44a4-954f-87c9155f7ef9">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="3c8db4ad-cd97-4a8f-a513-da357a1919eb" r="255" g="0" b="255" codes="GUID:3c8db4ad-cd97-4a8f-a513-da357a1919eb">${t:17.23}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="ebb90650-640a-48cb-9f71-041b1a0dd1d8" r="255" g="0" b="255" codes="GUID:ebb90650-640a-48cb-9f71-041b1a0dd1d8">${t:29.43}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1f531e49-cae9-4609-b9d2-2846b15912da" r="255" g="0" b="255" codes="GUID:1f531e49-cae9-4609-b9d2-2846b15912da">${t:11.45}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="832b0f4f-1f37-4b58-a69a-75603b1ad109" r="255" g="0" b="255" codes="GUID:832b0f4f-1f37-4b58-a69a-75603b1ad109">${t:30.01}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="88290370-bfad-4c75-a319-05abc2b00fb6" r="255" g="0" b="255" codes="GUID:88290370-bfad-4c75-a319-05abc2b00fb6">${t:30.29}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5" r="255" g="0" b="255" codes="GUID:1918b179-e6cc-4f43-aa6b-a7e1f24dd6d5">${t:24.90}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="e2274deb-1d24-49d4-a6df-52b8b615c5f1" r="255" g="0" b="255" codes="GUID:e2274deb-1d24-49d4-a6df-52b8b615c5f1">${t:29.56}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="34853a3f-1497-47db-98d2-9a960b660221" r="255" g="0" b="255" codes="GUID:34853a3f-1497-47db-98d2-9a960b660221">${t:40.41}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="77b2d173-b41d-46a4-9bc5-7b0fe75d8831" r="255" g="0" b="255" codes="GUID:77b2d173-b41d-46a4-9bc5-7b0fe75d8831">${t:59.99}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="b300307d-0ae2-43d8-9b67-cca513ef3a88" r="255" g="0" b="255" codes="GUID:b300307d-0ae2-43d8-9b67-cca513ef3a88">${t:29.61}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="095f1fff-5104-4abd-8117-4deb1a9d8cb8" r="255" g="0" b="255" codes="GUID:095f1fff-5104-4abd-8117-4deb1a9d8cb8">${t:32.71}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="deaea1a0-7559-4875-93e2-19c507c16a6c" r="255" g="0" b="255" codes="GUID:deaea1a0-7559-4875-93e2-19c507c16a6c">${t:24.95}[img=music][img=music][img=music]</LineEntry>        
+        </BroadcastEntry>
+      </ScriptEntry>
+    </ChannelEntry>
+    <ChannelEntry ID="49836f3a-ca16-4a85-9ec4-b85c31c07b81" name="Party Channel" cat="Radio" freq="98600" startscript="main">
+      <ScriptEntry ID="8b2ac3f1-1d04-4d51-9755-c3d57357ecd6" name="main" startdelay="0" timestampmode="Static" loopmin="1" loopmax="12">
+        <ExitOptions />
+        <BroadcastEntry ID="00e64d79-754d-42a3-9311-39607e7ef652" timestamp="0" endstamp="600" type="ActivateBroadcast" day="0" advertCat="none" isSegment="false">
+          <LineEntry ID="3fee99ec-c8b6-4ebc-9f2f-116043153195" r="255" g="0" b="255" codes="GUID:3fee99ec-c8b6-4ebc-9f2f-116043153195">${t:60.01}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="0bc71c8a-f954-4dbf-aa09-ff09b015d6e2" r="255" g="0" b="255" codes="GUID:0bc71c8a-f954-4dbf-aa09-ff09b015d6e2">${t:60.01}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="a08b44db-b3cb-46a1-b04c-633e8e5b2a37" r="255" g="0" b="255" codes="GUID:a08b44db-b3cb-46a1-b04c-633e8e5b2a37">${t:36.57}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="38fe9b5a-e932-477c-a6b5-96b9e7ea84da" r="255" g="0" b="255" codes="GUID:38fe9b5a-e932-477c-a6b5-96b9e7ea84da">${t:36.76}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="2a379a08-4428-42b0-ae3d-0fb41c34f74c" r="255" g="0" b="255" codes="GUID:2a379a08-4428-42b0-ae3d-0fb41c34f74c">${t:56.50}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="2cc1e0e2-75ab-4ac3-9238-635813babc18" r="255" g="0" b="255" codes="GUID:2cc1e0e2-75ab-4ac3-9238-635813babc18">${t:45.00}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="c688d4c8-dd7b-4d93-8e0f-c6cb5f488db2" r="255" g="0" b="255" codes="GUID:c688d4c8-dd7b-4d93-8e0f-c6cb5f488db2">${t:52.13}[img=music][img=music][img=music]</LineEntry>
+          <LineEntry ID="22b4a025-6455-4c8d-b341-fd4f0f18836a" r="255" g="0" b="255" codes="GUID:22b4a025-6455-4c8d-b341-fd4f0f18836a">${t:39.29}[img=music][img=music][img=music]</LineEntry>
+        </BroadcastEntry>
+      </ScriptEntry>
+    </ChannelEntry>
+  </Channels>
+</RadioData>

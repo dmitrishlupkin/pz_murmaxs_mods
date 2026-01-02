@@ -1,0 +1,6 @@
+Moodles_EN = {
+    Moodles_trespassing_lvl1 = "Trespassing",
+    Moodles_trespassing_desc_lvl1 = "You are trespassing on someone else's territory.",
+    Moodles_Trespassing_lvl1 = "Trespassing",
+    Moodles_Trespassing_desc_lvl1 = "You are trespassing on someone else's territory.",
+}

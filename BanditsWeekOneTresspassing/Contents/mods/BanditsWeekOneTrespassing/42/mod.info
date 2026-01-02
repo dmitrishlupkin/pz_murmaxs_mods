@@ -1,0 +1,11 @@
+name=Bandits Week One Addon: Tresspassing
+poster=poster.png
+id=BanditsWeekOneAddonTresspassing
+description=<H1><GREEN>B42.13 ONLY
+description=<BR>
+description=Shows mood icon when you are close to be tresspassing or when you are tresspassing on someone else's property.
+description=<BR>
+author=Murmax
+require=\BanditsWeekOne
+pack=bwo
+tiledef=bwo 2303

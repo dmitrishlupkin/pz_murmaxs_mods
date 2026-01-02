@@ -1,0 +1,9 @@
+<SIZE:medium> 로즈우드
+ <LINE> <LINE> <SIZE:medium> 로즈우드에서의 짧은 체류는 즐겁지만, 긴 체류를 한다면?
+ <LINE> <LINE> <SIZE:medium> 아마, 유명한 녹스 형무소의 수감자들은 말할 것입니다. "그거 참 재미없네!"
+ <LINE> <LINE>  
+ <LINE> <LINE> <SIZE:medium> 접근 용이성을 위해 지리적으로 이상적인 위치에 있는 로즈우드는
+ <LINE> <LINE> <SIZE:medium> 행정 및 지역사회 서비스를 위한 지역사회 중심지일 뿐 아니라 대표적인 감금 센터입니다.
+ <LINE> <LINE> <SIZE:medium> 최근 새롭게 단장한 소방서와 활기찬 법 집행 시설로 
+ <LINE> <LINE> <SIZE:medium> 이 지역은 이곳에서 가장 중요한 도시 중 하나입니다!
+ <LINE> <LINE> <SIZE:medium> 오늘 방문하러 오세요!

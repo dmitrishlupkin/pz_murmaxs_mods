@@ -1,0 +1,768 @@
+[bbe0c8c9-1135-4ced-abd2-73807e166a1e]
+	general: name = BanditsStrong
+	spawn: friendly = false
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[d6c3c644-42e7-466a-8ce4-c002ad29dd50]
+	general: name = CriminalsClassy
+	spawn: friendly = false
+	spawn: companion = false
+	spawn: defenders = true
+	spawn: campers = false
+	spawn: assault = true
+	spawn: wanderer = true
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[eacda00e-6f8f-4afa-a813-f847d54720d8]
+	general: name = CriminalsBlack
+	spawn: friendly = false
+	spawn: companion = false
+	spawn: defenders = true
+	spawn: campers = false
+	spawn: assault = true
+	spawn: wanderer = true
+	spawn: roadblock = true
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[3a424953-fa5b-418f-8f11-462e52bfd574]
+	general: name = Rangers
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = true
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[72fbcd15-a81b-476a-8c25-1b2caea694de]
+	general: name = Spike
+	spawn: friendly = false
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = true
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 28
+	spawn: dayEnd = 41
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[f3ad89be-9368-4df7-a63b-0c315a96f23b]
+	general: name = Bikers
+	spawn: friendly = false
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = true
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[9bf4882b-0622-4e77-82c1-feee90b566b4]
+	general: name = SweepersBlack
+	spawn: friendly = false
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = true
+	spawn: wanderer = true
+	spawn: roadblock = false
+	spawn: dayStart = 11
+	spawn: dayEnd = 90
+	spawn: spawnChance = 1.2
+	spawn: groupMin = 5
+	spawn: groupMax = 10
+	spawn: zone = 0
+
+[c4878ebb-c8e5-4932-8850-370ee9c77d61]
+	general: name = Veterans
+	spawn: friendly = true
+	spawn: companion = true
+	spawn: defenders = false
+	spawn: campers = true
+	spawn: assault = false
+	spawn: wanderer = true
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[b6c61446-ad6c-4529-9bac-751b9b64843f]
+	general: name = SWAT
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = true
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[526e57b9-52cf-42a8-a17b-50e32e4d33f3]
+	general: name = PoliceRiot
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = true
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[c15cc316-41f9-4c2c-b71a-3a3fb58c247d]
+	general: name = InmatesFree
+	spawn: friendly = false
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = true
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[33894253-b965-4eb3-94e1-4d642cadac88]
+	general: name = PoliceGray
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = true
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[c4e24888-70f9-43ea-80f8-1bb2f6b9bd88]
+	general: name = PoliceBlue
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = true
+	spawn: roadblock = true
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[d2860ee6-7e18-4132-ad42-8fb3a34ea499]
+	general: name = ArmyGreen
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = true
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[c167d1e0-c077-4ee5-b353-88b374de193d]
+	general: name = Civilians
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = true
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[989f4faf-53f2-4f8f-9603-496fb3efcb6a]
+	general: name = Firemen
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = true
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[51a68231-8870-4508-8c09-bd906b4411d2]
+	general: name = Mentals
+	spawn: friendly = false
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = true
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[bd53300c-f715-4cf7-a91f-1836a2282944]
+	general: name = Runners
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[76e0eb48-ee72-45ac-9b1b-56a66f597235]
+	general: name = Gardeners
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[f8c5c06b-2fd7-482d-8150-2be03d446927]
+	general: name = Medics
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[ce526bd8-a230-4d21-a1f8-5e30790b366f]
+	general: name = ArmyGreenMask
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = true
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[8736f2bd-3b08-4ae3-b5f2-1d6a3225e892]
+	general: name = CriminalsWhite
+	spawn: friendly = false
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[42364b66-ab03-4c38-b374-5575a0c24868]
+	general: name = Party
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 10
+	spawn: groupMax = 40
+	spawn: zone = 0
+
+[e216b4ea-e57f-4b15-8cd8-140b82e7b5ea]
+	general: name = Postal
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[e195497c-9a14-4c1f-b15a-b8227d15a682]
+	general: name = Janitors
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[cfccfa27-f256-47a0-bd7c-b2d12b369c6d]
+	general: name = MedicHazmats
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[dcc2a5e9-2670-42f9-8ac2-65566e8f2537]
+	general: name = Security
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[affef50f-660a-4231-bc6d-e0054fcf3afd]
+	general: name = Office
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[544f827c-cdb3-47d0-a895-3767b67a72c0]
+	general: name = Kitchen
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[f52b03f4-c5b1-4bbb-a110-b74038312fe2]
+	general: name = Residents
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[9699d022-eebb-4c80-9b39-f48f392f2823]
+	general: name = Shahids
+	spawn: friendly = false
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[a3048300-2bca-4140-b256-b249da951b60]
+	general: name = HammerBrothers
+	spawn: friendly = false
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[473e2db3-c751-4a09-9a1d-d780e148b6a1]
+	general: name = ShopAssistant
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[25f86d1a-03f6-461a-ac46-a936587930d0]
+	general: name = Fossoil
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[31e340cf-c773-4b1c-9e27-8317db82823f]
+	general: name = Gas2Go
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[a3bd90b9-aa08-44b2-8be3-a6dfcf15f9e1]
+	general: name = BabeFemale
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 1
+	spawn: zone = 0
+
+[303cd279-a36a-4e4a-b448-ac1ef1c83b7d]
+	general: name = BabeMale
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 1
+	spawn: zone = 0
+
+[f89205ff-7f90-4360-8f84-1d8faa3650e7]
+	general: name = SecretLab
+	spawn: friendly = false
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = true
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 4
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[65218e00-bdf0-4d67-bcc1-75bcc86cb2c9]
+	general: name = Survivors
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 1
+	spawn: zone = 0
+
+[cfecc181-508e-4c5b-85ce-7a0d21ce8537]
+	general: name = Priest
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 1
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 1
+	spawn: zone = 0
+
+[784b6f20-87d5-48f7-8ac2-74466f7720ac]
+	general: name = Teachers
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 1
+	spawn: zone = 0
+
+[5ce44f42-d5f5-4036-b408-26d42fd883ef]
+	general: name = Students
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 4
+	spawn: zone = 0
+
+[7da39ab5-9ddc-4590-8009-f4c148bc5dd6]
+	general: name = Waiters
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 1
+	spawn: zone = 0
+
+[2e79625a-e4a5-412e-bd36-cd67d563a2d3]
+	general: name = Polish
+	spawn: friendly = false
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = true
+	spawn: wanderer = true
+	spawn: roadblock = false
+	spawn: dayStart = 1
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 4
+	spawn: groupMax = 12
+	spawn: zone = 0
+
+[bafa6e46-bf40-4f46-a133-fae309e0dccc]
+	general: name = SweepersMilitary
+	spawn: friendly = false
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = true
+	spawn: roadblock = false
+	spawn: dayStart = 8
+	spawn: dayEnd = 80
+	spawn: spawnChance = 1.5
+	spawn: groupMin = 4
+	spawn: groupMax = 8
+	spawn: zone = 0
+
+[ba5733bd-938d-4320-b2f8-3e9c5832200e]
+	general: name = LateSurvivors
+	spawn: friendly = true
+	spawn: companion = true
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 10
+	spawn: dayEnd = 90
+	spawn: spawnChance = 0.9
+	spawn: groupMin = 2
+	spawn: groupMax = 3
+	spawn: zone = 0
+
+[51f970f1-5868-4b56-ab55-4a1828ebf6bf]
+	general: name = Inmates
+	spawn: friendly = true
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = false
+	spawn: wanderer = false
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 32
+	spawn: zone = 0
+
+[9dc2c635-cd4f-45b6-9a97-b312a84d175a]
+	general: name = PrisonGuard
+	spawn: friendly = false
+	spawn: companion = false
+	spawn: defenders = false
+	spawn: campers = false
+	spawn: assault = true
+	spawn: wanderer = true
+	spawn: roadblock = false
+	spawn: dayStart = 0
+	spawn: dayEnd = 10000
+	spawn: spawnChance = 0
+	spawn: groupMin = 1
+	spawn: groupMax = 12
+	spawn: zone = 0
+

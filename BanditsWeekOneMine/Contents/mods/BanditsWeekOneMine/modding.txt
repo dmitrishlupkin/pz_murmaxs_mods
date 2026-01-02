@@ -1,0 +1,12 @@
+Tutorial for Week One modding
+
+Scenarios
+
+You can create your own scenarios to model different experience and narrative for the player. 
+Scenarios define starting setup and a global schedule table of special events.
+Events are solely time-triggered, and cannot be invoked by any other condition.
+
+
+
+
+

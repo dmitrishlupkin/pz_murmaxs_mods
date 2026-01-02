@@ -1,0 +1,3 @@
+RecipeGroupsEN {
+    RecipeGroup_OpenBox = "Open Box",
+}

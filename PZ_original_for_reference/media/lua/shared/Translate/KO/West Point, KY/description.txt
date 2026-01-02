@@ -1,0 +1,10 @@
+웨스트 포인트
+ <LINE> <LINE> <SIZE:medium> 마을 광장을 산책하든, 수제 파이를 먹든 친절한 주민들과 대화를 하든, 
+ <LINE> <LINE> <SIZE:medium> 이 마을은 진정한 미국의 작은 마을입니다.
+ <LINE> <LINE> 
+ <LINE> <LINE> <SIZE:medium> 생기 없는 거리, 적당한 가격의 주택, 그리고 뒹굴고 있는 거대한 농지를 
+ <LINE> <LINE> <SIZE:medium> 놀리지 마세요. - 이곳은 녹스 컨트리의 행정 중심입니다.
+ <LINE> <LINE> <SIZE:medium> 시장이 시청에서 대충 때우는 공문에 바쁘지 않다면, 
+ <LINE> <LINE> <SIZE:medium> 유명한 술집인 트위기에서 그를 만날 수 있을지 모릅니다.
+ <LINE> <LINE> <SIZE:medium> 아무리 오래 머무르더라도
+ <LINE> <LINE> <SIZE:medium> 웨스트 포인트의 환영은 계속됩니다!
