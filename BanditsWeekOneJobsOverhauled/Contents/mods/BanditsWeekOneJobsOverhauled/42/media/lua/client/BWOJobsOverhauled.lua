@@ -127,7 +127,7 @@ end
 
 BWOJobsOverhauled.GetWorkBuildingName = function(player)
     local work = BWOJobsOverhauled.GetWorkData(player)
-    return work.name or BWOJobsOverhauled.Text("UI_BWO_JobsOverhauled_Work_Unknown")
+    return work.name
 end
 
 BWOJobsOverhauled.PlayerHasKeyId = function(player, keyId)
@@ -302,6 +302,20 @@ BWOJobsOverhauled.FindNearestWorkBuilding = function(player, profession)
     return best, bestRoomName
 end
 
+BWOJobsOverhauled.EnsureWorkMarker = function(player)
+    if not player then return end
+    if not getCell() then return end
+    if not SandboxVars or not SandboxVars.Bandits or not SandboxVars.Bandits.General_ArrivalIcon then return end
+    if not BanditEventMarkerHandler then return end
+    local work = BWOJobsOverhauled.GetWorkData(player)
+    if not work or not work.keyId or not work.x or not work.y then return end
+    local desc = BWOJobsOverhauled.Text("UI_BWO_JobsOverhauled_Work_Marker")
+    local color = { r = 0.3, g = 0.8, b = 1.0 }
+    local markerId = work.markerId or getRandomUUID()
+    work.markerId = markerId
+    BanditEventMarkerHandler.set(markerId, "media/ui/defend.png", 604800, work.x, work.y, color, desc)
+end
+
 BWOJobsOverhauled.RegisterWorkBuilding = function(player, building, roomName)
     if not building then return end
     local work = BWOJobsOverhauled.GetWorkData(player)
@@ -314,13 +328,10 @@ BWOJobsOverhauled.RegisterWorkBuilding = function(player, building, roomName)
     work.keyId = newKeyId
     work.x = (def:getX() + def:getX2()) / 2
     work.y = (def:getY() + def:getY2()) / 2
-    work.name = roomName or work.name or BWOJobsOverhauled.Text("UI_BWO_JobsOverhauled_Work_Unknown")
-    if player and SandboxVars and SandboxVars.Bandits and SandboxVars.Bandits.General_ArrivalIcon and BanditEventMarkerHandler then
-        local desc = BWOJobsOverhauled.Text("UI_BWO_JobsOverhauled_Work_Marker")
-        local color = { r = 0.3, g = 0.8, b = 1.0 }
-        local markerId = work.markerId or getRandomUUID()
-        work.markerId = markerId
-        BanditEventMarkerHandler.set(markerId, "media/ui/defend.png", 604800, work.x, work.y, color, desc)
+    work.name = roomName or work.name
+    work.assigned = true
+    if player then
+        BWOJobsOverhauled.EnsureWorkMarker(player)
     end
     if player then
         local args = { id = work.keyId, event = "work", x = work.x, y = work.y }
@@ -346,12 +357,36 @@ BWOJobsOverhauled.EnsureWorkLocation = function(player)
     end
 end
 
+BWOJobsOverhauled.TryAssignWorkLocation = function()
+    local player = getSpecificPlayer(0)
+    if not player then return end
+    local profession = BWOJobsOverhauled.GetProfessionName(player)
+    if not BWOJobsOverhauled.RequiresWorkLocation(profession) then
+        BWOJobsOverhauled.WorkAssignmentPending = false
+        Events.OnTick.Remove(BWOJobsOverhauled.TryAssignWorkLocation)
+        return
+    end
+    local work = BWOJobsOverhauled.GetWorkData(player)
+    if work.keyId then
+        work.assigned = true
+        BWOJobsOverhauled.WorkAssignmentPending = false
+        Events.OnTick.Remove(BWOJobsOverhauled.TryAssignWorkLocation)
+        return
+    end
+    if not getCell() then return end
+    BWOJobsOverhauled.EnsureWorkLocation(player)
+    if work.keyId then
+        work.assigned = true
+        BWOJobsOverhauled.WorkAssignmentPending = false
+        Events.OnTick.Remove(BWOJobsOverhauled.TryAssignWorkLocation)
+    end
+end
+
 BWOJobsOverhauled.UpdateWorkDuty = function(player)
     if not player then return end
     local profession = BWOJobsOverhauled.GetProfessionName(player)
     local config = BWOJobsOverhauled.GetWorkShiftConfig(profession)
     if not config then return end
-    BWOJobsOverhauled.EnsureWorkLocation(player)
     local data = BWOJobsOverhauled.EnsureDailyData(player)
     if BWOJobsOverhauled.IsAtWork(player) then
         if not data.workOnDuty then
@@ -691,10 +726,11 @@ local function onInventoryTransferAction(data)
 end
 
 local function onEveryOneMinute()
-    if not BWOJobsOverhauled.AreTransactionsEnabled() then return end
     local player = getSpecificPlayer(0)
     if not player then return end
-    BWOJobsOverhauled.UpdateWorkDuty(player)
+    if BWOJobsOverhauled.AreTransactionsEnabled() then
+        BWOJobsOverhauled.UpdateWorkDuty(player)
+    end
 end
 
 local function onGameStart()
@@ -705,8 +741,16 @@ local function onGameStart()
     BWOJobsOverhauled.UpdateButtonPosition()
     local player = getSpecificPlayer(0)
     if player then
-        BWOJobsOverhauled.EnsureWorkLocation(player)
         BWOJobsOverhauled.IssueWorkKey(player, BWOJobsOverhauled.GetWorkData(player))
+        BWOJobsOverhauled.EnsureWorkMarker(player)
+        local profession = BWOJobsOverhauled.GetProfessionName(player)
+        local work = BWOJobsOverhauled.GetWorkData(player)
+        if BWOJobsOverhauled.RequiresWorkLocation(profession) and not work.assigned and not work.keyId then
+            if not BWOJobsOverhauled.WorkAssignmentPending then
+                BWOJobsOverhauled.WorkAssignmentPending = true
+                Events.OnTick.Add(BWOJobsOverhauled.TryAssignWorkLocation)
+            end
+        end
     end
 end
 

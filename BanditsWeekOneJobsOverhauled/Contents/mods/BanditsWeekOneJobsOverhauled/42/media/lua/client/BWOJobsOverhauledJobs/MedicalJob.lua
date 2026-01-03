@@ -30,55 +30,61 @@ local function buildJob(player)
     local shiftPayInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Shift"), tostring(shiftConfig.pay))
     local shiftTaskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_WorkShift"), shiftPayInfo)
 
-    return {
-        id = "medical",
-        text = text("UI_BWO_JobsOverhauled_Job_Medical"),
-        tasks = {
-            {
-                id = "medical_task",
-                text = healTaskText,
-                conditions = {
-                    {
-                        id = "medical_on_duty",
-                        text = text("UI_BWO_JobsOverhauled_Cond_Medical_OnDuty"),
-                        isLongTerm = true,
-                        check = function()
-                            return BWOJobsOverhauled.IsOnDutyAs(player, profession)
-                        end,
-                    },
-                },
-            },
-            {
-                id = "medical_shift",
-                text = shiftTaskText,
-                hideOnComplete = true,
-                highlightSeconds = 5,
-                conditions = {
-                    {
-                        id = "medical_shift_location",
-                        text = text("UI_BWO_JobsOverhauled_Cond_Work_Location"),
-                        isLongTerm = true,
-                        check = function()
-                            return BWOJobsOverhauled.IsAtWork(player)
-                        end,
-                        getStatusText = function()
-                            return BWOJobsOverhauled.GetWorkBuildingName(player)
-                        end,
-                    },
-                    {
-                        id = "medical_shift_time",
-                        text = string.format(text("UI_BWO_JobsOverhauled_Cond_Work_Time"), tostring(shiftConfig.hours)),
-                        isLongTerm = true,
-                        check = function()
-                            return BWOJobsOverhauled.IsWorkShiftComplete(player)
-                        end,
-                        getStatusText = function()
-                            return BWOJobsOverhauled.GetWorkShiftStatus(player)
-                        end,
-                    },
+    local tasks = {
+        {
+            id = "medical_task",
+            text = healTaskText,
+            conditions = {
+                {
+                    id = "medical_on_duty",
+                    text = text("UI_BWO_JobsOverhauled_Cond_Medical_OnDuty"),
+                    isLongTerm = true,
+                    check = function()
+                        return BWOJobsOverhauled.IsOnDutyAs(player, profession)
+                    end,
                 },
             },
         },
+    }
+
+    local work = BWOJobsOverhauled.GetWorkData(player)
+    if work and work.keyId then
+        table.insert(tasks, {
+            id = "medical_shift",
+            text = shiftTaskText,
+            hideOnComplete = true,
+            highlightSeconds = 5,
+            conditions = {
+                {
+                    id = "medical_shift_location",
+                    text = text("UI_BWO_JobsOverhauled_Cond_Work_Location"),
+                    isLongTerm = true,
+                    check = function()
+                        return BWOJobsOverhauled.IsAtWork(player)
+                    end,
+                    getStatusText = function()
+                        return BWOJobsOverhauled.GetWorkBuildingName(player)
+                    end,
+                },
+                {
+                    id = "medical_shift_time",
+                    text = string.format(text("UI_BWO_JobsOverhauled_Cond_Work_Time"), tostring(shiftConfig.hours)),
+                    isLongTerm = true,
+                    check = function()
+                        return BWOJobsOverhauled.IsWorkShiftComplete(player)
+                    end,
+                    getStatusText = function()
+                        return BWOJobsOverhauled.GetWorkShiftStatus(player)
+                    end,
+                },
+            },
+        })
+    end
+
+    return {
+        id = "medical",
+        text = text("UI_BWO_JobsOverhauled_Job_Medical"),
+        tasks = tasks,
     }
 end
 
