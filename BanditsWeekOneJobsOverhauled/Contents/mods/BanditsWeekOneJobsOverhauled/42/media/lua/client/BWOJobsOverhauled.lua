@@ -180,7 +180,7 @@ end
 function BWOJobsOverhauled.UpdateButtonPosition()
     if not BWOJobsOverhauled.button then return end
     local playerNum = 0
-    local x = getPlayerScreenLeft(playerNum) + 10
+    local x = getPlayerScreenLeft(playerNum) + 90
     local y = getPlayerScreenTop(playerNum) + 200
     BWOJobsOverhauled.button:setX(x)
     BWOJobsOverhauled.button:setY(y)
@@ -199,7 +199,7 @@ function BWOJobsOverhauled.CreateButton()
     end
 
     local playerNum = 0
-    local x = getPlayerScreenLeft(playerNum) + 70
+    local x = getPlayerScreenLeft(playerNum) + 90
     local y = getPlayerScreenTop(playerNum) + 200
     local size = 36
 
