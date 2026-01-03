@@ -1,7 +1,15 @@
+require "ISUI/ISPanel"
+require "BWORooms"
+
+BWOTrespassMoodle = ISPanel:derive("BWOTrespassMoodle")
+
+local TEX_PATH = "media/ui/Moodles/128/trespassing.png"
+local MOODLE_SIZE = 128
+local MOODLE_OFFSET_X = 100
+local moodleInstances = {}
+
 BWOTrespass = BWOTrespass or {}
 BWOTrespass.DEBUG = true --BWOItemTags.DEBUG or false
-
-local MOODLE_ID = "BWO:trespassing"
 
 local function bwoLog(msg)
     if not BWOTrespass.DEBUG then return end
@@ -13,59 +21,92 @@ local function isTrespassing(player)
         return false
     end
 
-    if player.isTrespassing then
-        return player:isTrespassing()
+    if player:isOutside() then
+        return false
+    end
+
+    local square = player:getSquare()
+    if not square then
+        return false
+    end
+
+    local room = square:getRoom()
+    if not room then
+        return false
+    end
+
+    if BWORooms and BWORooms.IsIntrusion then
+        return BWORooms.IsIntrusion(room) == true
     end
 
     return false
 end
 
-local function ensureMoodleType()
-    if BWOTrespass.moodleType then
-        return BWOTrespass.moodleType
-    end
+local function updatePosition(panel)
+    local playerIndex = panel.playerIndex
+    local left = getPlayerScreenLeft(playerIndex)
+    local top = getPlayerScreenTop(playerIndex)
+    local width = getPlayerScreenWidth(playerIndex)
+    local right = left + width
 
-    if BWORegistries and BWORegistries.MoodleTypes and BWORegistries.MoodleTypes.TRESPASSING then
-        BWOTrespass.moodleType = BWORegistries.MoodleTypes.TRESPASSING
-        return BWOTrespass.moodleType
-    end
-
-    if MoodleType and MoodleType.register then
-        BWORegistries = BWORegistries or {}
-        BWORegistries.MoodleTypes = BWORegistries.MoodleTypes or {}
-        BWORegistries.MoodleTypes.TRESPASSING = MoodleType.register(MOODLE_ID)
-        BWOTrespass.moodleType = BWORegistries.MoodleTypes.TRESPASSING
-        return BWOTrespass.moodleType
-    end
-
-    return nil
+    panel:setX(left + (width - panel.width) / 2)
+    --panel:setX(right - panel.width - MOODLE_OFFSET_X) -- Near moodles - interferes with them and their text descriptions
+    panel:setY(top + 130)
 end
 
-local function updateTrespassMoodle(player)
-    bwoLog("updateTrespassMoodle LOG1")
-    if not player then
-        return
-    end
+function BWOTrespassMoodle:new(playerIndex)
+    local o = ISPanel:new(0, 0, MOODLE_SIZE, MOODLE_SIZE)
+    setmetatable(o, self)
+    self.__index = self
 
-    bwoLog("updateTrespassMoodle LOG2")
-    local moodleType = ensureMoodleType()
-    if not moodleType then
-        return
-    end
+    o.playerIndex = playerIndex
+    o.texture = getTexture(TEX_PATH)
+    o.backgroundColor = { r = 0, g = 0, b = 0, a = 0 }
+    o.borderColor = { r = 0, g = 0, b = 0, a = 0 }
+    o:setVisible(false)
 
-    bwoLog("updateTrespassMoodle LOG3")
-    local moodles = player:getMoodles()
-    if not moodles then
-        return
-    end
+    return o
+end
 
-    bwoLog("updateTrespassMoodle LOG4")
-    local level = isTrespassing(player) and 1 or 0
-    if moodles:getMoodleLevel(moodleType) ~= level then
-        moodles:setMoodleLevel(moodleType, level)
-        bwoLog("Trespass moodle level set to " .. tostring(level))
+function BWOTrespassMoodle:prerender()
+    ISPanel.prerender(self)
+
+    if self.texture then
+        self:drawTextureScaled(self.texture, 0, 0, self.width, self.height, 1)
     end
 end
+
+function BWOTrespassMoodle:update()
+    ISPanel.update(self)
+
+    local player = getSpecificPlayer(self.playerIndex)
+    local visible = isTrespassing(player)
+
+    if visible then
+        updatePosition(self)
+    end
+
+    self:setVisible(visible)
+end
+
+local function ensureMoodle(playerIndex)
+    if moodleInstances[playerIndex] then
+        return
+    end
+
+    local moodle = BWOTrespassMoodle:new(playerIndex)
+    moodle:initialise()
+    moodle:addToUIManager()
+    moodleInstances[playerIndex] = moodle
+    bwoLog("Moodle ensured")
+end
+
+Events.OnCreatePlayer.Add(ensureMoodle)
+Events.OnGameStart.Add(function()
+    local players = getNumActivePlayers()
+    for i = 0, players - 1 do
+        ensureMoodle(i)
+    end
+end)
 
 bwoLog("Start mod initialization")
-Events.OnPlayerUpdate.Add(updateTrespassMoodle)
