@@ -1,0 +1,12 @@
+name=Bandits Week One Addon: Jobs Overhauled
+poster=poster.png
+id=BanditsWeekOneAddonJobsOverhauled
+description=<H1><GREEN>B42 ONLY
+description=<BR>
+description=Adds a jobs panel that lists available work and payout conditions for Bandits Week One characters.
+description=<BR>
+author=Murmax
+require=this,mod,is,b42,only
+incompatible=BanditsDayOne
+pack=bwo
+tiledef=bwo 2303
