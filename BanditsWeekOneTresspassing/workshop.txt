@@ -1,0 +1,8 @@
+version=1
+id=3638204455
+title=Week One NPC Addon: Trespassing
+description=Shows a big mark on UI when player is trespassing on territory, where he has no access. 
+description=
+description=Sometimes Week One NPC mod does not work as expected and you may get in trouble by walking into seemingly innocent places, while other spots may be open for visitors (like visiting neighboring houses in their main room may be okay, but going upstair raises an alarm). With this addon you will be able to know about it through new UI icon.
+tags=Build 42;Interface;QoL
+visibility=public
