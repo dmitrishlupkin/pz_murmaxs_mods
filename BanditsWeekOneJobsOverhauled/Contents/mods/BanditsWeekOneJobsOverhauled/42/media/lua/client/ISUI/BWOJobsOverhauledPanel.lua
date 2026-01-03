@@ -150,56 +150,56 @@ function BWOJobsOverhauledPanel:refreshList()
                     self.nodeState[taskNodeId] = true
                 end
 
-                if task.hideOnComplete and BWOJobsOverhauled.ShouldHideTask and BWOJobsOverhauled.ShouldHideTask(player, task.id, task.highlightSeconds or 5) then
-                    goto continue_task
-                end
+                local shouldSkip = task.hideOnComplete and BWOJobsOverhauled.ShouldHideTask
+                    and BWOJobsOverhauled.ShouldHideTask(player, task.id, task.highlightSeconds or 5)
 
-                local taskItem = {
-                    nodeId = taskNodeId,
-                    nodeType = "task",
-                    level = 1,
-                    hasChildren = true,
-                    expanded = taskExpanded,
-                    font = UIFont.Medium,
-                }
-                if task.hideOnComplete and BWOJobsOverhauled.ShouldHighlightTask and BWOJobsOverhauled.ShouldHighlightTask(player, task.id, task.highlightSeconds or 5) then
-                    taskItem.backColor = { r = 0.1, g = 0.6, b = 0.1, a = 0.25 }
-                end
-                local taskHeight = getTextManager():getFontHeight(UIFont.Medium) + 6
-                self.list:addItem(task.text, taskItem).height = taskHeight
+                if not shouldSkip then
+                    local taskItem = {
+                        nodeId = taskNodeId,
+                        nodeType = "task",
+                        level = 1,
+                        hasChildren = true,
+                        expanded = taskExpanded,
+                        font = UIFont.Medium,
+                    }
+                    if task.hideOnComplete and BWOJobsOverhauled.ShouldHighlightTask and BWOJobsOverhauled.ShouldHighlightTask(player, task.id, task.highlightSeconds or 5) then
+                        taskItem.backColor = { r = 0.1, g = 0.6, b = 0.1, a = 0.25 }
+                    end
+                    local taskHeight = getTextManager():getFontHeight(UIFont.Medium) + 6
+                    self.list:addItem(task.text, taskItem).height = taskHeight
 
-                if taskExpanded then
-                    for _, condition in ipairs(task.conditions) do
-                        local conditionMet = condition.check and condition.check() or false
-                        local conditionText = condition.text
-                        if condition.getStatusText then
-                            local statusText = condition.getStatusText()
-                            if statusText and statusText ~= "" then
-                                conditionText = string.format("%s (%s)", conditionText, statusText)
+                    if taskExpanded then
+                        for _, condition in ipairs(task.conditions) do
+                            local conditionMet = condition.check and condition.check() or false
+                            local conditionText = condition.text
+                            if condition.getStatusText then
+                                local statusText = condition.getStatusText()
+                                if statusText and statusText ~= "" then
+                                    conditionText = string.format("%s (%s)", conditionText, statusText)
+                                end
                             end
+                            local icon = nil
+                            if condition.isLongTerm then
+                                icon = conditionMet and "check" or "cross"
+                            end
+                            local conditionItem = {
+                                nodeId = taskNodeId .. ":cond:" .. condition.id,
+                                nodeType = "condition",
+                                level = 2,
+                                hasChildren = false,
+                                met = conditionMet,
+                                icon = icon,
+                                font = UIFont.Smallest,
+                            }
+                            if condition.isLongTerm then
+                                conditionItem.textColor = conditionMet and { r = 0.2, g = 0.9, b = 0.2, a = 1 } or { r = 0.9, g = 0.2, b = 0.2, a = 1 }
+                                conditionItem.backColor = conditionMet and { r = 0.1, g = 0.4, b = 0.1, a = 0.15 } or { r = 0.4, g = 0.1, b = 0.1, a = 0.12 }
+                            end
+                            local conditionHeight = getTextManager():getFontHeight(UIFont.Smallest) + 6
+                            self.list:addItem(conditionText, conditionItem).height = conditionHeight
                         end
-                        local icon = nil
-                        if condition.isLongTerm then
-                            icon = conditionMet and "check" or "cross"
-                        end
-                        local conditionItem = {
-                            nodeId = taskNodeId .. ":cond:" .. condition.id,
-                            nodeType = "condition",
-                            level = 2,
-                            hasChildren = false,
-                            met = conditionMet,
-                            icon = icon,
-                            font = UIFont.Smallest,
-                        }
-                        if condition.isLongTerm then
-                            conditionItem.textColor = conditionMet and { r = 0.2, g = 0.9, b = 0.2, a = 1 } or { r = 0.9, g = 0.2, b = 0.2, a = 1 }
-                            conditionItem.backColor = conditionMet and { r = 0.1, g = 0.4, b = 0.1, a = 0.15 } or { r = 0.4, g = 0.1, b = 0.1, a = 0.12 }
-                        end
-                        local conditionHeight = getTextManager():getFontHeight(UIFont.Smallest) + 6
-                        self.list:addItem(conditionText, conditionItem).height = conditionHeight
                     end
                 end
-                ::continue_task::
             end
         end
     end
