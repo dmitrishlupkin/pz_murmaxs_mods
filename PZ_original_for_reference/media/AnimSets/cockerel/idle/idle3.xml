@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>idle3</m_Name>
+	<m_AnimName>Chk_Cock_Idle03</m_AnimName>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="d5341194-8845-407f-9b9b-ee464044eb02">
+		<m_Name>idleAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>idle2</m_Value>
+	</m_Conditions>
+	<m_Events x_name="908cbda3-3a8a-4db5-9c70-87b1044fc6da">
+		<m_EventName>idleActionEnd</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="1a72ac37-33b2-4a90-ad41-25dfcc1cbe9b">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.1</m_TimePc>
+		<m_ParameterValue>idle_fly</m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="LoadRifleNoMag.xml">
+	<m_Name>RackRifleNoMag</m_Name>
+	<m_AnimName>Bob_Reload_Bolt_Rack</m_AnimName>
+	<m_Conditions x_name="2acbace8-2e7a-4cee-bb70-73ad473f3fe8">
+		<m_Name>isRacking</m_Name>
+	</m_Conditions>
+	<m_Events x_name="fabad6b3-e77b-4f28-bad3-42b451c939a3">
+		<m_EventName>rackingFinished</m_EventName>
+	</m_Events>
+	<m_Events x_name="9b33961a-f177-4e23-b6dd-16510b40fa29">
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>rack</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="bdb49b60-2b0c-4045-af6d-ac8f7a06a2b5">
+		<m_EventName>rackBullet</m_EventName>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

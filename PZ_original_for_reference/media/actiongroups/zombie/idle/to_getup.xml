@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>getup</transitionTo>
+	<conditionPriority>1</conditionPriority>
+	<conditions>
+		<isTrue>bOnFloor</isTrue>
+		<isTrue>bGetUpFromCrawl</isTrue>
+	</conditions>
+</transition>

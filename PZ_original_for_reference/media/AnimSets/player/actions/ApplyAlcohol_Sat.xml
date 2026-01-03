@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="ApplyAlcohol.xml">
+	<m_Name>ApplyAlcohol_Sat</m_Name>
+	<m_Conditions x_name="f162a896-dcf3-49ab-8cf1-4d7b3e3e68c6">
+		<m_Name>sitonground</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="30d4c27c-9a54-4e90-ba5f-fcc0a6bc2c73">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="9858612f-96bc-4843-9fed-57cfe2e9beb4">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>ApplyAlcohol</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="9c4b5824-dc51-4019-8ff9-cb0de53b5836">
+		<m_Name>sittingonfurniture</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights>
+		<weight>0.00</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<weight>0.00</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Spine</boneName>
+		<weight>0.50</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Spine1</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

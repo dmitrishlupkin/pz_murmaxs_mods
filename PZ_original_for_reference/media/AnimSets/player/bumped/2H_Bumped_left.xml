@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="left.xml">
+	<m_Name>2H_Bumped_left</m_Name>
+	<m_AnimName>Bob_RunBat_BumpL</m_AnimName>
+	<m_Conditions x_name="63cbbe68-6edf-49f6-bbdb-a1bf53edd754">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+</animNode>

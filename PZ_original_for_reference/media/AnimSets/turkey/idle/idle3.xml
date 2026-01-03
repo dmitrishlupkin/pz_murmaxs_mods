@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>idle3</m_Name>
+	<m_AnimName>Turk_Idle03</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="b8af3e4f-c670-4a95-b8de-fd5a69793ed8">
+		<m_Name>idleAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>idle2</m_Value>
+	</m_Conditions>
+	<m_Events x_name="bbe65e14-dc95-49d2-a47e-095ec10d97a7">
+		<m_EventName>idleActionEnd</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="d71e1a62-9485-4b3b-9b58-afecbcc654eb">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>grooming</m_ParameterValue>
+	</m_Events>
+</animNode>

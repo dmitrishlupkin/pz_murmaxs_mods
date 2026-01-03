@@ -1,0 +1,10 @@
+module Base
+{
+    model Vehicles_SmallCar
+    {
+        mesh = vehicles/Vehicles_SmallCar,
+        shader = vehicle_multiuv,
+        invertX = false,
+        scale = 0.008,
+    }
+}

@@ -1,0 +1,10 @@
+module Base
+{
+    item Animal
+    {
+        Weight = 0.1,
+        ItemType = base:animal,
+        DisplayCategory = Generic,
+        Icon = WoolRaw,
+    }
+}

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SneakSneeze2.xml">
+	<m_Name>SneakSneeze2_2H</m_Name>
+	<m_AnimName>Bob_StealthEmoteSneeze2_2H</m_AnimName>
+	<m_BlendTime>0.30</m_BlendTime>
+	<m_Conditions x_name="0ecae3d5-ee45-4454-a6ff-66fff92f5317">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="ec7d2b1f-cd69-430f-9a6a-33ff8eddc5be">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="fdc3b944-af4b-49a9-8105-34b823f7b230">
+		<m_Name>Ext</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Sneeze2</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="d09ac0da-adf7-4fbb-a73a-c35d286f0427">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="d18d4d25-1604-483d-97f5-70ea6a4d5f4c">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

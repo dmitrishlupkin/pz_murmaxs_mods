@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="AssaultRifleDefault.xml">
+	<m_Name>AssaultRifleBurst</m_Name>
+	<m_AnimName>Bob_AttackRifle</m_AnimName>
+	<m_Conditions x_name="d56e4532-fc0d-438c-bbcc-775024db5c02">
+		<m_Value>Burst</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>idle2</m_Name>
+	<m_AnimName>Deer_Idle02</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="5f9c067c-81b1-4273-913d-c35b2b9a97f1">
+		<m_Name>idleAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>idle1</m_Value>
+	</m_Conditions>
+	<m_Events x_name="aff41f58-89c1-4ebf-aa8c-5cbfe1e9d32d">
+		<m_EventName>idleActionEnd</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Transitions>
+		<m_Target>idleSit</m_Target>
+		<m_AnimName>Deer_IdleToSitting</m_AnimName>
+	</m_Transitions>
+</animNode>

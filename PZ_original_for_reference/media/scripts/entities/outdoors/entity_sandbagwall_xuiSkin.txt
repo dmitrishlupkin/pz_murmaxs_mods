@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_SandbagWall
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Sandbag Wall,
+            Icon = Build_SandbagWall,
+        }
+    }
+}

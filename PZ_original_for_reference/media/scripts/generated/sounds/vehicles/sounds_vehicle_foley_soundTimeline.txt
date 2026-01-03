@@ -1,0 +1,22 @@
+module Base
+{
+    soundTimeline Vehicle/Sport/Engine
+    {
+        idle = 3500,
+    }
+
+    soundTimeline Vehicle/Jeep/Engine
+    {
+        idle = 3500,
+    }
+
+    soundTimeline Vehicle/Standard/Engine
+    {
+        idle = 5700,
+    }
+
+    soundTimeline Vehicle/Van/Engine
+    {
+        idle = 3600,
+    }
+}

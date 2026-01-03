@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Log_Table
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Log Table,
+            Icon = Build_LogTable,
+        }
+    }
+}

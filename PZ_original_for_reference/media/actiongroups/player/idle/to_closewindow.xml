@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>closewindow</transitionTo>
+	<conditions>
+		<eventOccurred>EventCloseWindow</eventOccurred>
+	</conditions>
+</transition>

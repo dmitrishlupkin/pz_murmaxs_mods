@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="LightFire_NotchedPlank.xml">
+	<m_Name>LightFire_NotchedPlank_Stood</m_Name>
+	<m_AnimName>Bob_LightFire_NotchedPlank_Stand</m_AnimName>
+	<m_Conditions x_name="0fec6821-fad4-4817-8ffd-4e5973cd90f7">
+		<m_Value>LightFire_KnotchedPlank_Stood</m_Value>
+	</m_Conditions>
+</animNode>

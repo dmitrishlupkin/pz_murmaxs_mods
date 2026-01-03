@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>run</m_Name>
+	<m_AnimName>RabKitten_RunFast</m_AnimName>
+	<m_BlendTime>0.75</m_BlendTime>
+	<m_Conditions x_name="4d6eacf6-1372-479e-bbad-2e7ccc752919">
+		<m_Name>animalRunning</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="68e3dd99-cafd-44de-8295-3dd9a7244ae4">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.3</m_TimePc>
+		<m_ParameterValue>run</m_ParameterValue>
+	</m_Events>
+</animNode>

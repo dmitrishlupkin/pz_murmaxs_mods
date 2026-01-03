@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_GravelFloor
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Gravel Floor,
+            Icon = Build_FloorGravel,
+        }
+    }
+}

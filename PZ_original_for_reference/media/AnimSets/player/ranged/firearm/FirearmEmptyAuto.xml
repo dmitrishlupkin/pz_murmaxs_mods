@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="FirearmEmpty.xml">
+	<m_Name>FirearmEmptyAuto</m_Name>
+	<m_2DBlends />
+	<m_2DBlends />
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleAimRifle</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends />
+	<m_2DBlends />
+	<m_2DBlends />
+	<m_Conditions x_name="ecf8afa2-618c-48cb-abfe-ff7fbd639fac">
+		<m_Value>Auto</m_Value>
+	</m_Conditions>
+</animNode>

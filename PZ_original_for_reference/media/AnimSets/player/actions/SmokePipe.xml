@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Smoke.xml">
+	<m_Name>SmokePipe</m_Name>
+	<m_AnimName>Bob_IdleSmoke_Pipe</m_AnimName>
+	<m_Conditions x_name="c8959ae9-c9e4-4541-a697-b4443eb10563">
+		<m_Value>pipe</m_Value>
+	</m_Conditions>
+</animNode>

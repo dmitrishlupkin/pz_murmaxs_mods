@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Cooking_Pit
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Cooking Pit,
+            Icon = Build_CookingPit,
+        }
+    }
+}

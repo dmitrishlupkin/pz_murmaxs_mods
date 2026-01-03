@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="defaultStaggerBack.xml">
+	<m_Name>fromleft</m_Name>
+	<m_AnimName>Zombie_ShoveStaggerLeft_2m</m_AnimName>
+	<m_Conditions x_name="fdbb1530-127f-456b-90b6-52d7e81dcb8e">
+		<m_Value>LEFT</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>pathfindWait</m_Name>
+	<m_AnimName>Rac_Idle01</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.48</m_SpeedScale>
+	<m_Conditions x_name="39ff0c38-79b6-41c8-9f38-42ec46342358">
+		<m_Name>bMoving</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+</animNode>

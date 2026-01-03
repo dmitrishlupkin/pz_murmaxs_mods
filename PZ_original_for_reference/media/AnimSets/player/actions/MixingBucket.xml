@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>MixingBucket</m_Name>
+	<m_AnimName>Bob_IdleMixingBucket</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="c304d699-9aee-4b2a-8d82-373b9bb034f5">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>MixingBucket</m_Value>
+	</m_Conditions>
+</animNode>

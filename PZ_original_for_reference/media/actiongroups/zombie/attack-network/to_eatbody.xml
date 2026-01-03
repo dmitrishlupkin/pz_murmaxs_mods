@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>eatbody</transitionTo>
+	<conditions>
+		<isTrue>bEatBodyTarget</isTrue>
+	</conditions>
+</transition>

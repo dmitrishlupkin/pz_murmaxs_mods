@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Cough.xml">
+	<m_Name>SneakCough</m_Name>
+	<m_AnimName>Bob_StealthEmoteCough</m_AnimName>
+	<m_Conditions x_name="ff108d27-e5a7-4ab9-b829-d3a6e7614450">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

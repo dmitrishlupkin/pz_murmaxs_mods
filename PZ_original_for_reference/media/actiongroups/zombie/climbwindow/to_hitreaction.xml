@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>hitreaction</transitionTo>
+	<conditions>
+		<isTrue>hashitreaction</isTrue>
+		<isTrue>ClimbWindowStarted</isTrue>
+		<isFalse>bOnFloor</isFalse>
+	</conditions>
+</transition>

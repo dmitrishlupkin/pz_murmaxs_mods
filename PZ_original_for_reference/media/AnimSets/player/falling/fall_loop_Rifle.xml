@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="fall_loop.xml">
+	<m_Name>fall_loop_Rifle</m_Name>
+	<m_AnimName>Bob_FallIdle_Rifle</m_AnimName>
+	<m_Conditions x_name="1224e047-5a51-48af-ada3-cbd7489d2a58">
+		<m_Value>firearm</m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>fall_loop2_Rifle</m_Target>
+	</m_Transitions>
+</animNode>

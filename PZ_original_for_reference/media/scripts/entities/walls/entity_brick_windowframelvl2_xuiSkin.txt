@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_BrickWindowFrameLvl2
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Brick Window Frame,
+            Icon = Build_WindowframeBrick,
+        }
+    }
+}

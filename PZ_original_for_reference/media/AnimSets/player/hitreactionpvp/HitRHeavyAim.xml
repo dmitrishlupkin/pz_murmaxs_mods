@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="HitRHeavy.xml">
+	<m_Name>HitRHeavyAim</m_Name>
+	<m_AnimName>Bob_AimHitReact2H_Heavy_01</m_AnimName>
+	<m_Conditions x_name="44e4c71d-389a-44b9-b6a7-773139cbfc8c">
+		<m_Name>Aim</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

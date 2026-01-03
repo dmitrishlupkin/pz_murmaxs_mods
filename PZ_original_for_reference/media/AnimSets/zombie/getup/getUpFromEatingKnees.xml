@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="getUpFromEating.xml">
+	<m_Name>getUpFromEatingKnees</m_Name>
+	<m_AnimName>Zombie_OnKnees_ToIdle</m_AnimName>
+	<m_Conditions x_name="1a836db1-025b-485e-b549-ea4235c323f7">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

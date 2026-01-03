@@ -1,0 +1,11 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Paper_Wall
+        {
+            DisplayName = PaperWall,
+            Icon = Build_Wall_Wallpaper,
+        }
+    }
+}

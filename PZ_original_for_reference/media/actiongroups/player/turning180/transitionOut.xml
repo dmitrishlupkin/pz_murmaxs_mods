@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionOut>true</transitionOut>
+		<conditions>
+			<isTrue>AttackAnim</isTrue>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionOut>true</transitionOut>
+		<conditions>
+			<eventOccurred>Turn180TargetChanged</eventOccurred>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionOut>true</transitionOut>
+		<conditions>
+			<isFalse>isTurningAround</isFalse>
+		</conditions>
+	</transition>
+</transitions>

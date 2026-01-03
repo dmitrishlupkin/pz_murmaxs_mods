@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_MetalBandsaw
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Metal Bandsaw,
+            Icon = Item_Hacksaw,
+        }
+    }
+}

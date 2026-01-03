@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_RippleComb
+        {
+            LuaWindowClass = ISEntityTabWindow,
+            DisplayName = Ripple Comb,
+            Icon = Build_RippleComb,
+        }
+    }
+}

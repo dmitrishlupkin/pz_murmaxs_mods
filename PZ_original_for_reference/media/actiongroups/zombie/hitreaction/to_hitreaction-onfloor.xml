@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>hitreaction-onfloor</transitionTo>
+		<conditions>
+			<isTrue>bDead</isTrue>
+			<isTrue>bOnFloor</isTrue>
+			<isFalse>isRagdoll</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>hitreaction-onfloor</transitionTo>
+		<conditions>
+			<eventOccurred>NoAnimConditionsPass</eventOccurred>
+			<isFalse>isRagdoll</isFalse>
+			<isTrue>bOnFloor</isTrue>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>hitreaction-onfloor</transitionTo>
+		<conditions>
+			<compare op="==" a="hitreaction" b="Floor" />
+		</conditions>
+	</transition>
+</transitions>

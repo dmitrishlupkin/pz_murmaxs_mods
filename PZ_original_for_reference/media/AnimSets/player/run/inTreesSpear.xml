@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="inTrees.xml">
+	<m_Name>inTreesSpear</m_Name>
+	<m_AnimName>Bob_RunTrees_Bat</m_AnimName>
+	<m_Conditions x_name="6361ccb1-a6be-48e5-9459-91a43d6de5ea">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_CounterCorner_Lvl2
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Metal Counter Corner,
+            Icon = Build_MetalCounterCorner,
+        }
+    }
+}

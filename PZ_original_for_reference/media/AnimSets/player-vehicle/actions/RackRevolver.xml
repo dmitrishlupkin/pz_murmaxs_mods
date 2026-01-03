@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="loadRevolver.xml">
+	<m_Name>RackRevolver</m_Name>
+	<m_AnimName>Bob_Reload_Revolver_Rack</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_Conditions x_name="f2977ae3-a0a7-438c-8a46-e8f96bbb494c">
+		<m_Name>isRacking</m_Name>
+	</m_Conditions>
+	<m_Events x_name="d319e716-f4b7-47bb-8b00-4c4f9ea6e8d5">
+		<m_EventName>rackingFinished</m_EventName>
+	</m_Events>
+	<m_Events x_name="9410b115-a062-448c-81c8-7a9c568df107">
+		<m_TimePc>0.18</m_TimePc>
+		<m_ParameterValue>rack</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="1b9eee56-a81e-4c64-81fd-60303e1cceb7">
+		<m_EventName>rackBullet</m_EventName>
+		<m_TimePc>0.25</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

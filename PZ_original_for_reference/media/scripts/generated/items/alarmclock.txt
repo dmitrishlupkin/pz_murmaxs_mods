@@ -1,0 +1,27 @@
+module Base
+{
+    item Pocketwatch
+    {
+        DisplayCategory = Memento,
+        ItemType = base:alarmclock,
+        Weight = 0.2,
+        Icon = Pocketwatch,
+        MetalValue = 1.0,
+        WorldStaticModel = Pocketwatch,
+        Tags = base:hasmetal;base:ignorezombiedensity;base:ismemento;base:fitskeyring,
+        AlarmSound = PocketWatchRinging,
+        SoundRadius = 7,
+    }
+
+    item AlarmClock2
+    {
+        DisplayCategory = Household,
+        ItemType = base:alarmclock,
+        Weight = 1.0,
+        Icon = AlarmClock,
+        AlarmSound = AlarmClockRingingLoop,
+        MetalValue = 25.0,
+        SoundRadius = 15,
+        WorldStaticModel = AlarmClock,
+    }
+}

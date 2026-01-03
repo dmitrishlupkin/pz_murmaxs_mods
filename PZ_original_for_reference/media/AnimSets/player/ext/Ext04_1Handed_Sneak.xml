@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Ext04_Sneak.xml">
+	<m_Name>Ext04_1Handed</m_Name>
+	<m_Conditions x_name="2a721267-3713-434e-ba84-04d70bb9d491">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>1handed</m_Value>
+	</m_Conditions>
+</animNode>

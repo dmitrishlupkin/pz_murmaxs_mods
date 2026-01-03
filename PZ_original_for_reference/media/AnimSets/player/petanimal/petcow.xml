@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="defaultpet.xml">
+	<m_Name>petcow</m_Name>
+	<m_AnimName>Bob_PetCow</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetCow_Large</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetCow</m_AnimName>
+		<m_XPos>0.00</m_XPos>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetCow_Small</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="25c09cef-a2a7-4be5-a0e1-d75a5440197d">
+		<m_Name>animal</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>cow</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="UnPackSack.xml">
+	<m_Name>UnPackSmallBag</m_Name>
+	<m_AnimName>Bob_IdleUnPackSmallBag</m_AnimName>
+	<m_Conditions x_name="333b1501-9280-4e7c-ad7b-3611c91f2d31">
+		<m_Value>UnPackSmallBag</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>strafe</transitionTo>
+	<conditions>
+		<isTrue>isMoving</isTrue>
+		<isTrue>aim</isTrue>
+		<isFalse>isRunning</isFalse>
+	</conditions>
+</transition>

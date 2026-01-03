@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>collide</transitionTo>
+	<conditions>
+		<eventOccurred>collideWithWall</eventOccurred>
+		<eventOccurred>collideWithWall</eventOccurred>
+		<eventOccurred>collideWithWall</eventOccurred>
+	</conditions>
+</transition>

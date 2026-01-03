@@ -1,0 +1,22 @@
+module Base
+{
+    sound VehicleEngineOffRoad
+    {
+        category = Vehicle,
+        master = VehicleEngine,
+        clip
+        {
+            event = Vehicle/Jeep/Engine,
+            distanceMax = 100,
+        }
+    }
+
+    sound VehicleIgnitionFailOffRoad
+    {
+        category = Vehicle,
+        clip
+        {
+            event = Vehicle/Jeep/IgnitionFail,
+        }
+    }
+}

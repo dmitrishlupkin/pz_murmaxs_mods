@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>idlepetting</m_Name>
+	<m_AnimName>RabKitten_Idle01</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="bdbf7bb5-bc83-4d5b-b9c3-3d52c906e380">
+		<m_Name>idleaction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>petting</m_Value>
+	</m_Conditions>
+	<m_Events x_name="1637359e-e724-4012-ac8e-26b55d90e0d8">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>petting</m_ParameterValue>
+	</m_Events>
+</animNode>

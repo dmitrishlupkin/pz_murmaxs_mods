@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_MetalSmallPoleFence
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Small Metal Pole Fence (Poor),
+            Icon = Build_FenceMetalPosts,
+        }
+    }
+}

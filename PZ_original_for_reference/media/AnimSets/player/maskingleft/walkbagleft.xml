@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="holdingbagleft.xml">
+	<m_Name>walkbagleft</m_Name>
+	<m_AnimName>Bob_Walk_Bag</m_AnimName>
+	<m_SpeedScale>1.04</m_SpeedScale>
+	<m_Conditions x_name="62d74151-9472-4357-b19e-00ea6948b6b4">
+		<m_Name>ismoving</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="661f8f46-e5f5-4eda-82b4-e0b79c082c6d">
+		<m_Name>isRunning</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="26c589ce-e617-49d2-a0eb-f3d79673e33d">
+		<m_Name>isSprinting</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="30d709b8-6c86-4113-91ae-da724e1129c5">
+		<m_Name>Aim</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="ec973bad-9068-4d39-ab76-297c93929e04">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="889bc85a-a035-4a29-8af0-f2f4627e23b6">
+		<m_Name>ClimbingFence</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="554da735-4934-40bc-822c-eef2ffc31942">
+		<m_Name>bLandLightMask</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>runbagleft</m_Target>
+		<m_blendInTime>0.3</m_blendInTime>
+		<m_blendOutTime>0.3</m_blendOutTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_blendInTime>0.3</m_blendInTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>holdingbagleft</m_Target>
+		<m_blendInTime>0.3</m_blendInTime>
+	</m_Transitions>
+</animNode>

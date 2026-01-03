@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="idle1.xml">
+	<m_Name>idle6</m_Name>
+	<m_AnimName>SheepLamb_Idle06</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Conditions x_name="71420473-c1ee-4c68-87fc-d3b95de02791">
+		<m_Name>idleAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>idle5</m_Value>
+	</m_Conditions>
+	<m_Events x_name="a0882c58-5286-46bf-885e-d29e9151b1b9">
+		<m_EventName>idleActionEnd</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

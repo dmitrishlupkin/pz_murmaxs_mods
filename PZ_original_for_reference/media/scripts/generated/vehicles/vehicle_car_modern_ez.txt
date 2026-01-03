@@ -1,0 +1,58 @@
+module Base
+{
+    model Vehicles_ModernCar_ez
+    {
+        mesh = vehicles/ModernCarWithDoors_ez|Vehicles_ModernCar_mesh,
+        shader = vehicle,
+        scale = 0.4,
+        static = true,
+    }
+
+    model ModernCar_ez_DoorFrontLeft
+    {
+        mesh = vehicles/ModernCarWithDoors_ez|DoorFrontLeft_mesh,
+        shader = vehicle,
+        scale = 0.4,
+        static = false,
+    }
+
+    model ModernCar_ez_DoorFrontRight
+    {
+        mesh = vehicles/ModernCarWithDoors_ez|DoorFrontRight_mesh,
+        shader = vehicle,
+        scale = 0.4,
+        static = false,
+    }
+
+    model ModernCar_ez_DoorRearLeft
+    {
+        mesh = vehicles/ModernCarWithDoors_ez|DoorRearLeft_mesh,
+        shader = vehicle,
+        scale = 0.4,
+        static = false,
+    }
+
+    model ModernCar_ez_DoorRearRight
+    {
+        mesh = vehicles/ModernCarWithDoors_ez|DoorRearRight_mesh,
+        shader = vehicle,
+        scale = 0.4,
+        static = false,
+    }
+
+    model ModernCar_ez_Hood
+    {
+        mesh = vehicles/ModernCarWithDoors_ez|Hood_mesh,
+        shader = vehicle,
+        scale = 0.4,
+        static = false,
+    }
+
+    model ModernCar_ez_Trunk
+    {
+        mesh = vehicles/ModernCarWithDoors_ez|Trunk_mesh,
+        shader = vehicle,
+        scale = 0.4,
+        static = false,
+    }
+}

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="OpenAmmoBox.xml">
+	<m_Name>OpenAmmoBox_Sat</m_Name>
+	<m_Conditions x_name="e2513b33-41ee-45ac-84af-efd25d33cd89">
+		<m_Name>sitonground</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="eadf58f6-5bab-4a02-af83-af96d5621965">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="07765062-42a3-4205-a1cb-f5ba034fe0ec">
+		<m_Name>sittingonfurniture</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="929b6f58-d9d0-4fdc-b6f2-1aecde8fac68">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>OpenAmmoBox</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights>
+		<weight>0.50</weight>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+</animNode>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="FirearmDefault.xml">
+	<m_Name>FirearmEmpty</m_Name>
+	<m_AnimName>Bob_IdleAimRifle</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_BlendOutTime>-1.00</m_BlendOutTime>
+	<m_SpeedScale>1.60</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleAimRifle</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleAimRifle</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleAimRifle</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleAimRifle</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleAimRifle</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="ad6f3c5a-ace6-4e70-b6d4-65a909d20554">
+		<m_Name>RangedWeaponEmpty</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="101a3f59-8063-4232-abc4-80cb01c279be">
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="39084d64-1da9-4deb-8558-3e65263d51b3">
+		<m_EventName>WeaponEmptyCheck</m_EventName>
+	</m_Events>
+	<m_Events x_name="f8c27a25-b1cb-4169-9505-b9c4d275b819">
+		<m_ParameterValue>ShotDone=false</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="abec80d3-0127-481b-a78f-43fb5cef6fca">
+		<m_EventName>playClickSound</m_EventName>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

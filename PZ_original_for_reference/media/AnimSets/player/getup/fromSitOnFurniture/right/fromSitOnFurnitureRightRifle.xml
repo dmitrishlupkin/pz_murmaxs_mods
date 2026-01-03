@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="fromSitOnFurnitureRight.xml">
+	<m_Name>fromSitOnFurnitureRightRifle</m_Name>
+	<m_AnimName>Bob_Seated_StandUp_R_Rifle</m_AnimName>
+	<m_Conditions x_name="e97b0cb8-5454-429e-8e4e-e29f380c49ee">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>firearm</m_Value>
+	</m_Conditions>
+</animNode>

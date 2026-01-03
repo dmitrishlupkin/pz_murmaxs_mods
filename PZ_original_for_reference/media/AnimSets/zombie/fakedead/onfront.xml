@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>onfront</m_Name>
+	<m_AnimName>Zombie_Idle_FloorOnFront</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.00</m_SpeedScale>
+	<m_Conditions x_name="d7a2c70a-fe34-49bf-8c10-48d04851583d">
+		<m_Name>fallOnFront</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

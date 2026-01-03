@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Idle.xml">
+	<m_Name>IdleHandgun</m_Name>
+	<m_AnimName>Bob_IdleHandgun</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleHandgun</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_Idle_HeavyBreathing_Hgun</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleHandgun</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="e31e3eeb-600a-4489-bae1-6c380b57d766">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>handgun</m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>aim_handgun</m_Target>
+		<m_AnimName>Bob_IdleToAim_Handgun</m_AnimName>
+		<m_Conditions x_name="0bddb922-6c67-4b49-add1-0822534a3795">
+			<m_Name>holdingbagleft</m_Name>
+			<m_Type>BOOL</m_Type>
+			<m_Value>false</m_Value>
+		</m_Conditions>
+		<m_Conditions x_name="3dea3412-d3de-4256-9119-7d6f53d85f81">
+			<m_Name>holdingtorchleft</m_Name>
+			<m_Type>BOOL</m_Type>
+			<m_Value>false</m_Value>
+		</m_Conditions>
+		<m_Conditions x_name="eec961fc-4fa4-4ec2-ba14-892d6d228a86">
+			<m_Name>HoldingUmbrellaLeft</m_Name>
+			<m_Type>BOOL</m_Type>
+			<m_Value>false</m_Value>
+		</m_Conditions>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>walkhandgun</m_Target>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>runHandgun</m_Target>
+		<m_AnimName>Bob_IdleToRun_Handgun</m_AnimName>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>sprintHandgun</m_Target>
+		<m_AnimName>Bob_IdleToSprint_Handgun</m_AnimName>
+	</m_Transitions>
+	<m_Transitions />
+	<m_Transitions />
+	<m_Transitions>
+		<m_Target>sneakidleHandgun</m_Target>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>sneakIdleLowHandgun</m_Target>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>aim_handgun</m_Target>
+		<m_blendInTime>0.5</m_blendInTime>
+		<m_blendOutTime>0.5</m_blendOutTime>
+		<m_speedScale>1</m_speedScale>
+		<m_Conditions x_name="4bbce58b-b7df-4ed6-aad7-500358b4bb9e">
+			<m_Name>holdingbagleft</m_Name>
+			<m_Value>true</m_Value>
+		</m_Conditions>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>aim_handgun</m_Target>
+		<m_blendInTime>0.5</m_blendInTime>
+		<m_blendOutTime>0.5</m_blendOutTime>
+		<m_speedScale>1</m_speedScale>
+		<m_Conditions x_name="ea9efd3c-37c5-464a-9434-64f6b853eabe">
+			<m_Name>holdingtorchleft</m_Name>
+			<m_Value>true</m_Value>
+		</m_Conditions>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>aim_handgun</m_Target>
+		<m_blendInTime>0.5</m_blendInTime>
+		<m_blendOutTime>0.5</m_blendOutTime>
+		<m_speedScale>1</m_speedScale>
+		<m_Conditions x_name="90445840-c17d-412b-bb28-81878438b924">
+			<m_Name>HoldingUmbrellaLeft</m_Name>
+			<m_Type>BOOL</m_Type>
+			<m_Value>false</m_Value>
+		</m_Conditions>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>runHandgun</m_Target>
+		<m_blendInTime>0.1</m_blendInTime>
+		<m_blendOutTime>0.1</m_blendOutTime>
+		<m_Conditions x_name="b32d5450-1817-417f-9e32-08998d61e629">
+			<m_Name>isTurningAround</m_Name>
+			<m_Type>BOOL</m_Type>
+			<m_Value>false</m_Value>
+		</m_Conditions>
+		<m_Conditions x_name="87d347bc-0f7d-4ee7-b1ce-8e8b309ab33d">
+			<m_Name>walkinjury</m_Name>
+			<m_Type>NEQ</m_Type>
+			<m_Value>0</m_Value>
+		</m_Conditions>
+		<m_Conditions x_name="1c63949c-0ab3-45e4-b193-55f69ac3c41b">
+			<m_Type>OR</m_Type>
+		</m_Conditions>
+		<m_Conditions x_name="285d3be3-a2a1-4f9b-b681-77b57acd0de5">
+			<m_Name>isOverEncumbered</m_Name>
+			<m_Type>BOOL</m_Type>
+			<m_Value>true</m_Value>
+		</m_Conditions>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>sprintHandgun</m_Target>
+		<m_blendInTime>0.1</m_blendInTime>
+		<m_blendOutTime>0.1</m_blendOutTime>
+		<m_Conditions x_name="02329b88-290b-42d8-873d-be83ac9d70b8">
+			<m_Name>isTurningAround</m_Name>
+			<m_Type>BOOL</m_Type>
+			<m_Value>false</m_Value>
+		</m_Conditions>
+		<m_Conditions x_name="d043d0c9-fc90-41df-938b-6733e6afad3f">
+			<m_Name>walkinjury</m_Name>
+			<m_Type>NEQ</m_Type>
+			<m_Value>0</m_Value>
+		</m_Conditions>
+		<m_Conditions x_name="473e7678-826a-4eaa-9e28-5d35c461e2f0">
+			<m_Type>OR</m_Type>
+		</m_Conditions>
+		<m_Conditions x_name="1b3ba6e4-b85f-489a-bfe7-08f0526cccd1">
+			<m_Name>isOverEncumbered</m_Name>
+			<m_Type>BOOL</m_Type>
+			<m_Value>true</m_Value>
+		</m_Conditions>
+	</m_Transitions>
+</animNode>

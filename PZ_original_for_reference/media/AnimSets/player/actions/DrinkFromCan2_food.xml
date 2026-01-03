@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="DrinkFromCan2.xml">
+	<m_Name>DrinkFromCan2_food</m_Name>
+	<m_Conditions x_name="910d281e-9360-40d1-9dbe-6376a8ed570d">
+		<m_Value>drink</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>DoorBang</m_Name>
+	<m_AnimName>Zombie_CrawlLunge</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="b837a25a-69f9-485f-a911-7bed3f6d9151">
+		<m_Name>ThumpType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>DoorBang</m_Value>
+	</m_Conditions>
+	<m_Events x_name="be7aee16-f0c8-4635-8d16-33d2d29c579c">
+		<m_EventName>ThumpFrame</m_EventName>
+		<m_TimePc>0.4</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

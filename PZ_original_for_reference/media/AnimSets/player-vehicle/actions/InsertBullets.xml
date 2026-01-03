@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>InsertBullets</m_Name>
+	<m_AnimName>Bob_IdleLoadMagazine</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>ReloadSpeed</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="0e2b0e83-39e9-4cf0-ac91-f851f79e2428">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>InsertBullets</m_Value>
+	</m_Conditions>
+	<m_Events x_name="c6497a72-9638-48a2-8e65-78c26763cfa1">
+		<m_EventName>InsertBullet</m_EventName>
+		<m_TimePc>0.5</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="482c3f19-e026-4713-83bc-9317867bf360">
+		<m_EventName>loadFinished</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="a30ba09d-7b7d-4c54-8caa-1030f73da4f5">
+		<m_EventName>InsertBulletSound</m_EventName>
+		<m_TimePc>0.1</m_TimePc>
+		<m_ParameterValue>MagazineInsertAmmo</m_ParameterValue>
+	</m_Events>
+</animNode>

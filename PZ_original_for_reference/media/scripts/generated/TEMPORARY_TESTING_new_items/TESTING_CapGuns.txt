@@ -1,0 +1,63 @@
+module Base
+{
+    model Revolver_CapGun
+    {
+        mesh = Weapons/Firearm/ToyGun_Hand,
+        texture = Weapons/Firearm/ToyGun,
+        attachment muzzle
+        {
+            offset = 0.0 0.146 -0.028,
+            rotate = -90.0 0.0 0.0,
+        }
+        attachment world
+        {
+            offset = -0.0119 0.058 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = -0.0542 0.0363 0.0009,
+            rotate = 90.0038 0.2177 -90.9911,
+        }
+        attachment holster_right
+        {
+            scale = 0.85,
+        }
+        attachment holster_left
+        {
+            scale = 0.85,
+        }
+        attachment ShoulderHolster
+        {
+            scale = 1.0,
+        }
+    }
+
+    model Rifle_CapGun
+    {
+        mesh = Weapons/Firearm/ToyRifle_Hand,
+        texture = Weapons/Firearm/ToyRifle,
+        attachment muzzle
+        {
+            offset = 0.0 0.38 0.033,
+            rotate = -90.0 0.0 180.0,
+        }
+        attachment world
+        {
+            offset = 0.011 0.16 0.0,
+            rotate = 180.0 0.0 180.0,
+        }
+    }
+
+    model CapGunCap
+    {
+        mesh = WorldItems/SnapCap,
+        scale = 0.25,
+    }
+
+    model CapGunCapBox
+    {
+        mesh = WorldItems/Box_SnapCaps,
+        scale = 0.075,
+    }
+}

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="turn_idle.xml">
+	<m_Name>turn_idle_90</m_Name>
+</animNode>

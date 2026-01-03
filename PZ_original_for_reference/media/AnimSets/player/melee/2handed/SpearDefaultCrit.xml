@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SpearDefault.xml">
+	<m_Name>SpearDefaultCrit</m_Name>
+	<m_AnimName>Bob_AttackSpear02_CritHit</m_AnimName>
+	<m_Conditions x_name="4bbfc1c8-f597-46dd-bc31-4d6adb7296b2">
+		<m_Name>CriticalHit</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="e4c378b0-5b60-4770-8fac-da1af8c4774d">
+		<m_ParameterValue>ZombieHitReaction=HitSpearDeath2</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="e892688f-d92f-4ece-924e-2cd164458356">
+		<m_Time>End</m_Time>
+	</m_Events>
+</animNode>

@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Shelves_Lvl2
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Metal Shelves,
+            Icon = Build_ShelvesMetal,
+        }
+    }
+}

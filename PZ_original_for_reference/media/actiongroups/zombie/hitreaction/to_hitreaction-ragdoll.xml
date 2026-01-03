@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>hitreaction-ragdoll</transitionTo>
+		<conditions>
+			<isTrue>bKnockedDown</isTrue>
+			<isFalse>bOnFloor</isFalse>
+			<isFalse>bStaggerBack</isFalse>
+			<isFalse>bDead</isFalse>
+			<compare op="!=" a="hitreaction" b="Floor" />
+			<compare op="!=" a="hitreaction" b="GettingUpFront" />
+			<compare op="!=" a="hitreaction" b="HitSpearDeath1" />
+			<compare op="!=" a="hitreaction" b="HitSpearDeath2" />
+			<compare op="!=" a="hitreaction" b="KnifeDeath" />
+			<compare op="!=" a="hitreaction" b="ShotHeadFwd02" />
+			<compare op="!=" a="hitreaction" b="ShotHeadFwd" />
+			<compare op="!=" a="hitreaction" b="ShotHeadBwd" />
+			<isTrue>usePhysicHitReaction</isTrue>
+			<isTrue>canRagdoll</isTrue>
+			<compare op="==" a="hitreaction" b="ShotChestR" />
+			<compare op="==" a="hitreaction" b="ShotChestL" />
+			<compare op="==" a="hitreaction" b="ShotShoulderL" />
+			<compare op="==" a="hitreaction" b="ShotShoulderR" />
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>hitreaction-ragdoll</transitionTo>
+		<conditions>
+			<isTrue>isRagdoll</isTrue>
+		</conditions>
+	</transition>
+</transitions>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>fall_loop</m_Name>
+	<m_AnimName>Bob_FallIdle</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Conditions x_name="1900f3de-fafe-4a71-b49e-7ea3418c2985">
+		<m_Name>bFalling</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="14ed3686-fd09-4430-a23f-043d5db845d2">
+		<m_Name>fallSpeedSeverity</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>None</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="1224e047-5a51-48af-ada3-cbd7489d2a58">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value></m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>fall_loop2</m_Target>
+		<m_blendInTime>0.2</m_blendInTime>
+		<m_blendOutTime>0.4</m_blendOutTime>
+	</m_Transitions>
+</animNode>

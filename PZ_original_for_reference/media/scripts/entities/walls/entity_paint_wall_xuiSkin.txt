@@ -1,0 +1,11 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Paint_Wall
+        {
+            DisplayName = PaintWall,
+            Icon = Build_Wall_Paint,
+        }
+    }
+}

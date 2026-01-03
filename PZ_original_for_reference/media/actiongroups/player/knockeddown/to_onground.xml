@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>onground</transitionTo>
+		<conditions>
+			<isTrue>bDead</isTrue>
+			<isTrue>BumpDone</isTrue>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>onground</transitionTo>
+		<conditions>
+			<isTrue>bDead</isTrue>
+			<isTrue>sitonground</isTrue>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>onground</transitionTo>
+		<conditions>
+			<eventOccurred>ActiveAnimFinishing</eventOccurred>
+			<isTrue>bDead</isTrue>
+		</conditions>
+	</transition>
+</transitions>

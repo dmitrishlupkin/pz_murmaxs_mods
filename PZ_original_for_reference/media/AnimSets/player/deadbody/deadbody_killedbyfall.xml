@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>deadbody_killedbyfall</m_Name>
+	<m_ConditionPriority>1</m_ConditionPriority>
+	<m_AnimName>Bob_FallLanding_Death</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Conditions x_name="754c391f-1bb3-4b0b-83d8-4c63c730d540">
+		<m_Name>KilledByFall</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

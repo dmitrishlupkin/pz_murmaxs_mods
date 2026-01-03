@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>falldown-headright</transitionTo>
+		<conditions>
+			<compare op="==" a="hitreaction" b="HeadRight" />
+			<isTrue>bDead</isTrue>
+			<isFalse>usePhysicHitReaction</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>falldown-headright</transitionTo>
+		<conditions>
+			<compare op="==" a="hitreaction" b="HeadRight" />
+			<isTrue>bknockdown</isTrue>
+			<isFalse>usePhysicHitReaction</isFalse>
+		</conditions>
+	</transition>
+</transitions>

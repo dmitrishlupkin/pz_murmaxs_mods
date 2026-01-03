@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>turnalerted</transitionTo>
+	<conditions>
+		<isTrue>alerted</isTrue>
+		<isFalse>issitting</isFalse>
+	</conditions>
+</transition>

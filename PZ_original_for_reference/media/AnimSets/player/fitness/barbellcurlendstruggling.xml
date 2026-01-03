@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="barbellcurlend.xml">
+	<m_Name>barbellcurlendstruggling</m_Name>
+	<m_AnimName>Bob_Idle_BarbellCurl02</m_AnimName>
+	<m_Conditions x_name="cec33fc0-34ca-4440-bd7e-942b4ebaf905">
+		<m_Name>ExerciseEnded</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

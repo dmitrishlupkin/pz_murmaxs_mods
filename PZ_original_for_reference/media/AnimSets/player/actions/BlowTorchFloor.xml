@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="BlowTorch.xml">
+	<m_Name>BlowTorchFloor</m_Name>
+	<m_AnimName>Bob_IdleBlowtorch_Floor</m_AnimName>
+	<m_Conditions x_name="dc6d9cad-05af-4a67-9243-0f62063716ee">
+		<m_Value>BlowTorchFloor</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,10 @@
+module Base
+{
+    model Vehicles_VanRadio
+    {
+        mesh = vehicles/Vehicles_VanRadio,
+        shader = vehicle_norandom_multiuv,
+        invertX = false,
+        scale = 0.008,
+    }
+}

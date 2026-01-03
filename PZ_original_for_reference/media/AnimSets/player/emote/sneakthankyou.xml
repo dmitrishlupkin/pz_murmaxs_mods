@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="thankyou.xml">
+	<m_Name>sneakthankyou</m_Name>
+	<m_AnimName>Bob_StealthEmoteThankYou</m_AnimName>
+	<m_Conditions x_name="fda47e9f-a43d-4799-9329-871711b2df8f">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

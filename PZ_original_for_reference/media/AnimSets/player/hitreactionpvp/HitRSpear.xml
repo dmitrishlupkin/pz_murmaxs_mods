@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="HitReaction.xml">
+	<m_Name>HitRSpear</m_Name>
+	<m_AnimName>Bob_HitReact2H_01</m_AnimName>
+	<m_Conditions x_name="1956321a-c3c8-4e6f-8276-ff328120563b">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

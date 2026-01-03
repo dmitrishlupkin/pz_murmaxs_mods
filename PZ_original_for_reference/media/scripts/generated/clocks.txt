@@ -1,0 +1,142 @@
+module Base
+{
+    clock location_community_school_01_32
+    {
+        replacementSprite = animated_clock_01_0,
+        north = true,
+        handOffset = 0.5 0.175 0.775,
+        hand hour
+        {
+            length = 0.14,
+            thickness = 0.019,
+            texture = IsoObject/ClockHandHourRed,
+            rgba = 1.0 1.0 1.0 1.0,
+        }
+        hand minute
+        {
+            length = 0.18,
+            thickness = 0.02,
+            texture = IsoObject/ClockHandMinuteBlack,
+            rgba = 1.0 1.0 1.0 1.0,
+        }
+    }
+
+    clock location_community_school_01_33
+    {
+        replacementSprite = animated_clock_01_1,
+        north = false,
+        handOffset = 0.17 0.5 0.778,
+        hand hour
+        {
+            length = 0.14,
+            thickness = 0.019,
+            texture = IsoObject/ClockHandHourRed,
+            rgba = 1.0 1.0 1.0 1.0,
+        }
+        hand minute
+        {
+            length = 0.18,
+            thickness = 0.02,
+            texture = IsoObject/ClockHandMinuteBlack,
+            rgba = 1.0 1.0 1.0 1.0,
+        }
+    }
+
+    clock walls_decoration_01_105
+    {
+        replacementSprite = animated_clock_01_3,
+        north = true,
+        handOffset = 0.5 0.155 0.83,
+        hand hour
+        {
+            length = 0.112,
+            thickness = 0.0152,
+            texture = IsoObject/ClockHandHourRed,
+            rgba = 1.0 1.0 1.0 1.0,
+        }
+        hand minute
+        {
+            length = 0.144,
+            thickness = 0.016,
+            texture = IsoObject/ClockHandMinuteBlack,
+            rgba = 1.0 1.0 1.0 1.0,
+        }
+    }
+
+    clock walls_decoration_01_104
+    {
+        replacementSprite = animated_clock_01_2,
+        north = false,
+        handOffset = 0.15 0.5 0.833,
+        hand hour
+        {
+            length = 0.112,
+            thickness = 0.0152,
+            texture = IsoObject/ClockHandHourRed,
+            rgba = 1.0 1.0 1.0 1.0,
+        }
+        hand minute
+        {
+            length = 0.144,
+            thickness = 0.016,
+            texture = IsoObject/ClockHandMinuteBlack,
+            rgba = 1.0 1.0 1.0 1.0,
+        }
+    }
+
+    clock walls_detailing_02_56
+    {
+        replacementSprite = animated_clock_01_4,
+        north = true,
+        handOffset = 1.365 0.42 0.52,
+        hand hour
+        {
+            length = 0.42,
+            thickness = 0.0,
+            texture = IsoObject/ClockHand2,
+            textureInfo = 53 454 26 357,
+            rgba = 1.0 1.0 1.0 1.0,
+        }
+        hand minute
+        {
+            length = 0.565,
+            thickness = 0.0,
+            texture = IsoObject/ClockHand2,
+            textureInfo = 53 454 26 357,
+            rgba = 1.0 1.0 1.0 1.0,
+        }
+    }
+
+    clock walls_detailing_02_57
+    {
+        replacementSprite = animated_clock_01_5,
+    }
+
+    clock walls_detailing_02_58
+    {
+        replacementSprite = animated_clock_01_6,
+        north = false,
+        handOffset = 0.35 0.31 0.48,
+        hand hour
+        {
+            length = 0.42,
+            thickness = 0.0,
+            texture = IsoObject/ClockHand2,
+            textureInfo = 53 454 26 357,
+            rgba = 1.0 1.0 1.0 1.0,
+        }
+        hand minute
+        {
+            length = 0.565,
+            thickness = 0.0,
+            texture = IsoObject/ClockHand2,
+            textureInfo = 53 454 26 357,
+            rgba = 1.0 1.0 1.0 1.0,
+        }
+    }
+
+    clock walls_detailing_02_59
+    {
+        replacementSprite = animated_clock_01_7,
+    }
+}

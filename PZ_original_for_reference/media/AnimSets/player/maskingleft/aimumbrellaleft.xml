@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="holdingumbrellaleft.xml">
+	<m_Name>aimumbrellaleft</m_Name>
+	<m_AnimName>Bob_IdleAimHgun_Umbrella</m_AnimName>
+	<m_Conditions x_name="f020e41e-9f7a-4cc8-83a8-9b5fa69552fc">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>handgun</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="b2741604-f0c0-49ca-8394-95ae308db228">
+		<m_Name>Aim</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="d5f1462d-2616-4618-abc9-ca7bfee03049">
+		<m_Name>ismoving</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="800a43f0-40ca-423c-8f3a-c656fd1ce1fb">
+		<m_Name>bdoshove</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="df7e9edb-5d74-4e3e-aae7-949f1794c1d9">
+		<m_Name>bLandLightMask</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,69 @@
+module Base
+{
+    sound AnimalVoiceRabbitIdle
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Rabbit/Voice/Idle,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalVoiceRabbitStressed
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Rabbit/Voice/Stressed,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalVoiceRabbitPain
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Rabbit/Voice/Pain,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalVoiceRabbitDeath
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Rabbit/Voice/Death,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalFootstepsRabbitWalk
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Rabbit/Footsteps/Walk,
+        }
+    }
+
+    sound AnimalFootstepsRabbitRun
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Rabbit/Footsteps/Run,
+        }
+    }
+
+    sound AnimalFoleyRabbitBodyFall
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Rabbit/Foley/Bodyfall,
+        }
+    }
+}

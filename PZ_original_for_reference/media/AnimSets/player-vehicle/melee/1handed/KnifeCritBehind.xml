@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="KnifeCrit.xml">
+	<m_Name>KnifeCritBehind</m_Name>
+	<m_AnimName>Bob_AttackKnife01_CritHit_Behind</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_AttackKnife01_CritHit_Behind</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_AttackKnife01_CritHit_Behind</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_AttackKnife01_CritHit_Behind</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="2fbd001f-10c9-47b5-96ae-04064f6136cc">
+		<m_Name>AttackFromBehind</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>onfront</m_Name>
+	<m_AnimName>Zombie_FloorFrontToCrawl</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="638656d8-4126-4272-ad37-77b40669b4c5">
+		<m_Name>FallOnFront</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="91209188-95d7-4b80-97d8-a74e828c748a">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>ReanimateAnim=true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="42471c80-22af-4b5e-b957-4659e4208f98">
+		<m_EventName>ReanimateAnimFinishing</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

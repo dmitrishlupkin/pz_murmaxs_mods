@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>corpseThrown-onground</transitionTo>
+	<conditions>
+		<eventOccurred>ActiveAnimFinishing</eventOccurred>
+	</conditions>
+</transition>

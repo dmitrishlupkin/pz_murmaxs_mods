@@ -1,0 +1,12 @@
+module Base
+{
+    sound TutorialZombie
+    {
+        category = Zombie,
+        clip
+        {
+            file = media/sound/fzombierand5.wav,
+            distanceMax = 100,
+        }
+    }
+}

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="aimsneak_default.xml">
+	<m_Name>strafesneak</m_Name>
+	<m_AnimName>Bob_WalkSneak_Slow</m_AnimName>
+	<m_Conditions x_name="1706cab8-e0bd-4ffd-a36f-57fadcd6bf27">
+		<m_Name>ismoving</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

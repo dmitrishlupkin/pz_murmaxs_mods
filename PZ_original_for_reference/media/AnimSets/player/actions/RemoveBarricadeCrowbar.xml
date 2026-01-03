@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>RemoveBarricadeCrowbar</m_Name>
+	<m_AnimName>Bob_IdleLeverOpenMid</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="72454ce4-b25f-4a3c-8f92-17f618c9374c">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>RemoveBarricade</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="90c57d57-6d0d-406b-b80b-91b18f6a8994">
+		<m_Name>RemoveBarricade</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>CrowbarMid</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights>
+		<boneName>Dummy01</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Translation_Data</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

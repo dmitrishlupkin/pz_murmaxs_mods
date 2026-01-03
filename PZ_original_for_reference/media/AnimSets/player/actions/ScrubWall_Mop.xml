@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>ScrubWall_Mop</m_Name>
+	<m_AnimName>Bob_IdleScrubWall_Broom</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_BlendOutTime>0.40</m_BlendOutTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="333966d9-a7ca-4af8-af0b-88f9013376e5">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>ScrubWall_Mop</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="e6af0f8b-cb41-4835-b464-804ec158da42">
+		<m_Name>sitonground</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights>
+		<boneName>Dummy01</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Translation_Data</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

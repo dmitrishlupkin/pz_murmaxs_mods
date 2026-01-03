@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="holdingAngleTorchRight.xml">
+	<m_Name>fall_loop3_angletorchright</m_Name>
+	<m_BlendTime>0.50</m_BlendTime>
+	<m_SpeedScale>1.00</m_SpeedScale>
+	<m_Conditions x_name="26441c5f-4a1f-416e-9920-9bdb5aa8f6eb">
+		<m_Name>bFalling</m_Name>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="93690308-60f7-4bcb-92e8-2097af0fd64d">
+		<m_Name>fallSpeedSeverity</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Severe</m_Value>
+	</m_Conditions>
+	<m_Transitions />
+	<m_Transitions>
+		<m_Target>fall_loop4_angletorchright</m_Target>
+		<m_blendInTime>0.5</m_blendInTime>
+		<m_blendOutTime>0.5</m_blendOutTime>
+	</m_Transitions>
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_R_Forearm</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights />
+</animNode>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="idle2.xml">
+	<m_Name>idle4</m_Name>
+	<m_AnimName>Chk_Chick_Idle04</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Conditions x_name="fe80045c-b12c-4e87-af01-61260fcbe69f">
+		<m_Value>idle3</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_MetalSmallWireFence
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Small Metal Wire Fence,
+            Icon = Build_ShortWireFence,
+        }
+    }
+}

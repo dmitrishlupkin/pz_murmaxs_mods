@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Ext_PainHead.xml">
+	<m_Name>PainHead2</m_Name>
+	<m_AnimName>Bob_EmotePainHead02</m_AnimName>
+	<m_Conditions x_name="b9cf91fa-c161-41f7-94e7-7c744782f42f">
+		<m_Value>PainHead2</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="left.xml">
+	<m_Name>left2</m_Name>
+	<m_Conditions x_name="068dc32f-bd1d-434c-a2ab-aec54f722f1a">
+		<m_Name>CrawlerType</m_Name>
+		<m_Type>EQU</m_Type>
+		<m_Value>2</m_Value>
+	</m_Conditions>
+</animNode>

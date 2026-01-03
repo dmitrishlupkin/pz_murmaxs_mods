@@ -1,0 +1,12 @@
+<KeyPairs>
+	<Key variable="Aim" tooltip="Is aiming." />
+	<Key variable="Weapon" tooltip="Equipped weapon." />
+	<Key variable="ipx" tooltip="X-Input while aiming." />
+	<Key variable="turndelta" tooltip="Rotation multiplier." />
+	<Key variable="ipy" tooltip="Y-Input while aiming." />
+	<Key variable="ismoving" tooltip="Is moving while aiming." />
+	<Key variable="deltax" tooltip="The X-movement while aiming." />
+	<Key variable="deltay" tooltip="The Y-movement while aiming." />
+	<Key variable="movedelta" tooltip="Movement multiplier." />
+	<Key variable="ang" tooltip="The angle you're aiming, while aiming." />
+</KeyPairs>

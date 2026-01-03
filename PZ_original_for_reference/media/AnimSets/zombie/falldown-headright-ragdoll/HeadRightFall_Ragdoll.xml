@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="default.xml">
+	<m_Name>HeadRightFall_Ragdoll</m_Name>
+	<m_AnimName>Zombie_HitDeath_HeadRight</m_AnimName>
+	<m_isRagdoll>true</m_isRagdoll>
+	<m_ragdollStartTimeMin>1.07</m_ragdollStartTimeMin>
+	<m_ragdollStartTimeMax>1.3</m_ragdollStartTimeMax>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_SpeedScale>1.00</m_SpeedScale>
+</animNode>

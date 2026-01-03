@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>WearClothingNotMoving</m_Name>
+	<m_AnimName>Bob_BandageLeftLeg</m_AnimName>
+	<m_BlendTime>0.50</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="bfec7aa2-dff9-42e7-9dd2-b9b0c407e254">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>WearClothing</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="6571acf8-8aeb-40bb-9920-e83a5b6fc2e7">
+		<m_Name>WearClothingLocation</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Feet</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights>
+		<boneName>Dummy01</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Translation_Data</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

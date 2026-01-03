@@ -1,0 +1,482 @@
+module Base
+{
+    sound VoiceMale
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleMeleeStab
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Melee/Stab,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleMeleeStabOnGround
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Melee/StabOnGround,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleMeleeAttackHeavy
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Melee/Attack/Heavy,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleMeleeAttack
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Melee/Attack/Default,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleMeleeShove
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Melee/Attack/Default,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleMeleeStomp
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Melee/Attack/Default,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMalePainFromBite
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Pain/FromBite,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMalePainFromScratch
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Pain/FromScratch,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMalePainFromLacerate
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Pain/FromLacerate,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMalePainFromGlassCut
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Pain/FromGlassCut,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMalePainFromFallHigh
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Pain/FromFallHigh,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMalePainFromFallLow
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Pain/FromFallLow,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMalePainFromHitBlunt
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Pain/FromHitBlunt,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMalePainFromRunIntoWall
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Pain/FromRunIntoWall,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleShoutHey
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Shout/Hey,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleShoutMegaphoneHey
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/ShoutMegaphone/Hey,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleSneezeLight
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Sneeze/Light,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleSneezeHeavy
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Sneeze/Heavy,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleJumpLow
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Jump/Low,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleJumpHigh
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Jump/High,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleDeathAlone
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Death/Alone,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleDeathEaten
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Death/Eaten,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleWhisperHey
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Whisper/Hey,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleWhisperPsst
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Whisper/Psst,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleWhisperMegaphoneHey
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/WhisperMegaphone/Hey,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleWhisperMegaphonePsst
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/WhisperMegaphone/Psst,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleClimbWindow
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Climb/Window,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleCough
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Cough,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleMuffledCough
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/MuffledCough,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleSleep
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Sleep,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleVomit
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Vomit,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleSleep
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Sleep,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleApplyBandage
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/ApplyBandage,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleSighBored
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Sigh/Bored,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleSighReliefed
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Sigh/Reliefed,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleSighSad
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Sigh/Sad,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleLureTsk
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Lure/Tsk,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleLureCmon
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Lure/Cmon,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleDeathFall
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/DeathFall,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleDrunkHic
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Drunk/Hic,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleExercise
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Exercise,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleFreezeShiver
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/FreezeShiver,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleSmoke
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Smoke,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMalePainMoodle
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Moodles/SeverePain,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleCorpseDragging
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Corpse/Dragging,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleCorpseHighEffort
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Corpse/HighEffort,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceMaleCorpseLowEffort
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Corpse/LowEffort,
+            distanceMax = 150,
+        }
+    }
+}

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="strafeDefault.xml">
+	<m_Name>strafeKnife</m_Name>
+	<m_Conditions x_name="25b45d09-eb99-4683-960b-9833aa138bf6">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>knife</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<actiongroup>
+	<initial>idle</initial>
+	<commentBlock>
+		<name>Up and About</name>
+		<bounds x="25,245.0000" y="24,975.0000" width="690.0000" height="315.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Hit</name>
+		<bounds x="25,245.0000" y="25,725.0000" width="690.0000" height="300.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Fall down and death</name>
+		<bounds x="25,245.0000" y="26,100.0000" width="690.0000" height="300.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Occupancy</name>
+		<bounds x="25,245.0000" y="25,380.0000" width="690.0000" height="255.0000" />
+	</commentBlock>
+</actiongroup>

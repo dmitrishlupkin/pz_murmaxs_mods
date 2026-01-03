@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Rugged_Table
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Rugged Table,
+            Icon = Build_LogTable2,
+        }
+    }
+}

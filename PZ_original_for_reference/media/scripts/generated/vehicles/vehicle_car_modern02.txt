@@ -1,0 +1,101 @@
+module Base
+{
+    vehicle ModernCar02
+    {
+        template! = ModernCar02,
+        specialKeyRing = Base.KeyRing_WestMaple,
+        model
+        {
+            file = Vehicles_ModernCar02,
+            scale = 1.82,
+            offset = 0.0 0.2692 0.0,
+        }
+        template = PassengerSeat4,
+        template = CarModern02Collision,
+        passenger FrontLeft
+        {
+            position inside
+            {
+                offset = 0.1758 -0.1264 0.0549,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = 0.6319 -0.4176 0.1264,
+                rotate = 0.0 0.0 0.0,
+            }
+        }
+        passenger FrontRight
+        {
+            position inside
+            {
+                offset = -0.1758 -0.1264 0.0549,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = -0.6319 -0.4176 0.1264,
+                rotate = 0.0 0.0 0.0,
+            }
+        }
+        passenger RearLeft
+        {
+            position inside
+            {
+                offset = 0.1758 -0.1264 -0.4011,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = 0.6319 -0.4176 -0.3462,
+                rotate = 0.0 0.0 0.0,
+            }
+        }
+        passenger RearRight
+        {
+            position inside
+            {
+                offset = -0.1758 -0.1264 -0.4011,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = -0.6319 -0.4176 -0.3462,
+                rotate = 0.0 0.0 0.0,
+            }
+        }
+        area SeatFrontLeft
+        {
+            xywh = 0.6758 0.1264 0.4725 0.4725,
+        }
+        area SeatFrontRight
+        {
+            xywh = -0.6758 0.1264 0.4725 0.4725,
+        }
+        area SeatRearLeft
+        {
+            xywh = 0.6758 -0.3462 0.4725 0.4725,
+        }
+        area SeatRearRight
+        {
+            xywh = -0.6758 -0.3462 0.4725 0.4725,
+        }
+        extents = 0.8901 0.6374 2.3407,
+        physicsChassisShape = 0.8901 0.6374 2.3407,
+        centerOfMassOffset = 0.0 0.3077 0.0,
+        shadowExtents = 0.8901 2.3407,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1813,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1978,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+}

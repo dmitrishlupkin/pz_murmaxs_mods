@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="blowHarmonica_L.xml">
+	<m_Name>blowHarmonica_L_sneak</m_Name>
+	<m_AnimName>Bob_StealthEmoteBlowHarmonica_L</m_AnimName>
+	<m_Conditions x_name="0cfef256-ee21-4467-87ab-1f1db9037708">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

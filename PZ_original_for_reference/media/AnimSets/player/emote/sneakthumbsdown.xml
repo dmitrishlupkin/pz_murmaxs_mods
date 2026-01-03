@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="thumbsdown.xml">
+	<m_Name>sneakthumbsdown</m_Name>
+	<m_AnimName>Bob_StealthEmoteThumbsDown</m_AnimName>
+	<m_Conditions x_name="5d5c34fd-b6ef-44ff-9813-dc0a47a7b0b6">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

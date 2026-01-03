@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>PackingBox</m_Name>
+	<m_AnimName>Bob_IdlePackBox</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="c811a7d9-9e07-4949-aa24-6eb6e7d363b6">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>PackingBox</m_Value>
+	</m_Conditions>
+</animNode>

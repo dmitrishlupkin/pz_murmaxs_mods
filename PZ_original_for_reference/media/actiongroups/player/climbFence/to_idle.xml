@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isTrue>ClimbFenceFinished</isTrue>
+			<isFalse>isMoving</isFalse>
+			<isFalse>isSprinting</isFalse>
+			<isFalse>CanClimbDownRope</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isTrue>ClimbFenceFinished</isTrue>
+			<isFalse>isRunning</isFalse>
+			<isFalse>isMoving</isFalse>
+			<isFalse>CanClimbDownRope</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isTrue>ClimbFenceFinished</isTrue>
+			<isFalse>isMoving</isFalse>
+			<isFalse>CanClimbDownRope</isFalse>
+		</conditions>
+	</transition>
+</transitions>

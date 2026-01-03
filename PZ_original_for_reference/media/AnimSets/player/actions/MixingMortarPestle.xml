@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>MixingMortarPestle</m_Name>
+	<m_AnimName>Bob_IdleMotarAndPestle</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="e5674943-dac8-4012-98c8-fb70c00003f6">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>MixingMortarPestle</m_Value>
+	</m_Conditions>
+</animNode>

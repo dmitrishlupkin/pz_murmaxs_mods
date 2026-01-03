@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>ChainsawDefault</m_Name>
+	<m_Priority>4</m_Priority>
+	<m_AnimName>Bob_AttackChainsaw01_CritHit</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_SpeedScale>CombatSpeed</m_SpeedScale>
+	<m_Conditions x_name="7564413e-6cda-44b9-94bc-eb0b4ed1df8e">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>chainsaw</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="58d94c36-4f43-40cb-a4da-ba623a64f0dd">
+		<m_Name>AimFloorAnim</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="40152781-1ea6-4546-bdbd-ce54637b2e05">
+		<m_EventName>SetVariable</m_EventName>
+		<m_TimePc>0.1</m_TimePc>
+		<m_ParameterValue>ZombieHitReaction=Chainsaw</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="f065c10e-79ba-428e-b3c9-7a2936014f96">
+		<m_EventName>AttackCollisionCheck</m_EventName>
+		<m_TimePc>0.25</m_TimePc>
+		<m_ParameterValue>MeleeSwing</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="22638ff9-db02-47c4-8059-c184d25dbf93">
+		<m_EventName>PlaySwingSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Transitions>
+		<m_Target>IdleChainsaw</m_Target>
+		<m_AnimName>Bob_AimToIdle_Chainsaw</m_AnimName>
+		<m_blendInTime>0.5</m_blendInTime>
+		<m_blendOutTime>0.5</m_blendOutTime>
+		<m_speedScale>1.3</m_speedScale>
+	</m_Transitions>
+</animNode>

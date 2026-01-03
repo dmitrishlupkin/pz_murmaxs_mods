@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_DoubleWireGate
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Big Double Wire Gate,
+            Icon = Build_DoubleWireGate,
+        }
+    }
+}

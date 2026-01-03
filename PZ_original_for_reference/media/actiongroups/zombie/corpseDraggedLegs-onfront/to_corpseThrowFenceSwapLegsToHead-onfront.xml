@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>corpseThrowFenceSwapLegsToHead-onfront</transitionTo>
+	<conditions>
+		<isTrue>grappledThrownOverFence</isTrue>
+	</conditions>
+</transition>

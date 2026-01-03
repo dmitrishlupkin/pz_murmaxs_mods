@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="holdingumbrellaleft.xml">
+	<m_Name>fall_loop3_umbrellaleft</m_Name>
+	<m_AnimName>Bob_FallIdle03_Umbrella</m_AnimName>
+	<m_BlendTime>0.50</m_BlendTime>
+	<m_SpeedScale>1.00</m_SpeedScale>
+	<m_Conditions x_name="f020e41e-9f7a-4cc8-83a8-9b5fa69552fc">
+		<m_Name>bFalling</m_Name>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="f9664fe1-2be2-49d3-a95a-9ce75bd267bb">
+		<m_Name>fallSpeedSeverity</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Severe</m_Value>
+	</m_Conditions>
+	<m_Transitions />
+	<m_Transitions>
+		<m_Target>fall_loop4_umbrellaleft</m_Target>
+		<m_blendInTime>0.5</m_blendInTime>
+		<m_blendOutTime>0.5</m_blendOutTime>
+	</m_Transitions>
+</animNode>

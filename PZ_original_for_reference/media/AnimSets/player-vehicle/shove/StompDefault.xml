@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>StompDefault</m_Name>
+	<m_Priority>4</m_Priority>
+	<m_AnimName>Bob_AttackFloorStamp</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_EarlyTransitionOut>true</m_EarlyTransitionOut>
+	<m_SpeedScale>1.28</m_SpeedScale>
+	<m_Conditions x_name="b204798e-663c-4a3b-9f37-9422f232af27">
+		<m_Name>AimFloorAnim</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="5491f6e3-720e-4580-8a10-46279d03731f">
+		<m_EventName>SetVariable</m_EventName>
+		<m_TimePc>0.1</m_TimePc>
+		<m_ParameterValue>ZombieHitReaction=Floor</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="7e27a398-0810-4f02-be6a-e8137b07b7c4">
+		<m_EventName>AttackCollisionCheck</m_EventName>
+		<m_TimePc>0.33</m_TimePc>
+		<m_ParameterValue>Stomp</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="dd7eb692-a4c5-47e8-a2b9-b1739ea8dc09">
+		<m_EventName>StompAnim</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="8daa5eed-24f4-46a6-81fa-49c88072ef4c">
+		<m_EventName>StompAnim</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>false</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="fb00234b-4077-45ba-8eee-5b560cfa511a">
+		<m_EventName>SetMeleeDelay</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>5</m_ParameterValue>
+	</m_Events>
+	<m_SubStateBoneWeights>
+		<boneName>Dummy01</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Translation_Data</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>NoWeapon</m_Name>
+	<m_Priority>4</m_Priority>
+	<m_AnimName>Bob_AttackKnife01_NoBlade</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_EarlyTransitionOut>true</m_EarlyTransitionOut>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="e3d04f6b-768e-4909-95fd-d07fc8f551a6">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value></m_Value>
+	</m_Conditions>
+	<m_Events x_name="dcd05fda-8d10-4f83-9856-d5b8ba31e4c2">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>AttackAnim=FALSE</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="7001f40e-8f8c-4082-9337-a79e6911c76d">
+		<m_EventName>PlaySwingSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>falling</m_Name>
+	<m_AnimName>Bob_VaultOverToFall</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="1b1e12b2-5876-4eec-9798-22ca3085e2ee">
+		<m_Name>ClimbFenceStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="7d7f7854-bafd-4452-948a-77c4abe3c419">
+		<m_Name>ClimbFenceOutcome</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>falling</m_Value>
+	</m_Conditions>
+	<m_Events x_name="7868ed1e-929e-439d-af0b-aefe829988c0">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>ClimbFenceFinished=true</m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Furnace_III
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Blast Furnace,
+            Icon = Build_FurnaceAdvanced,
+        }
+    }
+}

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Yawn.xml">
+	<m_Name>Yawn2H</m_Name>
+	<m_AnimName>Bob_EmoteYawn2H</m_AnimName>
+	<m_Conditions x_name="94dd7336-b13e-4e6b-b357-87916b9adddc">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="6e81e5eb-ca5c-4a5d-b82d-2368ab9976be">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="a2f4149d-1ec0-4c19-bb0b-c4c4473aa535">
+		<m_Name>Ext</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Yawn</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="1ed0864e-8cbf-472f-a546-9eda6011c736">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

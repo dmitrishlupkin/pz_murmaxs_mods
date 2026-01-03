@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Forge_III
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Advanced Forge,
+            Icon = Build_ForgeAdvanced,
+        }
+    }
+}

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>GeneralStagger</m_Name>
+	<m_AnimName>Zombie_StaggerBack</m_AnimName>
+	<m_DeferredBoneName>Bip01</m_DeferredBoneName>
+	<m_deferredBoneAxis>Z</m_deferredBoneAxis>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_BlendOutTime>0.20</m_BlendOutTime>
+	<m_SpeedScale>1.10</m_SpeedScale>
+	<m_Conditions x_name="ba4b132c-d3f4-4289-af19-ac251607256e">
+		<m_Name>hitforce</m_Name>
+		<m_Type>LESS</m_Type>
+		<m_Value>0.4</m_Value>
+	</m_Conditions>
+	<m_Events x_name="6defa411-d8e6-41ca-b528-150a4ae70207">
+		<m_EventName>SetState</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

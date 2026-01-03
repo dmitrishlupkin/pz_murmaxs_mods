@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_WoodCross
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Wood Cross,
+            Icon = Build_Cross,
+        }
+    }
+}

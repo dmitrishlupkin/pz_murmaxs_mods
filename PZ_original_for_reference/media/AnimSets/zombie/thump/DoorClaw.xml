@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="DoorBang.xml">
+	<m_Name>DoorClaw</m_Name>
+	<m_AnimName>Zombie_DoorClaw</m_AnimName>
+	<m_Conditions x_name="2937bd1c-8de3-4bd4-be16-6dd991e895ab">
+		<m_Value>DoorClaw</m_Value>
+	</m_Conditions>
+	<m_Events x_name="28e13e39-ec5f-43fd-8850-8086e819e773">
+		<m_TimePc>0.23</m_TimePc>
+	</m_Events>
+	<m_Events x_name="911d2785-9b61-406b-a226-15eb91c8fec8">
+		<m_EventName>ThumpFrame</m_EventName>
+		<m_TimePc>0.73</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

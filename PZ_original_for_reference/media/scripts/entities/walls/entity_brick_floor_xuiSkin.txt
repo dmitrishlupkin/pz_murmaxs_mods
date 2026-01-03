@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_BrickFloorLvl1
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Tile Floor,
+            Icon = Build_FloorTilePorcelain,
+        }
+    }
+}

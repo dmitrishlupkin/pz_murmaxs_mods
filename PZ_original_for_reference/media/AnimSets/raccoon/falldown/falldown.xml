@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>falldown</m_Name>
+	<m_AnimName>Rac_Death</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Events x_name="98912ae1-f260-4bfb-8669-cea135f91302">
+		<m_EventName>PlayDeathSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="078eca84-9ebd-4536-8e13-480655d16959">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.35</m_TimePc>
+		<m_ParameterValue>fallover</m_ParameterValue>
+	</m_Events>
+</animNode>

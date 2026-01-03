@@ -1,0 +1,194 @@
+module Base
+{
+    craftRecipe RemoveBattery
+    {
+        timedAction = DismantleElectrical,
+        time = 30,
+        AllowBatchCraft = false,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Electrical,
+        inputs
+        {
+            item 1 tags[base:flashlight;base:usesbattery] mode:keep flags[NotEmpty;ItemCount;InheritUsesAndEmpty],
+        }
+        outputs
+        {
+            item 1 Base.Battery,
+        }
+    }
+
+    craftRecipe InsertBattery
+    {
+        timedAction = MakingElectrical,
+        time = 30,
+        OnCreate = RecipeCodeOnCreate.torchBatteryInsert,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Electrical,
+        inputs
+        {
+            item 1 tags[base:flashlight;base:usesbattery] flags[IsEmpty;AllowFavorite;ItemCount] mode:keep,
+            item 1 [Base.Battery] flags[ItemCount] mode:destroy,
+        }
+        outputs
+        {
+        }
+    }
+
+    craftRecipe DismantleElectronics
+    {
+        timedAction = DismantleElectrical,
+        time = 60,
+        OnCreate = RecipeCodeOnCreate.dismantleFlashlight,
+        Tags = InHandCraft;Electrical,
+        category = Electrical,
+        xpAward = Electricity:2,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeVeryLight;NoBrokenItems],
+            item 1 tags[base:camera;base:digital;base:miscelectronic;base:flashlight] mode:destroy flags[IsNotWorn;ItemCount;ResearchInput],
+        }
+        outputs
+        {
+            item 1 Base.ElectronicsScrap,
+        }
+    }
+
+    craftRecipe DismantleMiscElectronics
+    {
+        timedAction = DismantleElectrical,
+        time = 60,
+        OnCreate = RecipeCodeOnCreate.dismantleMiscElectronics,
+        Tags = InHandCraft;Electrical,
+        category = Electrical,
+        xpAward = Electricity:2,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeVeryLight;NoBrokenItems],
+            item 1 [Base.CDplayer;Base.HomeAlarm;Base.Remote;Base.Speaker] flags[ItemCount;ResearchInput] mappers[itemType] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.ElectronicsScrap,
+            item 1 mapper:itemType,
+        }
+        itemMapper itemType
+        {
+            Base.Amplifier = Base.Speaker,
+            Base.ElectronicsScrap = Base.CDplayer,
+            Base.MotionSensor = Base.HomeAlarm,
+            Base.Receiver = Base.Remote,
+        }
+    }
+
+    craftRecipe DismantlePowerBar
+    {
+        timedAction = DismantleElectrical,
+        time = 100,
+        Tags = InHandCraft;Electrical,
+        category = Electrical,
+        xpAward = Electricity:1,
+        inputs
+        {
+            item 1 tags[base:screwdriver;base:sharpknife] mode:keep flags[MayDegradeVeryLight;IsNotDull],
+            item 1 [Base.PowerBar] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.ElectricWire,
+        }
+    }
+
+    craftRecipe MakeImprovisedFlashlight
+    {
+        timedAction = MakingElectrical,
+        time = 100,
+        NeedToBeLearn = true,
+        SkillRequired = Electricity:1,
+        Tags = AnySurfaceCraft,
+        category = Electrical,
+        AutoLearnAny = Electricity:3,
+        xpAward = Electricity:10,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeVeryLight;Prop1],
+            item 1 tags[base:pliers] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[base:smallsaw;base:lightmetalsnips] mode:keep flags[MayDegradeVeryLight],
+            item 1 [Base.ElectronicsScrap],
+            item 1 [Base.LightBulb],
+            item 1 [Base.ElectricWire],
+            item 1 tags[base:tincan;base:smallsheetmetal] mode:destroy flags[ItemCount],
+            item 1 [Base.Screws],
+        }
+        outputs
+        {
+            item 1 Base.Flashlight_Crafted flags[HasNoUses],
+        }
+    }
+
+    craftRecipe MakeImprovisedLantern
+    {
+        timedAction = MakingElectrical,
+        time = 100,
+        NeedToBeLearn = true,
+        SkillRequired = Electricity:1,
+        Tags = AnySurfaceCraft,
+        category = Electrical,
+        AutoLearnAny = Electricity:3,
+        xpAward = Electricity:10,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeVeryLight;Prop1],
+            item 1 tags[base:pliers] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[base:smallsaw;base:lightmetalsnips] mode:keep flags[MayDegradeVeryLight],
+            item 1 [Base.ElectronicsScrap],
+            item 1 [Base.LightBulb],
+            item 1 [Base.ElectricWire],
+            item 1 tags[base:tincan;base:smallsheetmetal] mode:destroy flags[ItemCount],
+            item 1 [Base.Screws],
+            item 1 [Base.Wire],
+        }
+        outputs
+        {
+            item 1 Base.Lantern_CraftedElectric flags[HasNoUses],
+        }
+    }
+
+    craftRecipe MakeImprovisedLighter
+    {
+        timedAction = Making,
+        time = 100,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft,
+        category = Electrical,
+        AutoLearnAny = Electricity:5,
+        ResearchSkillLevel = 4,
+        xpAward = Electricity:5,
+        inputs
+        {
+            item 1 [Base.ElectricWire],
+            item 1 [Base.Battery] mode:destroy flags[NotEmpty;InheritUses;ItemCount],
+            item 1 [Base.Scotchtape;Base.DuctTape],
+        }
+        outputs
+        {
+            item 1 Base.Lighter_Battery,
+        }
+    }
+
+    craftRecipe DismantleImprovisedLighter
+    {
+        timedAction = Making,
+        time = 50,
+        Tags = InHandCraft,
+        category = Electrical,
+        inputs
+        {
+            item 1 [Base.Lighter_Battery] mode:destroy flags[InheritUses;ItemCount],
+        }
+        outputs
+        {
+            item 1 Base.Battery,
+            item 1 Base.ElectricWire,
+        }
+    }
+}

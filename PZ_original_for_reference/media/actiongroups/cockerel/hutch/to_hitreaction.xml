@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>hitreaction</transitionTo>
+	<conditions>
+		<isTrue>hashitreaction</isTrue>
+	</conditions>
+	<ConditionsBounds x="0.00" y="0.00" w="0.00" h="0.00" />
+	<FromPoint x="25,903.00" y="25,448.00" />
+	<ToPoint x="25,727.00" y="25,882.00" />
+</transition>

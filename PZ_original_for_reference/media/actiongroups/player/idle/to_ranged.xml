@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>ranged</transitionTo>
+	<conditions>
+		<isTrue>initiateAttack</isTrue>
+		<isTrue>rangedWeapon</isTrue>
+		<isFalse>bDoShove</isFalse>
+	</conditions>
+</transition>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>falling</transitionTo>
+	<conditions>
+		<isTrue>bFalling</isTrue>
+	</conditions>
+</transition>

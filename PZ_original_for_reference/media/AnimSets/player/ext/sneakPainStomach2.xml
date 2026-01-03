@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="PainStomach2.xml">
+	<m_Name>sneakPainStomach2</m_Name>
+	<m_AnimName>Bob_StealthEmotePainStomach02</m_AnimName>
+	<m_Conditions x_name="0dfac501-e8e4-4be6-ad68-3c6549502cc1">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

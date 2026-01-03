@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="ShoveDefault.xml">
+	<m_Name>Shove2hand</m_Name>
+	<m_AnimName>Bob_Shove_Bat</m_AnimName>
+	<m_Conditions x_name="fe262114-03b1-4b40-b87e-bcc1e605e985">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+</animNode>

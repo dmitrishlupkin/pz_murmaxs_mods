@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>pose01</m_Name>
+	<m_AnimName>Bob_Mannequin_Scarecrow</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="205671b4-7668-4792-b65c-499b96d4cf11">
+		<m_Name>Pose</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>pose01</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,146 @@
+module Base
+{
+    vehicle CarStationWagonSmashedRear
+    {
+        template! = CarStationWagon,
+        model
+        {
+            file = Vehicles_CarStationWagonSmashedRear,
+            scale = 1.82,
+            offset = 0.0 0.2692 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_statwagonshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_statwagon2shell,
+        }
+        extents = 0.9011 0.6264 2.6593,
+        physicsChassisShape = 0.9011 0.6264 2.6593,
+        centerOfMassOffset = 0.0 0.3022 -0.0385,
+        shadowExtents = 0.9011 2.6593,
+        shadowOffset = 0.0 -0.0385,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.3736,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.3297,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle CarStationWagonSmashedFront
+    {
+        template! = CarStationWagon,
+        model
+        {
+            file = Vehicles_CarStationWagonSmashedFront,
+            scale = 1.82,
+            offset = 0.0 0.2692 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_statwagonshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_statwagon2shell,
+        }
+        extents = 0.9011 0.6264 2.6593,
+        physicsChassisShape = 0.9011 0.6264 2.6593,
+        centerOfMassOffset = 0.0 0.3022 -0.0385,
+        shadowExtents = 0.9011 2.6593,
+        shadowOffset = 0.0 -0.0385,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.3736,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.3297,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle CarStationWagonSmashedRight
+    {
+        template! = CarStationWagon,
+        model
+        {
+            file = Vehicles_CarStationWagonSmashedRight,
+            scale = 1.82,
+            offset = 0.0 0.2692 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_statwagonshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_statwagon2shell,
+        }
+        extents = 0.9011 0.6264 2.6593,
+        physicsChassisShape = 0.9011 0.6264 2.6593,
+        centerOfMassOffset = 0.0 0.3022 -0.0385,
+        shadowExtents = 0.9011 2.6593,
+        shadowOffset = 0.0 -0.0385,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.3736,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.3297,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle CarStationWagonSmashedLeft
+    {
+        template! = CarStationWagon,
+        model
+        {
+            file = Vehicles_CarStationWagonSmashedLeft,
+            scale = 1.82,
+            offset = 0.0 0.2692 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_statwagonshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_statwagon2shell,
+        }
+        extents = 0.9011 0.6264 2.6593,
+        physicsChassisShape = 0.9011 0.6264 2.6593,
+        centerOfMassOffset = 0.0 0.3022 -0.0385,
+        shadowExtents = 0.9011 2.6593,
+        shadowOffset = 0.0 -0.0385,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.3736,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.3297,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+}

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>thump</m_Name>
+	<m_AnimName>Zombie_DoorBang</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="81d26f82-932f-4524-b0c3-20c01a015908">
+		<m_Name>bPassengerExposed</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="0d0f8734-3aeb-4da1-a2e7-807e12f46b59">
+		<m_Name>bIsTargetIsSmallVehicle</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="156489d1-6ce0-489e-8ecf-4ed5d292ae87">
+		<m_EventName>ThumpFrame</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

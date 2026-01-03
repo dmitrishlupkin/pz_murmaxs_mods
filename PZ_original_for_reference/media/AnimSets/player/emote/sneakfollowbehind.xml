@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="followbehind.xml">
+	<m_Name>sneakfollowbehind</m_Name>
+	<m_AnimName>Bob_Stealth_1H_FollowBehind</m_AnimName>
+	<m_Conditions x_name="93f7ef43-9348-4dbd-a56c-3fe63bcc6a21">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

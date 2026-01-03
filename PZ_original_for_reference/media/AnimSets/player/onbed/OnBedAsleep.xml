@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>OnBedAsleep</m_Name>
+	<m_AnimName>Bob_Asleep</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="c790dde1-abbf-41c7-a799-8fb015bc386b">
+		<m_Name>OnBedAnim</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Asleep</m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>OnBedAwake</m_Target>
+		<m_AnimName>Bob_AsleepToAwake</m_AnimName>
+	</m_Transitions>
+</animNode>

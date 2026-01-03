@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Key_Duplicator
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Key Duplicator,
+            Icon = Item_Key_Blank,
+        }
+    }
+}

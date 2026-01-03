@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="bicepscurllefthand.xml">
+	<m_Name>bicepscurllefthandstruggling</m_Name>
+	<m_AnimName>Bob_Idle_BicepCurl_LHand02</m_AnimName>
+	<m_Conditions x_name="3e90de75-dc3b-4a26-bf57-8300cb1b6b48">
+		<m_Name>FitnessStruggle</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="9e967f1b-ef1b-489b-ba4d-0aa326c51181">
+		<m_EventName>PlayerVoiceSound</m_EventName>
+		<m_TimePc>0.2</m_TimePc>
+		<m_ParameterValue>Exercise</m_ParameterValue>
+	</m_Events>
+</animNode>

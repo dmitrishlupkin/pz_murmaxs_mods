@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="fall_loop4.xml">
+	<m_Name>fall_loop4_2H</m_Name>
+	<m_AnimName>Bob_FallIdle04_Bat</m_AnimName>
+	<m_Conditions x_name="dd429694-46f8-4469-8b07-c19b158d472d">
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+</animNode>

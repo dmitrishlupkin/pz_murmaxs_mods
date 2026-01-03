@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="signalfire.xml">
+	<m_Name>sneaksignalfire</m_Name>
+	<m_AnimName>Bob_Stealth_1H_Fire</m_AnimName>
+	<m_Conditions x_name="85c86080-5e0b-442b-99c9-48e3baef47f5">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

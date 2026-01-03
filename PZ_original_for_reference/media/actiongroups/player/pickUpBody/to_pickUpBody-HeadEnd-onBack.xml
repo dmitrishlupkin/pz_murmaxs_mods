@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>pickUpBody-HeadEnd-onBack</transitionTo>
+		<conditions>
+			<isTrue>bIsGrappling</isTrue>
+			<lessEqual a="bearingFromGrappledTarget" b="-90.0000" />
+			<isFalse>$GrappledTarget.fallOnFront</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>pickUpBody-HeadEnd-onBack</transitionTo>
+		<conditions>
+			<isTrue>bIsGrappling</isTrue>
+			<gtrEqual a="bearingFromGrappledTarget" b="90.0000" />
+			<isFalse>$GrappledTarget.fallOnFront</isFalse>
+		</conditions>
+	</transition>
+</transitions>

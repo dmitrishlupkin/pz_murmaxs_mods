@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>sit_fishingCast</m_Name>
+	<m_AnimName>Bob_Sit_FishingCast</m_AnimName>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SpeedScale>0.8</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="b9a2a413-cad7-4573-b7c0-698a03697093">
+		<m_Name>sitonground</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="18e74597-8f00-4865-aacd-f6446f9ff2fa">
+		<m_Name>FishingStage</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Cast</m_Value>
+	</m_Conditions>
+</animNode>

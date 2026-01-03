@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_StickFence
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Stick Fence,
+            Icon = Build_FenceStakes,
+        }
+    }
+}

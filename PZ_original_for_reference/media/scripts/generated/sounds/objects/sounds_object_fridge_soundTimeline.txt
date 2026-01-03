@@ -1,0 +1,7 @@
+module Base
+{
+    soundTimeline Object/Fridge/Running
+    {
+        ElectricityOn = 3500,
+    }
+}

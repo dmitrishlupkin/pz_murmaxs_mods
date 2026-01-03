@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isFalse>bPathfind</isFalse>
+			<isFalse>bMoving</isFalse>
+			<isFalse>bClient</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isFalse>bMovingNetwork</isFalse>
+			<isTrue>bClient</isTrue>
+		</conditions>
+	</transition>
+</transitions>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="fromWalking.xml">
+	<m_Name>fromRunning</m_Name>
+	<m_AnimName>Bob_HitReact_Running</m_AnimName>
+	<m_Conditions x_name="53a49c4d-67e0-4330-8bac-b5fc95afb873">
+		<m_Name>isRunning</m_Name>
+	</m_Conditions>
+	<m_Conditions x_name="cee220f0-2b9d-419a-ab43-b21a1a0faedc">
+		<m_Name>fromBehind</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value />
+	</m_Conditions>
+</animNode>

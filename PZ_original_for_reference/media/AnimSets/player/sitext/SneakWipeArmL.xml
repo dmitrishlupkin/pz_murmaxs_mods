@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="WipeArmL.xml">
+	<m_Name>SneakWipeArmL</m_Name>
+	<m_AnimName>Bob_StealthEmoteWipeLeftArm</m_AnimName>
+	<m_Conditions x_name="46882504-4079-4d62-8c0e-4af5f0f54948">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

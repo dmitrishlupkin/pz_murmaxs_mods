@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="wavehi.xml">
+	<m_Name>wavehi02</m_Name>
+	<m_AnimName>Bob_EmoteWaveHi02</m_AnimName>
+	<m_Conditions x_name="7c31dc14-9b20-4eee-98f3-f89de9d0bed9">
+		<m_Value>wavehi02</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="deebec57-9218-49bf-a75d-2c101dfc1fc2">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>MakingHammer_Surface</m_Name>
+	<m_AnimName>Bob_IdleHammer_Surface</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="1972ad4f-e0a4-4cff-b834-726decff9039">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>MakingHammer_Surface</m_Value>
+	</m_Conditions>
+	<m_Events x_name="33ef4ecb-8ca1-4223-9686-14f7dba1a812">
+		<m_EventName>PlaySound</m_EventName>
+		<m_TimePc>0.65</m_TimePc>
+		<m_ParameterValue>Hammering</m_ParameterValue>
+	</m_Events>
+	<m_SubStateBoneWeights>
+		<boneName>Dummy01</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Translation_Data</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

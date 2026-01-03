@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="bicepscurl.xml">
+	<m_Name>bicepscurlend</m_Name>
+	<m_Looped>false</m_Looped>
+	<m_Conditions x_name="ad4883f7-8d99-4604-8f5b-6f0131661e25">
+		<m_Name>ExerciseEnded</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="0fa4ba8d-55d5-4c74-bf0a-731b3230a011">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>FitnessFinished=TRUE</m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,32 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_FeedingTroughDoubleMetal
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Metal Feeding Trough,
+            Icon = Build_TroughMetal,
+        }
+    }
+
+    xuiSkin default
+    {
+        entity ES_FeedingTroughDouble
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Long Wood Feeding Trough,
+            Icon = Build_TroughWoodLong,
+        }
+    }
+
+    xuiSkin default
+    {
+        entity ES_FeedingTroughSimple
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Short Wood Feeding Trough,
+            Icon = Build_TroughWoodShort,
+        }
+    }
+}

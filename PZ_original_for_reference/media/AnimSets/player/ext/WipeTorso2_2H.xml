@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="WipeTorso2.xml">
+	<m_Name>WipeTorso2_2H</m_Name>
+	<m_AnimName>Bob_EmoteWipeTorso02_2H</m_AnimName>
+	<m_Conditions x_name="4a793533-4faa-4594-a796-55de0c154507">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="75b0490f-254c-4679-9073-317d75ef613d">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="ab91f1cc-f1ac-4817-9efa-0b1f178bc467">
+		<m_Name>Ext</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>WipeTorso2</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="6bbcc488-f15a-4e87-98ad-05acf62334ea">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

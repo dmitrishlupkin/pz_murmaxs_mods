@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="strafeHandgun.xml">
+	<m_Name>strafeHandgunSlow</m_Name>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_2DBlends />
+	<m_2DBlends />
+	<m_2DBlends>
+		<m_AnimName>Bob_WalkBwdAimHandgun_Slow</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends />
+	<m_2DBlends />
+	<m_2DBlends>
+		<m_AnimName>Bob_WalkBwdAimHandgun_DiagLSlow</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_WalkBwdAimHandgun_DiagRSlow</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends />
+	<m_2DBlends />
+	<m_Conditions x_name="d673025f-4aa7-4556-8550-97dea14edecc">
+		<m_Name>SlowingMovement</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<actiongroup>
+	<initial>idle</initial>
+	<commentBlock>
+		<name>Grappled</name>
+		<bounds x="26,445.0000" y="23,535.0000" width="1,005.0000" height="540.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Falling Down</name>
+		<bounds x="26,445.0000" y="25,650.0000" width="1,455.0000" height="930.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Fake Dead</name>
+		<bounds x="26,445.0000" y="26,790.0000" width="1,455.0000" height="495.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Combat</name>
+		<bounds x="25,365.0000" y="24,375.0000" width="975.0000" height="1,155.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Climbing Things</name>
+		<bounds x="25,380.0000" y="23,205.0000" width="990.0000" height="270.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Up and About</name>
+		<bounds x="25,365.0000" y="23,565.0000" width="990.0000" height="495.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Getting Hit</name>
+		<bounds x="25,365.0000" y="25,695.0000" width="990.0000" height="885.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Car Collisions</name>
+		<bounds x="25,365.0000" y="26,835.0000" width="1,005.0000" height="615.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Thrown Into Container</name>
+		<bounds x="30,900.0000" y="24,255.0000" width="585.0000" height="555.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Ragdoll</name>
+		<bounds x="28,020.0000" y="25,590.0000" width="1,320.0000" height="990.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Knockdowns</name>
+		<bounds x="25,380.0000" y="22,380.0000" width="990.0000" height="765.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Thrown Out Window</name>
+		<bounds x="29,445.0000" y="24,330.0000" width="555.0000" height="540.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Thrown Over Fence</name>
+		<bounds x="30,165.0000" y="24,285.0000" width="585.0000" height="540.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Laid Down</name>
+		<bounds x="28,755.0000" y="24,375.0000" width="555.0000" height="570.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Dropped</name>
+		<bounds x="28,755.0000" y="24,990.0000" width="555.0000" height="555.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Landed After Being Thrown</name>
+		<bounds x="30,165.0000" y="24,960.0000" width="585.0000" height="585.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Being Dragged</name>
+		<bounds x="28,755.0000" y="23,715.0000" width="555.0000" height="495.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Being Picked Up For Dragging</name>
+		<bounds x="27,975.0000" y="24,375.0000" width="615.0000" height="570.0000" />
+	</commentBlock>
+</actiongroup>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="loadRifle.xml">
+	<m_Name>RackRifle</m_Name>
+	<m_AnimName>Bob_Reload_Bolt_Rack</m_AnimName>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_Conditions x_name="4345493e-a79b-419e-bd4d-6ddfe76caf7b">
+		<m_Name>isRacking</m_Name>
+	</m_Conditions>
+	<m_Events x_name="9da32e85-e827-4e73-b7e5-869a393ea4c1">
+		<m_EventName>rackingFinished</m_EventName>
+	</m_Events>
+	<m_Events x_name="f0f5ea04-695b-473a-83e2-87aa4f0cf681">
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>rack</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="2b6e940d-d7a4-4b5d-bed5-6b222b9e257f">
+		<m_EventName>rackBullet</m_EventName>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>land_death</m_Name>
+	<m_AnimName>Bob_FallLanding_Death</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="7eff3de3-abee-4893-87f7-409fe2116ca9">
+		<m_Name>bDead</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="dfc7cb10-ac3f-4f30-a970-7d8a9bd747ba">
+		<m_Name>bFalling</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="5a4441cd-acd2-409b-8d6d-9e70bfe83d0b">
+		<m_EventName>SetVariable</m_EventName>
+		<m_TimePc>0.4</m_TimePc>
+		<m_ParameterValue>bLandAnimFinished=true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="dcf43ef8-3a1b-4111-85c2-a2877ed7d157">
+		<m_EventName>SetVariable</m_EventName>
+		<m_TimePc>0.4</m_TimePc>
+		<m_ParameterValue>bOnFloor=true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="abfc9fff-4715-4edb-ac6e-22f8a5145976">
+		<m_EventName>SetVariable</m_EventName>
+		<m_TimePc>0.4</m_TimePc>
+		<m_ParameterValue>fallOnFront=true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="6cadfac9-fdd2-4d51-a3f0-4010482ac44b">
+		<m_EventName>PlaySound</m_EventName>
+		<m_TimePc>0.01</m_TimePc>
+		<m_ParameterValue>LandDeathFromFall</m_ParameterValue>
+	</m_Events>
+</animNode>

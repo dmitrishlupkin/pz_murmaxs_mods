@@ -1,0 +1,10 @@
+module Base
+{
+    model Vehicles_Trailer_Horsebox
+    {
+        mesh = vehicles/vehicle_horsebox,
+        shader = vehicle_multiuv,
+        invertX = false,
+        scale = 0.4,
+    }
+}

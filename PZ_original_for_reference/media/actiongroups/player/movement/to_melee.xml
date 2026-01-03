@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>melee</transitionTo>
+	<conditions>
+		<isTrue>initiateAttack</isTrue>
+		<isFalse>rangedWeapon</isFalse>
+		<compare op="!=" a="Weapon" />
+		<isFalse>bDoShove</isFalse>
+	</conditions>
+</transition>

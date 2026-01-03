@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>idle</transitionTo>
+	<conditions>
+		<isFalse>isMoving</isFalse>
+		<eventOccurred>ActiveAnimFinishing</eventOccurred>
+	</conditions>
+</transition>

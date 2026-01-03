@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>success</m_Name>
+	<m_AnimName>Bob_WindowCloseSuccess</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="3e939a80-d700-4c76-94d7-24c3e7c27617">
+		<m_Name>CloseWindowOutcome</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>success</m_Value>
+	</m_Conditions>
+	<m_Events x_name="f5fcc9bf-8ef4-4580-bdee-921c2983f3b8">
+		<m_EventName>WindowCloseSuccess</m_EventName>
+		<m_TimePc>0.35</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="f6f8d9f3-d3ff-45d0-b2c6-28d14d3a8688">
+		<m_EventName>WindowAnimLooped</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>success</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="0d35792c-68ab-4e0b-b493-718e2c5f8928">
+		<m_EventName>PlaySound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>CloseWindow</m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="FirearmShove.xml">
+	<m_Name>FirearmShoveBehind</m_Name>
+	<m_AnimName>Bob_AttackRifleButt02_Hit</m_AnimName>
+	<m_Conditions x_name="0307eb08-37b9-4d0b-9cdf-79ce9191b2c8">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="2ae6aea7-bf50-4005-8299-ae9b244aa26e">
+		<m_TimePc>0.3</m_TimePc>
+	</m_Events>
+	<m_Events x_name="0b1b4a91-a902-461d-824f-8f2b200ee365">
+		<m_EventName>PistolWhipAnim</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>TRUE</m_ParameterValue>
+	</m_Events>
+</animNode>

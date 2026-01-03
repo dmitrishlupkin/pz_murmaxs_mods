@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>idlePetting</m_Name>
+	<m_AnimName>Cow_IdlePetting</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="61947678-86f2-4c20-90c0-32e42d85cb13">
+		<m_Name>idleAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>petting</m_Value>
+	</m_Conditions>
+	<m_Events x_name="7d0ac688-fc2e-4820-afcb-92e28a2deb82">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>petting</m_ParameterValue>
+	</m_Events>
+</animNode>

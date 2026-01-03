@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>WearClothingDefault</m_Name>
+	<m_AnimName>Bob_IdleLooting_Mid</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="85912544-7cae-4ea3-bc9b-4e52da18e250">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>WearClothing</m_Value>
+	</m_Conditions>
+</animNode>

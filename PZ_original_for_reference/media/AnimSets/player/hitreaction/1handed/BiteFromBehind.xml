@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Bite.xml">
+	<m_Name>BiteFromBehind</m_Name>
+	<m_AnimName>Bob_BiteReactBehind_1Hand</m_AnimName>
+	<m_Conditions x_name="92a7d4f2-e515-4f6d-8511-f0a17e09059f">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="b48b809f-cc4e-4f99-a921-cbbd93a835ae">
+		<m_TimePc>0.5</m_TimePc>
+	</m_Events>
+</animNode>

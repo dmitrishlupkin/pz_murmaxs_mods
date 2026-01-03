@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="PainLegL.xml">
+	<m_Name>PainLegL2H</m_Name>
+	<m_AnimName>Bob_EmotePainLeftLeg2H</m_AnimName>
+	<m_Conditions x_name="79fb6ae4-69c7-442f-8953-c5eac54c2405">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+</animNode>

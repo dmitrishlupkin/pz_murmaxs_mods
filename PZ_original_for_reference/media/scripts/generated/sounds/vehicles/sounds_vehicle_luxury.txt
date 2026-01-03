@@ -1,0 +1,22 @@
+module Base
+{
+    sound VehicleEngineCarLuxury
+    {
+        category = Vehicle,
+        master = VehicleEngine,
+        clip
+        {
+            event = Vehicle/Sport/Engine,
+            distanceMax = 100,
+        }
+    }
+
+    sound VehicleIgnitionFailCarLuxury
+    {
+        category = Vehicle,
+        clip
+        {
+            event = Vehicle/Sport/IgnitionFail,
+        }
+    }
+}

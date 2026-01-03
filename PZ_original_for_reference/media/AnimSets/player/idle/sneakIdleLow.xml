@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="sneakidle.xml">
+	<m_Name>sneakIdleLow</m_Name>
+	<m_AnimName>Bob_IdleLowSneak</m_AnimName>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleLowSneak</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleSneakLow_HBreathing</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleLowSneak</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="3d094efb-2a9f-451f-8eb2-882553911d5f">
+		<m_Name>nearWallCrouching</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>sneakWalkLow</m_Target>
+	</m_Transitions>
+	<m_Transitions />
+	<m_Transitions>
+		<m_blendInTime>0.3</m_blendInTime>
+		<m_speedScale>1.3</m_speedScale>
+	</m_Transitions>
+	<m_Transitions />
+	<m_Transitions />
+	<m_Transitions />
+	<m_Transitions />
+</animNode>

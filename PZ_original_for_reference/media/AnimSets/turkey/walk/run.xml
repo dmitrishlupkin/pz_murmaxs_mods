@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>run</m_Name>
+	<m_AnimName>Turk_Run</m_AnimName>
+	<m_BlendTime>0.75</m_BlendTime>
+	<m_Conditions x_name="f776e606-3f90-4632-9b8e-e4797c2d4a02">
+		<m_Name>animalRunning</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="eb0d29ae-c2c5-4899-8b27-31ce973d5149">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.33</m_TimePc>
+		<m_ParameterValue>run</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="b575c9a3-3a48-4baa-bdec-fc4788e33e8e">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.87</m_TimePc>
+		<m_ParameterValue>run</m_ParameterValue>
+	</m_Events>
+</animNode>

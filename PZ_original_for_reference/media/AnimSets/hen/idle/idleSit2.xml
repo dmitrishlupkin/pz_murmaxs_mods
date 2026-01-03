@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="idleSit.xml">
+	<m_Name>idleSit2</m_Name>
+	<m_AnimName>Chk_SatIdle02</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="5c114936-2a3a-4847-8d49-a32d33ab7f29">
+		<m_Name>sittingAnim</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>sit1</m_Value>
+	</m_Conditions>
+	<m_Events x_name="8a47f663-70b5-42bd-94ae-b5ee10a25cdf">
+		<m_EventName>idleActionEnd</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_SubStateBoneWeights>
+		<boneName>Dummy01</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Translation_Data</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

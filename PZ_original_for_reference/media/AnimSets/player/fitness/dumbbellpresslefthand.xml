@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="dumbbellpress.xml">
+	<m_Name>dumbbellpresslefthand</m_Name>
+	<m_AnimName>Bob_Idle_DumbbellPress_LHand</m_AnimName>
+	<m_Conditions x_name="fbf627ae-1fc5-4867-be36-d20f5ec37156">
+		<m_Name>ExerciseHand</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>left</m_Value>
+	</m_Conditions>
+</animNode>

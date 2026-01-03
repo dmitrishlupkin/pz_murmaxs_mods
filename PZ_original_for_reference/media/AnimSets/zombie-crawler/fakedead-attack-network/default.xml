@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>default</m_Name>
+	<m_AnimName>Zombie_DeadToCrawl</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Events x_name="e8323d35-ff59-4948-ae98-aef6574bb4bb">
+		<m_EventName>FallOnFront</m_EventName>
+		<m_TimePc>0.5</m_TimePc>
+		<m_ParameterValue>TRUE</m_ParameterValue>
+	</m_Events>
+</animNode>

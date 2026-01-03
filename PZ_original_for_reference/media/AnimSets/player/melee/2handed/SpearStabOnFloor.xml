@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SpearOnFloor.xml">
+	<m_Name>SpearStabOnFloor</m_Name>
+	<m_Conditions x_name="88ccd811-d0fa-4969-a5e4-310120f26b10">
+		<m_Value>spearStab</m_Value>
+	</m_Conditions>
+</animNode>

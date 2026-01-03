@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="pushups.xml">
+	<m_Name>pushupsloop</m_Name>
+	<m_AnimName>Bob_PushUp_Loop</m_AnimName>
+	<m_Conditions x_name="d021ed7d-830c-4e04-91a3-cd5269c4579e">
+		<m_Name>ExerciseStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="f182b321-2eee-48af-bf9b-9a7e545156b3">
+		<m_EventName>PlayerVoiceSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>Exercise</m_ParameterValue>
+	</m_Events>
+</animNode>

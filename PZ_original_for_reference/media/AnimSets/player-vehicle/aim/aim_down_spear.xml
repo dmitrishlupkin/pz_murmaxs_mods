@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="aim_down.xml">
+	<m_Name>aim_down_spear</m_Name>
+	<m_AnimName>Bob_IdleAimSpear_Down</m_AnimName>
+	<m_Conditions x_name="050871f5-0a29-4481-a700-4a8bf12fc4e9">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

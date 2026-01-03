@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="AnimalLure.xml">
+	<m_Name>AnimalLureLow</m_Name>
+	<m_AnimName>Bob_Idle_LureLow</m_AnimName>
+	<m_Conditions x_name="1357792d-180f-421e-915c-ff0251801ed1">
+		<m_Value>AnimalLureLow</m_Value>
+	</m_Conditions>
+	<m_Events x_name="84641e6c-e8c2-499d-a702-77c83cee0abf">
+		<m_EventName>PlayerVoiceSound</m_EventName>
+		<m_TimePc>0.5</m_TimePc>
+		<m_ParameterValue>LureTsk</m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="barbellcurl.xml">
+	<m_Name>barbellcurlstruggling</m_Name>
+	<m_AnimName>Bob_Idle_BarbellCurl02</m_AnimName>
+	<m_Conditions x_name="d3cba28c-bbd5-44ac-ac4a-14602331b2e0">
+		<m_Name>FitnessStruggle</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="b2f5f798-e592-409e-b5b8-e75e426825da">
+		<m_EventName>PlayerVoiceSound</m_EventName>
+		<m_TimePc>0.2</m_TimePc>
+		<m_ParameterValue>Exercise</m_ParameterValue>
+	</m_Events>
+</animNode>

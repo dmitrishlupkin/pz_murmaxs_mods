@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="default.xml">
+	<m_Name>HeadTopFall</m_Name>
+	<m_AnimName>Zombie_HitDeath_HeadTop</m_AnimName>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_SpeedScale>1.00</m_SpeedScale>
+	<m_Events x_name="1508b430-b665-4846-aad3-09157f5f9341">
+		<m_ParameterValue>true</m_ParameterValue>
+	</m_Events>
+</animNode>

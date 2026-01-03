@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="situploop.xml">
+	<m_Name>situploopstruggling</m_Name>
+	<m_AnimName>Bob_SitUp_Loop02</m_AnimName>
+	<m_Conditions x_name="91fb7b69-d812-4d3b-b559-d804574d24a5">
+		<m_Name>FitnessStruggle</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="021fdf7b-14e3-4c38-80df-db210cd47c3e">
+		<m_TimePc>0.35</m_TimePc>
+	</m_Events>
+</animNode>

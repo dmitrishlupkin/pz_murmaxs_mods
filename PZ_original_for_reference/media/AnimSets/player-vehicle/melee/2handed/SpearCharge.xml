@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>SpearCharge</m_Name>
+	<m_Priority>4</m_Priority>
+	<m_AnimName>Bob_AttackSpear01_CritHit</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_SpeedScale>CombatSpeed</m_SpeedScale>
+	<m_Conditions x_name="855426d2-7c4e-47ef-8548-58436ceb8c1f">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="5bb4d1ac-4dbf-4df2-8c08-388552f0a60b">
+		<m_Name>AttackType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>charge</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="cfbdf187-eb11-445a-a481-0061cbb87f43">
+		<m_Name>AimFloorAnim</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="65349f99-981d-4089-9689-51e57e499494">
+		<m_EventName>SetVariable</m_EventName>
+		<m_TimePc>0.001</m_TimePc>
+		<m_ParameterValue>ZombieHitReaction=HitSpearDeath1</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="6f1fd7d9-8473-4e8b-b832-afd23b7231d4">
+		<m_EventName>AttackCollisionCheck</m_EventName>
+		<m_TimePc>0.2</m_TimePc>
+		<m_ParameterValue>MeleeStab</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="c4235477-4a2f-4d9e-9274-cd37bbcbf84d">
+		<m_EventName>PlaySwingSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

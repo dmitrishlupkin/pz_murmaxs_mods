@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_MetalWallLvl1
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Metal Wall (Poor),
+            Icon = Build_WallMetal,
+        }
+    }
+}

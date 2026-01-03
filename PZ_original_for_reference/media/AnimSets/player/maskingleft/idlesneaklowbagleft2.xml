@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="idlesneaklowbagleft.xml">
+	<m_Name>idlesneaklowbagleft2</m_Name>
+	<m_Conditions x_name="661f8f46-e5f5-4eda-82b4-e0b79c082c6d">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

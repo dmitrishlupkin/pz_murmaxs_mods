@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_WoodFenceLvl3
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Wood Fence (Good),
+            Icon = Build_FenceWood,
+        }
+    }
+}

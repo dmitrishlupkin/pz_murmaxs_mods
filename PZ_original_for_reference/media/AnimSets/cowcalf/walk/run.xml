@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>run</m_Name>
+	<m_AnimName>CowCalf_Run</m_AnimName>
+	<m_BlendTime>0.75</m_BlendTime>
+	<m_Conditions x_name="114a3554-695b-4eb8-94d6-be6bec360e38">
+		<m_Name>animalRunning</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="3ad19fb9-8345-4452-8091-688b67d33a3f">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.28</m_TimePc>
+		<m_ParameterValue>run</m_ParameterValue>
+	</m_Events>
+</animNode>

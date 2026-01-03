@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>start</m_Name>
+	<m_AnimName>Bob_WindowCloseStart</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Events x_name="751b8ba2-2e4a-4b1d-a2f3-8c5dbef95176">
+		<m_EventName>WindowAnimLooped</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>start</m_ParameterValue>
+	</m_Events>
+</animNode>

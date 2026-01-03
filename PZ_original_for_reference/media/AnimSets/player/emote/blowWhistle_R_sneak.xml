@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="blowWhistle_R.xml">
+	<m_Name>blowWhistle_R_sneak</m_Name>
+	<m_AnimName>Bob_StealthEmoteBlowWhistle_R</m_AnimName>
+	<m_Conditions x_name="e221f308-37ca-4ede-97ae-7c6c8d5d266a">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

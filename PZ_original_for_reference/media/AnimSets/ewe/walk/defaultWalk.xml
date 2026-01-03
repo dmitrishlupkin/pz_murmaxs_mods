@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>defaultWalk</m_Name>
+	<m_AnimName>Sheep_Walk</m_AnimName>
+	<m_BlendTime>0.75</m_BlendTime>
+	<m_SpeedScale>animalSpeed</m_SpeedScale>
+	<m_Events x_name="eb28f373-25a5-4c7e-90cb-b5d80c011b73">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.01</m_TimePc>
+		<m_ParameterValue>walkBack</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="0b07dbe1-82ba-4b22-bb70-dda4e6325351">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.25</m_TimePc>
+		<m_ParameterValue>walkFront</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="21853823-1b2f-4df1-80a1-ba59602f1dc2">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.57</m_TimePc>
+		<m_ParameterValue>walkBack</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="adebddcc-0bc7-4ff5-b29d-ca79742ae40b">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.78</m_TimePc>
+		<m_ParameterValue>walkFront</m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,114 @@
+module Base
+{
+    vehicle SUVSmashedRear
+    {
+        template! = SUV,
+        model
+        {
+            file = Vehicles_SUVSmashedRear,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        extents = 0.9451 0.6374 2.0989,
+        physicsChassisShape = 0.9451 0.6374 2.0989,
+        centerOfMassOffset = 0.0 0.3187 0.0,
+        shadowExtents = 0.9451 2.0989,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.0714,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.0769,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle SUVSmashedRight
+    {
+        template! = SUV,
+        model
+        {
+            file = Vehicles_SUVSmashedRight,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        extents = 0.9451 0.6374 2.0989,
+        physicsChassisShape = 0.9451 0.6374 2.0989,
+        centerOfMassOffset = 0.0 0.3187 0.0,
+        shadowExtents = 0.9451 2.0989,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.0714,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.0769,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle SUVSmashedLeft
+    {
+        template! = SUV,
+        model
+        {
+            file = Vehicles_SUVSmashedLeft,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        extents = 0.9451 0.6374 2.0989,
+        physicsChassisShape = 0.9451 0.6374 2.0989,
+        centerOfMassOffset = 0.0 0.3187 0.0,
+        shadowExtents = 0.9451 2.0989,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.0714,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.0769,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle SUVSmashedFront
+    {
+        template! = SUV,
+        model
+        {
+            file = Vehicles_SUVSmashedFront,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        extents = 0.9451 0.6374 2.0989,
+        physicsChassisShape = 0.9451 0.6374 2.0989,
+        centerOfMassOffset = 0.0 0.3187 0.0,
+        shadowExtents = 0.9451 2.0989,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.0714,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.0769,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+}

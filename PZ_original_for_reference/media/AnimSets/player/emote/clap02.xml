@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="clap.xml">
+	<m_Name>clap02</m_Name>
+	<m_AnimName>Bob_EmoteClap02</m_AnimName>
+	<m_Conditions x_name="507019c7-1e87-4e69-8bcf-ec935a9da7ec">
+		<m_Value>clap02</m_Value>
+	</m_Conditions>
+	<m_Events x_name="15eff126-4432-4914-91f5-f1f52c23802c">
+		<m_TimePc>0.21</m_TimePc>
+	</m_Events>
+	<m_Events x_name="ec86696b-266b-4bed-8018-6fcaf33d8b6a">
+		<m_TimePc>0.66</m_TimePc>
+	</m_Events>
+</animNode>

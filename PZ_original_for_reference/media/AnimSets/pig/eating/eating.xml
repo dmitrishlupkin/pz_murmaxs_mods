@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>eating</m_Name>
+	<m_AnimName>FarmPig_IdleEating01</m_AnimName>
+	<m_BlendTime>1.00</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="6b42fac7-2b5c-4a83-9681-19b6ebbdca7b">
+		<m_Name>idleAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>eat</m_Value>
+	</m_Conditions>
+	<m_Events x_name="fecf9f97-cac8-4b7d-ac66-29aa5dde4cda">
+		<m_EventName>idleActionEnd</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

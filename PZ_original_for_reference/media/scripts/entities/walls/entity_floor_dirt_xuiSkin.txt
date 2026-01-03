@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_DirtFloor
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Dirt Floor,
+            Icon = Build_FloorDirt,
+        }
+    }
+}

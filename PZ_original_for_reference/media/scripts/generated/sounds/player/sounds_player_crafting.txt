@@ -1,0 +1,119 @@
+module Base
+{
+    sound CraftSheetSlingBag
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Survival/Crafting/CraftSheetSlingBag,
+        }
+    }
+
+    sound SharpenBladeWhetstone
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Survival/Crafting/Repair/SharpenBladeWhetstone,
+        }
+    }
+
+    sound SharpenBladeGrindstone
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Survival/Crafting/Repair/SharpenBladeGrindstone,
+        }
+    }
+
+    sound SmashWatermelon
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Survival/Crafting/SmashWatermelon,
+        }
+    }
+
+    sound DryingRackLeatherCraft
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Survival/Crafting/DryingRack/Leather/Craft,
+        }
+    }
+
+    sound DryingRackLeatherInsert
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Survival/Crafting/DryingRack/Leather/Insert,
+        }
+    }
+
+    sound DryingRackLeatherRemove
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Survival/Crafting/DryingRack/Leather/Remove,
+        }
+    }
+
+    sound DryingRackPlantsCraft
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Survival/Crafting/DryingRack/Plants/Craft,
+        }
+    }
+
+    sound DryingRackPlantsInsert
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Survival/Crafting/DryingRack/Plants/Insert,
+        }
+    }
+
+    sound DryingRackPlantsRemove
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Survival/Crafting/DryingRack/Plants/Remove,
+        }
+    }
+
+    sound CraftWeaponSpearBone
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Survival/Crafting/Weapons/SpearBone,
+        }
+    }
+
+    sound CraftWeaponSpearWood
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Survival/Crafting/Weapons/SpearWood,
+        }
+    }
+
+    sound CraftMakeCement
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Survival/Crafting/MakeCement,
+        }
+    }
+}

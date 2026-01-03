@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SawSmallItemMetal.xml">
+	<m_Name>SawSmallItemMetal_Sat</m_Name>
+	<m_Conditions x_name="a94e685e-b5c0-45f5-baed-c0d460ec32b4">
+		<m_Name>sitonground</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="9c3211b1-4521-4cfe-b4d5-aab14b7ff103">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="efb3b7a0-7179-4eee-ad42-0711853385aa">
+		<m_Name>NewCondition</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>SawSmallItemMetal</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="a84a144c-7b79-4000-8bf8-48b96175d3a5">
+		<m_Name>sittingonfurniture</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights>
+		<weight>0.00</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<weight>0.00</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Spine</boneName>
+		<weight>0.50</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Spine1</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Prop1</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Prop2</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

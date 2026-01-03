@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>fishingIdle</m_Name>
+	<m_AnimName>Bob_FishingIdle</m_AnimName>
+	<m_BlendTime>0.25</m_BlendTime>
+	<m_SpeedScale>0.40</m_SpeedScale>
+	<m_Conditions x_name="17782260-29ea-4bba-98ba-8c7d740f44cd">
+		<m_Name>sitonground</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="85df326d-275f-4d14-99bc-449cb595c3fb">
+		<m_Name>FishingStage</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Idle</m_Value>
+	</m_Conditions>
+</animNode>

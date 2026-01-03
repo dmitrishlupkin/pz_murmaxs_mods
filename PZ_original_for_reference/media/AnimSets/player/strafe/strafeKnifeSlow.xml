@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="strafeKnife.xml">
+	<m_Name>strafeKnifeSlow</m_Name>
+	<m_Conditions x_name="34b77a80-37c2-40c3-9cd4-b70b531fd08d">
+		<m_Name>SlowingMovement</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

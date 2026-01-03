@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="walkbagleft.xml">
+	<m_Name>sprintbagleft</m_Name>
+	<m_AnimName>Bob_Sprint_Bag</m_AnimName>
+	<m_SpeedScale>0.96</m_SpeedScale>
+	<m_Conditions x_name="26c589ce-e617-49d2-a0eb-f3d79673e33d">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

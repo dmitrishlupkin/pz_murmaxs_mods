@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>Throw</m_Name>
+	<m_AnimName>Bob_AttackThrowMolotov</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="bc736040-d030-4d0a-afa5-e6a3ae781651">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>throwing</m_Value>
+	</m_Conditions>
+	<m_Events x_name="c21fe510-d016-4c64-9f65-fb0958d39439">
+		<m_EventName>AttackCollisionCheck</m_EventName>
+		<m_TimePc>0.3</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="ed33ad87-ade2-4b37-a70c-50d187dd0f45">
+		<m_EventName>PlaySwingSound</m_EventName>
+		<m_TimePc>0.05</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

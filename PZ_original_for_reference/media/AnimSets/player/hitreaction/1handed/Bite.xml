@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>Bite</m_Name>
+	<m_AnimName>Bob_BiteReact_1Hand</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>1.12</m_SpeedScale>
+	<m_Conditions x_name="e87498ae-f107-4aa9-afd6-785b083c26fa">
+		<m_Name>hitreaction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Bite</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="92a7d4f2-e515-4f6d-8511-f0a17e09059f">
+		<m_Name>FromBehind</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="b48b809f-cc4e-4f99-a921-cbbd93a835ae">
+		<m_EventName>PushAwayZombie</m_EventName>
+		<m_TimePc>0.47</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

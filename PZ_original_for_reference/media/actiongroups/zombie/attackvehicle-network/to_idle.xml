@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isFalse>bAttackVehicle</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isTrue>bDead</isTrue>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isFalse>bHasTarget</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isTrue>bMovingNetwork</isTrue>
+		</conditions>
+	</transition>
+</transitions>

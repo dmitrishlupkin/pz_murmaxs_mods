@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SpearDefault.xml">
+	<m_Name>SpearOnFloor</m_Name>
+	<m_AnimName>Bob_AttackFloorSpear</m_AnimName>
+	<m_Conditions x_name="68e81ab0-0107-41aa-8a35-9048bca4d603">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="e4c378b0-5b60-4770-8fac-da1af8c4774d">
+		<m_ParameterValue>ZombieHitReaction=Floor</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="d92efb7b-639e-4da8-add6-4f01c9cee9e6">
+		<m_TimePc>0.4</m_TimePc>
+		<m_ParameterValue>MeleeStabToFloor</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="e892688f-d92f-4ece-924e-2cd164458356">
+		<m_Time>End</m_Time>
+	</m_Events>
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights>
+		<boneName>Bip01</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Translation_Data</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

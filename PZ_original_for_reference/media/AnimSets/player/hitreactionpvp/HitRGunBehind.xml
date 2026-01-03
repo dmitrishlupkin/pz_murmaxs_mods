@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="HitRGun.xml">
+	<m_Name>HitRGunBehind</m_Name>
+	<m_AnimName>Bob_HitReactBehindHgun_01</m_AnimName>
+	<m_Conditions x_name="80da8c7b-05a2-4b53-80a8-37a6be09b726">
+		<m_Name>FromBehind</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,137 @@
+module Base
+{
+    model Vehicles_PickUpBurnt
+    {
+        mesh = vehicles/Vehicles_PickUpBurnt,
+        shader = vehicle,
+        static = true,
+        scale = 0.01,
+    }
+
+    model Vehicles_PickUpVanBurnt
+    {
+        mesh = vehicles/Vehicles_PickUpVanBurnt,
+        shader = vehicle,
+        scale = 0.01,
+    }
+
+    model Vehicles_CarNormal_Burnt
+    {
+        mesh = vehicles/Vehicles_CarNormal_Burnt,
+        shader = vehicle,
+        scale = 0.01,
+    }
+
+    model Vehicles_ModernCar02Burnt
+    {
+        mesh = vehicles/Vehicles_ModernCar02_Burnt,
+        shader = vehicle,
+        scale = 0.01,
+    }
+
+    model Vehicles_ModernCarBurnt
+    {
+        mesh = vehicles/Vehicles_ModernCarBurnt,
+        shader = vehicle,
+        scale = 0.01,
+    }
+
+    model Vehicles_SportsCar_Burnt
+    {
+        mesh = vehicles/Vehicles_SportsCar_Burnt,
+        shader = vehicle,
+        static = true,
+        scale = 0.01,
+    }
+
+    model Vehicles_SmallCar02Burnt
+    {
+        mesh = vehicles/Vehicles_SmallCar02Burnt,
+        shader = vehicle,
+        scale = 0.01,
+    }
+
+    model Vehicles_SmallCar_Burnt
+    {
+        mesh = vehicles/Vehicles_SmallCar_Burnt,
+        shader = vehicle,
+        static = true,
+        scale = 0.01,
+    }
+
+    model Vehicles_VanSeats_Burnt
+    {
+        mesh = vehicles/Vehicles_VanSeats_Burnt,
+        shader = vehicle,
+        static = true,
+        scale = 0.01,
+    }
+
+    model Vehicles_Van_Burnt
+    {
+        mesh = vehicles/Vehicles_Van_Burnt,
+        shader = vehicle,
+        static = true,
+        scale = 0.01,
+    }
+
+    model Vehicles_SUV_Burnt
+    {
+        mesh = vehicles/Vehicles_SUV_Burnt,
+        shader = vehicle,
+        scale = 0.01,
+    }
+
+    model Vehicles_OffRoadBurnt
+    {
+        mesh = vehicles/Vehicles_OffRoadBurnt,
+        shader = vehicle,
+        scale = 0.01,
+    }
+
+    model Vehicles_LuxuryCarBurnt
+    {
+        mesh = vehicles/Vehicles_LuxuryCarBurnt,
+        shader = vehicle,
+        scale = 0.009,
+    }
+
+    model Vehicles_PickUpVanLightsBurnt
+    {
+        mesh = vehicles/Vehicles_PickUpVanLightsBurnt,
+        shader = vehicle,
+        static = true,
+        scale = 0.01,
+    }
+
+    model Vehicles_Ambulance_Burnt
+    {
+        mesh = vehicles/Vehicles_Ambulance_Burnt,
+        shader = vehicle,
+        scale = 0.01,
+    }
+
+    model Vehicles_VanRadio_Burnt
+    {
+        mesh = vehicles/Vehicles_VanRadio_Burnt,
+        shader = vehicle,
+        static = true,
+        scale = 0.01,
+    }
+
+    model Vehicles_NormalCar_BurntPolice
+    {
+        mesh = vehicles/Vehicles_NormalCar_BurntPolice,
+        shader = vehicle,
+        static = true,
+        scale = 0.01,
+    }
+
+    model Vehicles_RaceCarBurnt
+    {
+        mesh = vehicles/vehicle_racecar_Burnt,
+        shader = vehicle,
+        static = true,
+        scale = 0.01,
+    }
+}

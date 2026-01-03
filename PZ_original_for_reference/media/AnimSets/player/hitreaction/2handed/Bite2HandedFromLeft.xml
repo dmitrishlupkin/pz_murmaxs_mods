@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Bite2Handed.xml">
+	<m_Name>Bite2HandedFromLeft</m_Name>
+	<m_AnimName>Bob_BiteReact_Bat_L</m_AnimName>
+	<m_Conditions x_name="d5e242ad-5f90-4283-86da-b7675e014cdc">
+		<m_Value>BiteLEFT</m_Value>
+	</m_Conditions>
+</animNode>

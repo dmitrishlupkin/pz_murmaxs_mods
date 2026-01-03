@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_LampPillar
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Lamp On Pillar,
+            Icon = Build_FlashlightLamp,
+        }
+    }
+}

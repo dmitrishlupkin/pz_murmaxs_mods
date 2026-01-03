@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Welding.xml">
+	<m_Name>Welding_Surface</m_Name>
+	<m_AnimName>Bob_IdleWelding_Surface</m_AnimName>
+	<m_Conditions x_name="73e19c7e-a868-44f4-8424-9277a751fa08">
+		<m_Value>Welding_Surface</m_Value>
+	</m_Conditions>
+</animNode>

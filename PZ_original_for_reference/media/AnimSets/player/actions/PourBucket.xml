@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Pour.xml">
+	<m_Name>PourBucket</m_Name>
+	<m_AnimName>Bob_IdlePour_Bucket</m_AnimName>
+	<m_Conditions x_name="1396b810-3e26-43ee-b465-ec060ba01d80">
+		<m_Name>PourType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Bucket</m_Value>
+	</m_Conditions>
+</animNode>

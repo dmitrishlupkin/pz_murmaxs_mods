@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>face-target</transitionTo>
+	<conditions>
+		<eventNotOccurred>washit</eventNotOccurred>
+		<eventOccurred>ActiveAnimFinishing</eventOccurred>
+		<isTrue>bAttack</isTrue>
+		<isFalse>isFacingTarget</isFalse>
+		<isFalse>bKnockedDown</isFalse>
+	</conditions>
+</transition>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>corpseLaidDown-onback</transitionTo>
+	<conditions>
+		<compare op="==" a="sharedGrappleAnimNode" b="GrappledBwdDragLayDownOnBack" />
+	</conditions>
+</transition>

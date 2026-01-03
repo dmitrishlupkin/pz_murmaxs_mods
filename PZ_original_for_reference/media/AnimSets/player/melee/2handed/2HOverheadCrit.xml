@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="2HOverhead.xml">
+	<m_Name>2HOverheadCrit</m_Name>
+	<m_AnimName>Bob_AttackBat02_CritHit</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_AttackBat02_CritHit</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_AttackBat02_CritHit</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_AttackBat02_CritHit</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_AttackBat02_CritHit</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="2c333235-e8d1-4b6f-9c07-4e246a130317">
+		<m_Name>CriticalHit</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>RemoveBarricade</m_Name>
+	<m_AnimName>Bob_IdleLooting_High</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="0e064085-653d-4c65-b76c-889b3b9da6ca">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>RemoveBarricade</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>idle3</m_Name>
+	<m_AnimName>Rat_Idle03</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Conditions x_name="e3c0e2bc-f6a2-426c-9189-27e96c9e29d6">
+		<m_Name>idleAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>idle2</m_Value>
+	</m_Conditions>
+	<m_Events x_name="a81132af-d9e5-4d91-a14e-b5567d116876">
+		<m_EventName>idleActionEnd</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

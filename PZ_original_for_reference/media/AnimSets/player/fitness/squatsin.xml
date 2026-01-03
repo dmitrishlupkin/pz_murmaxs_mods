@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="squats.xml">
+	<m_Name>squatsin</m_Name>
+	<m_AnimName>Bob_Squat_In</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_Events x_name="3dc19a20-e018-4c38-9f5e-8a0af12d7011">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>ExerciseStarted=TRUE</m_ParameterValue>
+	</m_Events>
+</animNode>

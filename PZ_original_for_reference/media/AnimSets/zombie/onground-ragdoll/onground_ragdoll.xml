@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>onground_ragdoll</m_Name>
+	<m_isRagdoll>true</m_isRagdoll>
+	<m_deferredBoneAxis>Z</m_deferredBoneAxis>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Transitions>
+		<m_Target>getUpFromOnFront</m_Target>
+		<m_blendInTime>3</m_blendInTime>
+		<m_blendOutTime>1.5</m_blendOutTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>getUpFromOnBack</m_Target>
+		<m_blendInTime>0.5</m_blendInTime>
+		<m_blendOutTime>0.5</m_blendOutTime>
+	</m_Transitions>
+</animNode>

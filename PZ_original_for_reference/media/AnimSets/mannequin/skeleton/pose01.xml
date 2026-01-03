@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>pose01</m_Name>
+	<m_AnimName>Bob_Mannequin_Skel</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="db3b9cd7-5ca4-443f-93e2-8b1641346de8">
+		<m_Name>Pose</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>pose01</m_Value>
+	</m_Conditions>
+</animNode>

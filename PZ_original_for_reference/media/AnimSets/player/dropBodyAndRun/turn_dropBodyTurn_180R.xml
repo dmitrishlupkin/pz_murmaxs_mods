@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="turn_dropBodyTurn_180.xml">
+	<m_Name>turn_dropBodyTurn_180R</m_Name>
+	<m_AnimName>Bob_IdleToRun180R</m_AnimName>
+	<m_Conditions x_name="6bd90f77-3ce1-4449-b883-bc7916fb98bc">
+		<m_Name>targetTwist</m_Name>
+		<m_Type>GTR</m_Type>
+		<m_Value>0</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="5e66c836-5117-4757-b8ab-487951607e35">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="d5806acd-624e-44fd-bfe4-82164f31c125">
+		<m_Name>targetTwist</m_Name>
+		<m_Type>EQU</m_Type>
+		<m_Value>0</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Scythe.xml">
+	<m_Name>defaultScythe</m_Name>
+	<m_AnimName>Bob_Scything</m_AnimName>
+	<m_Conditions x_name="1aef65d8-b12b-4e85-b7d9-4bfdd7ec2465">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>scything</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="3f2a3eaa-6766-44cd-851d-621be223d08e">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value />
+	</m_Conditions>
+	<m_SubStateBoneWeights>
+		<boneName>Dummy01</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Translation_Data</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

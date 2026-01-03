@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="DoorBang.xml">
+	<m_Name>door</m_Name>
+	<m_Conditions x_name="b837a25a-69f9-485f-a911-7bed3f6d9151">
+		<m_Value>Door</m_Value>
+	</m_Conditions>
+</animNode>

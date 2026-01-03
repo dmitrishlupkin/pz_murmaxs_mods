@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>interrupted</m_Name>
+	<m_AnimName>Zombie_Bite_Fail</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="fb455c72-a3e0-4cad-bc1f-d8e549f36c73">
+		<m_Name>AttackOutcome</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>interrupted</m_Value>
+	</m_Conditions>
+	<m_Events x_name="6c0b0b11-5c6b-406d-a634-08369006abc9">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>ZombieBiteDone=true</m_ParameterValue>
+	</m_Events>
+</animNode>

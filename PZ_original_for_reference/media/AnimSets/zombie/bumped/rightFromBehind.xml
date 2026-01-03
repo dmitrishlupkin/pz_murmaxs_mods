@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>rightFromBehind</m_Name>
+	<m_AnimName>Zombie_ShotChestRBehind</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="99654f4f-49a9-40fd-be66-57932e42cffb">
+		<m_Name>BumpType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>right</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="528ced96-494a-44fb-9508-dd2496b34c60">
+		<m_Name>FromBehind</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="95541730-f0e5-47e2-bc6f-fdc9be577ad7">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>BumpAnimFinished=true</m_ParameterValue>
+	</m_Events>
+</animNode>

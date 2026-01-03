@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="ceasefire.xml">
+	<m_Name>sneakceasefire</m_Name>
+	<m_AnimName>Bob_Stealth_1H_CeaseFire</m_AnimName>
+	<m_Conditions x_name="9f82b03a-6297-4982-adcd-b081e5bc3bb8">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>hitReact_onback</m_Name>
+	<m_AnimName>Zombie_HitReact_FloorOnBack</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.25</m_BlendTime>
+	<m_SpeedScale>0.96</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="34c21c53-d639-4f32-af1f-eeb21cad03ca">
+		<m_Name>FallOnFront</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="e4d507b8-128a-4270-8430-a56edcdcc154">
+		<m_EventName>SetState</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

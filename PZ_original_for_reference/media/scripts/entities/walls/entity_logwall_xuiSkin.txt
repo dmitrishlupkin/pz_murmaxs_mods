@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_LogWallLvl1
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Log Wall,
+            Icon = Build_WallLogs,
+        }
+    }
+}

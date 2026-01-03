@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Metal_Stairs
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Metal Stairs,
+            Icon = Build_StairsMetal,
+        }
+    }
+}

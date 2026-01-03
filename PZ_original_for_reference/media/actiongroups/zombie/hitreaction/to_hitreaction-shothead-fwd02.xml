@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>hitreaction-shothead-fwd02</transitionTo>
+	<conditions>
+		<compare op="==" a="hitreaction" b="ShotHeadFwd02" />
+	</conditions>
+</transition>

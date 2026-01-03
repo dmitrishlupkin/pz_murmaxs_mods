@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="barbellcurl.xml">
+	<m_Name>barbellcurlend</m_Name>
+	<m_Looped>false</m_Looped>
+	<m_Conditions x_name="b9b40c97-c5a2-4883-a500-fb95d741e235">
+		<m_Name>ExerciseEnded</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="408dd606-acf6-4fd9-a533-417765b26c08">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>FitnessFinished=TRUE</m_ParameterValue>
+	</m_Events>
+</animNode>

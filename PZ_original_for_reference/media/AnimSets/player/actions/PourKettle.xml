@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Pour.xml">
+	<m_Name>PourKettle</m_Name>
+	<m_AnimName>Bob_IdlePour_Kettle</m_AnimName>
+	<m_Conditions x_name="716a219f-b37d-413e-9bdd-61f5f82dd11f">
+		<m_Name>PourType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Kettle</m_Value>
+	</m_Conditions>
+</animNode>

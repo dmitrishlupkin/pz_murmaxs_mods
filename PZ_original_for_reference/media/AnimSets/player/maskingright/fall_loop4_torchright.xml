@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="holdingTorchRight.xml">
+	<m_Name>fall_loop4_torchright</m_Name>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_BlendOutTime>0.10</m_BlendOutTime>
+	<m_SpeedScale>1.00</m_SpeedScale>
+	<m_Conditions x_name="b956b5cd-ed54-4277-be48-bd5b0f2eb0be">
+		<m_Name>bFalling</m_Name>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="a2029a5c-2979-4ce3-9062-c10514b2af81">
+		<m_Name>fallSpeedSeverity</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Lethal</m_Value>
+	</m_Conditions>
+	<m_Transitions />
+	<m_Transitions>
+		<m_Target>land_death</m_Target>
+		<m_blendInTime>0.1</m_blendInTime>
+		<m_blendOutTime>0.1</m_blendOutTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>land_heavy2</m_Target>
+		<m_blendInTime>0.1</m_blendInTime>
+		<m_blendOutTime>0.1</m_blendOutTime>
+	</m_Transitions>
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_R_Hand</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights />
+</animNode>

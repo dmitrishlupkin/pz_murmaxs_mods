@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>turkeyattackDefault</m_Name>
+	<m_AnimName>Turk_Attack_Claw</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Events x_name="0365d752-d53b-410c-b061-ce708da69482">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>fight</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="a0aa4232-9d59-469f-ae93-8093c18743d9">
+		<m_EventName>AttackConnect</m_EventName>
+		<m_TimePc>0.95</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

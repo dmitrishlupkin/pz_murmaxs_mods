@@ -1,0 +1,78 @@
+module Base
+{
+    sound AnimalVoiceSowIdle
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Sow/Voice/Idle,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalVoiceSowDeath
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Sow/Voice/Death,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalVoiceSowStressed
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Sow/Voice/Stressed,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalVoiceSowPain
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Sow/Voice/Pain,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalFootstepsSowWalkFront
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Sow/Footsteps/Walk/Front,
+        }
+    }
+
+    sound AnimalFootstepsSowWalkBack
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Sow/Footsteps/Walk/Back,
+        }
+    }
+
+    sound AnimalFootstepsSowRun
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Sow/Footsteps/Run,
+        }
+    }
+
+    sound AnimalFoleySowBodyfall
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Sow/Foley/Bodyfall,
+        }
+    }
+}

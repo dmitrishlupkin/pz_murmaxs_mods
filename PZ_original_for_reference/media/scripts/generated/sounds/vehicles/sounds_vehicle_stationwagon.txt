@@ -1,0 +1,22 @@
+module Base
+{
+    sound VehicleEngineCarStationWagon
+    {
+        category = Vehicle,
+        master = VehicleEngine,
+        clip
+        {
+            event = Vehicle/Standard/Engine,
+            distanceMax = 100,
+        }
+    }
+
+    sound VehicleIgnitionFailCarStationWagon
+    {
+        category = Vehicle,
+        clip
+        {
+            event = Vehicle/Standard/IgnitionFail,
+        }
+    }
+}

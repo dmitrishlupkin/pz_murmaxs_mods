@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_BarbedWireFence
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Barbed Wire Fence,
+            Icon = Build_FenceWire,
+        }
+    }
+}

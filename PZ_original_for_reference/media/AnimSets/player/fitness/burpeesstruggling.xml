@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="burpees.xml">
+	<m_Name>burpeesstruggling</m_Name>
+	<m_AnimName>Bob_Burpees02</m_AnimName>
+	<m_Conditions x_name="b54b2ed1-8f41-4153-8c74-87d7ba4ba422">
+		<m_Name>FitnessStruggle</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="3ce51caf-8115-49c0-9cee-bd99a877ddee">
+		<m_EventName>PlayerVoiceSound</m_EventName>
+		<m_TimePc>0.35</m_TimePc>
+		<m_ParameterValue>Exercise</m_ParameterValue>
+	</m_Events>
+</animNode>

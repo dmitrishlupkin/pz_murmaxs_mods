@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SpearOverhead.xml">
+	<m_Name>SpearOverheadCrit</m_Name>
+	<m_AnimName>Bob_AttackSpear01_CritHit</m_AnimName>
+	<m_Conditions x_name="ded606ef-f338-44ed-a10d-d18e5553fc54">
+		<m_Name>CriticalHit</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="e4c378b0-5b60-4770-8fac-da1af8c4774d">
+		<m_ParameterValue>ZombieHitReaction=HitSpearDeath1</m_ParameterValue>
+	</m_Events>
+</animNode>

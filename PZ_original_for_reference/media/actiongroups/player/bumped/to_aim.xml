@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>aim</transitionTo>
+	<conditions>
+		<eventOccurred>ActiveAnimFinishing</eventOccurred>
+		<isTrue>aim</isTrue>
+		<isFalse>BumpFall</isFalse>
+	</conditions>
+</transition>

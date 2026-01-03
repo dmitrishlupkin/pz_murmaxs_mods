@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="OpenTinCan.xml">
+	<m_Name>OpenTinCanWithKnife</m_Name>
+	<m_AnimName>Bob_IdleOpenCanWithKnife</m_AnimName>
+	<m_BlendTime>0.30</m_BlendTime>
+	<m_Conditions x_name="b282a88f-b2fd-45f8-93cd-d9e53f7d6ba0">
+		<m_Value>OpenTinCanWithKnife</m_Value>
+	</m_Conditions>
+</animNode>

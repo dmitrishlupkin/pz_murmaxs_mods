@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_MetalFenceLvl2
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Metal Fence (Good),
+            Icon = Build_FenceMetal,
+        }
+    }
+}

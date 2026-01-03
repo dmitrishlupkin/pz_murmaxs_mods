@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="FirearmDefault.xml">
+	<m_Name>FirearmBurst</m_Name>
+	<m_Conditions x_name="3d783c9f-e709-425a-b52e-66cf27cd6a49">
+		<m_Value>Burst</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>corpseDragged-onfront</transitionTo>
+	<conditions>
+		<isTrue>bBeingGrappled</isTrue>
+		<isFalse>grappledThrownOutWindow</isFalse>
+	</conditions>
+</transition>

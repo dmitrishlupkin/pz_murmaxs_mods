@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="milkSheepL.xml">
+	<m_Name>milkSheepLOut</m_Name>
+	<m_AnimName>Bob_Milking_CowL_Out</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendOutTime>0.80</m_BlendOutTime>
+	<m_SyncTrackingEnabled>true</m_SyncTrackingEnabled>
+	<m_Conditions x_name="3abc86d5-7b60-41a5-958c-fd195675f2c8">
+		<m_Name>milkanimalout</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="6c5648ad-4af3-48fa-949e-7b204c78f6f8">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>milkanimal=false</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="26912f57-6b40-49c1-8111-6c0d97613f9e">
+		<m_EventName>SetVariable</m_EventName>
+		<m_TimePc>0</m_TimePc>
+		<m_ParameterValue>milkanimalout=false</m_ParameterValue>
+	</m_Events>
+</animNode>

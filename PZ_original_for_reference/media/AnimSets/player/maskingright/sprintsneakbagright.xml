@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="sprintbagright.xml">
+	<m_Name>sprintsneakbagright</m_Name>
+	<m_Conditions x_name="343ff864-32dc-4dbc-9a84-f81b4a97b75d">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

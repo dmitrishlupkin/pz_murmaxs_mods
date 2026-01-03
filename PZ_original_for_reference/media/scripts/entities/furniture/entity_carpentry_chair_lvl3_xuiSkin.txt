@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Wood_Chair_Lvl3
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Wood Chair (Good),
+            Icon = Build_Chair,
+        }
+    }
+}

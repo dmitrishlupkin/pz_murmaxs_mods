@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="petraccoonboar.xml">
+	<m_Name>raccoonsow</m_Name>
+	<m_Conditions x_name="806296b3-b062-482a-98b1-b6e9aec73719">
+		<m_Value>raccoonsow</m_Value>
+	</m_Conditions>
+</animNode>

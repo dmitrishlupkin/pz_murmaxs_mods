@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>idle</transitionTo>
+	<conditions>
+		<lessEqual a="stateEventDelayTimer" b="0.0000" />
+		<isFalse>isRagdollFall</isFalse>
+	</conditions>
+</transition>

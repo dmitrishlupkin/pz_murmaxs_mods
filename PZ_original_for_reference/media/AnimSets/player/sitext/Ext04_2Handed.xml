@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Ext04.xml">
+	<m_Name>Ext04_2Handed</m_Name>
+	<m_AnimName>Bob_IdleBatExt04</m_AnimName>
+	<m_Conditions x_name="df47c87a-7277-482c-9df2-cbe4778e8b51">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+</animNode>

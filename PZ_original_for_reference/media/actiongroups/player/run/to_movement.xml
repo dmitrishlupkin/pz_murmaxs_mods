@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>movement</transitionTo>
+		<conditions>
+			<isTrue>isMoving</isTrue>
+			<isFalse>isStrafing</isFalse>
+			<isFalse>isRunning</isFalse>
+			<isFalse>isSprinting</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>movement</transitionTo>
+		<conditions>
+			<isFalse>input(run)</isFalse>
+		</conditions>
+	</transition>
+</transitions>

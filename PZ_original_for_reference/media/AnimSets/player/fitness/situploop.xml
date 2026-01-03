@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="situp.xml">
+	<m_Name>situploop</m_Name>
+	<m_AnimName>Bob_SitUp_Loop</m_AnimName>
+	<m_Conditions x_name="9387eedb-5282-4ebc-be34-f50933e23d6c">
+		<m_Name>ExerciseStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="021fdf7b-14e3-4c38-80df-db210cd47c3e">
+		<m_EventName>PlayerVoiceSound</m_EventName>
+		<m_TimePc>0.3</m_TimePc>
+		<m_ParameterValue>Exercise</m_ParameterValue>
+	</m_Events>
+</animNode>

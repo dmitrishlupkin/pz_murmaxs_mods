@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>melee</transitionTo>
+	<conditions>
+		<eventOccurred>ChargeSpearConnect</eventOccurred>
+	</conditions>
+</transition>

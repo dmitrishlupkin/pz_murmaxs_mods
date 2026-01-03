@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>idlepetting</m_Name>
+	<m_AnimName>Chk_Chick_Idle01</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Conditions x_name="2421d717-c7e1-4b50-94c7-1694c0911e2d">
+		<m_Name>idleAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>petting</m_Value>
+	</m_Conditions>
+	<m_Events x_name="b4b0e5c8-ca9e-43a7-b2ed-371c2a5d47d1">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>petting</m_ParameterValue>
+	</m_Events>
+</animNode>

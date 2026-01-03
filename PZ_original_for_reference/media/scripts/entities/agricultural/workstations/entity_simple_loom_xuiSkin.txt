@@ -1,0 +1,22 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_SimpleLoom
+        {
+            LuaWindowClass = ISEntityTabWindow,
+            DisplayName = Simple Loom,
+            Icon = Build_LoomSimple,
+        }
+    }
+
+    xuiSkin default
+    {
+        entity ES_Loom
+        {
+            LuaWindowClass = ISEntityTabWindow,
+            DisplayName = Loom,
+            Icon = Build_Loom,
+        }
+    }
+}

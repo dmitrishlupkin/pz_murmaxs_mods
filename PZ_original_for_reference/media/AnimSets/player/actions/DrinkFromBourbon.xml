@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="DrinkBottle.xml">
+	<m_Name>DrinkFromBourbon</m_Name>
+	<m_AnimName>Bob_DrinkFromBourbonBottle</m_AnimName>
+	<m_Conditions x_name="05a08e58-b90d-4673-abc1-e8388bc3edee">
+		<m_Name>FoodType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Bourbon</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_R_Clavicle</boneName>
+		<weight>0.50</weight>
+	</m_SubStateBoneWeights>
+</animNode>

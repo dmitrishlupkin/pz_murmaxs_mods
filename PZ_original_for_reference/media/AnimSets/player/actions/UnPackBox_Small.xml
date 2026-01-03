@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="UnPackBox.xml">
+	<m_Name>UnPackBox_Small</m_Name>
+	<m_AnimName>Bob_IdleUnPackBox_Small</m_AnimName>
+	<m_Conditions x_name="ac6c6992-2eb3-4cfa-b7a8-af0b6526f3f0">
+		<m_Value>UnPackBox_Small</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="1HDefault.xml">
+	<m_Name>1HOverhead</m_Name>
+	<m_AnimName>Bob_Attack1Hand02_Hit</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_Attack1Hand02_Hit</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_Attack1Hand02_Hit</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_Attack1Hand02_Hit</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_Attack1Hand02_Hit</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="b7d17f6d-caf1-4aec-a7bc-1dcceee9b938">
+		<m_Name>attackType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>overhead</m_Value>
+	</m_Conditions>
+	<m_Events x_name="be0fc268-d456-4784-8613-fc3522c4e53a">
+		<m_ParameterValue>ZombieHitReaction=HeadTop</m_ParameterValue>
+	</m_Events>
+</animNode>

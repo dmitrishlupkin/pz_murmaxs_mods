@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>lure</m_Name>
+	<m_AnimName>Bob_LureLow</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Conditions x_name="915c2aea-5031-406e-80d0-2ae576a73b62">
+		<m_Name>AnimalAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Lure</m_Value>
+	</m_Conditions>
+	<m_Events x_name="c60ecc3a-6220-4487-ae1c-77dc3e4f2513">
+		<m_EventName>PlaySound</m_EventName>
+		<m_TimePc>0.55</m_TimePc>
+		<m_ParameterValue>LureAnimal</m_ParameterValue>
+	</m_Events>
+</animNode>

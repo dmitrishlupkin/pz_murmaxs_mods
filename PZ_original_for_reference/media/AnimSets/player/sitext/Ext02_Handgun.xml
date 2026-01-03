@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Ext02.xml">
+	<m_Name>Ext02_Handgun</m_Name>
+	<m_AnimName>Bob_IdleHandgunExt02</m_AnimName>
+	<m_Conditions x_name="17523241-eade-4f0e-99dd-1ee0216f5081">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>handgun</m_Value>
+	</m_Conditions>
+</animNode>

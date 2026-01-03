@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>HeadLeftBehind_RAG</m_Name>
+	<m_Priority>4</m_Priority>
+	<m_AnimName>Zombie_HitDeath_HeadLBehind</m_AnimName>
+	<m_isRagdoll>true</m_isRagdoll>
+	<m_ragdollStartTimeMin>0.2</m_ragdollStartTimeMin>
+	<m_ragdollStartTimeMax>0.46</m_ragdollStartTimeMax>
+	<m_DeferredBoneName>Bip01</m_DeferredBoneName>
+	<m_deferredBoneAxis>Z</m_deferredBoneAxis>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="61ade640-5963-4f85-8614-a01e8545d288">
+		<m_Name>hitreaction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>HeadLeft</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="5fc4df73-af3a-46ec-a320-1478557b6a94">
+		<m_Name>FromBehind</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="798e7f93-f590-4406-ac66-30ef3ab26861">
+		<m_EventName>FallOnFront</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="56075d24-161e-47e7-8c02-2045c23ee69d">
+		<m_EventName>Collide</m_EventName>
+		<m_TimePc>0.1</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="2f401c7e-050c-484a-be3b-8b18adcbedf8">
+		<m_EventName>SetState</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="a46f14f4-df2e-4537-a774-fdb018cd257c">
+		<m_EventName>SetOnFloor</m_EventName>
+		<m_TimePc>0.5</m_TimePc>
+		<m_ParameterValue>true</m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>default</m_Name>
+	<m_AnimName>Chk_Cock_SatIdle01</m_AnimName>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_SpeedScaleRandomMultiplierMin>0.80</m_SpeedScaleRandomMultiplierMin>
+	<m_Conditions x_name="07b0bd7a-f8b5-44f1-bfa3-2f4539c28175">
+		<m_Name>TrailerAnimation</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>sitting1</m_Value>
+	</m_Conditions>
+</animNode>

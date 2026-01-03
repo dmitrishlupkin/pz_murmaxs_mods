@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="milkCowR.xml">
+	<m_Name>milkCowRIn</m_Name>
+	<m_AnimName>Bob_Milking_CowR_In</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_2DBlends>
+		<m_AnimName>Bob_Milking_CowR_In</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_Milking_CowR_In</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_Milking_CowR_In</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="7a88fc9e-9695-47c2-810e-e2dc966cc28d">
+		<m_Value>CowRIn</m_Value>
+	</m_Conditions>
+	<m_Events x_name="ee50af83-4344-42b0-a008-2bae13c84411">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>milkAnim=CowRLoop</m_ParameterValue>
+	</m_Events>
+</animNode>

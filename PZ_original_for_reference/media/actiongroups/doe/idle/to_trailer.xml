@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>trailer</transitionTo>
+	<conditions>
+		<compare op="!=" a="TrailerAnimation" b="" />
+	</conditions>
+</transition>

@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Rugged_Stool
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Rugged Stool,
+            Icon = Build_LogSeat2,
+        }
+    }
+}

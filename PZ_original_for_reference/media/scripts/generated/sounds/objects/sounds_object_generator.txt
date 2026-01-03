@@ -1,0 +1,156 @@
+module Base
+{
+    sound GeneratorFailedToStart
+    {
+        category = Object,
+        clip
+        {
+            event = Object/Generator/StartupFail,
+            distanceMax = 100,
+        }
+    }
+
+    sound GeneratorStarting
+    {
+        category = Object,
+        clip
+        {
+            event = Object/Generator/Startup,
+            distanceMax = 100,
+        }
+    }
+
+    sound GeneratorStopping
+    {
+        category = Object,
+        clip
+        {
+            event = Object/Generator/Shutdown,
+            distanceMax = 100,
+        }
+    }
+
+    sound GeneratorLoop
+    {
+        category = Object,
+        clip
+        {
+            event = Object/Generator/Running,
+            distanceMax = 100,
+        }
+    }
+
+    sound GeneratorAddFuel
+    {
+        category = Object,
+        clip
+        {
+            event = Object/Generator/AddFuel,
+        }
+    }
+
+    sound GeneratorRepair
+    {
+        category = Object,
+        clip
+        {
+            event = Object/Generator/Repair,
+        }
+    }
+
+    sound GeneratorConnect
+    {
+        category = Object,
+        clip
+        {
+            event = Object/Generator/Connect,
+        }
+    }
+
+    sound GeneratorBackfire
+    {
+        category = Object,
+        clip
+        {
+            event = Object/Generator/Backfire,
+            distanceMax = 100,
+        }
+    }
+
+    sound OldGeneratorFailedToStart
+    {
+        category = Object,
+        clip
+        {
+            event = Object/OldGenerator/StartupFail,
+            distanceMax = 100,
+        }
+    }
+
+    sound OldGeneratorStarting
+    {
+        category = Object,
+        clip
+        {
+            event = Object/OldGenerator/Startup,
+            distanceMax = 100,
+        }
+    }
+
+    sound OldGeneratorStopping
+    {
+        category = Object,
+        clip
+        {
+            event = Object/OldGenerator/Shutdown,
+            distanceMax = 100,
+        }
+    }
+
+    sound OldGeneratorLoop
+    {
+        category = Object,
+        clip
+        {
+            event = Object/OldGenerator/Running,
+            distanceMax = 100,
+        }
+    }
+
+    sound OldGeneratorAddFuel
+    {
+        category = Object,
+        clip
+        {
+            event = Object/OldGenerator/AddFuel,
+        }
+    }
+
+    sound OldGeneratorRepair
+    {
+        category = Object,
+        clip
+        {
+            event = Object/OldGenerator/Repair,
+        }
+    }
+
+    sound OldGeneratorConnect
+    {
+        category = Object,
+        clip
+        {
+            event = Object/OldGenerator/Connect,
+        }
+    }
+
+    sound OldGeneratorBackfire
+    {
+        category = Object,
+        clip
+        {
+            event = Object/OldGenerator/Backfire,
+            distanceMax = 100,
+        }
+    }
+}

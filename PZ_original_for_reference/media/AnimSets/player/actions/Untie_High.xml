@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Untie_Mid.xml">
+	<m_Name>Untie_High</m_Name>
+	<m_AnimName>Bob_IdleUntieOffRack_High</m_AnimName>
+	<m_Conditions x_name="4b22b40b-d7c3-4549-85c2-b32ec22bdd29">
+		<m_Value>Untie_High</m_Value>
+	</m_Conditions>
+</animNode>

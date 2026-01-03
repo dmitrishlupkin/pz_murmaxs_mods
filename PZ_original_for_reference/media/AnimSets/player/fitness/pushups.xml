@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>pushups</m_Name>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>FitnessSpeed</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="48af865d-b6fe-471d-b13b-65780bb0f6c3">
+		<m_Name>ExerciseType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>pushups</m_Value>
+	</m_Conditions>
+</animNode>

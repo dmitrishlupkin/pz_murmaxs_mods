@@ -1,0 +1,139 @@
+module Base
+{
+    sound CapGunRevolverShoot
+    {
+        category = Item,
+        maxInstancesPerEmitter = 2,
+        clip
+        {
+            event = Weapon/Firearm/CapGunRevolver/Shoot,
+            distanceMax = 1000,
+        }
+    }
+
+    sound CapGunRevolverInsertAmmo
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/CapGunRevolver/InsertAmmo,
+        }
+    }
+
+    sound CapGunRevolverEjectAmmo
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/CapGunRevolver/EjectAmmo,
+        }
+    }
+
+    sound CapGunRevolverInsertAmmoStart
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/CapGunRevolver/InsertAmmoStart,
+        }
+    }
+
+    sound CapGunRevolverInsertAmmoStop
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/CapGunRevolver/InsertAmmoStop,
+        }
+    }
+
+    sound CapGunRevolverEjectAmmoStart
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/CapGunRevolver/EjectAmmoStart,
+        }
+    }
+
+    sound CapGunRevolverEjectAmmoStop
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/CapGunRevolver/EjectAmmoStop,
+        }
+    }
+
+    sound CapGunRevolverJam
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/CapGunRevolver/Jam,
+        }
+    }
+
+    sound CapGunRevolverBringToBear
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/CapGunRevolver/BringToBear,
+        }
+    }
+
+    sound CapGunRevolverAimRelease
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/CapGunRevolver/AimRelease,
+        }
+    }
+
+    sound CapGunRevolverEquip
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/CapGunRevolver/Equip,
+        }
+    }
+
+    sound CapGunRevolverUnequip
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/CapGunRevolver/UnEquip,
+        }
+    }
+
+    sound CapGunRevolverBreak
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/CapGunRevolver/Break,
+        }
+    }
+
+    sound CapGunRevolverDrop
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/CapGunRevolver/Drop,
+        }
+    }
+
+    sound CapGunRevolverCartridgeFall
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/CapGunRevolver/CartridgeFall,
+        }
+    }
+}

@@ -1,0 +1,178 @@
+module Base
+{
+    vehicle PickUpVanLightsSmashedRight
+    {
+        template! = PickUpVanLights,
+        model
+        {
+            file = Vehicles_PickUpVanLightsSmashedRight,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickuptruck_ranger,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfossoilshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfireshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickuppoliceshell,
+        }
+        extents = 0.8681 0.6374 2.2418,
+        physicsChassisShape = 0.8681 0.6374 2.2418,
+        centerOfMassOffset = 0.0 0.3022 0.0,
+        shadowExtents = 0.8681 2.2418,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1813,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1429,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle PickUpVanLightsSmashedLeft
+    {
+        template! = PickUpVanLights,
+        model
+        {
+            file = Vehicles_PickUpVanLightsSmashedLeft,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickuptruck_ranger,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfossoilshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfireshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickuppoliceshell,
+        }
+        extents = 0.8681 0.6374 2.2418,
+        physicsChassisShape = 0.8681 0.6374 2.2418,
+        centerOfMassOffset = 0.0 0.3022 0.0,
+        shadowExtents = 0.8681 2.2418,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1813,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1429,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle PickUpVanLightsSmashedFront
+    {
+        template! = PickUpVanLights,
+        model
+        {
+            file = Vehicles_PickUpVanLightsSmashedFront,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickuptruck_ranger,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfossoilshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfireshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickuppoliceshell,
+        }
+        extents = 0.8681 0.6374 2.2418,
+        physicsChassisShape = 0.8681 0.6374 2.2418,
+        centerOfMassOffset = 0.0 0.3022 0.0,
+        shadowExtents = 0.8681 2.2418,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1813,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1429,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle PickUpVanLightsSmashedRear
+    {
+        template! = PickUpVanLights,
+        model
+        {
+            file = Vehicles_PickUpVanLightsSmashedRear,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickuptruck_ranger,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfossoilshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfireshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickuppoliceshell,
+        }
+        extents = 0.8681 0.6374 2.2418,
+        physicsChassisShape = 0.8681 0.6374 2.2418,
+        centerOfMassOffset = 0.0 0.3022 0.0,
+        shadowExtents = 0.8681 2.2418,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1813,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1429,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+}

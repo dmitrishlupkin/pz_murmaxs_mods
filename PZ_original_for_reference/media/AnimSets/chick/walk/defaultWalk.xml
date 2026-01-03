@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>defaultWalk</m_Name>
+	<m_AnimName>Chk_Chick_Walk</m_AnimName>
+	<m_BlendTime>0.75</m_BlendTime>
+	<m_Events x_name="83fe234d-5463-47c8-8b3c-d5216bb4875c">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.25</m_TimePc>
+		<m_ParameterValue>walk</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="386de67e-e3ad-4d68-bfa6-4f300f40199e">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.71</m_TimePc>
+		<m_ParameterValue>walk</m_ParameterValue>
+	</m_Events>
+</animNode>

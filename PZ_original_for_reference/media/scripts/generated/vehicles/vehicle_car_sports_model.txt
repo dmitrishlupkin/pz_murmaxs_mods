@@ -1,0 +1,10 @@
+module Base
+{
+    model Vehicles_SportsCar
+    {
+        mesh = vehicles/Vehicles_SportsCar,
+        shader = vehicle_multiuv,
+        invertX = false,
+        scale = 0.008,
+    }
+}

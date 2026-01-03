@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SitOnFurnitureFront.xml">
+	<m_Name>SitOnFurnitureFront1Handed</m_Name>
+	<m_AnimName>Bob_Seated_SitDown_1hand</m_AnimName>
+	<m_Conditions x_name="a6fc0b77-db5f-4edb-a9a0-8390c9548f6f">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>1handed</m_Value>
+	</m_Conditions>
+</animNode>

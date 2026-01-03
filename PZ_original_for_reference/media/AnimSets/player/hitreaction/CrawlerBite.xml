@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>CrawlerBite</m_Name>
+	<m_AnimName>Bob_BiteCrawlerReact</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_SpeedScale>0.96</m_SpeedScale>
+	<m_Conditions x_name="7f35387a-a3c9-40d1-9b80-091218a99c95">
+		<m_Name>hitReaction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>CrawlerBite</m_Value>
+	</m_Conditions>
+	<m_Events x_name="7b57df2b-be6f-4ac3-84c9-2d1df27e89d4">
+		<m_EventName>PushAwayZombie</m_EventName>
+		<m_TimePc>0.3</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

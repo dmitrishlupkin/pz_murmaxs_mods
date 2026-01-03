@@ -1,0 +1,87 @@
+module Base
+{
+    fixing Fix Gas Tank Welding
+    {
+        Require = Base.SmallGasTank1;Base.NormalGasTank1;Base.BigGasTank1;Base.SmallGasTank2;Base.NormalGasTank2;Base.BigGasTank2;Base.SmallGasTank3;Base.NormalGasTank3;Base.BigGasTank3,
+        GlobalItem = Base.BlowTorch=2,
+        ConditionModifier = 1.2,
+        Fixer = Base.SheetMetal; MetalWelding=3;Mechanics=2,
+        Fixer = Base.SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+    }
+
+    fixing Fix Trailer Welding
+    {
+        Require = Base.TrailerTrunk1;Base.TrailerTrunk2;Base.TrailerTrunk3,
+        GlobalItem = Base.BlowTorch=2,
+        ConditionModifier = 1.2,
+        Fixer = Base.SheetMetal; MetalWelding=3;Mechanics=2,
+        Fixer = Base.SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+    }
+
+    fixing Fix Trunk Welding
+    {
+        Require = Base.SmallTrunk1;Base.NormalTrunk1;Base.BigTrunk1;Base.SmallTrunk2;Base.NormalTrunk2;Base.BigTrunk2;Base.SmallTrunk3;Base.NormalTrunk3;Base.BigTrunk3;Base.VanSeatsTrunk2,
+        GlobalItem = Base.BlowTorch=2,
+        ConditionModifier = 1.2,
+        Fixer = Base.SheetMetal; MetalWelding=3;Mechanics=2,
+        Fixer = Base.SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+    }
+
+    fixing Fix Hood Welding
+    {
+        Require = Base.EngineDoor1;Base.EngineDoor2;Base.EngineDoor3,
+        GlobalItem = Base.BlowTorch=2,
+        ConditionModifier = 1.2,
+        Fixer = Base.SheetMetal; MetalWelding=1;Mechanics=2,
+        Fixer = Base.SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+    }
+
+    fixing Fix Hood
+    {
+        Require = Base.EngineDoor1;Base.EngineDoor2;Base.EngineDoor3,
+        GlobalItem = Base.Screws=8,
+        ConditionModifier = 0.5,
+        Fixer = Base.SheetMetal; Mechanics=2,
+    }
+
+    fixing Fix Trunk Lid Welding
+    {
+        Require = Base.TrunkDoor1;Base.TrunkDoor2;Base.TrunkDoor3,
+        GlobalItem = Base.BlowTorch=2,
+        ConditionModifier = 1.2,
+        Fixer = Base.SheetMetal; MetalWelding=1;Mechanics=2,
+        Fixer = Base.SmallSheetMetal=2; MetalWelding=1;Mechanics=2,
+    }
+
+    fixing Fix Trunk Lid
+    {
+        Require = Base.TrunkDoor1;Base.TrunkDoor2;Base.TrunkDoor3,
+        GlobalItem = Base.Screws=8,
+        ConditionModifier = 0.5,
+        Fixer = Base.SheetMetal; Mechanics=2,
+    }
+
+    fixing Fix Door Welding
+    {
+        Require = Base.FrontCarDoor1;Base.FrontCarDoor2;Base.FrontCarDoor3;Base.RearCarDoor1;Base.RearCarDoor2;Base.RearCarDoor3;Base.RearCarDoorDouble1;Base.RearCarDoorDouble2;Base.RearCarDoorDouble3,
+        GlobalItem = Base.BlowTorch=2,
+        ConditionModifier = 1.2,
+        Fixer = Base.SheetMetal; MetalWelding=3;Mechanics=2,
+        Fixer = Base.SmallSheetMetal=2; MetalWelding=3;Mechanics=2,
+    }
+
+    fixing Fix Glove box
+    {
+        Require = Base.GloveBox1;Base.GloveBox2;Base.GloveBox3,
+        Fixer = Base.DuctTape=2; Mechanics=1,
+        Fixer = Base.Glue=2; Mechanics=1,
+    }
+
+    fixing Fix Car seat
+    {
+        Require = Base.NormalCarSeat1;Base.NormalCarSeat2;Base.NormalCarSeat3,
+        ConditionModifier = 0.8,
+        Fixer = Base.DuctTape=2; Mechanics=1,
+        Fixer = Base.Glue=2; Mechanics=1,
+    }
+}

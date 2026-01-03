@@ -1,0 +1,714 @@
+module Base
+{
+    evolvedrecipe Soup
+    {
+        BaseItem = Base.Pot,
+        MaxItems = 6,
+        ResultItem = Base.PotOfSoupRecipe,
+        Cookable = true,
+        Name = Prepare Soup,
+        Template = Soup,
+        MinimumWater = 0.9,
+    }
+
+    evolvedrecipe SoupBucket
+    {
+        BaseItem = Base.Bucket,
+        MaxItems = 6,
+        ResultItem = Base.BucketOfSoup,
+        Cookable = true,
+        Name = Prepare Soup,
+        Template = Soup,
+        MinimumWater = 0.9,
+    }
+
+    evolvedrecipe SoupBucket2
+    {
+        BaseItem = Base.BucketEmpty,
+        MaxItems = 6,
+        ResultItem = Base.BucketOfSoup,
+        Cookable = true,
+        Name = Prepare Soup,
+        Template = Soup,
+        MinimumWater = 0.9,
+    }
+
+    evolvedrecipe SoupForged
+    {
+        BaseItem = Base.PotForged,
+        MaxItems = 6,
+        ResultItem = Base.PotForgedSoupRecipe,
+        Cookable = true,
+        Name = Prepare Soup,
+        Template = Soup,
+        MinimumWater = 0.9,
+    }
+
+    evolvedrecipe Soup2
+    {
+        BaseItem = Base.PotOfSoup,
+        MaxItems = 4,
+        ResultItem = Base.PotOfSoup,
+        Cookable = true,
+        Name = Prepare Soup,
+        Template = Soup,
+        MinimumWater = 0.9,
+    }
+
+    evolvedrecipe Stew
+    {
+        BaseItem = Base.Pot,
+        MaxItems = 6,
+        ResultItem = Base.PotOfStew,
+        Cookable = true,
+        Name = Prepare Stew,
+        Template = Stew,
+        MinimumWater = 0.9,
+    }
+
+    evolvedrecipe StewBucket
+    {
+        BaseItem = Base.Bucket,
+        MaxItems = 6,
+        ResultItem = Base.BucketOfStew,
+        Cookable = true,
+        Name = Prepare Stew,
+        Template = Stew,
+        MinimumWater = 0.9,
+    }
+
+    evolvedrecipe StewBucket2
+    {
+        BaseItem = Base.BucketEmpty,
+        MaxItems = 6,
+        ResultItem = Base.BucketOfStew,
+        Cookable = true,
+        Name = Prepare Stew,
+        Template = Stew,
+        MinimumWater = 0.9,
+    }
+
+    evolvedrecipe StewForged
+    {
+        BaseItem = Base.PotForged,
+        MaxItems = 6,
+        ResultItem = Base.PotForgedStew,
+        Cookable = true,
+        Name = Prepare Stew,
+        Template = Stew,
+        MinimumWater = 0.9,
+    }
+
+    evolvedrecipe Pie
+    {
+        BaseItem = Base.PiePrep,
+        MaxItems = 4,
+        ResultItem = Base.PieWholeRaw,
+        Cookable = true,
+        Name = Prepare Pie,
+        CanAddSpicesEmpty = true,
+        Template = Pie,
+    }
+
+    evolvedrecipe PieSweet
+    {
+        BaseItem = Base.PiePrep,
+        MaxItems = 4,
+        ResultItem = Base.PieWholeRawSweet,
+        Cookable = true,
+        Name = Prepare Sweet Pie,
+        CanAddSpicesEmpty = true,
+        Template = PieSweet,
+    }
+
+    evolvedrecipe Cake
+    {
+        BaseItem = Base.CakePrep,
+        MaxItems = 4,
+        ResultItem = Base.CakeRaw,
+        Cookable = true,
+        Name = Prepare Cake,
+        CanAddSpicesEmpty = true,
+        Template = Cake,
+    }
+
+    evolvedrecipe Stir fry
+    {
+        BaseItem = Base.Pan,
+        MaxItems = 4,
+        ResultItem = Base.PanFriedVegetables,
+        Cookable = true,
+        Name = Prepare Stir-fry,
+        Template = Stir fry,
+    }
+
+    evolvedrecipe Stir fry Griddle Pan
+    {
+        BaseItem = Base.GridlePan,
+        MaxItems = 4,
+        ResultItem = Base.GriddlePanFriedVegetables,
+        Cookable = true,
+        Name = Prepare Stir-fry,
+        Template = Stir fry,
+    }
+
+    evolvedrecipe Stir fry Forged
+    {
+        BaseItem = Base.PanForged,
+        MaxItems = 4,
+        ResultItem = Base.PanFriedVegetablesForged,
+        Cookable = true,
+        Name = Prepare Stir-fry,
+        Template = Stir fry,
+    }
+
+    evolvedrecipe Roasted Vegetables
+    {
+        BaseItem = Base.RoastingPan,
+        MaxItems = 6,
+        ResultItem = Base.PanFriedVegetables2,
+        Cookable = true,
+        Name = Place Ingredients in Roasting Pan,
+        Template = Stir fry,
+    }
+
+    evolvedrecipe Sandwich
+    {
+        BaseItem = Base.BreadSlices,
+        MaxItems = 4,
+        ResultItem = Base.Sandwich,
+        Name = Make Sandwich,
+        CanAddSpicesEmpty = true,
+        AddIngredientIfCooked = true,
+        Template = Sandwich,
+        Cookable = true,
+    }
+
+    evolvedrecipe Sandwich Baguette
+    {
+        BaseItem = Base.Baguette,
+        MaxItems = 4,
+        ResultItem = Base.BaguetteSandwich,
+        Name = Make Sandwich,
+        CanAddSpicesEmpty = true,
+        AddIngredientIfCooked = true,
+        Template = Sandwich,
+        Cookable = true,
+    }
+
+    evolvedrecipe Burger
+    {
+        BaseItem = Base.BunsHamburger_single,
+        MaxItems = 4,
+        ResultItem = Base.BurgerRecipe,
+        Name = Prepare Burger,
+        AddIngredientIfCooked = true,
+        Template = Burger,
+    }
+
+    evolvedrecipe Burger2
+    {
+        BaseItem = Base.Burger,
+        MaxItems = 2,
+        ResultItem = Base.Burger,
+        Name = Prepare Burger,
+        CanAddSpicesEmpty = true,
+        AddIngredientIfCooked = true,
+        Template = Burger,
+    }
+
+    evolvedrecipe Salad
+    {
+        BaseItem = Base.Bowl,
+        MaxItems = 6,
+        ResultItem = Base.Salad,
+        Name = Make Salad,
+        Template = Salad,
+    }
+
+    evolvedrecipe SaladClay
+    {
+        BaseItem = Base.ClayBowl,
+        MaxItems = 6,
+        ResultItem = Base.SaladClay,
+        Name = Make Salad,
+        Template = Salad,
+    }
+
+    evolvedrecipe FruitSalad
+    {
+        BaseItem = Base.Bowl,
+        MaxItems = 6,
+        ResultItem = Base.FruitSalad,
+        Name = Make Fruit Salad,
+        Template = FruitSalad,
+    }
+
+    evolvedrecipe FruitSaladClay
+    {
+        BaseItem = Base.ClayBowl,
+        MaxItems = 6,
+        ResultItem = Base.FruitSaladClay,
+        Name = Make Fruit Salad,
+        Template = FruitSalad,
+    }
+
+    evolvedrecipe PastaPan
+    {
+        BaseItem = Base.WaterSaucepanPasta,
+        MaxItems = 4,
+        ResultItem = Base.PastaPan,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        Name = Prepare Pasta,
+        CanAddSpicesEmpty = true,
+        Template = Pasta,
+    }
+
+    evolvedrecipe RicePan
+    {
+        BaseItem = Base.WaterSaucepanRice,
+        MaxItems = 4,
+        ResultItem = Base.RicePan,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        Name = Prepare Rice,
+        CanAddSpicesEmpty = true,
+        Template = Rice,
+    }
+
+    evolvedrecipe RicePanCopper
+    {
+        BaseItem = Base.WaterSaucepanRiceCopper,
+        MaxItems = 4,
+        ResultItem = Base.RicePanCopper,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        Name = Prepare Rice,
+        CanAddSpicesEmpty = true,
+        Template = Rice,
+    }
+
+    evolvedrecipe PastaPanCopper
+    {
+        BaseItem = Base.WaterSaucepanPastaCopper,
+        MaxItems = 4,
+        ResultItem = Base.PastaPanCopper,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        Name = Prepare Pasta,
+        CanAddSpicesEmpty = true,
+        Template = Pasta,
+    }
+
+    evolvedrecipe PastaPot
+    {
+        BaseItem = Base.WaterPotPasta,
+        MaxItems = 5,
+        ResultItem = Base.PastaPot,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        Name = Prepare Pasta,
+        CanAddSpicesEmpty = true,
+        Template = Pasta,
+    }
+
+    evolvedrecipe PastaPotForged
+    {
+        BaseItem = Base.WaterPotForgedPasta,
+        MaxItems = 5,
+        ResultItem = Base.PastaPotForged,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        Name = Prepare Pasta,
+        CanAddSpicesEmpty = true,
+        Template = Pasta,
+    }
+
+    evolvedrecipe RicePot
+    {
+        BaseItem = Base.WaterPotRice,
+        MaxItems = 5,
+        ResultItem = Base.RicePot,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        Name = Prepare Rice,
+        CanAddSpicesEmpty = true,
+        Template = Rice,
+    }
+
+    evolvedrecipe RicePotForged
+    {
+        BaseItem = Base.WaterPotForgedRice,
+        MaxItems = 5,
+        ResultItem = Base.RicePotForged,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        Name = Prepare Rice,
+        CanAddSpicesEmpty = true,
+        Template = Rice,
+    }
+
+    evolvedrecipe HotDrink
+    {
+        BaseItem = Base.Mugl,
+        MaxItems = 3,
+        ResultItem = Base.HotDrink,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        AddIngredientSound = AddItemInBeverage,
+        Name = Prepare Beverage,
+        CanAddSpicesEmpty = true,
+        MinimumWater = 1.0,
+        Template = HotDrink,
+    }
+
+    evolvedrecipe HotDrinkClay
+    {
+        BaseItem = Base.ClayMug,
+        MaxItems = 3,
+        ResultItem = Base.HotDrinkClay,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        AddIngredientSound = AddItemInBeverage,
+        Name = Prepare Beverage,
+        CanAddSpicesEmpty = true,
+        MinimumWater = 1.0,
+        Template = HotDrink,
+    }
+
+    evolvedrecipe HotDrinkTea
+    {
+        BaseItem = Base.Teacup,
+        MaxItems = 3,
+        ResultItem = Base.HotDrinkTea,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        AddIngredientSound = AddItemInBeverage,
+        Name = Prepare Beverage,
+        CanAddSpicesEmpty = true,
+        MinimumWater = 1.0,
+        Template = HotDrink,
+    }
+
+    evolvedrecipe HotDrinkTeaCeramic
+    {
+        BaseItem = Base.CeramicTeacup,
+        MaxItems = 3,
+        ResultItem = Base.HotDrinkTeaCeramic,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        AddIngredientSound = AddItemInBeverage,
+        Name = Prepare Beverage,
+        CanAddSpicesEmpty = true,
+        MinimumWater = 1.0,
+        Template = HotDrink,
+    }
+
+    evolvedrecipe HotDrinkSpiffo
+    {
+        BaseItem = Base.MugSpiffo,
+        MaxItems = 3,
+        ResultItem = Base.HotDrinkSpiffo,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        AddIngredientSound = AddItemInBeverage,
+        Name = Prepare Beverage,
+        CanAddSpicesEmpty = true,
+        MinimumWater = 1.0,
+        Template = HotDrink,
+    }
+
+    evolvedrecipe HotDrinkWhite
+    {
+        BaseItem = Base.MugWhite,
+        MaxItems = 3,
+        ResultItem = Base.HotDrinkWhite,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        AddIngredientSound = AddItemInBeverage,
+        Name = Prepare Beverage,
+        CanAddSpicesEmpty = true,
+        MinimumWater = 1.0,
+        Template = HotDrink,
+    }
+
+    evolvedrecipe HotDrinkMetal
+    {
+        BaseItem = Base.MetalCup,
+        MaxItems = 3,
+        ResultItem = Base.HotDrinkMetal,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        AddIngredientSound = AddItemInBeverage,
+        Name = Prepare Beverage,
+        CanAddSpicesEmpty = true,
+        MinimumWater = 1.0,
+        Template = HotDrink,
+    }
+
+    evolvedrecipe HotDrinkGold
+    {
+        BaseItem = Base.GoldCup,
+        MaxItems = 3,
+        ResultItem = Base.HotDrinkGold,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        AddIngredientSound = AddItemInBeverage,
+        Name = Prepare Beverage,
+        CanAddSpicesEmpty = true,
+        MinimumWater = 1.0,
+        Template = HotDrink,
+    }
+
+    evolvedrecipe HotDrinkCopper
+    {
+        BaseItem = Base.CopperCup,
+        MaxItems = 3,
+        ResultItem = Base.HotDrinkCopper,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        AddIngredientSound = AddItemInBeverage,
+        Name = Prepare Beverage,
+        CanAddSpicesEmpty = true,
+        MinimumWater = 1.0,
+        Template = HotDrink,
+    }
+
+    evolvedrecipe HotDrinkSilver
+    {
+        BaseItem = Base.SilverCup,
+        MaxItems = 3,
+        ResultItem = Base.HotDrinkSilver,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        AddIngredientSound = AddItemInBeverage,
+        Name = Prepare Beverage,
+        CanAddSpicesEmpty = true,
+        MinimumWater = 1.0,
+        Template = HotDrink,
+    }
+
+    evolvedrecipe HotDrinkTumbler
+    {
+        BaseItem = Base.GlassTumbler,
+        MaxItems = 3,
+        ResultItem = Base.HotDrinkTumbler,
+        Cookable = true,
+        AddIngredientIfCooked = true,
+        AddIngredientSound = AddItemInBeverage,
+        Name = Prepare Beverage,
+        CanAddSpicesEmpty = true,
+        MinimumWater = 1.0,
+        Template = HotDrink,
+    }
+
+    evolvedrecipe Taco
+    {
+        BaseItem = Base.TacoShell,
+        MaxItems = 5,
+        ResultItem = Base.TacoRecipe,
+        AddIngredientIfCooked = true,
+        Name = Taco,
+        Template = Taco,
+    }
+
+    evolvedrecipe Taco2
+    {
+        BaseItem = Base.Taco,
+        MaxItems = 2,
+        ResultItem = Base.Taco,
+        AddIngredientIfCooked = true,
+        Name = Taco,
+        CanAddSpicesEmpty = true,
+        Template = Taco,
+    }
+
+    evolvedrecipe Burrito
+    {
+        BaseItem = Base.Tortilla,
+        MaxItems = 5,
+        ResultItem = Base.BurritoRecipe,
+        AddIngredientIfCooked = true,
+        Name = Burrito,
+        Template = Burrito,
+    }
+
+    evolvedrecipe Burrito2
+    {
+        BaseItem = Base.Burrito,
+        MaxItems = 0,
+        ResultItem = Base.Burrito,
+        AddIngredientIfCooked = true,
+        CanAddSpicesEmpty = true,
+        Name = Burrito,
+        Template = Burrito,
+    }
+
+    evolvedrecipe Waffles
+    {
+        BaseItem = Base.Waffles,
+        MaxItems = 3,
+        ResultItem = Base.WafflesRecipe,
+        AddIngredientIfCooked = true,
+        Name = Waffles,
+        CanAddSpicesEmpty = true,
+        Template = Pancakes,
+    }
+
+    evolvedrecipe Pancakes
+    {
+        BaseItem = Base.Pancakes,
+        MaxItems = 3,
+        ResultItem = Base.PancakesRecipe,
+        AddIngredientIfCooked = true,
+        Name = Pancakes,
+        CanAddSpicesEmpty = true,
+        Template = Pancakes,
+    }
+
+    evolvedrecipe Omelette
+    {
+        BaseItem = Base.OmeletteRecipe,
+        MaxItems = 3,
+        ResultItem = Base.OmeletteRecipe,
+        AddIngredientIfCooked = true,
+        Name = Omelette,
+        CanAddSpicesEmpty = true,
+        Template = Omelette,
+    }
+
+    evolvedrecipe Omelette Forged
+    {
+        BaseItem = Base.OmeletteRecipeForged,
+        MaxItems = 3,
+        ResultItem = Base.OmeletteRecipeForged,
+        AddIngredientIfCooked = true,
+        Name = Omelette,
+        CanAddSpicesEmpty = true,
+        Template = Omelette,
+    }
+
+    evolvedrecipe Muffin
+    {
+        BaseItem = Base.BakingTray_Muffin,
+        MaxItems = 1,
+        ResultItem = Base.BakingTray_Muffin_Recipe,
+        Cookable = true,
+        Name = Muffin,
+        CanAddSpicesEmpty = true,
+        Template = Muffin,
+    }
+
+    evolvedrecipe ConeIcecream
+    {
+        BaseItem = Base.ConeIcecream,
+        MaxItems = 3,
+        ResultItem = Base.ConeIcecreamToppings,
+        Name = Prepare Ice Cream Cone,
+        CanAddSpicesEmpty = true,
+        Template = ConeIcecream,
+    }
+
+    evolvedrecipe Bread
+    {
+        BaseItem = Base.BreadDough,
+        MaxItems = 2,
+        ResultItem = Base.BreadDough,
+        Cookable = true,
+        Name = Prepare Bread,
+        CanAddSpicesEmpty = true,
+        Template = Bread,
+    }
+
+    evolvedrecipe Toast
+    {
+        BaseItem = Base.Toast,
+        MaxItems = 3,
+        ResultItem = Base.Toast,
+        AddIngredientIfCooked = true,
+        Name = Prepare Toast,
+        CanAddSpicesEmpty = true,
+        Template = Toast,
+    }
+
+    evolvedrecipe Oatmeal
+    {
+        BaseItem = Base.Oatmeal,
+        MaxItems = 3,
+        ResultItem = Base.Oatmeal,
+        AddIngredientIfCooked = true,
+        Name = Oatmeal,
+        CanAddSpicesEmpty = true,
+        Template = Oatmeal,
+        Cookable = true,
+    }
+
+    evolvedrecipe Pizza
+    {
+        BaseItem = Base.PizzaRecipe,
+        MaxItems = 6,
+        ResultItem = Base.PizzaRecipe,
+        Cookable = true,
+        Name = Prepare Pizza,
+        CanAddSpicesEmpty = true,
+        Template = Pizza,
+    }
+
+    evolvedrecipe Pizza2
+    {
+        BaseItem = Base.PizzaWhole,
+        MaxItems = 0,
+        ResultItem = Base.PizzaWhole,
+        Name = Prepare Pizza,
+        CanAddSpicesEmpty = true,
+        Template = Pizza,
+    }
+
+    evolvedrecipe BagelPlain
+    {
+        BaseItem = Base.BagelPlain,
+        MaxItems = 3,
+        ResultItem = Base.BagelPlain,
+        AddIngredientIfCooked = true,
+        Name = Prepare Bagel,
+        CanAddSpicesEmpty = true,
+        Template = Toast,
+        Cookable = true,
+    }
+
+    evolvedrecipe BagelPoppy
+    {
+        BaseItem = Base.BagelPoppy,
+        MaxItems = 3,
+        ResultItem = Base.BagelPoppy,
+        AddIngredientIfCooked = true,
+        Name = Prepare Poppy Bagel,
+        CanAddSpicesEmpty = true,
+        Template = Toast,
+        Cookable = true,
+    }
+
+    evolvedrecipe BagelSesame
+    {
+        BaseItem = Base.BagelSesame,
+        MaxItems = 3,
+        ResultItem = Base.BagelSesame,
+        AddIngredientIfCooked = true,
+        Name = Prepare Sesame Bagel,
+        CanAddSpicesEmpty = true,
+        Template = Toast,
+        Cookable = true,
+    }
+
+    evolvedrecipe Hotdog
+    {
+        BaseItem = Base.Hotdog,
+        MaxItems = 2,
+        ResultItem = Base.Hotdog,
+        Name = Prepare Hotdog,
+        AddIngredientIfCooked = true,
+        CanAddSpicesEmpty = true,
+        Template = Hotdog,
+    }
+}

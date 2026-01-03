@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isFalse>bFalling</isFalse>
+			<isTrue>bLandAnimFinished</isTrue>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<eventOccurred>NoAnimConditionsPass</eventOccurred>
+		</conditions>
+	</transition>
+</transitions>

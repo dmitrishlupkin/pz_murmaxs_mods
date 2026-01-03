@@ -1,0 +1,10 @@
+module Base
+{
+    model Vehicles_Trailer_Livestock
+    {
+        mesh = vehicles/vehicle_livestocktrailer,
+        shader = vehicle_multiuv,
+        invertX = false,
+        scale = 0.4,
+    }
+}

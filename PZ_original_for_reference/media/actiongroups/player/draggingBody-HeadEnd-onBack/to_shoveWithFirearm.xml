@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>shoveWithFirearm</transitionTo>
+	<conditions>
+		<isTrue>initiateAttack</isTrue>
+		<isTrue>bDoShove</isTrue>
+		<isFalse>bDoStomp</isFalse>
+		<isFalse>bShoveAiming</isFalse>
+		<compare op="==" a="Weapon" b="firearm" />
+	</conditions>
+</transition>

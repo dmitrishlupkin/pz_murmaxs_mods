@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Idle.xml">
+	<m_Name>idle02</m_Name>
+	<m_AnimName>Mouse_Idle02</m_AnimName>
+	<m_Conditions x_name="e1ddf125-d269-4038-a9c6-599312bcfd5e">
+		<m_Name>idleAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>idle1</m_Value>
+	</m_Conditions>
+	<m_Events x_name="ec436249-ca3c-4e83-acd1-0be16bb3e90a">
+		<m_EventName>idleActionEnd</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

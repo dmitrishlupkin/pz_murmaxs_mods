@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_SkullPoleDeerDoe
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Doe Skull Pole,
+            Icon = Build_Stake_SkullDoe,
+        }
+    }
+}

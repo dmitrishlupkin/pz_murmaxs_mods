@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="defaultpet.xml">
+	<m_Name>petchicken</m_Name>
+	<m_AnimName>Bob_PetChicken</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetChicken</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetChicken</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetChicken</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="cb9947f0-3f1e-457e-9f96-19d63f599761">
+		<m_Name>animal</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>hen</m_Value>
+	</m_Conditions>
+</animNode>

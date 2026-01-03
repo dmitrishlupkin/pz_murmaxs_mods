@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Well
+        {
+            LuaWindowClass = ISEntityTabWindow,
+            DisplayName = Well,
+            Icon = Item_ClayMold_Shingle,
+        }
+    }
+}

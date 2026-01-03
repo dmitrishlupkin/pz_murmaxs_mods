@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Cairn
+        {
+            LuaWindowClass = ISEntityTabWindow,
+            DisplayName = Cairn,
+            Icon = Build_Cairn,
+        }
+    }
+}

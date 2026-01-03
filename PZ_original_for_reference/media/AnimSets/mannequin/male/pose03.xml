@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>pose03</m_Name>
+	<m_AnimName>Bob_Mannequin03</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="6bc745e7-42c7-43ee-bd92-5a965ebedc77">
+		<m_Name>Female</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="c391cce9-c79d-4ae8-b309-b6b9b7872033">
+		<m_Name>Pose</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>pose03</m_Value>
+	</m_Conditions>
+</animNode>

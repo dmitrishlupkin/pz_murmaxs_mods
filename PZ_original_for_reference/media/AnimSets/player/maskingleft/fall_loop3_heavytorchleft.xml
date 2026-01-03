@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="holdingHeavyTorchLeft.xml">
+	<m_Name>fall_loop3_heavytorchleft</m_Name>
+	<m_BlendTime>0.50</m_BlendTime>
+	<m_SpeedScale>1.00</m_SpeedScale>
+	<m_Conditions x_name="c5df525c-5adb-4f13-9345-8043af315b09">
+		<m_Name>bFalling</m_Name>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="d3711249-a92e-4b5e-8d2b-ad006378b01e">
+		<m_Name>fallSpeedSeverity</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Severe</m_Value>
+	</m_Conditions>
+	<m_Transitions />
+	<m_Transitions>
+		<m_Target>fall_loop4_heavytorchleft</m_Target>
+		<m_blendInTime>0.5</m_blendInTime>
+		<m_blendOutTime>0.5</m_blendOutTime>
+	</m_Transitions>
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_L_Hand</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights />
+</animNode>

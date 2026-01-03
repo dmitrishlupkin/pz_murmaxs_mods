@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Charcoal_Burner
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Charcoal Burner,
+            Icon = Build_CharcoalDrum,
+        }
+    }
+}

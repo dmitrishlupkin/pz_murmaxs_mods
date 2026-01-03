@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Forge_I
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Primitive Forge,
+            Icon = Item_Anvil_Stone,
+        }
+    }
+}

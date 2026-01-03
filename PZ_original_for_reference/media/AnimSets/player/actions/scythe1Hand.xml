@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="defaultScythe.xml">
+	<m_Name>scythe1Hand</m_Name>
+	<m_AnimName>Bob_Scything_1hand</m_AnimName>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_Conditions x_name="3f2a3eaa-6766-44cd-851d-621be223d08e">
+		<m_Value>1handed</m_Value>
+	</m_Conditions>
+</animNode>

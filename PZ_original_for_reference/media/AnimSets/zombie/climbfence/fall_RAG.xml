@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="fall.xml">
+	<m_Name>fall_RAG</m_Name>
+	<m_Priority>4</m_Priority>
+	<m_isRagdoll>true</m_isRagdoll>
+	<m_ragdollStartTimeMin>0.17</m_ragdollStartTimeMin>
+	<m_ragdollStartTimeMax>0.17</m_ragdollStartTimeMax>
+	<m_deferredBoneAxis>Z</m_deferredBoneAxis>
+	<m_Conditions x_name="0de20133-e848-4ccb-923a-2d627e9e894a">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

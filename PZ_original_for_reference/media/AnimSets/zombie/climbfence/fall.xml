@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>fall</m_Name>
+	<m_AnimName>Bob_ClimbWindowEnd_Fall</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="8b134580-7ba3-4cca-a49a-6cf07b32373a">
+		<m_Name>ClimbFenceStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="e6597c70-cf81-43b6-8496-97ee6173b03c">
+		<m_Name>ClimbFenceOutcome</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>falling</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="0de20133-e848-4ccb-923a-2d627e9e894a">
+		<m_Name>canRagdoll</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="012a1e5d-13c2-456a-b02d-e275d5b5e8a1">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>ClimbFenceFinished=true</m_ParameterValue>
+	</m_Events>
+</animNode>

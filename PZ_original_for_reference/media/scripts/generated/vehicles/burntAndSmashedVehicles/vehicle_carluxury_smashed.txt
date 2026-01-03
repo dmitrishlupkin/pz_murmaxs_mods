@@ -1,0 +1,114 @@
+module Base
+{
+    vehicle CarLuxurySmashedRear
+    {
+        template! = CarLuxury,
+        model
+        {
+            file = Vehicles_LuxuryCarSmashedRear,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.2088,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.2143,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+        extents = 1.0 0.6264 2.3736,
+        physicsChassisShape = 1.0 0.6264 2.3736,
+        centerOfMassOffset = 0.0 0.3022 0.0,
+        shadowExtents = 1.0 2.3736,
+        shadowOffset = 0.0 0.0,
+    }
+
+    vehicle CarLuxurySmashedRight
+    {
+        template! = CarLuxury,
+        model
+        {
+            file = Vehicles_LuxuryCarSmashedRight,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        extents = 1.0 0.6264 2.3736,
+        physicsChassisShape = 1.0 0.6264 2.3736,
+        centerOfMassOffset = 0.0 0.3022 0.0,
+        shadowExtents = 1.0 2.3736,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.2088,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.2143,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle CarLuxurySmashedLeft
+    {
+        template! = CarLuxury,
+        model
+        {
+            file = Vehicles_LuxuryCarSmashedLeft,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        extents = 1.0 0.6264 2.3736,
+        physicsChassisShape = 1.0 0.6264 2.3736,
+        centerOfMassOffset = 0.0 0.3022 0.0,
+        shadowExtents = 1.0 2.3736,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.2088,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.2143,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle CarLuxurySmashedFront
+    {
+        template! = CarLuxury,
+        model
+        {
+            file = Vehicles_LuxuryCarSmashedFront,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        extents = 1.0 0.6264 2.3736,
+        physicsChassisShape = 1.0 0.6264 2.3736,
+        centerOfMassOffset = 0.0 0.3022 0.0,
+        shadowExtents = 1.0 2.3736,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.2088,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.2143,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+}

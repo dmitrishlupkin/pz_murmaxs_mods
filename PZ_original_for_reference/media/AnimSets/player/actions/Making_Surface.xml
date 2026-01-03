@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Making.xml">
+	<m_Name>Making_Surface</m_Name>
+	<m_AnimName>Bob_IdleMaking_Surface</m_AnimName>
+	<m_Conditions x_name="4ccb4d7f-9b36-4e84-8125-07c5cd8320cb">
+		<m_Value>Making_Surface</m_Value>
+	</m_Conditions>
+</animNode>

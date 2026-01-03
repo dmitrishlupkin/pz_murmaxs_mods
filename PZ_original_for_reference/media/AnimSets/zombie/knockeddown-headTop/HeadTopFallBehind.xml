@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="HeadTopFall.xml">
+	<m_Name>HeadTopBehind</m_Name>
+	<m_AnimName>Zombie_HitDeath_HeadTopBehind</m_AnimName>
+	<m_Conditions x_name="5b937dcc-b4db-4b6a-9e19-db34c938044d">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

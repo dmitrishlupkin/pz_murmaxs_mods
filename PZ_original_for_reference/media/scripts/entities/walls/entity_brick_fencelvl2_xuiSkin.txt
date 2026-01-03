@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_BrickFenceLvl2
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Brick Fence (Good),
+            Icon = Build_FenceBrick,
+        }
+    }
+}

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="ScrubWall.xml">
+	<m_Name>ScrubWall_ToiletBrush</m_Name>
+	<m_AnimName>Bob_IdleScrubWall_ToiletBrush</m_AnimName>
+	<m_Conditions x_name="0343d30f-9006-4a52-84fa-27149cc17a25">
+		<m_Value>ScrubWall_ToiletBrush</m_Value>
+	</m_Conditions>
+</animNode>

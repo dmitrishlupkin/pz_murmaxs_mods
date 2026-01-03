@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>getUpFromEating</m_Name>
+	<m_AnimName>Zombie_EatingToIdle</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="807b22fa-dfaa-49a0-a1b0-07556041d7ba">
+		<m_Name>previousState</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>eatbody</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="1a836db1-025b-485e-b549-ea4235c323f7">
+		<m_Name>onknees</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="866009fd-513f-4ae7-9198-e8c57a2496dc">
+		<m_EventName>IsAlmostUp</m_EventName>
+		<m_TimePc>0.5</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

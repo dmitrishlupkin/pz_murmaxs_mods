@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Untie_Mid.xml">
+	<m_Name>Untie_Low</m_Name>
+	<m_AnimName>Bob_IdleUntieOffRack_Low</m_AnimName>
+	<m_BlendTime>0.30</m_BlendTime>
+	<m_Conditions x_name="4b22b40b-d7c3-4549-85c2-b32ec22bdd29">
+		<m_Value>Untie_Low</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="turn_idleToRun_sneak_180.xml">
+	<m_Name>turn_idleToRun_sneak_180R</m_Name>
+	<m_AnimName>Bob_SneakToSneakRun_Turn180R</m_AnimName>
+	<m_Conditions x_name="a5dbeb06-dbcd-4a7e-827b-71c1ff69449c">
+		<m_Name>targetTwist</m_Name>
+		<m_Type>GTR</m_Type>
+		<m_Value>0</m_Value>
+	</m_Conditions>
+</animNode>

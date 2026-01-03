@@ -1,0 +1,78 @@
+module Base
+{
+    sound AnimalVoiceLambIdle
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Lamb/Voice/Idle,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalVoiceLambDeath
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Lamb/Voice/Death,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalVoiceLambStressed
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Lamb/Voice/Stressed,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalVoiceLambPain
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Lamb/Voice/Pain,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalFootstepsLambWalkFront
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Lamb/Footsteps/Walk/Front,
+        }
+    }
+
+    sound AnimalFootstepsLambWalkBack
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Lamb/Footsteps/Walk/Back,
+        }
+    }
+
+    sound AnimalFootstepsLambRun
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Lamb/Footsteps/Run,
+        }
+    }
+
+    sound AnimalFoleyLambBodyfall
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Lamb/Foley/Bodyfall,
+        }
+    }
+}

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>start</m_Name>
+	<m_AnimName>Zombie_ClimbWindowStart</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_EarlyTransitionOut>true</m_EarlyTransitionOut>
+	<m_SpeedScale>1.28</m_SpeedScale>
+	<m_Conditions x_name="1c86e09f-ddcd-4d6d-a0ae-164d0e0b0fac">
+		<m_Name>ClimbWindowStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="a9e19736-ef98-486f-9d8c-a96e21e1d110">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>ClimbWindowStarted=true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="4da5e6b6-571c-4ffe-a114-0cd2e5d1dc0e">
+		<m_EventName>SetVariable</m_EventName>
+		<m_TimePc>0.5</m_TimePc>
+		<m_ParameterValue>BlockWindow=true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="e252fe00-cd49-4657-8652-5a2cb343d962">
+		<m_EventName>PlayWindowSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>ZombieTrip</m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="salutecasual.xml">
+	<m_Name>sneaksalutecasual</m_Name>
+	<m_AnimName>Bob_StealthEmoteSalute_Casual</m_AnimName>
+	<m_Conditions x_name="07499de1-5d9a-47e6-8cfb-b352c75848b7">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

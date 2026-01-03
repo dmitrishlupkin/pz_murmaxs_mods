@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="idle1.xml">
+	<m_Name>idle2</m_Name>
+	<m_AnimName>SheepRam_Idle02</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="cf906e3a-d33a-4a33-9504-f4723cb6ae27">
+		<m_Name>idleAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>idle1</m_Value>
+	</m_Conditions>
+	<m_Events x_name="03de02f6-5a2f-4c7a-b4a8-98e8a3dbc8ae">
+		<m_EventName>idleActionEnd</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

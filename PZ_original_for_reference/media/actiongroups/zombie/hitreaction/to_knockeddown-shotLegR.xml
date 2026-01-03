@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>knockeddown-shotLegR</transitionTo>
+	<conditions>
+		<isTrue>bKnockedDown</isTrue>
+		<isFalse>bOnFloor</isFalse>
+		<isFalse>bStaggerBack</isFalse>
+		<isFalse>bDead</isFalse>
+		<compare op="==" a="hitreaction" b="ShotLegR" />
+		<isFalse>usePhysicHitReaction</isFalse>
+	</conditions>
+</transition>

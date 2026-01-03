@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>falldown-onknees</transitionTo>
+	<conditions>
+		<compare op="==" a="previousState" b="eatbody" />
+		<isTrue>OnKnees</isTrue>
+		<isFalse>usePhysicHitReaction</isFalse>
+	</conditions>
+</transition>

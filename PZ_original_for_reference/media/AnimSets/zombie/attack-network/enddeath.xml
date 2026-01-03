@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>enddeath</m_Name>
+	<m_AnimName>Zombie_EndDeath</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>1.04</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="e0fee8b5-b6fb-4743-a517-2ae7f998d7fb">
+		<m_Name>AttackOutcome</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>enddeath</m_Value>
+	</m_Conditions>
+	<m_Events x_name="61915d4f-d05a-48ca-8b86-ddb555b32c05">
+		<m_EventName>EatBody</m_EventName>
+		<m_TimePc>0.98</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="8dd20645-90fd-498b-ad30-6d2c9df4aa0e">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>ZombieBiteDone=true</m_ParameterValue>
+	</m_Events>
+</animNode>

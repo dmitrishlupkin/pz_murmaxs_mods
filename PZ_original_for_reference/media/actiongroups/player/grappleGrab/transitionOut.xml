@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionOut>true</transitionOut>
+	<conditions>
+		<isFalse>bDoGrapple</isFalse>
+		<isFalse>AnyGrappleAnim</isFalse>
+	</conditions>
+</transition>

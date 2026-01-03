@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="WearClothingDefault.xml">
+	<m_Name>WearClothingWaist</m_Name>
+	<m_AnimName>Bob_BandageLowerBody</m_AnimName>
+	<m_Conditions x_name="da45db93-84c6-4fde-978a-913689d36cfa">
+		<m_Name>WearClothingLocation</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Waist</m_Value>
+	</m_Conditions>
+</animNode>

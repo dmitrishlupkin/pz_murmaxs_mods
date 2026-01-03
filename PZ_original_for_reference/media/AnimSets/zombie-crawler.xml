@@ -1,0 +1,6 @@
+<animSet>
+	<animNodeFilter>
+		<folderPrefixes>Zombie</folderPrefixes>
+		<namePrefixes>Zombie_</namePrefixes>
+	</animNodeFilter>
+</animSet>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>getupback</m_Name>
+	<m_AnimName>Bob_ClimbWindowBackFall_GetUp</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.88</m_SpeedScale>
+	<m_Conditions x_name="622680ab-76ab-47ec-a457-c3f222088f3e">
+		<m_Name>ClimbWindowGetUpBack</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="54fae93d-376c-4150-b3be-9d229fe54f48">
+		<m_Name>ClimbWindowStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="df2d5315-c685-4709-916d-0b9c4cec53f6">
+		<m_Name>ClimbWindowOutcome</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>fallback</m_Value>
+	</m_Conditions>
+	<m_Events x_name="7eedb144-5bb4-4dbb-8fdd-f40928b442d0">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>ClimbWindowFinished=true</m_ParameterValue>
+	</m_Events>
+</animNode>

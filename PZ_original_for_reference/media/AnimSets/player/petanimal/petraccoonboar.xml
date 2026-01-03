@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="defaultpet.xml">
+	<m_Name>petraccoonboar</m_Name>
+	<m_AnimName>Bob_PetPiglet</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetPiglet_Large</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetPiglet</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetPiglet_Small</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="806296b3-b062-482a-98b1-b6e9aec73719">
+		<m_Name>animal</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>raccoonboar</m_Value>
+	</m_Conditions>
+</animNode>

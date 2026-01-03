@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>turning</transitionTo>
+	<asSubstate>true</asSubstate>
+	<conditions>
+		<isTrue>isTurning</isTrue>
+		<isFalse>AttackAnim</isFalse>
+		<isFalse>isTurningAround</isFalse>
+	</conditions>
+</transition>

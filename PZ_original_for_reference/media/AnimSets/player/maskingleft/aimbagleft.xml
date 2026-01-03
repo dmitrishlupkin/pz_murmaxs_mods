@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="walkbagleft.xml">
+	<m_Name>aimbagleft</m_Name>
+	<m_AnimName>Bob_IdleAim_Bag</m_AnimName>
+	<m_SpeedScale>0.00</m_SpeedScale>
+	<m_Conditions x_name="62d74151-9472-4357-b19e-00ea6948b6b4">
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="30d709b8-6c86-4113-91ae-da724e1129c5">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Transitions />
+	<m_Transitions>
+		<m_Target>holdingbagleft</m_Target>
+		<m_AnimName>Bob_AimToIdle_Bag</m_AnimName>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>idlesneaklowbagleft</m_Target>
+		<m_blendOutTime>0.3</m_blendOutTime>
+	</m_Transitions>
+</animNode>

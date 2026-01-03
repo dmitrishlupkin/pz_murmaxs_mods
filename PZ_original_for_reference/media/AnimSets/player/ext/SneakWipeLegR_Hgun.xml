@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SneakWipeLegR.xml">
+	<m_Name>SneakWipeLegR_Hgun</m_Name>
+	<m_BlendOutTime>0.40</m_BlendOutTime>
+	<m_Conditions x_name="6a2830cf-7ef8-4cd5-bcec-e5c3d7c1ffb7">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>handgun</m_Value>
+	</m_Conditions>
+</animNode>

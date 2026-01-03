@@ -1,0 +1,55 @@
+module Base
+{
+    template vehicle Window
+    {
+        template = WindowNoDoor,
+        part WindowFrontLeft
+        {
+            parent = DoorFrontLeft,
+            table install
+            {
+                requireInstalled = DoorFrontLeft,
+            }
+        }
+        part WindowFrontRight
+        {
+            parent = DoorFrontRight,
+            table install
+            {
+                requireInstalled = DoorFrontRight,
+            }
+        }
+        part WindowMiddleLeft
+        {
+            parent = DoorMiddleLeft,
+            table install
+            {
+                requireInstalled = DoorMiddleLeft,
+            }
+        }
+        part WindowMiddleRight
+        {
+            parent = DoorMiddleRight,
+            table install
+            {
+                requireInstalled = DoorMiddleRight,
+            }
+        }
+        part WindowRearLeft
+        {
+            parent = DoorRearLeft,
+            table install
+            {
+                requireInstalled = DoorRearLeft,
+            }
+        }
+        part WindowRearRight
+        {
+            parent = DoorRearRight,
+            table install
+            {
+                requireInstalled = DoorRearRight,
+            }
+        }
+    }
+}

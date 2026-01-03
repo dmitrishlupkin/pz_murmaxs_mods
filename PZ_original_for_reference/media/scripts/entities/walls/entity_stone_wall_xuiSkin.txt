@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_StoneWall
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Stone Wall,
+            Icon = Build_WallStone,
+        }
+    }
+}

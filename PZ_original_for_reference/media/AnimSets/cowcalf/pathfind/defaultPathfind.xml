@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>defaultPathfind</m_Name>
+	<m_AnimName>CowCalf_Walk</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="8edaebd9-bbad-4470-980a-9fcfe3a73601">
+		<m_Name>bMoving</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="d52390e8-fbbf-49ee-8813-2bf358d38f92">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.41</m_TimePc>
+		<m_ParameterValue>walkFront</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="7fd6dfb4-6f80-46ac-8ae7-53d5c5f07972">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.91</m_TimePc>
+		<m_ParameterValue>walkBack</m_ParameterValue>
+	</m_Events>
+</animNode>

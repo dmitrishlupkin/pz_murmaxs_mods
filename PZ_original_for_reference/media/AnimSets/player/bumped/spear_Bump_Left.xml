@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="left.xml">
+	<m_Name>spear_Bump_Left</m_Name>
+	<m_AnimName>Bob_RunBat_BumpL</m_AnimName>
+	<m_Conditions x_name="5548eaaf-80a3-44da-8048-0c6a15aa61c7">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

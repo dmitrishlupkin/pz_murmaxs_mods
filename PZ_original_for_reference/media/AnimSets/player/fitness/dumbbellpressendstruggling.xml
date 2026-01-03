@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="dumbbellpressend.xml">
+	<m_Name>dumbbellpressendstruggling</m_Name>
+	<m_AnimName>Bob_Idle_DumbbellPress_RHand02</m_AnimName>
+	<m_Conditions x_name="a211c186-385b-4876-886d-beea3b060d6f">
+		<m_Name>ExerciseEnded</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>onground</transitionTo>
+	<conditions>
+		<isTrue>bOnFloor</isTrue>
+		<isFalse>useRagdollVehicleCollision</isFalse>
+	</conditions>
+</transition>

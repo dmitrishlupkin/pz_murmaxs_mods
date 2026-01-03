@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>default_Ragdoll</m_Name>
+	<m_AnimName>Zombie_Death</m_AnimName>
+	<m_isRagdoll>true</m_isRagdoll>
+	<m_ragdollStartTimeMin>0.1</m_ragdollStartTimeMin>
+	<m_ragdollStartTimeMax>0.2</m_ragdollStartTimeMax>
+	<m_DeferredBoneName>Bip01</m_DeferredBoneName>
+	<m_deferredBoneAxis>Z</m_deferredBoneAxis>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="a139e7fa-5f69-4ab1-ae9b-6b28274b3149">
+		<m_Name>FromBehind</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="29856f57-1f06-4385-9e16-6182adf77c21">
+		<m_EventName>FallOnFront</m_EventName>
+		<m_TimePc>0.1</m_TimePc>
+		<m_ParameterValue>false</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="5ae8d31a-09c2-4876-a4b0-7af404da5dfb">
+		<m_EventName>PlaySound</m_EventName>
+		<m_TimePc>0.5</m_TimePc>
+		<m_ParameterValue>BodyHitGround</m_ParameterValue>
+	</m_Events>
+</animNode>

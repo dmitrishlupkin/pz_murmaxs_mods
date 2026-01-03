@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>idle</transitionTo>
+	<conditions>
+		<eventNotOccurred>EventSmashWindow</eventNotOccurred>
+		<isFalse>isStrafing</isFalse>
+		<isFalse>isMoving</isFalse>
+	</conditions>
+</transition>

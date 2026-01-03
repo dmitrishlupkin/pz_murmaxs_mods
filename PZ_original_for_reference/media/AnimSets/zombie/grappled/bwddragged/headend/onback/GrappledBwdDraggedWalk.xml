@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="../../../GrappledDefault.xml">
+	<m_Name>GrappledBwdDraggedWalk</m_Name>
+</animNode>

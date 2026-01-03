@@ -1,0 +1,104 @@
+module Base
+{
+    vehicle CarNormal
+    {
+        template! = CarNormal,
+        model
+        {
+            file = Vehicles_CarNormal,
+            scale = 1.82,
+            offset = 0.0 0.2692 0.0,
+        }
+        template = PassengerSeat4,
+        template = CarNormalCollision,
+        passenger FrontLeft
+        {
+            position inside
+            {
+                offset = 0.1758 -0.1374 0.0879,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = 0.6209 -0.4121 0.1209,
+                rotate = 0.0 0.0 0.0,
+                area = SeatFrontLeft,
+            }
+        }
+        passenger FrontRight
+        {
+            position inside
+            {
+                offset = -0.1758 -0.1374 0.0879,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = -0.6209 -0.4121 0.1209,
+                rotate = 0.0 0.0 0.0,
+                area = SeatFrontRight,
+            }
+        }
+        passenger RearLeft
+        {
+            position inside
+            {
+                offset = 0.1758 -0.1374 -0.3242,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = 0.6209 -0.4121 -0.3352,
+                rotate = 0.0 0.0 0.0,
+                area = SeatRearLeft,
+            }
+        }
+        passenger RearRight
+        {
+            position inside
+            {
+                offset = -0.1758 -0.1374 -0.3242,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = -0.6209 -0.4121 -0.3352,
+                rotate = 0.0 0.0 0.0,
+                area = SeatRearRight,
+            }
+        }
+        area SeatFrontLeft
+        {
+            xywh = 0.6813 0.1209 0.4725 0.4725,
+        }
+        area SeatFrontRight
+        {
+            xywh = -0.6813 0.1209 0.4725 0.4725,
+        }
+        area SeatRearLeft
+        {
+            xywh = 0.6813 -0.3352 0.4725 0.4725,
+        }
+        area SeatRearRight
+        {
+            xywh = -0.6813 -0.3352 0.4725 0.4725,
+        }
+        extents = 0.8901 0.6484 2.6044,
+        physicsChassisShape = 0.8901 0.6484 2.6044,
+        centerOfMassOffset = 0.0 0.3022 0.0,
+        shadowExtents = 0.8901 2.6044,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.3462,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.3187,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+}

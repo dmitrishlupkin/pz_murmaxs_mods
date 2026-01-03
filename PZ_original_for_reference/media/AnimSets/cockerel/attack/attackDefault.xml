@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>attackDefault</m_Name>
+	<m_AnimName>Chk_Cock_Attack_Claw</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Events x_name="091db98f-6ee4-4424-aedf-627df8e06dff">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>fight</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="f349f9f2-3a5e-4e07-8953-1f0b6527bb25">
+		<m_EventName>AttackConnect</m_EventName>
+		<m_TimePc>0.95</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="a111f89e-1963-466a-a751-3d76145bed0c">
+		<m_EventName>PlaySound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>AnimalFoleyChickenFight</m_ParameterValue>
+	</m_Events>
+</animNode>

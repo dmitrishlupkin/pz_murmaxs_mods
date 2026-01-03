@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>hitreaction-gettingUp</transitionTo>
+		<conditions>
+			<isTrue>bStaggerBack</isTrue>
+			<isTrue>bOnFloor</isTrue>
+			<isFalse>useRagdollVehicleCollision</isFalse>
+			<isFalse>isVehicleCollision</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>hitreaction-gettingUp</transitionTo>
+		<conditions>
+			<isTrue>hashitreaction</isTrue>
+			<isFalse>useRagdollVehicleCollision</isFalse>
+			<isFalse>isVehicleCollision</isFalse>
+			<isTrue>bOnFloor</isTrue>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>hitreaction-gettingUp</transitionTo>
+		<conditions>
+			<isTrue>bDead</isTrue>
+			<isTrue>bOnFloor</isTrue>
+		</conditions>
+	</transition>
+</transitions>

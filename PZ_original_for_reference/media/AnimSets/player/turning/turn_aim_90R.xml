@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="turn_aim_90.xml">
+	<m_Name>turn_aim_90R</m_Name>
+	<m_AnimName>Bob_IdleAim1Hand_Turn90R</m_AnimName>
+	<m_Conditions x_name="9d722795-cce9-4789-b47b-f4cd90e480da">
+		<m_Name>targetTwist</m_Name>
+		<m_Type>GTR</m_Type>
+		<m_Value>0</m_Value>
+	</m_Conditions>
+</animNode>

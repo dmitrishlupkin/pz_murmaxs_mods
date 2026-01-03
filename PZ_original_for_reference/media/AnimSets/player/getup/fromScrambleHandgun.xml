@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="fromScramble.xml">
+	<m_Name>fromScrambleHandgun</m_Name>
+	<m_AnimName>Bob_ScrambleFloorToIdle_Hgun</m_AnimName>
+	<m_Conditions x_name="fbb50606-8fc0-4f34-a521-d7a34460d373">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>handgun</m_Value>
+	</m_Conditions>
+</animNode>

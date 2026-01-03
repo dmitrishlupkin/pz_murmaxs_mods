@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>sprint</transitionTo>
+	<conditions>
+		<isTrue>isMoving</isTrue>
+		<isTrue>isSprinting</isTrue>
+		<eventOccurred>NoAnimConditionsPass</eventOccurred>
+	</conditions>
+</transition>

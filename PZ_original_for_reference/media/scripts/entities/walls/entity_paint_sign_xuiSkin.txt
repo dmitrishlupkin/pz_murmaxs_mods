@@ -1,0 +1,31 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Paint_Sign_Skull
+        {
+            DisplayName = PaintSign_Skull,
+            Icon = Build_WoodSign_Skull,
+        }
+        entity ES_Paint_Sign_Arrow_Up
+        {
+            DisplayName = PaintSign_ArrowUp,
+            Icon = Build_WoodSign_Up,
+        }
+        entity ES_Paint_Sign_Arrow_Down
+        {
+            DisplayName = PaintSign_ArrowDown,
+            Icon = Build_WoodSign_Down,
+        }
+        entity ES_Paint_Sign_Arrow_Left
+        {
+            DisplayName = PaintSign_ArrowLeft,
+            Icon = Build_WoodSign_Left,
+        }
+        entity ES_Paint_Sign_Arrow_Right
+        {
+            DisplayName = PaintSign_ArrowRight,
+            Icon = Build_WoodSign_Right,
+        }
+    }
+}

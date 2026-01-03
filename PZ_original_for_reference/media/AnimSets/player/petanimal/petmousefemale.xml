@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="petmouse.xml">
+	<m_Name>petmousefemale</m_Name>
+	<m_Conditions x_name="e3f85dc4-0c4e-4fff-b7df-2604c6173d3b">
+		<m_Value>mousefemale</m_Value>
+	</m_Conditions>
+</animNode>

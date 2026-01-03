@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>fromBehindAndFall_RAG</m_Name>
+	<m_ConditionPriority>9</m_ConditionPriority>
+	<m_AnimName>Zombie_PushedFwdOver_FromBehind</m_AnimName>
+	<m_isRagdoll>true</m_isRagdoll>
+	<m_ragdollStartTimeMin>0.2</m_ragdollStartTimeMin>
+	<m_ragdollStartTimeMax>0.25</m_ragdollStartTimeMax>
+	<m_DeferredBoneName>Bip01</m_DeferredBoneName>
+	<m_deferredBoneAxis>Z</m_deferredBoneAxis>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="fdbb1530-127f-456b-90b6-52d7e81dcb8e">
+		<m_Name>playerattackposition</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>BEHIND</m_Value>
+	</m_Conditions>
+	<m_Events x_name="3e9585f0-1dcd-4fd7-8c74-1196e5cd8983">
+		<m_EventName>FallOnFront</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="25936125-e3fe-4e61-8b70-3a9349d9ef58">
+		<m_EventName>PlaySound</m_EventName>
+		<m_TimePc>0.4</m_TimePc>
+		<m_ParameterValue>BodyHitGround</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="6732303a-1f0b-4dba-8648-6c64c67ae9d3">
+		<m_EventName>SetState</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Transitions>
+		<m_Target>onback</m_Target>
+		<m_blendInTime>3</m_blendInTime>
+		<m_blendOutTime>0.5</m_blendOutTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>onfront</m_Target>
+		<m_blendInTime>3</m_blendInTime>
+		<m_blendOutTime>0.5</m_blendOutTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>lunge2</m_Target>
+		<m_blendInTime>0.5</m_blendInTime>
+	</m_Transitions>
+</animNode>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="fromright.xml">
+	<m_Name>fromRight_RAG</m_Name>
+	<m_isRagdoll>true</m_isRagdoll>
+	<m_ragdollStartTimeMin>0.2</m_ragdollStartTimeMin>
+	<m_ragdollStartTimeMax>0.5</m_ragdollStartTimeMax>
+	<m_Conditions x_name="b7f32003-3009-4a48-bdc9-254e36e74023">
+		<m_Value>0</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="84bc0059-ce6b-4234-a466-8b30f2ba3e40">
+		<m_Name>bKnockedDown</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="a763c4df-8b55-4b9c-8deb-8ca8f0892ac5">
+		<m_Name>canRagdoll</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="60a60f19-37c0-4ff0-80f6-e9b4e3a886c3">
+		<m_Name>isVehicleCollision</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>idlepetting</m_Name>
+	<m_AnimName>Rat_Idle01</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="98f9bcf2-ec38-4af5-aa91-4f1b3f310808">
+		<m_Name>idleaction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>petting</m_Value>
+	</m_Conditions>
+	<m_Events x_name="19b79e44-0dd6-46cf-b652-43abc3c4ce8f">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>petting</m_ParameterValue>
+	</m_Events>
+</animNode>

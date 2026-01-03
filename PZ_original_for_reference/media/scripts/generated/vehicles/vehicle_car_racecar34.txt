@@ -1,0 +1,74 @@
+module Base
+{
+    vehicle RaceCar34
+    {
+        template! = CarRacecar,
+        specialKeyRing = Base.KeyRing_Racing34,
+        specialKeyRingChance = 100,
+        model
+        {
+            file = Vehicles_RaceCar,
+            scale = 1.4,
+            offset = 0.0 0.1825 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_racecar3,
+        }
+        template = PassengerSeat2,
+        template = CarModernCollision,
+        passenger FrontLeft
+        {
+            position inside
+            {
+                offset = 0.1825 -0.1349 -0.0952,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = 0.6349 -0.4206 0.0952,
+                rotate = 0.0 0.0 0.0,
+                area = SeatFrontLeft,
+            }
+        }
+        passenger FrontRight
+        {
+            position inside
+            {
+                offset = -0.1825 -0.1349 -0.0714,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = -0.6349 -0.4206 0.0952,
+                rotate = 0.0 0.0 0.0,
+                area = SeatFrontRight,
+            }
+        }
+        area SeatFrontLeft
+        {
+            xywh = 0.7063 0.0397 0.4921 0.5714,
+        }
+        area SeatFrontRight
+        {
+            xywh = -0.7063 0.0397 0.4921 0.5714,
+        }
+        extents = 0.9365 0.6508 2.3175,
+        physicsChassisShape = 0.8889 0.6508 2.3175,
+        centerOfMassOffset = 0.0 0.1905 0.0,
+        shadowExtents = 1.0719 3.0524,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.3462,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.3187,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+}

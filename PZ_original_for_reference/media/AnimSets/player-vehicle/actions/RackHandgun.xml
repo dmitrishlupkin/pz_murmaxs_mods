@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="loadHandgun.xml">
+	<m_Name>RackHandgun</m_Name>
+	<m_AnimName>Bob_Reload_Handgun_Rack</m_AnimName>
+	<m_Conditions x_name="44bc01c2-7a7e-4b01-a1d6-e403992321e8">
+		<m_Name>isRacking</m_Name>
+	</m_Conditions>
+	<m_Events x_name="dab730c2-8d25-4b13-88bc-a698e803093c">
+		<m_EventName>rackingFinished</m_EventName>
+	</m_Events>
+	<m_Events x_name="3ec5b18b-b677-405b-88b2-196a9185a998">
+		<m_TimePc>0.18</m_TimePc>
+		<m_ParameterValue>rack</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="a9da25c4-f6ad-4a87-b03c-eaaf57040ec8">
+		<m_EventName>rackBullet</m_EventName>
+		<m_TimePc>0.5</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

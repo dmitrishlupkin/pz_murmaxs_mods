@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="defaultPathfind.xml">
+	<m_Name>runPathfind</m_Name>
+	<m_AnimName>Sheep_Run</m_AnimName>
+	<m_Conditions x_name="1ed4daf6-74fe-4429-8ff9-b2fb5ccb762e">
+		<m_Name>animalRunning</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

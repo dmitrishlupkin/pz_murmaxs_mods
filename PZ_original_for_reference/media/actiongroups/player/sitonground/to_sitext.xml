@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>sitext</transitionTo>
+	<asSubstate>true</asSubstate>
+	<conditions>
+		<eventOccurred>EventDoExt</eventOccurred>
+		<isFalse>IsPerformingAnAction</isFalse>
+	</conditions>
+</transition>

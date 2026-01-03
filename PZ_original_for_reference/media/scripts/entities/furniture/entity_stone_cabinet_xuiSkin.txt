@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Stone_Cabinet
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Stone Cabinet,
+            Icon = Build_CabinetStone,
+        }
+    }
+}

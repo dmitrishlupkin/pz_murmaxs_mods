@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>fromBehindAndFall</m_Name>
+	<m_AnimName>Zombie_PushedFwdOver_FromBehind</m_AnimName>
+	<m_DeferredBoneName>Bip01</m_DeferredBoneName>
+	<m_deferredBoneAxis>Z</m_deferredBoneAxis>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Events x_name="3e9585f0-1dcd-4fd7-8c74-1196e5cd8983">
+		<m_EventName>FallOnFront</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="25936125-e3fe-4e61-8b70-3a9349d9ef58">
+		<m_EventName>PlaySound</m_EventName>
+		<m_TimePc>0.4</m_TimePc>
+		<m_ParameterValue>BodyHitGround</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="4f8744a4-b6ac-4133-8e87-3f320ff9e985">
+		<m_EventName>SetOnFloor</m_EventName>
+		<m_TimePc>0.4</m_TimePc>
+		<m_ParameterValue>true</m_ParameterValue>
+	</m_Events>
+	<m_Transitions>
+		<m_Target>defaultIdle</m_Target>
+		<m_blendInTime>0.5</m_blendInTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>lunge1</m_Target>
+		<m_blendInTime>0.5</m_blendInTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>lunge2</m_Target>
+		<m_blendInTime>0.5</m_blendInTime>
+	</m_Transitions>
+</animNode>

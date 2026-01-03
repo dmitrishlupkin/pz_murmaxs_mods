@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="sneakRun.xml">
+	<m_Name>sneakRunHandgun</m_Name>
+	<m_AnimName>Bob_RunSneak_Handgun</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_RunSneak_Handgun_Slow</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_RunSneak_Handgun</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_RunSneak_Handgun_Slow</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_RunSneak_Handgun_Slow</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_RunSneak_Handgun_Slow</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_RunSneak_Handgun_Slow</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_WalkSneak_Handgun_Slow</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_WalkSneak_Handgun_Slow</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="f1d2b96b-458d-4695-8a0f-94167403dead">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>handgun</m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>sneakIdleHandgun</m_Target>
+		<m_AnimName>Bob_RunSneakToStop_Handgun</m_AnimName>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>strafeHandgun</m_Target>
+		<m_AnimName>Bob_WalkToWalkAimHandgun</m_AnimName>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>strafeHandgun</m_Target>
+	</m_Transitions>
+	<m_Transitions />
+</animNode>

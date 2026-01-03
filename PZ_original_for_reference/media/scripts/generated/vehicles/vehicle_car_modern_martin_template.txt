@@ -1,0 +1,28 @@
+module Base
+{
+    template vehicle HoodOrnament
+    {
+        part HoodOrnament
+        {
+            area = Engine,
+            category = bodywork,
+            specificItem = false,
+            itemType = Base.HoodOrnament_Badger;Base.HoodOrnament_Beaver;Base.HoodOrnament_Spiffo,
+            parent = EngineDoor,
+            model Default
+            {
+                attachmentParent = HoodOrnament,
+                attachmentSelf = HoodOrnament,
+                ignoreVehicleScale = true,
+            }
+            table install
+            {
+                time = 100,
+            }
+            table uninstall
+            {
+                time = 100,
+            }
+        }
+    }
+}

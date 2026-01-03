@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="1HUppercut.xml">
+	<m_Name>1HUppercutCrit</m_Name>
+	<m_AnimName>Bob_Attack1Hand03_CritHit</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_Attack1Hand03_CritHit</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_Attack1Hand03_CritHit</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_Attack1Hand03_CritHit</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_Attack1Hand03_CritHit</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="b43cfc0d-16eb-4bdd-9adb-1082d935df8b">
+		<m_Name>CriticalHit</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

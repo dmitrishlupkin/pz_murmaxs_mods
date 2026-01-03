@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>start</m_Name>
+	<m_AnimName>Zombie_Bite_Start</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_BlendOutTime>0.00</m_BlendOutTime>
+	<m_SpeedScale>1.04</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="6bcea19c-3bf1-4389-b13c-ce63baa1b20c">
+		<m_Name>AttackType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>bite</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="6e827860-db32-470a-b236-5cae1194ad54">
+		<m_Name>targetSeenTime</m_Name>
+		<m_Type>GTR</m_Type>
+		<m_Value>0.5</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="f4fb76f8-27cb-43c6-8b87-4521797a3142">
+		<m_Name>AttackOutcome</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>start</m_Value>
+	</m_Conditions>
+	<m_Events x_name="ff4da7a7-805a-452a-b6ba-9eacaec4aac9">
+		<m_EventName>SetAttackOutcome</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>TransferItemOnSelf</m_Name>
+	<m_AnimName>Bob_IdleLooting_Mid</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="ca0e98c5-97fa-4a16-bf71-ce238eb0365c">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>TransferItemOnSelf</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="fall_loop3.xml">
+	<m_Name>fall_loop3_hgun</m_Name>
+	<m_AnimName>Bob_FallIdle03_Hgun</m_AnimName>
+	<m_Conditions x_name="8e28dd54-7a0e-4161-ae19-15d677609759">
+		<m_Value>handgun</m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>fall_loop4_hgun</m_Target>
+	</m_Transitions>
+	<m_Transitions />
+	<m_Transitions />
+</animNode>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>default</m_Name>
+	<m_AnimName>Chk_Cock_SatIdle01</m_AnimName>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_SpeedScaleRandomMultiplierMin>0.80</m_SpeedScaleRandomMultiplierMin>
+	<m_Conditions x_name="05aa6346-3475-45ff-955c-707395db4ccb">
+		<m_Name>HutchAnimation</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>sitting1</m_Value>
+	</m_Conditions>
+</animNode>

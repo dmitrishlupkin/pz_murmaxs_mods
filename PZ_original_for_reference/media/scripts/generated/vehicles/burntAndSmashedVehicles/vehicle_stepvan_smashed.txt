@@ -1,0 +1,190 @@
+module Base
+{
+    vehicle StepVanSmashedRear
+    {
+        template! = StepVan,
+        model
+        {
+            file = Vehicles_StepVanSmashedRear,
+            scale = 1.82,
+            offset = 0.0 0.4725 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_stepvanshell,
+        }
+        extents = 0.8901 0.9341 2.3297,
+        physicsChassisShape = 0.8901 0.9341 2.3297,
+        centerOfMassOffset = 0.0 0.4725 0.0,
+        shadowExtents = 0.8901 2.3297,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1648,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1758,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle StepVanSmashedRight
+    {
+        template! = StepVan,
+        model
+        {
+            file = Vehicles_StepVanSmashedRight,
+            scale = 1.82,
+            offset = 0.0 0.4725 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_stepvanshell,
+        }
+        extents = 0.8901 0.9341 2.3297,
+        physicsChassisShape = 0.8901 0.9341 2.3297,
+        centerOfMassOffset = 0.0 0.4725 0.0,
+        shadowExtents = 0.8901 2.3297,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1648,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1758,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle StepVanSmashedLeft
+    {
+        template! = StepVan,
+        model
+        {
+            file = Vehicles_StepVanSmashedLeft,
+            scale = 1.82,
+            offset = 0.0 0.4725 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_stepvanshell,
+        }
+        extents = 0.8901 0.9341 2.3297,
+        physicsChassisShape = 0.8901 0.9341 2.3297,
+        centerOfMassOffset = 0.0 0.4725 0.0,
+        shadowExtents = 0.8901 2.3297,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1648,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1758,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle StepVanSmashedFront
+    {
+        template! = StepVan,
+        model
+        {
+            file = Vehicles_StepVanSmashedFront,
+            scale = 1.82,
+            offset = 0.0 0.4725 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_stepvanshell,
+        }
+        extents = 0.8901 0.9341 2.3297,
+        physicsChassisShape = 0.8901 0.9341 2.3297,
+        centerOfMassOffset = 0.0 0.4725 0.0,
+        shadowExtents = 0.8901 2.3297,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1648,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1758,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle StepVanMailSmashedRear
+    {
+        template! = StepVanMail,
+        model
+        {
+            file = Vehicles_StepVanMailSmashedRear,
+            scale = 1.82,
+            offset = 0.0 0.4725 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_stepvanmailshell,
+        }
+    }
+
+    vehicle StepVanMailSmashedRight
+    {
+        template! = StepVanMail,
+        model
+        {
+            file = Vehicles_StepVanMailSmashedRight,
+            scale = 1.82,
+            offset = 0.0 0.4725 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_stepvanmailshell,
+        }
+    }
+
+    vehicle StepVanMailSmashedLeft
+    {
+        template! = StepVanMail,
+        model
+        {
+            file = Vehicles_StepVanMailSmashedLeft,
+            scale = 1.82,
+            offset = 0.0 0.4725 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_stepvanmailshell,
+        }
+    }
+
+    vehicle StepVanMailSmashedFront
+    {
+        template! = StepVanMail,
+        model
+        {
+            file = Vehicles_StepVanMailSmashedFront,
+            scale = 1.82,
+            offset = 0.0 0.4725 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_stepvanmailshell,
+        }
+    }
+}

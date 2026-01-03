@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>BiteFromSitting</m_Name>
+	<m_AnimName>Bob_SitGround_BiteLowReact_L</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="638b2078-8c33-4e5c-8c8b-c55b6d962999">
+		<m_Name>sitonground</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="e42035eb-3804-4be3-a803-2807dbffec85">
+		<m_Name>hitreaction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Bite</m_Value>
+	</m_Conditions>
+	<m_Events x_name="8c92c240-f777-4e3f-ad75-f552fcc1f31e">
+		<m_EventName>PushAwayZombie</m_EventName>
+		<m_TimePc>0.4</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="42fa5bc8-46a9-4f28-91d1-72e4e9c8d224">
+		<m_EventName>SitGroundStarted</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

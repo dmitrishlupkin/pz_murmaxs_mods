@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>Ext01</m_Name>
+	<m_AnimName>Bob_IdleExt01</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="00158f11-c0d9-446a-8ae6-ea7170b09c1b">
+		<m_Name>Ext</m_Name>
+		<m_Type>EQU</m_Type>
+		<m_Value>1</m_Value>
+	</m_Conditions>
+</animNode>

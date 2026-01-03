@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>pathfind</transitionTo>
+	<conditions>
+		<isTrue>bPathfind</isTrue>
+		<isFalse>bOnFloor</isFalse>
+		<isFalse>bClient</isFalse>
+	</conditions>
+</transition>

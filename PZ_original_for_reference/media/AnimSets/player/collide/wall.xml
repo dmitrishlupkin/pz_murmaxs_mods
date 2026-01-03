@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>wall</m_Name>
+	<m_AnimName>Bob_SprintIntoWall</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>1.12</m_SpeedScale>
+	<m_Conditions x_name="9e85930e-a707-4ef5-9f3b-3207a71452e0">
+		<m_Name>CollideType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>wall</m_Value>
+	</m_Conditions>
+	<m_Events x_name="4132fc7d-3d15-4945-ac56-0fe5a9963e91">
+		<m_EventName>PlayCollideSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>TripOverObstacle</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="933bc909-2f1c-42a8-831e-b3b1a8d8932e">
+		<m_EventName>PlayerVoiceSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>PainFromRunIntoWall</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="1eec00f4-3ed6-4960-a9aa-c5f271081c9f">
+		<m_EventName>PlaySound</m_EventName>
+		<m_TimePc>0.53</m_TimePc>
+		<m_ParameterValue>BodyHitGround</m_ParameterValue>
+	</m_Events>
+</animNode>

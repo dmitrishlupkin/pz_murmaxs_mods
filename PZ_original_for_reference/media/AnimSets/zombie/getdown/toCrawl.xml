@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>toCrawl</m_Name>
+	<m_AnimName>Zombie_CrawlUnder_In</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>1.25</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="048bb7fb-bc7b-4b62-808e-087d4d10b682">
+		<m_Name>stateEventDelayTimer</m_Name>
+		<m_Type>LESS</m_Type>
+		<m_Value>0</m_Value>
+	</m_Conditions>
+	<m_Events x_name="3caebde4-fc98-40c0-be33-47c7d77e9490">
+		<m_EventName>StartCrawling</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

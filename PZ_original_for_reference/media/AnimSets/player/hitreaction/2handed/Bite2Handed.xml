@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>Bite2Handed</m_Name>
+	<m_AnimName>Bob_BiteReact_Bat</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>1.12</m_SpeedScale>
+	<m_Conditions x_name="d5e242ad-5f90-4283-86da-b7675e014cdc">
+		<m_Name>hitreaction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Bite</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="9cd6782c-c2fa-445d-a948-26d0f09c93ca">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+	<m_Events x_name="72af7f53-65a1-4ccf-bcf7-c81c4c89117c">
+		<m_EventName>PushAwayZombie</m_EventName>
+		<m_TimePc>0.47</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

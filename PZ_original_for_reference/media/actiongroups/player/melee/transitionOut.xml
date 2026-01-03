@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionOut>true</transitionOut>
+		<conditions>
+			<eventOccurred>ActiveAnimFinishing</eventOccurred>
+			<isFalse>AttackAnim</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionOut>true</transitionOut>
+		<conditions>
+			<eventOccurred>NoAnimConditionsPass</eventOccurred>
+		</conditions>
+	</transition>
+</transitions>

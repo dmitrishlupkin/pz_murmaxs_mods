@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="default.xml">
+	<m_Name>HeadLeftFallBehind</m_Name>
+	<m_AnimName>Zombie_HitDeath_HeadLBehind</m_AnimName>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_SpeedScale>1.00</m_SpeedScale>
+	<m_Conditions x_name="3eb730c1-8526-4b4f-9f70-5becae8220ea">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="1508b430-b665-4846-aad3-09157f5f9341">
+		<m_ParameterValue>true</m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>getup</transitionTo>
+		<conditions>
+			<isTrue>forceGetUp</isTrue>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>getup</transitionTo>
+		<conditions>
+			<isTrue>isMoving</isTrue>
+		</conditions>
+	</transition>
+</transitions>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>fishPickup</m_Name>
+	<m_AnimName>Bob_FishingPickup</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_SpeedScale>1.2</m_SpeedScale>
+	<m_Conditions x_name="155b62fc-20f4-4281-a364-0ccf885e1f96">
+		<m_Name>sitonground</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="5360e830-ac0b-448b-91cb-654a46871c00">
+		<m_Name>FishingStage</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>PickUp</m_Value>
+	</m_Conditions>
+</animNode>

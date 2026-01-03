@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SneakWipeLegR.xml">
+	<m_Name>SneakWipeLegR_2H</m_Name>
+	<m_Conditions x_name="40866995-c62a-4c01-9028-73808b4c85e3">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="1273688f-384d-4b68-84a9-d70faef720aa">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="42aeea4a-8c21-419a-99ad-5fab75e2fdf2">
+		<m_Name>Ext</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>WipeLegR</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="5a2c34f0-f158-43ab-a207-541ccb1c962b">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="578e9ad6-a598-4e36-a2ec-11530fa717d8">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

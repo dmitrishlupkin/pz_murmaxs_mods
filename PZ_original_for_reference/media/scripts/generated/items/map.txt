@@ -1,0 +1,184 @@
+module Base
+{
+    item LouisvilleMap1
+    {
+        DisplayCategory = Cartography,
+        ItemType = base:map,
+        Weight = 0.2,
+        Icon = Map,
+        Map = LouisvilleMap1,
+        StaticModel = MapInHand,
+        WorldStaticModel = Map,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item LouisvilleMap2
+    {
+        DisplayCategory = Cartography,
+        ItemType = base:map,
+        Weight = 0.2,
+        Icon = Map,
+        Map = LouisvilleMap2,
+        StaticModel = MapInHand,
+        WorldStaticModel = Map,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item LouisvilleMap3
+    {
+        DisplayCategory = Cartography,
+        ItemType = base:map,
+        Weight = 0.2,
+        Icon = Map,
+        Map = LouisvilleMap3,
+        StaticModel = MapInHand,
+        WorldStaticModel = Map,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item LouisvilleMap4
+    {
+        DisplayCategory = Cartography,
+        ItemType = base:map,
+        Weight = 0.2,
+        Icon = Map,
+        Map = LouisvilleMap4,
+        StaticModel = MapInHand,
+        WorldStaticModel = Map,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item LouisvilleMap5
+    {
+        DisplayCategory = Cartography,
+        ItemType = base:map,
+        Weight = 0.2,
+        Icon = Map,
+        Map = LouisvilleMap5,
+        StaticModel = MapInHand,
+        WorldStaticModel = Map,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item LouisvilleMap6
+    {
+        DisplayCategory = Cartography,
+        ItemType = base:map,
+        Weight = 0.2,
+        Icon = Map,
+        Map = LouisvilleMap6,
+        StaticModel = MapInHand,
+        WorldStaticModel = Map,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item LouisvilleMap7
+    {
+        DisplayCategory = Cartography,
+        ItemType = base:map,
+        Weight = 0.2,
+        Icon = Map,
+        Map = LouisvilleMap7,
+        StaticModel = MapInHand,
+        WorldStaticModel = Map,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item LouisvilleMap8
+    {
+        DisplayCategory = Cartography,
+        ItemType = base:map,
+        Weight = 0.2,
+        Icon = Map,
+        Map = LouisvilleMap8,
+        StaticModel = MapInHand,
+        WorldStaticModel = Map,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item LouisvilleMap9
+    {
+        DisplayCategory = Cartography,
+        ItemType = base:map,
+        Weight = 0.2,
+        Icon = Map,
+        Map = LouisvilleMap9,
+        StaticModel = MapInHand,
+        WorldStaticModel = Map,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item MarchRidgeMap
+    {
+        DisplayCategory = Cartography,
+        ItemType = base:map,
+        Weight = 0.2,
+        Icon = Map,
+        Map = MarchRidgeMap,
+        StaticModel = MapInHand,
+        WorldStaticModel = Map,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item MuldraughMap
+    {
+        DisplayCategory = Cartography,
+        ItemType = base:map,
+        Weight = 0.2,
+        Icon = Map,
+        Map = MuldraughMap,
+        SurvivalGear = true,
+        StaticModel = MapInHand,
+        WorldStaticModel = Map,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item RiversideMap
+    {
+        DisplayCategory = Cartography,
+        ItemType = base:map,
+        Icon = Map,
+        Weight = 0.2,
+        Map = RiversideMap,
+        SurvivalGear = true,
+        StaticModel = MapInHand,
+        WorldStaticModel = Map,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item RosewoodMap
+    {
+        DisplayCategory = Cartography,
+        ItemType = base:map,
+        Weight = 0.2,
+        Icon = Map,
+        Map = RosewoodMap,
+        SurvivalGear = true,
+        StaticModel = MapInHand,
+        WorldStaticModel = Map,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item WestpointMap
+    {
+        DisplayCategory = Cartography,
+        ItemType = base:map,
+        Weight = 0.2,
+        Icon = Map,
+        Map = WestpointMap,
+        SurvivalGear = true,
+        StaticModel = MapInHand,
+        WorldStaticModel = Map,
+        Tags = base:ignorezombiedensity,
+    }
+
+    item Map
+    {
+        DisplayCategory = Cartography,
+        ItemType = base:map,
+        Weight = 0.2,
+        Icon = Map,
+        StaticModel = MapInHand,
+        WorldStaticModel = Map,
+    }
+}

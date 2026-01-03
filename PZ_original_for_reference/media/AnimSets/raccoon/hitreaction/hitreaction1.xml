@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>hitreaction1</m_Name>
+	<m_AnimName>Rac_HitReaction</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.25</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Events x_name="ea2f0763-ed5e-4dc8-980f-dc162f400f70">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>pain</m_ParameterValue>
+	</m_Events>
+</animNode>

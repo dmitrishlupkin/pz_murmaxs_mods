@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isFalse>bHasTarget</isFalse>
+			<isTrue>LastTargetSeen</isTrue>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isFalse>bHasTarget</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isTrue>bStopLunging</isTrue>
+		</conditions>
+	</transition>
+</transitions>

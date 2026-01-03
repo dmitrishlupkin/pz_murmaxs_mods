@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Grindstone
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Grindstone,
+            Icon = Build_Grindstone,
+        }
+    }
+}

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="WipeHead.xml">
+	<m_Name>SneakWipeHead</m_Name>
+	<m_AnimName>Bob_StealthEmoteWipeHead</m_AnimName>
+	<m_Conditions x_name="8ac2a4fc-729e-4584-b58b-32ef3bd7da77">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

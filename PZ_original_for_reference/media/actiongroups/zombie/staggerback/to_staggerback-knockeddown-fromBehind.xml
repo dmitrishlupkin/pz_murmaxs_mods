@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>staggerback-knockeddown-fromBehind</transitionTo>
+	<conditions>
+		<isTrue>bKnockedDown</isTrue>
+		<isFalse>bDead</isFalse>
+		<compare op="==" a="playerAttackPosition" b="BACK" />
+	</conditions>
+</transition>

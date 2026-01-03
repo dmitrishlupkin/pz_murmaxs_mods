@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_MetalBigMetalFence
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Big Metal Pole Fence,
+            Icon = Build_FenceHighMetalPosts,
+        }
+    }
+}

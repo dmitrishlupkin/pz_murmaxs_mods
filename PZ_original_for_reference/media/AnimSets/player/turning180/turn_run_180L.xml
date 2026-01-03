@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="turn_run_180.xml">
+	<m_Name>turn_run_180L</m_Name>
+	<m_AnimName>Bob_RunToTurn180L</m_AnimName>
+	<m_Conditions x_name="2c4c56d8-d278-4c12-a815-1243ea7985f8">
+		<m_Name>targetTwist</m_Name>
+		<m_Type>LESS</m_Type>
+		<m_Value>0</m_Value>
+	</m_Conditions>
+</animNode>

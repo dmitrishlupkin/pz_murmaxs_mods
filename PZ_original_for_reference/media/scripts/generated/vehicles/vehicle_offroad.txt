@@ -1,0 +1,69 @@
+module Base
+{
+    vehicle OffRoad
+    {
+        template! = OffRoad,
+        specialKeyRing = Base.KeyRing_Bass;Base.KeyRing_EagleFlag;Base.KeyRing_EightBall;Base.KeyRing_Panther;Base.KeyRing_PineTree;Base.KeyRing_RabbitFoot;Base.KeyRing_Sexy,
+        model
+        {
+            file = Vehicles_OffRoad,
+            scale = 1.82,
+            offset = 0.0 0.3352 0.0,
+        }
+        template = PassengerSeat2,
+        template = OffroadCollision,
+        passenger FrontLeft
+        {
+            position inside
+            {
+                offset = 0.1758 -0.0989 -0.1978,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = 0.5714 -0.4615 -0.0659,
+                rotate = 0.0 0.0 0.0,
+                area = SeatFrontLeft,
+            }
+        }
+        passenger FrontRight
+        {
+            position inside
+            {
+                offset = -0.1758 -0.0989 -0.1978,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = -0.5714 -0.4615 -0.0659,
+                rotate = 0.0 0.0 0.0,
+                area = SeatFrontRight,
+            }
+        }
+        area SeatFrontLeft
+        {
+            xywh = 0.6538 -0.0659 0.4725 0.4725,
+        }
+        area SeatFrontRight
+        {
+            xywh = -0.6538 -0.0659 0.4725 0.4725,
+        }
+        extents = 0.8352 0.7033 1.8242,
+        physicsChassisShape = 0.8352 0.7033 1.8242,
+        centerOfMassOffset = 0.0 0.3516 0.0,
+        shadowExtents = 0.8352 1.8242,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -0.9066,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 0.9451,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+}

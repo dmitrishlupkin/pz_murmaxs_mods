@@ -1,0 +1,22 @@
+module Base
+{
+    sound VehicleEngineStepVan
+    {
+        category = Vehicle,
+        master = VehicleEngine,
+        clip
+        {
+            event = Vehicle/Van/Engine,
+            distanceMax = 100,
+        }
+    }
+
+    sound VehicleIgnitionFailStepVan
+    {
+        category = Vehicle,
+        clip
+        {
+            event = Vehicle/Van/IgnitionFail,
+        }
+    }
+}

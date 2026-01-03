@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>Idle</m_Name>
+	<m_AnimName>Mouse_Idle01</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.48</m_SpeedScale>
+</animNode>

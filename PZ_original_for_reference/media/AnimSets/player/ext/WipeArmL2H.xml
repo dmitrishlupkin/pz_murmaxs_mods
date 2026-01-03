@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="WipeArmL.xml">
+	<m_Name>WipeArmL2H</m_Name>
+	<m_AnimName>Bob_EmoteWipeLeftArm2H</m_AnimName>
+	<m_Conditions x_name="b9d2b5fd-d5e3-45e6-bf5c-01636cc0c063">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+</animNode>

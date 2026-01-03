@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>vehicleCollision</transitionTo>
+	<conditionPriority>10</conditionPriority>
+	<conditions>
+		<isTrue>isVehicleCollision</isTrue>
+	</conditions>
+</transition>

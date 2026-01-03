@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="defaultpet.xml">
+	<m_Name>petbull</m_Name>
+	<m_2DBlends />
+	<m_2DBlends>
+		<m_XPos>0.00</m_XPos>
+	</m_2DBlends>
+	<m_2DBlends />
+	<m_Conditions x_name="7afbc54e-45c1-44d6-b353-aaa8d046c758">
+		<m_Name>animal</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>bull</m_Value>
+	</m_Conditions>
+</animNode>

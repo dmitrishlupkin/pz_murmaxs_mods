@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SitOnFurnitureRight.xml">
+	<m_Name>SitOnFurnitureRightHandgun</m_Name>
+	<m_AnimName>Bob_Seated_SitDown_R_hgun</m_AnimName>
+	<m_Conditions x_name="5ff24ae9-15b4-42dc-a828-b741230c321b">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>handgun</m_Value>
+	</m_Conditions>
+</animNode>

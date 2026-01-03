@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>falldown</m_Name>
+	<m_AnimName>Piglet_Dead</m_AnimName>
+	<m_DeferredBoneName>Bip01</m_DeferredBoneName>
+	<m_deferredBoneAxis>Z</m_deferredBoneAxis>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Events x_name="430ea0f5-2b5b-4567-93d1-49b9bb315efc">
+		<m_EventName>PlayDeathSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="8daa6db5-3569-4142-ba95-35de808544f1">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.57</m_TimePc>
+		<m_ParameterValue>fallover</m_ParameterValue>
+	</m_Events>
+</animNode>

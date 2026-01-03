@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="no.xml">
+	<m_Name>sneakno</m_Name>
+	<m_AnimName>Bob_StealthEmoteNo</m_AnimName>
+	<m_Conditions x_name="20001581-525d-4707-9a2a-c75bf9cdc92d">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

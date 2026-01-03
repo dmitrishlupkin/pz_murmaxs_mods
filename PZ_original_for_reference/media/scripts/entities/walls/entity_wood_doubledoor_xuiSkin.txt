@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Dumbledoor
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Double Door,
+            Icon = Build_DoubleWoodGate,
+        }
+    }
+}

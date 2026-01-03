@@ -1,0 +1,10 @@
+module Base
+{
+    model Vehicles_CarTaxi
+    {
+        mesh = vehicles/Vehicles_CarTaxi,
+        shader = vehicle_norandom_multiuv,
+        invertX = false,
+        scale = 0.008,
+    }
+}

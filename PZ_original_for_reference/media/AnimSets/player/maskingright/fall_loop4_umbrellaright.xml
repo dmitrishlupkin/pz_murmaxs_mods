@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="holdingumbrellaright.xml">
+	<m_Name>fall_loop4_umbrellaright</m_Name>
+	<m_AnimName>Bob_FallIdle04_Umbrella</m_AnimName>
+	<m_BlendTime>0.50</m_BlendTime>
+	<m_BlendOutTime>0.10</m_BlendOutTime>
+	<m_SpeedScale>1.00</m_SpeedScale>
+	<m_Conditions x_name="9b9a3847-a8e6-4a5b-b790-662b6c1eba69">
+		<m_Name>bFalling</m_Name>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="e55b1f60-2b9d-4ab9-b2c6-ccc367fae919">
+		<m_Name>fallSpeedSeverity</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Lethal</m_Value>
+	</m_Conditions>
+	<m_Transitions />
+	<m_Transitions>
+		<m_Target>land_death</m_Target>
+		<m_blendInTime>0.1</m_blendInTime>
+		<m_blendOutTime>0.1</m_blendOutTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>land_heavy2</m_Target>
+		<m_blendInTime>0.1</m_blendInTime>
+		<m_blendOutTime>0.1</m_blendOutTime>
+	</m_Transitions>
+</animNode>

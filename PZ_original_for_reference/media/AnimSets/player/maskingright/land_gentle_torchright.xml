@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="holdingTorchRight.xml">
+	<m_Name>land_gentle_torchright</m_Name>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_BlendOutTime>0.20</m_BlendOutTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="b956b5cd-ed54-4277-be48-bd5b0f2eb0be">
+		<m_Name>bDead</m_Name>
+	</m_Conditions>
+	<m_Conditions x_name="a2029a5c-2979-4ce3-9062-c10514b2af81">
+		<m_Name>bFalling</m_Name>
+	</m_Conditions>
+	<m_Conditions x_name="ec43f147-5534-469b-ba5f-b65e46a9cd7d">
+		<m_Name>bHardFall</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="7cf535a7-3cee-4cf2-a0e0-4dbdaf42a9d7">
+		<m_Name>bHardFall2</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="87ba1453-9df0-4ee0-9b68-930962ee4e35">
+		<m_Name>bLandLightMask</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_R_Finger0</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_R_Finger1</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

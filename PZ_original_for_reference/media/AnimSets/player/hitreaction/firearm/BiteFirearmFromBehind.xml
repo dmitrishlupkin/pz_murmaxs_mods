@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="BiteFirearm.xml">
+	<m_Name>BiteFirearmFromBehind</m_Name>
+	<m_AnimName>Bob_BiteReactBehind_Shotgun</m_AnimName>
+	<m_Conditions x_name="0c6df02d-02bb-483f-9bbc-851c53d7ce05">
+		<m_Name>FromBehind</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="9bf4bbae-88be-4b73-a6ab-48482fd6d704">
+		<m_TimePc>0.5</m_TimePc>
+	</m_Events>
+</animNode>

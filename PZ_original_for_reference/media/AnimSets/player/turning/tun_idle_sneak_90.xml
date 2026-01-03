@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="turn_idle_sneak.xml">
+	<m_Name>tun_idle_sneak_90</m_Name>
+	<m_Conditions x_name="60fb96d3-88f3-40a5-9e61-b1dab81f6e34">
+		<m_Name>nearWallCrouching</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+</animNode>

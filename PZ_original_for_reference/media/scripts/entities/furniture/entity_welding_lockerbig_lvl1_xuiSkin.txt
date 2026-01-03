@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_LockerBig_Lvl1
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Big Metal Locker (Shoddy),
+            Icon = Build_CabinetMetal,
+        }
+    }
+}

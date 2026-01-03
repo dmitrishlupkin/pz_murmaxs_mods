@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>sit_warmhands</m_Name>
+	<m_AnimName>Bob_SitGround_WarmHands</m_AnimName>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SpeedScale>0.38</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="90b89ee4-2081-4ea8-af55-5107328289af">
+		<m_Name>SitGroundAnim</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>WarmHands</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Furnace_I
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Primitive Furnace,
+            Icon = Build_PrimitiveFurnace,
+        }
+    }
+}

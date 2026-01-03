@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>idleSit</m_Name>
+	<m_AnimName>Chk_SatIdle01</m_AnimName>
+	<m_BlendTime>0.50</m_BlendTime>
+	<m_Conditions x_name="98522539-b86e-4c82-a77a-f5965feb56a5">
+		<m_Name>idleAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>sit</m_Value>
+	</m_Conditions>
+</animNode>

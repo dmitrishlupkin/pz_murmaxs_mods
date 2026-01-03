@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionOut>true</transitionOut>
+		<conditions>
+			<isTrue>IsPerformingAnAction</isTrue>
+			<isFalse>isTurning</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionOut>true</transitionOut>
+		<conditions>
+			<eventOccurred>ExtFinishing</eventOccurred>
+		</conditions>
+	</transition>
+</transitions>

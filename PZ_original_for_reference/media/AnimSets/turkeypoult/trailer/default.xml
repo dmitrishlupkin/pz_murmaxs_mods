@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>default</m_Name>
+	<m_AnimName>TurkPoult_Idle01</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Conditions x_name="606b3e3c-ea65-41ef-88b8-46c1c03b8ca2">
+		<m_Name>TrailerAnimation</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>sitting1</m_Value>
+	</m_Conditions>
+</animNode>

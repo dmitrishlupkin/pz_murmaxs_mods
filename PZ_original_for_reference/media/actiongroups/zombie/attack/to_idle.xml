@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isTrue>ZombieBiteDone</isTrue>
+			<isFalse>bEatBodyTarget</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isFalse>bCanSeeTarget</isFalse>
+		</conditions>
+	</transition>
+</transitions>

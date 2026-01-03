@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_BarricadePlanks
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Planks Barricade,
+            Icon = Build_BarricadeWindow_Plank,
+        }
+    }
+}

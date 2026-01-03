@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>idle1</m_Name>
+	<m_AnimName>Chk_Idle01</m_AnimName>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_Conditions x_name="78b0b4a7-80cc-40d7-bcb7-33e0eac0e325">
+		<m_Name>bMoving</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+</animNode>

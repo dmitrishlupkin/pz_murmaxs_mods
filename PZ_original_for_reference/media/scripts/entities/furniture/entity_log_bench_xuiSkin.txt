@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Log_Bench
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Log Bench,
+            Icon = Build_LogBench,
+        }
+    }
+}

@@ -1,0 +1,23 @@
+<transitions x_include="../defaultTransitions.xml">
+    <transition>
+        <transitionTo>idle</transitionTo>
+        <conditions>
+            <isFalse>bMoving</isFalse>
+        </conditions>
+    </transition>
+
+    <transition>
+        <transitionTo>pathfind</transitionTo>
+        <conditions>
+            <isTrue>bPathfind</isTrue>
+        </conditions>
+    </transition>
+
+    <transition>
+        <transitionTo>eating</transitionTo>
+        <conditions>
+            <isTrue>isAnimalEating</isTrue>
+        </conditions>
+    </transition>
+
+</transitions>

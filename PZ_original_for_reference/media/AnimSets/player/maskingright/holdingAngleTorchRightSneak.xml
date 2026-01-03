@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="holdingAngleTorchRight.xml">
+	<m_Name>holdingAngleTorchRightSneak</m_Name>
+	<m_AnimName>Bob_IdleSneakAngleFlashlight</m_AnimName>
+	<m_Conditions x_name="26441c5f-4a1f-416e-9920-9bdb5aa8f6eb">
+		<m_Name>sneaking</m_Name>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="fad3a3d8-1cf5-47fa-8cab-26c632334a1a">
+		<m_Name>Aim</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="02adc3dc-23c4-4061-a7a4-1e5a755d87f4">
+		<m_Name>bLandLightMask</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+</animNode>

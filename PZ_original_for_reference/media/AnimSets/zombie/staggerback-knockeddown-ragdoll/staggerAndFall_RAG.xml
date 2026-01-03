@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>staggerAndFall_RAG</m_Name>
+	<m_ConditionPriority>8</m_ConditionPriority>
+	<m_AnimName>Zombie_StaggerBackFall</m_AnimName>
+	<m_isRagdoll>true</m_isRagdoll>
+	<m_ragdollStartTimeMin>0.2</m_ragdollStartTimeMin>
+	<m_ragdollStartTimeMax>0.5</m_ragdollStartTimeMax>
+	<m_DeferredBoneName>Bip01</m_DeferredBoneName>
+	<m_deferredBoneAxis>Z</m_deferredBoneAxis>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="fdbb1530-127f-456b-90b6-52d7e81dcb8e">
+		<m_Name>playerattackposition</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>FRONT</m_Value>
+	</m_Conditions>
+	<m_Events x_name="3e9585f0-1dcd-4fd7-8c74-1196e5cd8983">
+		<m_EventName>SetState</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="d3a44e02-2dce-4304-be06-10d92a6b34a2">
+		<m_EventName>PlaySound</m_EventName>
+		<m_TimePc>0.58</m_TimePc>
+		<m_ParameterValue>BodyHitGround</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="2136180c-4780-4df9-a46f-8e6353cd48d1">
+		<m_EventName>FallOnFront</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>false</m_ParameterValue>
+	</m_Events>
+	<m_Transitions>
+		<m_Target>defaultIdle</m_Target>
+		<m_blendInTime>0.5</m_blendInTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>lunge1</m_Target>
+		<m_blendInTime>0.5</m_blendInTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>lunge2</m_Target>
+		<m_blendInTime>0.5</m_blendInTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>onback</m_Target>
+		<m_blendInTime>3</m_blendInTime>
+		<m_blendOutTime>0.5</m_blendOutTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>onfront</m_Target>
+		<m_blendInTime>3</m_blendInTime>
+		<m_blendOutTime>0.5</m_blendOutTime>
+	</m_Transitions>
+</animNode>

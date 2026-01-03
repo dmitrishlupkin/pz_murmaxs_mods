@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="holdingTorchRight.xml">
+	<m_Name>holdingTorchRightSneak</m_Name>
+	<m_AnimName>Bob_IdleSneakFlashlight</m_AnimName>
+	<m_Conditions x_name="a2029a5c-2979-4ce3-9062-c10514b2af81">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

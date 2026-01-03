@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="FloorBack.xml">
+	<m_Name>FloorBackHead01</m_Name>
+	<m_AnimName>Zombie_HeadReact_OnBack01</m_AnimName>
+	<m_BlendTime>0.15</m_BlendTime>
+	<m_BlendOutTime>0.25</m_BlendOutTime>
+	<m_Conditions x_name="093f7697-2da2-43f6-91c9-eecab47b6989">
+		<m_Name>hitHeadType</m_Name>
+		<m_Type>EQU</m_Type>
+		<m_Value>1</m_Value>
+	</m_Conditions>
+</animNode>

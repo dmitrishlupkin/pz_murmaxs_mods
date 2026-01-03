@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_ScutchingBoard
+        {
+            LuaWindowClass = ISEntityTabWindow,
+            DisplayName = Scutching Board,
+            Icon = Build_ScutchingBoard,
+        }
+    }
+}

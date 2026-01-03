@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="climbFenceEnd.xml">
+	<m_Name>climbFenceEndHandgun</m_Name>
+	<m_AnimName>Bob_VaultOver_End_Handgun</m_AnimName>
+	<m_Conditions x_name="f3b87285-86f0-4a31-9da9-f337def3b554">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>handgun</m_Value>
+	</m_Conditions>
+</animNode>

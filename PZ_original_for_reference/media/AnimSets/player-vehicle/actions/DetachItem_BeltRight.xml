@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="AttachItem_BeltRight.xml">
+	<m_Name>DetachItem_BeltRight</m_Name>
+	<m_AnimName>Bob_Equip_HolsterRight_1Hand_Out</m_AnimName>
+	<m_Conditions x_name="59e618fc-8bdb-4bf5-9b3b-d22d4f31c9c7">
+		<m_Value>DetachItem</m_Value>
+	</m_Conditions>
+	<m_Events x_name="b887f802-2715-44c7-b864-242124007303">
+		<m_EventName>detachConnect</m_EventName>
+	</m_Events>
+</animNode>

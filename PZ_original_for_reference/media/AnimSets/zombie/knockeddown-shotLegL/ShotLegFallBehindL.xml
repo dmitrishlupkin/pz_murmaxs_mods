@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="ShotLegFallL.xml">
+	<m_Name>ShotLegFallBehindL</m_Name>
+	<m_AnimName>Zombie_ShotLegFall_LBehind</m_AnimName>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_Conditions x_name="b5a9b797-4b62-4468-9900-0cafa2d64fd2">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="798e7f93-f590-4406-ac66-30ef3ab26861">
+		<m_ParameterValue>false</m_ParameterValue>
+	</m_Events>
+</animNode>

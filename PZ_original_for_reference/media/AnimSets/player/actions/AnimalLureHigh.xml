@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="AnimalLure.xml">
+	<m_Name>AnimalLureHigh</m_Name>
+	<m_AnimName>Bob_Idle_LureHigh</m_AnimName>
+	<m_Conditions x_name="1357792d-180f-421e-915c-ff0251801ed1">
+		<m_Value>AnimalLureHigh</m_Value>
+	</m_Conditions>
+</animNode>

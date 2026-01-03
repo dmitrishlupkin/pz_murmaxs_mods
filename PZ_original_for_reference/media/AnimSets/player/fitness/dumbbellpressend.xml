@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="dumbbellpress.xml">
+	<m_Name>dumbbellpressend</m_Name>
+	<m_Looped>false</m_Looped>
+	<m_Conditions x_name="6673160b-15b7-4362-8753-d451de2861cc">
+		<m_Name>ExerciseEnded</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="19bbeefe-4b27-48ec-a303-c48ce892053b">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>FitnessFinished=TRUE</m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="loadRevolver.xml">
+	<m_Name>UnloadRevolver</m_Name>
+	<m_Conditions x_name="2b05db65-2d62-4ba9-ab21-f89c854bd1c3">
+		<m_Name>isUnloading</m_Name>
+	</m_Conditions>
+	<m_Events x_name="45c7f8c8-73ae-41e3-a122-72c3766715ac">
+		<m_EventName>unloadFinished</m_EventName>
+	</m_Events>
+	<m_Events x_name="822c97b2-aa42-4bcc-a82b-8641715fdc52">
+		<m_TimePc>0.1</m_TimePc>
+		<m_ParameterValue>unload</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="6f4a35bd-e12e-46d7-a40f-7f5a2521200d">
+		<m_ParameterValue>ejectAmmoStart</m_ParameterValue>
+	</m_Events>
+</animNode>

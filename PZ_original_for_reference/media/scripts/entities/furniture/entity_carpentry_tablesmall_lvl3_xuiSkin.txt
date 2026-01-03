@@ -1,0 +1,21 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Wood_TableSmall_Lvl3
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Small Wood Table (Good),
+            Icon = Build_TableSmallWood,
+            components
+            {
+                CraftLogic
+                {
+                    LuaPanelClass = ISCraftDefaultPanel,
+                    DisplayName = Wood Table,
+                    Icon = Build_TableSmallWood,
+                }
+            }
+        }
+    }
+}

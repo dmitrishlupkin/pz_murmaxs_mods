@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>DoorBang</m_Name>
+	<m_AnimName>Zombie_DoorBang</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="2937bd1c-8de3-4bd4-be16-6dd991e895ab">
+		<m_Name>ThumpType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>DoorBang</m_Value>
+	</m_Conditions>
+	<m_Events x_name="28e13e39-ec5f-43fd-8850-8086e819e773">
+		<m_EventName>ThumpFrame</m_EventName>
+		<m_TimePc>0.85</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

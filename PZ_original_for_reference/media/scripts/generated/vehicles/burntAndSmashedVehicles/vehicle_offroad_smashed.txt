@@ -1,0 +1,114 @@
+module Base
+{
+    vehicle OffRoadSmashedRear
+    {
+        template! = OffRoad,
+        model
+        {
+            file = Vehicles_OffRoadSmashedRear,
+            scale = 1.82,
+            offset = 0.0 0.3352 0.0,
+        }
+        extents = 0.8352 0.7033 1.8242,
+        physicsChassisShape = 0.8352 0.7033 1.8242,
+        centerOfMassOffset = 0.0 0.3516 0.0,
+        shadowExtents = 0.8352 1.8242,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -0.9066,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 0.9451,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle OffRoadSmashedRight
+    {
+        template! = OffRoad,
+        model
+        {
+            file = Vehicles_OffRoadSmashedRight,
+            scale = 1.82,
+            offset = 0.0 0.3352 0.0,
+        }
+        extents = 0.8352 0.7033 1.8242,
+        physicsChassisShape = 0.8352 0.7033 1.8242,
+        centerOfMassOffset = 0.0 0.3516 0.0,
+        shadowExtents = 0.8352 1.8242,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -0.9066,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 0.9451,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle OffRoadSmashedLeft
+    {
+        template! = OffRoad,
+        model
+        {
+            file = Vehicles_OffRoadSmashedLeft,
+            scale = 1.82,
+            offset = 0.0 0.3352 0.0,
+        }
+        extents = 0.8352 0.7033 1.8242,
+        physicsChassisShape = 0.8352 0.7033 1.8242,
+        centerOfMassOffset = 0.0 0.3516 0.0,
+        shadowExtents = 0.8352 1.8242,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -0.9066,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 0.9451,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle OffRoadSmashedFront
+    {
+        template! = OffRoad,
+        model
+        {
+            file = Vehicles_OffRoadSmashedFront,
+            scale = 1.82,
+            offset = 0.0 0.3352 0.0,
+        }
+        extents = 0.8352 0.7033 1.8242,
+        physicsChassisShape = 0.8352 0.7033 1.8242,
+        centerOfMassOffset = 0.0 0.3516 0.0,
+        shadowExtents = 0.8352 1.8242,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -0.9066,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 0.9451,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+}

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>crawlerattack_start</m_Name>
+	<m_AnimName>Zombie_CrawlLunge_Start</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.50</m_BlendTime>
+	<m_SpeedScale>0.40</m_SpeedScale>
+	<m_Events x_name="41fce14c-626e-46d4-bd87-161d8ba95053">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>ZombieBiteStarted=true</m_ParameterValue>
+	</m_Events>
+</animNode>

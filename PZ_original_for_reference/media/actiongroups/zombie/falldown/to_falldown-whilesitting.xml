@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>falldown-whilesitting</transitionTo>
+	<conditions>
+		<compare op="!=" a="previousState" b="eatbody" />
+		<isTrue>issitting</isTrue>
+		<isFalse>usePhysicHitReaction</isFalse>
+	</conditions>
+</transition>

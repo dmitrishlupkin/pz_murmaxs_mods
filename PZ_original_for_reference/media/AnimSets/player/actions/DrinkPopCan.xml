@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="DrinkBottle.xml">
+	<m_Name>DrinkPopCan</m_Name>
+	<m_AnimName>Bob_IdleDrinkPopCan</m_AnimName>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_EarlyTransitionOut>true</m_EarlyTransitionOut>
+	<m_SpeedScale>0.64</m_SpeedScale>
+	<m_Conditions x_name="45bbfaa5-8fd6-49b0-a8ad-662a862dcab0">
+		<m_Name>FoodType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>popcan</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_R_Clavicle</boneName>
+		<weight>0.50</weight>
+	</m_SubStateBoneWeights>
+</animNode>

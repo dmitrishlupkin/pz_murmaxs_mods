@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="petrat.xml">
+	<m_Name>petratbaby</m_Name>
+	<m_Conditions x_name="92b7ef9d-3820-46b3-89bf-989d263d21f8">
+		<m_Value>ratbaby</m_Value>
+	</m_Conditions>
+</animNode>

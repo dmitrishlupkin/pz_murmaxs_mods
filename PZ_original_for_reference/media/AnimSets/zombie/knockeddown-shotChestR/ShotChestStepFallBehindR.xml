@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="ShotChestStepFallR.xml">
+	<m_Name>ShotChestStepFallBehindR</m_Name>
+	<m_AnimName>Zombie_ShotShoulderBehindFall_R</m_AnimName>
+	<m_Conditions x_name="9f3e812d-7db3-403a-9013-cee45e9eec0f">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>walktoward</transitionTo>
+	<conditions>
+		<isTrue>BumpAnimFinished</isTrue>
+		<isTrue>bMoving</isTrue>
+		<isFalse>bPathfind</isFalse>
+		<isFalse>bOnFloor</isFalse>
+		<isFalse>bClient</isFalse>
+	</conditions>
+</transition>

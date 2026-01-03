@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="reading.xml">
+	<m_Name>book</m_Name>
+	<m_AnimName>Bob_IdleReadBook</m_AnimName>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="c44d764b-3ad2-4d02-ab9c-52f893623683">
+		<m_Name>ReadType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>book</m_Value>
+	</m_Conditions>
+</animNode>

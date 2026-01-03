@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>milkSheepR</m_Name>
+	<m_AnimName>Bob_Milking_SheepR</m_AnimName>
+	<m_BlendTime>0.51</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="1c926772-feae-47ba-9c69-4b4c2b3f5c8f">
+		<m_Name>milkAnim</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>SheepRLoop</m_Value>
+	</m_Conditions>
+</animNode>

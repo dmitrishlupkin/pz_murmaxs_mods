@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>fakedead</transitionTo>
+		<conditions>
+			<isTrue>canRagdoll</isTrue>
+			<isTrue>isRagdollFall</isTrue>
+			<isFalse>isSimulationActive</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>fakedead</transitionTo>
+		<conditions>
+			<isTrue>bFakeDead</isTrue>
+			<isTrue>bOnFloor</isTrue>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>fakedead</transitionTo>
+		<conditions>
+			<eventOccurred>ActiveAnimFinishing</eventOccurred>
+			<isFalse>isRagdollFall</isFalse>
+		</conditions>
+	</transition>
+</transitions>

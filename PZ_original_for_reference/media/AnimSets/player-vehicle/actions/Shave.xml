@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>Shave</m_Name>
+	<m_AnimName>Bob_IdleShave</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.70</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="0ffac306-92bd-4be7-9259-18d0fbb5a58d">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Shave</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,10 @@
+module Base
+{
+    model Vehicles_TrailerCover
+    {
+        mesh = vehicles/vehicle_utilitytrailercover,
+        shader = vehicle_norandom_multiuv,
+        invertX = false,
+        scale = 0.01,
+    }
+}

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>thump</m_Name>
+	<m_AnimName>Zombie_DoorShoulder</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="9b82c249-5f90-46f1-a9c1-0a92a01816be">
+		<m_Name>bPassengerExposed</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="15c0b19b-4f98-4ff3-b3de-0b53bba89f5c">
+		<m_Name>bIsTargetIsSmallVehicle</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="07ac6255-678c-4010-a5a3-9a25e000376c">
+		<m_EventName>ThumpFrame</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

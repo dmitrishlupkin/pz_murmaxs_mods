@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_ButcherHook
+        {
+            LuaWindowClass = ISEntityTabWindow,
+            DisplayName = Butcher Hook,
+            Icon = Build_ButcherHook,
+        }
+    }
+}

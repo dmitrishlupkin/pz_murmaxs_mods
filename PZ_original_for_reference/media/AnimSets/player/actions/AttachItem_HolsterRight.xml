@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="AttachItem_Back.xml">
+	<m_Name>AttachItem_HolsterRight</m_Name>
+	<m_AnimName>Bob_Equip_HolsterRight</m_AnimName>
+	<m_Conditions x_name="45ec4c9d-ec5e-43da-9c26-4a4e79056149">
+		<m_Value>holster right</m_Value>
+	</m_Conditions>
+</animNode>

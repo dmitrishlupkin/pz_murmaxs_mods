@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="PainHandR.xml">
+	<m_Name>PainHandR2H</m_Name>
+	<m_AnimName>Bob_EmotePainRightHand2H</m_AnimName>
+	<m_Conditions x_name="1245fbe2-d662-43a0-bd31-1c9fa5455003">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="0216bc6b-2806-4163-93bc-b8d2049aa8e4">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="e6813e82-1305-4812-a533-e6ce41f24fb2">
+		<m_Name>Ext</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>PainHandR</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="3c1faafa-fd31-4e29-a7d9-0189d6ab4ac8">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

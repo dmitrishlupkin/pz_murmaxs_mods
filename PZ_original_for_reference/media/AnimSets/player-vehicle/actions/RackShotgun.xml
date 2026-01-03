@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="loadShotgun.xml">
+	<m_Name>RackShotgun</m_Name>
+	<m_AnimName>Bob_Reload_Shotgun_Rack</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_Conditions x_name="05011c8b-ab50-4680-a8a8-bdba707b8a6c">
+		<m_Name>isRacking</m_Name>
+	</m_Conditions>
+	<m_Events x_name="cfccaca2-786e-449d-8001-ec0fa1fe777f">
+		<m_EventName>rackingFinished</m_EventName>
+	</m_Events>
+	<m_Events x_name="fb7bda7e-5903-45dc-a56e-94c0cdeb9a27">
+		<m_TimePc>0.15</m_TimePc>
+		<m_ParameterValue>rack</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="0138490b-7650-4c74-bf02-ef4e73735622">
+		<m_EventName>rackBullet</m_EventName>
+		<m_TimePc>0.3</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

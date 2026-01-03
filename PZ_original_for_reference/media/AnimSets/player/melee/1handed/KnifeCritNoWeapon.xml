@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="KnifeDefault.xml">
+	<m_Name>KnifeCritNoWeapon</m_Name>
+	<m_AnimName>Bob_AttackKnife01_NoBlade</m_AnimName>
+	<m_Conditions x_name="326e288a-f842-4024-9dbb-33d232cb33fb">
+		<m_Type>STRNEQ</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="a88ff2d6-46bb-4cf9-9501-eba93fd6a489">
+		<m_Name>CriticalHit</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="12991d0c-5f24-4d2a-965d-1e28e29f1eeb">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value />
+	</m_Conditions>
+	<m_Events x_name="d32350a4-72c0-45ba-9ac2-e2dcb0239906">
+		<m_ParameterValue>ZombieHitReaction=KnifeDeath</m_ParameterValue>
+	</m_Events>
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Head</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01</boneName>
+		<weight>0.50</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+</animNode>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="turn_idleToWalk_sneakLow_180.xml">
+	<m_Name>turn_idleToWalk_sneakLow_180L</m_Name>
+	<m_AnimName>Bob_SneakToSneakWalkLow_Turn180L</m_AnimName>
+	<m_Conditions x_name="034c7660-dff4-4333-a8f3-ffbac72c97ca">
+		<m_Name>targetTwist</m_Name>
+		<m_Type>LESS</m_Type>
+		<m_Value>0</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="defaultStaggerBack.xml">
+	<m_Name>fromFront</m_Name>
+	<m_AnimName>Zombie_ShoveStagger_2m</m_AnimName>
+</animNode>

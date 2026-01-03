@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="KnifeDeath.xml">
+	<m_Name>KnifeDeathBehind</m_Name>
+	<m_AnimName>Zombie_HitDeath_KnifeBehind</m_AnimName>
+	<m_Conditions x_name="a0ae7957-7025-40da-9640-8162ac1e5317">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="b6fb67c5-d4bf-4a83-91af-7492890c13f8">
+		<m_ParameterValue>true</m_ParameterValue>
+	</m_Events>
+</animNode>

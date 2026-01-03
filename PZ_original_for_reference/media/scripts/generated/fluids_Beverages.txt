@@ -1,0 +1,740 @@
+module Base
+{
+    fluid Cola
+    {
+        ColorReference = Cola,
+        DisplayName = Fluid_Name_Cola,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -2.0,
+            HungerChange = -12.0,
+            StressChange = 0.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -10.0,
+            Calories = 400.0,
+            Carbohydrates = 104.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid ColaDiet
+    {
+        ColorReference = Cola,
+        DisplayName = Fluid_Name_ColaDiet,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -2.0,
+            HungerChange = -12.0,
+            StressChange = 0.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -10.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid GingerAle
+    {
+        ColorReference = Ginger,
+        DisplayName = Fluid_Name_GingerAle,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -2.0,
+            HungerChange = -12.0,
+            StressChange = 0.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -10.0,
+            Calories = 400.0,
+            Carbohydrates = 104.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid MilkChocolate
+    {
+        ColorReference = Sienna,
+        DisplayName = Fluid_Name_MilkChocolate,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            HungerChange = -20.0,
+            ThirstChange = -15.0,
+            UnhappyChange = -20.0,
+            Calories = 615.0,
+            Carbohydrates = 46.0,
+            Lipids = 22.0,
+            Proteins = 33.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid SodaBlueberry
+    {
+        ColorReference = DeepSkyBlue,
+        DisplayName = Fluid_Name_SodaBlueberry,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -2.0,
+            HungerChange = -12.0,
+            StressChange = 0.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -10.0,
+            Calories = 400.0,
+            Carbohydrates = 104.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid SodaBubblegum
+    {
+        ColorReference = LightPink,
+        DisplayName = Fluid_Name_SodaBubblegum,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -2.0,
+            HungerChange = -12.0,
+            StressChange = 0.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -10.0,
+            Calories = 400.0,
+            Carbohydrates = 104.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid SodaPop
+    {
+        ColorReference = Orange,
+        DisplayName = Fluid_Name_SodaPop,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -2.0,
+            HungerChange = -12.0,
+            StressChange = 0.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -10.0,
+            Calories = 400.0,
+            Carbohydrates = 104.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid SodaLime
+    {
+        ColorReference = PaleGreen,
+        DisplayName = Fluid_Name_SodaLime,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -2.0,
+            HungerChange = -12.0,
+            StressChange = 0.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -10.0,
+            Calories = 400.0,
+            Carbohydrates = 104.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid SodaGrape
+    {
+        ColorReference = Purple,
+        DisplayName = Fluid_Name_SodaGrape,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -2.0,
+            HungerChange = -12.0,
+            StressChange = 0.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -10.0,
+            Calories = 400.0,
+            Carbohydrates = 104.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid SodaPineapple
+    {
+        ColorReference = Yellow,
+        DisplayName = Fluid_Name_SodaPineapple,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -2.0,
+            HungerChange = -12.0,
+            StressChange = 0.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -10.0,
+            Calories = 400.0,
+            Carbohydrates = 104.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid SodaStrewberry
+    {
+        ColorReference = LightCoral,
+        DisplayName = Fluid_Name_SodaStrewberry,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -2.0,
+            HungerChange = -12.0,
+            StressChange = 0.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -10.0,
+            Calories = 400.0,
+            Carbohydrates = 104.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid Coffee
+    {
+        ColorReference = Sienna,
+        DisplayName = Fluid_Name_Coffee,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -10.0,
+            HungerChange = -10.0,
+            StressChange = -20.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -50.0,
+            Calories = 10.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 1.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid Tea
+    {
+        ColorReference = SandyBrown,
+        DisplayName = Fluid_Name_Tea,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -5.0,
+            HungerChange = -10.0,
+            StressChange = -20.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -50.0,
+            Calories = 10.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid Honey
+    {
+        ColorReference = Khaki,
+        DisplayName = Fluid_Name_Honey,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = -10.0,
+            StressChange = -20.0,
+            ThirstChange = -20.0,
+            UnhappyChange = -50.0,
+            Calories = 400.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid JuiceApple
+    {
+        ColorReference = Khaki,
+        DisplayName = Fluid_Name_JuiceApple,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = -10.0,
+            StressChange = -20.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -50.0,
+            Calories = 480.0,
+            Carbohydrates = 120.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid JuiceCranberry
+    {
+        ColorReference = Grenadine,
+        DisplayName = Fluid_Name_JuiceCranberry,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = -10.0,
+            StressChange = -20.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -50.0,
+            Calories = 400.0,
+            Carbohydrates = 100.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid JuiceFruitpunch
+    {
+        ColorReference = FruitPunch,
+        DisplayName = Fluid_Name_JuiceFruitpunch,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = -10.0,
+            StressChange = -20.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -50.0,
+            Calories = 400.0,
+            Carbohydrates = 100.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid JuiceGrape
+    {
+        ColorReference = Purple,
+        DisplayName = Fluid_Name_JuiceGrape,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = -10.0,
+            StressChange = -20.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -50.0,
+            Calories = 400.0,
+            Carbohydrates = 120.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid JuiceLemon
+    {
+        ColorReference = PaleGreen,
+        DisplayName = Fluid_Name_JuiceLemon,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = -10.0,
+            StressChange = -20.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -50.0,
+            Calories = 400.0,
+            Carbohydrates = 120.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid JuiceOrange
+    {
+        ColorReference = Orange,
+        DisplayName = Fluid_Name_JuiceOrange,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = -10.0,
+            StressChange = -20.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -50.0,
+            Calories = 400.0,
+            Carbohydrates = 120.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid JuiceTomato
+    {
+        ColorReference = Tomato,
+        DisplayName = Fluid_Name_JuiceTomato,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = -10.0,
+            StressChange = -20.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -50.0,
+            Calories = 420.0,
+            Carbohydrates = 130.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid SimpleSyrup
+    {
+        ColorReference = Tomato,
+        DisplayName = Fluid_Name_SimpleSyrup,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = -10.0,
+            StressChange = -20.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -50.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid SpiffoJuice
+    {
+        ColorReference = Orange,
+        DisplayName = Fluid_Name_SpiffoJuice,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -10.0,
+            HungerChange = -10.0,
+            StressChange = -20.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -50.0,
+            Calories = 450.0,
+            Carbohydrates = 160.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+}

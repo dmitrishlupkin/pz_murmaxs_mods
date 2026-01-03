@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Ext_PainHead.xml">
+	<m_Name>Ext_PainHead_Spear</m_Name>
+	<m_AnimName>Bob_EmotePainHead2H</m_AnimName>
+	<m_Conditions x_name="42fbc2ef-1d3c-4b77-b707-09bb1b29f0ea">
+		<m_Name>Waepon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

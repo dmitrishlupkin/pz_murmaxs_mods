@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Leather_Shelter
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Leather Shelter,
+            Icon = Build_LeanToShelterLeather,
+        }
+    }
+}

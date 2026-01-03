@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SatChair.xml">
+	<m_Name>SatChairIn</m_Name>
+	<m_AnimName>Bob_SatChairIn</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_Conditions x_name="16d1f5e8-bfcb-4e23-aee4-2ba12c616e72">
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="cc566358-dc84-48b7-9a75-43a9319aa834">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>SatChairStarted=true</m_ParameterValue>
+	</m_Events>
+</animNode>

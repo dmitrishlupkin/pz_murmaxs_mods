@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="sneakbye.xml">
+	<m_Name>sneakbye_Rifle</m_Name>
+	<m_Conditions x_name="21115171-4a8b-4552-8f9a-85cb7fe7dd60">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>firearm</m_Value>
+	</m_Conditions>
+</animNode>

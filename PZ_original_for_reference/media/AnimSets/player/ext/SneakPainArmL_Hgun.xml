@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SneakPainArmL.xml">
+	<m_Name>SneakPainArmL_Hgun</m_Name>
+	<m_Conditions x_name="588c563e-616f-4760-b0ef-34cb1cc607f6">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>handgun</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="crawlerattack_start.xml">
+	<m_Name>crawlerattack_fail</m_Name>
+	<m_AnimName>Zombie_CrawlLunge_Fail</m_AnimName>
+	<m_Conditions x_name="24a83fb8-8528-42bf-8dab-04808cecff10">
+		<m_Name>ZombieBiteStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="de9b2526-bd4f-481b-97bd-f9574b757e3d">
+		<m_Name>battack</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="535e11e8-531f-498f-937f-5496f754505d">
+		<m_ParameterValue>ZombieBiteStarted=false</m_ParameterValue>
+	</m_Events>
+</animNode>

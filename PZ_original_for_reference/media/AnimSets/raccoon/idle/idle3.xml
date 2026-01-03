@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="idle1.xml">
+	<m_Name>idle3</m_Name>
+	<m_AnimName>Rac_Idle03</m_AnimName>
+	<m_Conditions x_name="72a124e7-e548-4c27-b2ad-49a4a85fe4f4">
+		<m_Name>idleAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>idle2</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="idle2.xml">
+	<m_Name>idle5</m_Name>
+	<m_AnimName>TurkPoult_Idle05</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Conditions x_name="73109643-2512-4ec4-be31-ec6b2cb44a7a">
+		<m_Value>idle4</m_Value>
+	</m_Conditions>
+</animNode>

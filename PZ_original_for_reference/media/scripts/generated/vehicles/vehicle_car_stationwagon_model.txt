@@ -1,0 +1,11 @@
+module Base
+{
+    model Vehicles_CarStationWagon
+    {
+        mesh = vehicles/Vehicles_CarStationWagon,
+        shader = vehicle_multiuv,
+        invertX = false,
+        scale = 0.008,
+        specialKeyRing = Base.KeyRing_PrayingHands,
+    }
+}

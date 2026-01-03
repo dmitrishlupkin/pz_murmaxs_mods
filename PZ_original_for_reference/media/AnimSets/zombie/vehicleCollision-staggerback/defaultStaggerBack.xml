@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>defaultStaggerBack</m_Name>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="fdbb1530-127f-456b-90b6-52d7e81dcb8e">
+		<m_Name>hitDir</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>FRONT</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="b7f32003-3009-4a48-bdc9-254e36e74023">
+		<m_Name>hitforce</m_Name>
+		<m_Type>GTR</m_Type>
+		<m_Value>0.4</m_Value>
+	</m_Conditions>
+	<m_Events x_name="3e9585f0-1dcd-4fd7-8c74-1196e5cd8983">
+		<m_EventName>SetState</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Transitions>
+		<m_Target>defaultIdle</m_Target>
+		<m_blendInTime>0.5</m_blendInTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>lunge1</m_Target>
+		<m_blendInTime>0.5</m_blendInTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>lunge2</m_Target>
+		<m_blendInTime>0.5</m_blendInTime>
+	</m_Transitions>
+</animNode>

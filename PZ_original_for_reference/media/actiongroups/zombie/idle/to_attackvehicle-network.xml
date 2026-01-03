@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>attackvehicle-network</transitionTo>
+	<conditions>
+		<isTrue>bAttackVehicle</isTrue>
+		<isTrue>isFacingTarget</isTrue>
+		<isTrue>bClient</isTrue>
+	</conditions>
+</transition>

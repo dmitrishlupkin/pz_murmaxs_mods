@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="fall_loop2.xml">
+	<m_Name>fall_loop2_spear</m_Name>
+	<m_AnimName>Bob_FallIdle02_Bat</m_AnimName>
+	<m_Conditions x_name="cd95e82e-6599-421a-b4ea-a4d66a4fddea">
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>fall_loop3_spear</m_Target>
+	</m_Transitions>
+	<m_Transitions />
+</animNode>

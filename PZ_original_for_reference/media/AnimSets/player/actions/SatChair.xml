@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>SatChair</m_Name>
+	<m_AnimName>Bob_SatChair</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="275d5607-b256-4295-bdaa-3438ed40c0a2">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>SatChair</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="16d1f5e8-bfcb-4e23-aee4-2ba12c616e72">
+		<m_Name>SatChairStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights>
+		<boneName>Dummy01</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

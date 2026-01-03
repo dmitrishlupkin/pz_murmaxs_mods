@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="LoadDblBarrel.xml">
+	<m_Name>LoadDblBarrelSawnoff</m_Name>
+	<m_Conditions x_name="0356ff42-06b6-49a2-98c2-810da2a6112d">
+		<m_Value>doublebarrelshotgunsawn</m_Value>
+	</m_Conditions>
+	<m_Events x_name="f781cddb-67f3-435f-994c-7819e7404ea5">
+		<m_ParameterValue>ShotgunDoubleBarrelSawn_OPEN</m_ParameterValue>
+	</m_Events>
+</animNode>

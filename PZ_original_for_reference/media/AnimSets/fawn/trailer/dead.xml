@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>dead</m_Name>
+	<m_AnimName>DeerFawn_Dead</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="d245bc26-b089-4983-b5e5-9a7f2cc0fa18">
+		<m_Name>TrailerAnimation</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>dead</m_Value>
+	</m_Conditions>
+</animNode>

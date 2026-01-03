@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>falldown-knifedeath</transitionTo>
+	<conditions>
+		<compare op="!=" a="previousState" b="eatbody" />
+		<isTrue>bKnifeDeath</isTrue>
+		<isFalse>usePhysicHitReaction</isFalse>
+	</conditions>
+</transition>

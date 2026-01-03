@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="wavehi02.xml">
+	<m_Name>sneakWaveHi02</m_Name>
+	<m_AnimName>Bob_StealthEmoteWaveHi02</m_AnimName>
+	<m_Conditions x_name="deebec57-9218-49bf-a75d-2c101dfc1fc2">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

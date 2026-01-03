@@ -1,0 +1,11 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_LogStack
+        {
+            LuaWindowClass = ISEntityTabWindow,
+            DisplayName = Log Stack,
+        }
+    }
+}

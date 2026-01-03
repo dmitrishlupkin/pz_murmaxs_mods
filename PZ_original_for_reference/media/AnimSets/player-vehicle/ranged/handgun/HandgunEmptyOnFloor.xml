@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="HandgunEmpty.xml">
+	<m_Name>HandgunEmptyOnFloor</m_Name>
+	<m_Conditions x_name="fc47d796-ec93-4c9d-b29c-deebbe2ca02a">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

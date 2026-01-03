@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>draggingBody-LegsEnd-onBack</transitionTo>
+	<conditions>
+		<isTrue>bIsGrappling</isTrue>
+		<compare op="==" a="sharedGrappleType" b="BwdDragLegs" />
+	</conditions>
+</transition>

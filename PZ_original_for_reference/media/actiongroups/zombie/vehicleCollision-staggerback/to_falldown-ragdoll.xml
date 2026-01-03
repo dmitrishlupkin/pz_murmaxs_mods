@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>falldown-ragdoll</transitionTo>
+	<conditions>
+		<lessEqual a="stateEventDelayTimer" b="0.0000" />
+		<isTrue>bKnockedDown</isTrue>
+		<isTrue>isRagdollFall</isTrue>
+		<isTrue>canRagdoll</isTrue>
+	</conditions>
+</transition>

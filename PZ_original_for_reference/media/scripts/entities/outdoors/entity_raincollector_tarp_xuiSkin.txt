@@ -1,0 +1,18 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_RainCollectorCrate_Tarp
+        {
+            LuaWindowClass = ISEntityTabWindow,
+            DisplayName = Rain Collector Crate Tarp,
+            Icon = Build_RainCollectorCrate,
+        }
+        entity ES_RainCollectorBarrel_Tarp
+        {
+            LuaWindowClass = ISEntityTabWindow,
+            DisplayName = Rain Collector Barrel Tarp,
+            Icon = Build_RainCollectorBarrel,
+        }
+    }
+}

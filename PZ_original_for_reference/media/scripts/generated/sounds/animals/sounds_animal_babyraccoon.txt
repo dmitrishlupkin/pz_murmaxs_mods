@@ -1,0 +1,78 @@
+module Base
+{
+    sound AnimalVoiceBabyRaccoonIdle
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/BabyRaccoon/Voice/Idle,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalVoiceBabyRaccoonDeath
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/BabyRaccoon/Voice/Death,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalVoiceBabyRaccoonStressed
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/BabyRaccoon/Voice/Stressed,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalVoiceBabyRaccoonPain
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/BabyRaccoon/Voice/Pain,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalFootstepsBabyRaccoonWalkFront
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/BabyRaccoon/Footsteps/Walk/Front,
+        }
+    }
+
+    sound AnimalFootstepsBabyRaccoonWalkBack
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/BabyRaccoon/Footsteps/Walk/Back,
+        }
+    }
+
+    sound AnimalFootstepsBabyRaccoonRun
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/BabyRaccoon/Footsteps/Run,
+        }
+    }
+
+    sound AnimalFoleyBabyRaccoonBodyfall
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/BabyRaccoon/Foley/Bodyfall,
+        }
+    }
+}

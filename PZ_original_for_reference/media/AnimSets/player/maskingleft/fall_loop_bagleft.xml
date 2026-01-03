@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="holdingbagleft.xml">
+	<m_Name>fall_loop_bagleft</m_Name>
+	<m_Priority>5</m_Priority>
+	<m_AnimName>Bob_FallIdle_Bag</m_AnimName>
+	<m_BlendOutTime>0.40</m_BlendOutTime>
+	<m_SpeedScale>1.00</m_SpeedScale>
+	<m_Conditions x_name="64dae15b-3e4d-4ebc-bc84-3fa776b351a3">
+		<m_Name>bFalling</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="bbe48357-c074-4c7b-9aa2-f74e9ee3920a">
+		<m_Name>fallSpeedSeverity</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Light</m_Value>
+	</m_Conditions>
+	<m_Transitions />
+	<m_Transitions />
+	<m_Transitions />
+	<m_Transitions>
+		<m_Target>fall_loop2_bagleft</m_Target>
+		<m_blendInTime>0.2</m_blendInTime>
+		<m_blendOutTime>0.4</m_blendOutTime>
+	</m_Transitions>
+</animNode>

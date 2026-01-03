@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="HeavyDefault.xml">
+	<m_Name>HeavyOverhead</m_Name>
+	<m_AnimName>Bob_Attack2H_Heavy02_Hit</m_AnimName>
+	<m_Conditions x_name="5f66a838-4277-4ffd-a32b-f195ce56ec49">
+		<m_Name>attackType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>overhead</m_Value>
+	</m_Conditions>
+	<m_Events x_name="4339a26e-36b3-4d06-a348-7c03b30a7c7f">
+		<m_ParameterValue>ZombieHitReaction=HeadTop</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="31749e0a-46b3-4add-820d-9c528d674619">
+		<m_TimePc>0.32</m_TimePc>
+	</m_Events>
+</animNode>

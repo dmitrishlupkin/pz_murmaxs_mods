@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="eating.xml">
+	<m_Name>eating2</m_Name>
+	<m_AnimName>SheepLamb_IdleEating02</m_AnimName>
+	<m_Conditions x_name="f6f2ad2a-a718-4857-a1ad-13e616cb4ddf">
+		<m_Name>eatingAnim</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>eat1</m_Value>
+	</m_Conditions>
+</animNode>

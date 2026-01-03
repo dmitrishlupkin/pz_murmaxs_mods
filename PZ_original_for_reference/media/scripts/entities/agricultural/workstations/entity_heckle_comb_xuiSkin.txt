@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_HeckleComb
+        {
+            LuaWindowClass = ISEntityTabWindow,
+            DisplayName = Heckle Comb,
+            Icon = Build_HeckleComb,
+        }
+    }
+}

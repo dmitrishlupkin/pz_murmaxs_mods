@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>idleSit</m_Name>
+	<m_AnimName>Rac_IdleLyingDown</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Conditions x_name="2e45ec48-c729-475d-90a0-72b883f69348">
+		<m_Name>idleAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>sit</m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>Idle</m_Target>
+		<m_AnimName>Rac_LyingDownToIdle</m_AnimName>
+	</m_Transitions>
+</animNode>

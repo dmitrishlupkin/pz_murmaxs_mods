@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="petpig.xml">
+	<m_Name>petboar</m_Name>
+	<m_Conditions x_name="df486c74-c02b-4f0f-a7ac-e5957a21176a">
+		<m_Value>boar</m_Value>
+	</m_Conditions>
+</animNode>

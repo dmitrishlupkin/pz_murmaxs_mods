@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="fromSitting.xml">
+	<m_Name>fromSittingHitreaction</m_Name>
+	<m_AnimName>Bob_SitGround_EndDeath</m_AnimName>
+	<m_Conditions x_name="17c82495-f313-4401-a455-c18a4f80cada">
+		<m_Type>STRING</m_Type>
+	</m_Conditions>
+</animNode>

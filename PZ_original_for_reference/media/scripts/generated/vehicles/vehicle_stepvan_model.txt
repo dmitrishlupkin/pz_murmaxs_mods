@@ -1,0 +1,18 @@
+module Base
+{
+    model Vehicle_StepVan
+    {
+        mesh = vehicles/Vehicle_StepVan,
+        shader = vehicle_multiuv,
+        invertX = false,
+        scale = 0.008,
+    }
+
+    model Vehicle_StepVan_NoRandom
+    {
+        mesh = vehicles/Vehicle_StepVan,
+        shader = vehicle_norandom_multiuv,
+        invertX = false,
+        scale = 0.008,
+    }
+}

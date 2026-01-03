@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>success</m_Name>
+	<m_AnimName>Bob_ClimbFence_Success</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>1.20</m_SpeedScale>
+	<m_Conditions x_name="996f7b3f-abf1-49f2-bbb3-0f82053d519d">
+		<m_Name>ClimbFenceStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="b16a80b8-cba3-4cd9-9371-d84ed8771ceb">
+		<m_Name>ClimbFenceOutcome</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>success</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="845cf142-8e74-4b50-b2b1-002345c8175d">
+		<m_Name>ClimbFenceStruggle</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="368e0fe2-0508-4296-b0c1-3f6fa2ddddda">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>ClimbFenceFinished=true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="42fc8a8e-c2a2-4bfb-86d2-17b21a8bbaed">
+		<m_EventName>PlayFenceSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>ClimbOverFenceHighSuccess</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="65e22faf-64a8-457e-8362-e80ab1120b43">
+		<m_EventName>PlaySound</m_EventName>
+		<m_TimePc>0.5</m_TimePc>
+		<m_ParameterValue>LandHeavy</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="e4f2aa13-8985-42d9-aa13-3f96f4845efb">
+		<m_EventName>SetVariable</m_EventName>
+		<m_TimePc>0.7</m_TimePc>
+		<m_ParameterValue>ClimbFenceReadyToRun=true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="ef162fb6-0de1-423b-9098-6f154c3f0af3">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>ClimbFenceReadyToRun=false</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="3eecbe0e-7e70-4a27-aad8-8baf38db11fa">
+		<m_EventName>PlayerVoiceSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>JumpHigh</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="c4a669cd-38d7-484d-b503-4a4c86f39378">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>ClimbFenceReadyToRun=false</m_ParameterValue>
+	</m_Events>
+</animNode>

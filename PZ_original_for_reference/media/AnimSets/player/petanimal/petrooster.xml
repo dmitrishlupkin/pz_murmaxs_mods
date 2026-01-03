@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="petchicken.xml">
+	<m_Name>petrooster</m_Name>
+	<m_Conditions x_name="cb9947f0-3f1e-457e-9f96-19d63f599761">
+		<m_Value>cockerel</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="default.xml">
+	<m_Name>spear</m_Name>
+	<m_AnimName>Bob_AttackSpear01_Hit</m_AnimName>
+	<m_Conditions x_name="d1e3a0bb-53a5-433b-b782-6aff9dde557f">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

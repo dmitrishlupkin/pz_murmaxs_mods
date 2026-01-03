@@ -1,0 +1,21 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Campfire
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Campfire,
+            Icon = Build_Campfire,
+            components
+            {
+                CraftLogic
+                {
+                    LuaPanelClass = ISCraftDefaultPanel,
+                    DisplayName = Wooden Stake,
+                    Icon = Build_Campfire,
+                }
+            }
+        }
+    }
+}

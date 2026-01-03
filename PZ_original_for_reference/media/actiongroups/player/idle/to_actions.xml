@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>actions</transitionTo>
+	<asSubstate>true</asSubstate>
+	<conditions>
+		<isTrue>IsPerformingAnAction</isTrue>
+		<isFalse>isTurning</isFalse>
+	</conditions>
+</transition>

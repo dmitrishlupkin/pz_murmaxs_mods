@@ -1,0 +1,223 @@
+module Base
+{
+    template vehicle Door
+    {
+        part DoorFrontLeft
+        {
+            mechanicArea = Left,
+            area = SeatFrontLeft,
+            anim ActorOpen
+            {
+                angle = 0.0 270.0 0.0,
+            }
+            anim ActorClose
+            {
+                angle = 0.0 270.0 0.0,
+            }
+            itemType = Base.FrontCarDoor,
+            table uninstall
+            {
+                requireUninstalled = WindowFrontLeft,
+            }
+        }
+        part DoorFrontRight
+        {
+            mechanicArea = Right,
+            area = SeatFrontRight,
+            anim ActorOpen
+            {
+                angle = 0.0 90.0 0.0,
+            }
+            anim ActorClose
+            {
+                angle = 0.0 90.0 0.0,
+            }
+            itemType = Base.FrontCarDoor,
+            table uninstall
+            {
+                requireUninstalled = WindowFrontRight,
+            }
+        }
+        part DoorMiddleLeft
+        {
+            mechanicArea = Left,
+            area = SeatMiddleLeft,
+            anim ActorOpen
+            {
+                angle = 0.0 270.0 0.0,
+            }
+            anim ActorClose
+            {
+                angle = 0.0 270.0 0.0,
+            }
+            itemType = Base.RearCarDoor,
+            table uninstall
+            {
+                requireUninstalled = WindowMiddleLeft,
+            }
+        }
+        part DoorMiddleRight
+        {
+            mechanicArea = Right,
+            area = SeatMiddleRight,
+            anim ActorOpen
+            {
+                angle = 0.0 90.0 0.0,
+            }
+            anim ActorClose
+            {
+                angle = 0.0 90.0 0.0,
+            }
+            itemType = Base.RearCarDoor,
+            table uninstall
+            {
+                requireUninstalled = WindowMiddleRight,
+            }
+        }
+        part DoorRearLeft
+        {
+            mechanicArea = Left,
+            area = SeatRearLeft,
+            anim ActorOpen
+            {
+                angle = 0.0 270.0 0.0,
+            }
+            anim ActorClose
+            {
+                angle = 0.0 270.0 0.0,
+            }
+            itemType = Base.RearCarDoor,
+            table uninstall
+            {
+                requireUninstalled = WindowRearLeft,
+            }
+        }
+        part DoorRearRight
+        {
+            mechanicArea = Right,
+            area = SeatRearRight,
+            anim ActorOpen
+            {
+                angle = 0.0 90.0 0.0,
+            }
+            anim ActorClose
+            {
+                angle = 0.0 90.0 0.0,
+            }
+            itemType = Base.RearCarDoor,
+            table uninstall
+            {
+                requireUninstalled = WindowRearRight,
+            }
+        }
+        part DoorRear
+        {
+            mechanicArea = Back,
+            area = TruckBed,
+            anim ActorOpen
+            {
+                anim = Attack_Shove,
+                rate = 0.3,
+                angle = 0.0 0.0 0.0,
+            }
+            anim ActorClose
+            {
+                anim = Attack_Shove,
+                rate = 0.3,
+                angle = 0.0 0.0 0.0,
+            }
+            itemType = Base.RearCarDoorDouble,
+        }
+        part Door*
+        {
+            category = door,
+            durability = 5,
+            door
+            {
+            }
+            anim Open
+            {
+                sound = VehicleDoorOpenStandard,
+            }
+            anim Close
+            {
+                sound = VehicleDoorCloseStandard,
+            }
+            anim Lock
+            {
+                sound = LockVehicleDoorStandard,
+            }
+            anim Unlock
+            {
+                sound = UnlockVehicleDoorStandard,
+            }
+            anim IsLocked
+            {
+                sound = VehicleDoorIsLockedStandard,
+            }
+            anim ActorOpen
+            {
+                anim = Attack_Shove,
+                rate = 0.3,
+            }
+            anim ActorClose
+            {
+                anim = Attack_Shove,
+                rate = 0.3,
+            }
+            mechanicRequireKey = true,
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 300,
+                skills = Mechanics:4,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Door,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 300,
+                skills = Mechanics:4,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+                complete = Vehicles.UninstallComplete.Door,
+            }
+            lua
+            {
+                create = Vehicles.Create.Door,
+                init = Vehicles.Init.Door,
+                use = Vehicles.Use.Door,
+            }
+        }
+        part DoorRear
+        {
+            lua
+            {
+                create = Vehicles.Create.TrunkDoor,
+                init = Vehicles.Init.Door,
+                update = Vehicles.Update.TrunkDoor,
+                use = Vehicles.Use.TrunkDoor,
+            }
+        }
+    }
+}

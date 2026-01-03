@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="FloorFrontHead01.xml">
+	<m_Name>FloorFrontHead03</m_Name>
+	<m_AnimName>Zombie_HeadReact_OnFront03</m_AnimName>
+	<m_Conditions x_name="e984d5a1-d431-40a7-a91b-d68e42233678">
+		<m_Value>3</m_Value>
+	</m_Conditions>
+</animNode>

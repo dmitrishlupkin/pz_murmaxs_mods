@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="PainArmL.xml">
+	<m_Name>SneakPainArmL</m_Name>
+	<m_AnimName>Bob_StealthEmotePainLeftArm</m_AnimName>
+	<m_BlendOutTime>0.50</m_BlendOutTime>
+	<m_Conditions x_name="bc70af49-1c3f-4bc0-90d7-7596a6364158">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>pathfindWait</m_Name>
+	<m_AnimName>TurkPoult_Idle01</m_AnimName>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SpeedScaleRandomMultiplierMin>0.70</m_SpeedScaleRandomMultiplierMin>
+	<m_SpeedScaleRandomMultiplierMax>1.20</m_SpeedScaleRandomMultiplierMax>
+	<m_Conditions x_name="6dc74b57-0137-4127-9dcf-5c00abdb3de2">
+		<m_Name>bMoving</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+</animNode>

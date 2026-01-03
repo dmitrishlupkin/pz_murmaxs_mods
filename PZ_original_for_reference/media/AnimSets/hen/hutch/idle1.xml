@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>idle1</m_Name>
+	<m_AnimName>Chk_Idle01</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScaleRandomMultiplierMin>0.80</m_SpeedScaleRandomMultiplierMin>
+	<m_SpeedScaleRandomMultiplierMax>1.20</m_SpeedScaleRandomMultiplierMax>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="1dd420f9-734d-4efe-a547-f555bd88e054">
+		<m_Name>HutchAnimation</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>idle1</m_Value>
+	</m_Conditions>
+</animNode>

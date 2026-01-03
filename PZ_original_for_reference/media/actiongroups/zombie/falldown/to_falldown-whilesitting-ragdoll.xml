@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>falldown-whilesitting-ragdoll</transitionTo>
+	<conditions>
+		<compare op="!=" a="previousState" b="eatbody" />
+		<isTrue>issitting</isTrue>
+		<isTrue>usePhysicHitReaction</isTrue>
+		<isTrue>canRagdoll</isTrue>
+	</conditions>
+</transition>

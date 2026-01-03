@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="petturkey.xml">
+	<m_Name>petturkeypoult</m_Name>
+	<m_AnimName>Bob_PetChicken_Chick</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetChicken_Chick</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetChicken_Chick</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetChicken_Chick</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="2d2be317-ea9e-485b-bccf-8bee8d92d7c0">
+		<m_Value>turkeypoult</m_Value>
+	</m_Conditions>
+</animNode>

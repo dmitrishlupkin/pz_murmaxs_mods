@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="sneakidle.xml">
+	<m_Name>sneakidle2handed</m_Name>
+	<m_AnimName>Bob_IdleSneak_Bat</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleSneak_Bat</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleSneak_Bat_HBreathing</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleSneak_Bat</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="30f2dbdb-74a4-4990-b404-51448d5ee509">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>sneakWalk2handed</m_Target>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>sneakRun2handed</m_Target>
+		<m_AnimName>Bob_SneakToSneakRun_Bat</m_AnimName>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>aim_2handed</m_Target>
+		<m_AnimName>Bob_IdleToAim_Bat</m_AnimName>
+	</m_Transitions>
+	<m_Transitions />
+	<m_Transitions />
+	<m_Transitions />
+	<m_Transitions>
+		<m_Target>Idle2Handed</m_Target>
+	</m_Transitions>
+</animNode>

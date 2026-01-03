@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Tarp_Shelter
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Tarp Shelter,
+            Icon = Build_LeanToShelterTarp,
+        }
+    }
+}

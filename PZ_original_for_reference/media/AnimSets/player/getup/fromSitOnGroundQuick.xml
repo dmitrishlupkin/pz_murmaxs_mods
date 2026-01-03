@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="fromSitOnGround.xml">
+	<m_Name>fromSitOnGroundQuick</m_Name>
+	<m_AnimName>Bob_SitGround_OutQuick</m_AnimName>
+	<m_SpeedScale>1.50</m_SpeedScale>
+	<m_Conditions x_name="0acdcca6-325a-4ac8-95d4-f0bc5b441eb8">
+		<m_Name>getUpQuick</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="a50a55d5-44ed-48a3-ab37-cb2b9bccd451">
+		<m_EventName></m_EventName>
+		<m_TimePc>0</m_TimePc>
+		<m_ParameterValue>getUpStartedQuick=TRUE</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="a0d89ecf-b0bf-460a-b297-42139b5c2194">
+		<m_EventName></m_EventName>
+		<m_TimePc>0</m_TimePc>
+		<m_ParameterValue>getUpStartedQuick=FALSE</m_ParameterValue>
+	</m_Events>
+</animNode>

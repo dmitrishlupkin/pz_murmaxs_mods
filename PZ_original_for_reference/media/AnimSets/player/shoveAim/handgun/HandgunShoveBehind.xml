@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="HandgunShove.xml">
+	<m_Name>HandgunShoveBehind</m_Name>
+	<m_AnimName>Bob_AttackPistolWhip01</m_AnimName>
+	<m_Conditions x_name="35df8d3a-47bb-4aa5-b67b-34780d79328a">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="c9654b18-5a2b-45bd-ad36-c629ff2e5ce9">
+		<m_TimePc>0.2</m_TimePc>
+	</m_Events>
+	<m_Events x_name="5432dacd-2868-4096-828d-0a7688d7d584">
+		<m_EventName>PistolWhipAnim</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>TRUE</m_ParameterValue>
+	</m_Events>
+</animNode>

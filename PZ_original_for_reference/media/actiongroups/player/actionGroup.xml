@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<actiongroup>
+	<initial>idle</initial>
+	<commentBlock>
+		<name>Actions</name>
+		<bounds x="25,500.0000" y="24,120.0000" width="990.0000" height="690.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Combat</name>
+		<bounds x="25,500.0000" y="23,055.0000" width="1,320.0000" height="915.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Bumped</name>
+		<bounds x="25,500.0000" y="24,945.0000" width="990.0000" height="285.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Climbing</name>
+		<bounds x="25,500.0000" y="25,410.0000" width="990.0000" height="540.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Windows and Openings</name>
+		<bounds x="25,500.0000" y="26,085.0000" width="990.0000" height="405.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Falling down</name>
+		<bounds x="25,500.0000" y="26,745.0000" width="990.0000" height="375.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Grappling</name>
+		<bounds x="26,835.0000" y="26,700.0000" width="525.0000" height="375.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Masked Anim SubStates</name>
+		<bounds x="27,015.0000" y="23,985.0000" width="765.0000" height="315.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Movement</name>
+		<bounds x="25,500.0000" y="27,405.0000" width="990.0000" height="495.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Animals</name>
+		<bounds x="26,565.0000" y="28,440.0000" width="765.0000" height="360.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>Sitting and Lying Down</name>
+		<bounds x="25,500.0000" y="27,960.0000" width="990.0000" height="450.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>GrabCorpseFromContainer</name>
+		<bounds x="27,495.0000" y="26,655.0000" width="600.0000" height="435.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>ThrowCorpseOutWindow</name>
+		<bounds x="28,230.0000" y="26,625.0000" width="600.0000" height="495.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>ThrowCorpseOverFence</name>
+		<bounds x="28,935.0000" y="26,610.0000" width="570.0000" height="495.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>LayDownCorpseOnfloor</name>
+		<bounds x="28,935.0000" y="27,300.0000" width="570.0000" height="675.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>DraggingCorpse</name>
+		<bounds x="28,230.0000" y="27,345.0000" width="600.0000" height="885.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>PickUpCorpseFromFloor</name>
+		<bounds x="27,495.0000" y="27,390.0000" width="600.0000" height="630.0000" />
+	</commentBlock>
+	<commentBlock>
+		<name>ThrowCorpseIntoContainer</name>
+		<bounds x="29,625.0000" y="26,565.0000" width="495.0000" height="480.0000" />
+	</commentBlock>
+</actiongroup>

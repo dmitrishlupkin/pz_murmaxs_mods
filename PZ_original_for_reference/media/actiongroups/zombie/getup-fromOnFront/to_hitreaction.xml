@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>hitreaction</transitionTo>
+	<conditions>
+		<isTrue>hashitreaction</isTrue>
+		<isFalse>useRagdollVehicleCollision</isFalse>
+		<isFalse>isVehicleCollision</isFalse>
+		<isFalse>bOnFloor</isFalse>
+	</conditions>
+</transition>

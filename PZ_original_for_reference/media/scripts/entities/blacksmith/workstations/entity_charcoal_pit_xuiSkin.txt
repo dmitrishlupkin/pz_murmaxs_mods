@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Charcoal_Pit
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Charcoal Burning Pit,
+            Icon = Build_Coalpit,
+        }
+    }
+}

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="TakePills.xml">
+	<m_Name>TakePills_Sneaking</m_Name>
+	<m_AnimName>Bob_IdleTakePills_Sneak</m_AnimName>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="e67e6814-e45b-4983-9e3d-aa95440e5f1d">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

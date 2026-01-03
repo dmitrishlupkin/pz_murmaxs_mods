@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>shove</transitionTo>
+	<asSubstate>true</asSubstate>
+	<conditions>
+		<isTrue>initiateAttack</isTrue>
+		<isTrue>bDoShove</isTrue>
+		<isFalse>AttackAnim</isFalse>
+		<isFalse>bDoStomp</isFalse>
+		<isFalse>bShoveAiming</isFalse>
+	</conditions>
+</transition>

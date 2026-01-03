@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SitOnFurnitureIdle.xml">
+	<m_Name>SitOnFurnitureIdle2Handed</m_Name>
+	<m_AnimName>Bob_SatChair_2Hand</m_AnimName>
+	<m_Conditions x_name="301a8eb9-4fba-4419-af6a-aebca56e3f6c">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+</animNode>

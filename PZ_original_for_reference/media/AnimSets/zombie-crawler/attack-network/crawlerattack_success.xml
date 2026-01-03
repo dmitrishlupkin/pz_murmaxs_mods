@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="crawlerattack_fail.xml">
+	<m_Name>crawlerattack_success</m_Name>
+	<m_AnimName>Zombie_CrawlLunge_Success</m_AnimName>
+	<m_Conditions x_name="1cf213ff-4d69-4130-aad3-df84ee360791">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="453f6fdd-61d0-495d-98bf-17d19d627288">
+		<m_EventName>SetVariable</m_EventName>
+		<m_TimePc>0.1</m_TimePc>
+		<m_ParameterValue>PlayerHitReaction=CrawlerBite</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="2d279daa-23d4-45c7-b7e1-43751e66f29d">
+		<m_EventName>AttackCollisionCheck</m_EventName>
+		<m_TimePc>0.5</m_TimePc>
+		<m_ParameterValue>Bite</m_ParameterValue>
+	</m_Events>
+</animNode>

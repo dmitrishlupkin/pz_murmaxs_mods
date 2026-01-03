@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_WoodFloorLvl3
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Wood Floor (Good),
+            Icon = Build_FloorTileWood,
+        }
+    }
+}

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="FillBottleFromTap.xml">
+	<m_Name>FillWateringCanFromTap</m_Name>
+	<m_AnimName>Bob_IdleFill_Wateringcan</m_AnimName>
+	<m_Conditions x_name="b2d28823-d329-4f79-b71c-cea1b5cd806f">
+		<m_Name>PourType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>wateringcan</m_Value>
+	</m_Conditions>
+</animNode>

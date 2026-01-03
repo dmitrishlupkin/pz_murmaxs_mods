@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="LootSitting.xml">
+	<m_Name>LootSittingHigh</m_Name>
+	<m_AnimName>Bob_IdleLooting_High</m_AnimName>
+	<m_Conditions x_name="05cb60ed-58ea-40a8-a00d-45fd4b4fe03d">
+		<m_Name>LootPosition</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>High</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="545f153c-d7af-4be4-99d9-409a9efcc3ea">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="c2104de5-3641-40b5-8527-dcf1fca764bc">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Loot</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="886643c2-f293-4182-b3a7-41b74fd22d83">
+		<m_Name>sittingonfurniture</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="e0baefac-ef7b-406d-a7a2-3a8740662d1a">
+		<m_Name>LootPosition</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>High</m_Value>
+	</m_Conditions>
+</animNode>

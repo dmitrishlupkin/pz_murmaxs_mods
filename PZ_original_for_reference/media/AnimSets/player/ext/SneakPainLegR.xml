@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="PainLegR.xml">
+	<m_Name>SneakPainLegR</m_Name>
+	<m_AnimName>Bob_StealthEmotePainRightLeg</m_AnimName>
+	<m_Conditions x_name="fa556ae5-07aa-4c66-9945-f774a806494c">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

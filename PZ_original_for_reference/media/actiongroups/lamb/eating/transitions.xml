@@ -1,0 +1,10 @@
+<transitions x_include="../defaultTransitions.xml">
+
+    <transition>
+        <transitionTo>idle</transitionTo>
+        <conditions>
+            <isFalse>isAnimalEating</isFalse>
+        </conditions>
+    </transition>
+
+</transitions>

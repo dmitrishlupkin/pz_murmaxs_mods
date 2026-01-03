@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="idle2.xml">
+	<m_Name>idle7</m_Name>
+	<m_AnimName>RabKitten_Idle06</m_AnimName>
+	<m_Conditions x_name="0712c3e0-a272-4ecd-baf5-93337f0d79ef">
+		<m_Value>idle6</m_Value>
+	</m_Conditions>
+</animNode>

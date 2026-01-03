@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="ScrubFloor.xml">
+	<m_Name>ScrubFloor_ToiletBrush</m_Name>
+	<m_AnimName>Bob_IdleScrubFloor_ToiletBrush</m_AnimName>
+	<m_Conditions x_name="966fffb4-e36a-4863-a3c2-0f20539e828e">
+		<m_Value>ScrubFloor_ToiletBrush</m_Value>
+	</m_Conditions>
+</animNode>

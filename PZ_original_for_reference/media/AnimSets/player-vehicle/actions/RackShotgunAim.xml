@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="RackShotgun.xml">
+	<m_Name>RackShotgunAim</m_Name>
+	<m_AnimName>Bob_AttackShotgun_AimRack</m_AnimName>
+	<m_Conditions x_name="be50f0de-d3df-4dad-a780-e25096e08c09">
+		<m_Name>RackAiming</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

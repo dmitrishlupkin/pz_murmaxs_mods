@@ -1,0 +1,10 @@
+module Base
+{
+    model Vehicles_LuxuryCar
+    {
+        mesh = vehicles/Vehicles_LuxuryCar,
+        shader = vehicle_multiuv,
+        invertX = false,
+        scale = 0.008,
+    }
+}

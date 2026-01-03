@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>fromSitting</m_Name>
+	<m_AnimName>Zombie_Death</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="969a50a1-80b0-4330-89bb-e825773b610c">
+		<m_Name>sitonground</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="17c82495-f313-4401-a455-c18a4f80cada">
+		<m_Name>previousState</m_Name>
+		<m_Type>STRNEQ</m_Type>
+		<m_Value>hitreaction</m_Value>
+	</m_Conditions>
+</animNode>

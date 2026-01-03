@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>MixingFood</m_Name>
+	<m_AnimName>Bob_IdleMixingBowl</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="26ca4b79-d53f-4f33-84b8-0010b28c8db3">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>MixingFood</m_Value>
+	</m_Conditions>
+</animNode>

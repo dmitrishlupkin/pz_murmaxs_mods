@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SneakPainStomach.xml">
+	<m_Name>SneakPainStomach2H</m_Name>
+	<m_AnimName>Bob_StealthEmotePainStomach2H</m_AnimName>
+	<m_BlendOutTime>0.40</m_BlendOutTime>
+	<m_Conditions x_name="40fef923-f45e-4d17-8dbe-4834510d99a6">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+</animNode>

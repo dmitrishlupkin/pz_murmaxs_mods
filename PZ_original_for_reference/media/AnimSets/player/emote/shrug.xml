@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="default.xml">
+	<m_Name>shrug</m_Name>
+	<m_AnimName>Bob_EmoteShrug</m_AnimName>
+	<m_Conditions x_name="7c31dc14-9b20-4eee-98f3-f89de9d0bed9">
+		<m_Value>shrug</m_Value>
+	</m_Conditions>
+</animNode>

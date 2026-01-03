@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="ShoveDefault.xml">
+	<m_Name>ShoveTorchRight</m_Name>
+	<m_Conditions x_name="d56a36bc-a647-4405-bddb-abdc176c03b9">
+		<m_Name>RightHandMask</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>holdingtorchright</m_Value>
+	</m_Conditions>
+</animNode>

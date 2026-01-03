@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="bicepscurl.xml">
+	<m_Name>bicepscurllefthand</m_Name>
+	<m_AnimName>Bob_Idle_BicepCurl_LHand</m_AnimName>
+	<m_Conditions x_name="4fb08d3d-e9ab-4376-bb5b-d7d47acf3911">
+		<m_Name>ExerciseHand</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>left</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="reading.xml">
+	<m_Name>newspaper</m_Name>
+	<m_AnimName>Bob_IdleReadNewsPaper</m_AnimName>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="52b3be86-b111-4111-a357-cf5d32f76c1b">
+		<m_Name>ReadType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>newspaper</m_Value>
+	</m_Conditions>
+</animNode>

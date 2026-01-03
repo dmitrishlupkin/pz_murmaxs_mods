@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>pathfindWait</m_Name>
+	<m_AnimName>RabKitten_Idle01</m_AnimName>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_Conditions x_name="236aedf2-e75f-4975-b508-59b3be5aa59d">
+		<m_Name>bMoving</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+</animNode>

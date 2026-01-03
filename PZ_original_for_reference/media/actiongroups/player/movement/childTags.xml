@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<childTags>
+	<tag>actions</tag>
+	<tag>shove</tag>
+	<tag>turning</tag>
+	<tag>maskingleft</tag>
+	<tag>maskingright</tag>
+	<tag>emote</tag>
+	<tag>hitreactionpvp</tag>
+	<tag>hitreactionhit</tag>
+</childTags>

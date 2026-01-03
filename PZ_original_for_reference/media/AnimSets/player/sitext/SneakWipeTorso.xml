@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="WipeTorso.xml">
+	<m_Name>SneakWipeTorso</m_Name>
+	<m_AnimName>Bob_StealthEmoteWipeTorso</m_AnimName>
+	<m_Conditions x_name="e3074b94-0fa5-460f-bb19-b2f671739ded">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

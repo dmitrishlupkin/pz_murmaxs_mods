@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="1HDefault.xml">
+	<m_Name>1HUppercut</m_Name>
+	<m_AnimName>Bob_Attack1Hand03_Hit</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_Attack1Hand03_Hit</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_Attack1Hand03_Hit</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_Attack1Hand03_Hit</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_Attack1Hand03_Hit</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="74d21c9d-4f9b-4b7c-9e92-15742f5961bb">
+		<m_Name>attackType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>uppercut</m_Value>
+	</m_Conditions>
+	<m_Events x_name="15bdb761-92a2-4632-bc0e-73d278174a47">
+		<m_ParameterValue>ZombieHitReaction=Uppercut</m_ParameterValue>
+	</m_Events>
+</animNode>

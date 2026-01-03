@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SawOffShotgun.xml">
+	<m_Name>SawOfffShotgun_Sat</m_Name>
+	<m_Conditions x_name="2e7b5e65-6b2e-470c-812e-886072373144">
+		<m_Name>sitonground</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="574fd4cb-85ad-4b6e-8614-27edc0d84125">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="3b9fc4ad-5cfe-42e7-af99-21249f116825">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>SawOffShotgun</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="81aeaaa4-0979-4519-8ac4-0a9af66ffa4b">
+		<m_Name>sittingonfurniture</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights>
+		<weight>0.00</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<weight>0.00</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+</animNode>

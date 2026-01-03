@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>frombehind</m_Name>
+	<m_AnimName>Zombie_HitDeath_HeadLBehind</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="54046d4f-2cfb-4ab8-9600-7ac1e8c0b9c3">
+		<m_Name>bClient</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="1c81ac7a-8d27-4bb7-a3b8-195625530ddb">
+		<m_Name>sitonground</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="06907ca0-9602-4fb4-ad69-c59d67b5e324">
+		<m_Name>FromBehind</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="2f53e433-f7f9-4a62-a637-8f2c5a4bafbc">
+		<m_EventName>FallOnFront</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="e1271a39-a588-4d1d-a9d8-987e554f0655">
+		<m_EventName>PlaySound</m_EventName>
+		<m_TimePc>0.4</m_TimePc>
+		<m_ParameterValue>BodyHitGround</m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="clap02.xml">
+	<m_Name>sneakClap02</m_Name>
+	<m_AnimName>Bob_StealthEmoteClap02</m_AnimName>
+	<m_Conditions x_name="bd031588-82da-4907-8f31-6487d1d4cfa5">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

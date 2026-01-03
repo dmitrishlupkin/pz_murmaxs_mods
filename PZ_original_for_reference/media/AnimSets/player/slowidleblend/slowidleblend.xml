@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>slowidleblend</m_Name>
+	<m_AnimName>Bob_Idle</m_AnimName>
+	<m_BlendTime>1.00</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="550194b8-8f27-4c11-8ba6-1eb5df3dd65c">
+		<m_Name></m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value></m_Value>
+	</m_Conditions>
+	<m_Events x_name="a5882e0c-da8e-479b-ac62-02ee35bdf320">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>requiresSlowIdleBlend=false</m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="../../../GrappledDefault.xml">
+	<m_Name>GrappledBwdDragLegsLayDownOnBack</m_Name>
+	<m_AnimName>Bob_LaidDown_OnBackLegs</m_AnimName>
+	<m_Events x_name="a6de16b3-e9d8-4a5f-9d79-e1fd8061d7de">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>fallOnFront=false</m_ParameterValue>
+	</m_Events>
+</animNode>

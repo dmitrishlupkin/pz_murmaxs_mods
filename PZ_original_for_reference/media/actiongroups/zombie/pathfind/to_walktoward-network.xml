@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>walktoward-network</transitionTo>
+	<conditions>
+		<isTrue>bMovingNetwork</isTrue>
+		<isTrue>bClient</isTrue>
+	</conditions>
+</transition>

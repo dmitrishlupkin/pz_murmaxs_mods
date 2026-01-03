@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>Build</m_Name>
+	<m_AnimName>Bob_IdleHammering</m_AnimName>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="82164e0a-9850-45bb-ad8a-f312b8c7e05c">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Build</m_Value>
+	</m_Conditions>
+	<m_Events x_name="f504cc1f-ec49-4feb-a2dd-56a62e751205">
+		<m_EventName>PlaySound</m_EventName>
+		<m_TimePc>0.16</m_TimePc>
+		<m_ParameterValue>Hammering</m_ParameterValue>
+	</m_Events>
+	<m_SubStateBoneWeights>
+		<boneName>Dummy01</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Translation_Data</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

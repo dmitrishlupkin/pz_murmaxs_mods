@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>obstacle</m_Name>
+	<m_AnimName>Zombie_ClimbWindowObstacle</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>1.28</m_SpeedScale>
+	<m_Conditions x_name="c8a25cbf-14bd-491a-9536-4ab23a512e3b">
+		<m_Name>ClimbWindowStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="c80cb97f-e09d-4aac-9434-ad27f05ca579">
+		<m_Name>ClimbWindowOutcome</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>obstacle</m_Value>
+	</m_Conditions>
+	<m_Events x_name="79668d20-2e5f-4ae5-8110-9dbd50833ab0">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>ClimbWindowFinished=true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="715eacc5-907e-4894-b343-7a9b7490b89c">
+		<m_EventName>OnFloor</m_EventName>
+		<m_TimePc>0.33</m_TimePc>
+		<m_ParameterValue>true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="85f21b6b-f2f2-43c1-8d94-3b82bc7024e6">
+		<m_EventName>OnFloor</m_EventName>
+		<m_TimePc>0.8</m_TimePc>
+		<m_ParameterValue>false</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="38c4eadc-cc7f-4552-97d0-20b418002444">
+		<m_EventName>SetVariable</m_EventName>
+		<m_TimePc>0.25</m_TimePc>
+		<m_ParameterValue>BlockWindow=false</m_ParameterValue>
+	</m_Events>
+</animNode>

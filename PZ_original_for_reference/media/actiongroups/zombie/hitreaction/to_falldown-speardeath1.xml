@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>falldown-speardeath1</transitionTo>
+	<conditions>
+		<compare op="==" a="hitReaction" b="HitSpearDeath1" />
+	</conditions>
+</transition>

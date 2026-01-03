@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Yawn.xml">
+	<m_Name>SneakYawn</m_Name>
+	<m_AnimName>Bob_StealthEmoteYawn</m_AnimName>
+	<m_Conditions x_name="e49a7076-82eb-4531-b6eb-aa7376550f00">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

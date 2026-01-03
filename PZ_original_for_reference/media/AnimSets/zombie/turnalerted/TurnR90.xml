@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Default.xml">
+	<m_Name>TurnR90</m_Name>
+	<m_AnimName>Zombie_TurnR90_Alerted</m_AnimName>
+	<m_Conditions x_name="16da577b-5001-440a-85b2-cca5cbc02dfb">
+		<m_Name>TurnAlertedValue</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>90R</m_Value>
+	</m_Conditions>
+</animNode>

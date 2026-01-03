@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SneakPainArmL.xml">
+	<m_Name>SneakPainArmL_2H</m_Name>
+	<m_AnimName>Bob_StealthEmotePainLeftArm2H</m_AnimName>
+	<m_Conditions x_name="1337c7b9-50f9-4179-8289-2e5f35a768ec">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+</animNode>

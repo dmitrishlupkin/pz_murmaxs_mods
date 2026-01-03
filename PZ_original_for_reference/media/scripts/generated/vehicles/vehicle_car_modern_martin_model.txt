@@ -1,0 +1,108 @@
+module Base
+{
+    model Vehicles_ModernCar_Martin
+    {
+        mesh = vehicles/ModernCarWithDoors_Martin|Vehicles_ModernCar_mesh,
+        shader = vehicle,
+        static = true,
+        scale = 0.01,
+    }
+
+    model ModernCar_Martin_DoorFrontLeft
+    {
+        mesh = vehicles/ModernCarWithDoors_Martin|DoorFrontLeft_mesh,
+        shader = vehicle,
+        static = false,
+        scale = 0.01,
+        attachment TireOnFrontLeftDoor
+        {
+            offset = -0.3846 0.0 0.0748,
+            rotate = 0.0 90.0 0.0,
+            bone = DoorFrontLeft_bone,
+        }
+    }
+
+    model ModernCar_Martin_DoorFrontRight
+    {
+        mesh = vehicles/ModernCarWithDoors_Martin|DoorFrontRight_mesh,
+        shader = vehicle,
+        static = false,
+        scale = 0.01,
+    }
+
+    model ModernCar_Martin_DoorRearLeft
+    {
+        mesh = vehicles/ModernCarWithDoors_Martin|DoorRearLeft_mesh,
+        shader = vehicle,
+        static = false,
+        scale = 0.01,
+        boneWeight = DoorRearLeft_bone 1.0,
+    }
+
+    model ModernCar_Martin_DoorRearRight
+    {
+        mesh = vehicles/ModernCarWithDoors_Martin|DoorRearRight_mesh,
+        shader = vehicle,
+        static = false,
+        scale = 0.01,
+    }
+
+    model ModernCar_Martin_Hood
+    {
+        mesh = vehicles/ModernCarWithDoors_Martin|Hood_mesh,
+        shader = vehicle,
+        static = false,
+        scale = 0.01,
+        attachment HoodOrnament
+        {
+            offset = 0.3868 0.4444 0.045,
+            rotate = -78.0 0.0 0.0,
+            bone = Hood_bone,
+        }
+    }
+
+    model ModernCar_MartinTrunk
+    {
+        mesh = vehicles/ModernCarWithDoors_Martin|Trunk_mesh,
+        shader = vehicle,
+        static = false,
+        scale = 0.01,
+    }
+
+    model ModernCar_Martin_WindowRearLeft
+    {
+        mesh = vehicles/ModernCarWithDoors_Martin|DoorRearLeftWindow_mesh,
+        shader = vehicle,
+        static = false,
+        scale = 0.01,
+        boneWeight = DoorRearLeftWindow_bone 1.0,
+    }
+
+    model HoodOrnament_Badger
+    {
+        mesh = WorldItems/PlushieBadger,
+        scale = 0.4,
+        attachment HoodOrnament
+        {
+            offset = -0.0001 -0.0 0.0244,
+            rotate = 180.0 0.0 180.0,
+        }
+    }
+
+    model HoodOrnament_Beaver
+    {
+        mesh = WorldItems/PlushieBeaver,
+        scale = 0.4,
+        attachment HoodOrnament
+        {
+            offset = -0.0 -0.0 0.0056,
+            rotate = 180.0 0.0 180.0,
+        }
+    }
+
+    model HoodOrnament_Spiffo
+    {
+        mesh = WorldItems/SpiffoPlushie,
+        scale = 0.4,
+    }
+}

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>walktoward</transitionTo>
+		<conditions>
+			<isFalse>bHasTarget</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>walktoward</transitionTo>
+		<conditions>
+			<isTrue>bStopLunging</isTrue>
+		</conditions>
+	</transition>
+</transitions>

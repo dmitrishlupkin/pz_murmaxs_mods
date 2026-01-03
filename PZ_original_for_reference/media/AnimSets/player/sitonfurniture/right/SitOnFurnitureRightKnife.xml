@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SitOnFurnitureRight.xml">
+	<m_Name>SitOnFurnitureRightKnife</m_Name>
+	<m_AnimName>Bob_Seated_SitDown_R_1hand</m_AnimName>
+</animNode>

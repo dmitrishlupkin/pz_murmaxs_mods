@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>default</m_Name>
+	<m_AnimName>Chk_Chick_SatIdle01</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Conditions x_name="79c4e855-6394-4e44-9fe4-86ae4aa6beab">
+		<m_Name>HutchAnimation</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>sitting1</m_Value>
+	</m_Conditions>
+</animNode>

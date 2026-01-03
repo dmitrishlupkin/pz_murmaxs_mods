@@ -1,0 +1,101 @@
+module Base
+{
+    template vehicle WindowNoDoor
+    {
+        part WindowFrontLeft
+        {
+            mechanicArea = Left,
+            area = SeatFrontLeft,
+            itemType = Base.FrontWindow,
+        }
+        part WindowFrontRight
+        {
+            mechanicArea = Right,
+            area = SeatFrontRight,
+            itemType = Base.FrontWindow,
+        }
+        part WindowMiddleLeft
+        {
+            mechanicArea = Left,
+            area = SeatMiddleLeft,
+            itemType = Base.RearWindow,
+        }
+        part WindowMiddleRight
+        {
+            mechanicArea = Right,
+            area = SeatMiddleRight,
+            itemType = Base.RearWindow,
+        }
+        part WindowRearLeft
+        {
+            mechanicArea = Left,
+            area = TireRearLeft,
+            itemType = Base.RearWindow,
+        }
+        part WindowRearRight
+        {
+            mechanicArea = Right,
+            area = TireRearRight,
+            itemType = Base.RearWindow,
+        }
+        part Window*
+        {
+            category = door,
+            mechanicRequireKey = true,
+            durability = 2,
+            window
+            {
+                openable = true,
+            }
+            anim Open
+            {
+                sound = VehicleWindowHandleOpen,
+            }
+            anim Close
+            {
+                sound = VehicleWindowHandleClose,
+            }
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 300,
+                skills = Mechanics:3,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = base:screwdriver,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 300,
+                skills = Mechanics:3,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+                complete = Vehicles.UninstallComplete.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Window,
+                init = Vehicles.Init.Window,
+            }
+        }
+    }
+}

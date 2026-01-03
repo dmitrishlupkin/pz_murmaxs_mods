@@ -1,0 +1,74 @@
+module Base
+{
+    sound AnimalFoleyEatGrass
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Foley/Eat/Grass,
+        }
+    }
+
+    sound AnimalFoleyFeedFromMother
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Foley/Eat/FeedFromMother,
+        }
+    }
+
+    sound AnimalThumpGeneric
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Foley/Thump/Generic,
+        }
+    }
+
+    sound AnimalThumpMetal
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Foley/Thump/Metal,
+        }
+    }
+
+    sound AnimalThumpMetalPoleGate
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Foley/Thump/MetalPoleGate,
+        }
+    }
+
+    sound AnimalThumpChainlinkFence
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Foley/Thump/ChainlinkFence,
+        }
+    }
+
+    sound AnimalFoleyShearSheepManual
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Foley/ShearSheep/Manual,
+        }
+    }
+
+    sound AnimalFoleyShearSheepElectric
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Foley/ShearSheep/Electric,
+        }
+    }
+}

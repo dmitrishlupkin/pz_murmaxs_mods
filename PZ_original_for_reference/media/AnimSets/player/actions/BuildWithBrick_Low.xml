@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="BuildWithBrick.xml">
+	<m_Name>BuildWithBrick_Low</m_Name>
+	<m_AnimName>Bob_IdlePlaceBrick_Low</m_AnimName>
+	<m_BlendTime>0.30</m_BlendTime>
+	<m_BlendOutTime>0.40</m_BlendOutTime>
+	<m_Conditions x_name="98c7c401-835f-42b8-8c28-6ee60ef8c79b">
+		<m_Value>MakeWithBrick_Low</m_Value>
+	</m_Conditions>
+</animNode>

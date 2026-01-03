@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="FirearmEmpty.xml">
+	<m_Name>FirearmEmptySingle</m_Name>
+	<m_Conditions x_name="ecf8afa2-618c-48cb-abfe-ff7fbd639fac">
+		<m_Value>Single</m_Value>
+	</m_Conditions>
+</animNode>

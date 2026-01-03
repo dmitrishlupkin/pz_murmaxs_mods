@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="milkCowR.xml">
+	<m_Name>milkCowROut</m_Name>
+	<m_AnimName>Bob_Milking_CowR_Out</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_2DBlends>
+		<m_AnimName>Bob_Milking_CowR_Out</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_Milking_CowR_Out</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_Milking_CowR_Out</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="ef9e5d82-f9bb-40cd-9662-14c60d71267e">
+		<m_Name>milkanimalout</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="4f583a59-8655-4c29-8ab6-cf443ff5ea41">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>milkanimal=false</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="516162c7-fcbf-428b-b09c-84d7512b0f4d">
+		<m_EventName>SetVariable</m_EventName>
+		<m_TimePc>0</m_TimePc>
+		<m_ParameterValue>milkanimalout=false</m_ParameterValue>
+	</m_Events>
+</animNode>

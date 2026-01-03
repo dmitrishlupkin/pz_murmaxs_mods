@@ -1,0 +1,114 @@
+module Base
+{
+    vehicle ModernCarSmashedRear
+    {
+        template! = ModernCar,
+        model
+        {
+            file = Vehicles_ModernCarSmashedRear,
+            scale = 1.82,
+            offset = 0.0 0.1978 0.0,
+        }
+        extents = 0.9231 0.6374 2.3077,
+        physicsChassisShape = 0.9231 0.6374 2.3077,
+        centerOfMassOffset = 0.0 0.1978 0.0,
+        shadowExtents = 0.9231 2.3077,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1648,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1923,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle ModernCarSmashedRight
+    {
+        template! = ModernCar,
+        model
+        {
+            file = Vehicles_ModernCarSmashedRight,
+            scale = 1.82,
+            offset = 0.0 0.1978 0.0,
+        }
+        extents = 0.9231 0.6374 2.3077,
+        physicsChassisShape = 0.9231 0.6374 2.3077,
+        centerOfMassOffset = 0.0 0.1978 0.0,
+        shadowExtents = 0.9231 2.3077,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1648,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1923,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle ModernCarSmashedLeft
+    {
+        template! = ModernCar,
+        model
+        {
+            file = Vehicles_ModernCarSmashedLeft,
+            scale = 1.82,
+            offset = 0.0 0.1978 0.0,
+        }
+        extents = 0.9231 0.6374 2.3077,
+        physicsChassisShape = 0.9231 0.6374 2.3077,
+        centerOfMassOffset = 0.0 0.1978 0.0,
+        shadowExtents = 0.9231 2.3077,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1648,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1923,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle ModernCarSmashedFront
+    {
+        template! = ModernCar,
+        model
+        {
+            file = Vehicles_ModernCarSmashedFront,
+            scale = 1.82,
+            offset = 0.0 0.1978 0.0,
+        }
+        extents = 0.9231 0.6374 2.3077,
+        physicsChassisShape = 0.9231 0.6374 2.3077,
+        centerOfMassOffset = 0.0 0.1978 0.0,
+        shadowExtents = 0.9231 2.3077,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1648,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1923,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+}

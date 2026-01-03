@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="fromFront.xml">
+	<m_Name>smallFromFront</m_Name>
+	<m_AnimName>Zombie_StaggerBack</m_AnimName>
+	<m_DeferredBoneName>Bip01</m_DeferredBoneName>
+	<m_deferredBoneAxis>Z</m_deferredBoneAxis>
+	<m_Conditions x_name="b7f32003-3009-4a48-bdc9-254e36e74023">
+		<m_Type>LESS</m_Type>
+	</m_Conditions>
+</animNode>

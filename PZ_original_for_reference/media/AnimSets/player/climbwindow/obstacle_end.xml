@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>obstacle_end</m_Name>
+	<m_AnimName>Bob_ClimbWindowObs_End</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="75c650f6-a38b-4383-a7c0-5b2b6f5c975a">
+		<m_Name>ClimbWindowOutcome</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>obstacleEnd</m_Value>
+	</m_Conditions>
+	<m_Events x_name="2851b57b-973a-45ce-9ad6-8384e17bfac6">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>ClimbWindowEnd=true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="b8353b13-826e-4626-82c9-cda2609569cf">
+		<m_EventName>SetVariable</m_EventName>
+		<m_TimePc>0.6</m_TimePc>
+		<m_ParameterValue>ClimbWindowFinished=true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="b45e5143-3401-43af-8a34-d5e355bdc032">
+		<m_EventName>PlaySound</m_EventName>
+		<m_TimePc>0.15</m_TimePc>
+		<m_ParameterValue>LandLight</m_ParameterValue>
+	</m_Events>
+</animNode>

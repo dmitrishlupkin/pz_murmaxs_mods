@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Ext01.xml">
+	<m_Name>Shiver</m_Name>
+	<m_AnimName>Bob_EmoteShiver</m_AnimName>
+	<m_Conditions x_name="b9cf91fa-c161-41f7-94e7-7c744782f42f">
+		<m_Value>Shiver</m_Value>
+	</m_Conditions>
+	<m_Events x_name="c7d7be4e-b0f5-4850-a84f-e975e3c8b89a">
+		<m_EventName>PlayerVoiceSound</m_EventName>
+		<m_ParameterValue>FreezeShiver</m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,306 @@
+module Base
+{
+    item WristWatch_Right_ClassicBlack
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:alarmclockclothing,
+        Weight = 0.1,
+        Icon = Watch_Black,
+        AlarmSound = WatchAlarmLoop,
+        BodyLocation = base:rightwrist,
+        ClothingExtraSubmenu = RightWrist,
+        ClothingItem = WristWatch_Right_ClassicBlack,
+        ClothingItemExtra = Base.WristWatch_Left_ClassicBlack,
+        ClothingItemExtraOption = LeftWrist,
+        Cosmetic = true,
+        MetalValue = 3.0,
+        SoundRadius = 7,
+        WorldStaticModel = WatchClassicBlack,
+        Tags = base:hasmetal;base:morewhennozombies,
+    }
+
+    item WristWatch_Left_ClassicBlack
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:alarmclockclothing,
+        Weight = 0.1,
+        Icon = Watch_Black,
+        AlarmSound = WatchAlarmLoop,
+        BodyLocation = base:leftwrist,
+        ClothingExtraSubmenu = LeftWrist,
+        ClothingItem = WristWatch_Left_ClassicBlack,
+        ClothingItemExtra = Base.WristWatch_Right_ClassicBlack,
+        ClothingItemExtraOption = RightWrist,
+        Cosmetic = true,
+        MetalValue = 3.0,
+        SoundRadius = 7,
+        WorldStaticModel = WatchClassicBlack,
+        Tags = base:hasmetal;base:morewhennozombies,
+    }
+
+    item WristWatch_Right_ClassicBrown
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:alarmclockclothing,
+        Weight = 0.1,
+        Icon = Watch_Brown,
+        AlarmSound = WatchAlarmLoop,
+        BodyLocation = base:rightwrist,
+        ClothingExtraSubmenu = RightWrist,
+        ClothingItem = WristWatch_Right_ClassicBrown,
+        ClothingItemExtra = Base.WristWatch_Left_ClassicBrown,
+        ClothingItemExtraOption = LeftWrist,
+        Cosmetic = true,
+        MetalValue = 3.0,
+        SoundRadius = 7,
+        WorldStaticModel = WatchClassicBrown,
+        Tags = base:hasmetal;base:morewhennozombies,
+    }
+
+    item WristWatch_Left_ClassicBrown
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:alarmclockclothing,
+        Weight = 0.1,
+        Icon = Watch_Brown,
+        AlarmSound = WatchAlarmLoop,
+        BodyLocation = base:leftwrist,
+        ClothingExtraSubmenu = LeftWrist,
+        ClothingItem = WristWatch_Left_ClassicBrown,
+        ClothingItemExtra = Base.WristWatch_Right_ClassicBrown,
+        ClothingItemExtraOption = RightWrist,
+        Cosmetic = true,
+        MetalValue = 3.0,
+        SoundRadius = 7,
+        WorldStaticModel = WatchClassicBrown,
+        Tags = base:hasmetal;base:morewhennozombies,
+    }
+
+    item WristWatch_Right_ClassicMilitary
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:alarmclockclothing,
+        Weight = 0.1,
+        Icon = Watch_Military,
+        AlarmSound = WatchAlarmLoop,
+        BodyLocation = base:rightwrist,
+        ClothingExtraSubmenu = RightWrist,
+        ClothingItem = WristWatch_Right_ClassicMilitary,
+        ClothingItemExtra = Base.WristWatch_Left_ClassicMilitary,
+        ClothingItemExtraOption = LeftWrist,
+        Cosmetic = true,
+        MetalValue = 3.0,
+        SoundRadius = 7,
+        WorldStaticModel = WatchClassicMilitary,
+        Tags = base:hasmetal;base:morewhennozombies,
+    }
+
+    item WristWatch_Left_ClassicMilitary
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:alarmclockclothing,
+        Weight = 0.1,
+        Icon = Watch_Military,
+        AlarmSound = WatchAlarmLoop,
+        BodyLocation = base:leftwrist,
+        ClothingExtraSubmenu = LeftWrist,
+        ClothingItem = WristWatch_Left_ClassicMilitary,
+        ClothingItemExtra = Base.WristWatch_Right_ClassicMilitary,
+        ClothingItemExtraOption = RightWrist,
+        Cosmetic = true,
+        MetalValue = 3.0,
+        SoundRadius = 7,
+        WorldStaticModel = WatchClassicMilitary,
+        Tags = base:hasmetal;base:morewhennozombies,
+    }
+
+    item WristWatch_Right_ClassicGold
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:alarmclockclothing,
+        Weight = 0.1,
+        Icon = Watch_Gold,
+        AlarmSound = WatchAlarmLoop,
+        BodyLocation = base:rightwrist,
+        ClothingExtraSubmenu = RightWrist,
+        ClothingItem = WristWatch_Right_ClassicGold,
+        ClothingItemExtra = Base.WristWatch_Left_ClassicGold,
+        ClothingItemExtraOption = LeftWrist,
+        Cosmetic = true,
+        MetalValue = 3.0,
+        SoundRadius = 7,
+        WorldStaticModel = WatchClassicGold,
+        Tags = base:hasmetal;base:morewhennozombies,
+    }
+
+    item WristWatch_Left_ClassicGold
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:alarmclockclothing,
+        Weight = 0.1,
+        Icon = Watch_Gold,
+        AlarmSound = WatchAlarmLoop,
+        BodyLocation = base:leftwrist,
+        ClothingExtraSubmenu = LeftWrist,
+        ClothingItem = WristWatch_Left_ClassicGold,
+        ClothingItemExtra = Base.WristWatch_Right_ClassicGold,
+        ClothingItemExtraOption = RightWrist,
+        Cosmetic = true,
+        MetalValue = 3.0,
+        SoundRadius = 7,
+        WorldStaticModel = WatchClassicGold,
+        Tags = base:hasmetal;base:morewhennozombies,
+    }
+
+    item WristWatch_Right_DigitalBlack
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:alarmclockclothing,
+        Weight = 0.1,
+        Icon = DigitalWatch_Black,
+        AlarmSound = WatchAlarmLoop,
+        BodyLocation = base:rightwrist,
+        ClothingExtraSubmenu = RightWrist,
+        ClothingItem = WristWatch_Right_DigitalBlack,
+        ClothingItemExtra = Base.WristWatch_Left_DigitalBlack,
+        ClothingItemExtraOption = LeftWrist,
+        Cosmetic = true,
+        MetalValue = 3.0,
+        SoundRadius = 7,
+        WorldStaticModel = DigitalWatchBlack,
+        Tags = base:digital;base:hasmetal;base:morewhennozombies,
+    }
+
+    item WristWatch_Left_DigitalBlack
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:alarmclockclothing,
+        Weight = 0.1,
+        Icon = DigitalWatch_Black,
+        AlarmSound = WatchAlarmLoop,
+        BodyLocation = base:leftwrist,
+        ClothingExtraSubmenu = LeftWrist,
+        ClothingItem = WristWatch_Left_DigitalBlack,
+        ClothingItemExtra = Base.WristWatch_Right_DigitalBlack,
+        ClothingItemExtraOption = RightWrist,
+        Cosmetic = true,
+        MetalValue = 3.0,
+        SoundRadius = 7,
+        WorldStaticModel = DigitalWatchBlack,
+        Tags = base:digital;base:hasmetal;base:morewhennozombies,
+    }
+
+    item WristWatch_Right_DigitalRed
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:alarmclockclothing,
+        Weight = 0.1,
+        Icon = DigitalWatch_Red,
+        AlarmSound = WatchAlarmLoop,
+        BodyLocation = base:rightwrist,
+        ClothingExtraSubmenu = RightWrist,
+        ClothingItem = WristWatch_Right_DigitalRed,
+        ClothingItemExtra = Base.WristWatch_Left_DigitalRed,
+        ClothingItemExtraOption = LeftWrist,
+        Cosmetic = true,
+        MetalValue = 3.0,
+        SoundRadius = 7,
+        WorldStaticModel = DigitalWatchRed,
+        Tags = base:digital;base:hasmetal;base:morewhennozombies,
+    }
+
+    item WristWatch_Left_DigitalRed
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:alarmclockclothing,
+        Weight = 0.1,
+        Icon = DigitalWatch_Red,
+        AlarmSound = WatchAlarmLoop,
+        BodyLocation = base:leftwrist,
+        ClothingExtraSubmenu = LeftWrist,
+        ClothingItem = WristWatch_Left_DigitalRed,
+        ClothingItemExtra = Base.WristWatch_Right_DigitalRed,
+        ClothingItemExtraOption = RightWrist,
+        Cosmetic = true,
+        MetalValue = 3.0,
+        SoundRadius = 7,
+        WorldStaticModel = DigitalWatchRed,
+        Tags = base:digital;base:hasmetal;base:morewhennozombies,
+    }
+
+    item WristWatch_Right_DigitalDress
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:alarmclockclothing,
+        Weight = 0.1,
+        Icon = DigitalWatch_Fancy,
+        AlarmSound = WatchAlarmLoop,
+        BodyLocation = base:rightwrist,
+        ClothingExtraSubmenu = RightWrist,
+        ClothingItem = WristWatch_Right_DigitalDress,
+        ClothingItemExtra = Base.WristWatch_Left_DigitalDress,
+        ClothingItemExtraOption = LeftWrist,
+        Cosmetic = true,
+        MetalValue = 3.0,
+        SoundRadius = 7,
+        WorldStaticModel = DigitalWatchGold,
+        Tags = base:digital;base:hasmetal;base:morewhennozombies,
+    }
+
+    item WristWatch_Left_DigitalDress
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:alarmclockclothing,
+        Weight = 0.1,
+        Icon = DigitalWatch_Fancy,
+        AlarmSound = WatchAlarmLoop,
+        BodyLocation = base:leftwrist,
+        ClothingExtraSubmenu = LeftWrist,
+        ClothingItem = WristWatch_Left_DigitalDress,
+        ClothingItemExtra = Base.WristWatch_Right_DigitalDress,
+        ClothingItemExtraOption = RightWrist,
+        Cosmetic = true,
+        MetalValue = 3.0,
+        SoundRadius = 7,
+        WorldStaticModel = DigitalWatchGold,
+        Tags = base:digital;base:hasmetal;base:morewhennozombies,
+    }
+
+    item WristWatch_Right_Expensive
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:alarmclockclothing,
+        ClothingItem = WristWatch_Right_Expensive,
+        BodyLocation = base:rightwrist,
+        Icon = Watch_Expensive,
+        Weight = 0.2,
+        ClothingItemExtra = Base.WristWatch_Left_Expensive,
+        ClothingItemExtraOption = LeftWrist,
+        ClothingExtraSubmenu = RightWrist,
+        Cosmetic = true,
+        AlarmSound = WatchAlarmLoop,
+        SoundRadius = 7,
+        MetalValue = 3.0,
+        Tags = base:ignorezombiedensity;base:hasmetal;base:ismemento;base:digital,
+        WorldStaticModel = WatchExpensive,
+    }
+
+    item WristWatch_Left_Expensive
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:alarmclockclothing,
+        ClothingItem = WristWatch_Left_Expensive,
+        BodyLocation = base:leftwrist,
+        Icon = Watch_Expensive,
+        Weight = 0.2,
+        ClothingItemExtra = Base.WristWatch_Right_Expensive,
+        ClothingItemExtraOption = RightWrist,
+        ClothingExtraSubmenu = LeftWrist,
+        Cosmetic = true,
+        AlarmSound = WatchAlarmLoop,
+        SoundRadius = 7,
+        MetalValue = 3.0,
+        Tags = base:ignorezombiedensity;base:hasmetal;base:ismemento;base:digital,
+        WorldStaticModel = WatchExpensive,
+    }
+}

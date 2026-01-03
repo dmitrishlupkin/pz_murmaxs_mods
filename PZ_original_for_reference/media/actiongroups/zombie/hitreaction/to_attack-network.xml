@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>attack-network</transitionTo>
+	<conditions>
+		<eventOccurred>ActiveAnimFinishing</eventOccurred>
+		<isTrue>bAttack</isTrue>
+		<isTrue>isFacingTarget</isTrue>
+		<isFalse>bKnockedDown</isFalse>
+		<isTrue>bClient</isTrue>
+	</conditions>
+</transition>

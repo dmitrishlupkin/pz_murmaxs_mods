@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="holdingbagleft.xml">
+	<m_Name>climbfencestartbagleft</m_Name>
+	<m_AnimName>Bob_VaultOverStart_Bag</m_AnimName>
+	<m_BlendTime>0.05</m_BlendTime>
+	<m_SpeedScale>1.04</m_SpeedScale>
+	<m_Conditions x_name="c70febdc-b792-4843-af31-aa241a93b4d8">
+		<m_Name>ClimbingFence</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="c08c292d-8569-4d4d-bf86-10b2e442788c">
+		<m_Name>ClimbFenceStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="81c3f754-ca5b-4c08-8b08-66429b4017fd">
+		<m_Name>VaultOverRun</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="e5fc58e9-1783-409d-83e1-64a8ba9cac1d">
+		<m_Name>prout</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

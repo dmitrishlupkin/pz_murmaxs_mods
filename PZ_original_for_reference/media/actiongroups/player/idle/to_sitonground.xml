@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>sitonground</transitionTo>
+	<conditions>
+		<eventOccurred>EventSitOnGround</eventOccurred>
+	</conditions>
+</transition>

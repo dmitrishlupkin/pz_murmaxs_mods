@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="holdingbagright.xml">
+	<m_Name>land_gentle_bagright</m_Name>
+	<m_AnimName>Bob_FallLanding_Bag</m_AnimName>
+	<m_SpeedScale>1.00</m_SpeedScale>
+	<m_Conditions x_name="9ec94857-cbed-4648-8d1d-224e7fd8b51b">
+		<m_Name>bLandLightMask</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

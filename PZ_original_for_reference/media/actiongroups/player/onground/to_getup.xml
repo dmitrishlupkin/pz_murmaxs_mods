@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>getup</transitionTo>
+	<conditions>
+		<isFalse>bDead</isFalse>
+		<isFalse>bUnderVehicle</isFalse>
+		<lessEqual a="reanimateTimer" b="0.0000" />
+	</conditions>
+</transition>

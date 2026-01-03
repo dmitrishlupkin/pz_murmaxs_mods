@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>Shave</m_Name>
+	<m_AnimName>Bob_IdleShave</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.70</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="e9cae1b8-1ee8-47f2-9077-94a3902817b7">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Shave</m_Value>
+	</m_Conditions>
+	<m_Events x_name="a66f3f7c-6454-4984-a704-1d1d5c0b5854">
+		<m_EventName>PlayShaveSound</m_EventName>
+		<m_TimePc>0.03</m_TimePc>
+		<m_ParameterValue>ShaveRazor</m_ParameterValue>
+	</m_Events>
+</animNode>

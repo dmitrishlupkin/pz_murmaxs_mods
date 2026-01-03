@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_StoneWindowFrame
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Stone Window Frame,
+            Icon = Build_WindowframeStone,
+        }
+    }
+}

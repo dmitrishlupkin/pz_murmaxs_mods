@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Bandage.xml">
+	<m_Name>BandageLeftLeg</m_Name>
+	<m_AnimName>Bob_BandageLeftLeg</m_AnimName>
+	<m_Conditions x_name="faed86fc-40f0-4027-a924-1f9e7424d9e6">
+		<m_Name>BandageType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>LeftLeg</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights>
+		<boneName>Dummy01</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Translation_Data</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

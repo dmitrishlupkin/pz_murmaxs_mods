@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>BiteFirearm</m_Name>
+	<m_AnimName>Bob_BiteReact_Shotgun</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>1.12</m_SpeedScale>
+	<m_Conditions x_name="0c6df02d-02bb-483f-9bbc-851c53d7ce05">
+		<m_Name>hitreaction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Bite</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="bdab3fea-80ab-443a-b61e-e9ff818a2544">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>firearm</m_Value>
+	</m_Conditions>
+	<m_Events x_name="9bf4bbae-88be-4b73-a6ab-48482fd6d704">
+		<m_EventName>PushAwayZombie</m_EventName>
+		<m_TimePc>0.47</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

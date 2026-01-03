@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>death</m_Name>
+	<m_AnimName>Chk_Cock_Dead</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Events x_name="365253f0-ff13-4783-ba4e-dc840576c613">
+		<m_EventName>PlaySound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>AnimalFoleyChickenDeath</m_ParameterValue>
+	</m_Events>
+</animNode>

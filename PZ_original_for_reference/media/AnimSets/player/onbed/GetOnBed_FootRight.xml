@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>GetOnBed_FootRight</m_Name>
+	<m_AnimName>Bob_GetInBed_Right</m_AnimName>
+	<m_DeferredBoneName>Bip01</m_DeferredBoneName>
+	<m_deferredBoneAxis>Z</m_deferredBoneAxis>
+	<m_useDeferedRotation>true</m_useDeferedRotation>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="5338c057-1638-4c4a-a652-1ead396bc918">
+		<m_Name>OnBedDirection</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>FootRight</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="79e16a7d-1cd1-4c03-8484-633d36711851">
+		<m_Name>OnBedStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="8487b955-f72e-4684-82f1-c132e9af1e9b">
+		<m_EventName>OnBedStarted</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

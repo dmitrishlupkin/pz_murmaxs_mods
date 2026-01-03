@@ -1,0 +1,146 @@
+module Base
+{
+    vehicle PickUpTruckSmashedRight
+    {
+        template! = PickUpTruck,
+        model
+        {
+            file = Vehicles_PickUpTruckSmashedRight,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupmccoyshell,
+        }
+        extents = 0.8681 0.6593 2.1868,
+        physicsChassisShape = 0.8681 0.6593 2.1868,
+        centerOfMassOffset = 0.0 0.3022 0.0,
+        shadowExtents = 0.8681 2.1868,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1813,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1374,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle PickUpTruckSmashedLeft
+    {
+        template! = PickUpTruck,
+        model
+        {
+            file = Vehicles_PickUpTruckSmashedLeft,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupmccoyshell,
+        }
+        extents = 0.8681 0.6593 2.1868,
+        physicsChassisShape = 0.8681 0.6593 2.1868,
+        centerOfMassOffset = 0.0 0.3022 0.0,
+        shadowExtents = 0.8681 2.1868,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1813,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1374,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle PickUpTruckSmashedFront
+    {
+        template! = PickUpTruck,
+        model
+        {
+            file = Vehicles_PickUpTruckSmashedFront,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupmccoyshell,
+        }
+        extents = 0.8681 0.6593 2.1868,
+        physicsChassisShape = 0.8681 0.6593 2.1868,
+        centerOfMassOffset = 0.0 0.3022 0.0,
+        shadowExtents = 0.8681 2.1868,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1813,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1374,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+
+    vehicle PickUpTruckSmashedRear
+    {
+        template! = PickUpTruck,
+        model
+        {
+            file = Vehicles_PickUpTruckSmashedRear,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupmccoyshell,
+        }
+        extents = 0.8681 0.6593 2.1868,
+        physicsChassisShape = 0.8681 0.6593 2.1868,
+        centerOfMassOffset = 0.0 0.3022 0.0,
+        shadowExtents = 0.8681 2.1868,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1813,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1374,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+}

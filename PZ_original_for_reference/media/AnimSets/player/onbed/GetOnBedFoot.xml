@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>GetOnBedFoot</m_Name>
+	<m_AnimName>Bed</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="1e608b11-ceec-4bbf-b968-5911e2879631">
+		<m_Name>OnBedDirection</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Foot</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="ed15deb6-df04-4c75-89eb-7238df649b50">
+		<m_Name>OnBedStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="bbe8e043-e0a3-4db6-97a9-c7c83ff828bc">
+		<m_EventName>OnBedStarted</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

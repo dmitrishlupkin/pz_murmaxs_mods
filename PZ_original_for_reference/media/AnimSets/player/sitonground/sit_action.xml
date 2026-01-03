@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>sit_action</m_Name>
+	<m_AnimName>Bob_SitGround_ActionIdle</m_AnimName>
+	<m_BlendTime>0.30</m_BlendTime>
+	<m_SpeedScale>0.30</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="1b4945b5-37ab-4989-b6b0-2d0409fe5146">
+		<m_Name>SitGroundAnim</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Idle</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="32a702b6-c384-41ee-93b6-dc0ca9f88ae6">
+		<m_Name>hasTimedActions</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>sit_loop</m_Target>
+		<m_AnimName>Bob_SitGround_ActionToSitIdle</m_AnimName>
+		<m_speedScale>1</m_speedScale>
+	</m_Transitions>
+</animNode>

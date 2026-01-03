@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>SpearDefault</m_Name>
+	<m_Priority>4</m_Priority>
+	<m_AnimName>Bob_AttackSpear01_Hit</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.15</m_BlendTime>
+	<m_BlendOutTime>0.25</m_BlendOutTime>
+	<m_EarlyTransitionOut>true</m_EarlyTransitionOut>
+	<m_SpeedScale>CombatSpeed</m_SpeedScale>
+	<m_Conditions x_name="c3daf348-6df7-497a-8bce-1dbbc8268462">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="81857584-3615-4714-96d9-c746519b07cc">
+		<m_Name>AimFloorAnim</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="538d8826-ca18-4af6-ac76-3b652fcd1991">
+		<m_EventName>SetVariable</m_EventName>
+		<m_TimePc>0.1</m_TimePc>
+		<m_ParameterValue>ZombieHitReaction=Uppercut</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="dedb1564-6180-47d3-addf-2deff5ee15ae">
+		<m_EventName>AttackCollisionCheck</m_EventName>
+		<m_TimePc>0.25</m_TimePc>
+		<m_ParameterValue>MeleeStab</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="425b4845-3c7b-4354-951c-b1097b526058">
+		<m_EventName>BlockMovement</m_EventName>
+		<m_TimePc>0.1</m_TimePc>
+		<m_ParameterValue>TRUE</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="54cbfe29-82c8-4023-8dc1-405f359c761f">
+		<m_EventName>AttackAnim</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>TRUE</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="7aaf6958-2f3b-49d6-b951-ad673f836c87">
+		<m_EventName>AttackAnim</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>FALSE</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="2ef7bfeb-6171-4af6-a92b-016fd44bee67">
+		<m_EventName>BlockMovement</m_EventName>
+		<m_TimePc>0.5</m_TimePc>
+		<m_ParameterValue>FALSE</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="9bdf3eae-fbd0-46f0-a241-44a363649386">
+		<m_EventName>PlaySwingSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="1f4b8ada-b3d5-4db5-8c40-7082a8a95cc6">
+		<m_EventName>SetMeleeDelay</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>8</m_ParameterValue>
+	</m_Events>
+	<m_SubStateBoneWeights>
+		<boneName>Dummy01</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Translation_Data</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Spinning_Wheel
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Spinning Wheel,
+            Icon = Build_SpinningWheel,
+        }
+    }
+}

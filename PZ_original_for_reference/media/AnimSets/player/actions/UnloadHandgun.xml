@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="loadHandgun.xml">
+	<m_Name>UnloadHandgun</m_Name>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_AnimReverse>true</m_AnimReverse>
+	<m_Conditions x_name="f2ea63e8-7dfd-403a-9894-c7bcccad6565">
+		<m_Name>isUnloading</m_Name>
+	</m_Conditions>
+	<m_Events x_name="47e9bcfb-5855-40ef-8c90-6fe84cef8a9f">
+		<m_EventName>unloadFinished</m_EventName>
+	</m_Events>
+	<m_Events x_name="24d61b17-64d4-4e29-a5d4-41cb55a18b53">
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>unload</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="ae1a756a-74ec-461d-8166-63756ce75fba">
+		<m_ParameterValue>ejectAmmoStart</m_ParameterValue>
+	</m_Events>
+</animNode>

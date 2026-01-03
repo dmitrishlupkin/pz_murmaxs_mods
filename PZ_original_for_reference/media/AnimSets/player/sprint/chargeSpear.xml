@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="sprintSpear.xml">
+	<m_Name>chargeSpear</m_Name>
+	<m_AnimName>Bob_RunSpearCharge</m_AnimName>
+	<m_SpeedScale>1.00</m_SpeedScale>
+	<m_2DBlends>
+		<m_AnimName>Bob_RunSpearCharge</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_RunSpearCharge</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_RunSpearCharge</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_RunSpearCharge</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_RunSpearCharge</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="7e098ee5-d67d-4d0f-9747-08f360264c50">
+		<m_Name>beensprintingfor</m_Name>
+		<m_Type>GTR</m_Type>
+		<m_Value>70</m_Value>
+	</m_Conditions>
+	<m_Transitions />
+	<m_Transitions />
+	<m_Transitions />
+	<m_Transitions />
+	<m_Transitions>
+		<m_speedScale>1.2</m_speedScale>
+	</m_Transitions>
+	<m_Transitions>
+		<m_speedScale>1.2</m_speedScale>
+	</m_Transitions>
+	<m_Transitions />
+	<m_Transitions />
+	<m_Transitions />
+	<m_Transitions />
+	<m_Transitions />
+	<m_Transitions />
+</animNode>

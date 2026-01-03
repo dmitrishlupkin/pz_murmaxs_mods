@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="AnimalPetting.xml">
+	<m_Name>Cow</m_Name>
+	<m_AnimName>Bob_PetCow</m_AnimName>
+	<m_Scalar>AnimalSizeX</m_Scalar>
+	<m_Scalar2>AnimalSizeY</m_Scalar2>
+	<m_2DBlends referenceID="1">
+		<m_AnimName>Bob_PetCow</m_AnimName>
+		<m_XPos>0.00</m_XPos>
+		<m_YPos>0.50</m_YPos>
+		<m_SpeedScale>1.00</m_SpeedScale>
+	</m_2DBlends>
+	<m_2DBlends referenceID="2">
+		<m_AnimName>Bob_PetCow_Large</m_AnimName>
+		<m_XPos>0.00</m_XPos>
+		<m_YPos>1.00</m_YPos>
+		<m_SpeedScale>1.00</m_SpeedScale>
+	</m_2DBlends>
+	<m_2DBlends referenceID="3">
+		<m_AnimName>Bob_PetCow_Small</m_AnimName>
+		<m_XPos>0.00</m_XPos>
+		<m_YPos>0.00</m_YPos>
+		<m_SpeedScale>1.00</m_SpeedScale>
+	</m_2DBlends>
+	<m_Conditions x_name="24548a38-bac8-420f-8f17-a1f106ef68f9">
+		<m_Name>animal</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Cow</m_Value>
+	</m_Conditions>
+	<m_2DBlendTri>
+		<node1>1</node1>
+		<node2>2</node2>
+		<node3>3</node3>
+	</m_2DBlendTri>
+</animNode>

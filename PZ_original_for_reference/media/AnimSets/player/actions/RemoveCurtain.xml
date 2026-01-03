@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>RemoveCurtain</m_Name>
+	<m_AnimName>Bob_IdleLooting_High</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="9d62e84a-b33b-404f-b737-72bf2cc8d193">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>RemoveCurtain</m_Value>
+	</m_Conditions>
+</animNode>

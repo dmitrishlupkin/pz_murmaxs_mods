@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Coffee_Machine
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Coffee Machine,
+            Icon = Item_MugFulll,
+        }
+    }
+}

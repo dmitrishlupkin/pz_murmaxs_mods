@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="climbFenceStart.xml">
+	<m_Name>climbFenceStartSpear</m_Name>
+	<m_AnimName>Bob_VaultOver_Start_Bat</m_AnimName>
+	<m_Conditions x_name="ed42c18c-c891-489f-9b89-f470d50b90e2">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="UnPackSmallBag.xml">
+	<m_Name>UnPackSmallBag_Sat</m_Name>
+	<m_Conditions x_name="d470da2a-7cbc-46d6-bf2a-98f0623c2a39">
+		<m_Name>sitonground</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="672989f6-e5ab-46c9-822a-ed7d7e471806">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="5c308bc5-6cd3-4d30-b5be-240ab70dea3d">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>UnPackSmallBag</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="abc88e56-19fe-4ab8-b986-0752326ae201">
+		<m_Name>sittingonfurniture</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights>
+		<weight>0.00</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<weight>0.00</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<weight>0.50</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+</animNode>

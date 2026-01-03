@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>idle1</m_Name>
+	<m_AnimName>Piglet_Idle01</m_AnimName>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_Conditions x_name="de03697a-8a5a-42e7-a648-6bbf2d940cc2">
+		<m_Name>bMoving</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+</animNode>

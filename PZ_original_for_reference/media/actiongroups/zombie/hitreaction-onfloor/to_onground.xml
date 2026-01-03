@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>onground</transitionTo>
+		<conditionPriority>1</conditionPriority>
+		<conditions>
+			<isTrue>isRagdollFall</isTrue>
+			<isFalse>isSimulationActive</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>onground</transitionTo>
+		<conditions>
+			<eventOccurred>ActiveAnimFinishing</eventOccurred>
+		</conditions>
+	</transition>
+</transitions>

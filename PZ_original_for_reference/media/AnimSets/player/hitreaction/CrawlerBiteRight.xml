@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="CrawlerBite.xml">
+	<m_Name>CrawlerBiteRight</m_Name>
+	<m_Conditions x_name="7f35387a-a3c9-40d1-9b80-091218a99c95">
+		<m_Value>CrawlerBiteRIGHT</m_Value>
+	</m_Conditions>
+</animNode>

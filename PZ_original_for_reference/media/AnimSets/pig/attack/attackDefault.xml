@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>attackDefault</m_Name>
+	<m_AnimName>FarmPig_Attack_Bite</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Events x_name="4d1cfc3c-9a35-4172-9a2c-0c661417b947">
+		<m_EventName>AttackConnect</m_EventName>
+		<m_TimePc>0.95</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

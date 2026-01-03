@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Sneeze2.xml">
+	<m_Name>SneakSneeze2</m_Name>
+	<m_AnimName>Bob_StealthEmoteSneeze02</m_AnimName>
+	<m_Conditions x_name="a94484d9-9c6e-45b2-b501-af26712ceba7">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

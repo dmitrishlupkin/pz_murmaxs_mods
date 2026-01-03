@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>idle1</m_Name>
+	<m_AnimName>Sheep_Idle01</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScaleRandomMultiplierMin>0.70</m_SpeedScaleRandomMultiplierMin>
+	<m_SpeedScaleRandomMultiplierMax>1.20</m_SpeedScaleRandomMultiplierMax>
+	<m_Conditions x_name="5def5d52-92ea-4c41-bf1f-2ef9882c89e3">
+		<m_Name>bMoving</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+</animNode>

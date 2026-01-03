@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>gracePeriod</m_Name>
+	<m_AnimName>Zombie_Idle_Lunge</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="f13fef55-17d0-418f-8e92-57a10661ff1e">
+		<m_Name>targetSeenTime</m_Name>
+		<m_Type>LESS</m_Type>
+		<m_Value>0.5</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="d46a33f9-8424-49d5-86b8-a8ea76fffe35">
+		<m_Name>AttackType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>bite</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="8cf95dc6-ec50-491d-81a5-5317300238df">
+		<m_Name>bHasTarget</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="d6b2bca4-6995-46d7-be69-e48a35c4ce0c">
+		<m_Name>AttackOutcome</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>start</m_Value>
+	</m_Conditions>
+</animNode>

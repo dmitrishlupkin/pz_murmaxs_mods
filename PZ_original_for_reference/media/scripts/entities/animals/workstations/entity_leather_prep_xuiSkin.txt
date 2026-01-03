@@ -1,0 +1,52 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_SofteningBeam
+        {
+            LuaWindowClass = ISEntityTabWindow,
+            DisplayName = Softening Beam,
+            Icon = Build_SofteningBeam,
+        }
+    }
+
+    xuiSkin default
+    {
+        entity ES_TanninBarrel
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Tannin Barrel,
+            Icon = Build_TanningBarrel,
+        }
+    }
+
+    xuiSkin default
+    {
+        entity ES_DryingRackLarge
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Large Drying Rack,
+            Icon = Build_DryingFrameLarge,
+        }
+    }
+
+    xuiSkin default
+    {
+        entity ES_DryingRackMedium
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Medium Drying Rack,
+            Icon = Build_DryingFrameSmall,
+        }
+    }
+
+    xuiSkin default
+    {
+        entity ES_DryingRackSmall
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Small Drying Rack,
+            Icon = Build_DryingFrameSmall,
+        }
+    }
+}

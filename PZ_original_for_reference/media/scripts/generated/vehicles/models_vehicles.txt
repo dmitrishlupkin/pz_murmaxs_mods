@@ -1,0 +1,9 @@
+module Base
+{
+    model Vehicles_Wheel
+    {
+        mesh = Vehicles_Wheel,
+        texture = Vehicles/vehicle_wheel,
+        shader = vehiclewheel,
+    }
+}

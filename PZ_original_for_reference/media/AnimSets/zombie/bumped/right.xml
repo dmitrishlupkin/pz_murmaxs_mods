@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>right</m_Name>
+	<m_AnimName>Zombie_ShotShoulder_R</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="27417068-f1f6-4ff4-8300-00eca64641ec">
+		<m_Name>BumpType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>right</m_Value>
+	</m_Conditions>
+	<m_Events x_name="90094b84-ff35-41a8-b1a8-13d8f25ca28e">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>BumpAnimFinished=true</m_ParameterValue>
+	</m_Events>
+</animNode>

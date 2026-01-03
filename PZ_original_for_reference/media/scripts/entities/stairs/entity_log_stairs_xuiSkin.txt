@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Log_Stairs
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Log Stairs,
+            Icon = Build_StairsLogs,
+        }
+    }
+}

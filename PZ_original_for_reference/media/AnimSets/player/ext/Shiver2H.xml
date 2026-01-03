@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Shiver.xml">
+	<m_Name>Shiver2H</m_Name>
+	<m_AnimName>Bob_EmoteShiver2H</m_AnimName>
+	<m_Conditions x_name="8476c5a2-0161-4789-9fdd-4e63262b6d1c">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="bf85b353-f256-41d3-861c-968f6fdb662d">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="f3d69e9c-f079-4c8a-97d5-fdb92723ad1f">
+		<m_Name>Ext</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Shiver</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="c560c9ab-2958-48c7-98f4-b20949234bea">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

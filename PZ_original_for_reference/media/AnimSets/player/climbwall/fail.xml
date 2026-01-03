@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>fail</m_Name>
+	<m_AnimName>Bob_ClimbFence_Fail</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>1.20</m_SpeedScale>
+	<m_Conditions x_name="8da7ac5d-8917-4d3b-b961-845e18c69506">
+		<m_Name>ClimbFenceOutcome</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>fail</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="f10cb189-041c-4520-b167-17866b9b7082">
+		<m_Name>ClimbFenceStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="245c91e6-5208-47b4-a2e7-cc11fd866621">
+		<m_Name>ClimbFenceStruggle</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="f299ae7f-1059-4064-bfd8-7432deb92f6d">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>ClimbFenceFinished=true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="7fdfe011-c8f3-4df3-bcdc-d76c5f87d789">
+		<m_EventName>PlayFenceSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>ClimbOverFenceHighFail</m_ParameterValue>
+	</m_Events>
+</animNode>

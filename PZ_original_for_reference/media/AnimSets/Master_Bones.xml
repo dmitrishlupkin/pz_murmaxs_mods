@@ -1,0 +1,35 @@
+<KeyPairs>
+	<Key bone="Dummy01" tooltip="" />
+	<Key bone="Bip01" tooltip="" />
+	<Key bone="Bip01_Pelvis" tooltip="" />
+	<Key bone="Bip01_Spine" tooltip="" />
+	<Key bone="Bip01_Spine1" tooltip="" />
+	<Key bone="Bip01_Neck" tooltip="" />
+	<Key bone="Bip01_Head" tooltip="" />
+	<Key bone="Bip01_L_Clavicle" tooltip="" />
+	<Key bone="Bip01_L_UpperArm" tooltip="" />
+	<Key bone="Bip01_L_Forearm" tooltip="" />
+	<Key bone="Bip01_L_Hand" tooltip="" />
+	<Key bone="Bip01_L_Finger0" tooltip="" />
+	<Key bone="Bip01_L_Finger1" tooltip="" />
+	<Key bone="Bip01_R_Clavicle" tooltip="" />
+	<Key bone="Bip01_R_UpperArm" tooltip="" />
+	<Key bone="Bip01_R_Forearm" tooltip="" />
+	<Key bone="Bip01_R_Hand" tooltip="" />
+	<Key bone="Bip01_R_Finger0" tooltip="" />
+	<Key bone="Bip01_R_Finger1" tooltip="" />
+	<Key bone="Bip01_BackPack" tooltip="" />
+	<Key bone="Bip01_L_Thigh" tooltip="" />
+	<Key bone="Bip01_L_Calf" tooltip="" />
+	<Key bone="Bip01_L_Foot" tooltip="" />
+	<Key bone="Bip01_L_Toe0" tooltip="" />
+	<Key bone="Bip01_R_Thigh" tooltip="" />
+	<Key bone="Bip01_R_Calf" tooltip="" />
+	<Key bone="Bip01_R_Foot" tooltip="" />
+	<Key bone="Bip01_R_Toe0" tooltip="" />
+	<Key bone="Bip01_DressFront" tooltip="" />
+	<Key bone="Bip01_DressBack" tooltip="" />
+	<Key bone="Bip01_Prop1" tooltip="" />
+	<Key bone="Bip01_Prop2" tooltip="" />
+	<Key bone="Translation_Data" tooltip="" />
+</KeyPairs>

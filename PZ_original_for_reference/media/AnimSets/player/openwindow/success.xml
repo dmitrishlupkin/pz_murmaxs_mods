@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>success</m_Name>
+	<m_AnimName>Bob_WindowStruggleSuccess</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="5a404dec-309c-4516-8fba-83abe37e746f">
+		<m_Name>OpenWindowOutcome</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>success</m_Value>
+	</m_Conditions>
+	<m_Events x_name="7ce86a7d-916f-433e-8fa4-d045369ae6c8">
+		<m_EventName>WindowOpenSuccess</m_EventName>
+		<m_TimePc>0.45</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="82531258-7d98-4093-9835-b0db439f5a5d">
+		<m_EventName>WindowAnimLooped</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>success</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="35f5720e-827b-40b7-a811-9f743ac6c99e">
+		<m_EventName>PlaySound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>OpenWindow</m_ParameterValue>
+	</m_Events>
+</animNode>

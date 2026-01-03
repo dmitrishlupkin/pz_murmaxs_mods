@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="aim_default.xml">
+	<m_Name>aim_chainsaw</m_Name>
+	<m_AnimName>Bob_IdleAimChainsaw</m_AnimName>
+	<m_Conditions x_name="07397780-5457-4078-9853-8c1784f19dd9">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>chainsaw</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,9 @@
+<transitions>
+    <transition>
+        <transitionTo>onground</transitionTo>
+        <conditions>
+            <eventOccurred>ActiveAnimFinishing</eventOccurred>
+        </conditions>
+    </transition>
+
+</transitions>

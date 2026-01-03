@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Stick_BookcaseSmall
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Stick Small Bookcase,
+            Icon = Build_StickBookcaseSmall,
+        }
+    }
+}

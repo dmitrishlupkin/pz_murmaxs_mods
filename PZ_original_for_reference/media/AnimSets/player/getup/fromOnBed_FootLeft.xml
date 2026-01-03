@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="fromOnBed.xml">
+	<m_Name>fromOnBedLeft</m_Name>
+	<m_AnimName>Bob_GetOutBedLeft</m_AnimName>
+	<m_Conditions x_name="91e90d09-efda-4afa-8b47-3c8c0235bc44">
+		<m_Value>FootLeft</m_Value>
+	</m_Conditions>
+</animNode>

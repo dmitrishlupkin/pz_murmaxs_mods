@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="land_gentle.xml">
+	<m_Name>land_gentle_2H</m_Name>
+	<m_AnimName>Bob_FallLanding_Heavy_Bat</m_AnimName>
+	<m_Conditions x_name="aba1d435-d51e-461e-9c29-7ddea2483c13">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="UnPackSack.xml">
+	<m_Name>UnPackSack_Sat</m_Name>
+	<m_Conditions x_name="d84f1205-f4a6-4767-ac73-ef6e84ec1c77">
+		<m_Name>sitonground</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="a0c30d9b-068d-4c8b-8981-cbb90f3c104f">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="3edaabe1-45e5-4fe8-b3df-7b8da74dbdbc">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>UnPackSack</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="b9cb35d4-b774-41ff-91a3-065c65871bdf">
+		<m_Name>sittingonfurniture</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights>
+		<weight>0.00</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<weight>0.00</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<weight>0.50</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+</animNode>

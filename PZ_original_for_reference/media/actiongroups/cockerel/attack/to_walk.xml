@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>walk</transitionTo>
+	<conditions>
+		<isTrue>bMoving</isTrue>
+		<isFalse>bPathfind</isFalse>
+	</conditions>
+	<ConditionsBounds x="0.00" y="0.00" w="0.00" h="0.00" />
+	<FromPoint x="25,903.00" y="25,808.00" />
+	<ToPoint x="25,727.00" y="25,012.00" />
+</transition>

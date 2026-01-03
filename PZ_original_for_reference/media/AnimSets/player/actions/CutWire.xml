@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>CutWire</m_Name>
+	<m_AnimName>Bob_IdleMaking</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Conditions x_name="4dc54bda-4059-4331-865f-46ada7add5cb">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>CutWire</m_Value>
+	</m_Conditions>
+</animNode>

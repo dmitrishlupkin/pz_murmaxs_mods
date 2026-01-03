@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>dead</m_Name>
+	<m_AnimName>Chk_Chick_Dead</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Conditions x_name="6bf65ce8-6cea-437a-9403-bf6269f40c5a">
+		<m_Name>HutchAnimation</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>dead</m_Value>
+	</m_Conditions>
+</animNode>

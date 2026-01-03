@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>falldown-uppercut</transitionTo>
+		<conditions>
+			<compare op="==" a="hitreaction" b="Uppercut" />
+			<isTrue>bdead</isTrue>
+			<isFalse>usePhysicHitReaction</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>falldown-uppercut</transitionTo>
+		<conditions>
+			<compare op="==" a="hitreaction" b="Uppercut" />
+			<isTrue>bknockdown</isTrue>
+			<isFalse>usePhysicHitReaction</isFalse>
+		</conditions>
+	</transition>
+</transitions>

@@ -1,0 +1,36 @@
+module Base
+{
+    craftRecipe DrawRandomCard
+    {
+        timedAction = DrawCard,
+        time = 20,
+        OnCreate = RecipeCodeOnCreate.drawRandomCard,
+        AllowBatchCraft = false,
+        Tags = InHandCraft;RightClickOnly,
+        category = Miscellaneous,
+        inputs
+        {
+            item 1 [Base.CardDeck] mode:keep,
+        }
+        outputs
+        {
+        }
+    }
+
+    craftRecipe RollOneDice
+    {
+        timedAction = RollDice,
+        time = 20,
+        OnCreate = RecipeCodeOnCreate.rollDice,
+        AllowBatchCraft = false,
+        Tags = InHandCraft;RightClickOnly,
+        category = Miscellaneous,
+        inputs
+        {
+            item 1 tags[base:dice] mode:keep,
+        }
+        outputs
+        {
+        }
+    }
+}

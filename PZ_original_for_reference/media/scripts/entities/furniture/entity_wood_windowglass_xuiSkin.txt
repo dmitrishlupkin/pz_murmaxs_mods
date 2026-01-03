@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Wooden_Windows
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Wooden Windows,
+            Icon = Build_WindowBlack,
+        }
+    }
+}

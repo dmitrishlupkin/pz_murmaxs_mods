@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>hitreaction-shothead-bwd-ragdoll</transitionTo>
+	<conditions>
+		<compare op="==" a="hitreaction" b="ShotHeadBwd" />
+		<isTrue>usePhysicHitReaction</isTrue>
+		<isTrue>canRadgoll</isTrue>
+	</conditions>
+</transition>

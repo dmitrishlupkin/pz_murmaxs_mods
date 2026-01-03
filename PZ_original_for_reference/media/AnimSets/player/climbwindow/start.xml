@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>start</m_Name>
+	<m_AnimName>Bob_ClimbWindowStart</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendOutTime>0.20</m_BlendOutTime>
+	<m_SpeedScale>0.96</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="d030319d-b84d-4acf-ac41-9f893d3e2615">
+		<m_Name>ClimbWindowStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="b88d15c2-7f02-4112-a1ad-b2d032d6be44">
+		<m_Name>isTurningAround</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="2d3ce8ae-2264-4314-96c8-808259eec738">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>ClimbWindowStarted=true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="c6cabfeb-60e1-4153-b02b-5da8ae5c0e69">
+		<m_EventName>PlaySound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>ClimbThroughWindow</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="1b425365-5e32-45f4-8ce4-a2342f5bb96c">
+		<m_EventName>PlayerVoiceSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>ClimbWindow</m_ParameterValue>
+	</m_Events>
+</animNode>

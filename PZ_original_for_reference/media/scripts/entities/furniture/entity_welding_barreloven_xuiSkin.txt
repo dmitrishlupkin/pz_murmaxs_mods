@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_BarrelOven
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Metal Barrel Oven,
+            Icon = Build_BarrelOven,
+        }
+    }
+}

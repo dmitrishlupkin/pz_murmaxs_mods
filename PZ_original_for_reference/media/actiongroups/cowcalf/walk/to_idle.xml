@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>idle</transitionTo>
+	<conditions>
+		<isFalse>bMoving</isFalse>
+	</conditions>
+	<ConditionsBounds x="0.00" y="0.00" w="1.00" h="1.00" />
+	<FromPoint x="25,918.00" y="25,073.00" />
+	<ToPoint x="25,007.00" y="25,327.00" />
+</transition>

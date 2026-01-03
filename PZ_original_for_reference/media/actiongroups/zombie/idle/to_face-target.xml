@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>face-target</transitionTo>
+		<conditions>
+			<isTrue>bAttack</isTrue>
+			<isFalse>isFacingTarget</isFalse>
+			<isFalse>useRagdollVehicleCollision</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>face-target</transitionTo>
+		<conditions>
+			<isTrue>bAttackVehicle</isTrue>
+			<isFalse>isFacingTarget</isFalse>
+			<isFalse>useRagdollVehicleCollision</isFalse>
+		</conditions>
+	</transition>
+</transitions>

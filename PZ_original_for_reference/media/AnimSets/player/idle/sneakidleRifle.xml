@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="sneakIdle.xml">
+	<m_Name>sneakidleRifle</m_Name>
+	<m_AnimName>Bob_IdleSneak_Shotgun</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleSneak_Shotgun</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleSneak_Rifle_HBreathing</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleSneak_Shotgun</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="e36c0493-8b51-47c8-963a-5878db03e5c3">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>firearm</m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>sneakWalkRifle</m_Target>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>sneakRunRifle</m_Target>
+		<m_AnimName>Bob_SneakToSneakRun_Sgun</m_AnimName>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>aim_rifle</m_Target>
+		<m_AnimName>Bob_IdleToAim_Rifle</m_AnimName>
+	</m_Transitions>
+	<m_Transitions />
+	<m_Transitions />
+	<m_Transitions />
+	<m_Transitions>
+		<m_Target>IdleRifle</m_Target>
+	</m_Transitions>
+</animNode>

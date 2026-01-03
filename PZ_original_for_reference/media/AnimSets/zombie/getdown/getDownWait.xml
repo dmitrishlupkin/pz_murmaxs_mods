@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>getDownWait</m_Name>
+	<m_AnimName>Zombie_Idle</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.23</m_SpeedScale>
+	<m_Conditions x_name="046e2009-ebf7-4869-be53-960d456085fe">
+		<m_Name>stateEventDelayTimer</m_Name>
+		<m_Type>GTR</m_Type>
+		<m_Value>0</m_Value>
+	</m_Conditions>
+</animNode>

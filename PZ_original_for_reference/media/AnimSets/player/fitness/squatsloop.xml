@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="squats.xml">
+	<m_Name>squatsloop</m_Name>
+	<m_AnimName>Bob_SquatLoop</m_AnimName>
+	<m_Conditions x_name="cc0a2f14-5d03-4a98-8554-b8a71d63830c">
+		<m_Name>ExerciseStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="d578f67c-3347-4ec2-a8ff-acc8be397973">
+		<m_Name>ExerciseEnded</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="14d6dbe8-9eee-41e3-bd0d-8c4d52a82a37">
+		<m_EventName>PlayerVoiceSound</m_EventName>
+		<m_TimePc>0.3</m_TimePc>
+		<m_ParameterValue>Exercise</m_ParameterValue>
+	</m_Events>
+</animNode>

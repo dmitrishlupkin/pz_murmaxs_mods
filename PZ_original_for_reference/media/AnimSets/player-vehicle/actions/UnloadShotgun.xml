@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="loadShotgun.xml">
+	<m_Name>UnloadShotgun</m_Name>
+	<m_AnimReverse>true</m_AnimReverse>
+	<m_Conditions x_name="05011c8b-ab50-4680-a8a8-bdba707b8a6c">
+		<m_Name>isUnloading</m_Name>
+	</m_Conditions>
+	<m_Events x_name="cfccaca2-786e-449d-8001-ec0fa1fe777f">
+		<m_EventName>unloadFinished</m_EventName>
+	</m_Events>
+	<m_Events x_name="fb7bda7e-5903-45dc-a56e-94c0cdeb9a27">
+		<m_TimePc>0.1</m_TimePc>
+		<m_ParameterValue>unload</m_ParameterValue>
+	</m_Events>
+</animNode>

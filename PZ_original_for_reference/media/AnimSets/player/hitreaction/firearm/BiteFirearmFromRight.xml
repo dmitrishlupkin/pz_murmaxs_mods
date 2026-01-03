@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="BiteFirearm.xml">
+	<m_Name>BiteFirearmFromRight</m_Name>
+	<m_AnimName>Bob_BiteReact_Rifle_R</m_AnimName>
+	<m_Conditions x_name="0c6df02d-02bb-483f-9bbc-851c53d7ce05">
+		<m_Value>BiteRIGHT</m_Value>
+	</m_Conditions>
+</animNode>

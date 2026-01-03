@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="BiteHandgun.xml">
+	<m_Name>BiteHandgunFromLeft</m_Name>
+	<m_AnimName>Bob_BiteReact_Handgun_L</m_AnimName>
+	<m_Conditions x_name="4f011b68-5ab6-4b6c-a745-1cee405ff49f">
+		<m_Value>BiteLEFT</m_Value>
+	</m_Conditions>
+</animNode>

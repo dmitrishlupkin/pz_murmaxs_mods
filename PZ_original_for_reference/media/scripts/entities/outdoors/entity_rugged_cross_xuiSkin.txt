@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_RuggedCross
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Rugged Cross,
+            Icon = Build_CrossSimple,
+        }
+    }
+}

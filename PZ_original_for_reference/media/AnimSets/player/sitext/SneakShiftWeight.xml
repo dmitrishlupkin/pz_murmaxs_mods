@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="ShiftWeight.xml">
+	<m_Name>SneakShiftWeight</m_Name>
+	<m_AnimName>Bob_StealthEmoteShiftWeight</m_AnimName>
+	<m_Conditions x_name="a7b8633b-28d3-4114-8ca4-834b6a8a7270">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

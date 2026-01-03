@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="shrug.xml">
+	<m_Name>sneakshrug</m_Name>
+	<m_AnimName>Bob_StealthEmoteShrug</m_AnimName>
+	<m_Conditions x_name="e08aed3a-973a-4842-9215-dd292853bd00">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

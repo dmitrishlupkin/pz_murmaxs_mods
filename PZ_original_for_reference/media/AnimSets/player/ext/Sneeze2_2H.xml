@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Sneeze2.xml">
+	<m_Name>Sneeze2_2H</m_Name>
+	<m_AnimName>Bob_EmoteSneeze02_2H</m_AnimName>
+	<m_Conditions x_name="d59cd684-a6bf-4c05-8c62-0198e448d8e2">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="e385e7fe-7ce8-4063-983d-2f0aa337dc43">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="4525e71b-87d7-4b49-a742-3e0b5fa3bbe6">
+		<m_Name>Ext</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Sneeze2</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="f1235f64-9b35-4678-8da1-6b1c36c00e25">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

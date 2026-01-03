@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="signalok.xml">
+	<m_Name>sneaksignalok</m_Name>
+	<m_AnimName>Bob_Stealth_1H_OK</m_AnimName>
+	<m_Conditions x_name="e22f973f-e9fd-4c8a-b455-33cbce42c1a2">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

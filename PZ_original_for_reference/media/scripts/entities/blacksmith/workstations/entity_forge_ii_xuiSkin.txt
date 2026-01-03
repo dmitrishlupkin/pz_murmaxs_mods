@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Forge_II
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Forge,
+            Icon = Build_SmeltingFurnace,
+        }
+    }
+}

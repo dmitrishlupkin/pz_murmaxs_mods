@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="eating.xml">
+	<m_Name>onKnees</m_Name>
+	<m_AnimName>Zombie_IdleEating_OnKnees</m_AnimName>
+	<m_Conditions x_name="cd2dd43f-6f09-4342-a748-f777a388708f">
+		<m_Name>onknees</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

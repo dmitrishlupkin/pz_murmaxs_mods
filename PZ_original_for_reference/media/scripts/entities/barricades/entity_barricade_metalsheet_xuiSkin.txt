@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_BarricadeMetalSheet
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Metal Sheet Barricade,
+            Icon = Build_BarricadeWindow_Sheet,
+        }
+    }
+}

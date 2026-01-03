@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_MetalFloorLvl1
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Metal Floor,
+            Icon = Build_FloorTileMetal,
+        }
+    }
+}

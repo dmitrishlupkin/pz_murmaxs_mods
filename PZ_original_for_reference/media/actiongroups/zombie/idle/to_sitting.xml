@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>sitting</transitionTo>
+	<conditionPriority>1</conditionPriority>
+	<conditions>
+		<isTrue>issitting</isTrue>
+	</conditions>
+</transition>

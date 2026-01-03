@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="shout.xml">
+	<m_Name>useMegaphone</m_Name>
+	<m_AnimName>Bob_Idle_UseMegaphone</m_AnimName>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SpeedScale>0.48</m_SpeedScale>
+	<m_Conditions x_name="482c20e9-25c8-458c-897a-10de3df5d244">
+		<m_Name>NewCondition</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>anything</m_Value>
+	</m_Conditions>
+</animNode>

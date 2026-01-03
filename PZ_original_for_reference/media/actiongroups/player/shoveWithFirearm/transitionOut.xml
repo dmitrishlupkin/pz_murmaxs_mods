@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionOut>true</transitionOut>
+	<conditions>
+		<eventOccurred>ActiveAnimFinishing</eventOccurred>
+	</conditions>
+</transition>

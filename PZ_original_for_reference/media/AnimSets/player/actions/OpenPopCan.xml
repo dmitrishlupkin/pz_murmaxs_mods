@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="OpenTinCan.xml">
+	<m_Name>OpenPopCan</m_Name>
+	<m_AnimName>Bob_IdleOpenPopCan</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_Conditions x_name="b282a88f-b2fd-45f8-93cd-d9e53f7d6ba0">
+		<m_Value>OpenPopCan</m_Value>
+	</m_Conditions>
+</animNode>

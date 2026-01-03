@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="holdingumbrellaright.xml">
+	<m_Name>land_gentle_umbrellaright</m_Name>
+	<m_AnimName>Bob_FallLanding_Umberella</m_AnimName>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_BlendOutTime>0.20</m_BlendOutTime>
+	<m_SpeedScale>1.00</m_SpeedScale>
+	<m_Conditions x_name="9b9a3847-a8e6-4a5b-b790-662b6c1eba69">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

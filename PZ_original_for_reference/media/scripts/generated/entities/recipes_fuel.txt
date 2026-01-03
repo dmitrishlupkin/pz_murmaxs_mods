@@ -1,0 +1,16 @@
+module Base
+{
+    craftRecipe ThermalFuel_Charcoal
+    {
+        time = 50,
+        Tags = FuelCharcoal;RightClickOnly,
+        inputs
+        {
+            item 1 tags[base:charcoal],
+        }
+        outputs
+        {
+            energy 130 Thermal apply:onTick,
+        }
+    }
+}

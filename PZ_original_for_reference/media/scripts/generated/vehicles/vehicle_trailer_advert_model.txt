@@ -1,0 +1,10 @@
+module Base
+{
+    model Vehicles_TrailerAdvert
+    {
+        mesh = vehicles/vehicle_adverttrailer,
+        shader = vehicle_norandom_multiuv,
+        invertX = false,
+        scale = 0.01,
+    }
+}

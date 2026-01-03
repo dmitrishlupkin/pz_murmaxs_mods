@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="undecided.xml">
+	<m_Name>sneakundecided</m_Name>
+	<m_AnimName>Bob_StealthEmoteUndecided</m_AnimName>
+	<m_Conditions x_name="b01a689c-1746-444f-8af0-616149d3fcee">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

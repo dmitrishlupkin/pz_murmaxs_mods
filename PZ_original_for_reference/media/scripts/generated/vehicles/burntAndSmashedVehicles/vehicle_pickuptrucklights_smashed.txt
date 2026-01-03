@@ -1,0 +1,94 @@
+module Base
+{
+    vehicle PickUpTruckLightsSmashedRear
+    {
+        template! = PickUpTruckLights,
+        model
+        {
+            file = Vehicles_PickUpTruckLightsSmashedRear,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickuptruck_ranger,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfossoilshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfireshell,
+        }
+    }
+
+    vehicle PickUpTruckLightsSmashedRight
+    {
+        template! = PickUpTruckLights,
+        model
+        {
+            file = Vehicles_PickUpTruckLightsSmashedRight,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickuptruck_ranger,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfossoilshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfireshell,
+        }
+    }
+
+    vehicle PickUpTruckLightsSmashedLeft
+    {
+        template! = PickUpTruckLights,
+        model
+        {
+            file = Vehicles_PickUpTruckLightsSmashedLeft,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickuptruck_ranger,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfossoilshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfireshell,
+        }
+    }
+
+    vehicle PickUpTruckLightsSmashedFront
+    {
+        template! = PickUpTruckLights,
+        model
+        {
+            file = Vehicles_PickUpTruckLightsSmashedFront,
+            scale = 1.82,
+            offset = 0.0 0.3022 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickuptruck_ranger,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfossoilshell,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfireshell,
+        }
+    }
+}

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>eating</transitionTo>
+	<conditions>
+		<isTrue>isAnimalEating</isTrue>
+	</conditions>
+	<ConditionsBounds x="0.00" y="0.00" w="0.00" h="0.00" />
+	<FromPoint x="25,903.00" y="25,913.00" />
+	<ToPoint x="25,787.00" y="25,192.00" />
+</transition>

@@ -1,0 +1,18 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Composter
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Composter,
+            Icon = Build_Composter,
+        }
+        entity ES_ComposterShoddy
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Composter (Shoddy),
+            Icon = Build_Composter,
+        }
+    }
+}

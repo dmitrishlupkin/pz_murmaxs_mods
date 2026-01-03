@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>right</m_Name>
+	<m_AnimName>Zombie_Crawl02TurnR</m_AnimName>
+	<m_BlendTime>0.30</m_BlendTime>
+	<m_SpeedScale>0.64</m_SpeedScale>
+	<m_Conditions x_name="39403e98-18e7-438c-9405-bb09ea9d4e2a">
+		<m_Name>TurnDirection</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>right</m_Value>
+	</m_Conditions>
+	<m_Events x_name="d6fc561d-8319-4656-80cc-768fd2d527ff">
+		<m_EventName>TurnComplete</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>right</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="9d89cb86-e3b1-4136-a96f-68fe68ab11a4">
+		<m_EventName>TurnSome</m_EventName>
+		<m_TimePc>0.5</m_TimePc>
+		<m_ParameterValue>right</m_ParameterValue>
+	</m_Events>
+</animNode>

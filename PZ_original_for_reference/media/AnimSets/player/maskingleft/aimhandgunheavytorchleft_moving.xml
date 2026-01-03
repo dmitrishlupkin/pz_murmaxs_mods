@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="aimhandgunheavytorchleft.xml">
+	<m_Name>aimhandgunheavytorchleft_moving</m_Name>
+	<m_Conditions x_name="0e63ed07-3db7-44a4-ac74-667c069ee637">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

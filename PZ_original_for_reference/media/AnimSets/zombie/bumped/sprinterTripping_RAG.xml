@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="sprinterTripping.xml">
+	<m_Name>sprinterTripping_RAG</m_Name>
+	<m_Priority>4</m_Priority>
+	<m_isRagdoll>true</m_isRagdoll>
+	<m_ragdollStartTimeMin>0.26</m_ragdollStartTimeMin>
+	<m_ragdollStartTimeMax>0.5</m_ragdollStartTimeMax>
+	<m_deferredBoneAxis>Z</m_deferredBoneAxis>
+	<m_Conditions x_name="dfc3465c-9ec4-419c-99e0-d169eb0be0dc">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

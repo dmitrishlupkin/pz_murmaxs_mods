@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="freeze.xml">
+	<m_Name>sneakfreeze</m_Name>
+	<m_AnimName>Bob_Stealth_1H_Freeze</m_AnimName>
+	<m_Conditions x_name="f42ee9ff-1e29-4dc0-8fcf-0595fb40c4c1">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

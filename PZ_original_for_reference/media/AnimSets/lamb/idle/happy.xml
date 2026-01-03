@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>happy</m_Name>
+	<m_AnimName>SheepLamb_JumpSkip</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Conditions x_name="61ab628d-2064-4ac8-9ba1-9640ddc066cf">
+		<m_Name>idleAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>happy1</m_Value>
+	</m_Conditions>
+	<m_Events x_name="7f54e52d-43c1-485a-868a-b6bbbbfee6cd">
+		<m_EventName>idleActionEnd</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>BiteDefended</m_Name>
+	<m_AnimName>Bob_BiteDefend</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>1.12</m_SpeedScale>
+	<m_Conditions x_name="62972ad8-80d6-4dda-9a0b-3798430cce93">
+		<m_Name>hitreaction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>BiteDefended</m_Value>
+	</m_Conditions>
+	<m_Events x_name="55ae02f1-193f-4c33-bf37-550320525a20">
+		<m_EventName>Defend</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

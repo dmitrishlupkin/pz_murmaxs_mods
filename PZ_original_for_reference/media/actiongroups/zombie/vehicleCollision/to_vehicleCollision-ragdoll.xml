@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>vehicleCollision-ragdoll</transitionTo>
+		<conditions>
+			<isTrue>canRagdoll</isTrue>
+			<isTrue>bDead</isTrue>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>vehicleCollision-ragdoll</transitionTo>
+		<conditions>
+			<isTrue>canRagdoll</isTrue>
+			<isTrue>bKnockedDown</isTrue>
+		</conditions>
+	</transition>
+</transitions>

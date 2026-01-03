@@ -1,0 +1,11 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Piano
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Piano,
+        }
+    }
+}

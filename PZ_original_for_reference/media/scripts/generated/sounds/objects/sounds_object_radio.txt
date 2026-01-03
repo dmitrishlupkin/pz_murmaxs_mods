@@ -1,0 +1,50 @@
+module Base
+{
+    sound RadioButton
+    {
+        category = Object,
+        clip
+        {
+            event = Object/Radio/Toggle,
+        }
+    }
+
+    sound RadioStatic
+    {
+        category = Object,
+        clip
+        {
+            event = Object/Radio/Static,
+            distanceMax = 100,
+        }
+    }
+
+    sound RadioTalk
+    {
+        category = Object,
+        clip
+        {
+            event = Object/Radio/Program,
+            distanceMax = 100,
+        }
+    }
+
+    sound RadioZap
+    {
+        category = Object,
+        clip
+        {
+            event = Object/Radio/Zap,
+            distanceMax = 100,
+        }
+    }
+
+    sound TuneIn
+    {
+        category = Object,
+        clip
+        {
+            event = Object/Radio/TuneIn,
+        }
+    }
+}

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>idleSit</m_Name>
+	<m_AnimName>DeerStag_SittingIdle</m_AnimName>
+	<m_BlendTime>0.50</m_BlendTime>
+	<m_Conditions x_name="84bc40a8-ab08-40d8-9eb0-8a9732e9f008">
+		<m_Name>idleAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>sit</m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>idle1</m_Target>
+		<m_AnimName>DeerStag_SittingToStanding</m_AnimName>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>idle2</m_Target>
+		<m_AnimName>DeerStag_SittingToStanding</m_AnimName>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>idle3</m_Target>
+		<m_AnimName>DeerStag_SittingToStanding</m_AnimName>
+	</m_Transitions>
+	<m_Transitions>
+		<m_Target>idle</m_Target>
+		<m_AnimName>DeerStag_SittingToStanding</m_AnimName>
+	</m_Transitions>
+</animNode>

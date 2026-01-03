@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>idleSit</m_Name>
+	<m_AnimName>SheepLamb_Sit_Idle01</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_Conditions x_name="5b934052-3324-46f6-8087-1c219c143e88">
+		<m_Name>idleAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>sit</m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>idle1</m_Target>
+		<m_AnimName>SheepLamb_Sit_Out</m_AnimName>
+	</m_Transitions>
+</animNode>

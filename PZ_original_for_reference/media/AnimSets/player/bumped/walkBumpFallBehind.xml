@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="bumpFall.xml">
+	<m_Name>walkBumpFallBehind</m_Name>
+	<m_AnimName>Bob_WalkStumble</m_AnimName>
+	<m_Conditions x_name="df3e2421-32fa-412f-b473-e5e6ae36fbf9">
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="2c248099-fe78-4ff0-a519-6cdd2a3fa4b4">
+		<m_Name>BumpFallType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>pushedBehind</m_Value>
+	</m_Conditions>
+</animNode>

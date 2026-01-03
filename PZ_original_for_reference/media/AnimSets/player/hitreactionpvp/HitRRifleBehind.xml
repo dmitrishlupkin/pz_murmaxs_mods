@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="HitRRifle.xml">
+	<m_Name>HitRRifleBehind</m_Name>
+	<m_AnimName>Bob_HitReactBehindRifle_01</m_AnimName>
+	<m_Conditions x_name="722996be-c16c-4f97-86b4-db179171d1a7">
+		<m_Name>FromBehind</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

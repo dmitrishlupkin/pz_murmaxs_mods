@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="default.xml">
+	<m_Name>EatingBodyFromBehind</m_Name>
+	<m_AnimName>Zombie_EatingToIdle_FloorFront</m_AnimName>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_SpeedScale>0.90</m_SpeedScale>
+	<m_Conditions x_name="b246f870-0630-42ba-84bc-7fc649d3c6a4">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="04a9a961-24f3-4e11-9755-eed8dabece29">
+		<m_ParameterValue>true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="38d36e87-ef88-4705-b615-ade7400850b9">
+		<m_EventName>FallOnFront</m_EventName>
+		<m_TimePc>0.5</m_TimePc>
+		<m_ParameterValue>true</m_ParameterValue>
+	</m_Events>
+</animNode>

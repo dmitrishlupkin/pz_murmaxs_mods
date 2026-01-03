@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>onground-ragdoll</transitionTo>
+	<conditions>
+		<isTrue>bDead</isTrue>
+		<isTrue>bOnFloor</isTrue>
+		<isTrue>isRagdoll</isTrue>
+	</conditions>
+</transition>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>IdleToEat</m_Name>
+	<m_AnimName>Zombie_IdleToEating</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.50</m_BlendTime>
+	<m_SpeedScale>0.56</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Events x_name="93c61dc8-6594-4037-9f0f-53ed69f28ff4">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>EatingStarted=true</m_ParameterValue>
+	</m_Events>
+</animNode>

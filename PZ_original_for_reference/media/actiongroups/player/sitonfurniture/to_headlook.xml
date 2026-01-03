@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>headlook</transitionTo>
+	<asSubstate>true</asSubstate>
+	<conditions>
+		<isTrue>bHeadLookAround</isTrue>
+	</conditions>
+</transition>

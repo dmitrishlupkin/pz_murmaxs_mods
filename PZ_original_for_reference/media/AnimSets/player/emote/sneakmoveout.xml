@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="moveout.xml">
+	<m_Name>sneakmoveout</m_Name>
+	<m_AnimName>Bob_Stealth_1H_MoveOut</m_AnimName>
+	<m_Conditions x_name="4269a997-bb00-407e-92a6-ca9ce2c8f4e4">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

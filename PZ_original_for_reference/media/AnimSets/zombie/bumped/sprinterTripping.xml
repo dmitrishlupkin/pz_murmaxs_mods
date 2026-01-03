@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>sprinterTripping</m_Name>
+	<m_AnimName>Bob_RunStumble</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.35</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="bdc67b25-d09e-4068-ad1e-0c90a363ac93">
+		<m_Name>BumpType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>trippingFromSprint</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="dfc3465c-9ec4-419c-99e0-d169eb0be0dc">
+		<m_Name>canRagdoll</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="9bd99aaa-049e-470e-9966-020a0f570f91">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>SprinterTripped=TRUE</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="5bb3381f-34ce-40b2-900b-09de0078f186">
+		<m_EventName>FallOnFront</m_EventName>
+		<m_TimePc>0.25</m_TimePc>
+		<m_ParameterValue>TRUE</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="5e79a7b3-95ea-4d96-827b-02228d86e3ff">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>BumpAnimFinished=true</m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_ChurnBucket
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Churn Bucket,
+            Icon = Build_ButterChurn,
+        }
+    }
+}

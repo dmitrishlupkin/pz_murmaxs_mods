@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="default.xml">
+	<m_Name>lungeTurnRight90</m_Name>
+	<m_AnimName>Zombie_Idle_LungeTurn90R</m_AnimName>
+	<m_DeferredBoneName>Bip01</m_DeferredBoneName>
+	<m_deferredBoneAxis>Z</m_deferredBoneAxis>
+	<m_useDeferedRotation>true</m_useDeferedRotation>
+	<m_SpeedScale>1.20</m_SpeedScale>
+	<m_Conditions x_name="cb04417c-8aa6-4c42-90d1-1636ba46f4a7">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="6c4e3023-7f3e-4821-adac-4cbfb9da9feb">
+		<m_Name>targettwist</m_Name>
+		<m_Type>GTR</m_Type>
+		<m_Value>0</m_Value>
+	</m_Conditions>
+</animNode>

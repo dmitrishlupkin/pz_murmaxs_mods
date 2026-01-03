@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="WipeLegL.xml">
+	<m_Name>WipeLegL2H</m_Name>
+	<m_AnimName>Bob_EmoteWipeLeftLeg2H</m_AnimName>
+	<m_Conditions x_name="08be4950-38be-40a5-b529-c91c7f6d301e">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="49438ccf-2a77-4137-a3b9-8c7ccf12f083">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="633d9375-d9bb-48ca-a408-bb004482fe04">
+		<m_Name>Ext</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>WipeLegL</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="840be32b-e69a-4f0b-adfe-ada8d43c42b0">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

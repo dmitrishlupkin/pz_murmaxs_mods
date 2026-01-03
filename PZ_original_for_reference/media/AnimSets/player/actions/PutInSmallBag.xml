@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="PackSack.xml">
+	<m_Name>PutInSmallBag</m_Name>
+	<m_AnimName>Bob_IdlePackSmallBag</m_AnimName>
+	<m_Conditions x_name="037582b9-600b-4137-86d9-bc8be2e64a85">
+		<m_Value>PutInSmallBag</m_Value>
+	</m_Conditions>
+</animNode>

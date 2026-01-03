@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="RackRifleNoMag.xml">
+	<m_Name>RackRifleAimNoMag</m_Name>
+	<m_Conditions x_name="fe456232-dc9f-4377-90d5-ad09d74bbf46">
+		<m_Name>RackAiming</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

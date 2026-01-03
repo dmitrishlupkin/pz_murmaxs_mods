@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>hitreaction</transitionTo>
+	<conditions>
+		<isTrue>hashitreaction</isTrue>
+		<compare op="==" a="hitreaction" b="Floor" />
+		<isFalse>bDead</isFalse>
+	</conditions>
+</transition>

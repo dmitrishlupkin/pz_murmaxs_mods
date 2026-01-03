@@ -1,0 +1,135 @@
+module Base
+{
+    vehicle CarLightsRanger
+    {
+        zombieType = Ranger,
+        specialKeyRing = Base.KeyRing_EagleFlag;Base.KeyRing_PineTree,
+        template! = CarLights,
+        carMechanicsOverlay = Base.CarLightsPolice,
+        model
+        {
+            file = Vehicles_CarLights_NoRandom,
+            scale = 1.82,
+            offset = 0.0 0.2692 0.0,
+        }
+        skin
+        {
+            texture = Vehicles/vehicle_carrangershell,
+        }
+        template = PassengerSeat4,
+        template = CarLightsCollision,
+        passenger FrontLeft
+        {
+            position inside
+            {
+                offset = 0.1813 -0.1264 0.0824,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = 0.5714 -0.4341 0.1374,
+                rotate = 0.0 0.0 0.0,
+                area = SeatFrontLeft,
+            }
+            switchSeat RearLeft
+            {
+            }
+            switchSeat RearRight
+            {
+            }
+        }
+        passenger FrontRight
+        {
+            position inside
+            {
+                offset = -0.1813 -0.1264 0.0824,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = -0.5714 -0.4341 0.1374,
+                rotate = 0.0 0.0 0.0,
+                area = SeatFrontRight,
+            }
+            switchSeat RearLeft
+            {
+            }
+            switchSeat RearRight
+            {
+            }
+        }
+        passenger RearLeft
+        {
+            position inside
+            {
+                offset = 0.1813 -0.1264 -0.3187,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = 0.5714 -0.4341 -0.3187,
+                rotate = 0.0 0.0 0.0,
+                area = SeatRearLeft,
+            }
+            switchSeat FrontLeft
+            {
+            }
+            switchSeat FrontRight
+            {
+            }
+        }
+        passenger RearRight
+        {
+            position inside
+            {
+                offset = -0.1813 -0.1264 -0.3187,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = -0.5714 -0.4341 -0.3187,
+                rotate = 0.0 0.0 0.0,
+                area = SeatRearRight,
+            }
+            switchSeat FrontLeft
+            {
+            }
+            switchSeat FrontRight
+            {
+            }
+        }
+        area SeatFrontLeft
+        {
+            xywh = 0.6703 0.1538 0.4725 0.4725,
+        }
+        area SeatFrontRight
+        {
+            xywh = -0.6703 0.1538 0.4725 0.4725,
+        }
+        area SeatRearLeft
+        {
+            xywh = 0.6703 -0.3187 0.4725 0.4725,
+        }
+        area SeatRearRight
+        {
+            xywh = -0.6703 -0.3187 0.4725 0.4725,
+        }
+        extents = 0.8901 0.6264 2.6044,
+        physicsChassisShape = 0.8901 0.6264 2.6044,
+        centerOfMassOffset = 0.0 0.2692 0.0,
+        shadowExtents = 0.8901 2.6044,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.3462,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.3297,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+}

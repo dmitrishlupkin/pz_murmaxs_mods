@@ -1,0 +1,10 @@
+module Base
+{
+    model Vehicles_ModernCar02
+    {
+        mesh = vehicles/Vehicles_ModernCar02,
+        shader = vehicle_multiuv,
+        invertX = false,
+        scale = 0.008,
+    }
+}

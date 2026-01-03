@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="defaultpet.xml">
+	<m_Name>petlamb</m_Name>
+	<m_AnimName>Bob_PetLamb</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetLamb_Large</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetLamb</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetLamb_Small</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="3186c49e-5de2-4104-97ad-3faabc5cc7db">
+		<m_Name>animal</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>lamb</m_Value>
+	</m_Conditions>
+</animNode>

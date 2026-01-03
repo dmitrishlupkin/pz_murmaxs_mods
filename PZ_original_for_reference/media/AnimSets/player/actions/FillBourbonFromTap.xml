@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="FillBottleFromTap.xml">
+	<m_Name>FillBourbonFromTap</m_Name>
+	<m_AnimName>Bob_IdleFill_BourbonBottle</m_AnimName>
+	<m_Conditions x_name="a4d70dc6-8cf4-4801-8b84-0457f645061b">
+		<m_Name>PourType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Bourbon</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_LogGate
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Wide Log Gate,
+            Icon = Build_FenceOpenLogs,
+        }
+    }
+}

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="holdingAngleTorchLeft.xml">
+	<m_Name>aimhandgunangletorchleft</m_Name>
+	<m_AnimName>Bob_IdleAimHgun_AngleTorch</m_AnimName>
+	<m_Conditions x_name="a73953a4-e0d0-44c1-a7f4-0ee249ccb9e2">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>handgun</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="99b21ec9-6767-4318-910c-80935d3b7186">
+		<m_Name>Aim</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="9fc0edff-b20a-4e9b-b60e-15906cbecc2c">
+		<m_Name>ismoving</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="91ff0484-ef5d-4f3b-bb65-34759af37d57">
+		<m_Name>bdoshove</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="3da9fa1d-380b-4871-bb7d-dabad357ffb4">
+		<m_Name>bLandLightMask</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+</animNode>

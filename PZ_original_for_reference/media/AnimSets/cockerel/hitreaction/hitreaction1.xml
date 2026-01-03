@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>hitreaction1</m_Name>
+	<m_AnimName>Chk_Cock_HitReaction</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.25</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Events x_name="3054e77a-6658-4c86-b73f-0b0fc7000687">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>pain</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="88a0ad06-1f01-4380-8e42-72217288ed4d">
+		<m_EventName>PlaySound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>AnimalFoleyChickenPain</m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isFalse>bAttackVehicle</isFalse>
+			<isFalse>useRagdollVehicleCollision</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isTrue>bDead</isTrue>
+			<isFalse>useRagdollVehicleCollision</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isFalse>bHasTarget</isFalse>
+			<isFalse>useRagdollVehicleCollision</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isTrue>bMoving</isTrue>
+			<isFalse>useRagdollVehicleCollision</isFalse>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>idle</transitionTo>
+		<conditions>
+			<isTrue>bPathfind</isTrue>
+			<isFalse>useRagdollVehicleCollision</isFalse>
+		</conditions>
+	</transition>
+</transitions>

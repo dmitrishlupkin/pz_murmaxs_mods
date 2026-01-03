@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Ext01.xml">
+	<m_Name>Ext01_Spear</m_Name>
+	<m_AnimName>Bob_IdleBatExt01</m_AnimName>
+	<m_Conditions x_name="36b97504-4c88-4b1b-bd29-f9f350c85ad9">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

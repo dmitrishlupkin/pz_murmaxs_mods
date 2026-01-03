@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="holdingumbrellaright.xml">
+	<m_Name>holdingumbrellarightSneak</m_Name>
+	<m_AnimName>Bob_IdleSneakUmbrella</m_AnimName>
+	<m_Conditions x_name="9b9a3847-a8e6-4a5b-b790-662b6c1eba69">
+		<m_Name>sneaking</m_Name>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="158d47b1-8a92-46e4-8d60-2502264dd558">
+		<m_Name>Aim</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="b1d1dc47-b5b4-4ada-859d-dbb7bc9cd29b">
+		<m_Name>bLandLightMask</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+</animNode>

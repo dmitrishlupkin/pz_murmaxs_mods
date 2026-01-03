@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>sit_fishingPickup</m_Name>
+	<m_AnimName>Bob_Sit_FishingPickup_Trash</m_AnimName>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SpeedScale>1</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="0b3f2f56-c9fd-4ec3-a690-eddc03712812">
+		<m_Name>FishingStage</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>PickUpTrash</m_Value>
+	</m_Conditions>
+</animNode>

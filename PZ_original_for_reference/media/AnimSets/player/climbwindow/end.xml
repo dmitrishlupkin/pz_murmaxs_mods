@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>end</m_Name>
+	<m_AnimName>Bob_ClimbWindowEnd</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SpeedScale>0.96</m_SpeedScale>
+	<m_Conditions x_name="92aa69a8-f9f1-4c99-b94d-4ac93d4f99a2">
+		<m_Name>ClimbWindowStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="40727560-c40a-41c8-bef8-d1c7bc56d7dc">
+		<m_Name>ClimbWindowOutcome</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>success</m_Value>
+	</m_Conditions>
+	<m_Events x_name="4dc9c5d4-8bac-44da-8156-905e6c5bc4e3">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>ClimbWindowEnd=true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="8b559fd4-3750-4deb-8ddc-aebe39cd8bf2">
+		<m_EventName>SetVariable</m_EventName>
+		<m_TimePc>0.6</m_TimePc>
+		<m_ParameterValue>ClimbWindowFinished=true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="76d13b18-e860-4a27-bb48-86e74d48d937">
+		<m_EventName>PlaySound</m_EventName>
+		<m_TimePc>0.1</m_TimePc>
+		<m_ParameterValue>LandLight</m_ParameterValue>
+	</m_Events>
+</animNode>

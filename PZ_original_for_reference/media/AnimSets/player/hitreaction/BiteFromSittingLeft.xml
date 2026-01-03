@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="BiteFromSitting.xml">
+	<m_Name>BiteFromSittingLeft</m_Name>
+	<m_Conditions x_name="e42035eb-3804-4be3-a803-2807dbffec85">
+		<m_Value>BiteLEFT</m_Value>
+	</m_Conditions>
+</animNode>

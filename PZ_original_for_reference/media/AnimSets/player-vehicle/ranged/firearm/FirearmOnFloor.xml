@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="FirearmDefault.xml">
+	<m_Name>FirearmOnFloor</m_Name>
+	<m_AnimName>Bob_AttackFloorRifle</m_AnimName>
+	<m_Conditions x_name="2ebdf2db-87ac-4f84-aada-605750764206">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="LoadRifleNoMag.xml">
+	<m_Name>UnloadRifleNoMag</m_Name>
+	<m_Conditions x_name="34282c1f-0fae-45a3-8223-ca192b25ff89">
+		<m_Name>isUnloading</m_Name>
+	</m_Conditions>
+	<m_Events x_name="019d867e-6acb-4da9-84fe-5b58ae760834">
+		<m_EventName>unloadFinished</m_EventName>
+	</m_Events>
+	<m_Events x_name="87abd704-ffb8-45dc-8804-7710c712a33a">
+		<m_ParameterValue>unload</m_ParameterValue>
+	</m_Events>
+</animNode>

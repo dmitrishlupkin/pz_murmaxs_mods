@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_BrickWallLvl2
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Brick Wall (Good),
+            Icon = Build_WallBrick,
+        }
+    }
+}

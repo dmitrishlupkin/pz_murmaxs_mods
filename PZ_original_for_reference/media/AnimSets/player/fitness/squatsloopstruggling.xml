@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="squatsloop.xml">
+	<m_Name>squatsloopstruggling</m_Name>
+	<m_AnimName>Bob_SquatLoop02</m_AnimName>
+	<m_Conditions x_name="72ad0061-91a6-4ec2-a9df-51476c854968">
+		<m_Name>FitnessStruggle</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="14d6dbe8-9eee-41e3-bd0d-8c4d52a82a37">
+		<m_TimePc>0.35</m_TimePc>
+	</m_Events>
+</animNode>

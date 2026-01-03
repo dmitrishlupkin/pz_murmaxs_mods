@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="dumbbellpress.xml">
+	<m_Name>dumbbellpressstruggling</m_Name>
+	<m_AnimName>Bob_Idle_DumbbellPress_RHand02</m_AnimName>
+	<m_Conditions x_name="47495f15-7814-4c15-a758-0cfa8e8f50d3">
+		<m_Name>FitnessStruggle</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="f3fddafb-42cd-4e71-a82a-6a9bf2ac7bd7">
+		<m_EventName>PlayerVoiceSound</m_EventName>
+		<m_TimePc>0.2</m_TimePc>
+		<m_ParameterValue>Exercise</m_ParameterValue>
+	</m_Events>
+</animNode>

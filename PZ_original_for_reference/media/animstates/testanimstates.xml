@@ -1,0 +1,1281 @@
+<AnimData>
+    <Blends>
+        <MoveDelta>
+            <Type>InverseExponential</Type>
+            <Increase Multiplier="MoveSpeedChangeDelta">0.185</Increase>
+            <Decrease Multiplier="MoveSpeedChangeDelta">0.125</Decrease>
+        </MoveDelta>
+        <DeltaX>
+            <Type>Linear</Type>
+            <Increase Multiplier="MoveSpeedChangeDelta">0.285</Increase>
+            <Decrease Multiplier="MoveSpeedChangeDelta">0.225</Decrease>
+        </DeltaX>
+        <DeltaY>
+            <Type>Linear</Type>
+            <Increase Multiplier="MoveSpeedChangeDelta">0.285</Increase>
+            <Decrease Multiplier="MoveSpeedChangeDelta">0.225</Decrease>
+        </DeltaY>
+        <TurnAmount>
+            <Type>InverseExponential</Type>
+            <Increase Multiplier="MoveSpeedChangeDelta">1.0</Increase>
+            <Decrease Multiplier="MoveSpeedChangeDelta">1.0</Decrease>
+        </TurnAmount>
+    </Blends>
+    <AnimStates>
+        <BaseAnim>
+            <Commands>
+                <SetValue name="TurnDelta" value="1.5"/>
+                <PlayAnim Anim="Bob_Idle" Repeat="-1" SpeedDelta="0.3" BlendTime="0.3" />
+            </Commands>
+            <Out>
+            </Out>
+        </BaseAnim>
+        <LootingHigh>
+            <Commands>
+                <PlayAnim Anim="Bob_IdleLooting_High" Repeat="-1" SpeedDelta="0.3" BlendTime="0.3" />
+            </Commands>
+            <Out>
+                <NormalMovement IsLootingHigh="false"/>
+            </Out>
+        </LootingHigh>
+        <LootingLow>
+            <Commands>
+                <PlayAnim Anim="Bob_IdleLooting_Low" Repeat="-1" SpeedDelta="0.3" BlendTime="0.3" />
+            </Commands>
+            <Out>
+                <NormalMovement IsLootingLow="false"/>
+            </Out>
+        </LootingLow>
+        <ZombieToOnFloor>
+            <Commands>
+                <PlayAnim Anim="Zombie_Death" Repeat="0" SpeedDelta="0.8" CanCancel="false" BlendTime="0.0" />
+            </Commands>
+            <Out>
+                <ZombieToCrawl/>
+            </Out>
+        </ZombieToOnFloor>
+        <ZombieToCrawl>
+            <Commands>
+                <PlayAnim Anim="Zombie_DeadToCrawl" Repeat="0" SpeedDelta="0.4" CanCancel="false" BlendTime="0.0" />
+            </Commands>
+            <Out>
+                <ZombieOnFloor/>
+            </Out>
+        </ZombieToCrawl>
+
+        <ZombieOnFloor>
+            <Commands>
+                <PlayAnim Anim="Zombie_Crawl" Repeat="-1"  SpeedDelta="0.4"  BlendTime="0.0"/>
+            </Commands>
+            <Out>
+                <ZombieWalk IsZombie="true"/>
+            </Out>
+        </ZombieOnFloor>
+        <ClimbWindow>
+            <AnimStates>
+              <Default>
+                <Commands>
+                    <SetCollision active="false"/>
+                    <PlayAnim Anim="Bob_ClimbWindow" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.0"/>
+                    <SetCollision active="true"/>
+                    <SetValue name="IsOpeningWindow" value="false"/>
+                </Commands>
+                <Out>
+                    <NormalMovement OutBlend="0.5"/>
+                </Out>
+              </Default>
+            </AnimStates>
+        </ClimbWindow>
+        <ClimbWindowObstacle>
+            <Commands>
+                <SetCollision active="false"/>
+                <PlayAnim Anim="Bob_ClimbWindowStart" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.0"/>
+                <PlayAnim Anim="Bob_ClimbWindowObstacle" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.0"/>
+                <SetCollision active="true"/>
+                <SetValue name="IsOpeningWindow" value="false"/>
+            </Commands>
+            <Out>
+                <NormalMovement OutBlend="0.2"/>
+            </Out>
+        </ClimbWindowObstacle>
+        <ClimbFenceRun>
+            <Commands>
+                <SetCollision active="false"/>
+                <PlayAnim Anim="Bob_ValultOver_Run" Repeat="0" CanCancel="false" SpeedDelta="0.8"  BlendTime="0.0"/>
+                <SetValue name="IsClimbingFence" value="false"/>
+                <SetCollision active="true"/>
+            </Commands>
+            <Out>
+                <NormalMovement OutBlend="0.2">
+                </NormalMovement>
+            </Out>
+        </ClimbFenceRun>
+
+        <ClimbFenceRunFail>
+            <Commands>
+                <SetCollision active="false"/>
+                <SetValue name="TurnDelta" value="0.0"/>
+                <PlayAnim Anim="Bob_ValultOver_RunFail" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendOutUpper="0.1" BlendTime="0.2">
+                </PlayAnim>
+                <SetCollision active="true"/>
+                <SetValue name="IsOnFloor" value="true"/>
+                <PlayAnim Anim="Bob_ScrambleFloorIdle" Repeat="0"  CanCancel="false" SpeedDelta="1.0"  BlendTime="0.2"/>
+                <PlayAnim Anim="Bob_ScrambleFloorIdle" Repeat="0"  CanCancel="false" SpeedDelta="1.0"  BlendTime="0.2"/>
+                <PlayAnim Anim="Bob_ScrambleFloorToIdle" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.2"/>
+                <SetValue name="TurnDelta" value="0.9"/>
+                <SetValue name="IsClimbingFence" value="false"/>
+                <SetValue name="MoveDelta" value="0"/>
+                <SetValue name="IsOnFloor" value="false"/>
+
+            </Commands>
+            <Out>
+                <NormalMovement OutBlend="0.2">
+                    <Commands>
+                        <SetValue name="IsClimbingFence" value="false"/>
+                        <SetValue name="MoveDelta" value="0" ForceBlend="true"/>
+                        <SetValue name="MoveDelta" value="0" ForceBlend="false"/>
+                    </Commands>
+                </NormalMovement>
+            </Out>
+        </ClimbFenceRunFail>
+        <ZombieThump>
+            <Commands>
+                <PlayAnim Anim="Zombie_Door" Repeat="-1" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.2"/>
+            </Commands>
+            <Out>
+                <ZombieWalk Thumping="false">
+                </ZombieWalk>
+                <ClimbWindowZombieObstacle IsOpeningWindow="true" IsCounter="true"/>
+                <ClimbWindowZombie IsOpeningWindow="true" />
+
+            </Out>
+        </ZombieThump>
+        <ClimbWindowZombie>
+             <Commands>
+                <SetCollision active="false"/>
+                <PlayAnim Anim="Bob_ClimbWindowStart" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.0"/>
+                <PlayAnim Anim="Bob_ClimbWindowObstacle" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.0"/>
+                <SetCollision active="true"/>
+                <SetValue name="IsOpeningWindow" value="false"/>
+            </Commands>
+            <Out>
+                <ZombieWalk IsOpeningWindow="false">
+                </ZombieWalk>
+            </Out>
+        </ClimbWindowZombie>
+        <ClimbWindowZombieObstacle>
+            <Commands>
+                <SetCollision active="false"/>
+                <PlayAnim Anim="Zombie_ClimbWindow" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.0"/>
+                <SetCollision active="true"/>
+                <SetValue name="IsOpeningWindow" value="false"/>
+            </Commands>
+            <Out>
+                <ZombieWalk IsOpeningWindow="false">
+                </ZombieWalk>
+            </Out>
+        </ClimbWindowZombieObstacle>
+        <ZombieStaggerBack>
+            <Commands>
+                <PlayAnim Anim="Zombie_StaggerBack" Repeat="0" CanCancel="true" SpeedDelta="1.0"  BlendTime="0.2"/>
+            </Commands>
+            <Out>
+                <ZombieWalk StaggerBack="false">
+                </ZombieWalk>
+            </Out>
+        </ZombieStaggerBack>
+        <ClimbFenceZombie>
+            <Commands>
+                <SetCollision active="false"/>
+                <PlayAnim Anim="Zombie_ClimbLowWall" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendOutUpper="0.1"  BlendTime="0.2"/>
+                <SetValue name="IsClimbingFence" value="false"/>
+                <SetCollision active="true"/>
+            </Commands>
+            <Out>
+                <ZombieWalk  OutBlend="0.2">
+                </ZombieWalk>
+            </Out>
+        </ClimbFenceZombie>
+        <ClimbFence>
+            <Commands>
+                <SetCollision active="false"/>
+                <PlayAnim Anim="Bob_VaultOver" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendOutUpper="0.1"  BlendTime="0.0"/>
+                <SetValue name="IsClimbingFence" value="false"/>
+                <SetCollision active="true"/>
+            </Commands>
+            <Out>
+                <NormalMovement OutBlend="0.2">
+                </NormalMovement>
+            </Out>
+        </ClimbFence>
+
+        <ClimbFenceRun>
+            <Commands>
+                <SetCollision active="false"/>
+                <PlayAnim Anim="Bob_ValultOver_Run" Repeat="0" CanCancel="false" SpeedDelta="0.8"  BlendTime="0.2"/>
+                <SetValue name="IsClimbingFence" value="false"/>
+                <SetCollision active="true"/>
+            </Commands>
+            <Out>
+                <Running OutBlend="0.1">
+                    <SetValue name="IsClimbingFence" value="false"/>
+                </Running>
+            </Out>
+        </ClimbFenceRun>
+        <ClimbFenceSprint>
+            <Commands>
+                <SetCollision active="false"/>
+                <PlayAnim Anim="Bob_ValultOver_Sprint" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.2"/>
+                <SetValue name="IsClimbingFence" value="false"/>
+                <SetCollision active="true"/>
+            </Commands>
+            <Out>
+                <Sprinting OutBlend="0.03">
+                    <SetValue name="IsClimbingFence" value="false"/>
+                </Sprinting>
+            </Out>
+        </ClimbFenceSprint>
+        <ClimbFenceFall>
+            <Commands>
+                <SetCollision active="false"/>
+                <SetValue name="TurnDelta" value="0.0"/>
+                <PlayAnim Anim="Bob_ValultOver_SprintFail" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendOutUpper="0.1" BlendTime="0.0">
+                    <Event TimeDelta="0.1" Type="EmitEffect" Effect="bloodSplash"/>
+                 </PlayAnim>
+                <SetCollision active="true"/>
+                <SetValue name="IsOnFloor" value="true"/>
+
+                <PlayAnim Anim="Bob_ScrambleFloorIdle" Repeat="0"  CanCancel="false" SpeedDelta="1.0"  BlendTime="0.7"/>
+                <PlayAnim Anim="Bob_ScrambleFloorIdle" Repeat="0"  CanCancel="false" SpeedDelta="1.0"  BlendTime="0.0"/>
+                <PlayAnim Anim="Bob_ScrambleFloorIdle" Repeat="0"  CanCancel="false" SpeedDelta="1.0"  BlendTime="0.0"/>
+                <PlayAnim Anim="Bob_ScrambleFloorToIdle" Repeat="0"  CanCancel="false" SpeedDelta="1.0"  BlendTime="0.1"/>
+                <SetValue name="TurnDelta" value="0.9"/>
+                <SetValue name="IsClimbingFence" value="false"/>
+                <SetValue name="MoveDelta" value="0"/>
+                <SetValue name="IsOnFloor" value="false"/>
+            </Commands>
+            <Out>
+                <NormalMovement OutBlend="0.4">
+                    <Commands>
+                        <SetValue name="IsClimbingFence" value="false"/>
+                        <SetValue name="MoveDelta" value="0" ForceBlend="true"/>
+                        <SetValue name="MoveDelta" value="0" ForceBlend="false"/>
+                    </Commands>
+                </NormalMovement>
+            </Out>
+        </ClimbFenceFall>
+        <ClimbFenceTall>
+            <Commands>
+                <SetCollision active="false"/>
+                <PlayAnim Anim="Bob_ClimbFence" Repeat="0" CanCancel="false" SpeedDelta="1.2"  BlendTime="0.0"/>
+                <SetCollision active="true"/>
+                <SetValue name="IsClimbingFence" value="false"/>
+            </Commands>
+            <Out>
+                <NormalMovement OutBlend="0.2">
+                    <Commands>
+                        <SetValue name="MoveDelta" value="0" ForceBlend="true"/>
+                    </Commands>
+                </NormalMovement>
+            </Out>
+        </ClimbFenceTall>
+        <ClimbFenceTallSlow>
+            <Commands>
+                <SetCollision active="false"/>
+                <PlayAnim Anim="Bob_ClimbFence_Start" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.0"/>
+                <PlayAnim Anim="Bob_ClimbFence_Loop" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.0"/>
+                <PlayAnim Anim="Bob_ClimbFence_Fail" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.0"/>
+                <PlayAnim Anim="Bob_ClimbFence_Start" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.0"/>
+                <PlayAnim Anim="Bob_ClimbFence_Loop" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.0"/>
+                <PlayAnim Anim="Bob_ClimbFence_Success" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.0"/>
+                <SetCollision active="true"/>
+                <SetValue name="IsClimbingFence" value="false"/>
+            </Commands>
+            <Out>
+                <NormalMovement OutBlend="0.2">
+                    <Commands>
+                        <SetValue name="MoveDelta" value="0" ForceBlend="true"/>
+                    </Commands>
+                </NormalMovement>
+            </Out>
+        </ClimbFenceTallSlow>
+        <WindowStruggleSuccess>
+            <Commands>
+                <PlayAnim Anim="Bob_WindowStruggle" Repeat="0"  StartFrame="8" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.0"/>
+                <SetValue name="IsOpeningWindow" value="false"/>
+            </Commands>
+            <Out>
+                <ClimbWindow OutBlend="0.5"/>
+                <NormalMovement OutBlend="0.3">
+                    <Commands>
+                        <SetValue name="MoveDelta" value="0" ForceBlend="true"/>
+                    </Commands>
+                </NormalMovement>
+            </Out>
+        </WindowStruggleSuccess>
+
+        <WindowStruggle>
+            <Commands>
+                <PlayAnim Anim="Bob_WindowStruggle" Repeat="-1"  StartFrame="8" CanCancel="false" EndFrame="28" SpeedDelta="1.0"  BlendTime="0.0"/>
+            </Commands>
+            <Out>
+                 <WindowStruggleSuccess OutBlend="0.3"/><!-- WindowStruggleSuccess="true"/>-->
+            </Out>
+        </WindowStruggle>
+        <WindowStruggleStart>
+            <Commands>
+                <PlayAnim Anim="Bob_WindowStruggle" Repeat="0"  StartFrame="0" CanCancel="false"  EndFrame="8" SpeedDelta="1.0"  BlendTime="0.0"/>
+            </Commands>
+            <Out>
+                <WindowStruggle OutBlend="0.3"/>
+            </Out>
+        </WindowStruggleStart>
+
+        <EatenByHordeOnFloor>
+            <Commands>
+                <SetCollision active="false"/>
+                <SetValue name="TurnDelta" value="0.0"/>
+                <PlayAnim Anim="Zombie_GetUp" StartFrame="0" EndFrame="1" Repeat="0" CanCancel="false" SpeedDelta="0.1"  BlendTime="0.01">
+                    <Event TimeDelta="0.001" Type="PlaySoundCue" Effect="PZ_FemaleZombieEating"/>
+                    <Event TimeDelta="0.001" Type="PlaySoundCue" Effect="PZ_MaleZombieEating"/>
+                    <Event TimeDelta="0.001" Type="PlaySoundCue" Effect="mscream"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+
+                </PlayAnim>
+                <PlayAnim Anim="Zombie_GetUp" StartFrame="0" EndFrame="1" Repeat="-1" CanCancel="false" SpeedDelta="0.1"  BlendTime="0.01">
+                    <Event TimeDelta="0.001" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.101" Type="EmitEffect" Effect="splashLow"/>
+
+                </PlayAnim>
+            </Commands>
+            <Out>
+
+            </Out>
+        </EatenByHordeOnFloor>
+        <EatenByHorde>
+            <Commands>
+                <SetValue name="TurnDelta" value="0.0"/>
+                <SetCollision active="false"/>
+                <PlayAnim Anim="Zombie_Death" Repeat="0" CanCancel="false" SpeedDelta="0.7"  BlendTime="0.01">
+                    <Event TimeDelta="0.401" Type="PlaySoundCue" Effect="PZ_FemaleZombieEating"/>
+                    <Event TimeDelta="0.401" Type="PlaySoundCue" Effect="PZ_MaleZombieEating"/>
+                    <Event TimeDelta="0.401" Type="PlaySoundCue" Effect="mscream"/>
+                    <Event TimeDelta="0.401" Type="SetBoolFlag" Effect="IsOnFloor"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.701" Type="EmitEffect" Effect="splashLow"/>
+
+                </PlayAnim>
+                <PlayAnim Anim="Zombie_Death" StartDelta="0.97" Repeat="-1" CanCancel="false" SpeedDelta="0.000001"  BlendTime="0.01">
+                    <Event TimeDelta="0.001" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.101" Type="EmitEffect" Effect="splashLow"/>
+
+                </PlayAnim>
+            </Commands>
+            <Out>
+
+            </Out>
+        </EatenByHorde>
+        <TripFenceZombie>
+            <Commands>
+                <SetCollision active="false"/>
+                <PlayAnim Anim="Zombie_ClimbLowWall" Repeat="0"  StartFrame="0" CanCancel="false" SpeedDelta="1.2"  BlendTime="0.5"/>
+                <SetValue name="IsClimbingFence" value="false"/>
+                <SetCollision active="true"/>
+            </Commands>
+            <Out>
+                <ZombieWalk/>
+            </Out>
+
+        </TripFenceZombie>
+
+        <Thump>
+            <Commands>
+                <PlayAnim Anim="Zombie_Door" Repeat="0" CanCancel="false" SpeedDelta="0.6" BlendTime="0.2"/>
+                <SetValue name="Attacking" value="false"/>
+            </Commands>
+            <Out>
+
+            </Out>
+
+        </Thump>
+
+        <ZomAttack>
+            <Commands>
+                <PlayAnim Anim="Zombie_Bite" Repeat="0" Upper="true" CanCancel="true" SpeedDelta="0.6" BlendTime="0.5"/>
+                <Delay Time="1.5" CanCancel="true"/>
+                <SetValue name="Attacking" value="false"/>
+            </Commands>
+            <Out>
+                <DeadByBat HitByBat="true" IsDead="true" OutBlend="0.1"></DeadByBat>
+                <HitByBat HitByBat="true" OutBlend="0.1"></HitByBat>
+                <ZombieWalk Attacking="false" OutBlend="0.2" />
+            </Out>
+
+        </ZomAttack>
+        <ZomLunge>
+            <Commands>
+                <PlayAnim Anim="Zombie_Walk4" Repeat="-1" Upper="true" CanCancel="true" SpeedDelta="1.0" BlendTime="0.3"/>
+                <SetValue name="Attacking" value="false"/>
+            </Commands>
+            <Out>
+                <DeadByBat HitByBat="true" IsDead="true" OutBlend="0.1"></DeadByBat>
+                <HitByBat HitByBat="true" OutBlend="0.1"></HitByBat>
+                <HitFromBehind HitFromBehind="true"/>
+                <HitFromFront HitFromFront="true"/>
+                <ZomAttackGround Time="1.5" Attacking="true" AttackingGround="true" OutBlend="0.5"/>
+                <ZomAttack Attacking="true" OutBlend="0.2"/>
+                <ZombieWalk Lunging="false" OutBlend="0.2" />
+            </Out>
+
+        </ZomLunge>
+
+
+        <ZomAttackGround>
+            <Commands>
+                <PlayAnim Anim="Zombie_IdleEating" Repeat="-1" CanCancel="false" SpeedDelta="1.0" BlendTime="0.5">
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.501" Type="EmitEffect" Effect="splashLow"/>
+                </PlayAnim>
+            </Commands>
+            <Out>
+                <DeadByBat HitByBat="true" IsDead="true" OutBlend="0.1"></DeadByBat>
+                <HitByBat HitByBat="true" OutBlend="0.1"></HitByBat>
+            </Out>
+
+        </ZomAttackGround>
+
+        <ZomGetUpFront>
+            <Commands>
+                <SetValue name="IsDead" value="false"/>
+                <PlayAnim Anim="Zombie_GetUpFront" Repeat="0" CanCancel="true" SpeedDelta="1.0" BlendTime="0.0"/>
+                <SetValue name="ZombieOnFloor" value="false"/>
+                <SetCollision active="true"/>
+            </Commands>
+            <Out>
+                <DeadByBatFloor HitByBat="true" ZombieOnFloor="true" OutBlend="0.1"/>
+                <DeadByBat HitByBat="true" IsDead="true" OutBlend="0.1"></DeadByBat>
+                <HitByBat HitByBat="true" OutBlend="0.1"></HitByBat>
+                <ZombieWalk ZombieOnFloor="false" OutBlend="0.3"/>
+            </Out>
+        </ZomGetUpFront>
+        <ZomGetUp>
+            <Commands>
+                <SetValue name="IsDead" value="false"/>
+                <PlayAnim Anim="Zombie_GetUp" Repeat="0" CanCancel="true" SpeedDelta="1.0" BlendTime="0.0"/>
+                <SetValue name="ZombieOnFloor" value="false"/>
+                <SetCollision active="true"/>
+            </Commands>
+            <Out>
+                <DeadByBatFloor HitByBat="true" ZombieOnFloor="true" OutBlend="0.1"/>
+                <DeadByBat HitByBat="true" IsDead="true" OutBlend="0.1"></DeadByBat>
+                <HitByBat HitByBat="true" OutBlend="0.1"></HitByBat>
+                <ZombieWalk ZombieOnFloor="false" OutBlend="0.3"/>
+            </Out>
+        </ZomGetUp>
+        <Dead>
+            <Commands>
+                <SetValue name="ZombieOnFloor" value="false"/>
+                <SetValue name="TurnDelta" value="0.0"/>
+                <SetCollision active="false"/>
+                <Delay Time="0.5"/>
+                <SetValue name="IsDoneDead" value="true"/>
+                <Delay Time="1"/>
+            </Commands>
+        </Dead>
+        <KnockedDown>
+            <Commands>
+                <SetValue name="CanGetUp" value="false"/>
+                <SetValue name="ZombieOnFloor" value="true"/>
+                <SetValue name="DeadAnimComplete" value="false"/>
+                <SetValue name="TurnDelta" value="0.0"/>
+                <SetCollision active="false"/>
+                <Delay Time="3" CanCancel="true"/>
+                <SetCollision active="true"/>
+                <SetValue name="CanGetUp" value="true"/>
+            </Commands>
+            <Out>
+                <DeadByBatFloor HitByBat="true" ZombieOnFloor="true"/>
+                <ZomGetUpFront EndOnFront="true" CanGetUp="true" OutBlend="0.6"/>
+                <ZomGetUp CanGetUp="true" OutBlend="0.6"/>
+            </Out>
+        </KnockedDown>
+        <HitByBat>
+            <Commands>
+                <SetValue name="TurnDelta" value="0.0"/>
+                <SetValue name="Attacking" value="false"/>
+                <SetValue name="AttackingGround" value="false"/>
+                <SetValue name="DoneReact" value="false"/>
+                <SetValue name="HitByBat" value="false"/>
+                <Delay Time="0.21"/>
+                <PlayAnim Anim="@ReactAnim" Repeat="0" CanCancel="true" SpeedDelta="1.2" BlendOutUpper="0.04" BlendTime="0.1">
+                    <Event TimeDelta="0.001" Type="PlaySoundCue" Effect="bathit"/>
+                    <Event TimeDelta="0.001" Type="EmitEffect" Effect="bloodSplash"/>
+                    <Event TimeDelta="0.001" Type="PlaySoundCue" Effect="@zomsound"/>
+                    <Event TimeDelta="0.001" Type="PlaySoundCue" Effect="@splat"/>
+                 </PlayAnim>
+                 <SetValue name="DoneReact" value="true"/>
+                <!--<Or Var="ReactAnim">
+                    <PlayAnim Anim="Zombie_HitReact_Uppercut" Repeat="0" CanCancel="false" SpeedDelta="1.3"  BlendTime="0.1"/>
+                    <PlayAnim Anim="Zombie_HitReact_HeadTop" Repeat="0" CanCancel="false" SpeedDelta="1.3"  BlendTime="0.1"/>
+                    <PlayAnim Anim="Zombie_HitReact_HeadRight" Repeat="0" CanCancel="false" SpeedDelta="1.3"  BlendTime="0.1"/>
+                 </Or>-->
+
+            </Commands>
+            <Out>
+                <ZombieWalk OutBlend="0.3" DoneReact="true" />
+                <DeadByBat HitByBat="true" IsDead="true"/>
+                <HitByBat HitByBat="true"/>
+            </Out>
+        </HitByBat>
+        <DeadByBat>
+            <Commands>
+                <SetValue name="TurnDelta" value="0.0"/>
+                <SetCollision active="false"/>
+                <SetValue name="Attacking" value="false"/>
+                <SetValue name="AttackingGround" value="false"/>
+                <SetValue name="HitByBat" value="false"/>
+                <Delay Time="0.21"/>
+                <SetValue name="ZombieOnFloor" value="true"/>
+                <PlayAnim Anim="@ReactAnim" Repeat="0" CanCancel="true" SpeedDelta="1.2" BlendOutUpper="0.04" BlendTime="0.04">
+                    <Event TimeDelta="0.001" Type="PlaySoundCue" Effect="bathit"/>
+                    <Event TimeDelta="0.001" Type="EmitEffect" Effect="bloodSplashDead"/>
+                    <Event TimeDelta="0.001" Type="PlaySoundCue" Effect="@zomsound"/>
+                    <Event TimeDelta="0.001" Type="PlaySoundCue" Effect="@splat"/>
+                </PlayAnim>
+                <SetValue name="DeadAnimComplete" value="true"/>
+                <!--<Or Var="ReactAnim">
+                     <PlayAnim Anim="Zombie_HitReact_Uppercut" Repeat="0" CanCancel="false" SpeedDelta="1.3"  BlendTime="0.1"/>
+                     <PlayAnim Anim="Zombie_HitReact_HeadTop" Repeat="0" CanCancel="false" SpeedDelta="1.3"  BlendTime="0.1"/>
+                     <PlayAnim Anim="Zombie_HitReact_HeadRight" Repeat="0" CanCancel="false" SpeedDelta="1.3"  BlendTime="0.1"/>
+                  </Or>-->
+
+            </Commands>
+            <Out>
+                <KnockedDown DeadAnimComplete="true" KnockedDown="true" OutBlend="0.5"/>
+                <Dead DeadAnimComplete="true" OutBlend="0.5"/>
+            </Out>
+        </DeadByBat>
+        <DeadByBatFloor>
+            <Commands>
+                <SetCollision active="false"/>
+                <SetValue name="TurnDelta" value="0.0"/>
+                <SetValue name="Attacking" value="false"/>
+                <SetValue name="AttackingGround" value="false"/>
+                <SetValue name="DeadAnimComplete" value="false"/>
+                <SetValue name="HitByBat" value="false"/>
+                <SetValue name="ZombieOnFloor" value="true"/>
+                <Delay Time="0.45"/>
+                <PlayAnim Anim="@ReactAnim" Repeat="0" CanCancel="false" StartDelta="0.97" SpeedDelta="1.3" BlendOutUpper="0.04" BlendTime="0.04">
+                    <Event TimeDelta="0.01" Type="PlaySoundCue" Effect="bathit"/>
+                    <Event TimeDelta="0.01" Type="EmitEffect" Effect="splashLow"/>
+                    <Event TimeDelta="0.01" Type="PlaySoundCue" Effect="@zomsound"/>
+                    <Event TimeDelta="0.01" Type="PlaySoundCue" Effect="@splat"/>
+                </PlayAnim>
+                <SetValue name="DeadAnimComplete" value="true"/>
+                <!--<Or Var="ReactAnim">
+                     <PlayAnim Anim="Zombie_HitReact_Uppercut" Repeat="0" CanCancel="false" SpeedDelta="1.3"  BlendTime="0.1"/>
+                     <PlayAnim Anim="Zombie_HitReact_HeadTop" Repeat="0" CanCancel="false" SpeedDelta="1.3"  BlendTime="0.1"/>
+                     <PlayAnim Anim="Zombie_HitReact_HeadRight" Repeat="0" CanCancel="false" SpeedDelta="1.3"  BlendTime="0.1"/>
+                  </Or>-->
+
+            </Commands>
+            <Out>
+                <KnockedDown KnockedDown="true" DeadAnimComplete="true" OutBlend="0.5"/>
+                <Dead DeadAnimComplete="true" OutBlend="0.5"/>
+            </Out>
+        </DeadByBatFloor>
+        <HitFromFront>
+            <Commands>
+                <PlayAnim Anim="Zombie_Death" Repeat="0" CanCancel="false" SpeedDelta="1.2" BlendOutUpper="0.04" BlendTime="0.04">
+                </PlayAnim>
+                <SetValue name="HitFromFront" value="false"/>
+            </Commands>
+            <Out>
+                <KnockedDown OutBlend="0.2"/>
+            </Out>
+        </HitFromFront>
+        <HitFromBehind>
+            <Commands>
+                <PlayAnim Anim="Zombie_PushedFwd_FromBehind" Repeat="0" CanCancel="false" SpeedDelta="1.2" BlendOutUpper="0.04" BlendTime="0.04">
+                </PlayAnim>
+                <SetValue name="HitFromBehind" value="false"/>
+            </Commands>
+            <Out>
+                <ZombieWalk OutBlend="0.2"/>
+            </Out>
+        </HitFromBehind>
+
+        <ZombieWalk>
+            <Commands>
+                <SetValue name="AttackingGround" value="false"/>
+                <SetValue name="TurnDelta" value="0.3"/>
+                <SetCollision active="true"/>
+                <PlayAnim Anim="@walk" Repeat="-1" CanCancel="true" BlendTime="0.5" />
+
+            </Commands>
+            <Out>
+                <ZombieWalkTrees inTrees="true" OutBlend="0.3"/>
+                <DeadByBat HitByBat="true" IsDead="true" OutBlend="0.1"></DeadByBat>
+                <HitByBat HitByBat="true" OutBlend="0.1"></HitByBat>
+                <HitFromBehind HitFromBehind="true"/>
+                <HitFromFront HitFromFront="true"/>
+                <ZomAttackGround Attacking="true" AttackingGround="true" OutBlend="0.5"/>
+                <ZomAttack Attacking="true" OutBlend="0.2"/>
+
+                <TripFenceZombie IsClimbingFence="true" OutBlend="0.2" />
+                <Thump Thumping="true" OutBlend="0.2"/>
+            </Out>
+        </ZombieWalk>
+        <ZombieIdle>
+            <Commands>
+                <SetValue name="TurnDelta" value="0.0"/>
+                <PlayAnim Anim="Zombie_Idle" Repeat="-1" CanCancel="true" SpeedDelta="0.3" BlendTime="0.04">
+
+                </PlayAnim>
+
+            </Commands>
+            <Out>
+                <ZombieAlert Alerted="true" OutBlend="0.2"/>
+                <DeadByBat HitByBat="true" IsDead="true" OutBlend="0.1"></DeadByBat>
+                <HitByBat HitByBat="true" OutBlend="0.1"></HitByBat>
+            </Out>
+        </ZombieIdle>
+
+        <EmoteWipeTorso>
+            <Commands>
+                <PlayAnim Anim="Bob_EmoteInsult" Repeat="0" Upper="true" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.5"/>
+            </Commands>
+            <Out>
+                <NormalMovement>
+                </NormalMovement>
+            </Out>
+        </EmoteWipeTorso>
+        <BandageUpperBody>
+            <Commands>
+                <PlayAnim Anim="Bob_Suicide_Handgun" Repeat="0" Upper="true" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.5"/>
+            </Commands>
+            <Out>
+                <NormalMovement>
+                </NormalMovement>
+            </Out>
+        </BandageUpperBody>
+
+        <Campfire>
+            <Commands>
+                <PlayAnim Anim="Bob_SitGround_In" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.2"/>
+                <PlayAnim Anim="Bob_SitGround_RubHands" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.2"/>
+                <PlayAnim Anim="Bob_SitGround_WarmHands" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.2"/>
+                <PlayAnim Anim="Bob_SitGround_Out" Repeat="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.2"/>
+            </Commands>
+            <Out>
+                <NormalMovement>
+                </NormalMovement>
+            </Out>
+        </Campfire>
+
+
+        <EmotePainTorso><Commands>
+            <PlayAnim Anim="Bob_EmotePainTorso" Repeat="0" Upper="true" CanCancel="false" SpeedDelta="1.0"  BlendTime="1.0"/>
+
+        </Commands><Out>
+            <NormalMovement>
+            </NormalMovement>
+        </Out>
+        </EmotePainTorso>
+        <EmotePainStomach02><Commands>
+            <PlayAnim Anim="Bob_EmotePainStomach02" Repeat="0" Upper="true" CanCancel="false" SpeedDelta="1.0"  BlendTime="1.0"/>
+
+        </Commands><Out>
+            <NormalMovement>
+            </NormalMovement>
+        </Out>
+        </EmotePainStomach02>
+        <EmoteTiredStretch><Commands>
+            <PlayAnim Anim="Bob_EmoteWaveHi" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteWaveHi02" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteYawn" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteTiredStretch" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteYes" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteWipeRightLeg" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteWipeTorso" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteWipeHead" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteWipeLeftArm" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteVomit" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteWipeBrow" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteSway" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteThankYou" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteStop02" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteSneeze" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteSneeze02" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteStop" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmotePainTorso" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmotePainStomach02" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmotePainLeftLeg" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmotePainLeftArm" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmotePainHead" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteFollowMe" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteInsult" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteNo" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteNoThankYou" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteCough" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteFeelFeint" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteBurp" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteComeHere" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_EmoteComeHere02" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_SitGround_In" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.1"/>
+            <PlayAnim Anim="Bob_SitGround_Idle" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_SitGround_RubHands" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_SitGround_RubHands" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_SitGround_RubHands" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_SitGround_RubHands" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_SitGround_RubHands" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_SitGround_Idle" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_SitGround_Idle" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_SitGround_Idle" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_SitGround_Idle" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_SitGround_WarmHands" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_SitGround_WarmHands" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_SitGround_WarmHands" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_SitGround_WarmHands" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_SitGround_WarmHands" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_SitGround_Idle" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_SitGround_Out" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+
+            <PlayAnim Anim="Bob_IdlePour_Kettle" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_IdlePour_Bucket" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_IdlePour_Bottle" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_IdleMakingLow" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_IdleMakingLow" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_IdleMakingLow" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_IdleMakingLow" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_IdleMakingLow" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_IdleMakingLow" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_IdleMaking" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_IdleMaking" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_IdleMaking" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_IdleMaking" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_IdleMaking" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_IdleMaking" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_IdleHammering" Repeat="0" CanCancel="false" SpeedDelta="1.0" BlendTime="0.3"/>
+            <PlayAnim Anim="Bob_IdleHammering" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_IdleHammering" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_IdleHammering" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_IdleHammering" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_IdleHammering" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+            <PlayAnim Anim="Bob_IdleHammering" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+
+
+            <PlayAnim Anim="Bob_EmoteWaveBye" Repeat="0" CanCancel="false" SpeedDelta="1.0"/>
+
+        </Commands><Out>
+            <NormalMovement>
+            </NormalMovement>
+        </Out>
+        </EmoteTiredStretch>
+
+        <Running>
+        <Commands>
+            <Blend1D Var="MoveDelta" Min="0" Max="1" Repeat="-1" CanCancel="false" BlendTime="0.0">
+                <Entry Anim="@run" Val="0.0" SpeedDelta="1.3" />
+                <Entry Anim="@run" Val="1.0" SpeedDelta="1.3" />
+            </Blend1D>
+        </Commands>
+            <Out>
+                <RunTrees inTrees="true" OutBlend="0.2"/>
+                <SprintStart Time="1.0" IsBigSprinting="true" OutBlend="0.5"/>
+
+                <ClimbFenceRunFail IsFailFence="true" IsClimbingFence="true"/>
+                <ClimbFenceRun IsClimbingFence="true"/>
+                <Sneak IsSneaking="true" OutBlend="0.5"/>
+                <NormalMovement IsSprinting="false" OutBlend="0.4">
+                </NormalMovement>
+            </Out>
+        </Running>
+        <TripFenceZombie2>
+            <Commands>
+                <SetCollision active="false"/>
+                <PlayAnim Anim="Zombie_ClimbLowWall" Repeat="0"  StartFrame="0" CanCancel="false" SpeedDelta="1.0"  BlendTime="0.0"/>
+                <SetValue name="IsClimbingFence" value="false"/>
+                <SetCollision active="true"/>
+            </Commands>
+            <Out>
+                <NormalMovement/>
+            </Out>
+
+        </TripFenceZombie2>
+        <ZombieWalkATest>
+            <Commands>
+                <SetValue name="TurnDelta" value="0.4"/>
+                <SetCollision active="true"/>
+                <Blend1D Var="MoveDelta" Min="0" Max="1" Repeat="-1" CanCancel="false" BlendTime="0.5" RandomStart="true">
+                    <Entry Anim="Zombie_Idle" Val="0.0" SpeedDelta="0.2" />
+                    <Entry Anim="Zombie_Walk3" Val="0.25" SpeedDelta="1.0" />
+                    <Entry Anim="Zombie_Walk5" Val="1.0" SpeedDelta="1.0" />
+                </Blend1D>
+            </Commands>
+            <Out>
+                <TripFenceZombie IsClimbingFence="true" OutBlend="0.5" />
+            </Out>
+        </ZombieWalkATest>
+        <ZombieAlert>
+            <Commands>
+                <SetCollision active="true"/>
+               <!-- <Blend1D Var="AlertTurnDelta" Min="-1" Max="1" Repeat="0" CanCancel="false" BlendTime="0.1">
+                    <Entry Anim="Zombie_TurnL180_Alerted" Val="-1.0" SpeedDelta="1.0" />
+                    <Entry Anim="Zombie_TurnL135_Alerted" Val="-0.75" SpeedDelta="1.0" />
+                    <Entry Anim="Zombie_TurnL90_Alerted" Val="-0.5" SpeedDelta="1.0" />
+                    <Entry Anim="Zombie_TurnL45_Alerted" Val="-0.25" SpeedDelta="1.0" />
+                    <Entry Anim="Zombie_Turn00_Alerted" Val="0.0" SpeedDelta="1.0" />
+                    <Entry Anim="Zombie_TurnR45_Alerted" Val="0.25" SpeedDelta="1.0" />
+                    <Entry Anim="Zombie_TurnR90_Alerted" Val="0.5" SpeedDelta="1.0" />
+                    <Entry Anim="Zombie_TurnR135_Alerted" Val="0.75" SpeedDelta="1.0" />
+                    <Entry Anim="Zombie_TurnR180_Alerted" Val="1.0" SpeedDelta="1.0" />
+                </Blend1D>-->
+            </Commands>
+            <Out>
+                <ZombieWalk OutBlend="0.1"/>
+            </Out>
+        </ZombieAlert>
+        <ZombieWalkBTest>
+            <Commands>
+                <SetValue name="TurnDelta" value="0.4"/>
+                <SetCollision active="true"/>
+                <Blend1D Var="MoveDelta" Min="0" Max="1" Repeat="-1" CanCancel="false" BlendTime="0.5" RandomStart="true">
+                    <Entry Anim="Zombie_Idle" Val="0.0" SpeedDelta="0.2" />
+                    <Entry Anim="Zombie_Walk3" Val="0.25" SpeedDelta="1.0" />
+                    <Entry Anim="Zombie_Walk2" Val="0.5" SpeedDelta="1.0" />
+                    <Entry Anim="Zombie_Walk4" Val="0.75" SpeedDelta="1.0" />
+                    <Entry Anim="Zombie_Walk5" Val="1.0" SpeedDelta="1.0" />
+                </Blend1D>
+            </Commands>
+            <Out>
+                <TripFenceZombie IsClimbingFence="true" OutBlend="0.5" />
+            </Out>
+        </ZombieWalkBTest>
+
+        <WalkTrees>
+            <Commands>
+                <SetValue name="TurnDelta" value="1.5"/>
+
+                <Blend1D Var="MoveDelta" Min="0" Max="1" Repeat="-1" CanCancel="false" BlendTime="0.0">
+                    <Entry Anim="@idle" Val="0.0" SpeedDelta="0.6"  />
+                    <Entry Anim="Bob_WalkTrees" Val="1.0" SpeedDelta="1.0" />
+                </Blend1D>
+
+            </Commands>
+            <Out>
+                <RunTrees IsSprinting="true" OutBlend="0.2"/>
+                <NormalMovement inTrees="false" OutBlend="0.4"/>
+                <ClimbFenceTallSlow IsClimbingFence="true" IsClimbingHighFence="true" OutBlend="0.2"/>
+                <ClimbFence IsClimbingFence="true"  OutBlend="0.2"/>
+            </Out>
+        </WalkTrees>
+
+        <ZombieWalkTrees>
+            <Commands>
+                <SetValue name="TurnDelta" value="1.5"/>
+
+                <Blend1D Var="MoveDelta" Min="0" Max="1" Repeat="-1" CanCancel="false" BlendTime="0.0">
+                    <Entry Anim="@idle" Val="0.0" SpeedDelta="0.6"  />
+                    <Entry Anim="Bob_WalkTrees" Val="1.0" SpeedDelta="1.0" />
+                </Blend1D>
+
+            </Commands>
+            <Out>
+                <ZombieWalk inTrees="false" OutBlend="0.4"/>
+            </Out>
+        </ZombieWalkTrees>
+        <RunTrees>
+            <Commands>
+                <SetValue name="TurnDelta" value="1.5"/>
+
+                <Blend1D Var="MoveDelta" Min="0" Max="1" Repeat="-1" CanCancel="false" BlendTime="0.0">
+                    <Entry Anim="@idle" Val="0.0" SpeedDelta="0.6"  />
+                    <Entry Anim="Bob_RunTrees" Val="1.0" SpeedDelta="1.0" />
+                </Blend1D>
+
+            </Commands>
+            <Out>
+                <WalkTrees IsSprinting="false" OutBlend="0.2"/>
+                <NormalMovement inTrees="false" OutBlend="0.4"/>
+                <ClimbFenceTallSlow IsClimbingFence="true" IsClimbingHighFence="true" OutBlend="0.2"/>
+                <ClimbFence IsClimbingFence="true"  OutBlend="0.2"/>
+            </Out>
+        </RunTrees>
+        <NormalMovement>
+            <Commands>
+                <SetValue name="TurnDelta" value="1.5"/>
+
+                <Blend1D Var="MoveDelta" Min="0" Max="1" Repeat="-1" CanCancel="false" BlendTime="0.0">
+                    <Entry Anim="@idle" Val="0.0" SpeedDelta="0.6"  />
+                    <Entry Anim="@walk" Val="1.0" SpeedDelta="1.3" />
+                </Blend1D>
+
+
+            </Commands>
+            <Out>
+
+                <WalkTrees inTrees="true" OutBlend="0.2"/>
+                <ClimbWindowObstacle IsOpeningWindow="true" IsCounter="true" OutBlend="0.5"/>
+                <ClimbWindow IsOpeningWindow="true" OutBlend="0.5"/>
+                <EmoteTiredStretch debug1="true" OutBlend="0.5"/>
+                <EmotePainStomach02 debug2="true" OutBlend="0.5"/>
+                <EmotePainTorso debug3="true" OutBlend="0.5"/>
+                <!-- <TripFenceZombie2 IsSprinting="true"></TripFenceZombie2>-->
+                <SprintStart Time="1.0" IsBigSprinting="true"/>
+                <SneakRun IsSprinting="true" IsSneaking="true" OutBlend="0.5"/>
+                <Sneak IsSneaking="true" OutBlend="0.5"/>
+                <Running IsSprinting="true" OutBlend="0.3"/>
+                <Aiming Time="0.2" IsAiming="true" OutBlend="0.2"/>
+                <!--   <Test/> <SprintFull MoveDelta="1.0" />-->
+                <!--  <All/>-->
+                <LootingLow IsLootingLow="true"/>
+                <LootingHigh IsLootingHigh="true"/>
+                <ClimbFenceTallSlow IsClimbingFence="true" IsClimbingHighFence="true" OutBlend="0.2"/>
+                <ClimbFence IsClimbingFence="true"  OutBlend="0.2"/>
+            </Out>
+        </NormalMovement>
+
+        <Sneak>
+            <Commands>
+                <Blend1D Var="MoveDelta" Min="0" Max="1" Repeat="-1" CanCancel="false" BlendTime="0.8">
+                    <Entry Anim="@sneakIdle" Val="0.0" EndFrame="0" SpeedDelta="1.4"  />
+                    <Entry Anim="@sneakWalk" Val="1.0" SpeedDelta="1.4" />
+                </Blend1D>
+            </Commands>
+            <Out>
+                <SneakRun IsSprinting="true" IsSneaking="true" OutBlend="0.5"/>
+                <Running IsSprinting="true" IsSneaking="false" OutBlend="0.3"/>
+                <NormalMovement IsSneaking="false" OutBlend="0.3"/>
+
+            </Out>
+        </Sneak>
+
+        <SneakRun>
+            <Commands>
+                <Blend1D Var="MoveDelta" Min="0" Max="1" Repeat="-1" CanCancel="false" BlendTime="0.8">
+                    <Entry Anim="@sneakIdle" Val="0.0" EndFrame="0" SpeedDelta="1.4"  />
+                    <Entry Anim="@sneakRun" Val="1.0" SpeedDelta="1.4" />
+                </Blend1D>
+            </Commands>
+            <Out>
+                <Sneak IsSneaking="true" IsSprinting="false" OutBlend="0.5"/>
+                <Running IsSprinting="true" IsSneaking="false" OutBlend="0.3"/>
+                <NormalMovement IsSneaking="false" OutBlend="0.3"/>
+
+            </Out>
+        </SneakRun>
+        <SwingMiss>
+            <Commands>
+                <Or>
+                    <PlayAnim Anim="@miss" Repeat="0" CanCancel="true" SpeedDelta="1.3"  BlendTime="0.1">
+                        <Event TimeDelta="0.001" Type="PlaySoundCue" Effect="batSwing"/>
+                    </PlayAnim>
+                </Or>
+                <SetValue name="IsAttacking" value="false"/>
+                <SetValue name="DoAttack" value="false"/>
+            </Commands>
+            <Out>
+                <Aiming DoAttack="false" OutBlend="0.1"></Aiming>
+            </Out>
+        </SwingMiss>
+        <SwingHit>
+            <Commands>
+                <SetValue name="DoAttack" value="false"/>
+                <PlayAnim Anim="@HitAnim" Repeat="0" CanCancel="false" EndFrame="18" SpeedDelta="1.2" BlendTime="0.1">
+                    <Event TimeDelta="0.000" Type="PlaySoundCue" Effect="batSwing"/>
+
+                </PlayAnim>
+                <!--  <Or Var="HitAnim">
+                      <PlayAnim Anim="@HitAnim" Repeat="0" CanCancel="false" SpeedDelta="1.3" BlendTime="0.1"/>
+                      <PlayAnim Anim="Bob_AttackBat03_Hit" Repeat="0" CanCancel="false" SpeedDelta="1.3" BlendTime="0.1"/>
+                      <PlayAnim Anim="Bob_AttackBat01_CritHit" Repeat="0" CanCancel="false" SpeedDelta="1.3" BlendTime="0.1"/>
+                      <PlayAnim Anim="Bob_AttackBat02_CritHit" Repeat="0" CanCancel="false" SpeedDelta="1.3" BlendTime="0.1"/>
+                      <PlayAnim Anim="Bob_AttackBat03_CritHit" Repeat="0" CanCancel="false" SpeedDelta="1.3" BlendTime="0.1"/>
+                  </Or>-->
+                <SetValue name="IsAttacking" value="false"/>
+                <SetValue name="DoAttack" value="false"/>
+
+            </Commands>
+            <Out>
+
+                <Aiming Time="0.2" DoAttack="false" OutBlend="0.2"></Aiming>
+            </Out>
+        </SwingHit>
+        <SwingHitFloor>
+            <Commands>
+                <SetValue name="DoAttack" value="false"/>
+                <PlayAnim Anim="Bob_AttackFloorBat" Repeat="0" CanCancel="false" EndDelta="0.8" SpeedDelta="1.2" BlendTime="0.4">
+                    <Event TimeDelta="0.000" Type="PlaySoundCue" Effect="batSwing"/>
+                </PlayAnim>
+                <!--  <Or Var="HitAnim">
+                      <PlayAnim Anim="@HitAnim" Repeat="0" CanCancel="false" SpeedDelta="1.3" BlendTime="0.1"/>
+                      <PlayAnim Anim="Bob_AttackBat03_Hit" Repeat="0" CanCancel="false" SpeedDelta="1.3" BlendTime="0.1"/>
+                      <PlayAnim Anim="Bob_AttackBat01_CritHit" Repeat="0" CanCancel="false" SpeedDelta="1.3" BlendTime="0.1"/>
+                      <PlayAnim Anim="Bob_AttackBat02_CritHit" Repeat="0" CanCancel="false" SpeedDelta="1.3" BlendTime="0.1"/>
+                      <PlayAnim Anim="Bob_AttackBat03_CritHit" Repeat="0" CanCancel="false" SpeedDelta="1.3" BlendTime="0.1"/>
+                  </Or>-->
+                <SetValue name="IsAttacking" value="false"/>
+                <SetValue name="DoAttack" value="false"/>
+                <SetValue name="TimeSinceFloorSwing" value="0.0"/>
+
+            </Commands>
+            <Out>
+
+                <Aiming DoAttack="false" OutBlend="0.4"></Aiming>
+            </Out>
+        </SwingHitFloor>
+        <Swing>
+
+            <Out>
+                <SwingHitFloor Hit="true" ZombieOnFloor="true"/>
+                <SwingHit Hit="true"/>
+                <SwingMiss Hit="false" TimeSinceFloorSwing="ge3"/>
+                <AimingReset >
+
+                </AimingReset>
+           </Out>
+        </Swing>
+        <AimingReset>
+            <Commands>
+                <SetValue name="IsAttacking" value="false"/>
+                <SetValue name="DoAttack" value="false"/>
+            </Commands>
+            <Out>
+                <Aiming OutBlend="0.2"/>
+            </Out>
+
+        </AimingReset>
+        <Sprinting>
+            <Commands>
+                <SetValue name="TurnDelta" value="0.5"/>
+                <PlayAnim Anim="Bob_Sprint" Repeat="-1" CanCancel="false" SpeedDelta="1.3"/>
+
+            </Commands>
+            <Out>
+
+                <ClimbFenceTall IsClimbingFence="true" IsClimbingHighFence="true"/>
+                <ClimbFenceFall IsClimbingFence="true" IsFailFence="true"/>
+                <ClimbFenceSprint IsClimbingFence="true"/>
+                <HitWall Collided="true"/>
+                <HitZombieFall ZomCollided="true"/>
+
+                <SprintStop IsBigSprinting="false" OutBlend="0.1">
+
+                </SprintStop>
+            </Out>
+        </Sprinting>
+        <HitWall>
+            <Commands>
+                <SetValue name="TurnDelta" value="0.0"/>
+                <PlayAnim Anim="Bob_SprintIntoWall" Repeat="0"  CanCancel="false" SpeedDelta="1.3" BlendOutUpper="0.1" BlendTime="0.0">
+                    <Event TimeDelta="0.001" Type="EmitEffect" Effect="bloodSplash"/>
+
+                </PlayAnim>
+                <SetValue name="IsOnFloor" value="true"/>
+
+            </Commands>
+            <Out>
+                <HitWall2/>
+
+            </Out>
+        </HitWall>
+        <HitWall2>
+            <Commands>
+                <PlayAnim Anim="Bob_GetUp_Back" Repeat="0" StartFrame="0" EndFrame="2" CanCancel="true" SpeedDelta="0.01"  BlendTime="0.0"/>
+                <PlayAnim Anim="Bob_GetUp_Back" Repeat="0"  CanCancel="true" SpeedDelta="1.0"  BlendTime="0.0"/>
+                <SetValue name="TurnDelta" value="0.9"/>
+                <SetValue name="IsOnFloor" value="false"/>
+
+            </Commands>
+            <Out>
+                <NormalMovement IsOnFloor="false">
+                    <Commands>
+                        <SetValue name="MoveDelta" value="0" ForceBlend="true"/>
+                        <SetValue name="MoveDelta" value="0" ForceBlend="false"/>
+                    </Commands>
+                </NormalMovement>
+
+            </Out>
+        </HitWall2>
+        <HitZombieFall>
+            <Commands>
+                <SetValue name="ZomCollided" value="false"/>
+                <SetValue name="TurnDelta" value="0.0"/>
+                <PlayAnim Anim="Bob_SprintIntoWall" Repeat="0"  CanCancel="false" SpeedDelta="1.3" BlendOutUpper="0.1" BlendTime="0.0">
+                    <Event TimeDelta="0.001" Type="EmitEffect" Effect="bloodSplash"/>
+
+                </PlayAnim>
+                <SetValue name="IsOnFloor" value="true"/>
+
+            </Commands>
+            <Out>
+                <HitZombieFall2/>
+            </Out>
+        </HitZombieFall>
+        <HitZombieFall2>
+            <Commands>
+                <PlayAnim Anim="Bob_GetUp_Back" Repeat="0" StartFrame="0" EndFrame="1" CanCancel="true" SpeedDelta="0.1"  BlendTime="0.0"/>
+                <PlayAnim Anim="Bob_GetUp_Back" Repeat="0"  CanCancel="true" SpeedDelta="1.0"  BlendTime="0.0"/>
+                <SetValue name="IsOnFloor" value="false"/>
+                <SetValue name="TurnDelta" value="0.9"/>
+
+            </Commands>
+            <Out>
+                <NormalMovement IsOnFloor="false">
+                    <Commands>
+                        <SetValue name="MoveDelta" value="0" ForceBlend="true"/>
+                        <SetValue name="MoveDelta" value="0" ForceBlend="false"/>
+                    </Commands>
+                </NormalMovement>
+
+            </Out>
+        </HitZombieFall2>
+        <SprintStart>
+            <Commands>
+                <SetValue name="MoveDelta" value="1" ForceBlend="true"/>
+                <PlayAnim Anim="@run" Repeat="-1" Upper="true" CanCancel="true" SpeedDelta="1.3" BlendTime="0.2"/>
+                <PlayAnim Anim="Bob_IdleToSprint" Repeat="0" CanCancel="false" SpeedDelta="1.3" BlendTime="0.0"/>
+            </Commands>
+            <Out>
+                <Sprinting>
+                    <SetValue name="MoveDelta" value="1" ForceBlend="true" OutBlend="0.0"/>
+                </Sprinting>
+            </Out>
+        </SprintStart>
+        <SprintStop>
+            <Commands>
+                <SetValue name="Stopped" value="false"/>
+                <SetValue name="TurnDelta" value="0.0"/>
+                <SetValue name="MoveDelta" value="1.0" ForceBlend="true"/>
+                <SetValue name="SprintStopDelta" value="MoveDelta"/>
+                <SetValue name="MoveDelta" value="0" ForceBlend="true"/>
+                <SetValue name="MoveDelta" value="0" ForceBlend="false"/>
+                <SetValue name="SprintStopDelta" value="0"/>
+                <PlayAnim Anim="Bob_SprintToStop_Bat" Repeat="0" CanCancel="true" SpeedDelta="1.3" BlendOutUpper="0.7" BlendTime="0.0"/>
+                <SetValue name="MoveDelta" value="0.0" ForceBlend="true"/>
+                <SetValue name="Stopped" value="true"/>
+            </Commands>
+            <Out>
+                <ClimbFenceFall IsClimbingFence="true" IsFailFence="true"/>
+
+                <NormalMovement Stopped="true" OutBlend="0.3">
+                    <SetValue name="TurnDelta" value="0.9"/>
+                    <SetValue name="MoveDelta" value="0.0" ForceBlend="true"/>
+                </NormalMovement>
+            </Out>
+        </SprintStop>
+        <All>
+            <Commands>
+
+            </Commands>
+            <Out>
+                <All/>
+            </Out>
+        </All>
+        <Aiming>
+            <Commands>
+                <SetValue name="TurnDelta" value="1.3"/>
+                <Blend2D VarX="DeltaX" VarY="DeltaY" GridWidth="5" SpeedDelta="1.9" GridHeight="5" CanCancel="true">
+                    <Entry X="2" Y="2" Anim="@aimIdle" />
+                    <Entry X="3" Y="2" Anim="@strafeLeft" />
+                    <Entry X="1" Y="2" Anim="@strafeRight" />
+
+                    <Entry X="2" Y="1" Anim="@walkAim" />
+                    <Entry X="3" Y="1" SpeedDelta="1.4" Anim="@aimDiagL" />
+                    <Entry X="1" Y="1" SpeedDelta="1.4" Anim="@aimDiagR" />
+
+                    <Entry X="3" Y="3" SpeedDelta="1.4" Anim="@aimBackDiagL" />
+                    <Entry X="2" Y="3" Anim="@aimBack" />
+                    <Entry X="1" Y="3" SpeedDelta="1.4" Anim="@aimBackDiagR" />
+<!--
+     <Entry X="2" Y="2" Anim="Bob_IdleAimSpear" />
+                    <Entry X="3" Y="2" Anim="Bob_StrafeAimSpear_Left" />
+                    <Entry X="1" Y="2" Anim="Bob_StrafeAimSpear_Right" />
+
+                    <Entry X="2" Y="1" Anim="Bob_WalkAimSpear" />
+                    <Entry X="3" Y="1" SpeedDelta="1.2" Anim="Bob_WalkAimSpear_DiagL" />
+                    <Entry X="1" Y="1" SpeedDelta="1.2" Anim="Bob_WalkAimSpear_DiagR" />
+
+                    <Entry X="3" Y="3" SpeedDelta="1.4" Anim="Bob_WalkBwdAimSpear_DiagL" />
+                    <Entry X="2" Y="3" Anim="Bob_WalkBwdAimSpear" />
+                    <Entry X="1" Y="3" SpeedDelta="1.4" Anim="Bob_WalkBwdAimSpear_DiagR" />
+-->
+
+                </Blend2D>
+            </Commands>
+            <Out>
+                <Swing DoAttack="true" OutBlend="0.1">
+
+                </Swing>
+
+                <Sneak IsSneaking="true" OutBlend="0.5"/>
+
+                <NormalMovement Time="0.2" IsAiming="false" OutBlend="0.2">
+                    <SetValue name="MoveDelta" value="0" ForceBlend="true"/>
+                </NormalMovement>
+             </Out>
+        </Aiming>
+        <Turning>
+            <Commands>
+                <SetValue name="TurnAmountUse" value="TurnAmount"/>
+                <SetValue name="TurnDelta" value="0.9"/>
+                <Blend1D Var="TurnAmountUse" Min="-1" Max="1" Repeat="0" CanCancel="false" BlendTime="0.1">
+                    <Entry Anim="Bob_Turn180L" Val="-1.0" EndFrame="0" SpeedDelta="1.2"  />
+                    <Entry Anim="Bob_Turn90L" Val="-0.5" SpeedDelta="1.2" />
+                    <Entry Anim="Bob_Idle" Val="0.0" SpeedDelta="1.2" />
+                    <Entry Anim="Bob_Turn90R" Val="0.5" SpeedDelta="1.2" />
+                    <Entry Anim="Bob_Turn180R" Val="1.0" SpeedDelta="1.2" />
+                </Blend1D>
+            </Commands>
+            <Out>
+                <NormalMovement>
+                </NormalMovement>
+            </Out>
+        </Turning>
+    </AnimStates>
+</AnimData>

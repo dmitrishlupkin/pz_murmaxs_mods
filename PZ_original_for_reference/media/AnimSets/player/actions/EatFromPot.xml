@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Eat.xml">
+	<m_Name>EatFromPot</m_Name>
+	<m_AnimName>Bob_IdleDrinkCookingPot</m_AnimName>
+	<m_Conditions x_name="82d94eb2-f9f4-49ee-b60d-ac149492a60c">
+		<m_Name>FoodType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Pot</m_Value>
+	</m_Conditions>
+</animNode>

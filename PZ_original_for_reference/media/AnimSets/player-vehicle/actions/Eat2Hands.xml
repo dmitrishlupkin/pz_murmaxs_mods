@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Eat.xml">
+	<m_Name>Eat2Hands</m_Name>
+	<m_AnimName>Bob_IdleEating2Hand</m_AnimName>
+	<m_Conditions x_name="424daf95-4cb7-404f-828b-ac8914da89c7">
+		<m_Name>FoodType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2hand</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="714168a0-811e-4384-a115-282839d7ac09">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="cf6ef340-32d6-45d1-aef5-999f5764dc7a">
+		<m_Name>FoodType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handforced</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Spine</boneName>
+		<weight>0.50</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Spine1</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Prop1</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Prop2</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>fakedead-attack</transitionTo>
+	<conditions>
+		<isFalse>bClient</isFalse>
+	</conditions>
+</transition>

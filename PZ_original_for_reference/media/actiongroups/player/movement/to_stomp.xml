@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>stomp</transitionTo>
+	<asSubstate>true</asSubstate>
+	<conditions>
+		<isTrue>initiateAttack</isTrue>
+		<isTrue>bDoStomp</isTrue>
+	</conditions>
+</transition>

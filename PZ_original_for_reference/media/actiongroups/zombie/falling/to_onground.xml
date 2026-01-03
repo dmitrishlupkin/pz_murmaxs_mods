@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>onground</transitionTo>
+		<conditions>
+			<isTrue>bDead</isTrue>
+			<eventOccurred>ActiveAnimFinishing</eventOccurred>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>onground</transitionTo>
+		<conditions>
+			<eventOccurred>ActiveAnimFinishing</eventOccurred>
+			<isTrue>fallOnFront</isTrue>
+		</conditions>
+	</transition>
+</transitions>

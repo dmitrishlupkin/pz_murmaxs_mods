@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Loot.xml">
+	<m_Name>LootHigh</m_Name>
+	<m_AnimName>Bob_IdleLooting_High</m_AnimName>
+	<m_Conditions x_name="1b3d89a7-2b4c-4050-8bbf-b2b892456ebd">
+		<m_Name>LootPosition</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>High</m_Value>
+	</m_Conditions>
+</animNode>

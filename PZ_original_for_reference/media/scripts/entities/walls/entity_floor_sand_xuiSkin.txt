@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_SandFloor
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Sand Floor,
+            Icon = Build_FloorSand,
+        }
+    }
+}

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="defaultPathfind.xml">
+	<m_Name>runPathfind</m_Name>
+	<m_AnimName>FarmPig_Run</m_AnimName>
+	<m_Conditions x_name="689e2576-4be9-40ba-8cd1-561942aeda4e">
+		<m_Name>animalRunning</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="14c9bfba-f4df-4730-afca-f77cb58293c9">
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>run</m_ParameterValue>
+	</m_Events>
+</animNode>

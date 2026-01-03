@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="TakePills_Sneaking.xml">
+	<m_Name>TakePills_SneakingLow</m_Name>
+	<m_AnimName>Bob_IdleTakePills_SneakLow</m_AnimName>
+	<m_Conditions x_name="e6eaaad2-7eef-4aa9-93b1-342f4f078ed8">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights>
+		<weight>0.50</weight>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<weight>0.75</weight>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+	<m_SubStateBoneWeights />
+</animNode>

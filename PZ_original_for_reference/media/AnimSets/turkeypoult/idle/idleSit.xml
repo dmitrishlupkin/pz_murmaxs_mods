@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>idleSit</m_Name>
+	<m_AnimName>TurkPoult_SitIdle01</m_AnimName>
+	<m_BlendTime>0.50</m_BlendTime>
+	<m_Conditions x_name="677d6f09-bb30-4f58-a7d3-4a5442176985">
+		<m_Name>idleAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>sit</m_Value>
+	</m_Conditions>
+</animNode>

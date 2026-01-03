@@ -1,0 +1,10 @@
+module Base
+{
+    model Vehicles_Ambulance
+    {
+        mesh = vehicles/Vehicles_VanAmbulance,
+        shader = vehicle_norandom_multiuv,
+        invertX = false,
+        scale = 0.008,
+    }
+}

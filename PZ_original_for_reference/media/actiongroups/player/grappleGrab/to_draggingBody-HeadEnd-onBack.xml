@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>draggingBody-HeadEnd-onBack</transitionTo>
+	<conditions>
+		<isTrue>bIsGrappling</isTrue>
+	</conditions>
+</transition>

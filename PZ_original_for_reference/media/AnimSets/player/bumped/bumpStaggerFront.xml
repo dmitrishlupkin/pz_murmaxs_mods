@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="bumpStagger.xml">
+	<m_Name>bumpStaggerFront</m_Name>
+	<m_AnimName>Bob_StaggerBack_3m</m_AnimName>
+	<m_BlendTime>0.05</m_BlendTime>
+	<m_Conditions x_name="a4337a7c-1da8-4797-8d57-5383d0e58256">
+		<m_Name>BumpFall</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="8a659c84-01ea-4d1e-a528-b39f86346ef2">
+		<m_Name>BumpFallType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>pushedFront</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="b0be7df4-25ed-480f-9f47-5aa920d63cff">
+		<m_Name>BumpType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>stagger</m_Value>
+	</m_Conditions>
+	<m_Events x_name="1ea91268-1a5e-4015-988a-969f69764a9f">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>BumpDone=true</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="fad93670-9032-4c2c-b386-1b55c326a45e">
+		<m_EventName>SetVariable</m_EventName>
+		<m_TimePc>0.75</m_TimePc>
+		<m_ParameterValue>BumpStaggered=false</m_ParameterValue>
+	</m_Events>
+</animNode>

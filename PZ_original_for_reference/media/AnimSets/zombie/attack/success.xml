@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>success</m_Name>
+	<m_AnimName>Zombie_Bite_Success</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendOutTime>0.20</m_BlendOutTime>
+	<m_SpeedScale>1.04</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="cbaee95c-875e-400f-b4e8-7bb6132a74ed">
+		<m_Name>AttackOutcome</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>success</m_Value>
+	</m_Conditions>
+	<m_Events x_name="03832bad-764f-4541-8d1e-00345ef628d6">
+		<m_EventName>AttackCollisionCheck</m_EventName>
+		<m_TimePc>0.2</m_TimePc>
+		<m_ParameterValue>Bite</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="40328500-dd05-49bd-855a-08cc73d8ab90">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>PlayerHitReaction=Bite</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="cdf58a0c-d94a-409a-89dc-af3b452213d4">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>ZombieBiteDone=true</m_ParameterValue>
+	</m_Events>
+</animNode>

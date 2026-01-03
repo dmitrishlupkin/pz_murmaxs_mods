@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="WearClothingDefault.xml">
+	<m_Name>WearClothingHat</m_Name>
+	<m_AnimName>Bob_BandageHead</m_AnimName>
+	<m_BlendOutTime>0.40</m_BlendOutTime>
+	<m_Conditions x_name="4a37bfe6-3583-414f-85ad-8261e497899c">
+		<m_Name>WearClothingLocation</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Hat</m_Value>
+	</m_Conditions>
+</animNode>

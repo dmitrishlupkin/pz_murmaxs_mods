@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Ext01.xml">
+	<m_Name>Ext03</m_Name>
+	<m_AnimName>Bob_IdleExt05</m_AnimName>
+	<m_Conditions x_name="00158f11-c0d9-446a-8ae6-ea7170b09c1b">
+		<m_Value>3</m_Value>
+	</m_Conditions>
+</animNode>

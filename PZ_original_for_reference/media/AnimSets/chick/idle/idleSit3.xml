@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="idleSit.xml">
+	<m_Name>idleSit3</m_Name>
+	<m_AnimName>Chk_Chick_SatIdle03</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="bb3ac498-2552-444a-a14f-ade0256dc1c4">
+		<m_Name>sittingAnim</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>sit2</m_Value>
+	</m_Conditions>
+	<m_Events x_name="c9e819d7-16dd-4c1f-bb0f-b6efcb337d84">
+		<m_EventName>idleActionEnd</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,12 @@
+module Base
+{
+    template vehicle lightbar
+    {
+        part lightbar
+        {
+            mechanicArea = Engine,
+            area = SeatFrontLeft,
+            durability = 1,
+        }
+    }
+}

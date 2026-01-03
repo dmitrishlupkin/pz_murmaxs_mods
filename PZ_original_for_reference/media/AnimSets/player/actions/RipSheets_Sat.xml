@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="RipSheets.xml">
+	<m_Name>RipSheets_Sat</m_Name>
+	<m_Conditions x_name="7df285cd-074d-4428-b892-3d746c32a311">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="5a9503b5-7698-4a51-93f7-f71147cf1335">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="b546c0c1-07a3-4405-aadf-3ed3efbf6ed2">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>RipSheets</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="0704f46b-3c1e-4c7f-8aa7-e08f948a2c2a">
+		<m_Name>sittingonfurniture</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights>
+		<weight>0.00</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<weight>0.00</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Spine</boneName>
+		<weight>0.00</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Spine1</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Prop1</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Prop2</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

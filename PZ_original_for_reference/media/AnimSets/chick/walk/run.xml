@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>run</m_Name>
+	<m_AnimName>Chk_Chick_Run</m_AnimName>
+	<m_BlendTime>0.75</m_BlendTime>
+	<m_Conditions x_name="c02cecac-c181-40bb-9d53-62a8a19c17b4">
+		<m_Name>animalRunning</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="dc659bc2-bbb2-4327-bc24-8306ead69d35">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.33</m_TimePc>
+		<m_ParameterValue>run</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="35aa56b3-9195-49d9-9a7e-77e6955bf2f4">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.87</m_TimePc>
+		<m_ParameterValue>run</m_ParameterValue>
+	</m_Events>
+</animNode>

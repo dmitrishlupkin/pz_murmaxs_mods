@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Ext05.xml">
+	<m_Name>Ext05_2Handed</m_Name>
+	<m_AnimName>Bob_EmoteChewNails2H</m_AnimName>
+	<m_Conditions x_name="68137535-e150-4609-a8c5-9e4b5a328eb1">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+</animNode>

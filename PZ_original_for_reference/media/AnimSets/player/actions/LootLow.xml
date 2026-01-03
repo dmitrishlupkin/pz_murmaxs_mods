@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Loot.xml">
+	<m_Name>LootLow</m_Name>
+	<m_AnimName>Bob_IdleLooting_Low</m_AnimName>
+	<m_BlendTime>0.50</m_BlendTime>
+	<m_Conditions x_name="47b10021-4455-46ce-963b-e98d10770a13">
+		<m_Name>LootPosition</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>Low</m_Value>
+	</m_Conditions>
+	<m_Events x_name="296438f2-bc35-4316-849b-3001271ae3d8">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>requiresSlowIdleBlend=true</m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>hitreaction-hit</transitionTo>
+	<conditions>
+		<eventOccurred>washitpvpagain</eventOccurred>
+	</conditions>
+</transition>

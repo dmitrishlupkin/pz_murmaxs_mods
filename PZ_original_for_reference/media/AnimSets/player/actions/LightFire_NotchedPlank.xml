@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>LightFire_NotchedPlank</m_Name>
+	<m_AnimName>Bob_LightFire_NotchedPlank_LOOP</m_AnimName>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Conditions x_name="0fec6821-fad4-4817-8ffd-4e5973cd90f7">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>LightFire_KnotchedPlank</m_Value>
+	</m_Conditions>
+	<m_Events x_name="2a72ce62-d3ad-4644-810b-04e3fdb4e059">
+		<m_EventName>PlayNotchedPlankSound</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>MakeFireNotchedPlank</m_ParameterValue>
+	</m_Events>
+	<m_SubStateBoneWeights>
+		<boneName>Dummy01</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

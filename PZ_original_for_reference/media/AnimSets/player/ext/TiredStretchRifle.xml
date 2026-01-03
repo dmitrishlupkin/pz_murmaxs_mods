@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="TiredStretch.xml">
+	<m_Name>TiredStretchRifle</m_Name>
+	<m_AnimName>Bob_EmoteTiredStretch2H</m_AnimName>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_BlendOutTime>0.80</m_BlendOutTime>
+	<m_Conditions x_name="cb167c2e-5873-48c2-b633-d9e626023e60">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>firearm</m_Value>
+	</m_Conditions>
+</animNode>

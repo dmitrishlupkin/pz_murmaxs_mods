@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="burpees.xml">
+	<m_Name>burpeesend</m_Name>
+	<m_Looped>false</m_Looped>
+	<m_Conditions x_name="3034d7cc-3fdf-4566-b7fa-0e08874237c0">
+		<m_Name>ExerciseEnded</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="4247df1f-9397-497c-8137-1e895717b9e6">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>FitnessFinished=TRUE</m_ParameterValue>
+	</m_Events>
+</animNode>

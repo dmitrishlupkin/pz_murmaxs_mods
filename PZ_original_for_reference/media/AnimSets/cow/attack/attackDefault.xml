@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>attackDefault</m_Name>
+	<m_AnimName>Cow_Attack_HeadSwipe</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_Events x_name="4965f89e-369d-4fc2-b189-26528116eb34">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.15</m_TimePc>
+		<m_ParameterValue>attack</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="fad061ee-992a-41eb-94cc-46bf986fb98d">
+		<m_EventName>AttackConnect</m_EventName>
+		<m_TimePc>0.35</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

@@ -1,0 +1,42 @@
+module Base
+{
+    sound AnimalVoiceChickIdle
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chick/Voice/Idle,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalVoiceChickStressed
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chick/Voice/Stressed,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalVoiceChickDeath
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chick/Voice/Death,
+            distanceMax = 150,
+        }
+    }
+
+    sound AnimalVoiceChickPain
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chick/Voice/Pain,
+            distanceMax = 150,
+        }
+    }
+}

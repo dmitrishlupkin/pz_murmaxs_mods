@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>knockeddown</transitionTo>
+	<conditions>
+		<isFalse>bFalling</isFalse>
+		<isTrue>bLandAnimFinished</isTrue>
+		<isTrue>bHardFall</isTrue>
+	</conditions>
+</transition>

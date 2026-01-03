@@ -1,0 +1,113 @@
+module Base
+{
+    model muzzle_flash_assault_rifle
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_assault_rifle,
+        texture = weapons/firearm/fx/muzzle_flash_00,
+        cullFace = None,
+    }
+
+    model muzzle_flash_assault_rifle02
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_assault_rifle02,
+        cullFace = None,
+    }
+
+    model muzzle_flash_handgun
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_handgun,
+        cullFace = None,
+    }
+
+    model muzzle_flash_handgun02
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_handgun02,
+        cullFace = None,
+    }
+
+    model muzzle_flash_handgun03
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_handgun03,
+        cullFace = None,
+    }
+
+    model muzzle_flash_hunting_rifle
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_hunting_rifle,
+        cullFace = None,
+    }
+
+    model muzzle_flash_m14
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_m14,
+        cullFace = None,
+    }
+
+    model muzzle_flash_revolver
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_revolver,
+        cullFace = None,
+    }
+
+    model muzzle_flash_revolver_cap_gun
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_revolver,
+        cullFace = None,
+        scale = 0.25,
+    }
+
+    model muzzle_flash_revolver_long
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_revolver_long,
+        cullFace = None,
+    }
+
+    model muzzle_flash_revolver_short
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_revolver_short,
+        cullFace = None,
+    }
+
+    model muzzle_flash_rifle_cap_gun
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_revolver,
+        cullFace = None,
+        scale = 0.25,
+    }
+
+    model muzzle_flash_shotgun
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_shotgun,
+        cullFace = None,
+    }
+
+    model muzzle_flash_shotgun_double_barrel
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_shotgun_double_barrel_sawed_off,
+        cullFace = None,
+    }
+
+    model muzzle_flash_shotgun_double_barrel_sawed_off
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_shotgun_double_barrel_sawed_off,
+        cullFace = None,
+    }
+
+    model muzzle_flash_shotgun_sawed_off
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_shotgun_sawed_off,
+        cullFace = None,
+    }
+
+    model muzzle_flash_sniper_rifle
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_sniper_rifle,
+        cullFace = None,
+    }
+
+    model muzzle_flash_varmint_rifle
+    {
+        mesh = weapons/firearm/fx/muzzle_flash_varmint_rifle,
+        cullFace = None,
+    }
+}

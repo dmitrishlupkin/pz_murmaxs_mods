@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>falldown-headleft-ragdoll</transitionTo>
+	<conditions>
+		<compare op="==" a="hitreaction" b="HeadLeft" />
+		<isTrue>usePhysicHitReaction</isTrue>
+		<isTrue>canRagdoll</isTrue>
+	</conditions>
+</transition>

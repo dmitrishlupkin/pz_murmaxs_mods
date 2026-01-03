@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="ShotShoulderStaggerL.xml">
+	<m_Name>ShotShoulderStaggerBehindL</m_Name>
+	<m_AnimName>Zombie_ShotShoulderBehindFall_L</m_AnimName>
+	<m_Conditions x_name="20e83cb5-109f-4cae-9366-b3415a451d05">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

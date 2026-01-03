@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="SneakWipeBrow.xml">
+	<m_Name>SneakWipeBrow2H</m_Name>
+	<m_AnimName>Bob_StealthEmoteWipeBrow2H</m_AnimName>
+	<m_BlendOutTime>0.50</m_BlendOutTime>
+	<m_Conditions x_name="094e1c89-79df-4f80-87a3-c7e458a7dea9">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="299aa590-aaca-4916-bf82-3eccabc28cdc">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="2a012d04-48ee-428a-ab45-bcd62d422f57">
+		<m_Name>Ext</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>WipeBrow</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="29f07ed6-3c70-466f-9c65-eb1aeba8989f">
+		<m_Name>sneaking</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="d7f98834-7cc0-4dee-b34b-47b136057179">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

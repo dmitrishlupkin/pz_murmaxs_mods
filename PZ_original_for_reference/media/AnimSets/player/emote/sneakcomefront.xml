@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="comefront.xml">
+	<m_Name>sneakcomefront</m_Name>
+	<m_AnimName>Bob_Stealth_1H_ComeFront</m_AnimName>
+	<m_Conditions x_name="a98139c2-750a-457b-a3cf-fdafb7ed2c7c">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

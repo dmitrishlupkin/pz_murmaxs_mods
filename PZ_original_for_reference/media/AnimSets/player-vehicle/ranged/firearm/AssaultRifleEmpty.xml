@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="AssaultRifleDefault.xml">
+	<m_Name>AssaultRifleEmpty</m_Name>
+	<m_AnimName>Bob_IdleAimRifle</m_AnimName>
+	<m_SpeedScale>1.60</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleAimRifle</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleAimRifle</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleAimRifle</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleAimRifle</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleAimRifle</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="c398977b-361f-4e34-9fee-6fd6d74db8db">
+		<m_Name>RangedWeaponEmpty</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="d8e83e61-b8b7-4433-8ab0-43384380a14c">
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="367650a6-b84d-4c9e-90e9-f311c130bf58">
+		<m_EventName>WeaponEmptyCheck</m_EventName>
+	</m_Events>
+	<m_Events x_name="959ceb26-c0d3-4c02-867f-fc582ea54900">
+		<m_EventName>playClickSound</m_EventName>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

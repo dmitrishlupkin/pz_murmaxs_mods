@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="default.xml">
+	<m_Name>fromWalking</m_Name>
+	<m_Conditions x_name="5a7a8743-9695-4583-b1ec-02c9a1266e6e">
+		<m_Name>ismoving</m_Name>
+	</m_Conditions>
+	<m_Conditions x_name="53a49c4d-67e0-4330-8bac-b5fc95afb873">
+		<m_Name>fromBehind</m_Name>
+		<m_Type>STRING</m_Type>
+	</m_Conditions>
+</animNode>

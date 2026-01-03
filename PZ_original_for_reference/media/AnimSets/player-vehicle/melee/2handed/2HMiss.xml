@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="2HDefault.xml">
+	<m_Name>2HMiss</m_Name>
+	<m_AnimName>Bob_AttackBat_Miss</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_AttackBat_Miss</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_AttackBat_Miss</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_AttackBat_Miss</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_AttackBat_Miss</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="c901a5d3-99c9-4dbd-831b-9acf1c30305a">
+		<m_Name>attackType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>miss</m_Value>
+	</m_Conditions>
+</animNode>

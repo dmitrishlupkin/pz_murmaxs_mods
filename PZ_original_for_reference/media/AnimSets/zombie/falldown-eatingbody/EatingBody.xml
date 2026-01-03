@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="default.xml">
+	<m_Name>EatingBody</m_Name>
+	<m_AnimName>Zombie_EatingToIdle_FloorBack</m_AnimName>
+	<m_BlendTime>0.10</m_BlendTime>
+	<m_SpeedScale>0.90</m_SpeedScale>
+</animNode>

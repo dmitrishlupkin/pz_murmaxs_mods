@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="aim.xml">
+	<m_Name>aim_spear</m_Name>
+	<m_AnimName>Bob_IdleAimSpear</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleAimSpear_Up75</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleAimSpear_Up45</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleAimSpear</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleAimSpear_Down</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleAimSpear_Down75</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_IdleAimSpear</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="f2c28b85-d9e4-4170-8194-bda2b233bd1a">
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+	<m_Transitions>
+		<m_Target>IdleSpear</m_Target>
+		<m_AnimName>Bob_AimToIdle_Bat</m_AnimName>
+	</m_Transitions>
+	<m_Transitions>
+		<m_AnimName>Bob_AimToIdle_Bat</m_AnimName>
+		<m_blendOutTime>0.6</m_blendOutTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_AnimName>Bob_AimToIdle_Bat</m_AnimName>
+		<m_blendOutTime>0.6</m_blendOutTime>
+	</m_Transitions>
+</animNode>

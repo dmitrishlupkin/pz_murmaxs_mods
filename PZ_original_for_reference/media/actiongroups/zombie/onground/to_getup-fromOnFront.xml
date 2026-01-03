@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>getup-fromOnFront</transitionTo>
+		<conditions>
+			<isFalse>bCrawling</isFalse>
+			<isFalse>bDead</isFalse>
+			<compare op="!=" a="realState" b="falldown" />
+			<compare op="!=" a="realState" b="onground" />
+			<compare op="!=" a="realState" b="staggerback" />
+			<compare op="!=" a="realState" b="hitreaction" />
+			<lessEqual a="reanimateTimer" b="0.0000" />
+			<isTrue>bClient</isTrue>
+			<isTrue>fallOnFront</isTrue>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>getup-fromOnFront</transitionTo>
+		<conditions>
+			<isFalse>bCrawling</isFalse>
+			<isFalse>bFakeDead</isFalse>
+			<isFalse>bDead</isFalse>
+			<isFalse>bUnderVehicle</isFalse>
+			<isFalse>bBecomeCrawler</isFalse>
+			<lessEqual a="reanimateTimer" b="0.0000" />
+			<isFalse>bClient</isFalse>
+			<isTrue>fallOnFront</isTrue>
+		</conditions>
+	</transition>
+</transitions>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="aim.xml">
+	<m_Name>aim_1handed</m_Name>
+	<m_Conditions x_name="f2c28b85-d9e4-4170-8194-bda2b233bd1a">
+		<m_Value>1handed</m_Value>
+	</m_Conditions>
+	<m_Transitions />
+	<m_Transitions>
+		<m_blendOutTime>0.6</m_blendOutTime>
+	</m_Transitions>
+	<m_Transitions>
+		<m_blendOutTime>0.6</m_blendOutTime>
+	</m_Transitions>
+</animNode>

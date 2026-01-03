@@ -1,0 +1,11 @@
+module Base
+{
+    model Vehicles_ModernCarLights
+    {
+        mesh = vehicles/Vehicles_ModernCarLights,
+        shader = vehicle_norandom_multiuv,
+        static = true,
+        invertX = false,
+        scale = 0.008,
+    }
+}

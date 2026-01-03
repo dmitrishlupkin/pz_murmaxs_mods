@@ -1,0 +1,482 @@
+module Base
+{
+    sound VoiceFemale
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleMeleeStab
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Melee/Stab,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleMeleeStabOnGround
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Melee/StabOnGround,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleMeleeAttackHeavy
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Melee/Attack/Heavy,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleMeleeAttack
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Melee/Attack/Default,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleMeleeShove
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Melee/Attack/Default,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleMeleeStomp
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Melee/Attack/Default,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemalePainFromBite
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Pain/FromBite,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemalePainFromGlassCut
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Pain/FromGlassCut,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemalePainFromFallLow
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Pain/FromFallLow,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemalePainFromFallHigh
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Pain/FromFallHigh,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemalePainFromHitBlunt
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Pain/FromHitBlunt,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemalePainFromRunIntoWall
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Pain/FromRunIntoWall,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleShoutHey
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Shout/Hey,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleShoutMegaphoneHey
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/ShoutMegaphone/Hey,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleSneezeLight
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Sneeze/Light,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleSneezeHeavy
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Sneeze/Heavy,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleJumpLow
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Jump/Low,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleJumpHigh
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Jump/High,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleDeathAlone
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Death/Alone,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleDeathEaten
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Death/Eaten,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleWhisperHey
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Whisper/Hey,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleWhisperPsst
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Whisper/Psst,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleWhisperMegaphoneHey
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/WhisperMegaphone/Hey,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleWhisperMegaphonePsst
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/WhisperMegaphone/Psst,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleClimbWindow
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Climb/Window,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleCough
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Cough,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleMuffledCough
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/MuffledCough,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleSleep
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Sleep,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleVomit
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Vomit,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleSleep
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Sleep,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleApplyBandage
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/ApplyBandage,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleSighBored
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Sigh/Bored,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleSighReliefed
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Sigh/Reliefed,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleSighSad
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Sigh/Sad,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemalePainFromScratch
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Pain/FromScratch,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemalePainFromLacerate
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Pain/FromLacerate,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleLureTsk
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Lure/Tsk,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleLureCmon
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Lure/Cmon,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleDeathFall
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/DeathFall,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleDrunkHic
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Drunk/Hic,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleExercise
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Exercise,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleFreezeShiver
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/FreezeShiver,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleSmoke
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Smoke,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemalePainMoodle
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Moodles/SeverePain,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleCorpseDragging
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Corpse/Dragging,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleCorpseHighEffort
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Corpse/HighEffort,
+            distanceMax = 150,
+        }
+    }
+
+    sound VoiceFemaleCorpseLowEffort
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Corpse/LowEffort,
+            distanceMax = 150,
+        }
+    }
+}

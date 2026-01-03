@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>rope</m_Name>
+	<m_AnimName>Bob_ClimbWindowGrab</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>1.20</m_SpeedScale>
+	<m_Conditions x_name="768fd15e-15d5-46f4-b92b-50784b099c3c">
+		<m_Name>ClimbFenceOutcome</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>rope</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="81663aef-8a32-43ba-bd12-658b162db00c">
+		<m_Name>ClimbFenceStarted</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="d1f8d9f0-9395-4592-834e-6c4d5dec9c91">
+		<m_Name>ClimbFenceStruggle</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>false</m_Value>
+	</m_Conditions>
+	<m_Events x_name="345a89b5-1e4f-4a4d-8ba3-30bbef134e7a">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>ClimbFenceFinished=true</m_ParameterValue>
+	</m_Events>
+</animNode>

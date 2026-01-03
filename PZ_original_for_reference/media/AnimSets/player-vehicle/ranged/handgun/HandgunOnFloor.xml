@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="HandgunDefault.xml">
+	<m_Name>HandgunOnFloor</m_Name>
+	<m_AnimName>Bob_AttackFloorHandgun</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_AttackFloorHandgun</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_AttackFloorHandgun</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_AttackFloorHandgun</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_AttackFloorHandgun</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_AttackFloorHandgun</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="46f6e608-2cc6-454b-8032-c00a7b7cbe48">
+		<m_Value>true</m_Value>
+	</m_Conditions>
+</animNode>

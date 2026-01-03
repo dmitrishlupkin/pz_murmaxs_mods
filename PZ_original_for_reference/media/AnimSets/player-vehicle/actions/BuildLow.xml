@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Build.xml">
+	<m_Name>BuildLow</m_Name>
+	<m_AnimName>Bob_IdleHammering_Low</m_AnimName>
+	<m_Conditions x_name="ae1c00d7-157f-4843-a64a-2198727e9988">
+		<m_Value>BuildLow</m_Value>
+	</m_Conditions>
+</animNode>

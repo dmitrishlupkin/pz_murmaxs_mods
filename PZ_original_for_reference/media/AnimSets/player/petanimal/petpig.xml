@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="defaultpet.xml">
+	<m_Name>petpig</m_Name>
+	<m_AnimName>Bob_PetPig</m_AnimName>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetPig_Large</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetPig</m_AnimName>
+	</m_2DBlends>
+	<m_2DBlends>
+		<m_AnimName>Bob_PetPig_Small</m_AnimName>
+	</m_2DBlends>
+	<m_Conditions x_name="df486c74-c02b-4f0f-a7ac-e5957a21176a">
+		<m_Name>animal</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>sow</m_Value>
+	</m_Conditions>
+</animNode>

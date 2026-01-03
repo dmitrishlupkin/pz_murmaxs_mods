@@ -1,0 +1,632 @@
+module Base
+{
+    physicsShape ramp10segment1n
+    {
+        mesh = physics/ramp10|Segment1,
+        translate = 0.0 0.0 0.5,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp10segment2n
+    {
+        mesh = physics/ramp10|Segment2,
+        translate = 0.0 0.0 1.5,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp10segment3n
+    {
+        mesh = physics/ramp10|Segment3,
+        translate = 0.0 0.0 2.5,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp10segment4n
+    {
+        mesh = physics/ramp10|Segment4,
+        translate = 0.0 0.0 3.5,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp10segment5n
+    {
+        mesh = physics/ramp10|Segment5,
+        translate = 0.0 0.0 4.5,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp10segment6n
+    {
+        mesh = physics/ramp10|Segment6,
+        translate = 0.0 0.0 5.5,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp10segment7n
+    {
+        mesh = physics/ramp10|Segment7,
+        translate = 0.0 0.0 6.5,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp10segment8n
+    {
+        mesh = physics/ramp10|Segment8,
+        translate = 0.0 0.0 7.5,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp10segment9n
+    {
+        mesh = physics/ramp10|Segment9,
+        translate = 0.0 0.0 8.5,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp10segment10n
+    {
+        mesh = physics/ramp10|Segment10,
+        translate = 0.0 0.0 9.5,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment1n
+    {
+        mesh = physics/ramp20|Segment1,
+        translate = 0.0 0.0 0.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment2n
+    {
+        mesh = physics/ramp20|Segment2,
+        translate = 0.0 0.0 1.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment3n
+    {
+        mesh = physics/ramp20|Segment3,
+        translate = 0.0 0.0 2.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment4n
+    {
+        mesh = physics/ramp20|Segment4,
+        translate = 0.0 0.0 3.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment5n
+    {
+        mesh = physics/ramp20|Segment5,
+        translate = 0.0 0.0 4.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment6n
+    {
+        mesh = physics/ramp20|Segment6,
+        translate = 0.0 0.0 5.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment7n
+    {
+        mesh = physics/ramp20|Segment7,
+        translate = 0.0 0.0 6.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment8n
+    {
+        mesh = physics/ramp20|Segment8,
+        translate = 0.0 0.0 7.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment9n
+    {
+        mesh = physics/ramp20|Segment9,
+        translate = 0.0 0.0 8.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment10n
+    {
+        mesh = physics/ramp20|Segment10,
+        translate = 0.0 0.0 9.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment11n
+    {
+        mesh = physics/ramp20|Segment11,
+        translate = 0.0 0.0 10.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment12n
+    {
+        mesh = physics/ramp20|Segment12,
+        translate = 0.0 0.0 11.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment13n
+    {
+        mesh = physics/ramp20|Segment13,
+        translate = 0.0 0.0 12.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment14n
+    {
+        mesh = physics/ramp20|Segment14,
+        translate = 0.0 0.0 13.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment15n
+    {
+        mesh = physics/ramp20|Segment15,
+        translate = 0.0 0.0 14.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment16n
+    {
+        mesh = physics/ramp20|Segment16,
+        translate = 0.0 0.0 15.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment17n
+    {
+        mesh = physics/ramp20|Segment17,
+        translate = 0.0 0.0 16.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment18n
+    {
+        mesh = physics/ramp20|Segment18,
+        translate = 0.0 0.0 17.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment19n
+    {
+        mesh = physics/ramp20|Segment19,
+        translate = 0.0 0.0 18.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment20n
+    {
+        mesh = physics/ramp20|Segment20,
+        translate = 0.0 0.0 19.0,
+        rotate = 0.0 180.0 0.0,
+    }
+
+    physicsShape ramp20segment1s
+    {
+        mesh = physics/ramp20|Segment1,
+        translate = 0.0 0.0 0.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment2s
+    {
+        mesh = physics/ramp20|Segment2,
+        translate = 0.0 0.0 -1.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment3s
+    {
+        mesh = physics/ramp20|Segment3,
+        translate = 0.0 0.0 -2.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment4s
+    {
+        mesh = physics/ramp20|Segment4,
+        translate = 0.0 0.0 -3.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment5s
+    {
+        mesh = physics/ramp20|Segment5,
+        translate = 0.0 0.0 -4.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment6s
+    {
+        mesh = physics/ramp20|Segment6,
+        translate = 0.0 0.0 -5.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment7s
+    {
+        mesh = physics/ramp20|Segment7,
+        translate = 0.0 0.0 -6.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment8s
+    {
+        mesh = physics/ramp20|Segment8,
+        translate = 0.0 0.0 -7.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment9s
+    {
+        mesh = physics/ramp20|Segment9,
+        translate = 0.0 0.0 -8.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment10s
+    {
+        mesh = physics/ramp20|Segment10,
+        translate = 0.0 0.0 -9.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment11s
+    {
+        mesh = physics/ramp20|Segment11,
+        translate = 0.0 0.0 -10.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment12s
+    {
+        mesh = physics/ramp20|Segment12,
+        translate = 0.0 0.0 -11.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment13s
+    {
+        mesh = physics/ramp20|Segment13,
+        translate = 0.0 0.0 -12.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment14s
+    {
+        mesh = physics/ramp20|Segment14,
+        translate = 0.0 0.0 -13.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment15s
+    {
+        mesh = physics/ramp20|Segment15,
+        translate = 0.0 0.0 -14.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment16s
+    {
+        mesh = physics/ramp20|Segment16,
+        translate = 0.0 0.0 -15.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment17s
+    {
+        mesh = physics/ramp20|Segment17,
+        translate = 0.0 0.0 -16.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment18s
+    {
+        mesh = physics/ramp20|Segment18,
+        translate = 0.0 0.0 -17.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment19s
+    {
+        mesh = physics/ramp20|Segment19,
+        translate = 0.0 0.0 -18.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment20s
+    {
+        mesh = physics/ramp20|Segment20,
+        translate = 0.0 0.0 -19.0,
+        rotate = 0.0 0.0 0.0,
+    }
+
+    physicsShape ramp20segment1w
+    {
+        mesh = physics/ramp20|Segment1,
+        translate = 0.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment2w
+    {
+        mesh = physics/ramp20|Segment2,
+        translate = 1.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment3w
+    {
+        mesh = physics/ramp20|Segment3,
+        translate = 2.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment4w
+    {
+        mesh = physics/ramp20|Segment4,
+        translate = 3.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment5w
+    {
+        mesh = physics/ramp20|Segment5,
+        translate = 4.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment6w
+    {
+        mesh = physics/ramp20|Segment6,
+        translate = 5.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment7w
+    {
+        mesh = physics/ramp20|Segment7,
+        translate = 6.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment8w
+    {
+        mesh = physics/ramp20|Segment8,
+        translate = 7.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment9w
+    {
+        mesh = physics/ramp20|Segment9,
+        translate = 8.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment10w
+    {
+        mesh = physics/ramp20|Segment10,
+        translate = 9.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment11w
+    {
+        mesh = physics/ramp20|Segment11,
+        translate = 10.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment12w
+    {
+        mesh = physics/ramp20|Segment12,
+        translate = 11.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment13w
+    {
+        mesh = physics/ramp20|Segment13,
+        translate = 12.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment14w
+    {
+        mesh = physics/ramp20|Segment14,
+        translate = 13.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment15w
+    {
+        mesh = physics/ramp20|Segment15,
+        translate = 14.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment16w
+    {
+        mesh = physics/ramp20|Segment16,
+        translate = 15.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment17w
+    {
+        mesh = physics/ramp20|Segment17,
+        translate = 16.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment18w
+    {
+        mesh = physics/ramp20|Segment18,
+        translate = 17.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment19w
+    {
+        mesh = physics/ramp20|Segment19,
+        translate = 18.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment20w
+    {
+        mesh = physics/ramp20|Segment20,
+        translate = 19.0 0.0 0.0,
+        rotate = 0.0 270.0 0.0,
+    }
+
+    physicsShape ramp20segment1e
+    {
+        mesh = physics/ramp20|Segment1,
+        translate = 0.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment2e
+    {
+        mesh = physics/ramp20|Segment2,
+        translate = -1.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment3e
+    {
+        mesh = physics/ramp20|Segment3,
+        translate = -2.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment4e
+    {
+        mesh = physics/ramp20|Segment4,
+        translate = -3.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment5e
+    {
+        mesh = physics/ramp20|Segment5,
+        translate = -4.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment6e
+    {
+        mesh = physics/ramp20|Segment6,
+        translate = -5.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment7e
+    {
+        mesh = physics/ramp20|Segment7,
+        translate = -6.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment8e
+    {
+        mesh = physics/ramp20|Segment8,
+        translate = -7.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment9e
+    {
+        mesh = physics/ramp20|Segment9,
+        translate = -8.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment10e
+    {
+        mesh = physics/ramp20|Segment10,
+        translate = -9.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment11e
+    {
+        mesh = physics/ramp20|Segment11,
+        translate = -10.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment12e
+    {
+        mesh = physics/ramp20|Segment12,
+        translate = -11.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment13e
+    {
+        mesh = physics/ramp20|Segment13,
+        translate = -12.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment14e
+    {
+        mesh = physics/ramp20|Segment14,
+        translate = -13.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment15e
+    {
+        mesh = physics/ramp20|Segment15,
+        translate = -14.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment16e
+    {
+        mesh = physics/ramp20|Segment16,
+        translate = -15.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment17e
+    {
+        mesh = physics/ramp20|Segment17,
+        translate = -16.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment18e
+    {
+        mesh = physics/ramp20|Segment18,
+        translate = -17.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment19e
+    {
+        mesh = physics/ramp20|Segment19,
+        translate = -18.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+
+    physicsShape ramp20segment20e
+    {
+        mesh = physics/ramp20|Segment20,
+        translate = -19.0 0.0 0.0,
+        rotate = 0.0 90.0 0.0,
+    }
+}

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>defaultWalk</m_Name>
+	<m_AnimName>Piglet_Walk</m_AnimName>
+	<m_BlendTime>0.75</m_BlendTime>
+	<m_SpeedScale>animalSpeed</m_SpeedScale>
+	<m_Events x_name="3cf05c51-afe6-44f9-8764-2346a15facc6">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.28</m_TimePc>
+		<m_ParameterValue>walkFront</m_ParameterValue>
+	</m_Events>
+	<m_Events x_name="c72a63b7-6dcb-40f5-be08-2c98816343b9">
+		<m_EventName>PlayBreedSound</m_EventName>
+		<m_TimePc>0.75</m_TimePc>
+		<m_ParameterValue>walkBack</m_ParameterValue>
+	</m_Events>
+</animNode>

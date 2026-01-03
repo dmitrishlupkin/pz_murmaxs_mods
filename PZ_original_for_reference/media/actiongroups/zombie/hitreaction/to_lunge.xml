@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>lunge</transitionTo>
+	<conditions>
+		<eventNotOccurred>washit</eventNotOccurred>
+		<eventOccurred>ActiveAnimFinishing</eventOccurred>
+		<isTrue>bLunge</isTrue>
+		<isFalse>bKnockedDown</isFalse>
+		<isFalse>bClient</isFalse>
+	</conditions>
+</transition>

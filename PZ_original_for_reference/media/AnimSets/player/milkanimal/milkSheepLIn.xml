@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="milkSheepL.xml">
+	<m_Name>milkSheepLIn</m_Name>
+	<m_AnimName>Bob_Milking_CowL_In</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_Conditions x_name="79b75210-c5b1-4a58-9c61-3b84668be3ed">
+		<m_Value>SheepLIn</m_Value>
+	</m_Conditions>
+	<m_Events x_name="aee5a1ba-cf94-4474-83c0-f345bbeafeba">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>milkAnim=SheepLLoop</m_ParameterValue>
+	</m_Events>
+</animNode>

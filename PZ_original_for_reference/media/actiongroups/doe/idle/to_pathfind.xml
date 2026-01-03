@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>pathfind</transitionTo>
+		<conditions>
+			<isTrue>bPathfind</isTrue>
+		</conditions>
+		<ConditionsBounds x="0.00" y="0.00" w="1.00" h="1.00" />
+		<FromPoint x="25,123.00" y="25,223.00" />
+		<ToPoint x="25,367.00" y="25,072.00" />
+	</transition>
+	<transition>
+		<transitionTo>pathfind</transitionTo>
+		<conditions>
+			<isTrue>bPathfind</isTrue>
+		</conditions>
+		<ConditionsBounds x="0.00" y="0.00" w="1.00" h="1.00" />
+		<FromPoint x="25,123.00" y="25,223.00" />
+		<ToPoint x="25,367.00" y="25,072.00" />
+	</transition>
+	<transition>
+		<transitionTo>pathfind</transitionTo>
+		<conditions>
+			<isTrue>bPathfind</isTrue>
+		</conditions>
+		<ConditionsBounds x="0.00" y="0.00" w="1.00" h="1.00" />
+		<FromPoint x="25,123.00" y="25,223.00" />
+		<ToPoint x="25,367.00" y="25,072.00" />
+	</transition>
+</transitions>

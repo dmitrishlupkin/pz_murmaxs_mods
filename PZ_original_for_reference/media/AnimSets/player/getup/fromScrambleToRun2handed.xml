@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="fromScrambleToRun.xml">
+	<m_Name>fromScrambleToRun2handed</m_Name>
+	<m_AnimName>Bob_ScrambleFloorToRun_Bat</m_AnimName>
+	<m_Conditions x_name="c24f97d7-220b-4675-b556-be933eae2a8a">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+</animNode>

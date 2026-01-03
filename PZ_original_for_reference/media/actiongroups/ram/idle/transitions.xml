@@ -1,0 +1,31 @@
+<transitions x_include="../defaultTransitions.xml">
+    <transition>
+        <transitionTo>walk</transitionTo>
+        <conditions>
+            <isTrue>bMoving</isTrue>
+            <isFalse>bPathfind</isFalse>
+        </conditions>
+    </transition>
+
+    <transition>
+        <transitionTo>pathfind</transitionTo>
+        <conditions>
+            <isTrue>bPathfind</isTrue>
+        </conditions>
+    </transition>
+
+    <transition>
+        <transitionTo>eating</transitionTo>
+        <conditions>
+            <isTrue>isAnimalEating</isTrue>
+        </conditions>
+    </transition>
+
+    <transition>
+        <transitionTo>onhook</transitionTo>
+        <conditions>
+            <isTrue>onhook</isTrue>
+        </conditions>
+    </transition>
+
+</transitions>

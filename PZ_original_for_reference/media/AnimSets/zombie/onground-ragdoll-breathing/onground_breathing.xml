@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>onground_breathing</m_Name>
+	<m_AnimName>Bob_Idle_HeavyBreathing</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.25</m_SpeedScale>
+	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
+	<m_BlendCurve>
+		<Sequence>
+			<point x="0.0441" y="0.0000" out="EaseOutInQuad" />
+			<point x="0.2274" y="0.4186" out="EaseOutInQuad" />
+			<point x="0.2807" y="0.4386" out="EaseOutInQuad" />
+			<point x="0.5058" y="0.0000" out="Linear" />
+			<point x="0.5568" y="0.0000" out="EaseOutInQuad" />
+			<point x="0.7401" y="0.4986" out="Linear" />
+			<point x="0.8283" y="0.5186" out="EaseOutInQuad" />
+			<point x="1.0000" y="0.0000" out="Linear" />
+		</Sequence>
+	</m_BlendCurve>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Spine</boneName>
+		<weight>0.15</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Spine1</boneName>
+		<weight>0.33</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Neck</boneName>
+		<weight>0.25</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Head</boneName>
+		<weight>0.15</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_L_Clavicle</boneName>
+		<weight>0.05</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_R_Clavicle</boneName>
+		<weight>0.05</weight>
+		<includeDescendants>false</includeDescendants>
+	</m_SubStateBoneWeights>
+</animNode>

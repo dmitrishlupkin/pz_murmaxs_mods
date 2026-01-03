@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="shrug.xml">
+	<m_Name>ShrugRifle</m_Name>
+	<m_AnimName>Bob_EmoteShrugRifle</m_AnimName>
+	<m_Conditions x_name="c979a9e3-4fdf-4531-8ed8-20fdad9fb722">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>firearm</m_Value>
+	</m_Conditions>
+</animNode>

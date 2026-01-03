@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>face-target</transitionTo>
+	<conditions>
+		<isTrue>bAttack</isTrue>
+		<isFalse>isFacingTarget</isFalse>
+	</conditions>
+</transition>

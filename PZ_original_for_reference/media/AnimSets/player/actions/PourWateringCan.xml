@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Pour.xml">
+	<m_Name>PourWateringCan</m_Name>
+	<m_AnimName>Bob_Water_WaterinCan</m_AnimName>
+	<m_BlendTime>0.40</m_BlendTime>
+	<m_BlendOutTime>-1.00</m_BlendOutTime>
+	<m_Conditions x_name="22f3ea7e-9b20-40fd-9397-3c80cfd91996">
+		<m_Name>PourType</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>wateringcan</m_Value>
+	</m_Conditions>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Prop1</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Bip01_Prop2</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

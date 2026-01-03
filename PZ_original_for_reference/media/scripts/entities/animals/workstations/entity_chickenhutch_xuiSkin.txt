@@ -1,0 +1,22 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_ChickenHutch
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Chicken Coop 1,
+            Icon = Build_Coop,
+        }
+    }
+
+    xuiSkin default
+    {
+        entity ES_ChickenHutch2
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Chicken Coop 2,
+            Icon = Build_Coop2,
+        }
+    }
+}

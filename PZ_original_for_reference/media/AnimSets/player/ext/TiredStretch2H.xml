@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="TiredStretch.xml">
+	<m_Name>TiredStretch2H</m_Name>
+	<m_AnimName>Bob_EmoteTiredStretch2H</m_AnimName>
+	<m_Conditions x_name="a9f3e408-6ce2-4d55-a4f4-014cfc022b83">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="91e59f9c-7399-435f-b372-69d29a0fa4d6">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="d6c982c9-9f42-4d94-8485-28ba5234ca4f">
+		<m_Name>Ext</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>TiredStretch</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="57862802-afce-4ecf-9f1c-ef7d433a530f">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

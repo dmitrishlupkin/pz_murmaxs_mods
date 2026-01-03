@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transitions>
+	<transition>
+		<transitionTo>dropBodyAndRun</transitionTo>
+		<conditions>
+			<isTrue>isMoving</isTrue>
+			<isTrue>isRunning</isTrue>
+		</conditions>
+	</transition>
+	<transition>
+		<transitionTo>dropBodyAndRun</transitionTo>
+		<conditions>
+			<isTrue>isMoving</isTrue>
+			<isTrue>isSprinting</isTrue>
+		</conditions>
+	</transition>
+</transitions>

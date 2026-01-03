@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="WearClothingNotMoving.xml">
+	<m_Name>WearClothingLegs</m_Name>
+	<m_Conditions x_name="6571acf8-8aeb-40bb-9920-e83a5b6fc2e7">
+		<m_Value>Legs</m_Value>
+	</m_Conditions>
+</animNode>

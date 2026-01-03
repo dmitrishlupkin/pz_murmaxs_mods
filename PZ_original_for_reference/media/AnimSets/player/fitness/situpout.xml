@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="situp.xml">
+	<m_Name>situpout</m_Name>
+	<m_AnimName>Bob_SitUp_Out</m_AnimName>
+	<m_Looped>false</m_Looped>
+	<m_Conditions x_name="c894d34c-9357-4ced-9fe9-2f2978c3b886">
+		<m_Name>ExerciseEnded</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Events x_name="c088a476-07f2-4c33-92dc-5caafa3d0223">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>End</m_Time>
+		<m_ParameterValue>FitnessFinished=TRUE</m_ParameterValue>
+	</m_Events>
+</animNode>

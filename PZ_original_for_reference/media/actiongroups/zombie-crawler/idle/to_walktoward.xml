@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>walktoward</transitionTo>
+	<conditions>
+		<isTrue>bMoving</isTrue>
+		<isFalse>bPathfind</isFalse>
+		<isFalse>bClient</isFalse>
+	</conditions>
+</transition>

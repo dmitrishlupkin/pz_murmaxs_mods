@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="WipeHead.xml">
+	<m_Name>WipeHead2H</m_Name>
+	<m_AnimName>Bob_EmoteWipeHead2H</m_AnimName>
+	<m_Conditions x_name="5cd5a28f-9084-4e85-b8a2-4f25a552d5bc">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>2handed</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="9fd0115c-d0fb-4e33-9cf6-0eb3883f53f4">
+		<m_Type>OR</m_Type>
+	</m_Conditions>
+	<m_Conditions x_name="e8324a86-6524-4916-a24a-0bac76b9e5cc">
+		<m_Name>Ext</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>WipeHead</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="0b44c35b-ad08-4246-8a53-dbd2a18b6176">
+		<m_Name>Weapon</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>spear</m_Value>
+	</m_Conditions>
+</animNode>

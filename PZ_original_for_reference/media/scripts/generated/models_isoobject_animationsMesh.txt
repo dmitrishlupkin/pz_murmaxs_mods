@@ -1,0 +1,316 @@
+module Base
+{
+    animationsMesh door_n_sw
+    {
+        meshFile = IsoObject/door_n_sw.glb,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh door_w_se
+    {
+        meshFile = IsoObject/door_w_se.glb,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh door_pair_left_n
+    {
+        meshFile = IsoObject/door_pair_left_n.glb,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh door_pair_right_n
+    {
+        meshFile = IsoObject/door_pair_right_n.glb,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh door_pair_right_n_open
+    {
+        meshFile = IsoObject/door_pair_right_n_open.glb,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh door_pair_left_w
+    {
+        meshFile = IsoObject/door_pair_left_w.glb,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh door_pair_left_w_open
+    {
+        meshFile = IsoObject/door_pair_left_w_open,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh door_pair_right_w
+    {
+        meshFile = IsoObject/door_pair_right_w.glb,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh carpentry_01_48
+    {
+        meshFile = IsoObject/carpentry_01_48,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh carpentry_01_49
+    {
+        meshFile = IsoObject/carpentry_01_49,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_bathroom_01_48
+    {
+        meshFile = IsoObject/fixtures_bathroom_01_48,
+        keepMeshAnimations = true,
+        postProcess = -JOIN_IDENTICAL_VERTICES,
+    }
+
+    animationsMesh fixtures_bathroom_01_49
+    {
+        meshFile = IsoObject/fixtures_bathroom_01_49,
+        keepMeshAnimations = true,
+        postProcess = -JOIN_IDENTICAL_VERTICES,
+    }
+
+    animationsMesh fixtures_doors_02_18
+    {
+        meshFile = IsoObject/fixtures_doors_02_18,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_02_19
+    {
+        meshFile = IsoObject/fixtures_doors_02_19,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_0
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_0,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_1
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_1,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_4
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_4,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_5
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_5,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_8
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_8,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_9
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_9,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_12
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_12,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_13
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_13,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_16
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_16,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_17
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_17,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_20
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_20,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_21
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_21,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_24
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_24,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_25
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_25,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_28
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_28,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_29
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_29,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_33
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_33,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_34
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_34,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_40
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_40,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_43
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_43,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_49
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_49,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_50
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_50,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_56
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_56,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_59
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_59,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_65
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_65,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_66
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_66,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_72
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_72,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_75
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_75,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_81
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_81,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_82
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_82,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_88
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_88,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_91
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_91,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_97
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_97,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_98
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_98,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_104
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_104,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_107
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_107,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_128
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_128,
+        keepMeshAnimations = true,
+    }
+
+    animationsMesh fixtures_doors_fences_01_129
+    {
+        meshFile = IsoObject/fixtures_doors_fences_01_129,
+        keepMeshAnimations = true,
+    }
+}

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>pose02</m_Name>
+	<m_AnimName>Kate_Mannequin02</m_AnimName>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>0.80</m_SpeedScale>
+	<m_Conditions x_name="813da29c-02a2-4d3e-b7c2-acf480d53f23">
+		<m_Name>Female</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions x_name="b4ac1ed7-c533-4ebd-92b4-b3b8e9ba1a2b">
+		<m_Name>Pose</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>pose02</m_Value>
+	</m_Conditions>
+</animNode>

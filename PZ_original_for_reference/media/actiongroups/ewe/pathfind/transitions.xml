@@ -1,0 +1,16 @@
+<transitions x_include="../defaultTransitions.xml">
+    <transition>
+        <transitionTo>idle</transitionTo>
+        <conditions>
+            <isFalse>bPathfind</isFalse>
+        </conditions>
+    </transition>
+
+    <transition>
+        <transitionTo>walk</transitionTo>
+        <conditions>
+            <isTrue>bMoving</isTrue>
+            <isFalse>bPathfind</isFalse>
+        </conditions>
+    </transition>
+</transitions>

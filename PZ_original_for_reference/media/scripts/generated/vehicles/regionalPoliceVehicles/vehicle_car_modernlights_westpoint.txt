@@ -1,0 +1,131 @@
+module Base
+{
+    vehicle ModernCarLightsWestPoint
+    {
+        zombieType = Police,
+        specialKeyRing = Base.KeyRing_EagleFlag,
+        template! = ModernCarLights,
+        model
+        {
+            file = Vehicles_ModernCarLights,
+            scale = 1.82,
+            offset = 0.0 0.1978 0.0,
+        }
+        template = PassengerSeat4,
+        template = CarModernCollision,
+        template = Radio_HAM,
+        passenger FrontLeft
+        {
+            position inside
+            {
+                offset = 0.1813 -0.1374 0.0989,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = 0.6319 -0.4176 0.0989,
+                rotate = 0.0 0.0 0.0,
+                area = SeatFrontLeft,
+            }
+            switchSeat RearLeft
+            {
+            }
+            switchSeat RearRight
+            {
+            }
+        }
+        passenger FrontRight
+        {
+            position inside
+            {
+                offset = -0.1813 -0.1374 0.0989,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = -0.6319 -0.4176 0.0989,
+                rotate = 0.0 0.0 0.0,
+                area = SeatFrontRight,
+            }
+            switchSeat RearLeft
+            {
+            }
+            switchSeat RearRight
+            {
+            }
+        }
+        passenger RearLeft
+        {
+            position inside
+            {
+                offset = 0.1813 -0.1374 -0.3681,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = 0.6319 -0.4176 -0.3516,
+                rotate = 0.0 0.0 0.0,
+                area = SeatRearLeft,
+            }
+            switchSeat FrontLeft
+            {
+            }
+            switchSeat FrontRight
+            {
+            }
+        }
+        passenger RearRight
+        {
+            position inside
+            {
+                offset = -0.1813 -0.1374 -0.3681,
+                rotate = 0.0 0.0 0.0,
+            }
+            position outside
+            {
+                offset = -0.6319 -0.4176 -0.3516,
+                rotate = 0.0 0.0 0.0,
+                area = SeatRearRight,
+            }
+            switchSeat FrontLeft
+            {
+            }
+            switchSeat FrontRight
+            {
+            }
+        }
+        area SeatFrontLeft
+        {
+            xywh = 0.6978 0.2033 0.4725 0.5604,
+        }
+        area SeatFrontRight
+        {
+            xywh = -0.6978 0.2033 0.4725 0.5604,
+        }
+        area SeatRearLeft
+        {
+            xywh = 0.6978 -0.3132 0.4725 0.4725,
+        }
+        area SeatRearRight
+        {
+            xywh = -0.6978 -0.3132 0.4725 0.4725,
+        }
+        extents = 0.9231 0.6374 2.3077,
+        physicsChassisShape = 0.9231 0.6374 2.3077,
+        centerOfMassOffset = 0.0 0.1978 0.0,
+        shadowExtents = 0.9231 2.3077,
+        shadowOffset = 0.0 0.0,
+        attachment trailer
+        {
+            offset = 0.0 -0.2747 -1.1648,
+            rotate = 0.0 0.0 0.0,
+            zoffset = -1.0,
+        }
+        attachment trailerfront
+        {
+            offset = 0.0 -0.2747 1.1923,
+            rotate = 0.0 0.0 0.0,
+            zoffset = 1.0,
+        }
+    }
+}

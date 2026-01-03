@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Log_DoorframeLvl1
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Log Door Frame (Poor),
+            Icon = Build_DoorframeLogs,
+        }
+    }
+}

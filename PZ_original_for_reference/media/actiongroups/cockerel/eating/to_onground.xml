@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transition>
+	<transitionTo>onground</transitionTo>
+	<conditions>
+		<isTrue>bDead</isTrue>
+		<isTrue>bOnFloor</isTrue>
+	</conditions>
+	<ConditionsBounds x="0.00" y="0.00" w="0.00" h="0.00" />
+	<FromPoint x="25,963.00" y="25,223.00" />
+	<ToPoint x="26,072.00" y="26,107.00" />
+</transition>

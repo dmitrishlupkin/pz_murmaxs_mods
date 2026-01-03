@@ -1,0 +1,33 @@
+module Base
+{
+    model Vehicles_SportsCar_ez
+    {
+        mesh = vehicles/SportsCarWithDoors|body_mesh,
+        shader = vehicle,
+        scale = 0.31,
+    }
+
+    model SportsCar_door_left
+    {
+        mesh = vehicles/SportsCarWithDoors|DoorFrontLeft_mesh,
+        shader = vehicle,
+        static = false,
+        scale = 0.31,
+    }
+
+    model SportsCar_door_right
+    {
+        mesh = vehicles/SportsCarWithDoors|DoorFrontRight_mesh,
+        shader = vehicle,
+        static = false,
+        scale = 0.31,
+    }
+
+    model SportsCar_hood
+    {
+        mesh = vehicles/SportsCarWithDoors|Hood_mesh,
+        shader = vehicle,
+        static = false,
+        scale = 0.31,
+    }
+}

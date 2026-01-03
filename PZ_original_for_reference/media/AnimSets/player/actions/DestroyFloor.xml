@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animNode x_extends="Destroy.xml">
+	<m_Name>DestroyFloor</m_Name>
+	<m_AnimName>Bob_AttackFloor2H_Heavy</m_AnimName>
+	<m_Conditions x_name="47cc8647-7930-4dac-b3ea-ec21cbf5a046">
+		<m_Value>DestroyFloor</m_Value>
+	</m_Conditions>
+	<m_Events x_name="ae450bcf-585f-4763-a714-2f2795a63af5">
+		<m_TimePc>0.25</m_TimePc>
+	</m_Events>
+	<m_Events x_name="17bf2b3c-ced4-4c7f-b313-aed17666e48c">
+		<m_EventName>PlaySwingSound</m_EventName>
+		<m_TimePc>0.15</m_TimePc>
+		<m_ParameterValue></m_ParameterValue>
+	</m_Events>
+</animNode>

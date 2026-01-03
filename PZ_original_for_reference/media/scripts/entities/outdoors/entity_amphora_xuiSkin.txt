@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Amphora
+        {
+            LuaWindowClass = ISEntityTabWindow,
+            DisplayName = Amphora,
+            Icon = Build_Amphora,
+        }
+    }
+}

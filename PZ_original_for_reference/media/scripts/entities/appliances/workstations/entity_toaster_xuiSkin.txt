@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Toaster
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Toaster,
+            Icon = Item_Toast,
+        }
+    }
+}

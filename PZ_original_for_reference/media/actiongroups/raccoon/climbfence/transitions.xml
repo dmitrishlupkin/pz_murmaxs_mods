@@ -1,0 +1,8 @@
+<transitions>
+    <transition>
+        <transitionTo>idle</transitionTo>
+        <conditions>
+            <isFalse>ClimbFence</isFalse>
+        </conditions>
+    </transition>
+</transitions>

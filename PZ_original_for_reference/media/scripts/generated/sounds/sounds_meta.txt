@@ -1,0 +1,120 @@
+module Base
+{
+    sound Helicopter
+    {
+        category = Meta,
+        clip
+        {
+            event = Meta/Helicopter,
+            distanceMax = 1000,
+        }
+    }
+
+    sound MetaAssaultRifle1
+    {
+        category = Meta,
+        clip
+        {
+            event = Meta/AssaultRifle,
+            distanceMax = 1000,
+        }
+    }
+
+    sound MetaPistol1
+    {
+        category = Meta,
+        clip
+        {
+            event = Meta/Pistol,
+            distanceMax = 1000,
+        }
+    }
+
+    sound MetaPistol2
+    {
+        category = Meta,
+        clip
+        {
+            event = Meta/Pistol,
+            distanceMax = 1000,
+        }
+    }
+
+    sound MetaPistol3
+    {
+        category = Meta,
+        clip
+        {
+            event = Meta/Pistol,
+            distanceMax = 1000,
+        }
+    }
+
+    sound MetaShotgun1
+    {
+        category = Meta,
+        clip
+        {
+            event = Meta/Shotgun,
+            distanceMax = 1000,
+        }
+    }
+
+    sound MetaDogBark
+    {
+        category = Meta,
+        clip
+        {
+            event = Meta/Dog,
+            distanceMax = 1000,
+        }
+    }
+
+    sound MetaScream
+    {
+        category = Meta,
+        clip
+        {
+            event = Meta/Scream,
+            distanceMax = 1000,
+        }
+    }
+
+    sound MetaOwl
+    {
+        category = Meta,
+        clip
+        {
+            event = Meta/Owl,
+            distanceMax = 1000,
+        }
+    }
+
+    sound MetaWolfHowl
+    {
+        category = Meta,
+        clip
+        {
+            event = Meta/Wolf,
+            distanceMax = 1000,
+        }
+    }
+
+    sound ChatDrawCard
+    {
+        category = Meta,
+        clip
+        {
+            event = Meta/DrawCard,
+        }
+    }
+
+    sound ChatRollDice
+    {
+        category = Meta,
+        clip
+        {
+            event = Meta/RollDice,
+        }
+    }
+}
