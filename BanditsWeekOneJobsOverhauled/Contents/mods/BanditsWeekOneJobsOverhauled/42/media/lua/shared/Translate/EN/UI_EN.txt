@@ -8,6 +8,7 @@ UI_EN = {
     UI_BWO_JobsOverhauled_Task_Cleaning = "Pick up trash on the street and throw it in a trash bin",
     UI_BWO_JobsOverhauled_Cond_Cleaning_Pickup = "Pick up trash on the street",
     UI_BWO_JobsOverhauled_Cond_Cleaning_Limit = "No more than $100 per day",
+    UI_BWO_JobsOverhauled_Status_Cleaning_MadeToday = "%s$ made today",
 
     UI_BWO_JobsOverhauled_Job_Fire = "County fire safety program",
     UI_BWO_JobsOverhauled_Task_Fire = "Put out fires in the city",

@@ -41,9 +41,11 @@ function BWOJobsOverhauledList:doDrawItem(y, item, alt)
         if tex then
             self:drawTexture(tex, iconX, y + (item.height - iconSize) / 2, 1, 1, 1, 1)
         end
-    elseif item.item.nodeType == "condition" then
-        if item.item.met then
-            self:drawText("✔", iconX + 2, y + 2, 0, 1, 0, 1, UIFont.Medium)
+    elseif item.item.nodeType == "condition" and item.item.icon then
+        if item.item.icon == "check" then
+            self:drawText("✔", iconX + 2, y + 2, 0.2, 0.9, 0.2, 1, UIFont.Small)
+        elseif item.item.icon == "cross" then
+            self:drawText("✖", iconX + 2, y + 2, 0.9, 0.2, 0.2, 1, UIFont.Small)
         end
     end
 
@@ -157,16 +159,28 @@ function BWOJobsOverhauledPanel:refreshList()
                 if taskExpanded then
                     for _, condition in ipairs(task.conditions) do
                         local conditionMet = condition.check and condition.check() or false
+                        local conditionText = condition.text
+                        if condition.getStatusText then
+                            local statusText = condition.getStatusText()
+                            if statusText and statusText ~= "" then
+                                conditionText = string.format("%s (%s)", conditionText, statusText)
+                            end
+                        end
+                        local icon = nil
+                        if condition.isLongTerm then
+                            icon = conditionMet and "check" or "cross"
+                        end
                         local conditionItem = {
                             nodeId = taskNodeId .. ":cond:" .. condition.id,
                             nodeType = "condition",
                             level = 2,
                             hasChildren = false,
                             met = conditionMet,
-                            font = UIFont.Small,
+                            icon = icon,
+                            font = UIFont.Smallest,
                         }
-                        local conditionHeight = getTextManager():getFontHeight(UIFont.Small) + 6
-                        self.list:addItem(condition.text, conditionItem).height = conditionHeight
+                        local conditionHeight = getTextManager():getFontHeight(UIFont.Smallest) + 6
+                        self.list:addItem(conditionText, conditionItem).height = conditionHeight
                     end
                 end
             end
