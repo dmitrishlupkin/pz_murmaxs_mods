@@ -9,6 +9,11 @@ UI_EN = {
     UI_BWO_JobsOverhauled_Cond_Cleaning_Pickup = "Pick up trash on the street",
     UI_BWO_JobsOverhauled_Cond_Cleaning_Limit = "No more than $100 per day",
     UI_BWO_JobsOverhauled_Status_Cleaning_MadeToday = "%s$ made today",
+    UI_BWO_JobsOverhauled_Work_Unknown = "Unknown workplace",
+    UI_BWO_JobsOverhauled_Work_Marker = "Work",
+    UI_BWO_JobsOverhauled_Task_WorkShift = "Work a full shift",
+    UI_BWO_JobsOverhauled_Cond_Work_Location = "Be inside your workplace",
+    UI_BWO_JobsOverhauled_Cond_Work_Time = "Stay for %s hours",
 
     UI_BWO_JobsOverhauled_Job_Fire = "County fire safety program",
     UI_BWO_JobsOverhauled_Task_Fire = "Put out fires in the city",
@@ -43,4 +48,8 @@ UI_EN = {
     UI_BWO_JobsOverhauled_Task_Police = "Eliminate hostile bandits",
     UI_BWO_JobsOverhauled_Cond_Police_Threat = "Hostile bandits nearby",
     UI_BWO_JobsOverhauled_Cond_Police_OnDuty = "On duty as a police officer",
+
+    UI_BWO_JobsOverhauled_Job_Medical = "Emergency medical response",
+    UI_BWO_JobsOverhauled_Task_Medical = "Provide medical assistance to civilians",
+    UI_BWO_JobsOverhauled_Cond_Medical_OnDuty = "On duty as medical staff",
 }
