@@ -2,64 +2,60 @@ local function text(key)
     return BWOJobsOverhauled.Text(key)
 end
 
-local shiftConfig = { hours = 4, pay = 50, taskId = "fire_shift" }
-local firePayout = 25
+local shiftConfig = { hours = 4, pay = 50, taskId = "medical_shift" }
+local healPayout = 50
 
 local function handleTimedAction(data)
     if not data or not data.character then return false end
     local player = data.character
     if not instanceof(player, "IsoPlayer") then return false end
-    if data.action and data.action:getMetaType() == "ISPutOutFire" then
-        if BWOJobsOverhauled.IsOnDutyAs(player, "fireofficer") then
-            BWOJobsOverhauled.PayEarnings(player, firePayout)
+    if data.action and data.action:getMetaType() == "TAHeal" then
+        local profession = BWOJobsOverhauled.GetProfessionName(player)
+        if profession == "doctor" or profession == "nurse" then
+            if BWOJobsOverhauled.IsOnDutyAs(player, profession) then
+                BWOJobsOverhauled.PayEarnings(player, healPayout)
+            end
+            return true
         end
-        return true
     end
     return false
 end
 
 local function buildJob(player)
     local profession = BWOJobsOverhauled.GetProfessionName(player)
-    if profession ~= "fireofficer" then return nil end
+    if profession ~= "doctor" and profession ~= "nurse" then return nil end
 
-    local firePayInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Fire"), tostring(firePayout))
-    local fireTaskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_Fire"), firePayInfo)
+    local healInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Medical"), tostring(healPayout))
+    local healTaskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_Medical"), healInfo)
     local shiftPayInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Shift"), tostring(shiftConfig.pay))
     local shiftTaskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_WorkShift"), shiftPayInfo)
 
     return {
-        id = "fire",
-        text = text("UI_BWO_JobsOverhauled_Job_Fire"),
+        id = "medical",
+        text = text("UI_BWO_JobsOverhauled_Job_Medical"),
         tasks = {
             {
-                id = "fire_task",
-                text = fireTaskText,
+                id = "medical_task",
+                text = healTaskText,
                 conditions = {
                     {
-                        id = "fire_nearby",
-                        text = text("UI_BWO_JobsOverhauled_Cond_Fire_Nearby"),
-                        check = function()
-                            return BWOJobsOverhauled.HasNearbyFire(player)
-                        end,
-                    },
-                    {
-                        id = "fire_profession",
-                        text = text("UI_BWO_JobsOverhauled_Cond_Fire_OnDuty"),
+                        id = "medical_on_duty",
+                        text = text("UI_BWO_JobsOverhauled_Cond_Medical_OnDuty"),
                         isLongTerm = true,
                         check = function()
-                            return BWOJobsOverhauled.IsOnDutyAs(player, "fireofficer")
+                            return BWOJobsOverhauled.IsOnDutyAs(player, profession)
                         end,
                     },
                 },
             },
             {
-                id = "fire_shift",
+                id = "medical_shift",
                 text = shiftTaskText,
                 hideOnComplete = true,
                 highlightSeconds = 5,
                 conditions = {
                     {
-                        id = "fire_shift_location",
+                        id = "medical_shift_location",
                         text = text("UI_BWO_JobsOverhauled_Cond_Work_Location"),
                         isLongTerm = true,
                         check = function()
@@ -70,7 +66,7 @@ local function buildJob(player)
                         end,
                     },
                     {
-                        id = "fire_shift_time",
+                        id = "medical_shift_time",
                         text = string.format(text("UI_BWO_JobsOverhauled_Cond_Work_Time"), tostring(shiftConfig.hours)),
                         isLongTerm = true,
                         check = function()
@@ -87,5 +83,6 @@ local function buildJob(player)
 end
 
 BWOJobsOverhauled.RegisterTimedActionHandler(handleTimedAction)
-BWOJobsOverhauled.RegisterWorkShift("fireofficer", shiftConfig)
+BWOJobsOverhauled.RegisterWorkShift("doctor", shiftConfig)
+BWOJobsOverhauled.RegisterWorkShift("nurse", shiftConfig)
 BWOJobsOverhauled.RegisterJob(buildJob)

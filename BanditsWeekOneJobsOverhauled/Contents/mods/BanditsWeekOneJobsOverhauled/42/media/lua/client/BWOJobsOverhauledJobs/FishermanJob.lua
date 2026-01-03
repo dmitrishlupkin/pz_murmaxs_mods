@@ -26,9 +26,57 @@ local fishTypes = {
     "Base.Trout",
 }
 
+local fishPriceMultiplier = 4
+
+local function handleInventoryTransfer(data)
+    if not data or not data.character then return false end
+    local player = data.character
+    if not instanceof(player, "IsoPlayer") then return false end
+    local profession = BWOJobsOverhauled.GetProfessionName(player)
+    if profession ~= "fisherman" then return false end
+    if not BWOJobsOverhauled.IsOnDutyAs(player, profession) then return false end
+
+    local srcContainer = data.srcContainer
+    local destContainer = data.destContainer
+    if not srcContainer or not destContainer then return false end
+    local object = srcContainer:getParent()
+    if not object or not instanceof(object, "IsoPlayer") then return false end
+
+    local item = data.item
+    if not item then return false end
+    local itemType = item:getFullType()
+    local md = item:getModData()
+    if not md.BWO then
+        md.BWO = {}
+        md.BWO.stolen = false
+        md.BWO.bought = false
+    end
+    if md.BWO.stolen then return false end
+
+    local room = destContainer:getSquare() and destContainer:getSquare():getRoom()
+    if not (room and BWORooms and BWORooms.IsKitchen and BWORooms.IsShop and BWORooms.IsRestaurant) then return false end
+    if not (BWORooms.IsKitchen(room) and (BWORooms.IsRestaurant(room) or BWORooms.IsShop(room))) then return false end
+
+    local descContainerType = destContainer:getType()
+    if descContainerType ~= "fridge" and descContainerType ~= "freezer" then return false end
+    for _, fishOption in pairs(fishTypes) do
+        if itemType == fishOption then
+            local weight = item:getActualWeight()
+            local price = math.floor(weight * SandboxVars.BanditsWeekOne.PriceMultiplier * fishPriceMultiplier)
+            BWOJobsOverhauled.PayEarnings(player, price)
+            md.BWO.stolen = true
+            return true
+        end
+    end
+    return false
+end
+
 local function buildJob(player)
     local profession = BWOJobsOverhauled.GetProfessionName(player)
     if profession ~= "fisherman" then return nil end
+
+    local payInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Fisherman"), tostring(fishPriceMultiplier))
+    local taskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_Fisherman"), payInfo)
 
     return {
         id = "fisherman",
@@ -36,12 +84,11 @@ local function buildJob(player)
         tasks = {
             {
                 id = "fisherman_task",
-                text = text("UI_BWO_JobsOverhauled_Task_Fisherman"),
+                text = taskText,
                 conditions = {
                     {
                         id = "fisherman_items",
                         text = text("UI_BWO_JobsOverhauled_Cond_Fisherman_Carrying"),
-                        isLongTerm = true,
                         check = function()
                             return BWOJobsOverhauled.HasAnyItemTypes(player, fishTypes)
                         end,
@@ -51,7 +98,7 @@ local function buildJob(player)
                         text = text("UI_BWO_JobsOverhauled_Cond_Fisherman_OnDuty"),
                         isLongTerm = true,
                         check = function()
-                            return profession == "fisherman"
+                            return BWOJobsOverhauled.IsOnDutyAs(player, "fisherman")
                         end,
                     },
                 },
@@ -60,4 +107,5 @@ local function buildJob(player)
     }
 end
 
+BWOJobsOverhauled.RegisterInventoryTransferHandler(handleInventoryTransfer)
 BWOJobsOverhauled.RegisterJob(buildJob)

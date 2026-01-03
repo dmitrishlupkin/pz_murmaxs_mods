@@ -32,6 +32,11 @@ function BWOJobsOverhauledList:doDrawItem(y, item, alt)
     local iconSize = panel.iconSize
     local iconX = indent * item.item.level
 
+    if item.item.backColor then
+        local bg = item.item.backColor
+        self:drawRect(0, y, self:getWidth(), item.height - 1, bg.a or 0.15, bg.r or 0, bg.g or 0, bg.b or 0)
+    end
+
     if self.selected == item.index then
         self:drawSelection(0, y, self:getWidth(), item.height - 1)
     end
@@ -145,6 +150,10 @@ function BWOJobsOverhauledPanel:refreshList()
                     self.nodeState[taskNodeId] = true
                 end
 
+                if task.hideOnComplete and BWOJobsOverhauled.ShouldHideTask and BWOJobsOverhauled.ShouldHideTask(player, task.id, task.highlightSeconds or 5) then
+                    goto continue_task
+                end
+
                 local taskItem = {
                     nodeId = taskNodeId,
                     nodeType = "task",
@@ -153,6 +162,9 @@ function BWOJobsOverhauledPanel:refreshList()
                     expanded = taskExpanded,
                     font = UIFont.Medium,
                 }
+                if task.hideOnComplete and BWOJobsOverhauled.ShouldHighlightTask and BWOJobsOverhauled.ShouldHighlightTask(player, task.id, task.highlightSeconds or 5) then
+                    taskItem.backColor = { r = 0.1, g = 0.6, b = 0.1, a = 0.25 }
+                end
                 local taskHeight = getTextManager():getFontHeight(UIFont.Medium) + 6
                 self.list:addItem(task.text, taskItem).height = taskHeight
 
@@ -179,10 +191,15 @@ function BWOJobsOverhauledPanel:refreshList()
                             icon = icon,
                             font = UIFont.Smallest,
                         }
+                        if condition.isLongTerm then
+                            conditionItem.textColor = conditionMet and { r = 0.2, g = 0.9, b = 0.2, a = 1 } or { r = 0.9, g = 0.2, b = 0.2, a = 1 }
+                            conditionItem.backColor = conditionMet and { r = 0.1, g = 0.4, b = 0.1, a = 0.15 } or { r = 0.4, g = 0.1, b = 0.1, a = 0.12 }
+                        end
                         local conditionHeight = getTextManager():getFontHeight(UIFont.Smallest) + 6
                         self.list:addItem(conditionText, conditionItem).height = conditionHeight
                     end
                 end
+                ::continue_task::
             end
         end
     end
