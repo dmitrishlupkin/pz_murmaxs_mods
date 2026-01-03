@@ -12,6 +12,7 @@ UI_EN = {
     UI_BWO_JobsOverhauled_Pay_Cleaning = "$%s per trash, up to $%s per day",
     UI_BWO_JobsOverhauled_Work_Unknown = "Unknown workplace",
     UI_BWO_JobsOverhauled_Work_Marker = "Work",
+    UI_BWO_JobsOverhauled_Work_Key = "Work Key",
     UI_BWO_JobsOverhauled_Task_WorkShift = "Work a full shift",
     UI_BWO_JobsOverhauled_Cond_Work_Location = "Be inside your workplace",
     UI_BWO_JobsOverhauled_Cond_Work_Time = "Stay for %s hours",
