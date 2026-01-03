@@ -32,13 +32,15 @@ local function handleTimedAction(data)
 end
 
 local function buildJob(player)
+    local payInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Cleaning"), tostring(trashPickupPay), tostring(dailyLimit))
+    local taskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_Cleaning"), payInfo)
     return {
         id = "cleaning",
         text = text("UI_BWO_JobsOverhauled_Job_Cleaning"),
         tasks = {
             {
                 id = "cleaning_task",
-                text = text("UI_BWO_JobsOverhauled_Task_Cleaning"),
+                text = taskText,
                 conditions = {
                     {
                         id = "cleaning_pickup",

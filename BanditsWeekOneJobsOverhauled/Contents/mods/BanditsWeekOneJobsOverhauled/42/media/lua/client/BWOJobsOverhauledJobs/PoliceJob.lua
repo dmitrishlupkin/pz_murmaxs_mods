@@ -2,7 +2,7 @@ local function text(key)
     return BWOJobsOverhauled.Text(key)
 end
 
-local shiftConfig = { hours = 4, pay = 50 }
+local shiftConfig = { hours = 4, pay = 50, taskId = "police_shift" }
 local policeBounty = 5
 
 local function handleFriendlyFire(bandit, attacker)
@@ -26,13 +26,18 @@ local function buildJob(player)
     local profession = BWOJobsOverhauled.GetProfessionName(player)
     if profession ~= "policeofficer" then return nil end
 
+    local bountyInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Police"), tostring(policeBounty))
+    local bountyTaskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_Police"), bountyInfo)
+    local shiftPayInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Shift"), tostring(shiftConfig.pay))
+    local shiftTaskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_WorkShift"), shiftPayInfo)
+
     return {
         id = "police",
         text = text("UI_BWO_JobsOverhauled_Job_Police"),
         tasks = {
             {
                 id = "police_task",
-                text = text("UI_BWO_JobsOverhauled_Task_Police"),
+                text = bountyTaskText,
                 conditions = {
                     {
                         id = "police_threat",
@@ -53,7 +58,9 @@ local function buildJob(player)
             },
             {
                 id = "police_shift",
-                text = text("UI_BWO_JobsOverhauled_Task_WorkShift"),
+                text = shiftTaskText,
+                hideOnComplete = true,
+                highlightSeconds = 5,
                 conditions = {
                     {
                         id = "police_shift_location",

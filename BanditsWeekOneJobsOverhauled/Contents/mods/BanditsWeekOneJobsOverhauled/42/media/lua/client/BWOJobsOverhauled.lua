@@ -29,6 +29,10 @@ local function getDayStamp()
     return math.floor(hours / 24)
 end
 
+local function getNowSeconds()
+    return getGameTime():getWorldAgeHours() * 3600
+end
+
 BWOJobsOverhauled.EnsureDailyData = function(player)
     local md = player:getModData()
     md.BWOJobsOverhauled = md.BWOJobsOverhauled or {}
@@ -39,10 +43,13 @@ BWOJobsOverhauled.EnsureDailyData = function(player)
         data.trashPickups = 0
         data.trashEarnings = 0
         data.workOnDuty = false
-        data.workShiftStart = nil
         data.workShiftMinutes = 0
+        data.workShiftLastUpdate = nil
+        data.workShiftCompleted = false
+        data.taskState = {}
     end
     data.work = data.work or {}
+    data.taskState = data.taskState or {}
     return data
 end
 
@@ -165,6 +172,30 @@ BWOJobsOverhauled.IsWorkShiftComplete = function(player)
     return minutes >= (config.hours * 60)
 end
 
+BWOJobsOverhauled.MarkTaskComplete = function(player, taskId)
+    if not player or not taskId then return end
+    local data = BWOJobsOverhauled.EnsureDailyData(player)
+    data.taskState[taskId] = { completedAt = getNowSeconds() }
+end
+
+BWOJobsOverhauled.ShouldHideTask = function(player, taskId, delaySeconds)
+    if not player or not taskId then return false end
+    local data = BWOJobsOverhauled.EnsureDailyData(player)
+    local state = data.taskState[taskId]
+    if not state or not state.completedAt then return false end
+    local delay = delaySeconds or 5
+    return (getNowSeconds() - state.completedAt) >= delay
+end
+
+BWOJobsOverhauled.ShouldHighlightTask = function(player, taskId, delaySeconds)
+    if not player or not taskId then return false end
+    local data = BWOJobsOverhauled.EnsureDailyData(player)
+    local state = data.taskState[taskId]
+    if not state or not state.completedAt then return false end
+    local delay = delaySeconds or 5
+    return (getNowSeconds() - state.completedAt) < delay
+end
+
 BWOJobsOverhauled.IsWorkBuilding = function(building)
     if not building then return false end
     local player = getSpecificPlayer(0)
@@ -282,22 +313,31 @@ BWOJobsOverhauled.UpdateWorkDuty = function(player)
         if not data.workOnDuty then
             data.workOnDuty = true
         end
+        if data.workShiftCompleted then
+            data.workShiftLastUpdate = nil
+            return
+        end
         local now = getGameTime():getWorldAgeHours()
-        if not data.workShiftStart then
-            data.workShiftStart = now
-            data.workShiftMinutes = 0
+        if not data.workShiftLastUpdate then
+            data.workShiftLastUpdate = now
         else
-            local minutes = math.floor((now - data.workShiftStart) * 60)
-            data.workShiftMinutes = math.max(minutes, 0)
+            local deltaMinutes = math.floor((now - data.workShiftLastUpdate) * 60)
+            if deltaMinutes > 0 then
+                data.workShiftMinutes = math.max((data.workShiftMinutes or 0) + deltaMinutes, 0)
+                data.workShiftLastUpdate = now
+            end
         end
         if BWOJobsOverhauled.IsWorkShiftComplete(player) then
             BWOJobsOverhauled.PayEarnings(player, config.pay)
-            data.workShiftStart = now
+            data.workShiftCompleted = true
+            if config.taskId then
+                BWOJobsOverhauled.MarkTaskComplete(player, config.taskId)
+            end
             data.workShiftMinutes = 0
+            data.workShiftLastUpdate = nil
         end
     else
-        data.workShiftStart = nil
-        data.workShiftMinutes = 0
+        data.workShiftLastUpdate = nil
     end
 end
 

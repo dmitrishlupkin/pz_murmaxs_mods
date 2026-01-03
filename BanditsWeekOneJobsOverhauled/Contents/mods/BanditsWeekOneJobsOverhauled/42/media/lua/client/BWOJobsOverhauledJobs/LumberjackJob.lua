@@ -48,13 +48,16 @@ local function buildJob(player)
     local profession = BWOJobsOverhauled.GetProfessionName(player)
     if profession ~= "lumberjack" then return nil end
 
+    local payInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Lumberjack"), tostring(logPayout), tostring(plankPayout))
+    local taskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_Lumberjack"), payInfo)
+
     return {
         id = "lumberjack",
         text = text("UI_BWO_JobsOverhauled_Job_Lumberjack"),
         tasks = {
             {
                 id = "lumberjack_task",
-                text = text("UI_BWO_JobsOverhauled_Task_Lumberjack"),
+                text = taskText,
                 conditions = {
                     {
                         id = "lumberjack_items",

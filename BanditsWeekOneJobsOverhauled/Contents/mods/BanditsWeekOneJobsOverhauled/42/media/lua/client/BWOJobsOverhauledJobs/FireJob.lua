@@ -2,7 +2,7 @@ local function text(key)
     return BWOJobsOverhauled.Text(key)
 end
 
-local shiftConfig = { hours = 4, pay = 50 }
+local shiftConfig = { hours = 4, pay = 50, taskId = "fire_shift" }
 local firePayout = 25
 
 local function handleTimedAction(data)
@@ -22,13 +22,18 @@ local function buildJob(player)
     local profession = BWOJobsOverhauled.GetProfessionName(player)
     if profession ~= "fireofficer" then return nil end
 
+    local firePayInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Fire"), tostring(firePayout))
+    local fireTaskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_Fire"), firePayInfo)
+    local shiftPayInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Shift"), tostring(shiftConfig.pay))
+    local shiftTaskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_WorkShift"), shiftPayInfo)
+
     return {
         id = "fire",
         text = text("UI_BWO_JobsOverhauled_Job_Fire"),
         tasks = {
             {
                 id = "fire_task",
-                text = text("UI_BWO_JobsOverhauled_Task_Fire"),
+                text = fireTaskText,
                 conditions = {
                     {
                         id = "fire_nearby",
@@ -49,7 +54,9 @@ local function buildJob(player)
             },
             {
                 id = "fire_shift",
-                text = text("UI_BWO_JobsOverhauled_Task_WorkShift"),
+                text = shiftTaskText,
+                hideOnComplete = true,
+                highlightSeconds = 5,
                 conditions = {
                     {
                         id = "fire_shift_location",

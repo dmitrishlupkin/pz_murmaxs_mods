@@ -2,7 +2,7 @@ local function text(key)
     return BWOJobsOverhauled.Text(key)
 end
 
-local shiftConfig = { hours = 4, pay = 50 }
+local shiftConfig = { hours = 4, pay = 50, taskId = "medical_shift" }
 local healPayout = 50
 
 local function handleTimedAction(data)
@@ -25,13 +25,18 @@ local function buildJob(player)
     local profession = BWOJobsOverhauled.GetProfessionName(player)
     if profession ~= "doctor" and profession ~= "nurse" then return nil end
 
+    local healInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Medical"), tostring(healPayout))
+    local healTaskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_Medical"), healInfo)
+    local shiftPayInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Shift"), tostring(shiftConfig.pay))
+    local shiftTaskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_WorkShift"), shiftPayInfo)
+
     return {
         id = "medical",
         text = text("UI_BWO_JobsOverhauled_Job_Medical"),
         tasks = {
             {
                 id = "medical_task",
-                text = text("UI_BWO_JobsOverhauled_Task_Medical"),
+                text = healTaskText,
                 conditions = {
                     {
                         id = "medical_on_duty",
@@ -45,7 +50,9 @@ local function buildJob(player)
             },
             {
                 id = "medical_shift",
-                text = text("UI_BWO_JobsOverhauled_Task_WorkShift"),
+                text = shiftTaskText,
+                hideOnComplete = true,
+                highlightSeconds = 5,
                 conditions = {
                     {
                         id = "medical_shift_location",
