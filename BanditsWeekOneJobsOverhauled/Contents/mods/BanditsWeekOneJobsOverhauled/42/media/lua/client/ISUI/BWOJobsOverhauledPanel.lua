@@ -60,18 +60,18 @@ local function text(key)
     return getTextOrNull(key) or getText(key)
 end
 
-local function log(message)
+local function bwolog(message)
     if not BWOJobsOverhauled or not BWOJobsOverhauled.Debug then return end
     print("[BWOJobsOverhauled] " .. tostring(message))
 end
 
 function BWOJobsOverhauledPanel:initialise()
-    log("Panel initialise")
+    bwolog("Panel initialise")
     ISCollapsableWindow.initialise(self)
 end
 
 function BWOJobsOverhauledPanel:createChildren()
-    log("Panel createChildren")
+    bwolog("Panel createChildren")
     ISCollapsableWindow.createChildren(self)
 
     self.indent = 20
@@ -98,18 +98,18 @@ function BWOJobsOverhauledPanel:createChildren()
 end
 
 function BWOJobsOverhauledPanel:toggleNode(nodeId)
-    log("Toggle node " .. tostring(nodeId))
+    bwolog("Toggle node " .. tostring(nodeId))
     self.nodeState[nodeId] = not self.nodeState[nodeId]
     self:refreshList()
 end
 
 function BWOJobsOverhauledPanel:refreshList()
-    log("Refreshing jobs list")
+    bwolog("Refreshing jobs list")
     self.list:clear()
 
     local player = getSpecificPlayer(self.playerNum)
     if not player then
-        log("No player for jobs list")
+        bwolog("No player for jobs list")
         return
     end
 
@@ -180,14 +180,14 @@ function BWOJobsOverhauledPanel:update()
     if self.refreshCounter >= 30 then
         self.refreshCounter = 0
         if self:getIsVisible() then
-            log("Auto-refreshing visible panel")
+            bwolog("Auto-refreshing visible panel")
             self:refreshList()
         end
     end
 end
 
 function BWOJobsOverhauledPanel:onResize()
-    log("Panel resized")
+    bwolog("Panel resized")
     ISCollapsableWindow.onResize(self)
     if self.list then
         local listY = self:titleBarHeight() + 10
@@ -199,12 +199,12 @@ function BWOJobsOverhauledPanel:onResize()
 end
 
 function BWOJobsOverhauledPanel:close()
-    log("Panel close requested")
+    bwolog("Panel close requested")
     self:setVisible(false)
 end
 
 function BWOJobsOverhauledPanel:new(x, y, width, height, playerNum)
-    log("Panel new at x=" .. tostring(x) .. " y=" .. tostring(y))
+    bwolog("Panel new at x=" .. tostring(x) .. " y=" .. tostring(y))
     local o = ISCollapsableWindow:new(x, y, width, height)
     setmetatable(o, self)
     self.__index = self
