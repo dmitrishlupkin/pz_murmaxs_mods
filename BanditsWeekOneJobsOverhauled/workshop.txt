@@ -1,0 +1,5 @@
+version=1
+title=Bandits Week One Addon: Jobs Overhauled
+description=Adds a jobs panel that lists available work and payout conditions for Bandits Week One characters.
+tags=Build 42;Interface;QoL
+visibility=public

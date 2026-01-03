@@ -1,0 +1,45 @@
+UI_EN = {
+    UI_BWO_JobsOverhauled_Title = "Jobs",
+    UI_BWO_JobsOverhauled_Button = "Jobs",
+    UI_optionscreen_BWOJobsOverhauled = "Jobs Overhauled",
+    UI_optionscreen_BWOJobsOverhauled_TogglePanel = "Toggle Jobs Panel",
+
+    UI_BWO_JobsOverhauled_Job_Cleaning = "Knox County cleaning initiative",
+    UI_BWO_JobsOverhauled_Task_Cleaning = "Pick up trash on the street and throw it in a trash bin",
+    UI_BWO_JobsOverhauled_Cond_Cleaning_Pickup = "Pick up trash on the street",
+    UI_BWO_JobsOverhauled_Cond_Cleaning_Limit = "No more than $100 per day",
+
+    UI_BWO_JobsOverhauled_Job_Fire = "County fire safety program",
+    UI_BWO_JobsOverhauled_Task_Fire = "Put out fires in the city",
+    UI_BWO_JobsOverhauled_Cond_Fire_Nearby = "Nearby fire to extinguish",
+    UI_BWO_JobsOverhauled_Cond_Fire_OnDuty = "On duty as a fire officer",
+
+    UI_BWO_JobsOverhauled_Job_Mechanic = "Vehicle repair subsidy",
+    UI_BWO_JobsOverhauled_Task_Mechanic = "Repair client vehicles",
+    UI_BWO_JobsOverhauled_Cond_Mechanic_Nearby = "Near a vehicle",
+    UI_BWO_JobsOverhauled_Cond_Mechanic_OnDuty = "On duty as a mechanic",
+
+    UI_BWO_JobsOverhauled_Job_ParkRanger = "Park ranger stewardship",
+    UI_BWO_JobsOverhauled_Task_ParkRanger = "Forage junk in forest zones",
+    UI_BWO_JobsOverhauled_Cond_ParkRanger_Forest = "Inside a forest zone",
+    UI_BWO_JobsOverhauled_Cond_ParkRanger_OnDuty = "On duty as a park ranger",
+
+    UI_BWO_JobsOverhauled_Job_Fitness = "Community fitness program",
+    UI_BWO_JobsOverhauled_Task_Fitness = "Lead fitness sessions",
+    UI_BWO_JobsOverhauled_Cond_Fitness_OnDuty = "On duty as a fitness instructor",
+
+    UI_BWO_JobsOverhauled_Job_Lumberjack = "Lumber trade initiative",
+    UI_BWO_JobsOverhauled_Task_Lumberjack = "Sell logs or planks at lumber yards",
+    UI_BWO_JobsOverhauled_Cond_Lumberjack_Carrying = "Carrying logs or planks",
+    UI_BWO_JobsOverhauled_Cond_Lumberjack_OnDuty = "On duty as a lumberjack",
+
+    UI_BWO_JobsOverhauled_Job_Fisherman = "Fresh catch delivery",
+    UI_BWO_JobsOverhauled_Task_Fisherman = "Deliver fish to kitchens",
+    UI_BWO_JobsOverhauled_Cond_Fisherman_Carrying = "Carrying fresh fish",
+    UI_BWO_JobsOverhauled_Cond_Fisherman_OnDuty = "On duty as a fisherman",
+
+    UI_BWO_JobsOverhauled_Job_Police = "Law enforcement bounty",
+    UI_BWO_JobsOverhauled_Task_Police = "Eliminate hostile bandits",
+    UI_BWO_JobsOverhauled_Cond_Police_Threat = "Hostile bandits nearby",
+    UI_BWO_JobsOverhauled_Cond_Police_OnDuty = "On duty as a police officer",
+}
