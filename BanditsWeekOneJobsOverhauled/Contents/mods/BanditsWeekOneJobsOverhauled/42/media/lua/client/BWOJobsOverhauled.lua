@@ -13,7 +13,7 @@ local function text(key)
     return getTextOrNull(key) or getText(key)
 end
 
-local function log(message)
+local function bwolog(message)
     if not BWOJobsOverhauled.Debug then return end
     print("[BWOJobsOverhauled] " .. tostring(message))
 end
@@ -40,7 +40,7 @@ function BWOJobsOverhauled.RecordTrashPickup(player, amount)
     local data = ensureDailyData(player)
     data.trashPickups = (data.trashPickups or 0) + 1
     data.trashEarnings = (data.trashEarnings or 0) + (amount or 0)
-    log("Recorded trash pickup. Count=" .. tostring(data.trashPickups) .. " earnings=" .. tostring(data.trashEarnings))
+    bwolog("Recorded trash pickup. Count=" .. tostring(data.trashPickups) .. " earnings=" .. tostring(data.trashEarnings))
 end
 
 function BWOJobsOverhauled.GetDailyTrashData(player)
@@ -158,7 +158,7 @@ function BWOJobsOverhauled.GetJobs(player)
     if not player then return {} end
     local profession = getProfession(player)
     local trashPickups, trashEarnings = BWOJobsOverhauled.GetDailyTrashData(player)
-    log("Building jobs list for profession=" .. tostring(profession))
+    bwolog("Building jobs list for profession=" .. tostring(profession))
 
     local jobs = {
         {
@@ -389,7 +389,7 @@ function BWOJobsOverhauled.GetJobs(player)
 end
 
 function BWOJobsOverhauled.TogglePanel()
-    log("TogglePanel called")
+    bwolog("TogglePanel called")
     if BWOJobsOverhauled.window then
         local visible = not BWOJobsOverhauled.window:getIsVisible()
         BWOJobsOverhauled.window:setVisible(visible)
@@ -411,7 +411,7 @@ function BWOJobsOverhauled.TogglePanel()
     ISLayoutManager.RegisterWindow('bwojobsoverhauled', ISCollapsableWindow, window)
 
     BWOJobsOverhauled.window = window
-    log("Jobs panel created")
+    bwolog("Jobs panel created")
 end
 
 function BWOJobsOverhauled.UpdateButtonPosition()
@@ -421,13 +421,13 @@ function BWOJobsOverhauled.UpdateButtonPosition()
     local y = getPlayerScreenTop(playerNum) + 200
     BWOJobsOverhauled.button:setX(x)
     BWOJobsOverhauled.button:setY(y)
-    log("Updated button position to x=" .. tostring(x) .. " y=" .. tostring(y))
+    bwolog("Updated button position to x=" .. tostring(x) .. " y=" .. tostring(y))
 end
 
 function BWOJobsOverhauled.CreateButton()
     if BWOJobsOverhauled.button then return end
     if type(ISButton) ~= "table" or type(ISButton.new) ~= "function" then
-        log("ISButton not ready; deferring button creation")
+        bwolog("ISButton not ready; deferring button creation")
         if not BWOJobsOverhauled.deferButton then
             BWOJobsOverhauled.deferButton = true
             Events.OnTick.Add(BWOJobsOverhauled.CreateButton)
@@ -442,13 +442,13 @@ function BWOJobsOverhauled.CreateButton()
 
     local label = text("UI_BWO_JobsOverhauled_Button")
     if type(label) ~= "string" then
-        log("Button label is not a string, got " .. tostring(type(label)))
+        bwolog("Button label is not a string, got " .. tostring(type(label)))
         label = tostring(label)
     end
 
     local ok, button = pcall(ISButton.new, ISButton, x, y, size, size, label, BWOJobsOverhauled, BWOJobsOverhauled.TogglePanel)
     if not ok then
-        log("Failed to create button: " .. tostring(button))
+        bwolog("Failed to create button: " .. tostring(button))
         return
     end
     button:initialise()
@@ -458,12 +458,12 @@ function BWOJobsOverhauled.CreateButton()
     button.backgroundColor = { r = 0, g = 0, b = 0, a = 0.4 }
     button:addToUIManager()
     BWOJobsOverhauled.button = button
-    log("Jobs button created")
+    bwolog("Jobs button created")
 
     if BWOJobsOverhauled.deferButton then
         BWOJobsOverhauled.deferButton = false
         Events.OnTick.Remove(BWOJobsOverhauled.CreateButton)
-        log("Deferred button creation resolved")
+        bwolog("Deferred button creation resolved")
     end
 end
 
@@ -474,7 +474,7 @@ local function onTimedActionPerformed(data)
     if action ~= "ISMoveablesAction" then return end
 
     if data.mode == "pickup" and data.origSpriteName and data.origSpriteName:embodies("trash") then
-        log("Trash pickup detected by timed action")
+        bwolog("Trash pickup detected by timed action")
         BWOJobsOverhauled.RecordTrashPickup(data.character, 1)
     end
 end
@@ -483,22 +483,31 @@ local function onKeyPressed(key)
     local options = PZAPI.ModOptions:getOptions("BanditsWeekOneJobsOverhauled")
     local option = options and options:getOption("TOGGLE_PANEL")
     if not option then
-        log("Keybind option not available yet")
+        bwolog("Keybind option not available yet")
         return
     end
     if option and key == option.key then
-        log("Toggle panel keybind pressed")
+        bwolog("Toggle panel keybind pressed")
         BWOJobsOverhauled.TogglePanel()
     end
 end
 
 local function onGameStart()
-    log("OnGameStart triggered")
+    bwolog("OnGameStart triggered")
     BWOJobsOverhauled.CreateButton()
     BWOJobsOverhauled.UpdateButtonPosition()
 end
 
 Events.OnGameStart.Add(onGameStart)
 Events.OnResolutionChange.Add(BWOJobsOverhauled.UpdateButtonPosition)
-Events.OnTimedActionPerformed.Add(onTimedActionPerformed)
-Events.OnKeyPressed.Add(onKeyPressed)
+if Events and Events.OnTimedActionPerformed and Events.OnTimedActionPerformed.Add then
+    Events.OnTimedActionPerformed.Add(onTimedActionPerformed)
+else
+    bwolog("Events.OnTimedActionPerformed not available; skipping trash pickup hook")
+end
+
+if Events and Events.OnKeyPressed and Events.OnKeyPressed.Add then
+    Events.OnKeyPressed.Add(onKeyPressed)
+else
+    bwolog("Events.OnKeyPressed not available; skipping keybind hook")
+end
