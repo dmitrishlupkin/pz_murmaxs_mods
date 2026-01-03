@@ -130,6 +130,45 @@ BWOJobsOverhauled.GetWorkBuildingName = function(player)
     return work.name or BWOJobsOverhauled.Text("UI_BWO_JobsOverhauled_Work_Unknown")
 end
 
+BWOJobsOverhauled.PlayerHasKeyId = function(player, keyId)
+    if not player or not keyId then return false end
+    local inventory = player:getInventory()
+    if not inventory then return false end
+    local items = inventory.getAllItems and inventory:getAllItems() or inventory:getItems()
+    if not items then return false end
+    for i = 0, items:size() - 1 do
+        local item = items:get(i)
+        if item and item.getKeyId and item:getKeyId() == keyId then
+            return true
+        end
+    end
+    return false
+end
+
+BWOJobsOverhauled.IssueWorkKey = function(player, work)
+    if not player or not work or not work.keyId then return end
+    if work.keyIssued then return end
+    if BWOJobsOverhauled.PlayerHasKeyId(player, work.keyId) then
+        work.keyIssued = true
+        return
+    end
+    local keyItem
+    if BanditCompatibility and BanditCompatibility.InstanceItem then
+        keyItem = BanditCompatibility.InstanceItem("Base.Key1")
+    else
+        keyItem = InventoryItemFactory.CreateItem("Base.Key1")
+    end
+    if not keyItem then
+        BWOJobsOverhauled.Log("Unable to create work key item")
+        return
+    end
+    keyItem:setKeyId(work.keyId)
+    keyItem:setName(BWOJobsOverhauled.Text("UI_BWO_JobsOverhauled_Work_Key"))
+    player:getInventory():AddItem(keyItem)
+    work.keyIssued = true
+    BWOJobsOverhauled.Log("Work key issued for keyId " .. tostring(work.keyId))
+end
+
 BWOJobsOverhauled.IsOnDutyAs = function(player, profession)
     if not player then return false end
     local current = BWOJobsOverhauled.GetProfessionName(player)
@@ -268,7 +307,11 @@ BWOJobsOverhauled.RegisterWorkBuilding = function(player, building, roomName)
     local work = BWOJobsOverhauled.GetWorkData(player)
     local def = building:getDef()
     if not def then return end
-    work.keyId = def:getKeyId()
+    local newKeyId = def:getKeyId()
+    if work.keyId ~= newKeyId then
+        work.keyIssued = false
+    end
+    work.keyId = newKeyId
     work.x = (def:getX() + def:getX2()) / 2
     work.y = (def:getY() + def:getY2()) / 2
     work.name = roomName or work.name or BWOJobsOverhauled.Text("UI_BWO_JobsOverhauled_Work_Unknown")
@@ -282,6 +325,7 @@ BWOJobsOverhauled.RegisterWorkBuilding = function(player, building, roomName)
     if player then
         local args = { id = work.keyId, event = "work", x = work.x, y = work.y }
         sendClientCommand(player, "Commands", "EventBuildingAdd", args)
+        BWOJobsOverhauled.IssueWorkKey(player, work)
     end
 end
 
@@ -437,6 +481,17 @@ end
 
 function BWOJobsOverhauled.TogglePanel()
     BWOJobsOverhauled.Log("TogglePanel called")
+    if type(BWOJobsOverhauledPanel) ~= "table" or type(BWOJobsOverhauledPanel.new) ~= "function" then
+        local ok, err = pcall(require, "ISUI/BWOJobsOverhauledPanel")
+        if not ok then
+            BWOJobsOverhauled.Log("Failed to load panel: " .. tostring(err))
+            return
+        end
+    end
+    if type(BWOJobsOverhauledPanel) ~= "table" or type(BWOJobsOverhauledPanel.new) ~= "function" then
+        BWOJobsOverhauled.Log("Panel class not available; cannot open window")
+        return
+    end
     if BWOJobsOverhauled.window then
         local visible = not BWOJobsOverhauled.window:getIsVisible()
         BWOJobsOverhauled.window:setVisible(visible)
@@ -651,6 +706,7 @@ local function onGameStart()
     local player = getSpecificPlayer(0)
     if player then
         BWOJobsOverhauled.EnsureWorkLocation(player)
+        BWOJobsOverhauled.IssueWorkKey(player, BWOJobsOverhauled.GetWorkData(player))
     end
 end
 
