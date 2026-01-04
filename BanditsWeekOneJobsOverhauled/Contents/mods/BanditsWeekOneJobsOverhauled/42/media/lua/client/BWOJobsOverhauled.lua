@@ -33,6 +33,19 @@ local function getNowSeconds()
     return getGameTime():getWorldAgeHours() * 3600
 end
 
+local function getBuildingDef(building)
+    if not building then return nil end
+    if building.getDef then
+        return building:getDef()
+    end
+    return building
+end
+
+local function getBuildingCenter(def)
+    if not def then return nil, nil end
+    return (def:getX() + def:getX2()) / 2, (def:getY() + def:getY2()) / 2
+end
+
 BWOJobsOverhauled.EnsureDailyData = function(player)
     local md = player:getModData()
     md.BWOJobsOverhauled = md.BWOJobsOverhauled or {}
@@ -134,7 +147,17 @@ BWOJobsOverhauled.PlayerHasKeyId = function(player, keyId)
     if not player or not keyId then return false end
     local inventory = player:getInventory()
     if not inventory then return false end
-    local items = inventory.getAllItems and inventory:getAllItems() or inventory:getItems()
+    local items
+    -- prefer getItems(); fall back to getAllItems with safe pcall and args
+    if inventory.getItems then
+        items = inventory:getItems()
+    end
+    if (not items or not items.size or items:size() == 0) and inventory.getAllItems then
+        local ok, res = pcall(inventory.getAllItems, inventory, true, true)
+        if ok then
+            items = res
+        end
+    end
     if not items then return false end
     for i = 0, items:size() - 1 do
         local item = items:get(i)
@@ -270,6 +293,157 @@ BWOJobsOverhauled.RoomMatchesProfession = function(room, profession)
     return false
 end
 
+BWOJobsOverhauled.RoomDefMatchesProfession = function(roomDef, profession)
+    if not roomDef or not profession or not BWORooms or not BWORooms.tab then return false end
+    local data = BWORooms.tab[roomDef:getName()]
+    if data and data.occupations then
+        for _, occupation in pairs(data.occupations) do
+            if occupation == profession then
+                return true
+            end
+        end
+    end
+    if BWORooms.IsMedical and (profession == "doctor" or profession == "nurse") then
+        return data and data.isMedical == true
+    end
+    return false
+end
+
+BWOJobsOverhauled.PoliceRoomNames = {
+    "policeoffice", "policehall", "policestorage", "interrogationroom", "security", "cell", "prisoncell", "prisoncells"
+}
+
+BWOJobsOverhauled.MunicipalRoomNames = {
+    "bank", "post", "poststorage"
+}
+
+local function setWorldMapWorkSymbol(player, work)
+    if not player or not work or not work.x or not work.y then return end
+    if not getWorld() or not getWorld():getCell() then return end
+    if not ISWorldMap_instance or not ISWorldMap_instance.mapAPI then return end
+    local mapAPI = ISWorldMap_instance.mapAPI
+    if not mapAPI.getSymbolsAPIv2 then return end
+    local symbolsAPI = mapAPI:getSymbolsAPIv2()
+    if not symbolsAPI or not symbolsAPI.addTexture then return end
+    local texture = "media/textures/worldMap/Map_On.png"
+    local symbol = work.worldMapSymbol
+    if symbol and symbol.setPosition then
+        symbol:setPosition(work.x, work.y)
+        return true
+    else
+        local ok, sym = pcall(symbolsAPI.addTexture, symbolsAPI, texture, work.x, work.y)
+        if ok and sym then
+            sym:setRGBA(0.3, 0.8, 1.0, 1.0)
+            sym:setAnchor(0.5, 0.5)
+            work.worldMapSymbol = sym
+            return true
+        end
+    end
+    return false
+end
+
+local function trySetWorldMapSymbol()
+    local player = getSpecificPlayer(0)
+    if not player then return end
+    local work = BWOJobsOverhauled.GetWorkData(player)
+    if not work or not work.x or not work.y then return end
+    if setWorldMapWorkSymbol(player, work) then
+        BWOJobsOverhauled.WorldMapSymbolPending = false
+        Events.OnTick.Remove(trySetWorldMapSymbol)
+    end
+end
+
+BWOJobsOverhauled.RequestWorldMapSymbol = function(player)
+    if BWOJobsOverhauled.WorldMapSymbolPending then return end
+    BWOJobsOverhauled.WorldMapSymbolPending = true
+    Events.OnTick.Add(trySetWorldMapSymbol)
+end
+
+local function findMetaWorkBuilding(player, profession, maxDist, roomNames)
+    if not player then return nil end
+    local meta = getWorld() and getWorld():getMetaGrid()
+    if not meta then return nil end
+    local px, py = player:getX(), player:getY()
+    local best, bestName, bestDist
+
+    local nameSet
+    if roomNames then
+        nameSet = {}
+        for _, n in ipairs(roomNames) do
+            nameSet[n] = true
+        end
+    end
+
+    -- First try direct rooms list if available (more efficient)
+    if meta.getRooms then
+        local rooms = meta:getRooms()
+        if rooms then
+            for i = 0, rooms:size() - 1 do
+                local roomDef = rooms:get(i)
+                if roomDef then
+                    local matches = false
+                    if nameSet then
+                        matches = nameSet[roomDef:getName()] == true
+                    else
+                        matches = BWOJobsOverhauled.RoomDefMatchesProfession(roomDef, profession)
+                    end
+                    if matches then
+                        local def = roomDef.getBuilding and roomDef:getBuilding()
+                        local cx, cy = getBuildingCenter(def)
+                        if cx and cy then
+                            local dist = IsoUtils.DistanceTo(px, py, cx, cy)
+                            if (not maxDist or dist <= maxDist) and (not bestDist or dist < bestDist) then
+                                best = def
+                                bestName = roomDef:getName()
+                                bestDist = dist
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    elseif meta.getRoomAt then
+        -- Fallback: sample the meta grid around player
+        local step = 20 -- tiles between samples to keep it cheap
+        local radius = maxDist or 300
+        local seenBuildings = {}
+        for x = math.floor(px - radius), math.floor(px + radius), step do
+            for y = math.floor(py - radius), math.floor(py + radius), step do
+                local roomDef = meta:getRoomAt(x, y, 0)
+                if roomDef then
+                    local rname = roomDef:getName()
+                    local matches = false
+                    if nameSet then
+                        matches = nameSet[rname] == true
+                    else
+                        matches = BWOJobsOverhauled.RoomDefMatchesProfession(roomDef, profession)
+                    end
+                    if matches then
+                        local def = roomDef.getBuilding and roomDef:getBuilding()
+                        if def and def.getKeyId then
+                            local keyId = def:getKeyId()
+                            if not seenBuildings[keyId] then
+                                seenBuildings[keyId] = true
+                                local cx, cy = getBuildingCenter(def)
+                                if cx and cy then
+                                    local dist = IsoUtils.DistanceTo(px, py, cx, cy)
+                                    if (not maxDist or dist <= maxDist) and (not bestDist or dist < bestDist) then
+                                        best = def
+                                        bestName = rname
+                                        bestDist = dist
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    return best, bestName
+end
+
 BWOJobsOverhauled.FindNearestWorkBuilding = function(player, profession)
     local cell = getCell()
     if not cell then return nil end
@@ -284,8 +458,7 @@ BWOJobsOverhauled.FindNearestWorkBuilding = function(player, profession)
         if room and BWOJobsOverhauled.RoomMatchesProfession(room, profession) then
             local roomDef = room:getRoomDef()
             if roomDef then
-                local cx = (roomDef:getX() + roomDef:getX2()) / 2
-                local cy = (roomDef:getY() + roomDef:getY2()) / 2
+                local cx, cy = getBuildingCenter(roomDef:getBuilding())
                 local dist = IsoUtils.DistanceTo(px, py, cx, cy)
                 if not bestDist or dist < bestDist then
                     bestDist = dist
@@ -305,7 +478,6 @@ end
 BWOJobsOverhauled.EnsureWorkMarker = function(player)
     if not player then return end
     if not getCell() then return end
-    if not SandboxVars or not SandboxVars.Bandits or not SandboxVars.Bandits.General_ArrivalIcon then return end
     if not BanditEventMarkerHandler then return end
     local work = BWOJobsOverhauled.GetWorkData(player)
     if not work or not work.keyId or not work.x or not work.y then return end
@@ -319,19 +491,21 @@ end
 BWOJobsOverhauled.RegisterWorkBuilding = function(player, building, roomName)
     if not building then return end
     local work = BWOJobsOverhauled.GetWorkData(player)
-    local def = building:getDef()
-    if not def then return end
+    local def = getBuildingDef(building)
+    if not def or not def.getKeyId then return end
     local newKeyId = def:getKeyId()
     if work.keyId ~= newKeyId then
         work.keyIssued = false
     end
     work.keyId = newKeyId
-    work.x = (def:getX() + def:getX2()) / 2
-    work.y = (def:getY() + def:getY2()) / 2
+    work.x, work.y = getBuildingCenter(def)
     work.name = roomName or work.name
     work.assigned = true
     if player then
         BWOJobsOverhauled.EnsureWorkMarker(player)
+        if not setWorldMapWorkSymbol(player, work) then
+            BWOJobsOverhauled.RequestWorldMapSymbol(player)
+        end
     end
     if player then
         local args = { id = work.keyId, event = "work", x = work.x, y = work.y }
@@ -349,11 +523,35 @@ BWOJobsOverhauled.EnsureWorkLocation = function(player)
         return
     end
     local building, roomName = BWOJobsOverhauled.FindNearestWorkBuilding(player, profession)
+    if not building then
+        building, roomName = findMetaWorkBuilding(player, profession, 300)
+    end
+    if profession == "policeofficer" and not building then
+        building, roomName = findMetaWorkBuilding(player, profession, 2000)
+    end
+    if profession == "policeofficer" and not building then
+        building, roomName = findMetaWorkBuilding(player, profession, 300, BWOJobsOverhauled.PoliceRoomNames)
+    end
+    if profession == "policeofficer" and not building then
+        building, roomName = findMetaWorkBuilding(player, profession, 2000, BWOJobsOverhauled.PoliceRoomNames)
+    end
+    if profession == "policeofficer" and not building then
+        building, roomName = findMetaWorkBuilding(player, profession, 300, BWOJobsOverhauled.MunicipalRoomNames)
+    end
+    if profession == "policeofficer" and not building then
+        building, roomName = findMetaWorkBuilding(player, profession, 2000, BWOJobsOverhauled.MunicipalRoomNames)
+    end
     if building then
         BWOJobsOverhauled.RegisterWorkBuilding(player, building, roomName)
         BWOJobsOverhauled.Log("Assigned work building for " .. tostring(profession))
     else
-        BWOJobsOverhauled.Log("No work building found for " .. tostring(profession))
+        local home = player:getBuilding()
+        if home then
+            BWOJobsOverhauled.RegisterWorkBuilding(player, home, roomName or "Home")
+            BWOJobsOverhauled.Log("No work building found for " .. tostring(profession) .. ", using home")
+        else
+            BWOJobsOverhauled.Log("No work building found for " .. tostring(profession))
+        end
     end
 end
 
