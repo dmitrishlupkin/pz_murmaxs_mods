@@ -1,3 +1,7 @@
+--- @module BWOJobsOverhauledJobs.ParkRangerJob
+--- @summary Park ranger job: earn for foraging junk items while on duty in forest zones.
+--- @details Implemented: ISForageAction payout for junk categories, forest-zone condition, on-duty check.
+--- @todo Add AI behavior block and refine junk category list for balance.
 local function text(key)
     return BWOJobsOverhauled.Text(key)
 end

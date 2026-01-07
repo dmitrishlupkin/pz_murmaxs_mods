@@ -1,3 +1,7 @@
+--- @module BWOJobsOverhauledJobs.CookingJobs
+--- @summary Cooking jobs: chef and burger flipper manage budget and meal quotas.
+--- @details Implemented: daily budget issuance, budget spend tracking, meal handoff tracking, on-duty/work checks.
+--- @todo Add AI behavior block and validate room/container restrictions for kitchens.
 local function text(key)
     return BWOJobsOverhauled.Text(key)
 end

@@ -1,3 +1,7 @@
+--- @module BWOJobsOverhauledJobs.FireJob
+--- @summary Fire officer job: pay for extinguishing fires plus optional shift.
+--- @details Implemented: ISPutOutFire payouts, on-duty check, shift task when work building assigned.
+--- @todo Add AI behavior block and revisit payout/shift tuning.
 local function text(key)
     return BWOJobsOverhauled.Text(key)
 end

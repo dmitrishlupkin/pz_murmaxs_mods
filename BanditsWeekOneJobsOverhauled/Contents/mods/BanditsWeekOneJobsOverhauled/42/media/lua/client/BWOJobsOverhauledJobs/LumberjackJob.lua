@@ -1,3 +1,7 @@
+--- @module BWOJobsOverhauledJobs.LumberjackJob
+--- @summary Lumberjack job: deliver logs/planks for pay, fail on theft.
+--- @details Implemented: inventory-transfer payouts into work storage, theft detection, on-duty checks.
+--- @todo Add AI behavior block and confirm container types for intended depots.
 local function text(key)
     return BWOJobsOverhauled.Text(key)
 end
@@ -46,6 +50,7 @@ local function handleInventoryTransfer(data)
         md.BWO.stolen = false
         md.BWO.bought = false
     end
+    if md.BWO.bought then return false end
     if md.BWO.stolen then return false end
 
     local descContainerType = destContainer:getType()

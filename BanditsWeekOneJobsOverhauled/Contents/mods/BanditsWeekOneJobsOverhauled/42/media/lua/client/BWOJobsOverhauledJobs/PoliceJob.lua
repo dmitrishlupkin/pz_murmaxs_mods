@@ -1,3 +1,7 @@
+--- @module BWOJobsOverhauledJobs.PoliceJob
+--- @summary Police job: earn bounties on hostile bandits plus optional shift task.
+--- @details Implemented: friendly-fire hook payout, on-duty check, shift task when work building assigned.
+--- @todo Add AI behavior block and tune bounty values vs bandit difficulty.
 local function text(key)
     return BWOJobsOverhauled.Text(key)
 end

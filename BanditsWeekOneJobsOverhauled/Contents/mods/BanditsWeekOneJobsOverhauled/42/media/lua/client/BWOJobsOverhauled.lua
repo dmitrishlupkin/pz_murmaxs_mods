@@ -283,6 +283,9 @@ local function patchBWOPlayerEarnings()
             return BWOJobsOverhauled.OriginalCheckFriendlyFire(bandit, attacker)
         end
     end
+    if BanditPlayer then
+        BanditPlayer.CheckFriendlyFire = BWOPlayer.CheckFriendlyFire
+    end
 
     BWOJobsOverhauled.OriginalActivateExcercise = BWOJobsOverhauled.OriginalActivateExcercise or BWOPlayer.ActivateExcercise
     BWOPlayer.ActivateExcercise = function(character, min)

@@ -1,3 +1,7 @@
+--- @module BWOJobsOverhauledJobs.MedicalJob
+--- @summary Medical job: heal patients for pay plus optional shift task.
+--- @details Implemented: TAHeal payout for doctors/nurses on duty, shift task when work building assigned.
+--- @todo Add AI behavior block and revisit payout values for medical actions.
 local function text(key)
     return BWOJobsOverhauled.Text(key)
 end

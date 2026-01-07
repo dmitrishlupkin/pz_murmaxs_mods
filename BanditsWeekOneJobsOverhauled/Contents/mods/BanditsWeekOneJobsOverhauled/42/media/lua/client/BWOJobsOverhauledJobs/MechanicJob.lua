@@ -1,3 +1,7 @@
+--- @module BWOJobsOverhauledJobs.MechanicJob
+--- @summary Mechanic job: pay for vehicle repairs on duty in BWO vehicles.
+--- @details Implemented: payouts for fixing parts, engine repair, and installing parts using BWO vehicle mod data.
+--- @todo Add AI behavior block and review reward scaling vs base game repair costs.
 local function text(key)
     return BWOJobsOverhauled.Text(key)
 end

@@ -1,3 +1,7 @@
+--- @module BWOJobsOverhauledJobs.FishermanJob
+--- @summary Fisherman job: deliver fish to kitchen storage for pay, fail on theft.
+--- @details Implemented: inventory-transfer payouts into restaurant/shop fridges, theft detection, on-duty checks.
+--- @todo Add AI behavior block and validate fish list against base game items.
 local function text(key)
     return BWOJobsOverhauled.Text(key)
 end
@@ -77,6 +81,7 @@ local function handleInventoryTransfer(data)
         md.BWO.stolen = false
         md.BWO.bought = false
     end
+    if md.BWO.bought then return false end
     if md.BWO.stolen then return false end
 
     local room = destContainer:getSquare() and destContainer:getSquare():getRoom()

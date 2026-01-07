@@ -1,3 +1,7 @@
+--- @module BWOJobsOverhauledJobs.FitnessJob
+--- @summary Fitness instructor job: run daily exercise plans with nearby participants for pay.
+--- @details Implemented: randomized daily plan tracking, progress from exercise loop, on-duty/work checks, participant proximity.
+--- @todo Add AI behavior block and tune plan durations/participant radius.
 local function text(key)
     return BWOJobsOverhauled.Text(key)
 end

@@ -1,3 +1,7 @@
+--- @module BWOJobsOverhauledJobs.SecurityJob
+--- @summary Security guard job: complete shift time at assigned workplace.
+--- @details Implemented: shift tracking with location and time conditions.
+--- @todo Add AI behavior block and refine shift length/pay.
 local function text(key)
     return BWOJobsOverhauled.Text(key)
 end

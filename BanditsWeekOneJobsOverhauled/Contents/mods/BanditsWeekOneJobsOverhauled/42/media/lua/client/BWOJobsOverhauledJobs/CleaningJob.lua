@@ -1,3 +1,8 @@
+--- @module BWOJobsOverhauledJobs.CleaningJob
+--- @summary Cleaning job: earn for trash pickup, fail if dumping trash, daily cap.
+--- @details Implemented: pickup/place moveables handler, floor-dump detection, daily counters,
+---          task conditions for pickups/no dump/earnings cap.
+--- @todo Add AI behavior block and revisit payout/limits tuning.
 local function text(key)
     return BWOJobsOverhauled.Text(key)
 end
