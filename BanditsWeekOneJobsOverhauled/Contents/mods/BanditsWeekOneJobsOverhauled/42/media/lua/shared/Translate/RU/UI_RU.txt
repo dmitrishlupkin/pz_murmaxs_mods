@@ -1,0 +1,93 @@
+﻿UI_RU = {
+    UI_BWO_JobsOverhauled_Title = "Р Р°Р±РѕС‚С‹",
+    UI_BWO_JobsOverhauled_Button = "Р Р°Р±РѕС‚С‹",
+    UI_optionscreen_BWOJobsOverhauled = "РџРµСЂРµСЂР°Р±РѕС‚РєР° СЂР°Р±РѕС‚",
+    UI_optionscreen_BWOJobsOverhauled_TogglePanel = "РћС‚РєСЂС‹С‚СЊ РїР°РЅРµР»СЊ СЂР°Р±РѕС‚",
+
+    UI_BWO_JobsOverhauled_Job_Cleaning = "Р“РѕСЂРѕРґСЃРєР°СЏ СѓР±РѕСЂРєР° РѕРєСЂСѓРіР° РќРѕРєСЃ",
+    UI_BWO_JobsOverhauled_Task_Cleaning = "РџРѕРґР±РёСЂР°С‚СЊ РјСѓСЃРѕСЂ РЅР° СѓР»РёС†Р°С… Рё РІС‹Р±СЂР°СЃС‹РІР°С‚СЊ РІ СѓСЂРЅС‹",
+    UI_BWO_JobsOverhauled_Cond_Cleaning_Pickup = "РџРѕРґРѕР±СЂР°С‚СЊ РјСѓСЃРѕСЂ РЅР° СѓР»РёС†Рµ",
+    UI_BWO_JobsOverhauled_Cond_Cleaning_NoDump = "РќРµ Р±СЂРѕСЃР°С‚СЊ РјСѓСЃРѕСЂ РЅР° Р·РµРјР»СЋ",
+    UI_BWO_JobsOverhauled_Cond_Cleaning_Limit = "РќРµ Р±РѕР»РµРµ $100 РІ РґРµРЅСЊ",
+    UI_BWO_JobsOverhauled_Status_Cleaning_MadeToday = "Р—Р°СЂР°Р±РѕС‚Р°РЅРѕ СЃРµРіРѕРґРЅСЏ: %s$",
+    UI_BWO_JobsOverhauled_Pay_Cleaning = "$%s Р·Р° РµРґРёРЅРёС†Сѓ РјСѓСЃРѕСЂР°, РґРѕ $%s РІ РґРµРЅСЊ",
+    UI_BWO_JobsOverhauled_Work_Unknown = "РќРµРёР·РІРµСЃС‚РЅРѕРµ РјРµСЃС‚Рѕ СЂР°Р±РѕС‚С‹",
+    UI_BWO_JobsOverhauled_Work_Marker = "Р Р°Р±РѕС‚Р°",
+    UI_BWO_JobsOverhauled_Work_Key = "РљР»СЋС‡ РѕС‚ СЂР°Р±РѕС‚С‹",
+    UI_BWO_JobsOverhauled_Task_WorkShift = "РћС‚СЂР°Р±РѕС‚Р°С‚СЊ СЃРјРµРЅСѓ РїРѕР»РЅРѕСЃС‚СЊСЋ",
+    UI_BWO_JobsOverhauled_Cond_Work_Location = "РќР°С…РѕРґРёС‚СЊСЃСЏ РЅР° СЂР°Р±РѕС‡РµРј РјРµСЃС‚Рµ",
+    UI_BWO_JobsOverhauled_Cond_Work_Time = "РџСЂРѕРІРµСЃС‚Рё %s С‡Р°СЃРѕРІ",
+    UI_BWO_JobsOverhauled_Pay_Shift = "$%s Р·Р° СЃРјРµРЅСѓ",
+    UI_BWO_JobsOverhauled_Job_Fire = "Работа пожарным",
+    UI_BWO_JobsOverhauled_Task_Fire = "РўСѓС€РёС‚СЊ РїРѕР¶Р°СЂС‹ РІ РіРѕСЂРѕРґРµ",
+    UI_BWO_JobsOverhauled_Cond_Fire_Nearby = "Р СЏРґРѕРј РµСЃС‚СЊ РїРѕР¶Р°СЂ",
+    UI_BWO_JobsOverhauled_Cond_Fire_OnDuty = "РќР° РґРµР¶СѓСЂСЃС‚РІРµ РїРѕР¶Р°СЂРЅРѕРіРѕ",
+    UI_BWO_JobsOverhauled_Pay_Fire = "$%s Р·Р° РїРѕР¶Р°СЂ",
+    UI_BWO_JobsOverhauled_Job_Mechanic = "Работа механиком",
+    UI_BWO_JobsOverhauled_Task_Mechanic = "Р РµРјРѕРЅС‚РёСЂРѕРІР°С‚СЊ РєР»РёРµРЅС‚СЃРєРёРµ Р°РІС‚РѕРјРѕР±РёР»Рё",
+    UI_BWO_JobsOverhauled_Cond_Mechanic_Nearby = "Р СЏРґРѕРј РµСЃС‚СЊ С‚СЂР°РЅСЃРїРѕСЂС‚",
+    UI_BWO_JobsOverhauled_Cond_Mechanic_OnDuty = "РќР° РґРµР¶СѓСЂСЃС‚РІРµ РјРµС…Р°РЅРёРєР°",
+    UI_BWO_JobsOverhauled_Pay_Mechanic = "$%s Р·Р° СѓСЂРѕРІРµРЅСЊ СЃРІР°СЂРєРё, $%s Р·Р° СѓСЂРѕРІРµРЅСЊ РјРµС…Р°РЅРёРєРё",
+    UI_BWO_JobsOverhauled_Job_ParkRanger = "Работа рейнджером",
+    UI_BWO_JobsOverhauled_Task_ParkRanger = "РЎРѕР±РёСЂР°С‚СЊ РјСѓСЃРѕСЂ РІ Р·РѕРЅР°С… Forest РёР»Рё DeepForest",
+    UI_BWO_JobsOverhauled_Cond_ParkRanger_Forest = "РќР°С…РѕРґРёС‚СЊСЃСЏ РІ Р·РѕРЅРµ Forest РёР»Рё DeepForest",
+    UI_BWO_JobsOverhauled_Cond_ParkRanger_OnDuty = "РќР° РґРµР¶СѓСЂСЃС‚РІРµ СЂРµР№РЅРґР¶РµСЂР°",
+    UI_BWO_JobsOverhauled_Pay_ParkRanger = "$%s Р·Р° РЅР°Р№РґРµРЅРЅС‹Р№ РјСѓСЃРѕСЂ",
+    UI_BWO_JobsOverhauled_Job_Fitness = "Работа фитнес инструктором",
+    UI_BWO_JobsOverhauled_Task_Fitness = "РџСЂРѕРІРѕРґРёС‚СЊ РµР¶РµРґРЅРµРІРЅСѓСЋ С‚СЂРµРЅРёСЂРѕРІРєСѓ РЅР° СЂР°Р±РѕС‡РµРј РјРµСЃС‚Рµ",
+    UI_BWO_JobsOverhauled_Cond_Fitness_OnDuty = "РќР° РґРµР¶СѓСЂСЃС‚РІРµ С„РёС‚РЅРµСЃ РёРЅСЃС‚СЂСѓРєС‚РѕСЂР°",
+    UI_BWO_JobsOverhauled_Cond_Fitness_Participants = "Р СЏРґРѕРј РµСЃС‚СЊ СѓС‡Р°СЃС‚РЅРёРєРё",
+    UI_BWO_JobsOverhauled_Cond_Fitness_Plan = "Р’С‹РїРѕР»РЅРёС‚СЊ РґРЅРµРІРЅРѕР№ РїР»Р°РЅ",
+    UI_BWO_JobsOverhauled_Pay_Fitness = "$%s Р·Р° РІС‹РїРѕР»РЅРµРЅРёРµ РїР»Р°РЅР°",
+    UI_BWO_JobsOverhauled_Job_Lumberjack = "Работа лесорубом",
+    UI_BWO_JobsOverhauled_Task_Lumberjack = "РЎРґР°РІР°С‚СЊ Р±СЂРµРІРЅР° РёР»Рё РґРѕСЃРєРё РІ РїСѓРЅРєС‚ РїСЂРёРµРјР°",
+    UI_BWO_JobsOverhauled_Cond_Lumberjack_Carrying = "РќРѕСЃРёС‚СЊ Р±СЂРµРІРЅР° РёР»Рё РґРѕСЃРєРё",
+    UI_BWO_JobsOverhauled_Cond_Lumberjack_NoTheft = "РќРµ Р±СЂР°С‚СЊ Р±СЂРµРІРЅР° РёР»Рё РґРѕСЃРєРё РёР· РєРѕРЅС‚РµР№РЅРµСЂРѕРІ РїСЂРёРµРјР°",
+    UI_BWO_JobsOverhauled_Cond_Lumberjack_OnDuty = "РќР° РґРµР¶СѓСЂСЃС‚РІРµ РґСЂРѕРІРѕСЃРµРєР°",
+    UI_BWO_JobsOverhauled_Pay_Lumberjack = "$%s Р·Р° Р±СЂРµРІРЅРѕ, $%s Р·Р° РґРѕСЃРєСѓ",
+    UI_BWO_JobsOverhauled_Job_Fisherman = "Работа рыбаком",
+    UI_BWO_JobsOverhauled_Task_Fisherman = "Р”РѕСЃС‚Р°РІР»СЏС‚СЊ СЂС‹Р±Сѓ РЅР° РєСѓС…РЅРё",
+    UI_BWO_JobsOverhauled_Cond_Fisherman_Carrying = "РќРµСЃС‚Рё СЃРІРµР¶СѓСЋ СЂС‹Р±Сѓ",
+    UI_BWO_JobsOverhauled_Cond_Fisherman_NoTheft = "РќРµ Р±СЂР°С‚СЊ СЂС‹Р±Сѓ РёР· С…РѕР»РѕРґРёР»СЊРЅРёРєРѕРІ/РјРѕСЂРѕР·РёР»РѕРє РґРѕСЃС‚Р°РІРєРё",
+    UI_BWO_JobsOverhauled_Cond_Fisherman_OnDuty = "РќР° РґРµР¶СѓСЂСЃС‚РІРµ СЂС‹Р±Р°РєР°",
+    UI_BWO_JobsOverhauled_Pay_Fisherman = "Р’РµСЃ x РјРЅРѕР¶РёС‚РµР»СЊ С†РµРЅС‹ x %s",
+    UI_BWO_JobsOverhauled_Job_Police = "Работа полицейским",
+    UI_BWO_JobsOverhauled_Job_Security = "Работа охранником",
+    UI_BWO_JobsOverhauled_Task_Police = "РЈРЅРёС‡С‚РѕР¶Р°С‚СЊ РІСЂР°Р¶РґРµР±РЅС‹С… РёР»Рё РІР°РЅРґР°Р»РѕРІ Р±Р°РЅРґРёС‚РѕРІ",
+    UI_BWO_JobsOverhauled_Cond_Police_Threat = "Р СЏРґРѕРј РІСЂР°Р¶РґРµР±РЅС‹Рµ РёР»Рё РІР°РЅРґР°Р»С‹ Р±Р°РЅРґРёС‚С‹",
+    UI_BWO_JobsOverhauled_Cond_Police_OnDuty = "РќР° РґРµР¶СѓСЂСЃС‚РІРµ РїРѕР»РёС†РµР№СЃРєРѕРіРѕ",
+    UI_BWO_JobsOverhauled_Pay_Police = "$%s Р·Р° РІСЂР°Р¶РґРµР±РЅРѕРіРѕ Р±Р°РЅРґРёС‚Р°",
+    UI_BWO_JobsOverhauled_Job_Medical = "Работа медиком",
+    UI_BWO_JobsOverhauled_Task_Medical = "РћРєР°Р·С‹РІР°С‚СЊ РјРµРґРїРѕРјРѕС‰СЊ РіСЂР°Р¶РґР°РЅСЃРєРёРј",
+    UI_BWO_JobsOverhauled_Cond_Medical_OnDuty = "РќР° РґРµР¶СѓСЂСЃС‚РІРµ РјРµРґРїРµСЂСЃРѕРЅР°Р»Р°",
+    UI_BWO_JobsOverhauled_Pay_Medical = "$%s Р·Р° Р»РµС‡РµРЅРёРµ",
+    UI_BWO_JobsOverhauled_Job_Chef = "Работа поваром",
+    UI_BWO_JobsOverhauled_Job_BurgerFlipper = "Работа готовщиком бургеров",
+    UI_BWO_JobsOverhauled_Task_Cooking_Budget = "Get a supply budget and spend at least %s%% on ingredients",
+    UI_BWO_JobsOverhauled_Task_Cooking_Meals = "Cook dishes and place them into work fridges",
+    UI_BWO_JobsOverhauled_Cond_Cooking_Budget = "Spend at least %s%% of the budget on ingredients",
+    UI_BWO_JobsOverhauled_Cond_Cooking_Meals = "Deliver cooked dishes to work fridges",
+    UI_BWO_JobsOverhauled_Cond_Cooking_NoTake = "Do not take dishes from work fridges",
+    UI_BWO_JobsOverhauled_Cond_Cooking_OnDuty = "On duty as kitchen staff",
+    UI_BWO_JobsOverhauled_Status_Cooking_Budget = "$%s/$%s spent",
+    UI_BWO_JobsOverhauled_Pay_Cooking_Budget = "Budget $%s, pays $%s",
+    UI_BWO_JobsOverhauled_Pay_Cooking_Meals = "$%s for completed service",
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

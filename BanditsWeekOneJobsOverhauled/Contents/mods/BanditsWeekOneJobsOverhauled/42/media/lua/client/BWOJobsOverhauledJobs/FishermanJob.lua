@@ -36,15 +36,41 @@ local function handleInventoryTransfer(data)
     if profession ~= "fisherman" then return false end
     if not BWOJobsOverhauled.IsOnDutyAs(player, profession) then return false end
 
+    local dailyData = BWOJobsOverhauled.EnsureDailyData(player)
+
     local srcContainer = data.srcContainer
     local destContainer = data.destContainer
     if not srcContainer or not destContainer then return false end
-    local object = srcContainer:getParent()
-    if not object or not instanceof(object, "IsoPlayer") then return false end
+    local srcParent = srcContainer:getParent()
+    local destParent = destContainer:getParent()
 
     local item = data.item
     if not item then return false end
     local itemType = item:getFullType()
+
+    if destParent and instanceof(destParent, "IsoPlayer") then
+        local room = srcContainer:getSquare() and srcContainer:getSquare():getRoom()
+        if room and BWORooms and BWORooms.IsKitchen and BWORooms.IsShop and BWORooms.IsRestaurant then
+            if BWORooms.IsKitchen(room) and (BWORooms.IsRestaurant(room) or BWORooms.IsShop(room)) then
+                local srcType = srcContainer:getType()
+                if srcType == "fridge" or srcType == "freezer" then
+                    for _, fishOption in pairs(fishTypes) do
+                        if itemType == fishOption then
+                            dailyData.fishermanTheft = true
+                            if BWOJobsOverhauled.MarkTaskFailed then
+                                BWOJobsOverhauled.MarkTaskFailed(player, "fisherman_task")
+                            end
+                            return true
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    if dailyData.fishermanTheft then return false end
+
+    if not srcParent or not instanceof(srcParent, "IsoPlayer") then return false end
     local md = item:getModData()
     if not md.BWO then
         md.BWO = {}
@@ -94,6 +120,14 @@ local function buildJob(player)
                         end,
                     },
                     {
+                        id = "fisherman_nosteal",
+                        text = text("UI_BWO_JobsOverhauled_Cond_Fisherman_NoTheft"),
+                        isLongTerm = true,
+                        check = function()
+                            return not BWOJobsOverhauled.EnsureDailyData(player).fishermanTheft
+                        end,
+                    },
+                    {
                         id = "fisherman_profession",
                         text = text("UI_BWO_JobsOverhauled_Cond_Fisherman_OnDuty"),
                         isLongTerm = true,
@@ -108,4 +142,5 @@ local function buildJob(player)
 end
 
 BWOJobsOverhauled.RegisterInventoryTransferHandler(handleInventoryTransfer)
+BWOJobsOverhauled.RegisterWorkShift("fisherman", { hours = 0, pay = 0 })
 BWOJobsOverhauled.RegisterJob(buildJob)

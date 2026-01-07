@@ -56,7 +56,16 @@ function BWOJobsOverhauledList:doDrawItem(y, item, alt)
 
     local textX = iconX + iconSize + 6
     local textColor = item.item.textColor or { r = 1, g = 1, b = 1, a = 1 }
-    self:drawText(item.text, textX, y + 2, textColor.r, textColor.g, textColor.b, textColor.a, item.item.font)
+    local lines = item.item.lines
+    if lines and #lines > 0 then
+        local font = item.item.font or self.font
+        local lineH = item.item.lineHeight or getTextManager():getFontHeight(font)
+        for i = 1, #lines do
+            self:drawText(lines[i], textX, y + 2 + (i - 1) * lineH, textColor.r, textColor.g, textColor.b, textColor.a, font)
+        end
+    else
+        self:drawText(item.text, textX, y + 2, textColor.r, textColor.g, textColor.b, textColor.a, item.item.font)
+    end
 
     return y + item.height
 end
@@ -70,6 +79,73 @@ end
 local function bwolog(message)
     if not BWOJobsOverhauled or not BWOJobsOverhauled.Debug then return end
     print("[BWOJobsOverhauled] " .. tostring(message))
+end
+
+local function wrapTextLines(text, font, maxWidth)
+    if not text or text == "" then
+        return { "" }
+    end
+    local tm = getTextManager()
+    if not tm or not tm.MeasureStringX then
+        return { text }
+    end
+    local lines = {}
+    for rawLine in string.gmatch(text, "([^\n]+)") do
+        local line = ""
+        for word in string.gmatch(rawLine, "%S+") do
+            local candidate = line == "" and word or (line .. " " .. word)
+            if tm:MeasureStringX(font, candidate) <= maxWidth then
+                line = candidate
+            else
+                if line ~= "" then
+                    table.insert(lines, line)
+                end
+                if tm:MeasureStringX(font, word) <= maxWidth then
+                    line = word
+                else
+                    local chunk = ""
+                    for i = 1, #word do
+                        local ch = word:sub(i, i)
+                        local test = chunk .. ch
+                        if tm:MeasureStringX(font, test) > maxWidth and chunk ~= "" then
+                            table.insert(lines, chunk)
+                            chunk = ch
+                        else
+                            chunk = test
+                        end
+                    end
+                    line = chunk
+                end
+            end
+        end
+        if line ~= "" then
+            table.insert(lines, line)
+        end
+    end
+    if #lines == 0 then
+        table.insert(lines, text)
+    end
+    return lines
+end
+
+local function applyWrappedText(panel, listItem, text)
+    if not panel or not listItem or not panel.list then return end
+    local item = listItem.item or {}
+    local font = item.font or panel.list.font or UIFont.Medium
+    local iconX = panel.indent * (item.level or 0)
+    local textX = iconX + panel.iconSize + 6
+    local maxWidth = panel.list:getWidth() - textX - 10
+    if maxWidth < 20 then maxWidth = 20 end
+    local lines = wrapTextLines(text, font, maxWidth)
+    item.lines = lines
+    item.lineHeight = getTextManager():getFontHeight(font)
+    listItem.item = item
+    local height = (#lines * item.lineHeight) + 6
+    local minHeight = panel.iconSize + 6
+    if height < minHeight then
+        height = minHeight
+    end
+    listItem.height = height
 end
 
 function BWOJobsOverhauledPanel:initialise()
@@ -138,8 +214,8 @@ function BWOJobsOverhauledPanel:refreshList()
             textColor = { r = 0.2, g = 0.9, b = 0.2, a = 1 },
             font = UIFont.Large,
         }
-        local jobHeight = getTextManager():getFontHeight(UIFont.Large) + 6
-        self.list:addItem(job.text, jobItem).height = jobHeight
+        local jobListItem = self.list:addItem(job.text, jobItem)
+        applyWrappedText(self, jobListItem, job.text)
 
         if jobExpanded then
             for _, task in ipairs(job.tasks) do
@@ -162,11 +238,18 @@ function BWOJobsOverhauledPanel:refreshList()
                         expanded = taskExpanded,
                         font = UIFont.Medium,
                     }
+                    local taskComplete = BWOJobsOverhauled.IsTaskComplete and BWOJobsOverhauled.IsTaskComplete(player, task.id)
+                    local taskFailed = BWOJobsOverhauled.IsTaskFailed and BWOJobsOverhauled.IsTaskFailed(player, task.id)
+                    if taskFailed then
+                        taskItem.textColor = { r = 0.9, g = 0.2, b = 0.2, a = 1 }
+                    elseif taskComplete then
+                        taskItem.textColor = { r = 0.2, g = 0.9, b = 0.2, a = 1 }
+                    end
                     if task.hideOnComplete and BWOJobsOverhauled.ShouldHighlightTask and BWOJobsOverhauled.ShouldHighlightTask(player, task.id, task.highlightSeconds or 5) then
                         taskItem.backColor = { r = 0.1, g = 0.6, b = 0.1, a = 0.25 }
                     end
-                    local taskHeight = getTextManager():getFontHeight(UIFont.Medium) + 6
-                    self.list:addItem(task.text, taskItem).height = taskHeight
+                    local taskListItem = self.list:addItem(task.text, taskItem)
+                    applyWrappedText(self, taskListItem, task.text)
 
                     if taskExpanded then
                         for _, condition in ipairs(task.conditions) do
@@ -195,8 +278,8 @@ function BWOJobsOverhauledPanel:refreshList()
                                 conditionItem.textColor = conditionMet and { r = 0.2, g = 0.9, b = 0.2, a = 1 } or { r = 0.9, g = 0.2, b = 0.2, a = 1 }
                                 conditionItem.backColor = conditionMet and { r = 0.1, g = 0.4, b = 0.1, a = 0.15 } or { r = 0.4, g = 0.1, b = 0.1, a = 0.12 }
                             end
-                            local conditionHeight = getTextManager():getFontHeight(UIFont.Smallest) + 6
-                            self.list:addItem(conditionText, conditionItem).height = conditionHeight
+                            local conditionListItem = self.list:addItem(conditionText, conditionItem)
+                            applyWrappedText(self, conditionListItem, conditionText)
                         end
                     end
                 end
@@ -226,6 +309,7 @@ function BWOJobsOverhauledPanel:onResize()
         self.list:setY(listY)
         self.list:setWidth(self.width - 20)
         self.list:setHeight(self.height - listY - 10)
+        self:refreshList()
     end
 end
 

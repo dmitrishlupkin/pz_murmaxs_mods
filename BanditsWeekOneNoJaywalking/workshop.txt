@@ -1,0 +1,6 @@
+version=1
+id=0
+title=Bandits Week One Addon: No Jaywalking
+description=Keeps neutral idle NPCs off roads and roadways by preferring pavements and quickly stepping off asphalt when possible. Crossing roads is still allowed when needed.
+tags=Build 42;AI;QoL
+visibility=public

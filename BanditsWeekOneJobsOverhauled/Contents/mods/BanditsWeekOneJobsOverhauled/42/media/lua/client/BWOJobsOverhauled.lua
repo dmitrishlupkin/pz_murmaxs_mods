@@ -14,9 +14,20 @@ BWOJobsOverhauled.InventoryTransferHandlers = BWOJobsOverhauled.InventoryTransfe
 BWOJobsOverhauled.FriendlyFireHandlers = BWOJobsOverhauled.FriendlyFireHandlers or {}
 BWOJobsOverhauled.ExerciseHandlers = BWOJobsOverhauled.ExerciseHandlers or {}
 BWOJobsOverhauled.WorkShiftConfigs = BWOJobsOverhauled.WorkShiftConfigs or {}
+BWOJobsOverhauled.GameStartPending = false
+BWOJobsOverhauled.GameStartApplied = false
+BWOJobsOverhauled.LastPlayer = nil
 
 BWOJobsOverhauled.Text = function(key)
     return getTextOrNull(key) or getText(key)
+end
+
+BWOJobsOverhauled.IsWorldReady = function()
+    local player = getSpecificPlayer(0)
+    if not player or not player.getSquare or not player:getSquare() then
+        return false
+    end
+    return getCell() ~= nil
 end
 
 BWOJobsOverhauled.Log = function(message)
@@ -46,6 +57,46 @@ local function getBuildingCenter(def)
     return (def:getX() + def:getX2()) / 2, (def:getY() + def:getY2()) / 2
 end
 
+local function getZoneLabelAt(x, y, z)
+    local world = getWorld()
+    local meta = world and world:getMetaGrid()
+    if meta and meta.getZonesAt then
+        local zones = meta:getZonesAt(x, y, z or 0)
+        if zones then
+            for i = 0, zones:size() - 1 do
+                local zone = zones:get(i)
+                local name = zone and zone.getName and zone:getName()
+                if name and name ~= "" then
+                    return name
+                end
+            end
+            for i = 0, zones:size() - 1 do
+                local zone = zones:get(i)
+                local zoneType = zone and zone.getType and zone:getType()
+                if zoneType and zoneType ~= "" and zoneType ~= "Nav" then
+                    return zoneType
+                end
+            end
+        end
+    end
+
+    local cell = getCell()
+    if not cell then return nil end
+    local square = cell:getGridSquare(x, y, z or 0)
+    if not square then return nil end
+    local zone = square:getZone()
+    if not zone then return nil end
+    local name = zone.getName and zone:getName()
+    if name and name ~= "" then
+        return name
+    end
+    local zoneType = zone.getType and zone:getType()
+    if zoneType and zoneType ~= "" and zoneType ~= "Nav" then
+        return zoneType
+    end
+    return nil
+end
+
 BWOJobsOverhauled.EnsureDailyData = function(player)
     local md = player:getModData()
     md.BWOJobsOverhauled = md.BWOJobsOverhauled or {}
@@ -55,6 +106,9 @@ BWOJobsOverhauled.EnsureDailyData = function(player)
         data.day = day
         data.trashPickups = 0
         data.trashEarnings = 0
+        data.trashDumped = false
+        data.lumberjackTheft = false
+        data.fishermanTheft = false
         data.workOnDuty = false
         data.workShiftMinutes = 0
         data.workShiftLastUpdate = nil
@@ -117,9 +171,49 @@ BWOJobsOverhauled.GetProfessionName = function(player)
     if not player then return nil end
     local descriptor = player:getDescriptor()
     if not descriptor then return nil end
-    local profession = descriptor:getCharacterProfession()
+    if descriptor.isCharacterProfession and CharacterProfession then
+        if descriptor:isCharacterProfession(CharacterProfession.FITNESS_INSTRUCTOR) then return "fitnessInstructor" end
+        if descriptor:isCharacterProfession(CharacterProfession.POLICE_OFFICER) then return "policeofficer" end
+        if descriptor:isCharacterProfession(CharacterProfession.FIRE_OFFICER) then return "fireofficer" end
+        if descriptor:isCharacterProfession(CharacterProfession.DOCTOR) then return "doctor" end
+        if descriptor:isCharacterProfession(CharacterProfession.NURSE) then return "nurse" end
+        if descriptor:isCharacterProfession(CharacterProfession.PARK_RANGER) then return "parkranger" end
+        if descriptor:isCharacterProfession(CharacterProfession.LUMBERJACK) then return "lumberjack" end
+        if descriptor:isCharacterProfession(CharacterProfession.FISHERMAN) then return "fisherman" end
+        if descriptor:isCharacterProfession(CharacterProfession.REPAIRMAN) then return "repairman" end
+        if descriptor:isCharacterProfession(CharacterProfession.MECHANICS) then return "mechanics" end
+        if descriptor:isCharacterProfession(CharacterProfession.ELECTRICIAN) then return "electrician" end
+        if descriptor:isCharacterProfession(CharacterProfession.METALWORKER) then return "metalworker" end
+        if descriptor:isCharacterProfession(CharacterProfession.CONSTRUCTION_WORKER) then return "constructionworker" end
+        if descriptor:isCharacterProfession(CharacterProfession.SECURITY_GUARD) then return "securityguard" end
+        if descriptor:isCharacterProfession(CharacterProfession.CHEF) then return "chef" end
+        if descriptor:isCharacterProfession(CharacterProfession.BURGER_FLIPPER) then return "burgerflipper" end
+        if descriptor:isCharacterProfession(CharacterProfession.FARMER) then return "farmer" end
+        if descriptor:isCharacterProfession(CharacterProfession.CARPENTER) then return "carpenter" end
+        if descriptor:isCharacterProfession(CharacterProfession.BURGLAR) then return "burglar" end
+        if descriptor:isCharacterProfession(CharacterProfession.VETERAN) then return "veteran" end
+        if descriptor:isCharacterProfession(CharacterProfession.UNEMPLOYED) then return "unemployed" end
+    end
+
+    local profession = descriptor.getCharacterProfession and descriptor:getCharacterProfession() or nil
     if profession and profession.getName then
-        return profession:getName()
+        profession = profession:getName()
+    end
+    if not profession and descriptor.getProfession then
+        profession = descriptor:getProfession()
+    end
+    if type(profession) == "string" then
+        local norm = profession:lower():gsub("%s+", ""):gsub("_", "")
+        local map = {
+            fitnessinstructor = "fitnessInstructor",
+            policeofficer = "policeofficer",
+            fireofficer = "fireofficer",
+            parkranger = "parkranger",
+            securityguard = "securityguard",
+        }
+        if map[norm] then
+            return map[norm]
+        end
     end
     return profession
 end
@@ -140,7 +234,14 @@ end
 
 BWOJobsOverhauled.GetWorkBuildingName = function(player)
     local work = BWOJobsOverhauled.GetWorkData(player)
-    return work.name
+    local name = work.name or BWOJobsOverhauled.Text("UI_BWO_JobsOverhauled_Work_Unknown")
+    if work.x and work.y then
+        local zoneLabel = getZoneLabelAt(math.floor(work.x), math.floor(work.y), 0)
+        if zoneLabel and zoneLabel ~= "" then
+            return string.format("%s (%s)", name, zoneLabel)
+        end
+    end
+    return name
 end
 
 BWOJobsOverhauled.PlayerHasKeyId = function(player, keyId)
@@ -192,6 +293,43 @@ BWOJobsOverhauled.IssueWorkKey = function(player, work)
     BWOJobsOverhauled.Log("Work key issued for keyId " .. tostring(work.keyId))
 end
 
+BWOJobsOverhauled.IssueStarterGear = function(player)
+    if not player then return end
+    local md = player:getModData()
+    md.BWOJobsOverhauled = md.BWOJobsOverhauled or {}
+    local data = md.BWOJobsOverhauled
+    data.gearIssued = data.gearIssued or {}
+
+    local profession = BWOJobsOverhauled.GetProfessionName(player)
+    if not profession or data.gearIssued[profession] then return end
+
+    local function createItem(itemType)
+        if BanditCompatibility and BanditCompatibility.InstanceItem then
+            return BanditCompatibility.InstanceItem(itemType)
+        end
+        return InventoryItemFactory.CreateItem(itemType)
+    end
+
+    if profession == "lumberjack" then
+        local options = { "Base.Axe", "Base.WoodAxe", "Base.HandAxe", "Base.Axe_Old" }
+        local itemType = options[ZombRand(#options) + 1]
+        local item = createItem(itemType)
+        if item then
+            local max = item:getConditionMax()
+            local min = math.max(1, math.floor(max * 0.5))
+            item:setCondition(ZombRand(min, max + 1))
+            player:getInventory():AddItem(item)
+            data.gearIssued[profession] = true
+        end
+    elseif profession == "fisherman" then
+        local item = createItem("Base.FishingRod")
+        if item then
+            player:getInventory():AddItem(item)
+            data.gearIssued[profession] = true
+        end
+    end
+end
+
 BWOJobsOverhauled.IsOnDutyAs = function(player, profession)
     if not player then return false end
     local current = BWOJobsOverhauled.GetProfessionName(player)
@@ -200,7 +338,10 @@ BWOJobsOverhauled.IsOnDutyAs = function(player, profession)
         return true
     end
     local data = BWOJobsOverhauled.EnsureDailyData(player)
-    return data.workOnDuty == true
+    if data.workOnDuty == true then
+        return true
+    end
+    return BWOJobsOverhauled.IsAtWork(player)
 end
 
 BWOJobsOverhauled.IsAtWork = function(player)
@@ -237,7 +378,31 @@ end
 BWOJobsOverhauled.MarkTaskComplete = function(player, taskId)
     if not player or not taskId then return end
     local data = BWOJobsOverhauled.EnsureDailyData(player)
-    data.taskState[taskId] = { completedAt = getNowSeconds() }
+    local state = data.taskState[taskId] or {}
+    state.completedAt = getNowSeconds()
+    data.taskState[taskId] = state
+end
+
+BWOJobsOverhauled.MarkTaskFailed = function(player, taskId)
+    if not player or not taskId then return end
+    local data = BWOJobsOverhauled.EnsureDailyData(player)
+    local state = data.taskState[taskId] or {}
+    state.failedAt = getNowSeconds()
+    data.taskState[taskId] = state
+end
+
+BWOJobsOverhauled.IsTaskFailed = function(player, taskId)
+    if not player or not taskId then return false end
+    local data = BWOJobsOverhauled.EnsureDailyData(player)
+    local state = data.taskState[taskId]
+    return state and state.failedAt ~= nil
+end
+
+BWOJobsOverhauled.IsTaskComplete = function(player, taskId)
+    if not player or not taskId then return false end
+    local data = BWOJobsOverhauled.EnsureDailyData(player)
+    local state = data.taskState[taskId]
+    return state and state.completedAt ~= nil
 end
 
 BWOJobsOverhauled.ShouldHideTask = function(player, taskId, delaySeconds)
@@ -268,6 +433,15 @@ BWOJobsOverhauled.IsWorkBuilding = function(building)
     local keyId = def:getKeyId()
     if work.keyId and keyId == work.keyId then
         return true
+    end
+    if work.x and work.y then
+        local cx, cy = getBuildingCenter(def)
+        if cx and cy then
+            local dist = IsoUtils.DistanceTo(work.x, work.y, cx, cy)
+            if dist < 1.0 then
+                return true
+            end
+        end
     end
     if BWOBuildings and BWOBuildings.IsEventBuilding then
         return BWOBuildings.IsEventBuilding(building, "work")
@@ -310,11 +484,61 @@ BWOJobsOverhauled.RoomDefMatchesProfession = function(roomDef, profession)
 end
 
 BWOJobsOverhauled.PoliceRoomNames = {
-    "policeoffice", "policehall", "policestorage", "interrogationroom", "security", "cell", "prisoncell", "prisoncells"
+    "policeoffice", "policehall", "policestorage", "interrogationroom", "cell", "prisoncell", "prisoncells"
 }
 
 BWOJobsOverhauled.MunicipalRoomNames = {
-    "bank", "post", "poststorage"
+    "bank", "post", "poststorage", "security"
+}
+
+BWOJobsOverhauled.SecurityRoomNames = {
+    "security", "securityoffice", "securityroom", "guardroom", "checkpoint"
+}
+
+BWOJobsOverhauled.ArmoryRoomNames = {
+    "armory", "armoury", "armystorage", "bankstorage", "policestorage", "prisonarmory", "weaponstorage", "gunstore"
+}
+
+BWOJobsOverhauled.MedicalRoomNames = {
+    "medclinic","medical","clinic", "hospitalstorage", "medicalstorage", "pharmacystorage", "pharmacy", "dentiststorage"
+}
+
+BWOJobsOverhauled.GymRoomNames = {
+    "gym", "fitness", "sportstore", "sportstorage"
+}
+
+BWOJobsOverhauled.EntertainmentRoomNames = {
+    "bar", "beergarden", "restaurant", "dining", "diner", "cafeteria", "cafe", "theatre", "bowlingalley", "stripclub", "recreation", "mall", "bandlivingroom", "bandkitchen"
+}
+
+BWOJobsOverhauled.RestaurantRoomNames = {
+    "restaurant", "dining", "diner", "cafeteria", "pizzawhirled", "pizzawhirledcounter", "pileocrepe", "sushidining", "spifforestaurant", "spiffo_dining",
+    "bakerykitchen", "barkitchen", "burgerkitchen", "cafekitchen", "cafeteriakitchen", "pizzakitchen", "sushikitchen", "tacokitchen", "theatrekitchen", "spiffoskitchen", "arenakitchen", "bandkitchen"
+}
+
+BWOJobsOverhauled.CafeRoomNames = {
+    "cafe", "cafekitchen", "cafeteria", "cafeteriakitchen"
+}
+
+BWOJobsOverhauled.BarRoomNames = {
+    "bar", "beergarden", "barkitchen"
+}
+
+BWOJobsOverhauled.FastFoodRoomNames = {
+    "spifforestaurant", "spiffo_dining", "spiffoskitchen", "spiffosstorage",
+    "burgerkitchen", "burgerstorage", "pizzawhirled", "pizzawhirledcounter", "pizzakitchen", "tacokitchen", "pileocrepe"
+}
+
+BWOJobsOverhauled.ResidentialRoomNames = {
+    "bedroom", "livingroom", "room1", "closet", "bathroom", "diningroom", "kitchen"
+}
+
+BWOJobsOverhauled.LumberjackRoomNames = {
+    "factorystorage"
+}
+
+BWOJobsOverhauled.FishermanRoomNames = {
+    "fishingstorage"
 }
 
 local function setWorldMapWorkSymbol(player, work)
@@ -357,6 +581,56 @@ BWOJobsOverhauled.RequestWorldMapSymbol = function(player)
     if BWOJobsOverhauled.WorldMapSymbolPending then return end
     BWOJobsOverhauled.WorldMapSymbolPending = true
     Events.OnTick.Add(trySetWorldMapSymbol)
+end
+
+local function trySetWorkMarker()
+    if not BanditEventMarkerHandler or not getCell() then return end
+    local player = getSpecificPlayer(0)
+    if not player then return end
+    local work = BWOJobsOverhauled.GetWorkData(player)
+    if not work or not work.keyId or not work.x or not work.y then return end
+    BWOJobsOverhauled.WorkMarkerPending = false
+    Events.OnTick.Remove(trySetWorkMarker)
+    BWOJobsOverhauled.EnsureWorkMarker(player)
+end
+
+BWOJobsOverhauled.RequestWorkMarker = function(player)
+    if BWOJobsOverhauled.WorkMarkerPending then return end
+    BWOJobsOverhauled.WorkMarkerPending = true
+    Events.OnTick.Add(trySetWorkMarker)
+end
+
+local function cleanupUI()
+    if BWOJobsOverhauled.window then
+        BWOJobsOverhauled.window:removeFromUIManager()
+        BWOJobsOverhauled.window = nil
+    end
+    if BWOJobsOverhauled.button then
+        BWOJobsOverhauled.button:removeFromUIManager()
+        BWOJobsOverhauled.button = nil
+    end
+    if BWOJobsOverhauled.deferButton then
+        BWOJobsOverhauled.deferButton = false
+        Events.OnTick.Remove(BWOJobsOverhauled.CreateButton)
+    end
+    if BWOJobsOverhauled.WorldMapSymbolPending then
+        BWOJobsOverhauled.WorldMapSymbolPending = false
+        Events.OnTick.Remove(trySetWorldMapSymbol)
+    end
+    if BWOJobsOverhauled.WorkMarkerPending then
+        BWOJobsOverhauled.WorkMarkerPending = false
+        Events.OnTick.Remove(trySetWorkMarker)
+    end
+    if BWOJobsOverhauled.WorkAssignmentPending then
+        BWOJobsOverhauled.WorkAssignmentPending = false
+        Events.OnTick.Remove(BWOJobsOverhauled.TryAssignWorkLocation)
+    end
+    if BWOJobsOverhauled.GameStartPending and BWOJobsOverhauled.TryGameStart then
+        BWOJobsOverhauled.GameStartPending = false
+        Events.OnTick.Remove(BWOJobsOverhauled.TryGameStart)
+    end
+    BWOJobsOverhauled.GameStartApplied = false
+    BWOJobsOverhauled.LastPlayer = nil
 end
 
 local function findMetaWorkBuilding(player, profession, maxDist, roomNames)
@@ -478,7 +752,10 @@ end
 BWOJobsOverhauled.EnsureWorkMarker = function(player)
     if not player then return end
     if not getCell() then return end
-    if not BanditEventMarkerHandler then return end
+    if not BanditEventMarkerHandler then
+        BWOJobsOverhauled.RequestWorkMarker(player)
+        return
+    end
     local work = BWOJobsOverhauled.GetWorkData(player)
     if not work or not work.keyId or not work.x or not work.y then return end
     local desc = BWOJobsOverhauled.Text("UI_BWO_JobsOverhauled_Work_Marker")
@@ -522,25 +799,76 @@ BWOJobsOverhauled.EnsureWorkLocation = function(player)
     if work.keyId then
         return
     end
-    local building, roomName = BWOJobsOverhauled.FindNearestWorkBuilding(player, profession)
-    if not building then
-        building, roomName = findMetaWorkBuilding(player, profession, 300)
+    local building, roomName
+    if profession ~= "policeofficer" then
+        building, roomName = BWOJobsOverhauled.FindNearestWorkBuilding(player, profession)
     end
-    if profession == "policeofficer" and not building then
-        building, roomName = findMetaWorkBuilding(player, profession, 2000)
+
+    local function tryMeta(dist, names)
+        if building then return end
+        building, roomName = findMetaWorkBuilding(player, profession, dist, names)
     end
-    if profession == "policeofficer" and not building then
-        building, roomName = findMetaWorkBuilding(player, profession, 300, BWOJobsOverhauled.PoliceRoomNames)
+
+    if profession == "policeofficer" then
+        tryMeta(300, BWOJobsOverhauled.PoliceRoomNames)
+        tryMeta(2000, BWOJobsOverhauled.PoliceRoomNames)
+        tryMeta(300, BWOJobsOverhauled.MunicipalRoomNames)
+        tryMeta(2000, BWOJobsOverhauled.MunicipalRoomNames)
+        if not building then
+            building, roomName = BWOJobsOverhauled.FindNearestWorkBuilding(player, profession)
+        end
+        tryMeta(300)
+        tryMeta(2000)
+    elseif profession == "doctor" or profession == "nurse" then
+        tryMeta(300)
+        tryMeta(1200, BWOJobsOverhauled.MedicalRoomNames)
+        tryMeta(2000, BWOJobsOverhauled.MedicalRoomNames)
+        tryMeta(2000)
+    elseif profession == "fitnessInstructor" then
+        tryMeta(300)
+        tryMeta(800, BWOJobsOverhauled.GymRoomNames)
+        tryMeta(1500, BWOJobsOverhauled.GymRoomNames)
+        tryMeta(1200, BWOJobsOverhauled.EntertainmentRoomNames)
+        tryMeta(2000, BWOJobsOverhauled.EntertainmentRoomNames)
+        tryMeta(1500, BWOJobsOverhauled.ResidentialRoomNames)
+        tryMeta(2000)
+    elseif profession == "securityguard" then
+        tryMeta(300)
+        tryMeta(800, BWOJobsOverhauled.SecurityRoomNames)
+        tryMeta(1200, BWOJobsOverhauled.ArmoryRoomNames)
+        tryMeta(1500, BWOJobsOverhauled.EntertainmentRoomNames)
+        tryMeta(1500, BWOJobsOverhauled.RestaurantRoomNames)
+        tryMeta(1500, BWOJobsOverhauled.CafeRoomNames)
+        tryMeta(1500, BWOJobsOverhauled.BarRoomNames)
+        tryMeta(2000, BWOJobsOverhauled.MunicipalRoomNames)
+        tryMeta(2000)
+    elseif profession == "chef" then
+        tryMeta(300)
+        tryMeta(800, BWOJobsOverhauled.RestaurantRoomNames)
+        tryMeta(1200, BWOJobsOverhauled.CafeRoomNames)
+        tryMeta(1500, BWOJobsOverhauled.BarRoomNames)
+        tryMeta(2000)
+    elseif profession == "burgerflipper" then
+        tryMeta(300)
+        tryMeta(800, BWOJobsOverhauled.FastFoodRoomNames)
+        tryMeta(1200, BWOJobsOverhauled.RestaurantRoomNames)
+        tryMeta(1500, BWOJobsOverhauled.BarRoomNames)
+        tryMeta(2000)
+    elseif profession == "lumberjack" then
+        tryMeta(300)
+        tryMeta(1200, BWOJobsOverhauled.LumberjackRoomNames)
+        tryMeta(2000, BWOJobsOverhauled.LumberjackRoomNames)
+        tryMeta(2000)
+    elseif profession == "fisherman" then
+        tryMeta(300)
+        tryMeta(1200, BWOJobsOverhauled.FishermanRoomNames)
+        tryMeta(2000, BWOJobsOverhauled.FishermanRoomNames)
+        tryMeta(2000)
+    else
+        tryMeta(300)
+        tryMeta(2000)
     end
-    if profession == "policeofficer" and not building then
-        building, roomName = findMetaWorkBuilding(player, profession, 2000, BWOJobsOverhauled.PoliceRoomNames)
-    end
-    if profession == "policeofficer" and not building then
-        building, roomName = findMetaWorkBuilding(player, profession, 300, BWOJobsOverhauled.MunicipalRoomNames)
-    end
-    if profession == "policeofficer" and not building then
-        building, roomName = findMetaWorkBuilding(player, profession, 2000, BWOJobsOverhauled.MunicipalRoomNames)
-    end
+
     if building then
         BWOJobsOverhauled.RegisterWorkBuilding(player, building, roomName)
         BWOJobsOverhauled.Log("Assigned work building for " .. tostring(profession))
@@ -556,6 +884,7 @@ BWOJobsOverhauled.EnsureWorkLocation = function(player)
 end
 
 BWOJobsOverhauled.TryAssignWorkLocation = function()
+    if not BWOJobsOverhauled.IsWorldReady() then return end
     local player = getSpecificPlayer(0)
     if not player then return end
     local profession = BWOJobsOverhauled.GetProfessionName(player)
@@ -714,6 +1043,10 @@ end
 
 function BWOJobsOverhauled.TogglePanel()
     BWOJobsOverhauled.Log("TogglePanel called")
+    if not BWOJobsOverhauled.IsWorldReady() then
+        BWOJobsOverhauled.Log("World not ready; cannot open panel")
+        return
+    end
     if type(BWOJobsOverhauledPanel) ~= "table" or type(BWOJobsOverhauledPanel.new) ~= "function" then
         local ok, err = pcall(require, "ISUI/BWOJobsOverhauledPanel")
         if not ok then
@@ -751,6 +1084,7 @@ end
 
 function BWOJobsOverhauled.UpdateButtonPosition()
     if not BWOJobsOverhauled.button then return end
+    if not BWOJobsOverhauled.IsWorldReady() then return end
     local playerNum = 0
     local x = getPlayerScreenLeft(playerNum) + 90
     local y = getPlayerScreenTop(playerNum) + 200
@@ -761,6 +1095,13 @@ end
 
 function BWOJobsOverhauled.CreateButton()
     if BWOJobsOverhauled.button then return end
+    if not BWOJobsOverhauled.IsWorldReady() then
+        if not BWOJobsOverhauled.deferButton then
+            BWOJobsOverhauled.deferButton = true
+            Events.OnTick.Add(BWOJobsOverhauled.CreateButton)
+        end
+        return
+    end
     if type(ISButton) ~= "table" or type(ISButton.new) ~= "function" then
         BWOJobsOverhauled.Log("ISButton not ready; deferring button creation")
         if not BWOJobsOverhauled.deferButton then
@@ -813,6 +1154,11 @@ local function onKeyPressed(key)
         BWOJobsOverhauled.Log("Toggle panel keybind pressed")
         BWOJobsOverhauled.TogglePanel()
     end
+end
+
+local function onFitnessActionExeLooped(data)
+    if not data or not data.character then return end
+    BWOJobsOverhauled.HandleExercise(data.character, data)
 end
 
 local function patchBWOPlayerEarnings()
@@ -924,6 +1270,7 @@ local function onInventoryTransferAction(data)
 end
 
 local function onEveryOneMinute()
+    if not BWOJobsOverhauled.IsWorldReady() then return end
     local player = getSpecificPlayer(0)
     if not player then return end
     if BWOJobsOverhauled.AreTransactionsEnabled() then
@@ -931,28 +1278,94 @@ local function onEveryOneMinute()
     end
 end
 
+local function isGameStartApplied(player)
+    return BWOJobsOverhauled.GameStartApplied and BWOJobsOverhauled.LastPlayer == player
+end
+
+local function applyGameStart(player)
+    if not player then return false end
+    if BWOJobsOverhauled.LastPlayer ~= player then
+        BWOJobsOverhauled.LastPlayer = player
+        BWOJobsOverhauled.GameStartApplied = false
+    end
+    if BWOJobsOverhauled.GameStartApplied then return false end
+    BWOJobsOverhauled.CreateButton()
+    BWOJobsOverhauled.UpdateButtonPosition()
+    BWOJobsOverhauled.IssueWorkKey(player, BWOJobsOverhauled.GetWorkData(player))
+    BWOJobsOverhauled.EnsureWorkMarker(player)
+    BWOJobsOverhauled.IssueStarterGear(player)
+    local profession = BWOJobsOverhauled.GetProfessionName(player)
+    local work = BWOJobsOverhauled.GetWorkData(player)
+    if BWOJobsOverhauled.RequiresWorkLocation(profession) and not work.assigned and not work.keyId then
+        if not BWOJobsOverhauled.WorkAssignmentPending then
+            BWOJobsOverhauled.WorkAssignmentPending = true
+            Events.OnTick.Add(BWOJobsOverhauled.TryAssignWorkLocation)
+        end
+    end
+    BWOJobsOverhauled.GameStartApplied = true
+    return true
+end
+
+BWOJobsOverhauled.TryGameStart = function()
+    if not BWOJobsOverhauled.IsWorldReady() then return end
+    local player = getSpecificPlayer(0)
+    if not player then return end
+    if isGameStartApplied(player) then
+        BWOJobsOverhauled.GameStartPending = false
+        Events.OnTick.Remove(BWOJobsOverhauled.TryGameStart)
+        return
+    end
+    if applyGameStart(player) then
+        BWOJobsOverhauled.GameStartPending = false
+        Events.OnTick.Remove(BWOJobsOverhauled.TryGameStart)
+    end
+end
+
 local function onGameStart()
     BWOJobsOverhauled.Log("OnGameStart triggered")
     patchBWOPlayerEarnings()
     patchBWORooms()
-    BWOJobsOverhauled.CreateButton()
-    BWOJobsOverhauled.UpdateButtonPosition()
-    local player = getSpecificPlayer(0)
-    if player then
-        BWOJobsOverhauled.IssueWorkKey(player, BWOJobsOverhauled.GetWorkData(player))
-        BWOJobsOverhauled.EnsureWorkMarker(player)
-        local profession = BWOJobsOverhauled.GetProfessionName(player)
-        local work = BWOJobsOverhauled.GetWorkData(player)
-        if BWOJobsOverhauled.RequiresWorkLocation(profession) and not work.assigned and not work.keyId then
-            if not BWOJobsOverhauled.WorkAssignmentPending then
-                BWOJobsOverhauled.WorkAssignmentPending = true
-                Events.OnTick.Add(BWOJobsOverhauled.TryAssignWorkLocation)
-            end
+    if not BWOJobsOverhauled.IsWorldReady() then
+        if not BWOJobsOverhauled.GameStartPending then
+            BWOJobsOverhauled.GameStartPending = true
+            Events.OnTick.Add(BWOJobsOverhauled.TryGameStart)
         end
+        return
     end
+    local player = getSpecificPlayer(0)
+    if not player then
+        if not BWOJobsOverhauled.GameStartPending then
+            BWOJobsOverhauled.GameStartPending = true
+            Events.OnTick.Add(BWOJobsOverhauled.TryGameStart)
+        end
+        return
+    end
+    applyGameStart(player)
+end
+
+local function onCreatePlayer(playerIndex)
+    local player = getSpecificPlayer(playerIndex or 0)
+    if not player then return end
+    if not BWOJobsOverhauled.IsWorldReady() then
+        if not BWOJobsOverhauled.GameStartPending then
+            BWOJobsOverhauled.GameStartPending = true
+            Events.OnTick.Add(BWOJobsOverhauled.TryGameStart)
+        end
+        return
+    end
+    applyGameStart(player)
 end
 
 Events.OnGameStart.Add(onGameStart)
+if Events and Events.OnCreatePlayer and Events.OnCreatePlayer.Add then
+    Events.OnCreatePlayer.Add(onCreatePlayer)
+end
+if Events and Events.OnGameExit and Events.OnGameExit.Add then
+    Events.OnGameExit.Add(cleanupUI)
+end
+if Events and Events.OnMainMenuEnter and Events.OnMainMenuEnter.Add then
+    Events.OnMainMenuEnter.Add(cleanupUI)
+end
 Events.OnResolutionChange.Add(BWOJobsOverhauled.UpdateButtonPosition)
 Events.OnTimedActionPerform.Add(onTimedActionPerform)
 Events.OnInventoryTransferActionPerform.Add(onInventoryTransferAction)
@@ -961,6 +1374,13 @@ if Events and Events.OnKeyPressed and Events.OnKeyPressed.Add then
     Events.OnKeyPressed.Add(onKeyPressed)
 else
     BWOJobsOverhauled.Log("Events.OnKeyPressed not available; skipping keybind hook")
+end
+if Events and Events.OnFitnessActionExeLooped and Events.OnFitnessActionExeLooped.Add then
+    BWOJobsOverhauled.UseFitnessLooped = true
+    Events.OnFitnessActionExeLooped.Add(onFitnessActionExeLooped)
+else
+    BWOJobsOverhauled.UseFitnessLooped = false
+    BWOJobsOverhauled.Log("Events.OnFitnessActionExeLooped not available; skipping fitness hook")
 end
 
 require "BWOJobsOverhauledJobs/CleaningJob"
@@ -972,3 +1392,5 @@ require "BWOJobsOverhauledJobs/LumberjackJob"
 require "BWOJobsOverhauledJobs/FishermanJob"
 require "BWOJobsOverhauledJobs/PoliceJob"
 require "BWOJobsOverhauledJobs/MedicalJob"
+require "BWOJobsOverhauledJobs/SecurityJob"
+require "BWOJobsOverhauledJobs/CookingJobs"

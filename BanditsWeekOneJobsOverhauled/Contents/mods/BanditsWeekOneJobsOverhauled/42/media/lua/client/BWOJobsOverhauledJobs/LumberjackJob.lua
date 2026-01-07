@@ -13,15 +13,33 @@ local function handleInventoryTransfer(data)
     if profession ~= "lumberjack" then return false end
     if not BWOJobsOverhauled.IsOnDutyAs(player, profession) then return false end
 
+    local dailyData = BWOJobsOverhauled.EnsureDailyData(player)
+
     local srcContainer = data.srcContainer
     local destContainer = data.destContainer
     if not srcContainer or not destContainer then return false end
-    local object = srcContainer:getParent()
-    if not object or not instanceof(object, "IsoPlayer") then return false end
+    local srcParent = srcContainer:getParent()
+    local destParent = destContainer:getParent()
 
     local item = data.item
     if not item then return false end
     local itemType = item:getFullType()
+
+    if destParent and instanceof(destParent, "IsoPlayer") then
+        local srcType = srcContainer:getType()
+        if (itemType == "Base.Log" and srcType == "logs") or (itemType == "Base.Plank" and srcType == "crate") then
+            dailyData.lumberjackTheft = true
+            if BWOJobsOverhauled.MarkTaskFailed then
+                BWOJobsOverhauled.MarkTaskFailed(player, "lumberjack_task")
+            end
+            return true
+        end
+    end
+
+    if dailyData.lumberjackTheft then return false end
+
+    if not srcParent or not instanceof(srcParent, "IsoPlayer") then return false end
+
     local md = item:getModData()
     if not md.BWO then
         md.BWO = {}
@@ -67,6 +85,14 @@ local function buildJob(player)
                         end,
                     },
                     {
+                        id = "lumberjack_nosteal",
+                        text = text("UI_BWO_JobsOverhauled_Cond_Lumberjack_NoTheft"),
+                        isLongTerm = true,
+                        check = function()
+                            return not BWOJobsOverhauled.EnsureDailyData(player).lumberjackTheft
+                        end,
+                    },
+                    {
                         id = "lumberjack_profession",
                         text = text("UI_BWO_JobsOverhauled_Cond_Lumberjack_OnDuty"),
                         isLongTerm = true,
@@ -81,4 +107,5 @@ local function buildJob(player)
 end
 
 BWOJobsOverhauled.RegisterInventoryTransferHandler(handleInventoryTransfer)
+BWOJobsOverhauled.RegisterWorkShift("lumberjack", { hours = 0, pay = 0 })
 BWOJobsOverhauled.RegisterJob(buildJob)

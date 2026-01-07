@@ -1,0 +1,12 @@
+name=Bandits Week One Addon: No Jaywalking
+poster=poster.png
+id=BanditsWeekOneAddonNoJaywalking
+description=<H1><GREEN>B42.13 ONLY
+description=<BR>
+description=Keeps neutral idle NPCs off roads and roadways by preferring pavements and quickly stepping off asphalt when possible. Crossing roads is still allowed when needed.
+description=<BR>
+author=Murmax
+require=this,mod,is,b42,only
+incompatible=BanditsDayOne
+pack=bwo
+tiledef=bwo 2303
