@@ -53,16 +53,9 @@ local function getCookingData(player, profession)
 end
 
 local function getContainerSquare(container)
-    if not container then return nil end
-    if container.getSquare then
-        local square = container:getSquare()
-        if square then return square end
-    end
-    if container.getParent then
-        local parent = container:getParent()
-        if parent and parent.getSquare then
-            return parent:getSquare()
-        end
+    local conditions = BWOJobsOverhauled.Conditions
+    if conditions and conditions.GetContainerSquare then
+        return conditions.GetContainerSquare(container)
     end
     return nil
 end
@@ -302,7 +295,7 @@ local function handleInventoryTransfer(data)
     return false
 end
 
-local function buildJob(player, profession, jobId, jobTextKey)
+local function buildJob(player, def, profession)
     local config = getCookingConfig(profession)
     if not config then return nil end
 
@@ -315,15 +308,15 @@ local function buildJob(player, profession, jobId, jobTextKey)
     local mealsTaskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_Cooking_Meals"), mealsInfo)
 
     return {
-        id = jobId,
-        text = text(jobTextKey),
+        id = def.id,
+        text = def.text,
         tasks = {
             {
                 id = config.budgetTaskId,
                 text = budgetTaskText,
                 conditions = {
                     {
-                        id = jobId .. "_budget_location",
+                        id = def.id .. "_budget_location",
                         text = text("UI_BWO_JobsOverhauled_Cond_Work_Location"),
                         isLongTerm = true,
                         check = function()
@@ -334,7 +327,7 @@ local function buildJob(player, profession, jobId, jobTextKey)
                         end,
                     },
                     {
-                        id = jobId .. "_budget_spend",
+                        id = def.id .. "_budget_spend",
                         text = string.format(text("UI_BWO_JobsOverhauled_Cond_Cooking_Budget"), tostring(percent)),
                         isLongTerm = true,
                         check = function()
@@ -345,7 +338,7 @@ local function buildJob(player, profession, jobId, jobTextKey)
                         end,
                     },
                     {
-                        id = jobId .. "_budget_profession",
+                        id = def.id .. "_budget_profession",
                         text = text("UI_BWO_JobsOverhauled_Cond_Cooking_OnDuty"),
                         isLongTerm = true,
                         check = function()
@@ -359,7 +352,7 @@ local function buildJob(player, profession, jobId, jobTextKey)
                 text = mealsTaskText,
                 conditions = {
                     {
-                        id = jobId .. "_meals_location",
+                        id = def.id .. "_meals_location",
                         text = text("UI_BWO_JobsOverhauled_Cond_Work_Location"),
                         isLongTerm = true,
                         check = function()
@@ -370,7 +363,7 @@ local function buildJob(player, profession, jobId, jobTextKey)
                         end,
                     },
                     {
-                        id = jobId .. "_meals_budget",
+                        id = def.id .. "_meals_budget",
                         text = string.format(text("UI_BWO_JobsOverhauled_Cond_Cooking_Budget"), tostring(percent)),
                         isLongTerm = true,
                         check = function()
@@ -378,7 +371,7 @@ local function buildJob(player, profession, jobId, jobTextKey)
                         end,
                     },
                     {
-                        id = jobId .. "_meals_notake",
+                        id = def.id .. "_meals_notake",
                         text = text("UI_BWO_JobsOverhauled_Cond_Cooking_NoTake"),
                         isLongTerm = true,
                         check = function()
@@ -387,7 +380,7 @@ local function buildJob(player, profession, jobId, jobTextKey)
                         end,
                     },
                     {
-                        id = jobId .. "_meals_done",
+                        id = def.id .. "_meals_done",
                         text = text("UI_BWO_JobsOverhauled_Cond_Cooking_Meals"),
                         isLongTerm = true,
                         check = function()
@@ -398,7 +391,7 @@ local function buildJob(player, profession, jobId, jobTextKey)
                         end,
                     },
                     {
-                        id = jobId .. "_meals_profession",
+                        id = def.id .. "_meals_profession",
                         text = text("UI_BWO_JobsOverhauled_Cond_Cooking_OnDuty"),
                         isLongTerm = true,
                         check = function()
@@ -411,16 +404,12 @@ local function buildJob(player, profession, jobId, jobTextKey)
     }
 end
 
-local function buildChefJob(player)
-    local profession = BWOJobsOverhauled.GetProfessionName(player)
-    if profession ~= "chef" then return nil end
-    return buildJob(player, profession, "chef", "UI_BWO_JobsOverhauled_Job_Chef")
+local function buildChefJob(player, def)
+    return buildJob(player, def, "chef")
 end
 
-local function buildBurgerJob(player)
-    local profession = BWOJobsOverhauled.GetProfessionName(player)
-    if profession ~= "burgerflipper" then return nil end
-    return buildJob(player, profession, "burgerflipper", "UI_BWO_JobsOverhauled_Job_BurgerFlipper")
+local function buildBurgerJob(player, def)
+    return buildJob(player, def, "burgerflipper")
 end
 
 local function onEveryOneMinute()
@@ -438,6 +427,18 @@ end
 BWOJobsOverhauled.RegisterInventoryTransferHandler(handleInventoryTransfer)
 BWOJobsOverhauled.RegisterWorkShift("chef", { hours = 0, pay = 0 })
 BWOJobsOverhauled.RegisterWorkShift("burgerflipper", { hours = 0, pay = 0 })
-BWOJobsOverhauled.RegisterJob(buildChefJob)
-BWOJobsOverhauled.RegisterJob(buildBurgerJob)
+BWOJobsOverhauled.RegisterJob({
+    id = "chef",
+    text = text("UI_BWO_JobsOverhauled_Job_Chef"),
+    professions = "chef",
+    requiresTransactions = true,
+    build = buildChefJob,
+})
+BWOJobsOverhauled.RegisterJob({
+    id = "burgerflipper",
+    text = text("UI_BWO_JobsOverhauled_Job_BurgerFlipper"),
+    professions = "burgerflipper",
+    requiresTransactions = true,
+    build = buildBurgerJob,
+})
 Events.EveryOneMinute.Add(onEveryOneMinute)

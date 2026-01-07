@@ -97,16 +97,13 @@ local function handleInventoryTransfer(data)
     return false
 end
 
-local function buildJob(player)
-    local profession = BWOJobsOverhauled.GetProfessionName(player)
-    if profession ~= "fisherman" then return nil end
-
+local function buildJob(player, def)
     local payInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Fisherman"), tostring(fishPriceMultiplier))
     local taskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_Fisherman"), payInfo)
 
     return {
-        id = "fisherman",
-        text = text("UI_BWO_JobsOverhauled_Job_Fisherman"),
+        id = def.id,
+        text = def.text,
         tasks = {
             {
                 id = "fisherman_task",
@@ -143,4 +140,10 @@ end
 
 BWOJobsOverhauled.RegisterInventoryTransferHandler(handleInventoryTransfer)
 BWOJobsOverhauled.RegisterWorkShift("fisherman", { hours = 0, pay = 0 })
-BWOJobsOverhauled.RegisterJob(buildJob)
+BWOJobsOverhauled.RegisterJob({
+    id = "fisherman",
+    text = text("UI_BWO_JobsOverhauled_Job_Fisherman"),
+    professions = "fisherman",
+    requiresTransactions = true,
+    build = buildJob,
+})

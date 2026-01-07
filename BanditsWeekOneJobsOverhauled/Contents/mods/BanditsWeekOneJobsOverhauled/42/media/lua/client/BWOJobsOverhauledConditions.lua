@@ -33,6 +33,46 @@ local function getContainerSquare(container)
     return nil
 end
 
+local function getZoneLabelAt(x, y, z)
+    local world = getWorld()
+    local meta = world and world:getMetaGrid()
+    if meta and meta.getZonesAt then
+        local zones = meta:getZonesAt(x, y, z or 0)
+        if zones then
+            for i = 0, zones:size() - 1 do
+                local zone = zones:get(i)
+                local name = zone and zone.getName and zone:getName()
+                if name and name ~= "" then
+                    return name
+                end
+            end
+            for i = 0, zones:size() - 1 do
+                local zone = zones:get(i)
+                local zoneType = zone and zone.getType and zone:getType()
+                if zoneType and zoneType ~= "" and zoneType ~= "Nav" then
+                    return zoneType
+                end
+            end
+        end
+    end
+
+    local cell = getCell()
+    if not cell then return nil end
+    local square = cell:getGridSquare(x, y, z or 0)
+    if not square then return nil end
+    local zone = square:getZone()
+    if not zone then return nil end
+    local name = zone.getName and zone:getName()
+    if name and name ~= "" then
+        return name
+    end
+    local zoneType = zone.getType and zone:getType()
+    if zoneType and zoneType ~= "" and zoneType ~= "Nav" then
+        return zoneType
+    end
+    return nil
+end
+
 local function buildNameSet(names)
     if not names then return nil end
     local set = {}
@@ -63,6 +103,105 @@ end
 function Conditions.GetContainerSquare(container)
     return getContainerSquare(container)
 end
+
+function Conditions.GetZoneLabelAt(x, y, z)
+    return getZoneLabelAt(x, y, z)
+end
+
+function Conditions.RoomMatchesProfession(room, profession)
+    if not room or not profession then return false end
+    if BWORooms and BWORooms.Get then
+        local data = BWORooms.Get(room)
+        if data and data.occupations then
+            for _, occupation in pairs(data.occupations) do
+                if occupation == profession then
+                    return true
+                end
+            end
+        end
+    end
+    if BWORooms and BWORooms.IsMedical and (profession == "doctor" or profession == "nurse") then
+        return BWORooms.IsMedical(room)
+    end
+    return false
+end
+
+function Conditions.RoomDefMatchesProfession(roomDef, profession)
+    if not roomDef or not profession or not BWORooms or not BWORooms.tab then return false end
+    local data = BWORooms.tab[roomDef:getName()]
+    if data and data.occupations then
+        for _, occupation in pairs(data.occupations) do
+            if occupation == profession then
+                return true
+            end
+        end
+    end
+    if BWORooms.IsMedical and (profession == "doctor" or profession == "nurse") then
+        return data and data.isMedical == true
+    end
+    return false
+end
+
+Conditions.PoliceRoomNames = {
+    "policeoffice", "policehall", "policestorage", "interrogationroom", "cell", "prisoncell", "prisoncells"
+}
+
+Conditions.MunicipalRoomNames = {
+    "bank", "post", "poststorage", "security"
+}
+
+Conditions.SecurityRoomNames = {
+    "security", "securityoffice", "securityroom", "guardroom", "checkpoint"
+}
+
+Conditions.ArmoryRoomNames = {
+    "armory", "armoury", "armystorage", "bankstorage", "policestorage", "prisonarmory", "weaponstorage", "gunstore"
+}
+
+Conditions.MedicalRoomNames = {
+    "medclinic", "medical", "clinic", "hospitalstorage", "medicalstorage", "pharmacystorage", "pharmacy", "dentiststorage"
+}
+
+Conditions.GymRoomNames = {
+    "gym", "fitness", "sportstore", "sportstorage"
+}
+
+Conditions.EntertainmentRoomNames = {
+    "bar", "beergarden", "restaurant", "dining", "diner", "cafeteria", "cafe", "theatre", "bowlingalley",
+    "stripclub", "recreation", "mall", "bandlivingroom", "bandkitchen"
+}
+
+Conditions.RestaurantRoomNames = {
+    "restaurant", "dining", "diner", "cafeteria", "pizzawhirled", "pizzawhirledcounter", "pileocrepe",
+    "sushidining", "spifforestaurant", "spiffo_dining", "bakerykitchen", "barkitchen", "burgerkitchen",
+    "cafekitchen", "cafeteriakitchen", "pizzakitchen", "sushikitchen", "tacokitchen", "theatrekitchen",
+    "spiffoskitchen", "arenakitchen", "bandkitchen"
+}
+
+Conditions.CafeRoomNames = {
+    "cafe", "cafekitchen", "cafeteria", "cafeteriakitchen"
+}
+
+Conditions.BarRoomNames = {
+    "bar", "beergarden", "barkitchen"
+}
+
+Conditions.FastFoodRoomNames = {
+    "spifforestaurant", "spiffo_dining", "spiffoskitchen", "spiffosstorage",
+    "burgerkitchen", "burgerstorage", "pizzawhirled", "pizzawhirledcounter", "pizzakitchen", "tacokitchen", "pileocrepe"
+}
+
+Conditions.ResidentialRoomNames = {
+    "bedroom", "livingroom", "room1", "closet", "bathroom", "diningroom", "kitchen"
+}
+
+Conditions.LumberjackRoomNames = {
+    "factorystorage"
+}
+
+Conditions.FishermanRoomNames = {
+    "fishingstorage"
+}
 
 function Conditions.IsWithinHours(startHour, endHour, nowHour)
     local hour = nowHour
@@ -153,6 +292,37 @@ function Conditions.FindNearestBuildingByRoomNames(player, roomNames, maxDist)
     end, maxDist)
 end
 
+function Conditions.FindNearestWorkBuilding(player, profession)
+    local cell = getCell()
+    if not cell then return nil end
+    local rooms = cell:getRoomList()
+    if not rooms then return nil end
+    local px, py = player:getX(), player:getY()
+    local best
+    local bestRoomName
+    local bestDist
+    for i = 0, rooms:size() - 1 do
+        local room = rooms:get(i)
+        if room and Conditions.RoomMatchesProfession(room, profession) then
+            local roomDef = room:getRoomDef()
+            if roomDef then
+                local cx, cy = getBuildingCenter(roomDef:getBuilding())
+                local dist = IsoUtils.DistanceTo(px, py, cx, cy)
+                if not bestDist or dist < bestDist then
+                    bestDist = dist
+                    best = room:getBuilding()
+                    if BWORooms and BWORooms.GetRealRoomName then
+                        bestRoomName = BWORooms.GetRealRoomName(room)
+                    else
+                        bestRoomName = room:getName()
+                    end
+                end
+            end
+        end
+    end
+    return best, bestRoomName
+end
+
 function Conditions.FindNearestContainerByPredicate(player, predicate, maxDist)
     if not player or type(predicate) ~= "function" then return nil end
     local cell = getCell()
@@ -230,6 +400,45 @@ end
 
 function Conditions.IsItemTypeRestricted(itemType, types)
     return Conditions.ItemTypeInList(itemType, types)
+end
+
+local function getItemType(item)
+    if not item then return nil end
+    if item.getFullType then
+        return item:getFullType()
+    end
+    if item.getType then
+        return item:getType()
+    end
+    return nil
+end
+
+function Conditions.IsItemRestricted(item, types)
+    local itemType = getItemType(item)
+    if not itemType then return false end
+    return Conditions.IsItemTypeRestricted(itemType, types)
+end
+
+function Conditions.IsTransferToPlayer(data)
+    if not data or not data.destContainer then return false end
+    local parent = data.destContainer:getParent()
+    return parent and instanceof(parent, "IsoPlayer")
+end
+
+function Conditions.IsTransferFromPlayer(data)
+    if not data or not data.srcContainer then return false end
+    local parent = data.srcContainer:getParent()
+    return parent and instanceof(parent, "IsoPlayer")
+end
+
+function Conditions.IsRestrictedTake(data, types)
+    if not Conditions.IsTransferToPlayer(data) then return false end
+    return Conditions.IsItemRestricted(data.item, types)
+end
+
+function Conditions.IsRestrictedDrop(data, types)
+    if not Conditions.IsTransferFromPlayer(data) then return false end
+    return Conditions.IsItemRestricted(data.item, types)
 end
 
 function Conditions.HasAnyItemTypes(player, itemTypes)
@@ -352,3 +561,21 @@ BWOJobsOverhauled.HasNearbyVehicle = Conditions.HasNearbyVehicle
 BWOJobsOverhauled.IsInForestZone = Conditions.IsInForestZone
 BWOJobsOverhauled.HasAnyItemTypes = Conditions.HasAnyItemTypes
 BWOJobsOverhauled.HasHostileBanditNearby = Conditions.HasHostileBanditNearby
+BWOJobsOverhauled.FindNearestWorkBuilding = Conditions.FindNearestWorkBuilding
+BWOJobsOverhauled.RoomMatchesProfession = Conditions.RoomMatchesProfession
+BWOJobsOverhauled.RoomDefMatchesProfession = Conditions.RoomDefMatchesProfession
+BWOJobsOverhauled.GetZoneLabelAt = Conditions.GetZoneLabelAt
+BWOJobsOverhauled.PoliceRoomNames = Conditions.PoliceRoomNames
+BWOJobsOverhauled.MunicipalRoomNames = Conditions.MunicipalRoomNames
+BWOJobsOverhauled.SecurityRoomNames = Conditions.SecurityRoomNames
+BWOJobsOverhauled.ArmoryRoomNames = Conditions.ArmoryRoomNames
+BWOJobsOverhauled.MedicalRoomNames = Conditions.MedicalRoomNames
+BWOJobsOverhauled.GymRoomNames = Conditions.GymRoomNames
+BWOJobsOverhauled.EntertainmentRoomNames = Conditions.EntertainmentRoomNames
+BWOJobsOverhauled.RestaurantRoomNames = Conditions.RestaurantRoomNames
+BWOJobsOverhauled.CafeRoomNames = Conditions.CafeRoomNames
+BWOJobsOverhauled.BarRoomNames = Conditions.BarRoomNames
+BWOJobsOverhauled.FastFoodRoomNames = Conditions.FastFoodRoomNames
+BWOJobsOverhauled.ResidentialRoomNames = Conditions.ResidentialRoomNames
+BWOJobsOverhauled.LumberjackRoomNames = Conditions.LumberjackRoomNames
+BWOJobsOverhauled.FishermanRoomNames = Conditions.FishermanRoomNames

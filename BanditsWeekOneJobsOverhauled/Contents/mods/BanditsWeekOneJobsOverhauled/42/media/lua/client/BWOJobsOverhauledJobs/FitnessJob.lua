@@ -182,16 +182,13 @@ local function handleExercise(character, actionOrMin)
     return true
 end
 
-local function buildJob(player)
-    local profession = BWOJobsOverhauled.GetProfessionName(player)
-    if profession ~= "fitnessInstructor" then return nil end
-
+local function buildJob(player, def)
     local payInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Fitness"), tostring(dailyPayout))
     local taskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_Fitness"), payInfo)
 
     return {
-        id = "fitness",
-        text = text("UI_BWO_JobsOverhauled_Job_Fitness"),
+        id = def.id,
+        text = def.text,
         tasks = {
             {
                 id = "fitness_task",
@@ -243,4 +240,10 @@ end
 
 BWOJobsOverhauled.RegisterExerciseHandler(handleExercise)
 BWOJobsOverhauled.RegisterWorkShift("fitnessInstructor", { hours = 0, pay = 0 })
-BWOJobsOverhauled.RegisterJob(buildJob)
+BWOJobsOverhauled.RegisterJob({
+    id = "fitness",
+    text = text("UI_BWO_JobsOverhauled_Job_Fitness"),
+    professions = "fitnessInstructor",
+    requiresTransactions = true,
+    build = buildJob,
+})

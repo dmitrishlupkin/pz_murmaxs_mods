@@ -4,10 +4,7 @@ end
 
 local shiftConfig = { hours = 6, pay = 40, taskId = "security_shift" }
 
-local function buildJob(player)
-    local profession = BWOJobsOverhauled.GetProfessionName(player)
-    if profession ~= "securityguard" then return nil end
-
+local function buildJob(player, def)
     local shiftPayInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Shift"), tostring(shiftConfig.pay))
     local shiftTaskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_WorkShift"), shiftPayInfo)
 
@@ -45,11 +42,17 @@ local function buildJob(player)
     }
 
     return {
-        id = "security",
-        text = text("UI_BWO_JobsOverhauled_Job_Security"),
+        id = def.id,
+        text = def.text,
         tasks = tasks,
     }
 end
 
 BWOJobsOverhauled.RegisterWorkShift("securityguard", shiftConfig)
-BWOJobsOverhauled.RegisterJob(buildJob)
+BWOJobsOverhauled.RegisterJob({
+    id = "security",
+    text = text("UI_BWO_JobsOverhauled_Job_Security"),
+    professions = "securityguard",
+    requiresTransactions = true,
+    build = buildJob,
+})

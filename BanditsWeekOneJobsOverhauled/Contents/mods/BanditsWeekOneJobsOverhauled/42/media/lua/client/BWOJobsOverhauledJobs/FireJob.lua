@@ -18,10 +18,7 @@ local function handleTimedAction(data)
     return false
 end
 
-local function buildJob(player)
-    local profession = BWOJobsOverhauled.GetProfessionName(player)
-    if profession ~= "fireofficer" then return nil end
-
+local function buildJob(player, def)
     local firePayInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Fire"), tostring(firePayout))
     local fireTaskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_Fire"), firePayInfo)
     local shiftPayInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Shift"), tostring(shiftConfig.pay))
@@ -86,12 +83,18 @@ local function buildJob(player)
     end
 
     return {
-        id = "fire",
-        text = text("UI_BWO_JobsOverhauled_Job_Fire"),
+        id = def.id,
+        text = def.text,
         tasks = tasks,
     }
 end
 
 BWOJobsOverhauled.RegisterTimedActionHandler(handleTimedAction)
 BWOJobsOverhauled.RegisterWorkShift("fireofficer", shiftConfig)
-BWOJobsOverhauled.RegisterJob(buildJob)
+BWOJobsOverhauled.RegisterJob({
+    id = "fire",
+    text = text("UI_BWO_JobsOverhauled_Job_Fire"),
+    professions = "fireofficer",
+    requiresTransactions = true,
+    build = buildJob,
+})

@@ -7,6 +7,7 @@ Assignments._initialized = true
 
 Assignments.Seeded = Assignments.Seeded or false
 Assignments.State = Assignments.State or {}
+Assignments.PendingUpdate = Assignments.PendingUpdate or false
 
 local function getDayStamp()
     local hours = getGameTime():getWorldAgeHours()
@@ -168,4 +169,48 @@ end
 
 function Assignments.Update(player)
     Assignments.EnsureAssignments(player)
+end
+
+local function tryUpdate()
+    if not BWOJobsOverhauled or not BWOJobsOverhauled.IsWorldReady or not BWOJobsOverhauled.IsWorldReady() then
+        return
+    end
+    local player = getSpecificPlayer(0)
+    if not player then return end
+    Assignments.PendingUpdate = false
+    Events.OnTick.Remove(tryUpdate)
+    Assignments.Update(player)
+end
+
+function Assignments.RequestUpdate()
+    if Assignments.PendingUpdate then return end
+    Assignments.PendingUpdate = true
+    Events.OnTick.Add(tryUpdate)
+end
+
+local function onGameStart()
+    Assignments.RequestUpdate()
+end
+
+local function onCreatePlayer(playerIndex)
+    local player = getSpecificPlayer(playerIndex or 0)
+    if not player then return end
+    Assignments.Reset(player)
+    Assignments.RequestUpdate()
+end
+
+local function onEveryOneMinute()
+    local player = getSpecificPlayer(0)
+    if not player then return end
+    Assignments.Update(player)
+end
+
+if Events and Events.OnGameStart and Events.OnGameStart.Add then
+    Events.OnGameStart.Add(onGameStart)
+end
+if Events and Events.OnCreatePlayer and Events.OnCreatePlayer.Add then
+    Events.OnCreatePlayer.Add(onCreatePlayer)
+end
+if Events and Events.EveryOneMinute and Events.EveryOneMinute.Add then
+    Events.EveryOneMinute.Add(onEveryOneMinute)
 end

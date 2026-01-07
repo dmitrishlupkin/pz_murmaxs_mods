@@ -111,12 +111,12 @@ local function handleInventoryTransfer(data)
     return true
 end
 
-local function buildJob(player)
+local function buildJob(player, def)
     local payInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Cleaning"), tostring(trashPickupPay), tostring(dailyLimit))
     local taskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_Cleaning"), payInfo)
     return {
-        id = "cleaning",
-        text = text("UI_BWO_JobsOverhauled_Job_Cleaning"),
+        id = def.id,
+        text = def.text,
         tasks = {
             {
                 id = "cleaning_task",
@@ -159,4 +159,9 @@ end
 
 BWOJobsOverhauled.RegisterTimedActionHandler(handleTimedAction)
 BWOJobsOverhauled.RegisterInventoryTransferHandler(handleInventoryTransfer)
-BWOJobsOverhauled.RegisterJob(buildJob)
+BWOJobsOverhauled.RegisterJob({
+    id = "cleaning",
+    text = text("UI_BWO_JobsOverhauled_Job_Cleaning"),
+    requiresTransactions = true,
+    build = buildJob,
+})

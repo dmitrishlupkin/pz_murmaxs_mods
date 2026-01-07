@@ -22,10 +22,7 @@ local function handleFriendlyFire(bandit, attacker)
     return false
 end
 
-local function buildJob(player)
-    local profession = BWOJobsOverhauled.GetProfessionName(player)
-    if profession ~= "policeofficer" then return nil end
-
+local function buildJob(player, def)
     local bountyInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Police"), tostring(policeBounty))
     local bountyTaskText = string.format("%s (%s)", text("UI_BWO_JobsOverhauled_Task_Police"), bountyInfo)
     local shiftPayInfo = string.format(text("UI_BWO_JobsOverhauled_Pay_Shift"), tostring(shiftConfig.pay))
@@ -90,12 +87,18 @@ local function buildJob(player)
     end
 
     return {
-        id = "police",
-        text = text("UI_BWO_JobsOverhauled_Job_Police"),
+        id = def.id,
+        text = def.text,
         tasks = tasks,
     }
 end
 
 BWOJobsOverhauled.RegisterFriendlyFireHandler(handleFriendlyFire)
 BWOJobsOverhauled.RegisterWorkShift("policeofficer", shiftConfig)
-BWOJobsOverhauled.RegisterJob(buildJob)
+BWOJobsOverhauled.RegisterJob({
+    id = "police",
+    text = text("UI_BWO_JobsOverhauled_Job_Police"),
+    professions = "policeofficer",
+    requiresTransactions = true,
+    build = buildJob,
+})
