@@ -169,6 +169,9 @@ end
 
 function Assignments.Update(player)
     Assignments.EnsureAssignments(player)
+    if BWOJobsOverhauled.JobManager and BWOJobsOverhauled.JobManager.RollDailyOffers then
+        BWOJobsOverhauled.JobManager.RollDailyOffers(player)
+    end
 end
 
 local function tryUpdate()

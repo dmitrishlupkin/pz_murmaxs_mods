@@ -12,6 +12,8 @@ Manager.InventoryTransferHandlers = Manager.InventoryTransferHandlers or {}
 Manager.FriendlyFireHandlers = Manager.FriendlyFireHandlers or {}
 Manager.ExerciseHandlers = Manager.ExerciseHandlers or {}
 Manager.WorkShiftConfigs = Manager.WorkShiftConfigs or {}
+Manager.DailyTaskOffers = Manager.DailyTaskOffers or {}
+Manager.DailyTaskOfferById = Manager.DailyTaskOfferById or {}
 
 -- Job definition structure:
 -- def = {
@@ -44,6 +46,7 @@ Manager.WorkShiftConfigs = Manager.WorkShiftConfigs or {}
 --   hidden = true|false, -- never shown in UI
 --   hideOnComplete = true|false, -- optional UI helper
 --   highlightSeconds = number, -- optional UI helper
+--   ai = { ... }, -- optional AI block (see BWOJobsOverhauledAI.lua)
 --   issueConditions = { condition, ... }, -- optional, evaluated once
 --   conditions = { condition, ... }
 -- }
@@ -204,6 +207,18 @@ local function safeCheck(condition, player, task)
     return result == true
 end
 
+local function safeCall(fn, ...)
+    if type(fn) ~= "function" then return nil end
+    local ok, result = pcall(fn, ...)
+    if not ok then
+        if BWOJobsOverhauled and BWOJobsOverhauled.Log then
+            BWOJobsOverhauled.Log("Call error: " .. tostring(result))
+        end
+        return nil
+    end
+    return result
+end
+
 local function shallowCopy(source)
     local dest = {}
     for k, v in pairs(source or {}) do
@@ -231,6 +246,9 @@ function Manager.EnsureDailyData(player)
         data.taskState = {}
         data.taskIssueState = {}
         data.conditionState = {}
+        data.dailyOffers = {}
+        data.dailyOffersRolled = false
+        data.visitBuildings = {}
     end
     data.work = data.work or {}
     data.taskState = data.taskState or {}
@@ -240,6 +258,8 @@ function Manager.EnsureDailyData(player)
     data.taskIssueStatePersistent = data.taskIssueStatePersistent or {}
     data.conditionStatePersistent = data.conditionStatePersistent or {}
     data.assignedJobs = data.assignedJobs or {}
+    data.dailyOffers = data.dailyOffers or {}
+    data.visitBuildings = data.visitBuildings or {}
     return data
 end
 
@@ -347,6 +367,160 @@ end
 function Manager.RegisterWorkShift(profession, config)
     if not profession or not config then return end
     Manager.WorkShiftConfigs[profession] = config
+end
+
+-- Daily task offer definition:
+-- offer = {
+--   id = "string",
+--   tasks = { "taskId", ... }, -- optional, informational only
+--   professions = { "professionId", ... } or "professionId",
+--   chance = 0..1 or 0..100, -- default 1.0
+--   minDay = number, -- optional inclusive
+--   maxDay = number, -- optional inclusive
+--   requiresTransactions = true|false,
+--   disableWhenAnarchy = true|false,
+--   condition = function(player, offer) -> boolean,
+--   onAssign = function(player, offer) -> table|nil|false -- return nil/false to skip
+-- }
+function Manager.RegisterDailyTaskOffer(offer)
+    if type(offer) ~= "table" or not offer.id then return end
+    if Manager.DailyTaskOfferById[offer.id] then
+        return
+    end
+    Manager.DailyTaskOfferById[offer.id] = offer
+    table.insert(Manager.DailyTaskOffers, offer)
+end
+
+local function matchesProfession(player, professions)
+    if not professions then return true end
+    local profession = Manager.GetProfessionName(player)
+    if type(professions) == "string" then
+        return profession == professions
+    end
+    if type(professions) == "table" then
+        for _, name in ipairs(professions) do
+            if profession == name then
+                return true
+            end
+        end
+    end
+    return false
+end
+
+local function isAnarchyActive()
+    return BWOScheduler and BWOScheduler.Anarchy and BWOScheduler.Anarchy.Transactions == false
+end
+
+local function isOfferEligible(player, offer)
+    if not matchesProfession(player, offer.professions) then
+        return false
+    end
+    local day = getDayStamp()
+    if offer.minDay and day < offer.minDay then
+        return false
+    end
+    if offer.maxDay and day > offer.maxDay then
+        return false
+    end
+    if offer.requiresTransactions and not Manager.AreTransactionsEnabled() then
+        return false
+    end
+    if offer.disableWhenAnarchy and isAnarchyActive() then
+        return false
+    end
+    if offer.condition and safeCall(offer.condition, player, offer) ~= true then
+        return false
+    end
+    return true
+end
+
+local function rollChance(chance)
+    local value = chance
+    if value == nil then value = 1 end
+    if value > 1 then
+        value = value / 100
+    end
+    if value >= 1 then
+        return true
+    end
+    local roll = ZombRand(10000) / 10000
+    return roll <= value
+end
+
+function Manager.RollDailyOffers(player)
+    if not player then return end
+    local data = Manager.EnsureDailyData(player)
+    if data.dailyOffersRolled then return end
+    data.dailyOffers = data.dailyOffers or {}
+
+    for _, offer in ipairs(Manager.DailyTaskOffers) do
+        if offer and offer.id and isOfferEligible(player, offer) then
+            if rollChance(offer.chance) then
+                local entry = { active = true, assignedAt = getNowSeconds() }
+                if type(offer.onAssign) == "function" then
+                    local custom = safeCall(offer.onAssign, player, offer)
+                    if custom == false or custom == nil then
+                        entry = nil
+                    elseif type(custom) == "table" then
+                        entry.data = custom
+                    else
+                        entry.data = {}
+                    end
+                else
+                    entry.data = {}
+                end
+                if entry then
+                    data.dailyOffers[offer.id] = entry
+                end
+            end
+        end
+    end
+
+    data.dailyOffersRolled = true
+end
+
+function Manager.GetDailyOffer(player, offerId)
+    if not player or not offerId then return nil end
+    local data = Manager.EnsureDailyData(player)
+    if not data.dailyOffersRolled then
+        Manager.RollDailyOffers(player)
+    end
+    return data.dailyOffers and data.dailyOffers[offerId] or nil
+end
+
+function Manager.IsDailyOfferActive(player, offerId)
+    local offer = Manager.GetDailyOffer(player, offerId)
+    return offer and offer.active == true or false
+end
+
+function Manager.AddVisitBuilding(player, building, opts)
+    if not player or not building then return end
+    local def = getBuildingDef(building)
+    if not def or not def.getKeyId then return end
+    local keyId = def:getKeyId()
+    if not keyId then return end
+    local data = Manager.EnsureDailyData(player)
+    data.visitBuildings = data.visitBuildings or {}
+    data.visitBuildings[keyId] = {
+        allowTake = opts and opts.allowTake == true,
+    }
+end
+
+function Manager.GetVisitPermission(building)
+    if not building then return nil end
+    local player = getSpecificPlayer(0)
+    if not player then return nil end
+    local def = getBuildingDef(building)
+    if not def or not def.getKeyId then return nil end
+    local keyId = def:getKeyId()
+    if not keyId then return nil end
+    local data = Manager.EnsureDailyData(player)
+    if not data.visitBuildings then return nil end
+    return data.visitBuildings[keyId]
+end
+
+function Manager.IsVisitBuilding(building)
+    return Manager.GetVisitPermission(building) ~= nil
 end
 
 function Manager.GetWorkShiftConfig(profession)
@@ -1061,3 +1235,10 @@ BWOJobsOverhauled.HandleInventoryTransfer = Manager.HandleInventoryTransfer
 BWOJobsOverhauled.PayEarnings = Manager.PayEarnings
 BWOJobsOverhauled.PayTask = Manager.PayTask
 BWOJobsOverhauled.TryCompleteTask = Manager.TryCompleteTask
+BWOJobsOverhauled.RegisterDailyTaskOffer = Manager.RegisterDailyTaskOffer
+BWOJobsOverhauled.RollDailyOffers = Manager.RollDailyOffers
+BWOJobsOverhauled.GetDailyOffer = Manager.GetDailyOffer
+BWOJobsOverhauled.IsDailyOfferActive = Manager.IsDailyOfferActive
+BWOJobsOverhauled.AddVisitBuilding = Manager.AddVisitBuilding
+BWOJobsOverhauled.GetVisitPermission = Manager.GetVisitPermission
+BWOJobsOverhauled.IsVisitBuilding = Manager.IsVisitBuilding

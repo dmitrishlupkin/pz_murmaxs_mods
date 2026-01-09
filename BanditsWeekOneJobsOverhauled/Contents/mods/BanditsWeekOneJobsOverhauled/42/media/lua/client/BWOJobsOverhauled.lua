@@ -6,6 +6,7 @@ BWOJobsOverhauled = BWOJobsOverhauled or {}
 require "BWOJobsOverhauledJobManager"
 require "BWOJobsOverhauledConditions"
 require "BWOJobsOverhauledAssignments"
+require "BWOJobsOverhauledAI"
 
 BWOJobsOverhauled.window = nil
 BWOJobsOverhauled.button = nil
@@ -307,7 +308,7 @@ local function patchBWORooms()
         BWORooms.IsIntrusion = function(room)
             if room then
                 local building = room:getBuilding()
-                if building and BWOJobsOverhauled.IsWorkBuilding(building) then
+                if building and (BWOJobsOverhauled.IsWorkBuilding(building) or BWOJobsOverhauled.IsVisitBuilding(building)) then
                     return false
                 end
             end
@@ -325,6 +326,12 @@ local function patchBWORooms()
                 local building = room:getBuilding()
                 if building and BWOJobsOverhauled.IsWorkBuilding(building) then
                     return true, false
+                end
+                if building and BWOJobsOverhauled.IsVisitBuilding(building) then
+                    local permission = BWOJobsOverhauled.GetVisitPermission(building)
+                    if permission and permission.allowTake then
+                        return true, false
+                    end
                 end
             end
             if BWOJobsOverhauled.OriginalTakeIntention then
@@ -477,3 +484,4 @@ require "BWOJobsOverhauledJobs/PoliceJob"
 require "BWOJobsOverhauledJobs/MedicalJob"
 require "BWOJobsOverhauledJobs/SecurityJob"
 require "BWOJobsOverhauledJobs/CookingJobs"
+require "BWOJobsOverhauledJobs/ErrandsJob"

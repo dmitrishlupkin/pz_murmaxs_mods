@@ -82,6 +82,65 @@ local function buildNameSet(names)
     return set
 end
 
+local function findBuildingByKeyId(keyId)
+    if not keyId then return nil end
+    local cell = getCell()
+    if not cell or not cell.getBuildingList then return nil end
+    local buildings = cell:getBuildingList()
+    if not buildings then return nil end
+    for i = 0, buildings:size() - 1 do
+        local building = buildings:get(i)
+        local def = building and building:getDef()
+        if def and def.getKeyId and def:getKeyId() == keyId then
+            return building
+        end
+    end
+    return nil
+end
+
+local function findRoomSquareInBuilding(building, roomNames)
+    if not building then return nil end
+    local def = getBuildingDef(building)
+    if not def then return nil end
+    local cell = getCell()
+    if not cell then return nil end
+    local rooms = cell:getRoomList()
+    if not rooms then return nil end
+    local nameSet = buildNameSet(roomNames)
+    local candidates = {}
+
+    for i = 0, rooms:size() - 1 do
+        local room = rooms:get(i)
+        if room and room.getBuilding and room:getBuilding() then
+            local roomDef = getBuildingDef(room:getBuilding())
+            if roomDef and roomDef.getKeyId and def.getKeyId and roomDef:getKeyId() == def:getKeyId() then
+                local roomName = room:getName()
+                if BWORooms and BWORooms.GetRealRoomName then
+                    roomName = BWORooms.GetRealRoomName(room)
+                end
+                if not nameSet or nameSet[roomName] then
+                    local squares
+                    if room.getSquares then
+                        local ok, res = pcall(room.getSquares, room)
+                        if ok then
+                            squares = res
+                        end
+                    end
+                    if squares and squares:size() > 0 then
+                        table.insert(candidates, { room = room, squares = squares, name = roomName })
+                    end
+                end
+            end
+        end
+    end
+
+    if #candidates == 0 then return nil end
+    local pick = candidates[ZombRand(#candidates) + 1]
+    local squares = pick.squares
+    local square = squares:get(ZombRand(squares:size()))
+    return square, pick.name
+end
+
 local function getFlagTable(player, isDaily)
     local data = BWOJobsOverhauled.EnsureDailyData(player)
     if isDaily then
@@ -106,6 +165,14 @@ end
 
 function Conditions.GetZoneLabelAt(x, y, z)
     return getZoneLabelAt(x, y, z)
+end
+
+function Conditions.FindBuildingByKeyId(keyId)
+    return findBuildingByKeyId(keyId)
+end
+
+function Conditions.FindRoomSquareInBuilding(building, roomNames)
+    return findRoomSquareInBuilding(building, roomNames)
 end
 
 function Conditions.RoomMatchesProfession(room, profession)
@@ -565,6 +632,8 @@ BWOJobsOverhauled.FindNearestWorkBuilding = Conditions.FindNearestWorkBuilding
 BWOJobsOverhauled.RoomMatchesProfession = Conditions.RoomMatchesProfession
 BWOJobsOverhauled.RoomDefMatchesProfession = Conditions.RoomDefMatchesProfession
 BWOJobsOverhauled.GetZoneLabelAt = Conditions.GetZoneLabelAt
+BWOJobsOverhauled.FindBuildingByKeyId = Conditions.FindBuildingByKeyId
+BWOJobsOverhauled.FindRoomSquareInBuilding = Conditions.FindRoomSquareInBuilding
 BWOJobsOverhauled.PoliceRoomNames = Conditions.PoliceRoomNames
 BWOJobsOverhauled.MunicipalRoomNames = Conditions.MunicipalRoomNames
 BWOJobsOverhauled.SecurityRoomNames = Conditions.SecurityRoomNames
